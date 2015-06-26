@@ -1,16 +1,64 @@
 .post-link {
 	font-family: "georgia; sans-serif";
 	font-size: 28px;
+	color: #5a5a5a
 }
+
+//header
 
 .site-header {
 	border-bottom: 0px;
-	left: 0px;
-	padding: 10px;
-	padding-bottom: 60px;
+	padding-left: 10px;
+	border-top: 0px;
+	padding-bottom: 90px;
 }
 
-.site-title {
+.site-title, .site-title:visited {
 	float: left;
+	font-family: georgia;
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: #111;	
 }
 
+.post-title {
+	font-family: helvetica;
+}
+
+.site-nav {
+	.page-link {
+	font-size: 16px;
+	padding-right: 30px;
+	color: #111
+	}
+}
+
+.page-heading {
+	#heading-emphasis {
+		color: #71BFF5;
+		font-style: italic;
+	}
+}
+
+.page-heading {
+	font-size: 38px;
+	padding-bottom: 130px;
+}
+
+
+//footer
+
+.site-footer { 
+	background: #5a5a5a;
+	color: #fff;
+}
+
+.site-footer {
+	a, .a:visited {
+		color: #fff
+	}
+}
+
+.contact-list {
+	color: #fff;
+}
