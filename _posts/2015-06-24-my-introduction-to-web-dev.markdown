@@ -3,13 +3,14 @@ layout: post
 title:  "How to Make a Navigation Menu From Scratch (minus gooey tutorials)"
 date:   2015-06-24 16:32:21
 categories: lessons
-excerpt: > Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head. Yet, I was able to get some help that made the process easier to tackle. --> -->
+excerpt: > 
+ Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head. Yet, I was able to get some help that made the process easier to tackle. --> -->
 ---
 
-Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.** 
+Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.** 
 
 ## Start by Learning Some General Principles
-If you are like me and don't know much about web development or these three languages, you may approach problem of making a navigation menu by looking at a tutorial and just copying their examples and pasting them into a text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? *Spending some time to really learn the basic principles of the language you are working in can be super helpful.* 
+If you are like me and don't know much about web development or these three languages, you may approach problem of making a navigation bar by looking at a tutorial and just copying their examples and pasting them into a text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? *Spending some time to really learn the basic principles of the language you are working in can be super helpful.* 
 
 Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. **You might want to try doing the same and really hammering down these ideas:**
 
