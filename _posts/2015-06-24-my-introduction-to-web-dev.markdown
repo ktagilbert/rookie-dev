@@ -3,12 +3,13 @@ layout: post
 title:  "How to Make a Navigation Menu From Scratch (minus gooey tutorials)"
 date:   2015-06-24 16:32:21
 categories: lessons
+excerpt: > Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head. Yet, I was able to get some help that made the process easier to tackle. --> -->
 ---
 
-Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head. Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.** 
+Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.** 
 
 ## Start by Learning Some General Principles
-If you are like me and don't know much about web development or these three languages, you may approach this problem by looking at a tutorial and just copying their examples and pasting them into a text editor. Well, what if you know what elements to actually reference in order to make your menu appear and function the way you want it to? *Spending some time to really learn the basic principles of the language you are working in can be super helpful.* 
+If you are like me and don't know much about web development or these three languages, you may approach problem of making a navigation menu by looking at a tutorial and just copying their examples and pasting them into a text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? *Spending some time to really learn the basic principles of the language you are working in can be super helpful.* 
 
 Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. **You might want to try doing the same and really hammering down these ideas:**
 
@@ -42,9 +43,9 @@ Before I made my nav, I spent a couple of nights studying the basics of my three
 -I've put "#" in the place of an actual link for now because I don't have content or links for these pages yet. You may not never put a link here (For example, if you have content that just loads (or becomes unhidden) on the page when you click on the element). 
 - So now, depending on what you want the menu to do and look like, you can think about what to do next. 
 
-### Here are some ideas for how you may want the menu to look
+### Here are some ideas for how you may want your menu to look
 1. You may want the menu items to be laid out horizontally across your page. 
-2. Maybe you will wan5 a menu item should to simply display specific content when clicked. Well, you can do that with JavaScript
+2. Maybe you will want a menu item should to simply display specific content when clicked. Well, you can do that with JavaScript
 3. You could simply think about the style of the menu. 
 	- Maybe you want the menu to have a background color
 	- Or, you want to change the font-size, font-color, or font-family of your text. 
@@ -99,9 +100,9 @@ You can actually create a rule that says "hey, when the width of  someone's scre
 In the end, I created a test site that looks like like this:
 ![creating a menu from scratch]({{ site.url }}/assets/test-menu.png)
 
-Again, in my case I worked most with HTML and CSS to build a menu. I just wanted to make something simple and didn't want to spend a lot of time coming up with weird JavaScript solutions to my problems. 
+Again, in my case I worked mostly with HTML and CSS to build a menu. I just wanted to make something simple and didn't want to spend a lot of time coming up with solutions in JavaScript that I could have otherwise solved with just HTML and CSS. 
 
-I hope that this all will be able to help. If you are having any trouble along the way of creating your menu, remember that you can always Google specific solutions along the way. **Thanks for reading guys!** 
+I hope that these tips will be able to help you. If you are have any trouble, remember that you can always Google specific solutions or questions you may have while building out your nav menu. **Thanks for reading guys!** 
 
 
 
