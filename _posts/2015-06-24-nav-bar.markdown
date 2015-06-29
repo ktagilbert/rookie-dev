@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "How to Make a Navigation Menu From Scratch (minus gooey tutorials)"
+title:  "How to Make a Simple Navigation Menu From Scratch"
 date:   2015-06-24 16:32:21
 categories: lessons
 excerpt: > 
- Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head. Yet, I was able to get some help that made the process easier to tackle. --> -->
+ Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development.In actuality, it was something that was way over my head. Yet, I was able to get some help that made the process easier to tackle.
 ---
 
 Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.** 
@@ -99,11 +99,11 @@ You can actually create a rule that says "hey, when the width of  someone's scre
 {% endhighlight %}
 
 In the end, I created a test site that looks like like this:
-![creating a menu from scratch]({{ site.url }}/assets/test-menu.png)
+![creating a menu from scratch]({{ site.url }}/assets/test-menu.jpg)
 
 Again, in my case I worked mostly with HTML and CSS to build a menu. I just wanted to make something simple and didn't want to spend a lot of time coming up with solutions in JavaScript that I could have otherwise solved with just HTML and CSS. 
 
-I hope that these tips will be able to help you. If you are have any trouble, remember that you can always Google specific solutions or questions you may have while building out your nav menu. **Thanks for reading guys!** 
+Remember, if you are have any trouble you can always Google specific solutions or questions you may have while building out your nav menu. **Thanks for reading guys!** 
 
 
 
