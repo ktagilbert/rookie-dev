@@ -35,7 +35,6 @@
 	}
 }
 
-
 //post-details
 
 .post-list {
@@ -55,50 +54,116 @@
 	font-family: georgia;
 	padding-top: 40px;
 	text-align: center;
- }
+}
 
- .post-meta {
+.post-meta {
  	padding-bottom: 25px;
- }
+}
 
- .page-feature {
+.page-feature {
  	img {
-  		border: solid;
-  		border-width: 1.5px;
   		width: 145px;
   		border-radius: 200px;
   		padding: 0px;
-  		margin-left: 40%;
+  		margin-left: 41%;
   		height: 145px;
   	}
- }
+}
 
  //contribute-container
 
 .contribute-container {
- 	background-color: #ff6347;
- 	height: 170px;
- 	width: 100%;
+ 	background-color: #71BFF5;
+ 	height: 280px;
+ 	display: block;
  	padding: 0px;
  	margin: 0px;
- 	line-height:0px	
- }
+ 	line-height: 50px;
+ 	padding-top: 15px;
+ 	overflow: scroll;
+}
 
- .container-text {
- 	color: #fff;
- 	line-height: 51px;
- }
-
- .container-head {
+.container-head {
  	text-align: center;
- }
+ 	font-size: 26px;
+ 	font-weight: 400px;
+ 	color: #fff;
+ 	display: block;
+}
+
+.container-text {
+ 	li, .a:visited {
+ 		list-style: none;
+ 		color: #fff;
+ 		text-align: center;
+ 		width: 200px;
+ 		margin-top: 20px;
+ 		border: solid;
+ 		border-color: #fff;
+ 		border-width: 2.5px;
+ 		display: block;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 	}
+ 		a {
+ 			color: #fff;
+ 		}	
+ 			ul, ol {
+ 			margin-left: 0px;
+ 		}
+}
 
 //footer
 
-.site-footer { 
+.site-footer {
 	 background: #5a5a5a;
 	 color: #fff;
+	 overflow: hidden;
 		 a, .a:visited {
 			color: #fff;
-		 }
- }
+		}
+}
+
+.site-footer {
+	.footer-list {
+		li{
+			display: inline;
+			padding: 10px;
+			float: right;
+		}
+			.footer-heading {
+				float: left;
+			}
+	}
+}
+
+.site-footer {
+	.wrapper {
+		margin-right: 0px;
+		margin-left: 0px;
+		padding-left: 30px;
+		padding-right: 0px;
+	}
+}
+
+@media(max-width: 700px) {
+	.site-footer {
+		.footer-list {
+			li {
+				display: block;
+				float: none;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+			}
+				.footer-heading {
+					overflow: scroll;  
+					display: block;
+					text-align: center;
+					float: none;
+				}
+		}
+	}
+}
+
+
