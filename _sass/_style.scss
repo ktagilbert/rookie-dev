@@ -1,10 +1,32 @@
+//variables
+
+$header-align: center;
+$container-color: #fff;
+$large: 80px; 
+$rookie-blue: #71BFF5; 
+
+//extend
+
+.split-margin {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-image {
+	width: 145px;
+  	border-radius: 100%;
+  	padding: 0px;
+  	margin-left: 41%;
+  	height: 145px;
+}
+
 //header
 
 .site-header {
 	border-bottom: 0px;
 	padding-left: 10px;
 	border-top: 0px;
-	padding-bottom: 80px;
+	padding-bottom: $large;
 }
 
 .site-title, .site-title:visited {
@@ -30,7 +52,7 @@
 	border-bottom: solid;
 
 	#heading-emphasis {
-		color: #71BFF5;
+		color: $rookie-blue;
 		font-style: italic;
 	}
 }
@@ -39,7 +61,7 @@
 
 .post-list {
 	li {
-		padding-top: 80px;
+		padding-top: $large;
 	}
 }
 
@@ -53,117 +75,107 @@
 .post-title {
 	font-family: georgia;
 	padding-top: 40px;
-	text-align: center;
+	text-align: $header-align;
 }
 
 .post-meta {
  	padding-bottom: 25px;
 }
 
+//page elements
+
 .page-feature {
  	img {
-  		width: 145px;
-  		border-radius: 200px;
-  		padding: 0px;
-  		margin-left: 41%;
-  		height: 145px;
+  		@extend .page-image; //rounded image above a page-header
   	}
 }
 
  //contribute-container
 
 .contribute-container {
- 	background-color: #71BFF5;
+ 	background-color: $rookie-blue;
  	height: 280px;
  	display: block;
  	padding: 0px;
  	margin: 0px;
  	line-height: 50px;
  	padding-top: 15px;
- 	overflow: scroll;
 }
 
 .container-head {
- 	text-align: center;
+ 	text-align: $header-align;
  	font-size: 26px;
  	font-weight: 400px;
- 	color: #fff;
+ 	color: $container-color;
  	display: block;
+ 	padding-top: 18px;
 }
 
 .container-text {
  	li, .a:visited {
  		list-style: none;
- 		color: #fff;
- 		text-align: center;
- 		width: 200px;
+ 		color: $container-color;
+ 		text-align: $header-align;
+ 		width: 210px;
  		margin-top: 20px;
- 		border: solid;
- 		border-color: #fff;
- 		border-width: 2.5px;
+ 		border: solid 2.5px #fff;
  		display: block;
- 		margin-left: auto;
- 		margin-right: auto;
- 	}
- 		a {
- 			color: #fff;
- 		}	
- 			ul, ol {
- 			margin-left: 0px;
- 		}
+ 		padding: 5px;
+ 		@extend .split-margin;
+ 	}	
+}
+
+.button {
+		color: $container-color;
 }
 
 //footer
 
 .site-footer {
 	 background: #5a5a5a;
-	 color: #fff;
-	 overflow: hidden;
+	 color: $container-color;
+	 height: 200px;
+	 overflow: scroll;
 		 a, .a:visited {
-			color: #fff;
+			color: $container-color;
 		}
 }
 
-.site-footer {
-	.footer-list {
-		li{
-			display: inline;
-			padding: 10px;
-			float: right;
-		}
-			.footer-heading {
-				float: left;
-			}
+.footer-list {
+	li {
+		display: inline;
+		padding: 10px;
+		float: right;
 	}
-}
-
-.site-footer {
-	.wrapper {
-		margin-right: 0px;
-		margin-left: 0px;
-		padding-left: 30px;
-		padding-right: 0px;
+	.footer-heading {
+			float: left;
+	}
+		.wrapper {
+			@extend .split-margin;
+			padding-left: 30px;
+			padding-right: 0px;
 	}
 }
 
 @media(max-width: 700px) {
 	.site-footer {
-		.footer-list {
-			li {
-				display: block;
-				float: none;
-				text-align: center;
-				margin-right: auto;
-				margin-left: auto;
-			}
-				.footer-heading {
-					overflow: scroll;  
-					display: block;
-					text-align: center;
-					float: none;
-				}
+		.footer-list {		
+			display: block;
+			float: none;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.footer-heading {
+			overflow: scroll;  
+			display: block;
+			text-align: $header-align;
+			float: none;
 		}
 	}
 }
 
-
+//When screen gets to 700 width, I needed a way to collapse the list into a block v. 
+//inline block. margins center the list even when viewed on a smaller screen.
+//Overflow allows all of of the list items to still appear on the screen within 
+//the reduced width. 
