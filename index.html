@@ -4,22 +4,31 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading"><span id="heading-emphasis">Let's Learn</span> About Web Development</h1>
+  <h1 class="page-heading">
+    <span id="heading-emphasis">Let's Learn</span> About Web Development
+  </h1>
 
+ 
+<div class="main-content">
   <ul class="post-list">
+    <img src ="/assets/navicon-round.svg/" class="navicon"/> 
+    <ul class="side-categories">
+      <li><a href="">CSS</a></li>
+      <li><a href="">HTML</a></li>
+      <li><a href="">JS/Jquery</a></li>
+      <li><a href="">Miscellaneous</a></li> 
+  </ul>   
+     
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <li><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 
-        <p>{{ post.excerpt }}</p>
+        <p>{{ post.excerpt }}</p> 
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+</div>
 </div>

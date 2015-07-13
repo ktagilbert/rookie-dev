@@ -9,4 +9,18 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alice" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+  		$( document ).ready(function() {
+        $(function() {     
+          $('.navicon').on('click',function(event) {
+            event.preventDefault();
+            $('.side-categories').show();
+      });
+    });
+	 </script>
+
 </head>
