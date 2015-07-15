@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rookie Dev</title>
+    <description></description>
+    <link>http://127.0.0.1:4000/</link>
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 15 Jul 2015 15:46:46 -0700</pubDate>
+    <lastBuildDate>Wed, 15 Jul 2015 15:46:46 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Learning About JavaScript</title>
+        <description>&lt;h1 id=&quot;operators&quot;&gt;Operators&lt;/h1&gt;
+&lt;p&gt;Operators help you do do math. So you have basic, addition, subtraction, multiplication, division principles and you write them in the same way they are displayed on a calculator.&lt;/p&gt;
+
+&lt;p&gt;Then, you also have symbols for remainder, greater than, lesser than, equal to, greater than or equal to, etc. You can go back to your high school Algebra II class to remember these symbols. I learned most of these symbols when learning about logarithms.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;——–&lt;/td&gt;
+      &lt;td&gt;—————————–&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;%&lt;/td&gt;
+      &lt;td&gt;remainder&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;==&lt;/td&gt;
+      &lt;td&gt;equal to&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;&lt;/td&gt;
+      &lt;td&gt;greater than&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;&lt;/td&gt;
+      &lt;td&gt;lesser than&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;=&lt;/td&gt;
+      &lt;td&gt;greater than or equal to&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;=&lt;/td&gt;
+      &lt;td&gt;lesser than or equal to&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!=&lt;/td&gt;
+      &lt;td&gt;not equal to&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;——–&lt;/td&gt;
+      &lt;td&gt;—————————–&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Also, if you have an undefined value, you will get Null or NAN (not a number)&lt;/p&gt;
+
+&lt;p&gt;There are also things called logical operators. They are “and,” “or,” and “not.”&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&amp;amp;&amp;amp; “and” (true only if both values given are true)&lt;/li&gt;
+  &lt;li&gt;“or” (true if one or both values are true)&lt;/li&gt;
+  &lt;li&gt;!= “not” (not equal to)&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 06 Jul 2015 05:19:21 -0700</pubDate>
+        <link>http://127.0.0.1:4000/lessons/2015/07/06/learning-js.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/lessons/2015/07/06/learning-js.html</guid>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+      <item>
+        <title>How to Make a Simple Navigation Menu From Scratch</title>
+        <description>&lt;p&gt;Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. &lt;strong&gt;What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;start-by-learning-some-general-principles&quot;&gt;Start by Learning Some General Principles&lt;/h2&gt;
+&lt;p&gt;If you are like me and don’t know much about web development or these three languages, you may approach problem of making a navigation bar by looking at a tutorial and just copying their examples and pasting them into a text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? &lt;em&gt;Spending some time to really learn the basic principles of the language you are working in can be super helpful.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. &lt;strong&gt;You might want to try doing the same and really hammering down these ideas:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The difference between a class and an id in CSS&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HTML syntax - just how to write it, what tags are, etc. You may want to try going over some common things you can do in HTML such as building a list, making text bold, or creating a header. &lt;em&gt;Definitely, go over what divs and span tags are!&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Some basic JavaScript functions. Maybe, learn what a function is as well.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;how-to-approach-the-problem-of-creating-a-menu-for-your-page&quot;&gt;How to Approach the Problem of Creating a Menu For Your Page&lt;/h1&gt;
+&lt;p&gt;-In my case, I focused on HTML and CSS solutions first. So, you can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for one to use):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Page 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Page 2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Page 3&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Okay great, these are the pages that you are going to be listed in your menu! Pretty awesome, right? Next, you are just going to think about how to make these “pages” look and function they way you want them to work.&lt;/li&gt;
+  &lt;li&gt;You can think about what to do in steps to make it easier if you want. I personally found approaching the process piece-by-piece easier to manage. It helped me become less overwhelmed by the task.&lt;/li&gt;
+  &lt;li&gt;One place you could start is by thinking about the fact that these “pages” should be able to be click-able - you should be able to click on them to go to that page. Meaning, they should be linked. You can add the a href tag to your list to make this happen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page 2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page 3&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’ve put “#” in the place of an actual link for now because I don’t have content or links for these pages yet. You may not never put a link here (For example, if you have content that just loads (or becomes unhidden) on the page when you click on the element).&lt;/li&gt;
+  &lt;li&gt;So now, depending on what you want the menu to do and look like, you can think about what to do next.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;here-are-some-ideas-for-how-you-may-want-your-menu-to-look&quot;&gt;Here are some ideas for how you may want your menu to look&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;You may want the menu items to be laid out horizontally across your page.&lt;/li&gt;
+  &lt;li&gt;Maybe you will want a menu item should to simply display specific content when clicked. Well, you can do that with JavaScript&lt;/li&gt;
+  &lt;li&gt;You could simply think about the style of the menu.
+    &lt;ul&gt;
+      &lt;li&gt;Maybe you want the menu to have a background color&lt;/li&gt;
+      &lt;li&gt;Or, you want to change the font-size, font-color, or font-family of your text.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;css-properties-that-may-help&quot;&gt;CSS Properties That May Help&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;font-size:&lt;/strong&gt; 
+  font-size: 12px
+  font-size: 8px&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;color:&lt;/strong&gt; 
+	color: #fff
+	color: #d3d3d3
+	color: #000000&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;font-family:&lt;/strong&gt; 
+	font-family: georgia, sans-serif  (note: consider having a &lt;a href=&quot;http://www.w3schools.com/cssref/css_websafe_fonts.asp&quot;&gt;fall-back font&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;text-transform:&lt;/strong&gt;
+	text-transform: uppercase
+	text-transform: lowercase
+	text-transform: capitalize&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;background:&lt;/strong&gt; (change the color of an element’s background) }&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;text-align:&lt;/strong&gt;
+	text-align: right
+	text-align: left
+	text-align: center&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;display&lt;/strong&gt;: inline (for horizontal menu items for example) 
+&lt;strong&gt;letter-spacing&lt;/strong&gt; (change the kerning)&lt;/p&gt;
+
+&lt;p&gt;For more CSS properties, you can also &lt;a href=&quot;http://www.w3schools.com/cssref/&quot;&gt;check out W3Schools&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;One thing I can’t help but share:&lt;/strong&gt; I ran into a problem with CSS while working on my my practice menu. I wanted the menu to look great on a computer, tablet, or mobile device. Yet, when the width of my page got to a certain point, the menu looked ugly. I asked for help and got an awesome solution in return.&lt;/p&gt;
+
+&lt;p&gt;You can actually create a rule that says “hey, when the width of  someone’s screen gets to “x width,” I want something special to happen. In this example, I wanted an element on my menu to disappear and to make room for other items to appear nicely on a smaller screen. So cool, right?! It looks like this in case you want to try it for yourself.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;545px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+	&lt;span class=&quot;nf&quot;&gt;#site-title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In the end, I created a test site that looks like like this:
+&lt;img src=&quot;http://127.0.0.1:4000/assets/test-menu.jpg&quot; alt=&quot;creating a menu from scratch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, in my case I worked mostly with HTML and CSS to build a menu. I just wanted to make something simple and didn’t want to spend a lot of time coming up with solutions in JavaScript that I could have otherwise solved with just HTML and CSS.&lt;/p&gt;
+
+&lt;p&gt;Remember, if you are have any trouble you can always Google specific solutions or questions you may have while building out your nav menu. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 24 Jun 2015 09:32:21 -0700</pubDate>
+        <link>http://127.0.0.1:4000/lessons/2015/06/24/nav-bar.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/lessons/2015/06/24/nav-bar.html</guid>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+  </channel>
+</rss>

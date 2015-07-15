@@ -5,21 +5,12 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">
-    <span id="heading-emphasis">Let's Learn</span> About Web Development
+    <span id="heading-emphasis">A Place To Learn</span> About Web Development
   </h1>
 
  
 <div class="main-content">
-  <ul class="post-list">
-    <img src ="/assets/navicon-round.svg/" class="categories-dropdown"/> 
-    <br>
-    <br>
-    <ul class="side-categories">
-      <li><a href="">CSS</a></li>
-      <li><a href="">HTML</a></li>
-      <li><a href="">JS/Jquery</a></li>
-      <li><a href="">Miscellaneous</a></li> 
-    </ul>   
+  <ul class="post-list"> 
      
     {% for post in site.posts %}
       <li><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
