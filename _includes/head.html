@@ -14,13 +14,16 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-  		$( document ).ready(function() {
+  		$(document).ready(function() {
         $(function() {     
-          $('.navicon').on('click',function(event) {
+          $('.categories-dropdown').on('mouseover', (function (event) {
             event.preventDefault();
-            $('.side-categories').show();
+          $('.side-categories').show();
+          }));
+        });
+        $(".categories-dropdown").mouseleave(function(){
+          $(".side-categories").hide()
+        });
       });
-    });
 	 </script>
-
 </head>
