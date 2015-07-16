@@ -79,7 +79,6 @@ $rookie-blue: #40a9f2;
 .categories-dropdown, img {
 	width: 30px;
 	float: left;
-	cursor: pointer;
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-right: 30px;	
@@ -226,6 +225,7 @@ $rookie-blue: #40a9f2;
 	}
 	li a:hover {
 		font-size: 16px;
+	
 	}
 	.footer-heading {
 		float: left;
@@ -236,6 +236,16 @@ $rookie-blue: #40a9f2;
 		padding-right: 0px;
 	}
 }
+
+#design-by {
+	color: #fff;
+	font-family: "Alice";
+	font-size: 12px;
+	float: right;
+	margin: 30px;
+	padding-top: 50px
+}
+
 
 @media(max-width: 870px) {
 	.site-footer {

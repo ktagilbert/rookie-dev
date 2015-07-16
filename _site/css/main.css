@@ -504,7 +504,6 @@ pre {
 .categories-dropdown, img {
   width: 30px;
   float: left;
-  cursor: pointer;
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 30px;
@@ -624,6 +623,14 @@ a:hover {
 .footer-list .wrapper {
   padding-left: 30px;
   padding-right: 0px; }
+
+#design-by {
+  color: #fff;
+  font-family: "Alice";
+  font-size: 12px;
+  float: right;
+  margin: 30px;
+  padding-top: 50px; }
 
 @media (max-width: 870px) {
   .site-footer .footer-list li {
