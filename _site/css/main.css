@@ -499,6 +499,7 @@ pre {
   font-style: italic; }
 
 .nav-alt {
+  z-index: 100000;
   display: none; }
 
 .categories-dropdown, img {
@@ -508,7 +509,7 @@ pre {
   padding-top: 10px;
   padding-right: 30px;
   position: absolute;
-  z-index: 1;
+  z-index: 100000;
   padding-bottom: 30px; }
 
 .side-categories {

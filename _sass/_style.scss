@@ -70,6 +70,7 @@ $rookie-blue: #40a9f2;
 
 
 .nav-alt {
+	z-index: 100000;
 	display: none;
 }
 
@@ -83,7 +84,7 @@ $rookie-blue: #40a9f2;
 	padding-top: 10px;
 	padding-right: 30px;	
 	position: absolute;
-	z-index: 1;
+	z-index: 100000;
 	padding-bottom: 30px;
 }	
 

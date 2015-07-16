@@ -27,6 +27,17 @@
           $('.categories-dropdown').show();
         });
 
+        $('.categories-dropdown').on('click', function() {
+          $('.side-categories, .nav-alt').show();
+          $('.categories-dropdown').hide();
+        })
+
+        $('.nav-alt').on('click', function() {
+          $('.side-categories, .nav-alt').hide();
+          $('.categories-dropdown').show();
+        })
+
+
       });
 	 </script>
 </head>
