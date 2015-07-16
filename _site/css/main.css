@@ -110,16 +110,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(75% - (30px * 2));
-  max-width: calc(75% - (30px * 2));
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(75% - (30px));
-      max-width: calc(75% - (30px));
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -466,6 +466,8 @@ pre {
 
 .site-title, .site-title:visited {
   padding-left: 50px;
+  padding-top: auto;
+  padding-bottom: auto;
   float: left;
   font-family: arial;
   font-size: 20px;
@@ -478,15 +480,9 @@ pre {
 .site-title:hover {
   color: #FFCC00; }
 
-.site-nav .page-link {
-  font-size: 16px;
-  padding-right: 30px;
-  color: #fff; }
-.site-nav a:hover {
-  color: #FFCC00; }
-
 .page-heading {
   color: #fff;
+  text-shadow: 0px 1px 2px #111;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 0px;
@@ -498,23 +494,31 @@ pre {
 #heading-emphasis {
   font-style: italic; }
 
+.site-nav .page-link {
+  font-size: 16px;
+  padding-right: 30px;
+  color: #fff; }
+.site-nav a:hover {
+  color: #FFCC00; }
+
 .nav-alt {
   z-index: 100000;
-  display: none; }
+  display: none;
+  width: 30px;
+  position: absolute; }
 
-.categories-dropdown, img {
+.categories-dropdown {
   width: 30px;
   float: left;
   padding-left: 10px;
   padding-top: 10px;
-  padding-right: 30px;
   position: absolute;
   z-index: 100000;
   padding-bottom: 30px; }
 
 .side-categories {
   display: none;
-  width: 20%;
+  width: 17%;
   float: left;
   background: #fff;
   list-style: none;
@@ -541,12 +545,26 @@ a:hover {
   color: #191330;
   font-size: 18px; }
 
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.post-content {
+  margin-right: 15%;
+  margin-left: 15%;
+  opacity: 1;
+  z-index: 100000;
+  margin-bottom: 0px; }
+
 .post-meta {
   text-align: center; }
 
-.post-content {
-  padding-left: 20%;
-  padding-right: 20%; }
+.post-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center; }
 
 .post-list {
   padding-top: 30px;
@@ -563,12 +581,36 @@ a:hover {
   color: #5a5a5a;
   font-weight: 900; }
 
-.post-title {
-  font-family: "Nunito", sans-serif;
-  font-size: 50px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center; }
+.post {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  background: url("/assets/portland.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.about-greeting {
+  padding-left: 10px;
+  font-family: "Nunito";
+  color: #fff;
+  font-size: 28px;
+  height: 300px;
+  text-shadow: 3px 3px 2px #111;
+  overflow: hidden; }
+
+.about-content {
+  float: right;
+  width: 60%;
+  background-color: #d3d3d3;
+  opacity: 0.7;
+  margin-right: 10px;
+  height: 300px;
+  padding-top: 15px;
+  padding-left: 20px; }
+  .about-content li {
+    padding: 5px; }
 
 .contribute-container {
   background-color: #40a9f2;
@@ -606,19 +648,19 @@ a:hover {
   text-align: center; }
 
 .site-footer {
-  background: #5a5a5a;
+  background: #112;
   color: #fff;
-  height: 200px;
-  overflow: scroll; }
+  height: 320px; }
   .site-footer a, .site-footer a:visited {
     color: #fff; }
 
 .footer-list li {
   display: inline;
   padding: 10px;
-  float: right; }
+  float: right;
+  color: #fff; }
 .footer-list li a:hover {
-  font-size: 16px; }
+  color: #40a9f2; }
 .footer-list .footer-heading {
   float: left; }
 .footer-list .wrapper {
@@ -641,7 +683,6 @@ a:hover {
     margin-left: auto;
     margin-right: auto; }
   .site-footer .footer-list .footer-heading {
-    overflow: scroll;
     display: block;
     text-align: center;
     float: none; } }
