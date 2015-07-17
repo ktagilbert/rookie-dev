@@ -91,7 +91,8 @@ $rookie-blue: #40a9f2;
 		float: left;
 		width: 100%;
 		color: #191330;
-	}	
+	}
+
 	li, .menu-link, .menu-link:visited {
 		font-size: 18px;
 		width: 100%;
@@ -157,6 +158,7 @@ $rookie-blue: #40a9f2;
   	height: 300px;
   	text-shadow: 3px 3px 2px #111;
   	overflow: hidden;
+  	font-weight: 600;
 }
 
 .about-content {
@@ -168,6 +170,11 @@ $rookie-blue: #40a9f2;
 	height: 300px;
 	padding-top: 15px;
 	padding-left: 20px;
+	font-weight: 600;
+
+	h2 {
+		font-weight: 600;
+	}
 
 	li {
 		padding: 5px;
@@ -184,19 +191,12 @@ $rookie-blue: #40a9f2;
  	line-height: 50px;
  	padding-top: 15px;
  	padding-bottom: 15px;
-}
 
-.container-head {
- 	text-align: $header-align;
- 	font-size: 26px;
- 	font-weight: 400px;
- 	color: $container-color;
- 	display: block;
- 	padding-top: 18px;
-}
+ 	li {
+ 		list-style: none;
+ 	}
 
- .container-text {
-	li, a:visited {
+ 	a {
 		list-style: none;
 		text-align: $header-align;
 		width: 210px;
@@ -206,11 +206,23 @@ $rookie-blue: #40a9f2;
 		padding: 5px;
 		color: #fff;
 		margin: auto;
+		border-radius: 5px;
 	}
-	li, a:hover {
-		color: #fff;
-		font-size: 16px;
+	a:hover {
+		background-color: #fff;
+		color: $rookie-blue;
+		font-weight: 500;
 	}
+}
+
+.container-head {
+ 	text-align: $header-align;
+ 	font-size: 26px;
+ 	font-weight: 400px;
+ 	color: $container-color;
+ 	display: block;
+ 	padding-top: 18px;
+ 	padding-bottom: 18px;
 }
 
 //footer
@@ -219,6 +231,7 @@ $rookie-blue: #40a9f2;
 	background: #112;
 	color: $container-color;
 	height: 320px;
+	position: static;
 
 	a, a:visited {
 		color: $container-color;
@@ -254,7 +267,7 @@ $rookie-blue: #40a9f2;
 	padding-top: 50px;
 }
 
-@media(max-width: 870px) {
+@media(max-width: 720px) {
 	.site-footer {
 		.footer-list {
 			li {		
@@ -295,6 +308,8 @@ $rookie-blue: #40a9f2;
 @media(max-width: 760px) {
 	.about-content {
 		font-size: 14px;
+		width: initial;
+		padding-right: 40px;
 	}
 }
 

@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #A31E39;
   text-decoration: none; }
   a:visited {
     color: #7D7D7D; }
@@ -158,7 +157,7 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid;
   padding: 30px 0; }
 
 .footer-heading {
@@ -533,7 +532,8 @@ img {
   font-size: 28px;
   height: 300px;
   text-shadow: 3px 3px 2px #111;
-  overflow: hidden; }
+  overflow: hidden;
+  font-weight: 600; }
 
 .about-content {
   float: right;
@@ -543,7 +543,10 @@ img {
   margin-right: 10px;
   height: 300px;
   padding-top: 15px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  font-weight: 600; }
+  .about-content h2 {
+    font-weight: 600; }
   .about-content li {
     padding: 5px; }
 
@@ -555,6 +558,23 @@ img {
   line-height: 50px;
   padding-top: 15px;
   padding-bottom: 15px; }
+  .contribute-container li {
+    list-style: none; }
+  .contribute-container a {
+    list-style: none;
+    text-align: center;
+    width: 210px;
+    margin-top: 20px;
+    border: solid 4px #fff;
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: auto;
+    border-radius: 5px; }
+  .contribute-container a:hover {
+    background-color: #fff;
+    color: #40a9f2;
+    font-weight: 500; }
 
 .container-head {
   text-align: center;
@@ -562,26 +582,14 @@ img {
   font-weight: 400px;
   color: #fff;
   display: block;
-  padding-top: 18px; }
-
-.container-text li, .container-text a:visited {
-  list-style: none;
-  text-align: center;
-  width: 210px;
-  margin-top: 20px;
-  border: solid 4px #fff;
-  display: block;
-  padding: 5px;
-  color: #fff;
-  margin: auto; }
-.container-text li, .container-text a:hover {
-  color: #fff;
-  font-size: 16px; }
+  padding-top: 18px;
+  padding-bottom: 18px; }
 
 .site-footer {
   background: #112;
   color: #fff;
-  height: 320px; }
+  height: 320px;
+  position: static; }
   .site-footer a, .site-footer a:visited {
     color: #fff; }
 
@@ -607,7 +615,7 @@ img {
   margin: 30px;
   padding-top: 50px; }
 
-@media (max-width: 870px) {
+@media (max-width: 720px) {
   .site-footer .footer-list li {
     display: block;
     float: none;
@@ -630,4 +638,6 @@ img {
     font-size: 12px; } }
 @media (max-width: 760px) {
   .about-content {
-    font-size: 14px; } }
+    font-size: 14px;
+    width: initial;
+    padding-right: 40px; } }

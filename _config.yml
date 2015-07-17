@@ -6,6 +6,7 @@ url: "http://www.rookie-dev.com" # the base hostname & protocol for your site
 twitter_username: Kt_a_Gilbert
 github_username:  ktagilbert
 time: "2015-07-15 19:50:33 -0700"
+page_path: /title/category/
 
 # Build settings
 markdown: kramdown
