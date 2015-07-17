@@ -325,6 +325,18 @@ img {
 	}
 }
 
+@media(max-width: 760px) {
+	.about-greeting {
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 760px) {
+	.about-content {
+		font-size: 14px;
+	}
+}
+
 //When screen gets to 700 width, I needed a way to collapse the list into a block v. 
 //inline block. margins center the list even when viewed on a smaller screen.
 //Overflow allows all of of the list items to still appear on the screen within 

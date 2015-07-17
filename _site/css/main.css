@@ -693,3 +693,9 @@ img {
   .side-categories {
     width: 100%;
     overflow: hidden; } }
+@media (max-width: 760px) {
+  .about-greeting {
+    font-size: 12px; } }
+@media (max-width: 760px) {
+  .about-content {
+    font-size: 14px; } }
