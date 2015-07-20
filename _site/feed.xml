@@ -10,70 +10,115 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Learning About JavaScript</title>
-        <description>&lt;h1 id=&quot;operators&quot;&gt;Operators&lt;/h1&gt;
-&lt;p&gt;Operators help you do do math. So you have basic, addition, subtraction, multiplication, division principles and you write them in the same way they are displayed on a calculator.&lt;/p&gt;
+        <title>How to Start Learning SCSS</title>
+        <description>&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the Gap Between CSS and SASS&lt;/h2&gt;
 
-&lt;p&gt;Then, you also have symbols for remainder, greater than, lesser than, equal to, greater than or equal to, etc. You can go back to your high school Algebra II class to remember these symbols. I learned most of these symbols when learning about logarithms.&lt;/p&gt;
+&lt;p&gt;Rookie Dev here is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. About midway through, after performing what seemed to me like a million git commands, he paused and looked up at me saying “well, I’m really sorry and I’m not sorry.”&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;——–&lt;/td&gt;
-      &lt;td&gt;—————————–&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;%&lt;/td&gt;
-      &lt;td&gt;remainder&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;==&lt;/td&gt;
-      &lt;td&gt;equal to&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;gt;&lt;/td&gt;
-      &lt;td&gt;greater than&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;&lt;/td&gt;
-      &lt;td&gt;lesser than&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;gt;=&lt;/td&gt;
-      &lt;td&gt;greater than or equal to&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;=&lt;/td&gt;
-      &lt;td&gt;lesser than or equal to&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;!=&lt;/td&gt;
-      &lt;td&gt;not equal to&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;——–&lt;/td&gt;
-      &lt;td&gt;—————————–&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;“Why?” I asked?&lt;/p&gt;
 
-&lt;p&gt;Also, if you have an undefined value, you will get Null or NAN (not a number)&lt;/p&gt;
+&lt;p&gt;“You’re going to have to learn SCSS. It’s a good thing though! I don’t know it but employers will really like that you know it.”&lt;/p&gt;
 
-&lt;p&gt;There are also things called logical operators. They are “and,” “or,” and “not.”&lt;/p&gt;
+&lt;p&gt;“Okay….”&lt;/p&gt;
+
+&lt;p&gt;I had no idea what SCSS was. My SO’s reaction just made it seem like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It turns out that SCSS is not that difficult.&lt;/p&gt;
+
+&lt;p&gt;When I attended OS Bridge, I spent one day just job shadowing some other developers. We sat in a spare room together. They worked on their team’s project, while I pulled open my computer and read up on SASS. I just typed in “learning SASS” into Google and was directed to &lt;a href=&quot;http://sass-lang.com/&quot;&gt;sass-lang.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The words “CSS with Superpowers” appeared on my screen.&lt;/p&gt;
+
+&lt;p&gt;It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! &lt;strong&gt;Here I am going to show you some basics to help you get started with SCSS.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You will learn three cool things:
+1. How SCCS does nesting
+2. How to Use Variables
+3. What an Extend Is&lt;/p&gt;
+
+&lt;h1 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h1&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.nav-list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#d3d3d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Okay, cool. Here we have some CSS that basically says, hey ‘for all headers, make the font-family Georgia and the color black.’ Below that we have some nested rules. The list items under the class “nav-list” all be a light-grey color. Alright, nice. Now, let’s write the same thing using SASS.&lt;/p&gt;
+
+&lt;h3 id=&quot;nesting-with-scss&quot;&gt;1. Nesting with SCSS&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#111&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.nav-list&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#d3d3d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the &lt;a href=&quot;http://writingcenter.fas.harvard.edu/pages/outlining&quot;&gt;Harvard Outline&lt;/a&gt; looks. Maybe that’s the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway.&lt;/p&gt;
+
+&lt;p&gt;This part of SCSS is easy and I like it better personally.&lt;/p&gt;
+
+&lt;h3 id=&quot;variables&quot;&gt;2. Variables&lt;/h3&gt;
+
+&lt;p&gt;SCSS also introduces the idea of variables. Here’s an example from my own stylesheet:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;header-align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;container-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;large&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;rookie-blue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#40a9f2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here I basically have some rules:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&amp;amp;&amp;amp; “and” (true only if both values given are true)&lt;/li&gt;
-  &lt;li&gt;“or” (true if one or both values are true)&lt;/li&gt;
-  &lt;li&gt;!= “not” (not equal to)&lt;/li&gt;
+  &lt;li&gt;header align stands in for text-align center.&lt;/li&gt;
+  &lt;li&gt;texts within a container will appear white&lt;/li&gt;
+  &lt;li&gt;“large” stands in for padding: 80px&lt;/li&gt;
+  &lt;li&gt;$rookie-blue is my brand color&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;I can use these rules inside my style sheet to save myself some time and keep some of my style properties uniform across the site here.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.container-head&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;22px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;extend&quot;&gt;Extend&lt;/h3&gt;
+
+&lt;p&gt;Next, SCSS introduces the idea of an extend. Meaning, you can assign a block of code to a variable. Here’s an example.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@extend&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.image-header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;145px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;145px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This block shows the properties I have assigned to a rounded image at the top of a page. With my extend defined, I can later add a similar image header just by typing in @extend .image-header as if it was another property. &lt;strong&gt;This way, you can include large chunks of style properties that you know you will be using again later just by typing @extend followed by the name you assign to your block code.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;why-use-scss&quot;&gt;Why use SCSS?&lt;/h3&gt;
+&lt;p&gt;SCSS is really a bridging tool to help you get comfortable with SASS. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into SASS. &lt;strong&gt;In any file with .scss, you can set style rules using SASS, CSS, or SCSS as seen here.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS &lt;a href=&quot;http://sass-lang.com/guide&quot;&gt;here&lt;/a&gt; if you are interested. Let me know how it goes for you!&lt;/p&gt;
+
 </description>
-        <pubDate>Mon, 06 Jul 2015 05:19:21 -0700</pubDate>
-        <link>http://127.0.0.1:4000//lessons/2015/07/06/learning-js.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//lessons/2015/07/06/learning-js.html</guid>
+        <pubDate>Mon, 20 Jul 2015 09:32:21 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2015/07/20/sass.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2015/07/20/sass.html</guid>
         
-        
-        <category>lessons</category>
         
       </item>
     
@@ -189,8 +234,6 @@
         <pubDate>Wed, 24 Jun 2015 09:32:21 -0700</pubDate>
         <link>http://127.0.0.1:4000//2015/06/24/nav-bar.html</link>
         <guid isPermaLink="true">http://127.0.0.1:4000//2015/06/24/nav-bar.html</guid>
-        
-        <category>html</category>
         
         
       </item>

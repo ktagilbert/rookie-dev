@@ -143,12 +143,19 @@ img {
 
 .post-title {
     font-size: 50px;
+    color: #fff;
     padding-top: 40px;
-    padding-bottom: 40px;
     text-align: center;
     letter-spacing: -1px;
     line-height: 1;
-
+    background-color: #40a9f2;
+    padding-bottom: 200px;
+    opacity: 0.9;
+    z-index: -1000;
+    position: relative;
+    font-family: "Lato";
+    letter-spacing: 1px;
+   
     @include media-query($on-laptop) {
         font-size: 36px;
     }
@@ -158,11 +165,14 @@ img {
     margin-bottom: $spacing-unit;
 
     h1 {
-        padding-top: 15px
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
 
     h2 {
         font-size: 32px;
+        padding-top: 15px;
+        padding-bottom: 20px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -171,6 +181,8 @@ img {
 
     h3 {
         font-size: 26px;
+        padding-top: 15px;
+        padding-bottom: 20px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
