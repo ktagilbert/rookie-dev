@@ -1,0 +1,178 @@
+/* General form styles --use wherever forms are used - cfp, surveys, registration */
+#mid { font-size: 15px; font-size: 1.5rem; line-height: 18px; line-height: 1.8rem; }
+form {margin: 0 0 20px; margin: 0 0 2rem; }
+div.en_form_section {margin: 15px 0; margin: 1.5rem 0; }
+div.en_field {margin: 0 5px 10px 0; margin: 0 0.5rem 1rem 0; font-size: 14px; font-size: 1.4rem; }
+div.en_field label {font-weight: bold; }
+div.en_field label.en_lateral {font-weight: normal; }
+span.en_required {color: red; }
+span.en_gray {background-color: #e7e7e7; }
+div.en_delete_button {margin-top: 5px; margin-top: 0.5rem; }
+div.en_field input[readonly] {border: 0; opacity: 0.4; }
+input, select, textarea {font-size: 13px; font-size: 1.3rem; }
+#mid .en_question_group {border: #ccc 1px solid; padding: 0 20px; padding: 0 2rem; margin-bottom: 20px; margin-bottom: 2rem; background: #f0f0f0; }
+#mid .en_question_group.en_groupless_questions {background: none; border: none; padding: 0; }
+#mid .en_question_group p { font-size: 12px; font-size: 1.2rem; }
+#mid .en_question_group h3 {margin-left: 0; }
+#en_main #mid .en_form_section h3 {margin-left: 0; }
+/* tag matching */
+.tagMatches {margin-top: 5px; margin-top: 0.5rem; margin-bottom: 5px; margin-bottom: 0.5rem; }
+.tagMatches span {padding: 2px; padding: 0.2rem; margin-right: 4px; margin-right: 0.4rem; background-color: #444; -moz-border-radius: 6px; -webkit-border-radius: 6px; font-size: 9px; font-size: 0.9rem; color: #fff; cursor: pointer; }
+/* inline tag editing */
+.en_proposal_tags_view:hover {background-color: #eee; cursor: pointer; }
+.en_proposal_tags_edit {display: none; }
+.en_tag_save, .en_tag_cancel {cursor: pointer; }
+/* stuff for user photo cropper */
+#en_photo_wrapper, #en_photo_container {position: relative; }
+#en_crop_area {position: absolute; top: 0; left: 0; height: 100px; width: 75px; }
+.ui-resizable-knob {border: 1px #888 dashed; }
+#en_proposal_speaker_table {width: auto; }
+#en_proposal_speaker_table td {padding-right: 20px; padding-right: 2rem; }
+#en_proposal_speakers_reorder {display: none; }
+div.en_sortable {margin-top: 5px; margin-top: 0.5rem; margin-bottom: 5px; margin-bottom: 0.5rem; border: 1px solid #ddd; padding: 5px; padding: 0.5rem; font-weight: bold; cursor: pointer; }
+div.en_sortable_hover {border: 1px dotted black; background-color: #e7e7e7; }
+/* an attrib list is one where the headers are down the LHS */
+table.en_list-attrib {width: auto; }
+table.en_list-attrib th {text-align: left; }
+table.sortable th {cursor: pointer; }
+table.sortable th:hover {text-decoration: underline; }
+
+/* account dashboard styles */
+.en_dashboard_panel {margin-bottom: 5px; margin-bottom: 0.5rem; }
+.en_proposals_nav {padding-bottom: 5px; padding-bottom: 0.5rem; border-bottom: 1px solid #ddd; margin-bottom: 10px; margin-bottom: 1rem; }
+#en_user_tabs {padding: 0; margin-bottom: 10px; margin-bottom: 1rem; border-top: 1px solid #eee; overflow: hidden; }
+#en_user_tabs #en_user_tab_title {font-size: 17px; font-size: 1.7rem; font-weight: bold; padding: 8px; padding: 0.8rem; background: #ccc; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ background: linear-gradient(to bottom, white 0%, #cccccc 100%); /* W3C */ }
+#en_user_tabs #en_user_tab_nav {list-style-type: none; margin: 0 0 0 0; padding: 0px 4px 4px 6px; padding: 0px 0.4rem 0.4rem 0.6rem; }
+#en_user_tab_nav li {list-style-type: none; display: block; float: left; text-align: center; padding: 4px 4px 4px 4px; padding: 0.4rem 0.4rem 0.4rem 0.4rem; margin: 4px 4px 0 0; margin: 0.4rem 0.4rem 0 0; border: 0; background: #eee; }
+#en_user_tab_nav li.en_inactive a {color: #888; text-decoration: none; }
+#en_user_tab_nav li.en_inactive:hover {color: black; background: #ddd; text-decoration: none; }
+#en_user_tab_nav li.en_inactive a:hover {color: black; text-decoration: none; }
+#en_user_tab_nav li.en_active {color: black; background: #ddd; }
+#en_user_tab_nav li.en_active a {color: black; text-decoration: none; }
+#en_user_tab_nav li.en_active a:hover {text-decoration: underline; }
+
+/* proposal reviewing styles */
+body.en_c_reviewing div.en_review_proposal {margin-bottom: 10px; margin-bottom: 1rem; }
+body.en_c_reviewing div.en_review_proposal_speakers, body.en_c_reviewing div.en_review_proposal_proposer {font-style: italic; margin-bottom: 5px; margin-bottom: 0.5rem; }
+body.en_c_reviewing div.en_review_proposal_title {font-weight: bold; }
+body.en_c_reviewing div.en_review_proposal_grade {margin-left: 5px; margin-left: 0.5rem; margin-top: 5px; margin-top: 0.5rem; }
+body.en_c_reviewing #en_review_proposal_box {border: 1px solid #ddd; padding: 5px; padding: 0.5rem; }
+body.en_c_reviewing #en_review_proposal_metadata, body.en_c_reviewing div.en_review_proposal_metadata {font-size: 13px; font-size: 1.3rem; margin-bottom: 5px; margin-bottom: 0.5rem; }
+body.en_c_reviewing #en_review_reviews div.en_review_proposal_grade {margin: 5px 0; margin: 0.5rem 0; }
+body.en_c_reviewing #call {width: 200px; width: 20rem; }
+
+/* Styles for proposals in Dashboard */
+div.en_proposal_name {font-weight: bold; margin-bottom: 5px; margin-bottom: 0.5rem; }
+
+/* eval presentation to proposers */
+table.en_eval_survey tbody tr th, table.en_eval_survey tbody tr td {width: 100px; width: 10rem; border-bottom: 0; }
+div.en_evaluation {padding: 5px 0; padding: 0.5rem 0; border-top: 1px dotted #dedede; }
+div.en_evaluation div.eval_show_more {float: right; }
+span.en_evaluation_user {font-weight: bold; }
+div.en_evaluation_metadata {font-size: 12px; font-size: 1.2rem; }
+div.en_evaluation_comment {margin-top: 5px; margin-top: 0.5rem; margin-left: 20px; margin-left: 2rem; }
+div.en_evaluation div.eval_more {margin-left: 20px; margin-left: 2rem; margin-top: 5px; margin-top: 0.5rem; display: none; }
+#en_user_tabs.en_clearfix {padding-bottom: 10px; padding-bottom: 1rem; }
+div.en_proposals_group, table.en_list-data {width: 100%; }
+div.en_review_proposal_grade {padding: 10px; padding: 1rem; }
+div.en_review_proposal_grade:nth-child(even) {background-color: #eee; }
+div.en_review_proposal:nth-child(even) { background-color: #EEE; }
+
+/* for orders, review, and invoice pages */
+/* pretty table styles for registration and profile's orders list */
+table.en_list-block {border-collapse: collapse; }
+table.en_list-block tr th {font-weight: bold; font-size: 13px; font-size: 1.3rem; color: #666; padding: 4px; padding: 0.4rem; text-align: left; }
+table.en_list-block tr td {padding: 4px; padding: 0.4rem; }
+table.en_list-block tr.en_total {border-top: 2px solid #ccc; }
+table.en_list-block tr.en_vat {border-top: 2px solid #eee; }
+table.en_list-block tr.en_grand-total {background-color: #f7f7f7; border-top: 2px solid #FFCC33; color: #666; }
+table.en_list-data {width: 100%; border-collapse: collapse; }
+table.en_list-data tr th {font-weight: bold; font-size: 14px; font-size: 1.4rem; color: #121212; padding: 4px; padding: 0.4rem; text-align: left; border-bottom: 1px dotted #dedede; vertical-align: top; }
+table.en_list-data tr td {padding: 4px; padding: 0.4rem; border-bottom: 1px dotted #dedede; vertical-align: top; font-size: 14px; font-size: 1.4rem; }
+table.en_list-data tr.no-border td, table.en_list-data tr.no-border th {border-bottom: 0; }
+table.en_list-data tr td.en_list-data-right {border-right: 1px dotted #dedede; }
+tr.en_list-inactive td {padding: 4px; padding: 0.4rem; border-bottom: 1px solid #dedede; text-decoration: line-through; }
+tr.en_list-inactive td.en_nostrike {text-decoration: none; }
+table.en_list-data tr th.centered {text-align: center; }
+table.en_list-data tr td > p:first-child {margin-top: 0; }
+table.en_list-data tr td.rborder, table.en_list-data tr th.rborder {border-right: 1px solid #dedede; padding-right: 5px; padding-right: 0.5rem; }
+/* attendee directory styles */
+/* social networking styles */
+a.en_sn_link {font-weight: bold; }
+div.en_row_odd {background-color: #f0f0f0; }
+table.en_message {width: 100%; }
+.en_message {padding: 5px; padding: 0.5rem; border-bottom: 1px solid #ddd; }
+#en_mailbox_tabs {overflow: hidden; }
+#en_mailbox_messages {border-top: 4px solid #ddd; }
+.en_unread {background-color: #ffe; }
+.en_message_header {vertical-align: top; }
+div.en_message_subject {cursor: pointer; }
+div.en_message_sender {font-weight: bold; }
+.en_message_photo {width: 49px; width: 4.9rem; vertical-align: top; }
+div.en_message_timestamp {font-size: 12px; font-size: 1.2rem; color: #666; }
+div.en_message_actions {margin-top: 2px; margin-top: 0.2rem; font-size: 12px; font-size: 1.2rem; font-weight: bold; }
+div.en_message_actions span {cursor: pointer; }
+div.en_message_actions a {color: black; text-decoration: none; }
+div.en_message_actions a:hover {text-decoration: underline; }
+.en_message_tools {vertical-align: top; text-align: right; width: 250px; width: 25rem; }
+div.en_message_preview {font-size: 11px; font-size: 1.1rem; margin-top: 2px; margin-top: 0.2rem; color: #666; }
+div.en_message_body {display: none; color: #666; }
+div.en_message_body p {margin-top: 0; }
+#en_mailbox_tab_nav {list-style-type: none; margin: 0; padding: 0 4px 4px 6px; padding: 0 0.4rem 0.4rem 0.6rem; }
+#en_mailbox_tab_nav li {list-style-type: none; display: block; float: left; text-align: center; padding: 4px 4px 4px 4px; padding: 0.4rem 0.4rem 0.4rem 0.4rem; margin: 0; border: 0; margin-right: 4px; margin-right: 0.4rem; background: #eee; }
+#en_mailbox_tab_nav li.en_inactive a {color: #888; text-decoration: none; }
+#en_mailbox_tab_nav li.en_inactive:hover {color: black; background: #ddd; text-decoration: none; }
+#en_mailbox_tab_nav li.en_inactive a:hover {color: black; text-decoration: none; }
+#en_mailbox_tab_nav li.en_active {color: black; background: #ddd; }
+#en_mailbox_tab_nav li.en_active a {color: black; text-decoration: none; }
+#en_mailbox_tab_nav li.en_active a:hover {text-decoration: underline; }
+#en_network_search {text-align: right; }
+#en_network_search_what {float: left; }
+#en_refine_list #term {padding: 4px; padding: 0.4rem; width: 180px; width: 18rem; }
+input.en_search_input {border: 1px solid #888; border-radius: 6px; -moz-border-radius: 6px; }
+div.en_network_pagination {font-size: 12px; font-size: 1.2rem; padding: 0 4px 4px 4px; padding: 0 0.4rem 0.4rem 0.4rem; text-align: right; }
+#en_network_nav {padding: 0 4px 4px 4px; padding: 0 0.4rem 0.4rem 0.4rem; border-bottom: 1px solid #ddd; }
+div.en_network_pagination span.current {font-weight: bold; }
+div.en_user_details {margin-bottom: 5px; margin-bottom: 0.5rem; }
+span.en_user_name {font-weight: bold; }
+span.en_user_position, span.en_user_org {color: #888; }
+div.en_user_bio {margin-bottom: 5px; margin-bottom: 0.5rem; }
+div.en_user_dm, div.en_sn_control {font-size: 12px; font-size: 1.2rem; }
+#en_mailbox_compose {margin-left: 4px; margin-left: 0.4rem; margin-bottom: 10px; margin-bottom: 1rem; }
+.ad_utilities {float: right; width: 275px; width: 27.5rem; padding: 20px 15px 0 0; padding: 2rem 1.5rem 0 0; }
+div.ad_utilities a.adbutton {background: #f3e6a0; /* Old browsers */ background: linear-gradient(#faf4d2 0%, #f3e6a0 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */ color: #444; display: block; float: left; font-size: 12px; font-size: 1.2rem; font-weight: 700; text-align: center; height: 35px; height: 3.5rem; margin-right: 6px; margin-right: 0.6rem; padding-right: 16px; padding-right: 1.6rem; text-decoration: none; margin-bottom: 4px; margin-bottom: 0.4rem; box-shadow: 1px 1px 3px #777; border-radius: 10px; }
+div.ad_utilities a.adbutton span {display: block; margin-bottom: 4px; margin-bottom: 0.4rem; width: 236px; width: 23.6rem; line-height: 25px; line-height: 2.5rem; padding: 5px 0 5px 18px; padding: 0.5rem 0 0.5rem 1.8rem; }
+div.ad_utilities a.adbutton:active {background-position: bottom right; color: #000; outline: 0; }
+div.ad_utilities a.adbutton:active span {background-position: bottom left; padding: 6px 0 4px 18px; padding: 0.6rem 0 0.4rem 1.8rem; }
+div.en_commenter_speaker {background: transparent url(//cdn.oreillystatic.com/en/assets/1/eventprovider/1/speaker_bg.gif) right top no-repeat; }
+div.en_commenter_chair {background: transparent url(//cdn.oreillystatic.com/en/assets/1/eventprovider/1/chair_bg.gif) right top no-repeat; }
+div.en_commenter_co-chair {background: transparent url(//cdn.oreillystatic.com/en/assets/1/eventprovider/1/co-chair_bg.gif) right top no-repeat; }
+div.en_comment_abstract {font-size: 9px; font-size: 0.9rem; padding-top: 4px; padding-top: 0.4rem; }
+.en_comment_timestamp {font-style: italic; padding-right: 5px; padding-right: 0.5rem; }
+.en_recent_comments ul {margin-left: 0; font-size: 9.5px; font-size: 0.95rem; line-height: 15px; line-height: 1.5rem; }
+.en_sn_control, a.en_dm_link {margin-left: 0; }
+.en_recent_comments {border: #ccc solid 1px; width: 335px; width: 33.5rem; padding: 5px; padding: 0.5rem; margin: 10px 0 10px 20px; margin: 1rem 0 1rem 2rem; float: left; clear: none; overflow: auto; }
+.en_comment_block {clear: both; }
+.en_recent_comments.contacts {float: right; }
+#en_main #mid .en_recent_comments h3 {margin: 0 0 4px; margin: 0 0 0.4rem; padding: 2px 4px 0 10px; padding: 0.2rem 0.4rem 0 1rem; }
+.en_comment_summary, .en_recent_comments.twitter ul li {margin: 6px 10px 10px; margin: 0.6rem 1rem 1rem; }
+#en_content_profile .vcard {margin-left: 20px; margin-left: 2rem; }
+#en_content_profile div.vcard h1.en_user_name {margin-left: 0; }
+#en_content_profile div.vcard .en_profile_bio {margin-left: -20px; margin-left: -2rem; }
+div.en_profile_bio p {line-height: 23px; line-height: 2.3rem; }
+div.en_recent_contacts {line-height: 15px; line-height: 1.5rem; }
+div.en_recent_contacts img {float: left; padding: 0 10px 10px 0; padding: 0 1rem 1rem 0; }
+div.en_recent_contacts p {margin: 0; padding: 0 8px; padding: 0 0.8rem; font-size: 12px; font-size: 1.2rem; }
+#en_main #mid div.en_recent_contacts h3 {margin: 0 0 10px; margin: 0 0 1rem; padding: 2px 4px 0 10px; padding: 0.2rem 0.4rem 0 1rem; }
+div.en_recent_contacts {border: #ccc solid 1px; float: left; padding: 5px; padding: 0.5rem; margin: 10px 10px 10px 20px; margin: 1rem 1rem 1rem 2rem; overflow: auto; width: 350px; width: 35rem; }
+div.en_recent_comments {clear: none; }
+div.en_network_user {padding: 10px; padding: 1rem; margin: 0 2px 0 0; margin: 0 0.2rem 0 0; }
+div.en_network_user .en_user_photo {float: left; margin-left: 0; margin-right: 5px; margin-right: 0.5rem; }
+div.en_user_dm {clear: left; }
+#en_content_profile #mid div.en_user_photo {float: left; padding: 18px 10px 0; padding: 1.8rem 1rem 0; }
+#en_content_profile #mid div.vcard h1 {float: left; width: 320px; width: 32rem; margin-left: 0; clear: right; }
+#en_content_profile #mid #edit_profile_link, #en_content_profile #mid div.en_join_network, #en_content_profile #mid div.en_sn_control {clear: left; }
+div.en_user_url {font-size: 13px; font-size: 1.3rem; padding-top: 15px; padding-top: 1.5rem; }
+div.en_user_photo .speaker {height: 18px; height: 1.8rem; text-align: center; text-transform: uppercase; background-color: #333; padding-top: 2px; padding-top: 0.2rem; padding-bottom: 2px; padding-bottom: 0.2rem; }
+div.en_user_photo .speaker a {color: #fff; }
+h1.fn .info {font-size: 17px; font-size: 1.7rem; color: #333; }

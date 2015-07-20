@@ -72,6 +72,7 @@ $rookie-blue: #40a9f2;
 //drop-down-menu
 
 .side-categories {
+	position: absolute;;
 	display: none;
 	width: 17%;
 	float: left;
@@ -82,10 +83,10 @@ $rookie-blue: #40a9f2;
 	margin: 0px;
 	line-height: 4;
 	text-align: center;
-	position: relative;
-	z-index: -1;
+	z-index: 2000;
+	box-shadow: 1px 3px 3px #111;
 
-	li, a:hover {
+	li, .menu-link {
 		padding: 0px;
 		margin: 0px;
 		float: left;
@@ -100,10 +101,6 @@ $rookie-blue: #40a9f2;
 }
 
 //post-details
-
-.post-title {
-	font-family: "Nunito", sans-serif;
-}
 
 .post-content {
 	margin-right: 15%;
@@ -131,6 +128,8 @@ $rookie-blue: #40a9f2;
 		margin: auto;
 		padding-left: 20%;
 		padding-right: 20%;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
@@ -157,7 +156,6 @@ $rookie-blue: #40a9f2;
   	font-size: 28px;
   	height: 300px;
   	text-shadow: 3px 3px 2px #111;
-  	overflow: hidden;
   	font-weight: 600;
 }
 
@@ -183,14 +181,24 @@ $rookie-blue: #40a9f2;
 
  //contribute-container
 
+.container-head {
+ 	text-align: $header-align;
+ 	font-size: 22px;
+ 	font-weight: 400px;
+ 	color: $container-color;
+ 	display: block;
+ 	padding-bottom: 18px;
+}
+
 .contribute-container {
+	font-size: 16px;
  	background-color: $rookie-blue;
  	display: block;
  	padding: 0px;
  	margin: 0px;
  	line-height: 50px;
- 	padding-top: 15px;
- 	padding-bottom: 15px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
 
  	li {
  		list-style: none;
@@ -203,7 +211,7 @@ $rookie-blue: #40a9f2;
 		margin-top: 20px;
 		border: solid 4px #fff;
 		display: block;
-		padding: 5px;
+		padding: 3px;
 		color: #fff;
 		margin: auto;
 		border-radius: 5px;
@@ -215,23 +223,12 @@ $rookie-blue: #40a9f2;
 	}
 }
 
-.container-head {
- 	text-align: $header-align;
- 	font-size: 26px;
- 	font-weight: 400px;
- 	color: $container-color;
- 	display: block;
- 	padding-top: 18px;
- 	padding-bottom: 18px;
-}
-
 //footer
 
 .site-footer {
 	background: #112;
 	color: $container-color;
 	height: 320px;
-	position: static;
 
 	a, a:visited {
 		color: $container-color;
@@ -299,13 +296,13 @@ $rookie-blue: #40a9f2;
 	}
 }
 
-@media(max-width: 760px) {
+@media(max-width: 700px) {
 	.about-greeting {
 		font-size: 12px;
 	}
 }
 
-@media(max-width: 760px) {
+@media(max-width: 550px) {
 	.about-content {
 		font-size: 14px;
 		width: initial;
