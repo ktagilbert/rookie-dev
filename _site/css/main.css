@@ -69,7 +69,7 @@ a {
   a:visited {
     color: #7D7D7D; }
   a:hover {
-    color: #111; }
+    color: #40a9f2; }
 
 /**
  * Blockquotes
@@ -433,8 +433,7 @@ img {
   border-bottom: 0px;
   padding-left: 10px;
   border-top: 0px;
-  opacity: 0.85;
-  background-color: #191330; }
+  background-color: #302B45; }
 
 .site-title, .site-title:visited {
   padding-left: 50px;
@@ -495,8 +494,7 @@ img {
     padding: 0px;
     margin: 0px;
     float: left;
-    width: 100%;
-    color: #40a9f2; }
+    width: 100%; }
 
 .post-content {
   margin-right: 15%;
@@ -524,40 +522,25 @@ img {
     padding-bottom: 40px; }
 
 .post .about-background {
-  display: block;
-  padding-bottom: 100px;
   padding-top: 20px;
   background: url("/assets/portland.jpg");
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 400px;
   background-size: 100%;
-  background-repeat: no-repeat;
   background-size: cover; }
-
-.about-greeting {
-  padding-left: 30px;
-  font-family: "Nunito";
-  color: #fff;
-  font-size: 28px;
-  height: 300px;
-  text-shadow: 3px 3px 2px #111;
-  font-weight: 600; }
 
 .about-content {
   float: right;
-  width: 60%;
-  background-color: #d3d3d3;
-  opacity: 0.7;
-  margin-right: 10px;
-  height: 300px;
-  padding-top: 15px;
-  padding-left: 15px;
-  margin-left: 15px;
-  font-weight: 600; }
+  font-size: 14px;
+  width: 45%;
+  padding-right: 25px;
+  padding-top: 20px; }
   .about-content h2 {
-    font-weight: 600; }
+    font-family: "Alice";
+    text-align: center;
+    padding-bottom: 20px; }
   .about-content li {
-    padding: 5px; }
+    list-style-type: none; }
 
 .container-head {
   text-align: center;
