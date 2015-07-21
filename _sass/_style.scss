@@ -141,6 +141,7 @@ $rookie-blue: #40a9f2;
 	font-size: 14px;
 	width: 45%;
 	padding-right: 25px;
+	padding-left: 25px;
 	padding-top: 20px;
 
 	h2 {
@@ -258,6 +259,15 @@ $rookie-blue: #40a9f2;
 	}
 }
 
+@media(max-width: 550px) {
+	.post {
+		.about-background {
+			background: none;
+			height: 400px;
+		}
+	}
+}
+
 @media(max-width: 457px) {
 	.page-heading {
 		font-size: 30px;
@@ -284,6 +294,7 @@ $rookie-blue: #40a9f2;
 		padding-right: 40px;
 	}
 }
+
 
 //When screen gets to 700 width, I needed a way to collapse the list into a block v. 
 //inline block. margins center the list even when viewed on a smaller screen.
