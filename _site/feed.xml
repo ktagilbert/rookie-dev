@@ -224,7 +224,7 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In the end, I created a test site that looks like like this:
-&lt;img src=&quot;http://127.0.0.1:4000//assets/test-menu.jpg&quot; alt=&quot;creating a menu from scratch&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/test-menu.jpg&quot; alt=&quot;creating a menu from scratch&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Again, in my case I worked mostly with HTML and CSS to build a menu. I just wanted to make something simple and didn’t want to spend a lot of time coming up with solutions in JavaScript that I could have otherwise solved with just HTML and CSS.&lt;/p&gt;
 

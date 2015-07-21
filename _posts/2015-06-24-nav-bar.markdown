@@ -98,7 +98,7 @@ You can actually create a rule that says "hey, when the width of  someone's scre
 {% endhighlight %}
 
 In the end, I created a test site that looks like like this:
-![creating a menu from scratch]({{ site.url }}/assets/test-menu.jpg)
+![creating a menu from scratch](/assets/test-menu.jpg)
 
 Again, in my case I worked mostly with HTML and CSS to build a menu. I just wanted to make something simple and didn't want to spend a lot of time coming up with solutions in JavaScript that I could have otherwise solved with just HTML and CSS. 
 
