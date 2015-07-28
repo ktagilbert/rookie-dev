@@ -265,13 +265,12 @@ img {
 .post-title {
   font-size: 50px;
   color: #fff;
-  padding-top: 40px;
+  padding-top: 100px;
   text-align: center;
   letter-spacing: -1px;
   line-height: 1;
-  background-color: #40a9f2;
-  padding-bottom: 200px;
-  opacity: 0.9;
+  background-color: #302B45;
+  padding-bottom: 150px;
   z-index: -1000;
   position: relative;
   font-family: "Lato";
@@ -535,26 +534,15 @@ img {
     padding-top: 40px;
     padding-bottom: 40px; }
 
-.post .about-background {
-  padding-top: 20px;
-  background: url("/assets/portland.jpg");
-  width: 50%;
+.post .about-content {
+  background-color: #302B45;
+  opacity: 1;
+  color: #fff;
+  padding-top: 150px;
   height: 400px;
-  background-size: 100%;
-  background-size: cover; }
-
-.about-content {
-  float: right;
-  font-size: 14px;
-  width: 45%;
-  padding: 25px; }
-  .about-content h2 {
-    font-family: "Alice";
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px; }
-  .about-content li {
-    list-style-type: none; }
+  text-shadow: 3px 1px 0px #111;
+  padding-right: 10%;
+  padding-left: 10%; }
 
 .container-head {
   text-align: center;
@@ -566,7 +554,7 @@ img {
 
 .contribute-container {
   font-size: 16px;
-  background-color: #40a9f2;
+  background-color: #457;
   display: block;
   padding: 0px;
   margin: 0px;
@@ -590,7 +578,7 @@ img {
     border-radius: 5px; }
   .contribute-container a:hover {
     background-color: #fff;
-    color: #40a9f2;
+    color: #457;
     font-weight: 500; }
 
 .projects-content h3 {
@@ -627,11 +615,11 @@ img {
   overflow: hidden; }
   .row-one .project-description {
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 20px;
     position: absolute;
     color: #111;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     display: none; }
 
 .row-one li {
@@ -651,33 +639,41 @@ img {
   z-index: -10000; }
 
 .site-footer {
-  background: #112;
-  color: #fff;
-  height: 320px; }
+  background: #d3d3d3;
+  height: 400px;
+  text-align: center;
+  color: #302B45; }
   .site-footer a, .site-footer a:visited {
-    color: #fff; }
+    color: #302B45; }
+  .site-footer a:hover {
+    color: #457; }
 
-.footer-list li {
-  display: inline;
-  padding: 10px;
-  float: right;
-  color: #fff; }
-.footer-list li a:hover, .footer-list .footer-heading:hover {
-  color: #40a9f2; }
-.footer-list .footer-heading {
-  float: left; }
-.footer-list .wrapper {
-  margin: auto;
-  padding-left: 30px;
-  padding-right: 0px; }
+.footer-heading {
+  margin: auto; }
 
-#design-by {
-  color: #fff;
-  font-family: "Alice";
-  font-size: 12px;
-  float: right;
-  margin: 30px;
-  padding-top: 50px; }
+.footer-list {
+  text-align: center; }
+  .footer-list li {
+    display: inline-block;
+    font-size: 14px;
+    list-style: none;
+    padding: 5px; }
+  .footer-list .social-icon, .footer-list img {
+    width: 40px;
+    padding: 0px;
+    margin-top: 30px; }
+
+.social-icon img:hover {
+  opacity: 0.7; }
+
+.design-by {
+  font-weight: bolder; }
+  .design-by li {
+    list-style: none;
+    font-size: 12px;
+    margin: 30px;
+    padding-top: 30px;
+    font-weight: bolder; }
 
 @media (max-width: 720px) {
   .site-footer .footer-list li {
@@ -712,10 +708,12 @@ img {
 @media (max-width: 820px) {
   .row-one li {
     display: initial;
-    text-align: center; } }
+    text-align: center;
+    width: 60%; } }
 @media (max-width: 820px) {
   .row-one img {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    position: relative;
     text-align: center;
-    width: 300px; } }
+    display: block;
+    width: 60%; } }
