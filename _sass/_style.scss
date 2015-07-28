@@ -124,26 +124,6 @@ $purple: #302B45;
 	}
 }
 
-//about page
-
-// .post {
-// 	.about-background {
-//   		// padding-top: 20px;
-//   		// background: url("/assets/portland.jpg");
-//   		width: 35%;
-//   		height: 400px;
-//   		margin-right: 10%;
-//   		margin-left: 10%;
-//   		padding-top: $large;
-//   		// background-size: 100%;
-//   		background-size: cover;
-//   	}		
-// }
-
-// .about-typography {
-// 	font-size: 50px;
-// }
-
 .post {
 	.about-content {
 		background-color: #302B45;
@@ -157,7 +137,6 @@ $purple: #302B45;
 	}
 }
 
-
  //contribute-container
 
 .container-head {
@@ -167,6 +146,7 @@ $purple: #302B45;
  	color: $container-color;
  	display: block;
  	padding-bottom: 18px;
+ 	margin-left: 0px;
 }
 
 .contribute-container {

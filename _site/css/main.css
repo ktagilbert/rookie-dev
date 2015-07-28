@@ -83,7 +83,7 @@ a {
   a:visited {
     color: #7D7D7D; }
   a:hover {
-    color: #40a9f2; }
+    color: #457; }
 
 /**
  * Blockquotes
@@ -550,7 +550,8 @@ img {
   font-weight: 400px;
   color: #fff;
   display: block;
-  padding-bottom: 18px; }
+  padding-bottom: 18px;
+  margin-left: 0px; }
 
 .contribute-container {
   font-size: 16px;
