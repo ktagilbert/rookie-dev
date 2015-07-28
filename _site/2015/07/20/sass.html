@@ -18,7 +18,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
   		$(document).ready(function() {
-  
+
+        //navigation menu: toggles arrow img and shows menu
+
         $('.categories-dropdown').on('mouseover', function(event) {
           event.preventDefault();
           $('.side-categories, .nav-alt').show();
@@ -40,9 +42,19 @@
           $('.categories-dropdown').show();
         })
 
-      });
+        //projects hover interaction 
+
+        $('.projects-img').on('mouseover', function(event) {
+          $(this).siblings('.project-description').show();
+        });
+        $('.projects-img').on('mouseleave', function() {
+          $('.project-description').hide();
+        }); 
+
+    });
 	 </script>
 </head>
+
 
   <body>
 

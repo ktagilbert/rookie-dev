@@ -18,7 +18,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
   		$(document).ready(function() {
-  
+
+        //navigation menu: toggles arrow img and shows menu
+
         $('.categories-dropdown').on('mouseover', function(event) {
           event.preventDefault();
           $('.side-categories, .nav-alt').show();
@@ -40,9 +42,19 @@
           $('.categories-dropdown').show();
         })
 
-      });
+        //projects hover interaction 
+
+        $('.projects-img').on('mouseover', function(event) {
+          $(this).siblings('.project-description').show();
+        });
+        $('.projects-img').on('mouseleave', function() {
+          $('.project-description').hide();
+        }); 
+
+    });
 	 </script>
 </head>
+
 
   <body>
 
@@ -71,9 +83,8 @@
 </div>
 <div class="post">
 <div class="about-background">
-
-  	<article class="post-content">
-    	<!-- What I like to do:
+		<article class="post-content">
+    		<!-- What I like to do:
 
 - nerd out
 - design
@@ -85,7 +96,7 @@
 While learning about web development I quickly realized that I would need to practice new skills as I learned them. In short, I needed a project. Thanks to Jekyll and GitHub Pages, I was able to create Rookie Dev. As someone who is coming into web development from a writing background, I knew that applying practical skills to a creative project would help me not only learn but apply skills in a way that I would enjoy. My solution has been to create a blog where I can reflect on lessons I learn and hopefully help others as well. -->
 
 
-  	</article>
+  		</article>
 </div>
 
 <!-- </div> -->
