@@ -23,12 +23,12 @@
 
         $('.categories-dropdown').on('mouseover', function(event) {
           event.preventDefault();
-          $('.side-categories, .nav-alt').show();
+          $('.side-categories').slideDown("slow");
           $('.categories-dropdown').hide();
         });
 
         $(".side-categories").on('mouseleave', function() {
-          $('.side-categories, .nav-alt').hide();
+          $('.side-categories').hide();
           $('.categories-dropdown').show();
         });
 
@@ -51,6 +51,13 @@
           $('.project-description').hide();
         }); 
 
+        //about page slidedown
+
+        $('#demo-button').on('click', function(event) {
+          event.preventDefault();
+          $('#topics').slideDown("slow");
+        });
+
     });
 	 </script>
 </head>
@@ -62,10 +69,10 @@
 
   <!-- <div class="wrapper"> -->
       <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
-      <img src ="/assets/arrow.png/" class="nav-alt" />
         <ul class="side-categories">
-          <li class="menu-link"><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
+        	<li><a href="/">Home</li>	
+        	<li><a href="/about">About</a></li>
+        	<li><a href="/projects">Projects</a></li>
       </ul>
 
       <a class="site-title" href="/">Rookie Dev</a>
@@ -75,6 +82,7 @@
     
     <!--<div class="page-content">-->
         <div class="post">	
+<div>
 	<article class="about-content">
     		<h2 id="hi-my-name-is-katie">Hi, my name is Katie</h2>
 
@@ -83,7 +91,8 @@
 <p>Rookie Dev also happens to be my first project as an entry level web developer. I hope you enjoy the space.</p>
 
 
-  	</article>	
+  	</article>
+</div>
 </div>
 
 <!-- </div> -->

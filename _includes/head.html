@@ -20,12 +20,12 @@
 
         $('.categories-dropdown').on('mouseover', function(event) {
           event.preventDefault();
-          $('.side-categories, .nav-alt').show();
+          $('.side-categories').slideDown("slow");
           $('.categories-dropdown').hide();
         });
 
         $(".side-categories").on('mouseleave', function() {
-          $('.side-categories, .nav-alt').hide();
+          $('.side-categories').hide();
           $('.categories-dropdown').show();
         });
 
@@ -47,6 +47,13 @@
         $('.projects-img').on('mouseleave', function() {
           $('.project-description').hide();
         }); 
+
+        //about page slidedown
+
+        $('#demo-button').on('click', function(event) {
+          event.preventDefault();
+          $('#topics').slideDown("slow");
+        });
 
     });
 	 </script>
