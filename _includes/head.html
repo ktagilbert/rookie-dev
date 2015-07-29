@@ -30,12 +30,12 @@
         });
 
         $('.categories-dropdown').on('click', function() {
-          $('.side-categories, .nav-alt').show();
+          $('.side-categories').slideDown("slow");
           $('.categories-dropdown').hide();
         })
 
         $('.nav-alt').on('click', function() {
-          $('.side-categories, .nav-alt').hide();
+          $('.side-categories').hide();
           $('.categories-dropdown').show();
         })
 
