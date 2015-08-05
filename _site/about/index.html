@@ -31,6 +31,13 @@
           $('.categories-dropdown').show();
         });
 
+        //mobile menu
+
+        $('#mobile-menu').on('click', function(event) {
+          event.preventDefault();
+          $('.side-categories').show();          
+        });
+
         //projects hover interaction 
 
         $('.projects-img').on('mouseover', function(event) {
@@ -57,6 +64,7 @@
 
   <!-- <div class="wrapper"> -->
       <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
+      <img src ="/assets/navicon.png/" id="mobile-menu" />
         <ul class="side-categories">
         	<li><a href="/">Home</li>	
         	<li><a href="/about">About</a></li>
@@ -121,7 +129,7 @@
        </ul>
        <ul class="design-by">
          <li>  
-          <a href="https://www.linkedin.com/in/gilbertkatie">site designed by Katie Gilbert
+          <a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert
           </a>
         </li>
       </ul>
@@ -131,8 +139,5 @@
 
 
   </body>
-
-  <div>
-  </div>
 
 </html>

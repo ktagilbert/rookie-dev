@@ -31,6 +31,13 @@
           $('.categories-dropdown').show();
         });
 
+        //mobile menu
+
+        $('#mobile-menu').on('click', function(event) {
+          event.preventDefault();
+          $('.side-categories').show();          
+        });
+
         //projects hover interaction 
 
         $('.projects-img').on('mouseover', function(event) {
@@ -57,6 +64,7 @@
 
   <!-- <div class="wrapper"> -->
       <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
+      <img src ="/assets/navicon.png/" id="mobile-menu" />
         <ul class="side-categories">
         	<li><a href="/">Home</li>	
         	<li><a href="/about">About</a></li>
@@ -93,7 +101,7 @@
     <p>Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. <strong>What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.</strong></p>
 
 <h2 id="start-by-learning-some-general-principles">Start by Learning Some General Principles</h2>
-<p>If you are like me and don’t know much about web development or these three languages, you may approach problem of making a navigation bar by looking at a tutorial and just copying their examples and pasting them into a text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? <em>Spending some time to really learn the basic principles of the language you are working in can be super helpful.</em></p>
+<p>If you are like me and don’t know much about web development or these three languages, you may approach the problem by looking at a tutorial and just copying their examples and then pasting them into your text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? <em>Spending some time to really learn the basic principles of the language you are working in can be super helpful.</em></p>
 
 <p>Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. <strong>You might want to try doing the same and really hammering down these ideas:</strong></p>
 
@@ -110,7 +118,7 @@
 </ol>
 
 <h1 id="how-to-approach-the-problem-of-creating-a-menu-for-your-page">How to Approach the Problem of Creating a Menu For Your Page</h1>
-<p>-In my case, I focused on HTML and CSS solutions first. So, you can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for one to use):</p>
+<p>-In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for one to use):</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
 	<span class="nt">&lt;li&gt;</span>Page 1<span class="nt">&lt;/li&gt;</span>
@@ -119,9 +127,9 @@
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
 <ul>
-  <li>Okay great, these are the pages that you are going to be listed in your menu! Pretty awesome, right? Next, you are just going to think about how to make these “pages” look and function they way you want them to work.</li>
+  <li>Okay great, these are the pages that you are going to be listed in your menu! Pretty awesome, right? Next, you are just going to think about how to make these “pages” look and function the way you want them to.</li>
   <li>You can think about what to do in steps to make it easier if you want. I personally found approaching the process piece-by-piece easier to manage. It helped me become less overwhelmed by the task.</li>
-  <li>One place you could start is by thinking about the fact that these “pages” should be able to be click-able - you should be able to click on them to go to that page. Meaning, they should be linked. You can add the a href tag to your list to make this happen.</li>
+  <li>One place you could start is by thinking about the fact that these “pages” should be able to be click-able. Meaning, they should be linked. You can add the a href tag to your list to make this happen.</li>
 </ul>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
@@ -131,7 +139,7 @@
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
 <ul>
-  <li>I’ve put “#” in the place of an actual link for now because I don’t have content or links for these pages yet. You may not never put a link here (For example, if you have content that just loads (or becomes unhidden) on the page when you click on the element).</li>
+  <li>I’ve put “#” in the place of an actual link for now because I don’t have content or links for these pages yet.</li>
   <li>So now, depending on what you want the menu to do and look like, you can think about what to do next.</li>
 </ul>
 
@@ -255,7 +263,7 @@
        </ul>
        <ul class="design-by">
          <li>  
-          <a href="https://www.linkedin.com/in/gilbertkatie">site designed by Katie Gilbert
+          <a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert
           </a>
         </li>
       </ul>
@@ -265,8 +273,5 @@
 
 
   </body>
-
-  <div>
-  </div>
 
 </html>

@@ -28,6 +28,13 @@
           $('.categories-dropdown').show();
         });
 
+        //mobile menu
+
+        $('#mobile-menu').on('click', function(event) {
+          event.preventDefault();
+          $('.side-categories').show();          
+        });
+
         //projects hover interaction 
 
         $('.projects-img').on('mouseover', function(event) {
