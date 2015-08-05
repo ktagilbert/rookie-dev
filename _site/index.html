@@ -8,7 +8,6 @@
 
   <title>Rookie Dev</title>
   <meta name="description" content="">
-
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://127.0.0.1:4000//">
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
@@ -32,16 +31,6 @@
           $('.categories-dropdown').show();
         });
 
-        $('.categories-dropdown').on('click', function() {
-          $('.side-categories').slideDown("slow");
-          $('.categories-dropdown').hide();
-        })
-
-        $('.nav-alt').on('click', function() {
-          $('.side-categories').hide();
-          $('.categories-dropdown').show();
-        })
-
         //projects hover interaction 
 
         $('.projects-img').on('mouseover', function(event) {
@@ -53,9 +42,8 @@
 
         //about page slidedown
 
-        $('#demo-button').on('click', function(event) {
-          event.preventDefault();
-          $('#topics').slideDown("slow");
+        $(document).ready(function() {
+          $('#about-page').slideDown(1000);
         });
 
     });

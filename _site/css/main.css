@@ -492,6 +492,7 @@ img {
 .side-categories {
   position: absolute;
   display: none;
+  font-size: 14px;
   width: 17%;
   float: left;
   background: #fff;
@@ -507,7 +508,8 @@ img {
     padding: 0px;
     margin: 0px;
     float: left;
-    width: 100%; }
+    width: 100%;
+    font-size: 16px; }
 
 .post-content {
   margin-right: 10%;
@@ -533,6 +535,9 @@ img {
     padding-right: 20%;
     padding-top: 40px;
     padding-bottom: 40px; }
+
+#about-page {
+  display: none; }
 
 .post .about-content {
   background-color: #302B45;
@@ -651,6 +656,8 @@ img {
 
 .footer-heading {
   margin: auto; }
+  .footer-heading h3 {
+    font-family: "Lato"; }
 
 .footer-list {
   text-align: center; }
@@ -678,11 +685,11 @@ img {
 
 @media (max-width: 720px) {
   .site-footer .footer-list li {
-    display: block;
     float: none;
     text-align: center;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 250px; }
   .site-footer .footer-list .footer-heading {
     display: block;
     text-align: center;
@@ -717,4 +724,4 @@ img {
     position: relative;
     text-align: center;
     display: block;
-    width: 60%; } }
+    width: 50%; } }

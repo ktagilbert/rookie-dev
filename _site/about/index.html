@@ -8,7 +8,6 @@
 
   <title>About</title>
   <meta name="description" content="">
-
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://127.0.0.1:4000//about/">
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
@@ -32,16 +31,6 @@
           $('.categories-dropdown').show();
         });
 
-        $('.categories-dropdown').on('click', function() {
-          $('.side-categories').slideDown("slow");
-          $('.categories-dropdown').hide();
-        })
-
-        $('.nav-alt').on('click', function() {
-          $('.side-categories').hide();
-          $('.categories-dropdown').show();
-        })
-
         //projects hover interaction 
 
         $('.projects-img').on('mouseover', function(event) {
@@ -53,9 +42,8 @@
 
         //about page slidedown
 
-        $('#demo-button').on('click', function(event) {
-          event.preventDefault();
-          $('#topics').slideDown("slow");
+        $(document).ready(function() {
+          $('#about-page').slideDown(1000);
         });
 
     });
@@ -81,7 +69,9 @@
 
     
     <!--<div class="page-content">-->
-        <div class="post">	
+        <div id="about-page">
+
+<div class="post">
 <div>
 	<article class="about-content">
     		<h2 id="hi-my-name-is-katie">Hi, my name is Katie</h2>
@@ -95,19 +85,8 @@
 </div>
 </div>
 
-<!-- </div> -->
+</div>
 
-<!--contribute-container-->
-
-<!--  <div class="contribute-container">
- 		<span class="container-head">Want To Contribute to Rookie Dev?
- 		</span>
- 	  <ul>
- 		 <li>
- 			  <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
- 		 </li>
-  	</ul>
- </div> -->
         <div class="wrapper">
       </div>
 
