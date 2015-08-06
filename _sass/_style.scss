@@ -387,12 +387,24 @@ $purple: #302B45;
 		display: none;
 		z-index: -100000;
 	}
+	#about-page {
+		height: 950px;
+	}
 }	
 
-@media(max-width: 750px) {
+@media(max-width: 760px) {
 	.side-categories {
 		width: 100%;
 		overflow: hidden;
+	}
+	.about-content {
+		font-size: 14px;
+	}
+	.my-background {
+		font-size: 14px;
+	}
+	.about-page {
+		height: 700px;
 	}
 }
 
