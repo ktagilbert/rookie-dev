@@ -547,17 +547,21 @@ img {
     padding-bottom: 40px; }
 
 #about-page {
-  display: none; }
-
-.post .about-content {
+  display: none;
   background-color: #302B45;
   opacity: 1;
   color: #fff;
   padding-top: 150px;
-  height: 400px;
+  height: 850px; }
+
+.post .about-content {
   text-shadow: 3px 1px 0px #111;
   padding-right: 10%;
-  padding-left: 10%; }
+  padding-left: 10%;
+  display: none; }
+
+.my-background h1 {
+  padding-top: 80px; }
 
 .container-head {
   text-align: center;

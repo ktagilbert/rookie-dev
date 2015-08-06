@@ -141,18 +141,25 @@ $purple: #302B45;
 
 #about-page {
 	display: none;
+	background-color: #302B45;
+    opacity: 1;
+    color: #fff;
+    padding-top: 150px;
+    height: 850px;
 }
 
 .post {
 	.about-content {
-		background-color: #302B45;
-    	opacity: 1;
-    	color: #fff;
-    	padding-top: 150px;
-    	height: 400px;
     	text-shadow: 3px 1px 0px #111;
     	padding-right: 10%;
     	padding-left: 10%;
+    	display: none;
+	}
+}
+
+.my-background {
+	h1 {
+		padding-top: $large;
 	}
 }
 
