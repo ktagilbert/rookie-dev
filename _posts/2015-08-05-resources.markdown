@@ -34,7 +34,8 @@ I know from experience that learning JavaScript can be *very* challenging. If yo
 - Subreddits:
 	- **[r/webdev](https://www.reddit.com/r/webdev/)**
 	- **[r/webdesign](https://www.reddit.com/r/web_design/)**
-	- **[Treehouse](https://teamtreehouse.com/home):** a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out. 
+	- **[r/learningjavascript](https://www.reddit.com/r/learnjavascript/)
+- **[Treehouse](https://teamtreehouse.com/home):** a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out. 
 
 
 These are just the best resources that I have been able to find so far. If you find any others that you think should be added to this list let me know and I'll update this post. **Thanks for reading guys!**
