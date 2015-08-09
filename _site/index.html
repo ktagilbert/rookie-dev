@@ -28,7 +28,7 @@
 
     <script>
   		$(document).ready(function() {
-
+        
         //navigation menu: toggles arrow img and shows menu
 
         $('.categories-dropdown').on('mouseover', function(event) {
@@ -41,6 +41,8 @@
           $('.side-categories').hide();
           $('.categories-dropdown').show();
         });
+
+        //home page slid down
 
         //mobile menu
 
@@ -61,8 +63,9 @@
         //about page slidedown
 
         $(document).ready(function() {
-          $('#about-page').slideDown(1000);
-          $('.about-content').delay(1000).fadeIn(700);
+          $('#about-page').slideDown(1000, function() {
+            $('.about-content').fadeIn(700);
+          });
         });
 
     });
@@ -90,14 +93,24 @@
     <!--<div class="page-content">-->
         <div class="home">
 
-  <h1 class="page-heading">
+  <div class="page-heading">
     <span id="heading-emphasis">A Place To Learn</span> About Web Development
-  </h1>
+  </div>
 
  
 <div class="main-content">
   <ul class="post-list"> 
      
+    
+      <li><span class="post-meta">Aug 5, 2015</span>
+
+        <h2>
+          <a class="post-link" href="/2015/08/05/resources.html">Great Resources For Learning JavaScript</a>
+        </h2>
+
+        <p>So I know from experience that learning JavaScript can be *very* challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It tooks me a couple of months to finally be comfortable in the langauge. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn't (as to be expected.) **In the end, here is a compiled collection of some the better resources I was able to find.** 
+</p> 
+      </li>
     
       <li><span class="post-meta">Jul 20, 2015</span>
 

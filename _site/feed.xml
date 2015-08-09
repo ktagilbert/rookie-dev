@@ -10,33 +10,83 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>Great Resources For Learning JavaScript</title>
+        <description>&lt;p&gt;I know from experience that learning JavaScript can be &lt;em&gt;very&lt;/em&gt; challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It tooks me a couple of months to finally be comfortable in the langauge. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.&lt;/p&gt;
+
+&lt;h1 id=&quot;books&quot;&gt;Books:&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;JavaScript the Definitive Guide:&lt;/strong&gt; Okay, it’s long. So just don’t read the whole thing, okay? I found it helpful to read the first 5-10 chapters. It helped me understand what was actually going on in JavaScript. What I found the most helpful is the time the author spent to explain each and every line of his examples. Meaning, you will never have to guess at what a piece of code is doing. Instead, everything is totally straight forward. While reading the Definitive Guide I was able to finally understand some important concepts in JavaScript. Other books would skim over these same concepts as if they were easy to comprehend. So, if you’re like me and having some problems understanding some of the basics, this might be the book for you.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;JavaScript the Good Parts:&lt;/strong&gt; I would especially recommend this book if you are a visual learner. JavaScript the Good Parts is super easy to skim through and will give you useful info (though, you may have to look up some concepts on Google as it doesn’t go out of its way to help its readers understand everything). I heard that the The Good Parts is a retaliation against the Definitive Guide so it only makes sense that it is shorter and offers a little less explanation. Yet still, it is definitlely more useful than other introductions to JavaScript out there.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Writing Eloquent JavaScript:&lt;/strong&gt; Read this only if you know the fundamentals of JavaScript already. The books comes highly recommended by programmers but I really don’t think it should be recommended for those just starting to learn about the language. For example, I initially had no idea what was going on when examples showed up filled with ‘for’ loops and counters or unexplained methods. &lt;strong&gt;However, DO read this if you want to learn how to write better JavaScript or if you want to solve some pretty cool problems that the author includes at the end of each chapter.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;websites&quot;&gt;Websites:&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.w3schools.com/js/default.asp&quot;&gt;W3Schools&lt;/a&gt;:&lt;/strong&gt; This is a great go-to resource for anything that may come up. It will cover anything from syntax to basic explanations about what some methods do. It is a trusted resource for many and definitely a good site to check out.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;:&lt;/strong&gt; If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://jshint.com/&quot;&gt;JsHint&lt;/a&gt;:&lt;/strong&gt; If you don’t know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://jsfiddle.net/&quot;&gt;JsFiddle&lt;/a&gt;:&lt;/strong&gt; Want to just try something out to see how it works? Js Fiddle will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://javascriptissexy.com/&quot;&gt;Java Script Is Sexy&lt;/a&gt;:&lt;/strong&gt; Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script &lt;em&gt;and&lt;/em&gt; and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;some-design-inspirations&quot;&gt;Some Design Inspirations:&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ajclarkson.co.uk/blog/&quot;&gt;AJ Clarkson’s Site and Portfolio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ashleyfarrand.com/about/&quot;&gt;Ashley Farrand’s Design Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.thisisfreshface.com/&quot;&gt;Fresh Face&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;You can also check out my pinterest board for more web design inspirations &lt;a href=&quot;https://www.pinterest.com/ktagilbert/web-design/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;miscellaneous&quot;&gt;Miscellaneous:&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Subreddits:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/webdev/&quot;&gt;r/webdev&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/web_design/&quot;&gt;r/webdesign&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://teamtreehouse.com/home&quot;&gt;Treehouse&lt;/a&gt;:&lt;/strong&gt; a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are just the best resources that I have been able to find so far. If you find any others that you think should be added to this list let me know and I’ll update this post. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 05 Aug 2015 10:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2015/08/05/resources.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2015/08/05/resources.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>How to Start Learning SCSS</title>
         <description>&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the Gap Between CSS and SASS&lt;/h2&gt;
 
-&lt;p&gt;Rookie Dev here is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. About midway through, after performing what seemed to me like a million git commands, he paused and looked up at me saying “well, I’m really sorry and I’m not sorry.”&lt;/p&gt;
-
-&lt;p&gt;“Why?” I asked?&lt;/p&gt;
-
-&lt;p&gt;“You’re going to have to learn SCSS. It’s a good thing though! I don’t know it but employers will really like that you know it.”&lt;/p&gt;
-
-&lt;p&gt;“Okay….”&lt;/p&gt;
-
-&lt;p&gt;I had no idea what SCSS was. My SO’s reaction just made it seem like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have a confession. When I first started working on Rooke Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;It turns out that SCSS is not that difficult.&lt;/p&gt;
 
-&lt;p&gt;When I attended OS Bridge, I spent one day just job shadowing some other developers. We sat in a spare room together. They worked on their team’s project, while I pulled open my computer and read up on SASS. I just typed in “learning SASS” into Google and was directed to &lt;a href=&quot;http://sass-lang.com/&quot;&gt;sass-lang.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The words “CSS with Superpowers” appeared on my screen.&lt;/p&gt;
+&lt;h1 id=&quot;what-helped-me-learn-about-scss&quot;&gt;What helped me learn about SCSS:&lt;/h1&gt;
+&lt;p&gt;I simply pulled open my computer and read up on SASS. I started by typing in “learning SASS” into Google. I  was then directed to &lt;a href=&quot;http://sass-lang.com/&quot;&gt;sass-lang.com&lt;/a&gt;. The words “CSS with Superpowers” appeared on my screen.&lt;/p&gt;
 
 &lt;p&gt;It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! &lt;strong&gt;Here I am going to show you some basics to help you get started with SCSS.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;You will learn three cool things:
-1. How SCCS does nesting
-2. How to Use Variables
-3. What an Extend Is&lt;/p&gt;
+&lt;h2 id=&quot;you-will-learn-three-cool-things&quot;&gt;You will learn three cool things:&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;How SCCS does nesting&lt;/li&gt;
+  &lt;li&gt;How to use Variables&lt;/li&gt;
+  &lt;li&gt;What an extend is&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h1 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h1&gt;
+&lt;h2 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h2&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
  &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -47,7 +97,7 @@
  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#d3d3d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Okay, cool. Here we have some CSS that basically says, hey ‘for all headers, make the font-family Georgia and the color black.’ Below that we have some nested rules. The list items under the class “nav-list” all be a light-grey color. Alright, nice. Now, let’s write the same thing using SASS.&lt;/p&gt;
+&lt;p&gt;Okay, cool. Here we have some CSS that basically says, “hey for all headers, make the font-family Georgia and the color black.” Below that we have some nested rules that say the list items under the class “nav-list” will all be a light-grey color. Alright, nice. &lt;strong&gt;Now, let’s write the same thing using SASS.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;nesting-with-scss&quot;&gt;1. Nesting with SCSS&lt;/h3&gt;
 
@@ -62,9 +112,7 @@
  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the &lt;a href=&quot;http://writingcenter.fas.harvard.edu/pages/outlining&quot;&gt;Harvard Outline&lt;/a&gt; looks. Maybe that’s the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway.&lt;/p&gt;
-
-&lt;p&gt;This part of SCSS is easy and I like it better personally.&lt;/p&gt;
+&lt;p&gt;As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the &lt;a href=&quot;http://writingcenter.fas.harvard.edu/pages/outlining&quot;&gt;Harvard Outline&lt;/a&gt; looks. Maybe that’s just the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway. This part of SCSS is easy and I like it better personally.&lt;/p&gt;
 
 &lt;h3 id=&quot;variables&quot;&gt;2. Variables&lt;/h3&gt;
 
@@ -81,7 +129,7 @@
   &lt;li&gt;header align stands in for text-align center.&lt;/li&gt;
   &lt;li&gt;texts within a container will appear white&lt;/li&gt;
   &lt;li&gt;“large” stands in for padding: 80px&lt;/li&gt;
-  &lt;li&gt;$rookie-blue is my brand color&lt;/li&gt;
+  &lt;li&gt;$rookie-blue is one of my brand color&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;I can use these rules inside my style sheet to save myself some time and keep some of my style properties uniform across the site here.&lt;/p&gt;
@@ -124,7 +172,7 @@
     
       <item>
         <title>How to Make a Simple Navigation Menu From Scratch</title>
-        <description>&lt;p&gt;Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. &lt;strong&gt;What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;p&gt;Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. &lt;strong&gt;What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;start-by-learning-some-general-principles&quot;&gt;Start by Learning Some General Principles&lt;/h2&gt;
 &lt;p&gt;If you are like me and don’t know much about web development or these three languages, you may approach the problem by looking at a tutorial and just copying their examples and then pasting them into your text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? &lt;em&gt;Spending some time to really learn the basic principles of the language you are working in can be super helpful.&lt;/em&gt;&lt;/p&gt;
@@ -133,7 +181,7 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;The difference between a class and an id in CSS&lt;/p&gt;
+    &lt;p&gt;The difference between an id and a class in CSS&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;HTML syntax - just how to write it, what tags are, etc. You may want to try going over some common things you can do in HTML such as building a list, making text bold, or creating a header. &lt;em&gt;Definitely, go over what divs and span tags are!&lt;/em&gt;&lt;/p&gt;
@@ -144,7 +192,9 @@
 &lt;/ol&gt;
 
 &lt;h1 id=&quot;how-to-approach-the-problem-of-creating-a-menu-for-your-page&quot;&gt;How to Approach the Problem of Creating a Menu For Your Page&lt;/h1&gt;
-&lt;p&gt;-In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for one to use):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for a good one to use):&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Page 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
@@ -154,8 +204,8 @@
 
 &lt;ul&gt;
   &lt;li&gt;Okay great, these are the pages that you are going to be listed in your menu! Pretty awesome, right? Next, you are just going to think about how to make these “pages” look and function the way you want them to.&lt;/li&gt;
-  &lt;li&gt;You can think about what to do in steps to make it easier if you want. I personally found approaching the process piece-by-piece easier to manage. It helped me become less overwhelmed by the task.&lt;/li&gt;
-  &lt;li&gt;One place you could start is by thinking about the fact that these “pages” should be able to be click-able. Meaning, they should be linked. You can add the a href tag to your list to make this happen.&lt;/li&gt;
+  &lt;li&gt;You can think about what to do in steps to make it easier if you want. I personally found approaching the process piece-by-piece easier to manage.&lt;/li&gt;
+  &lt;li&gt;One place you could start is by thinking about the fact that these pages should be able to be click-able. Meaning, they should be linked. You can add the a href tag to your list to make this happen.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
@@ -165,14 +215,14 @@
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;I’ve put “#” in the place of an actual link for now because I don’t have content or links for these pages yet.&lt;/li&gt;
+  &lt;li&gt;Note thAT I’ve put “#” in the place of an actual link for now because I don’t have content or links for these pages yet.&lt;/li&gt;
   &lt;li&gt;So now, depending on what you want the menu to do and look like, you can think about what to do next.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;here-are-some-ideas-for-how-you-may-want-your-menu-to-look&quot;&gt;Here are some ideas for how you may want your menu to look&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;You may want the menu items to be laid out horizontally across your page.&lt;/li&gt;
-  &lt;li&gt;Maybe you will want a menu item should to simply display specific content when clicked. Well, you can do that with JavaScript&lt;/li&gt;
+  &lt;li&gt;Maybe you will want a menu item to simply display specific content when clicked. Well, you can do that with JavaScript&lt;/li&gt;
   &lt;li&gt;You could simply think about the style of the menu.
     &lt;ul&gt;
       &lt;li&gt;Maybe you want the menu to have a background color&lt;/li&gt;
@@ -212,7 +262,7 @@
 
 &lt;p&gt;For more CSS properties, you can also &lt;a href=&quot;http://www.w3schools.com/cssref/&quot;&gt;check out W3Schools&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;One thing I can’t help but share:&lt;/strong&gt; I ran into a problem with CSS while working on my my practice menu. I wanted the menu to look great on a computer, tablet, or mobile device. Yet, when the width of my page got to a certain point, the menu looked ugly. I asked for help and got an awesome solution in return.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One thing I can’t help but share:&lt;/strong&gt; I ran into a problem with CSS while working on my practice menu. I wanted the menu to look great on a computer, tablet, or mobile device. Yet, when the width of my page got to a certain point, the menu looked ugly. I asked for help and got an awesome solution in return.&lt;/p&gt;
 
 &lt;p&gt;You can actually create a rule that says “hey, when the width of  someone’s screen gets to “x width,” I want something special to happen. In this example, I wanted an element on my menu to disappear and to make room for other items to appear nicely on a smaller screen. So cool, right?! It looks like this in case you want to try it for yourself.&lt;/p&gt;
 

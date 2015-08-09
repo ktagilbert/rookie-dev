@@ -28,7 +28,7 @@
 
     <script>
   		$(document).ready(function() {
-
+        
         //navigation menu: toggles arrow img and shows menu
 
         $('.categories-dropdown').on('mouseover', function(event) {
@@ -41,6 +41,8 @@
           $('.side-categories').hide();
           $('.categories-dropdown').show();
         });
+
+        //home page slid down
 
         //mobile menu
 
@@ -61,8 +63,9 @@
         //about page slidedown
 
         $(document).ready(function() {
-          $('#about-page').slideDown(1000);
-          $('.about-content').delay(1000).fadeIn(700);
+          $('#about-page').slideDown(1000, function() {
+            $('.about-content').fadeIn(700);
+          });
         });
 
     });
@@ -93,10 +96,6 @@
 
   <header class="post-header">
   </header>
-  <!-- <div class="about-greeting">
-  	<h1> Hi There!</h1>
-  	<h2>My name is Katie.</h2>
-  </div> -->
 
   	<article class="post-content">
     	<!DOCTYPE html>
@@ -111,30 +110,23 @@
   <article class="post-content">
     <h2 id="bridging-the-gap-between-css-and-sass">Bridging the Gap Between CSS and SASS</h2>
 
-<p>Rookie Dev here is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. About midway through, after performing what seemed to me like a million git commands, he paused and looked up at me saying “well, I’m really sorry and I’m not sorry.”</p>
-
-<p>“Why?” I asked?</p>
-
-<p>“You’re going to have to learn SCSS. It’s a good thing though! I don’t know it but employers will really like that you know it.”</p>
-
-<p>“Okay….”</p>
-
-<p>I had no idea what SCSS was. My SO’s reaction just made it seem like something that was going to be extremely difficult to learn. <em>With an already limited knowledge of CSS, I was intimidated.</em></p>
+<p>I have a confession. When I first started working on Rooke Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. <em>With an already limited knowledge of CSS, I was intimidated.</em></p>
 
 <p>It turns out that SCSS is not that difficult.</p>
 
-<p>When I attended OS Bridge, I spent one day just job shadowing some other developers. We sat in a spare room together. They worked on their team’s project, while I pulled open my computer and read up on SASS. I just typed in “learning SASS” into Google and was directed to <a href="http://sass-lang.com/">sass-lang.com</a>.</p>
-
-<p>The words “CSS with Superpowers” appeared on my screen.</p>
+<h1 id="what-helped-me-learn-about-scss">What helped me learn about SCSS:</h1>
+<p>I simply pulled open my computer and read up on SASS. I started by typing in “learning SASS” into Google. I  was then directed to <a href="http://sass-lang.com/">sass-lang.com</a>. The words “CSS with Superpowers” appeared on my screen.</p>
 
 <p>It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! <strong>Here I am going to show you some basics to help you get started with SCSS.</strong></p>
 
-<p>You will learn three cool things:
-1. How SCCS does nesting
-2. How to Use Variables
-3. What an Extend Is</p>
+<h2 id="you-will-learn-three-cool-things">You will learn three cool things:</h2>
+<ol>
+  <li>How SCCS does nesting</li>
+  <li>How to use Variables</li>
+  <li>What an extend is</li>
+</ol>
 
-<h1 id="differences-between-css-and-scss">Differences between CSS and SCSS</h1>
+<h2 id="differences-between-css-and-scss">Differences between CSS and SCSS</h2>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.h1</span> <span class="p">{</span>
  <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="p">;</span>
@@ -145,7 +137,7 @@
  <span class="k">color</span><span class="o">:</span> <span class="m">#d3d3d3</span><span class="p">;</span>	
 <span class="p">}</span></code></pre></div>
 
-<p>Okay, cool. Here we have some CSS that basically says, hey ‘for all headers, make the font-family Georgia and the color black.’ Below that we have some nested rules. The list items under the class “nav-list” all be a light-grey color. Alright, nice. Now, let’s write the same thing using SASS.</p>
+<p>Okay, cool. Here we have some CSS that basically says, “hey for all headers, make the font-family Georgia and the color black.” Below that we have some nested rules that say the list items under the class “nav-list” will all be a light-grey color. Alright, nice. <strong>Now, let’s write the same thing using SASS.</strong></p>
 
 <h3 id="nesting-with-scss">1. Nesting with SCSS</h3>
 
@@ -160,9 +152,7 @@
  <span class="p">}</span>
 <span class="err">}</span></code></pre></div>
 
-<p>As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the <a href="http://writingcenter.fas.harvard.edu/pages/outlining">Harvard Outline</a> looks. Maybe that’s the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway.</p>
-
-<p>This part of SCSS is easy and I like it better personally.</p>
+<p>As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the <a href="http://writingcenter.fas.harvard.edu/pages/outlining">Harvard Outline</a> looks. Maybe that’s just the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway. This part of SCSS is easy and I like it better personally.</p>
 
 <h3 id="variables">2. Variables</h3>
 
@@ -179,7 +169,7 @@
   <li>header align stands in for text-align center.</li>
   <li>texts within a container will appear white</li>
   <li>“large” stands in for padding: 80px</li>
-  <li>$rookie-blue is my brand color</li>
+  <li>$rookie-blue is one of my brand color</li>
 </ul>
 
 <p>I can use these rules inside my style sheet to save myself some time and keep some of my style properties uniform across the site here.</p>

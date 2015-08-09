@@ -25,7 +25,7 @@
 
     <script>
   		$(document).ready(function() {
-
+        
         //navigation menu: toggles arrow img and shows menu
 
         $('.categories-dropdown').on('mouseover', function(event) {
@@ -38,6 +38,8 @@
           $('.side-categories').hide();
           $('.categories-dropdown').show();
         });
+
+        //home page slid down
 
         //mobile menu
 
@@ -58,8 +60,9 @@
         //about page slidedown
 
         $(document).ready(function() {
-          $('#about-page').slideDown(1000);
-          $('.about-content').delay(1000).fadeIn(700);
+          $('#about-page').slideDown(1000, function() {
+            $('.about-content').fadeIn(700);
+          });
         });
 
     });

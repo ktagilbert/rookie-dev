@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Great Resources For Learning JavaScript</title>
+  <meta name="description" content="So I know from experience that learning JavaScript can be *very* challenging. If you are learning about JavaScript in school or are teaching yourself, I want...">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://127.0.0.1:4000//2015/08/05/resources.html">
+  <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alice" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55144371-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script>
+  		$(document).ready(function() {
+        
+        //navigation menu: toggles arrow img and shows menu
+
+        $('.categories-dropdown').on('mouseover', function(event) {
+          event.preventDefault();
+          $('.side-categories').show();
+          $('.categories-dropdown').hide();
+        });
+
+        $(".side-categories").on('mouseleave', function() {
+          $('.side-categories').hide();
+          $('.categories-dropdown').show();
+        });
+
+        //home page slid down
+
+        //mobile menu
+
+        $('#mobile-menu').on('click', function(event) {
+          event.preventDefault();
+          $('.side-categories').show();          
+        });
+
+        //projects hover interaction 
+
+        $('.projects-img').on('mouseover', function(event) {
+          $(this).siblings('.project-description').show();
+        });
+        $('.projects-img').on('mouseleave', function() {
+          $('.project-description').hide();
+        }); 
+
+        //about page slidedown
+
+        $(document).ready(function() {
+          $('#about-page').slideDown(1000, function() {
+            $('.about-content').fadeIn(700);
+          });
+        });
+
+    });
+	 </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <!-- <div class="wrapper"> -->
+      <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
+      <img src ="/assets/navicon.png/" id="mobile-menu" />
+      <ul class="side-categories">
+        <li><a href="/">Home</li>	
+        <li><a href="/about">About</a></li>
+      </ul>
+
+      <a class="site-title" href="/">Rookie Dev</a>
+
+</header>
+
+    
+    <!--<div class="page-content">-->
+        <h1 class="post-title">Great Resources For Learning JavaScript</h1>
+<div class="post">
+
+  <header class="post-header">
+  </header>
+
+  	<article class="post-content">
+    	<!DOCTYPE html>
+<html>
+<div class="post">
+
+  <header class="post-header">
+    
+    <p class="post-meta">Aug 5, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>I know from experience that learning JavaScript can be <em>very</em> challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It tooks me a couple of months to finally be comfortable in the langauge. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.</p>
+
+<h1 id="books">Books:</h1>
+
+<ul>
+  <li>
+    <p><strong>JavaScript the Definitive Guide:</strong> Okay, it’s long. So just don’t read the whole thing, okay? I found it helpful to read the first 5-10 chapters. It helped me understand what was actually going on in JavaScript. What I found the most helpful is the time the author spent to explain each and every line of his examples. Meaning, you will never have to guess at what a piece of code is doing. Instead, everything is totally straight forward. While reading the Definitive Guide I was able to finally understand some important concepts in JavaScript. Other books would skim over these same concepts as if they were easy to comprehend. So, if you’re like me and having some problems understanding some of the basics, this might be the book for you.</p>
+  </li>
+  <li>
+    <p><strong>JavaScript the Good Parts:</strong> I would especially recommend this book if you are a visual learner. JavaScript the Good Parts is super easy to skim through and will give you useful info (though, you may have to look up some concepts on Google as it doesn’t go out of its way to help its readers understand everything). I heard that the The Good Parts is a retaliation against the Definitive Guide so it only makes sense that it is shorter and offers a little less explanation. Yet still, it is definitlely more useful than other introductions to JavaScript out there.</p>
+  </li>
+  <li>
+    <p><strong>Writing Eloquent JavaScript:</strong> Read this only if you know the fundamentals of JavaScript already. The books comes highly recommended by programmers but I really don’t think it should be recommended for those just starting to learn about the language. For example, I initially had no idea what was going on when examples showed up filled with ‘for’ loops and counters or unexplained methods. <strong>However, DO read this if you want to learn how to write better JavaScript or if you want to solve some pretty cool problems that the author includes at the end of each chapter.</strong></p>
+  </li>
+</ul>
+
+<h1 id="websites">Websites:</h1>
+<ul>
+  <li><strong><a href="http://www.w3schools.com/js/default.asp">W3Schools</a>:</strong> This is a great go-to resource for anything that may come up. It will cover anything from syntax to basic explanations about what some methods do. It is a trusted resource for many and definitely a good site to check out.</li>
+  <li><strong><a href="http://stackoverflow.com/">Stack Overflow</a>:</strong> If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out.</li>
+  <li><strong><a href="http://jshint.com/">JsHint</a>:</strong> If you don’t know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself.</li>
+  <li><strong><a href="https://jsfiddle.net/">JsFiddle</a>:</strong> Want to just try something out to see how it works? Js Fiddle will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.</li>
+  <li><strong><a href="http://javascriptissexy.com/">Java Script Is Sexy</a>:</strong> Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script <em>and</em> and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.</li>
+</ul>
+
+<h1 id="some-design-inspirations">Some Design Inspirations:</h1>
+<ul>
+  <li><a href="http://ajclarkson.co.uk/blog/">AJ Clarkson’s Site and Portfolio</a></li>
+  <li><a href="http://www.ashleyfarrand.com/about/">Ashley Farrand’s Design Website</a></li>
+  <li><a href="http://www.thisisfreshface.com/">Fresh Face</a></li>
+  <li>You can also check out my pinterest board for more web design inspirations <a href="https://www.pinterest.com/ktagilbert/web-design/">here</a></li>
+</ul>
+
+<h1 id="miscellaneous">Miscellaneous:</h1>
+
+<ul>
+  <li>Subreddits:
+    <ul>
+      <li><strong><a href="https://www.reddit.com/r/webdev/">r/webdev</a></strong></li>
+      <li><strong><a href="https://www.reddit.com/r/web_design/">r/webdesign</a></strong></li>
+      <li><strong><a href="https://teamtreehouse.com/home">Treehouse</a>:</strong> a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>These are just the best resources that I have been able to find so far. If you find any others that you think should be added to this list let me know and I’ll update this post. <strong>Thanks for reading guys!</strong></p>
+
+
+  </article>
+ 
+</div>
+
+ <!--contribute container-->
+
+<section ="contribute-container">
+
+</html>
+
+  	</article>
+</div>
+</div>
+
+<!--contribute-container-->
+
+ <div class="contribute-container">
+ 		<span class="container-head">Want To Contribute to Rookie Dev?</span>
+ 	<ul>
+ 		<li>
+ 			<a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
+ 		 </li>
+  	</ul>
+ </div>
+        <div class="wrapper">
+      </div>
+
+    <!--</div>-->
+
+
+
+    <footer class="site-footer">
+
+  <div>
+    <span class="footer-heading">
+      <h4>Do You Like What You See Here?</h4>
+      <h5>send me an email to get in contact sometime</h5>
+      <h6><a href="mailto:ktagilbert@gmail.com">ktagilbert@gmail.com</a></h6>
+    </span>
+     <ul class="footer-list">
+        <li>
+            <a class="social-icon" href="https://twitter.com/KT_a_Gilbert">
+              <img src="/assets/twitter.png" />
+            </a>
+          </li>
+            <li>
+            <a class="social-icon" href="https://github.com/ktagilbert">
+              <img src="/assets/github.svg" />
+            </a>
+        </li>
+          <li>
+            <a class="social-icon" href="https://instagram.com/ktagilbert/">
+              <img src="/assets/icon-instagram.png" />
+            </a>
+          </li> 
+       </ul>
+       <ul class="design-by">
+         <li>  
+          <a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert
+          </a>
+        </li>
+      </ul>
+ </div>
+
+</footer>
+
+
+  </body>
+
+</html>
