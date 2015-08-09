@@ -1,15 +1,15 @@
 ---
 layout: default
-layout: page
 ---
 <!DOCTYPE html>
 <html>
 <div class="post">
 
   <header class="post-header">
-    
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  	<h1 class="post-title">{{ page.title }}</h1>
   </header>
+
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
   <article class="post-content">
     {{ content }}
@@ -19,6 +19,13 @@ layout: page
 
  <!--contribute container-->
 
-<section ="contribute-container">
+ <div class="contribute-container">
+ 		<span class="container-head">Want To Contribute to Rookie Dev?</span>
+ 	<ul>
+ 		<li>
+ 			<a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
+ 		 </li>
+  	</ul>
+ </div>
 
 </html>
