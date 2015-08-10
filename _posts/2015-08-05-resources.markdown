@@ -21,12 +21,12 @@ I know from experience that learning JavaScript can be *very* challenging. If yo
 - **[Stack Overflow](http://stackoverflow.com/):** If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out. 
 - **[JsHint](http://jshint.com/):** If you don't know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself. 
 - **[JsFiddle](https://jsfiddle.net/):** Want to just try something out to see how it works? Js Fiddle will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it. 
-- **[Java Script Is Sexy](http://javascriptissexy.com/):** Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script *and* and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide. 
+- **[JavaScript Is Sexy](http://javascriptissexy.com/):** Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script *and* and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide. 
 
 # Some Design Inspirations: 
 - [AJ Clarkson's Site and Portfolio](http://ajclarkson.co.uk/blog/)
 - [Ashley Farrand's Design Website](http://www.ashleyfarrand.com/about/)
-- [Fresh Face](http://www.thisisfreshface.com/)
+- **[Fresh Face](http://www.thisisfreshface.com/)**
 - You can also check out my pinterest board for more web design inspirations [here](https://www.pinterest.com/ktagilbert/web-design/) 
 
 # Miscellaneous:
@@ -34,7 +34,7 @@ I know from experience that learning JavaScript can be *very* challenging. If yo
 - Subreddits:
 	- **[r/webdev](https://www.reddit.com/r/webdev/)**
 	- **[r/webdesign](https://www.reddit.com/r/web_design/)**
-	- **[r/learningjavascript](https://www.reddit.com/r/learnjavascript/)
+	- **[r/learningjavascript](https://www.reddit.com/r/learnjavascript/)**
 - **[Treehouse](https://teamtreehouse.com/home):** a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out. 
 
 

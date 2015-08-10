@@ -33,14 +33,14 @@
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;:&lt;/strong&gt; If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://jshint.com/&quot;&gt;JsHint&lt;/a&gt;:&lt;/strong&gt; If you don’t know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://jsfiddle.net/&quot;&gt;JsFiddle&lt;/a&gt;:&lt;/strong&gt; Want to just try something out to see how it works? Js Fiddle will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://javascriptissexy.com/&quot;&gt;Java Script Is Sexy&lt;/a&gt;:&lt;/strong&gt; Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script &lt;em&gt;and&lt;/em&gt; and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://javascriptissexy.com/&quot;&gt;JavaScript Is Sexy&lt;/a&gt;:&lt;/strong&gt; Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script &lt;em&gt;and&lt;/em&gt; and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;some-design-inspirations&quot;&gt;Some Design Inspirations:&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://ajclarkson.co.uk/blog/&quot;&gt;AJ Clarkson’s Site and Portfolio&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.ashleyfarrand.com/about/&quot;&gt;Ashley Farrand’s Design Website&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.thisisfreshface.com/&quot;&gt;Fresh Face&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.thisisfreshface.com/&quot;&gt;Fresh Face&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;You can also check out my pinterest board for more web design inspirations &lt;a href=&quot;https://www.pinterest.com/ktagilbert/web-design/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -51,9 +51,10 @@
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/webdev/&quot;&gt;r/webdev&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/web_design/&quot;&gt;r/webdesign&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://teamtreehouse.com/home&quot;&gt;Treehouse&lt;/a&gt;:&lt;/strong&gt; a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/learnjavascript/&quot;&gt;r/learningjavascript&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://teamtreehouse.com/home&quot;&gt;Treehouse&lt;/a&gt;:&lt;/strong&gt; a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;These are just the best resources that I have been able to find so far. If you find any others that you think should be added to this list let me know and I’ll update this post. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
