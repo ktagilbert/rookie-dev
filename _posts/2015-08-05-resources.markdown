@@ -20,12 +20,13 @@ I know from experience that learning JavaScript can be *very* challenging. If yo
 - **[W3Schools](http://www.w3schools.com/js/default.asp):** This is a great go-to resource for anything that may come up. It will cover anything from syntax to basic explanations about what some methods do. It is a trusted resource for many and definitely a good site to check out. 
 - **[Stack Overflow](http://stackoverflow.com/):** If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out. 
 - **[JsHint](http://jshint.com/):** If you don't know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself. 
-- **[JsFiddle](https://jsfiddle.net/):** Want to just try something out to see how it works? Js Fiddle will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it. 
+- **[CodePen](http://codepen.io/pen/):** Want to just try something out to see how it works? CodePen (which was suggested to me via a reply to this post actually) will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it. 
 - **[JavaScript Is Sexy](http://javascriptissexy.com/):** Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script *and* and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide. 
+- CodePen
 
 # Some Design Inspirations: 
-- [AJ Clarkson's Site and Portfolio](http://ajclarkson.co.uk/blog/)
-- [Ashley Farrand's Design Website](http://www.ashleyfarrand.com/about/)
+- **[AJ Clarkson's Site and Portfolio](http://ajclarkson.co.uk/blog/)**
+- **[Ashley Farrand's Design Website](http://www.ashleyfarrand.com/about/)**
 - **[Fresh Face](http://www.thisisfreshface.com/)**
 - You can also check out my pinterest board for more web design inspirations [here](https://www.pinterest.com/ktagilbert/web-design/) 
 
