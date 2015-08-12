@@ -24,7 +24,7 @@
   ga('create', 'UA-55144371-2', 'auto');
   ga('send', 'pageview');
 
-</script>
+  </script>
 
     <script>
   		$(document).ready(function() {
@@ -60,7 +60,7 @@
           $('.project-description').hide();
         }); 
 
-        //about page slidedown
+        //about page slidedown/fadein
 
         $(document).ready(function() {
           $('#about-page').slideDown(1000, function() {
@@ -68,13 +68,39 @@
           });
         });
 
-        //posts slidedown
+        //posts header slidedown/fadein to keep with style of about page
 
          $(document).ready(function() {
           $('.post-header').slideDown(1000, function() {
             $('.post-title').fadeIn(700);
           });
         });
+      
+
+    //future projects page overlay:
+
+  //   var $overlay = $("<div id='overlay'></div>");
+  //   var $image = $("<img>");
+  //   var $caption = $("<p></p>");
+
+  //   $overlay.append($image);
+  //     $overlay.append($caption);
+  //     $("body").append($overlay);
+  //     $('.imageGallery a').click, function(event) {
+  //       event.preventDefault();
+  //       var imageLocation = $(this).attr('href');
+
+  //   $image.attr("src", imageLocation);
+  //   $overlay.show();
+
+  //   var captionText $(this).children("img").attr("alt");
+  //     $caption.text(captionText);
+  //   });
+
+  //   $overlay.click(function() {
+  //     $overlay.hide();
+  // });
+
 
     });
 	 </script>
@@ -131,14 +157,15 @@
   <li><strong><a href="http://www.w3schools.com/js/default.asp">W3Schools</a>:</strong> This is a great go-to resource for anything that may come up. It will cover anything from syntax to basic explanations about what some methods do. It is a trusted resource for many and definitely a good site to check out.</li>
   <li><strong><a href="http://stackoverflow.com/">Stack Overflow</a>:</strong> If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out.</li>
   <li><strong><a href="http://jshint.com/">JsHint</a>:</strong> If you don’t know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself.</li>
-  <li><strong><a href="https://jsfiddle.net/">JsFiddle</a>:</strong> Want to just try something out to see how it works? Js Fiddle will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.</li>
+  <li><strong><a href="http://codepen.io/pen/">CodePen</a>:</strong> Want to just try something out to see how it works? CodePen (which was suggested to me via a reply to this post actually) will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.</li>
   <li><strong><a href="http://javascriptissexy.com/">JavaScript Is Sexy</a>:</strong> Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script <em>and</em> and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.</li>
+  <li>CodePen</li>
 </ul>
 
 <h1 id="some-design-inspirations">Some Design Inspirations:</h1>
 <ul>
-  <li><a href="http://ajclarkson.co.uk/blog/">AJ Clarkson’s Site and Portfolio</a></li>
-  <li><a href="http://www.ashleyfarrand.com/about/">Ashley Farrand’s Design Website</a></li>
+  <li><strong><a href="http://ajclarkson.co.uk/blog/">AJ Clarkson’s Site and Portfolio</a></strong></li>
+  <li><strong><a href="http://www.ashleyfarrand.com/about/">Ashley Farrand’s Design Website</a></strong></li>
   <li><strong><a href="http://www.thisisfreshface.com/">Fresh Face</a></strong></li>
   <li>You can also check out my pinterest board for more web design inspirations <a href="https://www.pinterest.com/ktagilbert/web-design/">here</a></li>
 </ul>

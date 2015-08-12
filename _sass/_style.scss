@@ -34,18 +34,17 @@ $purple: #302B45;
 	color: #fff;
 	text-shadow: 0px 1px 2px #111;
 	padding-top: 200px;
-	padding-bottom: 200px;
 	margin-bottom: 0px;	
 	font-size: 50px;
 	font-family: 'Lato', serif;
 	font-weight: 600;
 	background-color: $rookie-blue;
+	padding-bottom: 200px;
 }
 
 #heading-emphasis {
 	font-style: italic;
 }
-
 
 //drop-down menu images
 
@@ -161,6 +160,14 @@ $purple: #302B45;
 .my-background {
 	h1 {
 		padding-top: $large;
+	}
+}
+
+//interests
+
+#interests {
+	h1 {
+		padding-top: 150px;
 	}
 }
 

@@ -32,14 +32,15 @@
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.w3schools.com/js/default.asp&quot;&gt;W3Schools&lt;/a&gt;:&lt;/strong&gt; This is a great go-to resource for anything that may come up. It will cover anything from syntax to basic explanations about what some methods do. It is a trusted resource for many and definitely a good site to check out.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;:&lt;/strong&gt; If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://jshint.com/&quot;&gt;JsHint&lt;/a&gt;:&lt;/strong&gt; If you don’t know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://jsfiddle.net/&quot;&gt;JsFiddle&lt;/a&gt;:&lt;/strong&gt; Want to just try something out to see how it works? Js Fiddle will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://codepen.io/pen/&quot;&gt;CodePen&lt;/a&gt;:&lt;/strong&gt; Want to just try something out to see how it works? CodePen (which was suggested to me via a reply to this post actually) will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://javascriptissexy.com/&quot;&gt;JavaScript Is Sexy&lt;/a&gt;:&lt;/strong&gt; Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script &lt;em&gt;and&lt;/em&gt; and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.&lt;/li&gt;
+  &lt;li&gt;CodePen&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;some-design-inspirations&quot;&gt;Some Design Inspirations:&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ajclarkson.co.uk/blog/&quot;&gt;AJ Clarkson’s Site and Portfolio&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.ashleyfarrand.com/about/&quot;&gt;Ashley Farrand’s Design Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://ajclarkson.co.uk/blog/&quot;&gt;AJ Clarkson’s Site and Portfolio&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ashleyfarrand.com/about/&quot;&gt;Ashley Farrand’s Design Website&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.thisisfreshface.com/&quot;&gt;Fresh Face&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;You can also check out my pinterest board for more web design inspirations &lt;a href=&quot;https://www.pinterest.com/ktagilbert/web-design/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

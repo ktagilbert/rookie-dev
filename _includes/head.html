@@ -21,7 +21,7 @@
   ga('create', 'UA-55144371-2', 'auto');
   ga('send', 'pageview');
 
-</script>
+  </script>
 
     <script>
   		$(document).ready(function() {
@@ -57,7 +57,7 @@
           $('.project-description').hide();
         }); 
 
-        //about page slidedown
+        //about page slidedown/fadein
 
         $(document).ready(function() {
           $('#about-page').slideDown(1000, function() {
@@ -65,13 +65,39 @@
           });
         });
 
-        //posts slidedown
+        //posts header slidedown/fadein to keep with style of about page
 
          $(document).ready(function() {
           $('.post-header').slideDown(1000, function() {
             $('.post-title').fadeIn(700);
           });
         });
+      
+
+    //future projects page overlay:
+
+  //   var $overlay = $("<div id='overlay'></div>");
+  //   var $image = $("<img>");
+  //   var $caption = $("<p></p>");
+
+  //   $overlay.append($image);
+  //     $overlay.append($caption);
+  //     $("body").append($overlay);
+  //     $('.imageGallery a').click, function(event) {
+  //       event.preventDefault();
+  //       var imageLocation = $(this).attr('href');
+
+  //   $image.attr("src", imageLocation);
+  //   $overlay.show();
+
+  //   var captionText $(this).children("img").attr("alt");
+  //     $caption.text(captionText);
+  //   });
+
+  //   $overlay.click(function() {
+  //     $overlay.hide();
+  // });
+
 
     });
 	 </script>

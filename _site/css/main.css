@@ -463,12 +463,12 @@ img {
   color: #fff;
   text-shadow: 0px 1px 2px #111;
   padding-top: 200px;
-  padding-bottom: 200px;
   margin-bottom: 0px;
   font-size: 50px;
   font-family: 'Lato', serif;
   font-weight: 600;
-  background-color: #40a9f2; }
+  background-color: #40a9f2;
+  padding-bottom: 200px; }
 
 #heading-emphasis {
   font-style: italic; }
@@ -562,6 +562,9 @@ img {
 
 .my-background h1 {
   padding-top: 80px; }
+
+#interests h1 {
+  padding-top: 150px; }
 
 .container-head {
   text-align: center;
