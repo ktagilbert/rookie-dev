@@ -33,13 +33,12 @@ $purple: #302B45;
 .page-heading {
 	color: #fff;
 	text-shadow: 0px 1px 2px #111;
-	padding-top: 200px;
+	padding: 200px 0 200px 0;
 	margin-bottom: 0px;	
 	font-size: 50px;
 	font-family: 'Lato', serif;
 	font-weight: 600;
 	background-color: $rookie-blue;
-	padding-bottom: 200px;
 }
 
 #heading-emphasis {
@@ -58,22 +57,18 @@ $purple: #302B45;
 .categories-dropdown {
 	width: 30px;
 	float: right;
-	padding-left: 10px;
-	padding-top: 10px;	
+	padding: 10px 0 30px 10px;
 	position: absolute;
 	z-index: 100000;
-	padding-bottom: 30px;
 }
 
 #mobile-menu {
 	display: none;
 	width: 30px;
 	float: right;
-	padding-left: 10px;
-	padding-top: 15px;	
+	padding: 15px 0 30px 10px;	
 	position: absolute;
 	z-index: 100000;
-	padding-bottom: 30px;
 }	
 
 //drop-down-menu
@@ -86,8 +81,7 @@ $purple: #302B45;
 	float: left;
 	background: #fff;
 	list-style: none;
-	padding: 10px;
-	padding-top: 55px;
+	padding: 65px 10px 10px 10px;
 	margin: 0px;
 	line-height: 4;
 	text-align: center;
@@ -95,11 +89,7 @@ $purple: #302B45;
 	box-shadow: 1px 3px 3px #111;
 	
 	li a:hover {
-		padding: 0px;
-		margin: 0px;
-		float: left;
 		width: 100%;
-		font-size: 16px;
 		font-weight: 500;
 	}
 }
@@ -130,10 +120,7 @@ $purple: #302B45;
 	
 	li {
 		margin: auto;
-		padding-left: 20%;
-		padding-right: 20%;
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding: 40px 15% 40px 15%;
 	}
 }
 
@@ -151,8 +138,7 @@ $purple: #302B45;
 .post {
 	.about-content {
     	text-shadow: 3px 1px 0px #111;
-    	padding-right: 10%;
-    	padding-left: 10%;
+    	padding: 0 10% 0 10%;
     	display: none;
 	}
 }
@@ -179,7 +165,7 @@ $purple: #302B45;
  	font-weight: 400px;
  	color: $container-color;
  	display: block;
- 	padding-bottom: 18px;
+ 	padding: 0 0 18px 0;
  	margin-left: 0px;
 }
 
@@ -187,11 +173,9 @@ $purple: #302B45;
 	font-size: 16px;
  	background-color: #457;
  	display: block;
- 	padding: 0px;
  	margin: 0px;
  	line-height: 50px;
- 	padding-top: 10px;
- 	padding-bottom: 10px;
+ 	padding: 10px 0 10px 0;
  	position: relative;
  	overflow: hidden;
 
@@ -218,82 +202,11 @@ $purple: #302B45;
 	}
 }
 
-//projects
-
-// .projects-content h3 {
-// 	text-align: center;
-// 	padding-bottom: 100px;
-// 	padding-top: $large;
-// 	color: #47236b;
-// 	text-shadow: 1px 2px 0px #d3d3d3;
-// }
-
-// .project-columns {
-// 	width: 100%;
-//     text-align: center;
-// }
-
-// .column-one {
-// 	width: 30%;
-// 	text-align: center;
-// 	display: inline-block;
-// }
-
-// .column-two {
-// 	width: 30%;
-// 	text-align: center;
-// 	display: inline-block;
-// 	display: none;
-// }
-
-// .column-three {
-// 	width: 30%;
-// 	text-align: center;
-// 	display: inline-block;
-// 	display: none;
-// }
-
-// .row-one {
-// 	text-align: center;
-// 	position: relative;
-// 	overflow: hidden;
-	
-// 	.project-description {
-// 		margin-right: 15px;
-// 		margin-left: 20px;
-// 		position: absolute;	
-// 		color: #111;
-// 		font-weight: 500;
-// 		font-size: 16px;
-// 		display: none;
-// 	}
-// }
-
-// .row-one li {
-// 	display: inline-block;
-// 	list-style-type: none;	
-// 	width: 30%;
-// 	text-align: center;
-// }
-
-// .row-one img:hover {
-// 	opacity: 0.3;
-// }
-
-// .projects-img {
-// 	width: 250px;
-// 	margin-right: 15px;
-// 	margin-left: 15px;
-// 	float: left;
-// 	z-index: -10000;
-// }
-
-
 //footer
 
 .site-footer {
 	background: #d3d3d3;
-	height: 300px;
+	height: 100%;
 	text-align: center;
 	color: $purple;
 
@@ -315,7 +228,7 @@ $purple: #302B45;
 }
 
 .footer-list {
-	text-align: center;
+	margin: 0px;
 
 	li {
 		display: inline-block;
@@ -326,7 +239,7 @@ $purple: #302B45;
 	// 
 	.social-icon, img {
 		width: 40px;
-		padding: 0px;
+		padding: 0;
 		margin-top: 30px;
 	}
 }
