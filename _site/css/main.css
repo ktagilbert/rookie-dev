@@ -539,7 +539,8 @@ img {
   opacity: 1;
   color: #fff;
   padding-top: 150px;
-  height: 850px; }
+  padding: 5%;
+  height: 100%; }
 
 .post .about-content {
   text-shadow: 3px 1px 0px #111;
@@ -549,8 +550,44 @@ img {
 .my-background h1 {
   padding-top: 80px; }
 
-#interests h1 {
-  padding-top: 150px; }
+.question-box {
+  padding-top: 80px;
+  text-align: center;
+  height: 100%;
+  margin: 100px 0 100px 0; }
+
+.ready-button {
+  border: none;
+  background: #40a9f2;
+  font-size: 1.5em;
+  padding: 30px;
+  color: #fff;
+  font-weight: bolder;
+  outline: none; }
+
+.ready-button:hover {
+  padding: 35px; }
+
+#form-name {
+  font-family: "Lato", "Tahoma";
+  font-size: 3em;
+  color: #666;
+  padding: 100px 0 50px 0; }
+
+.answer {
+  outline: none;
+  padding: 0 10px 150px 10px;
+  width: 50%; }
+
+.next-question {
+  display: none;
+  background-color: #40a9f2;
+  color: #fff;
+  padding: 30px;
+  border: none;
+  font-family: "Lato", "Tahoma";
+  font-size: 1.5em;
+  outline: none; }
 
 .container-head {
   text-align: center;
@@ -592,7 +629,8 @@ img {
   background: #d3d3d3;
   height: 100%;
   text-align: center;
-  color: #302B45; }
+  color: #302B45;
+  position: relative; }
   .site-footer a, .site-footer a:visited {
     color: #302B45; }
   .site-footer a:hover {
@@ -627,6 +665,31 @@ img {
     padding-top: 30px;
     font-weight: bolder; }
 
+@media (max-width: 457px) {
+  .page-heading {
+    font-size: 30px; } }
+@media (max-width: 550px) {
+  .post .about-background {
+    background: none;
+    height: 400px; }
+  .post .about-content {
+    font-size: 14px;
+    width: initial;
+    padding-right: 40px; } }
+@media (max-width: 700px) {
+  .about-greeting {
+    font-size: 12px; } }
+@media (max-width: 720px) {
+  #mobile-menu {
+    display: initial;
+    width: 20px; }
+
+  .categories-dropdown {
+    display: none;
+    z-index: -100000; }
+
+  #about-page {
+    height: 1000px; } }
 @media (max-width: 720px) {
   .site-footer {
     height: 500px; }
@@ -640,24 +703,6 @@ img {
       display: block;
       text-align: center;
       float: none; } }
-@media (max-width: 550px) {
-  .post .about-background {
-    background: none;
-    height: 400px; } }
-@media (max-width: 457px) {
-  .page-heading {
-    font-size: 30px; } }
-@media (max-width: 720px) {
-  #mobile-menu {
-    display: initial;
-    width: 20px; }
-
-  .categories-dropdown {
-    display: none;
-    z-index: -100000; }
-
-  #about-page {
-    height: 1000px; } }
 @media (max-width: 760px) {
   .side-categories {
     width: 100%;
@@ -671,14 +716,6 @@ img {
 
   .about-page {
     height: 700px; } }
-@media (max-width: 700px) {
-  .about-greeting {
-    font-size: 12px; } }
-@media (max-width: 550px) {
-  .about-content {
-    font-size: 14px;
-    width: initial;
-    padding-right: 40px; } }
 @media (max-width: 820px) {
   .row-one li {
     display: initial;

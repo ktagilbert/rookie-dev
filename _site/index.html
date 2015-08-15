@@ -16,96 +16,171 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-55144371-2', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-55144371-2', 'auto');
+    ga('send', 'pageview');
   </script>
+  <script>
 
-    <script>
-  		$(document).ready(function() {
-        
-        //navigation menu: toggles arrow img and shows menu
-
-        $('.categories-dropdown').on('mouseover', function(event) {
-          event.preventDefault();
-          $('.side-categories').show();
-          $('.categories-dropdown').hide();
-        });
-
-        $(".side-categories").on('mouseleave', function() {
-          $('.side-categories').hide();
-          $('.categories-dropdown').show();
-        });
-
-        //home page slid down
-
-        //mobile menu
-
-        $('#mobile-menu').on('click', function(event) {
-          event.preventDefault();
-          $('.side-categories').show();          
-        });
-
-        //projects hover interaction 
-
-        $('.projects-img').on('mouseover', function(event) {
-          $(this).siblings('.project-description').show();
-        });
-        $('.projects-img').on('mouseleave', function() {
-          $('.project-description').hide();
-        }); 
-
-        //about page slidedown/fadein
-
-        $(document).ready(function() {
-          $('#about-page').slideDown(1000, function() {
-            $('.about-content').fadeIn(700);
-          });
-        });
-
-        //posts header slidedown/fadein to keep with style of about page
-
-         $(document).ready(function() {
-          $('.post-header').slideDown(1000, function() {
-            $('.post-title').fadeIn(700);
-          });
-        });
+		$(document).ready(function() {
       
+      //navigation menu: toggles arrow img and shows menu
 
-    //future projects page overlay:
+      $('.categories-dropdown').on('mouseover', function(event) {
+        event.preventDefault();
+        $('.side-categories').show();
+        $('.categories-dropdown').hide();
+      });
 
-  //   var $overlay = $("<div id='overlay'></div>");
-  //   var $image = $("<img>");
-  //   var $caption = $("<p></p>");
+      $(".side-categories").on('mouseleave', function() {
+        $('.side-categories').hide();
+        $('.categories-dropdown').show();
+      });
 
-  //   $overlay.append($image);
-  //     $overlay.append($caption);
-  //     $("body").append($overlay);
-  //     $('.imageGallery a').click, function(event) {
-  //       event.preventDefault();
-  //       var imageLocation = $(this).attr('href');
+      //home page slid down
 
-  //   $image.attr("src", imageLocation);
-  //   $overlay.show();
+      //mobile menu
 
-  //   var captionText $(this).children("img").attr("alt");
-  //     $caption.text(captionText);
-  //   });
+      $('#mobile-menu').on('click', function(event) {
+        event.preventDefault();
+        $('.side-categories').show();          
+      });
 
-  //   $overlay.click(function() {
-  //     $overlay.hide();
-  // });
+      //projects hover interaction 
 
+      $('.projects-img').on('mouseover', function(event) {
+        $(this).siblings('.project-description').show();
+      });
+      $('.projects-img').on('mouseleave', function() {
+        $('.project-description').hide();
+      }); 
 
-    });
-	 </script>
+      //about page slidedown/fadein
+
+      $(document).ready(function() {
+        $('#about-page').slideDown(1000, function() {
+          $('.about-content').fadeIn(700);
+        });
+      });
+
+      //posts header slidedown/fadein to keep with style of about page
+
+       $(document).ready(function() {
+        $('.post-header').slideDown(1000, function() {
+          $('.post-title').fadeIn(700);
+        });
+      });
+    
+      //press resume button to get resume displayed full width
+      //on press of button
+      //append first div with resume feature
+
+      $('#resume-button').click(function(event){
+        event.preventDefault();
+        $("#resume-feature").show();
+        $('.about-content').hide();
+      });
+
+      //JS Study Program
+
+      var qas = [
+        {
+          question: "huh?",
+          answers: [
+            "foo",
+            "bar",
+            "my butt",
+            "your butt"
+          ] 
+        },
+        {
+          question: "what the hell is 'javascript'?",
+          answers: [
+            "chocolate",
+            "bar",
+            "in",
+            "your butt ( ͡° ͜ʖ ͡°)"
+          ] 
+        }
+      // "explain how 'this' works",
+      // "what is closure and when do use it?",
+      // "what is a good example of a case for an anonymous function?",
+      // "what are the three types of objects?"
+      // "what's the difference between host objects and native objects?",
+      // "what's the difference between an attribute and a property?",
+      // "Difference between document load event and document ready event?",
+      // "how do you add a value to the begining of an array?",
+      // "how do you add a value to the end of an array?",
+      // "how do you remove an element from the begining of an array?",
+      // "how do you remove an element from the end of an array?",
+      // "what is a ternary expression?",
+      // "What tools would you use to test your code's functionality?",
+      // "What tools would you use to find a performance bug in your code?",
+      // "Can you have an array within an array? What is this called?",
+      // "What is an expression?",
+      // "what is an argumnt?",
+      // "why would you use a function constructor?",
+      // "what is a method?",
+      // "what is an object literal?",
+      // "what is an object?",
+      // "when would you use a for loop?",
+      // "when would you use a while loop?",
+      // "why would use a switch statement?",
+      // "when would you use a continue statement?",
+      // "can you make your own functions?",
+      // "when would you use a try statement?",
+      // "what is a throw statement?",
+      // "what are the four types of invocation patterns?",
+      // "explain a function invocation",
+      // "explain a constructor invocation",
+      // "explain an apply invocation",
+      // "what does it mean when someone says 'this is deprecated'?",
+      // "can you explain the concept of variable having scope?",
+      // "objects hold state and behavior. What does this mean?",
+      // "can you explain what prototypes are?",
+      ];
+
+      var counter = 0;
+
+      $('.ready-button').on ('click', function(event){
+        $('.ready-button').hide();
+        $('.next-question').show();
+        nextQuestion();
+      });
+
+      // right now it displays the next element in the array 
+      // BUT leaves the previous element as well. 
+
+      $(".next-question").on('click', function(event) {
+        event.preventDefault();
+
+        if (counter == qas.length) {
+          $(".question-wrapper").html("<h1>YOU FINISHED</h1>");
+        } else {
+          nextQuestion();
+        }
+      });
+
+      function nextQuestion() {
+
+        $('.answers').empty();
+
+        var qa = qas[counter];
+        $('.question').html(qa.question);
+        
+        $.each(qa.answers, function(i, answer){
+          $('.answers').append(answer + "<br />");
+        });
+
+        counter++;   
+      }
+    }); 
+	</script>
 </head>
-
 
   <body>
 
@@ -117,6 +192,7 @@
       <ul class="side-categories">
         <li><a href="/">Home</li>	
         <li><a href="/about">About</a></li>
+        <li><a href="/jsstudy">JS Study</a></li>
       </ul>
 
       <a class="site-title" href="/">Rookie Dev</a>
