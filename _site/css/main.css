@@ -554,21 +554,32 @@ img {
   text-align: center;
   display: block;
   background-color: #fff; }
-  #resume-feature #skill-set {
-    list-style: none;
-    font-size: 25px;
+  #resume-feature h1, #resume-feature h2 {
+    font-family: "Lato", Tahoma;
     color: #666;
-    padding: 150px 0 20px 0; }
-  #resume-feature #skill-graphic {
-    color: #5a5181;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 100px 0 200px 0;
-    font-family: monospace; }
+    font-weight: bold; }
+  #resume-feature h3 {
+    font-family: Georgia, Serif;
+    font-size: 16px; }
 
-#skill-set li, #skill-graphic li {
-  display: inline-block;
-  padding: 0 15px 0 15px; }
+#skill-lists {
+  padding: 15px 15px 150px 15px;
+  display: inline-block; }
+  #skill-lists .inline-list {
+    list-style: none;
+    display: inline-block; }
+
+.skill-set {
+  list-style: none;
+  color: #666;
+  font-weight: bold;
+  padding-bottom: 65px; }
+
+.skill-graphic {
+  font-family: monospace, serif;
+  color: #524975;
+  list-style: none;
+  font-size: 18px; }
 
 #resume-name {
   color: #fff;
@@ -595,6 +606,8 @@ img {
   display: inline-block;
   text-align: left;
   width: 90%; }
+  .example h2, .example h3 {
+    text-align: center; }
   .example .one {
     width: 40%;
     float: left; }

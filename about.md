@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-#### Wonder of Sound - Freelance Front-End Developer (part-time, ongoing)
+#### Wonder of Sound - )
 
 Front-end development and design for Wonder of Sound 
 

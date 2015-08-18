@@ -155,26 +155,39 @@ $purple: #302B45;
 	display: block;
 	background-color: #fff;
 
-	#skill-set {
-		list-style: none;
-		font-size: 25px;
+	h1, h2 {
+		font-family: "Lato", Tahoma;
 		color: #666;
-		padding: 150px 0 20px 0;
-	}
-	#skill-graphic {
-		color: #5a5181;
 		font-weight: bold;
-		font-size: 18px;
-		padding: 100px 0 200px 0;
-		font-family: monospace;
+	}
+	h3 {
+		font-family: Georgia, Serif;
+		font-size: 16px;
 	}
 }
 
-#skill-set, #skill-graphic {
-	li {
+#skill-lists {
+	padding: 15px 15px 150px 15px;
+	display: inline-block;
+
+	.inline-list {
+		list-style: none;
 		display: inline-block;
-		padding: 0 15px 0 15px;
 	}
+}
+
+.skill-set {
+	list-style: none;
+	color: #666;
+	font-weight: bold;
+	padding-bottom: 65px;
+}
+
+.skill-graphic {
+	font-family: monospace, serif;
+	color: #524975;
+	list-style: none;
+	font-size: 18px;
 }
 
 #resume-name {
@@ -209,6 +222,10 @@ $purple: #302B45;
 	display: inline-block;
 	text-align: left;
 	width: 90%;
+
+	h2, h3 {
+			text-align: center;
+	}
 
 	.one {
 		width: 40%;

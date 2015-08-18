@@ -87,28 +87,28 @@
 
       //JS Study Program
 
-      var qas = [
-        {
-          correct: "foo",
-          question: "huh?",
-          answers: [
-            "foo",
-            "bar",
-            "my butt",
-            "your butt"
-          ] 
-        },
-        {
-          correct: "chocolate",
-          question: "what the hell is 'javascript'?",
-          answers: [
-            "chocolate",
-            "bar",
-            "in",
-            "your butt ( ͡° ͜ʖ ͡°)"
-          ] 
-        },
-      // {
+      // var qas = [
+      //   {
+      //     correct: "foo",
+      //     question: "huh?",
+      //     answers: [
+      //       "foo",
+      //       "bar",
+      //       "my butt",
+      //       "your butt"
+      //     ] 
+      //   },
+      //   {
+      //     correct: "chocolate",
+      //     question: "what the hell is 'javascript'?",
+      //     answers: [
+      //       "chocolate",
+      //       "bar",
+      //       "in",
+      //       "your butt ( ͡° ͜ʖ ͡°)"
+      //     ] 
+      //   },
+      // // {
           // question: "explain how 'this' works",
           // answers: [
           //   "'this' refers to the owner of the function",
@@ -368,59 +368,59 @@
           //  answers:[
           //  "objects of similiar types can inherit properties from each other",
           //   ]
-          // }
-       ];
+//           // }
+//        ];
 
-      var counter = 0;
+//       var counter = 0;
 
-      $('.ready-button').on ('click', function(event){
-        $('.ready-button').hide();
-        $('.next-question').show();
-        nextQuestion();
-      });
+//       $('.ready-button').on ('click', function(event){
+//         $('.ready-button').hide();
+//         $('.next-question').show();
+//         nextQuestion();
+//       });
 
-      // right now it displays the next element in the array 
-      // BUT leaves the previous element as well. 
+//       // right now it displays the next element in the array 
+//       // BUT leaves the previous element as well. 
 
-      $(".next-question").on('click', function(event) {
-        event.preventDefault();
+//       $(".next-question").on('click', function(event) {
+//         event.preventDefault();
 
-        if (counter == qas.length) {
-          $(".question-wrapper").html("<h1>YOU FINISHED</h1>");
-        } else {
-          nextQuestion();
-        }
-      });
+//         if (counter == qas.length) {
+//           $(".question-wrapper").html("<h1>YOU FINISHED</h1>");
+//         } else {
+//           nextQuestion();
+//         }
+//       });
 
-      function nextQuestion() {
+//       function nextQuestion() {
 
-        $('.answers').empty();
+//         $('.answers').empty();
 
-        var qa = qas[counter];
-        $('.question').html(qa.question);
+//         var qa = qas[counter];
+//         $('.question').html(qa.question);
         
-        $.each(qa.answers, function(i, answer) {
-          $('.answers').append("<input type='radio' name='check' id='selection'/>" + answer  + "<br />");
+//         $.each(qa.answers, function(i, answer) {
+//           $('.answers').append("<input type='radio' name='check' id='selection'/>" + answer  + "<br />");
 
-        });
+//         });
 
-        counter++; 
-      }
+//         counter++; 
+//       }
 
-      //check to see which element has been selected
-      //if answer is correct
-        //show (good job)
-      //if answer is "I don't know"
-        //show "good job for not b.s'ing!"
-      //else
-        //display correct answer in red font
+//       //check to see which element has been selected
+//       //if answer is correct
+//         //show (good job)
+//       //if answer is "I don't know"
+//         //show "good job for not b.s'ing!"
+//       //else
+//         //display correct answer in red font
 
-      //end of quiz
-        //display try again button 
+//       //end of quiz
+//         //display try again button 
         //re-start the quiz (refresh the page)
     }); 
-	</script>
-</head>
+// 	</script>
+// </head>
 
   <body>
 
@@ -432,8 +432,8 @@
       <ul class="side-categories">
         <li><a href="/">Home</li>	
         <li><a href="/about">About</a></li>
-        <li><a href="/jsstudy">JS Study</a></li>
-      </ul>
+       <!--  <li><a href="/jsstudy">JS Study</a></li>
+      </ul> -->
 
       <a class="site-title" href="/">Rookie Dev</a>
 
@@ -473,33 +473,95 @@
   <span class="resume-header">
   	<p>SKILLS</p>
   </span>
-  	<ul id="skill-set">
-  		<li>HTML</li>
-  		<li>CSS/SCSS</li>
-  		<li>JavaScript</li>
-  		<li>jQuery</li>
-  		<li>Markdown</li>
-  		<li>UI Design</li>
-  		<li>Photoshop</li>
-  	</ul>
-    <ul id="skill-graphic">
-      <li>div</li>
-      <li>.resume-container { </li>
-      <li>var name = katie</li>
-      <li>$('#resume').show()</li>
-      <li>## My Skill Set</li>
-      <li></li>
-      <li></li>
-    </ul>
+
+  <ul id="skill-lists">
+
+     <li class="inline-list">
+      <ul>
+        <li class="skill-set">HTML</li>
+        <li class="skill-graphic">div</li>
+      </ul>
+    </li>
+
+     <li class="inline-list">
+      <ul>
+        <li class="skill-set">CSS/SCSS</li>
+        <li class="skill-graphic">.resume-container {</li>
+      </ul>
+    </li>
+
+    <li class="inline-list">
+      <ul>
+        <li class="skill-set">JavaScript</li>
+        <li class="skill-graphic">var name= katie</li>
+      </ul>
+    </li>
+
+    <li class="inline-list">
+      <ul>
+        <li class="skill-set">jQuery</li>
+        <li class="skill-graphic">$('#resume').show();</li>
+      </ul>
+    </li>
+
+    <li class="inline-list">
+      <ul>
+        <li class="skill-set">Markdown</li>
+        <li class="skill-graphic">## My Skill Set</li>
+      </ul>
+    </li>
+
+    <li class="inline-list">
+      <ul>
+        <li class="skill-set">UI Design</li>
+        <li class="skill-graphic">?</li>
+      </ul>
+    </li>
+
+    <li class="inline-list">
+      <ul>
+        <li class="skill-set">PhotoShop</li>
+        <li class="skill-graphic">?</li>
+      </ul>
+    </li>
+
+  </ul>
+
   <span class="resume-header">EXPERIENCE</span>
   <div class="example">
     <span class="one">
-      <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
-      </p>
+      <h2>Wonder of Sound</h2>
+      <h3>Front-end development and design for Wonder of Sound</h3>
+      <h2>Rookie Dev</h2>
+      <h3>Personal Project - June, 2015 - Present (ongoing project</h3>
+      <h2>Caring Senior Service</h2>
+      <h3>Digital Marketing Specialist  (9 months)</h3>
+      <h2>Magis: Alumni Living the Mission</h2>
+      <h3>Marketing & Office Assistant  (1 year, 5 months)</h3>
     </span>
     <span class="two">
-      <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-      </p>
+      <ul>
+        <li>UI design using Photoshop mockups</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Handlebars.js</li>
+        <li>jQuery</li>
+        <li>Distributed Ruby on Rails and Node.js stack</li>
+      </ul>
+      <ul>
+        <li>HTML</li>
+        <li>SCSS</li>
+        <li>jQuery</li>
+        <li>Mobile-first design</li>
+        <li>Uses the rack-based Thin application server</li>
+      </ul>
+        <li>Designed landing pages</li>  
+        <li>Edited our site’s CSS and HTML</li>            
+        <li>Designed images for social media content</li>
+        <li>Maintained a large JSON document for a site plugin</li>
+      <ul>
+        <li>Worked with Adobe Photoshop to create original marketing flyers</li>
+      </ul>
     </span>
   </div>
 

@@ -87,28 +87,28 @@
 
       //JS Study Program
 
-      var qas = [
-        {
-          correct: "foo",
-          question: "huh?",
-          answers: [
-            "foo",
-            "bar",
-            "my butt",
-            "your butt"
-          ] 
-        },
-        {
-          correct: "chocolate",
-          question: "what the hell is 'javascript'?",
-          answers: [
-            "chocolate",
-            "bar",
-            "in",
-            "your butt ( ͡° ͜ʖ ͡°)"
-          ] 
-        },
-      // {
+      // var qas = [
+      //   {
+      //     correct: "foo",
+      //     question: "huh?",
+      //     answers: [
+      //       "foo",
+      //       "bar",
+      //       "my butt",
+      //       "your butt"
+      //     ] 
+      //   },
+      //   {
+      //     correct: "chocolate",
+      //     question: "what the hell is 'javascript'?",
+      //     answers: [
+      //       "chocolate",
+      //       "bar",
+      //       "in",
+      //       "your butt ( ͡° ͜ʖ ͡°)"
+      //     ] 
+      //   },
+      // // {
           // question: "explain how 'this' works",
           // answers: [
           //   "'this' refers to the owner of the function",
@@ -368,59 +368,59 @@
           //  answers:[
           //  "objects of similiar types can inherit properties from each other",
           //   ]
-          // }
-       ];
+//           // }
+//        ];
 
-      var counter = 0;
+//       var counter = 0;
 
-      $('.ready-button').on ('click', function(event){
-        $('.ready-button').hide();
-        $('.next-question').show();
-        nextQuestion();
-      });
+//       $('.ready-button').on ('click', function(event){
+//         $('.ready-button').hide();
+//         $('.next-question').show();
+//         nextQuestion();
+//       });
 
-      // right now it displays the next element in the array 
-      // BUT leaves the previous element as well. 
+//       // right now it displays the next element in the array 
+//       // BUT leaves the previous element as well. 
 
-      $(".next-question").on('click', function(event) {
-        event.preventDefault();
+//       $(".next-question").on('click', function(event) {
+//         event.preventDefault();
 
-        if (counter == qas.length) {
-          $(".question-wrapper").html("<h1>YOU FINISHED</h1>");
-        } else {
-          nextQuestion();
-        }
-      });
+//         if (counter == qas.length) {
+//           $(".question-wrapper").html("<h1>YOU FINISHED</h1>");
+//         } else {
+//           nextQuestion();
+//         }
+//       });
 
-      function nextQuestion() {
+//       function nextQuestion() {
 
-        $('.answers').empty();
+//         $('.answers').empty();
 
-        var qa = qas[counter];
-        $('.question').html(qa.question);
+//         var qa = qas[counter];
+//         $('.question').html(qa.question);
         
-        $.each(qa.answers, function(i, answer) {
-          $('.answers').append("<input type='radio' name='check' id='selection'/>" + answer  + "<br />");
+//         $.each(qa.answers, function(i, answer) {
+//           $('.answers').append("<input type='radio' name='check' id='selection'/>" + answer  + "<br />");
 
-        });
+//         });
 
-        counter++; 
-      }
+//         counter++; 
+//       }
 
-      //check to see which element has been selected
-      //if answer is correct
-        //show (good job)
-      //if answer is "I don't know"
-        //show "good job for not b.s'ing!"
-      //else
-        //display correct answer in red font
+//       //check to see which element has been selected
+//       //if answer is correct
+//         //show (good job)
+//       //if answer is "I don't know"
+//         //show "good job for not b.s'ing!"
+//       //else
+//         //display correct answer in red font
 
-      //end of quiz
-        //display try again button 
+//       //end of quiz
+//         //display try again button 
         //re-start the quiz (refresh the page)
     }); 
-	</script>
-</head>
+// 	</script>
+// </head>
 
   <body>
 
@@ -432,8 +432,8 @@
       <ul class="side-categories">
         <li><a href="/">Home</li>	
         <li><a href="/about">About</a></li>
-        <li><a href="/jsstudy">JS Study</a></li>
-      </ul>
+       <!--  <li><a href="/jsstudy">JS Study</a></li>
+      </ul> -->
 
       <a class="site-title" href="/">Rookie Dev</a>
 
