@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: js-study
 title: JS-Study
 permalink: /jsstudy/
@@ -9,8 +9,9 @@ permalink: /jsstudy/
 	<h1 id="form-name">JS Study</h1>
 	<div class="question-wrapper">
 		<h3 class="question"></h3>
-		<div class="answers"></div>
+		<div class="answers">
+		</div>
 		<button class="ready-button">Start!</button>
 		<button class="next-question">next question</button>
 	</div>
-</div>
+</div> -->

@@ -550,6 +550,58 @@ img {
 .my-background h1 {
   padding-top: 80px; }
 
+#resume-feature {
+  text-align: center;
+  display: block;
+  background-color: #fff; }
+  #resume-feature #skill-set {
+    list-style: none;
+    font-size: 25px;
+    color: #666;
+    padding: 150px 0 20px 0; }
+  #resume-feature #skill-graphic {
+    color: #5a5181;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 100px 0 200px 0;
+    font-family: monospace; }
+
+#skill-set li, #skill-graphic li {
+  display: inline-block;
+  padding: 0 15px 0 15px; }
+
+#resume-name {
+  color: #fff;
+  height: 340px;
+  padding-top: 80px;
+  background-color: #457; }
+  #resume-name h1 {
+    font-size: 80px; }
+  #resume-name a:visited, #resume-name a:hover {
+    color: #fff;
+    font-size: 15px; }
+
+.resume-header {
+  background-color: #fff;
+  color: #457;
+  font-size: 75px;
+  letter-spacing: 17px;
+  display: block;
+  line-height: 1;
+  font-weight: bold;
+  padding: 50px 0 100px 0; }
+
+.example {
+  display: inline-block;
+  text-align: left;
+  width: 90%; }
+  .example .one {
+    width: 40%;
+    float: left; }
+  .example .two {
+    width: 40%;
+    float: right; }
+
 .question-box {
   padding-top: 80px;
   text-align: center;
