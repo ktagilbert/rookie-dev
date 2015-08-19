@@ -644,7 +644,8 @@ img {
   text-align: left;
   display: inline-block;
   width: 40%;
-  position: relative; }
+  position: relative;
+  margin-right: 5%; }
 
 #edu {
   font-weight: bold;
