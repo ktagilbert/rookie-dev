@@ -74,9 +74,9 @@
 
       $('#resume-button').click(function(event){
         event.preventDefault();
-        $("#resume-feature").fadeIn();
         $('.about-content').hide();
-        $('#about-page').hide();
+        $('#about-page').css('height', '10px');
+        $("#resume-feature").fadeIn();
       });
 
 

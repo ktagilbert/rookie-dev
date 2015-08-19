@@ -769,6 +769,10 @@ img {
   #about-page {
     height: 1100px; }
 
+  .resume-header {
+    font-size: 25px;
+    letter-spacing: 8px; }
+
   .inline-experience-right {
     display: block;
     margin: auto;
@@ -784,11 +788,14 @@ img {
     display: block;
     text-align: center;
     margin: 5%; }
+    .inline-experience-left h2 {
+      font-size: 25px; }
     .inline-experience-left li {
       list-style: none; } }
 @media (max-width: 720px) {
   .site-footer {
-    height: 500px; }
+    height: 500px;
+    display: block; }
     .site-footer .footer-list li {
       float: none;
       text-align: center;

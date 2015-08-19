@@ -487,7 +487,12 @@ $purple: #302B45;
 		z-index: -100000;
 	}
 	#about-page {
-		height: 1100px;
+		height: 1500px;
+	}
+
+	.resume-header {
+		font-size: 20px;
+		letter-spacing: 5px;
 	}
 	.inline-experience-right {
 		display: block;
@@ -507,6 +512,10 @@ $purple: #302B45;
 		text-align: center;
 		margin: 5%; 
 
+		h2 {
+			font-size: 25px;
+		}
+
 		li {
 			list-style: none;
 		}
@@ -516,6 +525,7 @@ $purple: #302B45;
 @media(max-width: 720px) {
 	.site-footer {
 		height: 500px;
+		display: block;;
 
 		.footer-list {
 			li {		

@@ -12,14 +12,11 @@ dl, dd, ol, ul, figure {
     }
 }
 
-// html {
-//     width: 100vh;
-// }
-
 
 /**
  * Basic styling
  */
+
 body {
     display: block;
     font-family: $base-font-family;
@@ -30,7 +27,6 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     height: 100vh;
-    // width: 100vh;
 }
 
 
