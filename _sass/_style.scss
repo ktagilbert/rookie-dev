@@ -132,7 +132,7 @@ $purple: #302B45;
     color: #fff;
     padding-top: 150px;
     padding: 5%;
-    height: 500px;
+    height: 900px;
 }
 
 .post {
@@ -229,12 +229,13 @@ $purple: #302B45;
 .resume-header {
 	background-color: #fff;
     color: #457;
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 17px;
     display: block;
     line-height: 1;
     font-weight: bold;
     padding: 50px 0 100px 0;
+    margin: 0 10% 0 10%
 }
 
 .job-list {
@@ -489,20 +490,22 @@ $purple: #302B45;
 		height: 1100px;
 	}
 	.inline-experience-right {
-		width: 100%;
 		display: block;
-		margin: 5%; 
-		// text-align: center;
+		margin: auto;
+		width: 100%;
 
-		li {
-			list-style: none;
+		p {
+			text-align: center;
 		}
-
+	}
+	#skill-lists {
+		margin: 15%;
 	}
 	.inline-experience-left {
 		width: 100%;
 		display: block;
 		text-align: center;
+		margin: 5%; 
 
 		li {
 			list-style: none;

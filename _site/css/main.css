@@ -21,13 +21,11 @@ dl, dd, ol, ul, figure {
   dl h6, dd h1, dd h2, dd h3, dd h4, dd h5, dd h6, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, figure h1, figure h2, figure h3, figure h4, figure h5, figure h6 {
     font-family: "Alice"; }
 
-html {
-  width: 100%; }
-
 /**
  * Basic styling
  */
 body {
+  display: block;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -35,8 +33,7 @@ body {
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
-  height: 100vh;
-  width: 100%; }
+  height: 100vh; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -543,7 +540,7 @@ img {
   color: #fff;
   padding-top: 150px;
   padding: 5%;
-  height: 500px; }
+  height: 900px; }
 
 .post .about-content {
   text-shadow: 3px 1px 0px #111;
@@ -616,12 +613,13 @@ img {
 .resume-header {
   background-color: #fff;
   color: #457;
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: 17px;
   display: block;
   line-height: 1;
   font-weight: bold;
-  padding: 50px 0 100px 0; }
+  padding: 50px 0 100px 0;
+  margin: 0 10% 0 10%; }
 
 .job-list {
   width: 100%;
@@ -772,16 +770,20 @@ img {
     height: 1100px; }
 
   .inline-experience-right {
-    width: 100%;
     display: block;
-    margin: 5%; }
-    .inline-experience-right li {
-      list-style: none; }
+    margin: auto;
+    width: 100%; }
+    .inline-experience-right p {
+      text-align: center; }
+
+  #skill-lists {
+    margin: 15%; }
 
   .inline-experience-left {
     width: 100%;
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin: 5%; }
     .inline-experience-left li {
       list-style: none; } }
 @media (max-width: 720px) {
