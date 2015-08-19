@@ -150,12 +150,28 @@ $purple: #302B45;
 	}
 }
 
+#resume-button {
+	font-size: 16px;
+    line-height: 50px;
+    padding: 10px;
+    border: solid 4px #fff;
+	display: block;
+	padding: 3px;
+	color: $purple;
+	border-radius: 5px;
+	background-color: #fff;
+	margin: auto;
+	margin-top: $large;
+	font-weight: bold;
+}
+
 #resume-feature {
 	text-align: center;
 	display: block;
 	background-color: #fff;
+	display: none;
 
-	h1, h2 {
+	h2 {
 		font-family: "Lato", Tahoma;
 		color: #666;
 		font-weight: bold;
@@ -167,7 +183,7 @@ $purple: #302B45;
 }
 
 #skill-lists {
-	padding: 15px 15px 150px 15px;
+	padding: 60px 15px 150px 15px;
 	display: inline-block;
 
 	.inline-list {
@@ -179,15 +195,18 @@ $purple: #302B45;
 .skill-set {
 	list-style: none;
 	color: #666;
-	font-weight: bold;
+	font-family: "Lobster", sans-serif;
 	padding-bottom: 65px;
+	font-size: 1.5em;
 }
 
 .skill-graphic {
 	font-family: monospace, serif;
 	color: #524975;
 	list-style: none;
-	font-size: 18px;
+	letter-spacing: -1.5px;
+	font-size: 1em;
+	margin-bottom: 50%
 }
 
 #resume-name {
@@ -217,73 +236,119 @@ $purple: #302B45;
     padding: 50px 0 100px 0;
 }
 
+.job-list {
+	width: 100%;
+	height: 400px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 
-.example {
-	display: inline-block;
-	text-align: left;
-	width: 90%;
+	p {
+		font-weight: 400;
+		font-size: 1em;
+	}
+
+	li {
+		font-size: 1em;
+	}
 
 	h2, h3 {
-			text-align: center;
-	}
-
-	.one {
-		width: 40%;
-		float: left;
-	}
-	.two {
-		width: 40%;
-		float: right;
+		font-size: 2em;
 	}
 }
 
-
-//JS-Study
-
-.question-box {
-  padding-top: $large;
-  text-align: center;
-  height: 100%;
-  margin: 100px 0 100px 0;
+.inline-experience-left {
+	float: left;
+	display: inline-block;
+	width: 40%;
+	position: relative;
 }
 
-.ready-button {
-  border: none;
-  background: $rookie-blue;
-  font-size: 1.5em;
-  padding: 30px;
-  color: #fff;
-  font-weight: bolder;
-  outline: none;
+.inline-experience-right {
+	float: right;
+	text-align: left;
+	display: inline-block;
+	width: 40%;
+	position: relative;
 }
 
-.ready-button:hover {
-  padding: 35px;
-}
+#edu {
+	font-weight: bold;
+	color: #457;
+	padding-bottom: $large;
 
-#form-name {
-  font-family: "Lato", "Tahoma";
-  font-size: 3em;
-  color: #666; 
-  padding: 100px 0 50px 0;
-}
+	h1 {
+    	font-family: "Lato";
+    	letter-spacing: -27px;
+    	font-size: 4em;
+    	color: #fff;
+    	border: 2px solid #457;
+    	border-radius: 72px;
+    	padding-right: 22px;
+    	width: 100px;
+    	background-color: #457;
+    	margin: auto;
+    	text-align: center;
+    }
 
-.answer {
-	outline: none;
-    padding: 0 10px 150px 10px;
-    width: 50%;
+    h2 {
+    	color: #457;
+    	font-size: 2em;
+    	padding-top: 50px;
+    	font-family: "Lobster", sans-serif;
+    }
+    p {
+    	font-size: 1.5em;
+    }
 }
+ 
 
-.next-question {
-	display: none;
-	background-color: $rookie-blue;
-	color: $container-color;
-	padding: 30px;
-	border: none;
-	font-family: "Lato", "Tahoma";
-	font-size: 1.5em;
-	outline: none;
-}
+
+// //JS-Study
+
+// .question-box {
+//   padding-top: $large;
+//   text-align: center;
+//   height: 100%;
+//   margin: 100px 0 100px 0;
+// }
+
+// .ready-button {
+//   border: none;
+//   background: $rookie-blue;
+//   font-size: 1.5em;
+//   padding: 30px;
+//   color: #fff;
+//   font-weight: bolder;
+//   outline: none;
+// }
+
+// .ready-button:hover {
+//   padding: 35px;
+// }
+
+// #form-name {
+//   font-family: "Lato", "Tahoma";
+//   font-size: 3em;
+//   color: #666; 
+//   padding: 100px 0 50px 0;
+// }
+
+// .answer {
+// 	outline: none;
+//     padding: 0 10px 150px 10px;
+//     width: 50%;
+// }
+
+// .next-question {
+// 	display: none;
+// 	background-color: $rookie-blue;
+// 	color: $container-color;
+// 	padding: 30px;
+// 	border: none;
+// 	font-family: "Lato", "Tahoma";
+// 	font-size: 1.5em;
+// 	outline: none;
+// }
 
  //contribute-container
 
@@ -334,10 +399,9 @@ $purple: #302B45;
 
 .site-footer {
 	background: #d3d3d3;
-	height: 100%;
 	text-align: center;
 	color: $purple;
-	position: relative;
+	height: 600px;
 
 	a, a:visited {
 		color: $purple;
@@ -429,6 +493,25 @@ $purple: #302B45;
 	}
 	#about-page {
 		height: 1000px;
+	}
+	.inline-experience-right {
+		width: 100%;
+		display: block;
+		text-align: center;
+
+		li {
+			list-style: none;
+		}
+
+	}
+	.inline-experience-left {
+		width: 100%;
+		display: block;
+		text-align: center;
+
+		li {
+			list-style: none;
+		}
 	}
 }	
 

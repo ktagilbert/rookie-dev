@@ -13,7 +13,7 @@
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alice" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -81,9 +81,11 @@
 
       $('#resume-button').click(function(event){
         event.preventDefault();
-        $("#resume-feature").show();
+        $("#resume-feature").fadeIn();
         $('.about-content').hide();
+        $('#about-page').hide();
       });
+
 
       //JS Study Program
 
@@ -108,7 +110,7 @@
       //       "your butt ( ͡° ͜ʖ ͡°)"
       //     ] 
       //   },
-      // // {
+      //  {
           // question: "explain how 'this' works",
           // answers: [
           //   "'this' refers to the owner of the function",
@@ -419,8 +421,8 @@
 //         //display try again button 
         //re-start the quiz (refresh the page)
     }); 
-// 	</script>
-// </head>
+ 	</script>
+ </head>
 
   <body>
 
@@ -432,8 +434,7 @@
       <ul class="side-categories">
         <li><a href="/">Home</li>	
         <li><a href="/about">About</a></li>
-       <!--  <li><a href="/jsstudy">JS Study</a></li>
-      </ul> -->
+      </ul>
 
       <a class="site-title" href="/">Rookie Dev</a>
 
