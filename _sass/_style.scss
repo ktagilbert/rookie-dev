@@ -133,6 +133,8 @@ $purple: #302B45;
     padding-top: 150px;
     padding: 5%;
     height: 100%;
+   	position: absolute;
+    bottom: 0;
 }
 
 .post {
@@ -162,7 +164,7 @@ $purple: #302B45;
 	border-radius: 5px;
 	background-color: #fff;
 	margin: auto;
-	margin-top: $large;
+	margin-top: 20%;
 	font-weight: bold;
 }
 
@@ -171,6 +173,8 @@ $purple: #302B45;
 	display: block;
 	background-color: #fff;
 	display: none;
+	position: absolute;
+    bottom: 10%;
 
 	h2 {
 		font-family: "Lato", Tahoma;
@@ -403,7 +407,11 @@ $purple: #302B45;
 	background: #d3d3d3;
 	text-align: center;
 	color: $purple;
-	height: 600px;
+	height: 400px;
+	position: absolute;
+	top: 90%;
+    bottom: 0;
+    width: 100%;
 
 	a, a:visited {
 		color: $purple;
@@ -423,8 +431,6 @@ $purple: #302B45;
 }
 
 .footer-list {
-	margin: 0px;
-
 	li {
 		display: inline-block;
 		font-size: 14px;
