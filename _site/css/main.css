@@ -21,6 +21,9 @@ dl, dd, ol, ul, figure {
   dl h6, dd h1, dd h2, dd h3, dd h4, dd h5, dd h6, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, figure h1, figure h2, figure h3, figure h4, figure h5, figure h6 {
     font-family: "Alice"; }
 
+html {
+  width: 100%; }
+
 /**
  * Basic styling
  */
@@ -31,7 +34,9 @@ body {
   font-weight: 300;
   color: #111;
   background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  height: 100vh;
+  width: 100%; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -538,9 +543,7 @@ img {
   color: #fff;
   padding-top: 150px;
   padding: 5%;
-  height: 100%;
-  position: absolute;
-  bottom: 0; }
+  height: 500px; }
 
 .post .about-content {
   text-shadow: 3px 1px 0px #111;
@@ -568,9 +571,7 @@ img {
   text-align: center;
   display: block;
   background-color: #fff;
-  display: none;
-  position: absolute;
-  bottom: 10%; }
+  display: none; }
   #resume-feature h2 {
     font-family: "Lato", Tahoma;
     color: #666;
@@ -615,7 +616,7 @@ img {
 .resume-header {
   background-color: #fff;
   color: #457;
-  font-size: 75px;
+  font-size: 2.5em;
   letter-spacing: 17px;
   display: block;
   line-height: 1;
@@ -713,11 +714,8 @@ img {
   background: #d3d3d3;
   text-align: center;
   color: #302B45;
-  height: 400px;
-  position: absolute;
-  top: 90%;
-  bottom: 0;
-  width: 100%; }
+  width: 100%;
+  height: 400px; }
   .site-footer a, .site-footer a:visited {
     color: #302B45; }
   .site-footer a:hover {
@@ -761,9 +759,6 @@ img {
     font-size: 14px;
     width: initial;
     padding-right: 40px; } }
-@media (max-width: 700px) {
-  .about-greeting {
-    font-size: 12px; } }
 @media (max-width: 720px) {
   #mobile-menu {
     display: initial;
@@ -774,12 +769,12 @@ img {
     z-index: -100000; }
 
   #about-page {
-    height: 1000px; }
+    height: 1100px; }
 
   .inline-experience-right {
     width: 100%;
     display: block;
-    text-align: center; }
+    margin: 5%; }
     .inline-experience-right li {
       list-style: none; }
 

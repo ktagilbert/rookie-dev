@@ -12,6 +12,9 @@ dl, dd, ol, ul, figure {
     }
 }
 
+html {
+    width: 100%;
+}
 
 
 /**
@@ -25,6 +28,8 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 

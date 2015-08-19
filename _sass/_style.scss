@@ -132,9 +132,7 @@ $purple: #302B45;
     color: #fff;
     padding-top: 150px;
     padding: 5%;
-    height: 100%;
-   	position: absolute;
-    bottom: 0;
+    height: 500px;
 }
 
 .post {
@@ -173,8 +171,6 @@ $purple: #302B45;
 	display: block;
 	background-color: #fff;
 	display: none;
-	position: absolute;
-    bottom: 10%;
 
 	h2 {
 		font-family: "Lato", Tahoma;
@@ -233,7 +229,7 @@ $purple: #302B45;
 .resume-header {
 	background-color: #fff;
     color: #457;
-    font-size: 75px;
+    font-size: 2.5em;
     letter-spacing: 17px;
     display: block;
     line-height: 1;
@@ -407,12 +403,8 @@ $purple: #302B45;
 	background: #d3d3d3;
 	text-align: center;
 	color: $purple;
-	height: 400px;
-	position: absolute;
-	top: 90%;
-    bottom: 0;
     width: 100%;
-
+    height: 400px;
 	a, a:visited {
 		color: $purple;
 	} 
@@ -484,12 +476,6 @@ $purple: #302B45;
 	}
 }
 
-@media(max-width: 700px) {
-	.about-greeting {
-		font-size: 12px;
-	}
-}
-
 @media(max-width: 720px) {
 	#mobile-menu {
 		display: initial;
@@ -500,12 +486,13 @@ $purple: #302B45;
 		z-index: -100000;
 	}
 	#about-page {
-		height: 1000px;
+		height: 1100px;
 	}
 	.inline-experience-right {
 		width: 100%;
 		display: block;
-		text-align: center;
+		margin: 5%; 
+		// text-align: center;
 
 		li {
 			list-style: none;
