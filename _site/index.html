@@ -27,7 +27,7 @@
   <script>
 
 		$(document).ready(function() {
-      
+
       //navigation menu: toggles arrow img and shows menu
 
       $('.categories-dropdown').on('mouseover', function(event) {
@@ -47,17 +47,17 @@
 
       $('#mobile-menu').on('click', function(event) {
         event.preventDefault();
-        $('.side-categories').show();          
+        $('.side-categories').show();
       });
 
-      //projects hover interaction 
+      //projects hover interaction
 
       $('.projects-img').on('mouseover', function(event) {
         $(this).siblings('.project-description').show();
       });
       $('.projects-img').on('mouseleave', function() {
         $('.project-description').hide();
-      }); 
+      });
 
       //about page slidedown/fadein
 
@@ -75,12 +75,14 @@
       //on press of button
       //append first div with resume feature
 
+var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p></div>");
+
       $('#resume-button').click(function(event){
         event.preventDefault();
         $('.about-content').hide();
-        $('.post').hide();
-        $('#about-page').css('height', '10px');
-        $("#resume-feature").fadeIn();
+        $('#about-page').css("height", "130px", "padding", "0px");
+        $('#about-page').html(resumeName).fadeIn();
+        $("#resume-feature").delay().fadeIn();
       });
 
 
@@ -95,7 +97,7 @@
       //       "bar",
       //       "my butt",
       //       "your butt"
-      //     ] 
+      //     ]
       //   },
       //   {
       //     correct: "chocolate",
@@ -105,7 +107,7 @@
       //       "bar",
       //       "in",
       //       "your butt ( ͡° ͜ʖ ͡°)"
-      //     ] 
+      //     ]
       //   },
       //  {
           // question: "explain how 'this' works",
@@ -152,7 +154,7 @@
           //   [
           // question: "How do you add a value to the begining of an array?",
           // answers: [
-          //   ".push()", 
+          //   ".push()",
           //   ".shift()",
           //   ".pop()",
           //   ".unShift()"
@@ -218,7 +220,7 @@
           //   "What is an expression?",
           // {
           //   question: "what is an argument?",
-          //   answers: 
+          //   answers:
           //   [
           //   "something you avoid at all costs",
           //   "when the console argues that you have done something wrong",
@@ -378,8 +380,8 @@
 //         nextQuestion();
 //       });
 
-//       // right now it displays the next element in the array 
-//       // BUT leaves the previous element as well. 
+//       // right now it displays the next element in the array
+//       // BUT leaves the previous element as well.
 
 //       $(".next-question").on('click', function(event) {
 //         event.preventDefault();
@@ -397,13 +399,13 @@
 
 //         var qa = qas[counter];
 //         $('.question').html(qa.question);
-        
+
 //         $.each(qa.answers, function(i, answer) {
 //           $('.answers').append("<input type='radio' name='check' id='selection'/>" + answer  + "<br />");
 
 //         });
 
-//         counter++; 
+//         counter++;
 //       }
 
 //       //check to see which element has been selected
@@ -415,11 +417,12 @@
 //         //display correct answer in red font
 
 //       //end of quiz
-//         //display try again button 
+//         //display try again button
         //re-start the quiz (refresh the page)
-    }); 
+    });
  	</script>
  </head>
+
 
   <body>
 

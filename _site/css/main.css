@@ -578,7 +578,7 @@ img {
     font-size: 16px; }
 
 #skill-lists {
-  padding: 60px 15px 150px 15px;
+  padding: 10% 15px 10% 15px;
   display: inline-block; }
   #skill-lists .inline-list {
     list-style: none;
@@ -601,9 +601,7 @@ img {
 
 #resume-name {
   color: #fff;
-  height: 340px;
-  padding-top: 80px;
-  background-color: #457; }
+  text-align: center; }
   #resume-name h1 {
     font-size: 80px; }
   #resume-name a:visited, #resume-name a:hover {
@@ -624,8 +622,7 @@ img {
 .job-list {
   width: 100%;
   height: 400px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin: 5% 5% 0 5%; }
   .job-list p {
     font-weight: 400;
     font-size: 1em; }
@@ -642,6 +639,8 @@ img {
 
 .inline-experience-right {
   float: right;
+  font-size: 16px;
+  font-family: Georgia, serif;
   text-align: left;
   display: inline-block;
   width: 40%;
@@ -767,11 +766,11 @@ img {
     z-index: -100000; }
 
   #about-page {
-    height: 1100px; }
+    height: 1500px; }
 
   .resume-header {
-    font-size: 25px;
-    letter-spacing: 8px; }
+    font-size: 1.5em;
+    letter-spacing: 7px; }
 
   .inline-experience-right {
     display: block;
@@ -781,13 +780,12 @@ img {
       text-align: center; }
 
   #skill-lists {
-    margin: 15%; }
+    margin: 15% 15% 0 15%; }
 
   .inline-experience-left {
     width: 100%;
     display: block;
-    text-align: center;
-    margin: 5%; }
+    text-align: center; }
     .inline-experience-left h2 {
       font-size: 25px; }
     .inline-experience-left li {
