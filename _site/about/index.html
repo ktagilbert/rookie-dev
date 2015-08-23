@@ -75,14 +75,14 @@
       //on press of button
       //append first div with resume feature
 
-var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p></div>");
+var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p><p><a href='https://github.com/ktagilbert'</a>https://github.com/ktagilbert</p></div>");
 
       $('#resume-button').click(function(event){
         event.preventDefault();
         $('.about-content').hide();
-        $('#about-page').css("height", "130px", "padding", "0px");
-        $('#about-page').html(resumeName).fadeIn();
-        $("#resume-feature").delay().fadeIn();
+        $('#about-page').css("height", "200px", "padding", "0px");
+        $('#about-page').html(resumeName);
+        $("#resume-feature").delay(50).fadeIn();
       });
 
 
@@ -465,12 +465,6 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
 
 <div id="resume-feature">
 
-  <!-- <div id="resume-name">
-    <h1>Katie Gilbert</h1>
-    <p>Front End Devloper</p>
-    <p><a href="https://github.com/ktagilbert">https://github.com/ktagilbert</a></p>
-  </div> -->
-
   <span class="resume-header">
   	<p>SKILLS</p>
   </span>
@@ -527,7 +521,7 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
     </li>
 
   </ul>
-
+	<div class="wrapper">
   <span class="resume-header">EXPERIENCE</span>
 
   <div class="job-list">
@@ -601,7 +595,7 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
   	<h2>Seattle University</h2>
     <p>B.A. English<p>
 </div>
-
+</div>
 </div>
 
         <div class="wrapper">

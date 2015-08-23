@@ -621,8 +621,7 @@ img {
 
 .job-list {
   width: 100%;
-  height: 400px;
-  margin: 5% 5% 0 5%; }
+  height: 400px; }
   .job-list p {
     font-weight: 400;
     font-size: 1em; }
@@ -644,8 +643,7 @@ img {
   text-align: left;
   display: inline-block;
   width: 40%;
-  position: relative;
-  margin-right: 5%; }
+  position: relative; }
 
 #edu {
   font-weight: bold;
