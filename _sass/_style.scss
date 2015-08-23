@@ -134,6 +134,7 @@ $purple: #302B45;
     padding-top: 150px;
     padding: 5%;
     height: 900px;
+		overflow: scroll;
 }
 
 .post {
@@ -154,9 +155,9 @@ $purple: #302B45;
 
 #resume-button {
 	font-size: 16px;
-    line-height: 50px;
-    padding: 15px;
-    border: solid 4px #fff;
+  line-height: 50px;
+  padding: 10px;
+  border: solid 4px #fff;
 	display: block;
 	outline: none;
 	color: $purple;
@@ -572,7 +573,7 @@ $purple: #302B45;
 
 		.footer-list {
 			margin-left: 0px;
-			
+
 			li {
 				float: none;
 				text-align: center;

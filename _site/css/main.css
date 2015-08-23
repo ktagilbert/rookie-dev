@@ -128,9 +128,7 @@ pre {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
   margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
+  margin-left: auto; }
   @media screen and (max-width: 800px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
@@ -541,7 +539,8 @@ img {
   color: #fff;
   padding-top: 150px;
   padding: 5%;
-  height: 900px; }
+  height: 900px;
+  overflow: scroll; }
 
 .post .about-content {
   text-shadow: 3px 1px 0px #111;
@@ -554,7 +553,7 @@ img {
 #resume-button {
   font-size: 16px;
   line-height: 50px;
-  padding: 15px;
+  padding: 10px;
   border: solid 4px #fff;
   display: block;
   outline: none;
