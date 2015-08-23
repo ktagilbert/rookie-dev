@@ -690,9 +690,13 @@ img {
     padding-bottom: 20px;
     color: #413a5d;
     font-weight: bold; }
+  .portfolio-list li:hover, .portfolio-list a:hover {
+    color: #978fb9; }
   .portfolio-list img {
     width: 60%;
     box-shadow: 1px 1px 5px 3px #d3d3d3; }
+  .portfolio-list img:hover {
+    width: 65%; }
 
 .container-head {
   text-align: center;
@@ -824,16 +828,18 @@ img {
   .site-footer {
     height: 500px;
     display: block; }
-    .site-footer .footer-list li {
-      float: none;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      width: 30px; }
-    .site-footer .footer-list .footer-heading {
-      display: block;
-      text-align: center;
-      float: none; } }
+    .site-footer .footer-list {
+      margin-left: 0px; }
+      .site-footer .footer-list li {
+        float: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30px; }
+      .site-footer .footer-list .footer-heading {
+        display: block;
+        text-align: center;
+        float: none; } }
 @media (max-width: 760px) {
   .side-categories {
     width: 100%;

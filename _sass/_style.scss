@@ -378,9 +378,16 @@ $purple: #302B45;
 		font-weight: bold;
 	}
 
+	li:hover, a:hover{
+		color: #978fb9;
+	}
+
 	img {
 		width: 60%;
 		box-shadow: 1px 1px 5px 3px #d3d3d3;
+	}
+	img:hover {
+		width: 65%;
 	}
 }
 
@@ -564,6 +571,8 @@ $purple: #302B45;
 		display: block;;
 
 		.footer-list {
+			margin-left: 0px;
+			
 			li {
 				float: none;
 				text-align: center;
