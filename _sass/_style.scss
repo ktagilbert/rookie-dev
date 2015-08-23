@@ -153,18 +153,23 @@ $purple: #302B45;
 
 //resume feature
 
-#resume-button {
+.resume-button {
 	font-size: 16px;
   line-height: 50px;
   padding: 10px;
   border: solid 4px #fff;
+	background-color: $purple;
 	display: block;
 	outline: none;
-	color: $purple;
+	color: $container-color;
 	border-radius: 5px;
-	background-color: #fff;
 	margin: auto;
 	margin-top: 20%;
+}
+
+.resume-button:hover {
+	background-color: #fff;
+	color: $purple;
 	font-weight: bold;
 }
 
