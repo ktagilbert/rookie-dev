@@ -186,6 +186,7 @@ $purple: #302B45;
 #skill-lists {
 	padding: 10% 15px 10% 15px;
 	display: inline-block;
+	text-align: center;
 
 	.inline-list {
 		list-style: none;
@@ -215,7 +216,7 @@ $purple: #302B45;
 	text-align: center;
 
 	h1 {
-		font-size: 80px;
+		font-size: 4em;
 	}
 
 	a:visited, a:hover{
@@ -484,7 +485,7 @@ $purple: #302B45;
 		z-index: -100000;
 	}
 	#about-page {
-		height: 1500px;
+		height: 1200px;
 	}
 	.resume-header {
 		font-size: 1.5em;
@@ -500,7 +501,14 @@ $purple: #302B45;
 		}
 	}
 	#skill-lists {
-		margin: 15% 15% 0 15%;
+		width: 80%;
+		display: block;
+	}
+	.skill-graphic {
+		margin-bottom: 10%;
+	}
+	.inline-list {
+		display: block !important;
 	}
 	.inline-experience-left {
 		width: 100%;

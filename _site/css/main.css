@@ -579,7 +579,8 @@ img {
 
 #skill-lists {
   padding: 10% 15px 10% 15px;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
   #skill-lists .inline-list {
     list-style: none;
     display: inline-block; }
@@ -603,7 +604,7 @@ img {
   color: #fff;
   text-align: center; }
   #resume-name h1 {
-    font-size: 80px; }
+    font-size: 4em; }
   #resume-name a:visited, #resume-name a:hover {
     color: #fff;
     font-size: 15px; }
@@ -764,7 +765,7 @@ img {
     z-index: -100000; }
 
   #about-page {
-    height: 1500px; }
+    height: 1200px; }
 
   .resume-header {
     font-size: 1.5em;
@@ -778,7 +779,14 @@ img {
       text-align: center; }
 
   #skill-lists {
-    margin: 15% 15% 0 15%; }
+    width: 80%;
+    display: block; }
+
+  .skill-graphic {
+    margin-bottom: 10%; }
+
+  .inline-list {
+    display: block !important; }
 
   .inline-experience-left {
     width: 100%;
