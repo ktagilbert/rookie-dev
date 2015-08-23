@@ -47,15 +47,6 @@
         $('.side-categories').show();
       });
 
-      //projects hover interaction
-
-      $('.projects-img').on('mouseover', function(event) {
-        $(this).siblings('.project-description').show();
-      });
-      $('.projects-img').on('mouseleave', function() {
-        $('.project-description').hide();
-      });
-
       //about page slidedown/fadein
 
       $(document).ready(function() {
@@ -67,6 +58,18 @@
        $(document).ready(function() {
           $('.post-title').fadeIn(1000);
         });
+
+        //portfolio fadein
+
+        $(document).ready(function() {
+           $('#portfolio-header').fadeIn(1000);
+         });
+
+        //posts header slidedown/fadein to keep with style of about page
+
+         $(document).ready(function() {
+            $('.post-title').fadeIn(1000);
+          });
 
       //press resume button to get resume displayed full width
       //on press of button

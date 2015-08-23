@@ -50,15 +50,6 @@
         $('.side-categories').show();
       });
 
-      //projects hover interaction
-
-      $('.projects-img').on('mouseover', function(event) {
-        $(this).siblings('.project-description').show();
-      });
-      $('.projects-img').on('mouseleave', function() {
-        $('.project-description').hide();
-      });
-
       //about page slidedown/fadein
 
       $(document).ready(function() {
@@ -71,6 +62,18 @@
           $('.post-title').fadeIn(1000);
         });
 
+        //portfolio fadein
+
+        $(document).ready(function() {
+           $('#portfolio-header').fadeIn(1000);
+         });
+
+        //posts header slidedown/fadein to keep with style of about page
+
+         $(document).ready(function() {
+            $('.post-title').fadeIn(1000);
+          });
+
       //press resume button to get resume displayed full width
       //on press of button
       //append first div with resume feature
@@ -80,7 +83,7 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
       $('#resume-button').click(function(event){
         event.preventDefault();
         $('.about-content').hide();
-        $('#about-page').css("height", "70%", "padding", "0px");
+        $('#about-page').css("height", "320px", "padding", "0px");
         $('#about-page').html(resumeName);
         $("#resume-feature").delay(50).fadeIn();
       });
@@ -432,8 +435,9 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
       <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
       <img src ="/assets/navicon.png/" id="mobile-menu" />
       <ul class="side-categories">
-        <li><a href="/">Home</li>	
+        <li><a href="/">Home</li>
         <li><a href="/about">About</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
       </ul>
 
       <a class="site-title" href="/">Rookie Dev</a>

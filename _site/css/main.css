@@ -499,6 +499,7 @@ img {
   display: none;
   font-size: 16px;
   width: 17%;
+  color: #d3d3d3;
   float: left;
   background: #fff;
   list-style: none;
@@ -669,6 +670,29 @@ img {
     font-family: "Lobster", sans-serif; }
   #edu p {
     font-size: 1.5em; }
+
+#portfolio-header {
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+  display: none; }
+
+.projects-content {
+  text-align: center; }
+
+.post-header {
+  margin-bottom: 10%; }
+
+.portfolio-list {
+  list-style: none;
+  padding-bottom: 10%; }
+  .portfolio-list li, .portfolio-list a:visited {
+    padding-bottom: 20px;
+    color: #413a5d;
+    font-weight: bold; }
+  .portfolio-list img {
+    width: 60%;
+    box-shadow: 1px 1px 5px 3px #d3d3d3; }
 
 .container-head {
   text-align: center;

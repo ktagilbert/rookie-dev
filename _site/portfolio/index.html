@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Projects</title>
+  <title>Portfolio</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000//projects/">
+  <link rel="canonical" href="http://127.0.0.1:4000//portfolio/">
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alice" />
@@ -50,15 +50,6 @@
         $('.side-categories').show();
       });
 
-      //projects hover interaction
-
-      $('.projects-img').on('mouseover', function(event) {
-        $(this).siblings('.project-description').show();
-      });
-      $('.projects-img').on('mouseleave', function() {
-        $('.project-description').hide();
-      });
-
       //about page slidedown/fadein
 
       $(document).ready(function() {
@@ -71,6 +62,18 @@
           $('.post-title').fadeIn(1000);
         });
 
+        //portfolio fadein
+
+        $(document).ready(function() {
+           $('#portfolio-header').fadeIn(1000);
+         });
+
+        //posts header slidedown/fadein to keep with style of about page
+
+         $(document).ready(function() {
+            $('.post-title').fadeIn(1000);
+          });
+
       //press resume button to get resume displayed full width
       //on press of button
       //append first div with resume feature
@@ -80,7 +83,7 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
       $('#resume-button').click(function(event){
         event.preventDefault();
         $('.about-content').hide();
-        $('#about-page').css("height", "70%", "padding", "0px");
+        $('#about-page').css("height", "320px", "padding", "0px");
         $('#about-page').html(resumeName);
         $("#resume-feature").delay(50).fadeIn();
       });
@@ -432,8 +435,9 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
       <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
       <img src ="/assets/navicon.png/" id="mobile-menu" />
       <ul class="side-categories">
-        <li><a href="/">Home</li>	
+        <li><a href="/">Home</li>
         <li><a href="/about">About</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
       </ul>
 
       <a class="site-title" href="/">Rookie Dev</a>
@@ -444,51 +448,19 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
     <!--<div class="page-content">-->
         <div class="post">
   <header class="post-header">
+    <h1 id=portfolio-header>Portfolio</h1>
   </header>
   <span class="projects-content">
-  	<h3>Here are some samples of my work:</br>
-  		(Coming Soon!)
-  	</h3>
+    <ul class="portfolio-list">
+      <li>Front End Work For <a href='https://www.wonderofsound.com/'>Wonder of Sound</a></li>
+      <li><img src="/assets/portfoliowos.jpg" class="projects-img" /></li>
+    </ul>
+    <ul class="portfolio-list">
+      <li class="portfolio-info">Logo Design & Welcoming Message for Literary Blog - Story Arch</li>
+        <li><img src="/assets/logostoryarch.png" class="projects-img" /></li>
+      </ul>
   </span>
  </div>
-
-<!--  <div class="project-columns">
- 	<span class="column-one">
- 	</span>
- 	</span>
- 	<span class="column-two">
- 		<p>Space Saver</p>
- 	</span>
- 	<span class="column-three">
- 		<p>Space Saver</p>
- 	</span>
- </div>
-
- <div class="row-one">
- 	<ul>
- 		<li>
- 			<a href="">
- 				<p class="project-description">Wonder of Sound Social Media Icons</p>
- 				<img src="/assets/social_icons.png" class="projects-img" />
- 			</a>
- 		</li>
- 		<li>
- 			<p class="project-description">Wonder of Sound Social Media Icons</p>
- 			<img src="/assets/social_icons.png" class="projects-img" />
- 		</li>
- 		<li>
- 			<p class="project-description">Wonder of Sound Social Media Icons</p>
- 			<img src="/assets/social_icons.png" class="projects-img" />
- 		</li>
- 	</ul>	
- </div>
-
-  	<article class="post-content">
-    	
-
-  	</article>
-</div>
-</div>-->
 
 <!--contribute-container-->
 
@@ -499,7 +471,8 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
  			<a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
  		 </li>
   	</ul>
- </div> 
+ </div>
+
         <div class="wrapper">
       </div>
 
