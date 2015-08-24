@@ -696,10 +696,10 @@ img {
   .portfolio-list li:hover, .portfolio-list a:hover {
     color: #978fb9; }
   .portfolio-list img {
-    width: 60%;
+    width: 50%;
     box-shadow: 1px 1px 5px 3px #d3d3d3; }
   .portfolio-list img:hover {
-    width: 65%; }
+    width: 55%; }
 
 .container-head {
   text-align: center;

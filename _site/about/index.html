@@ -75,12 +75,10 @@
           });
 
       //press resume button to get resume displayed full width
-      //on press of button
-      //append first div with resume feature
 
 var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p><p><a href='https://github.com/ktagilbert'</a>https://github.com/ktagilbert</p></div>");
 
-      $('#resume-button').click(function(event){
+      $('.resume-button').click(function(event){
         event.preventDefault();
         $('.about-content').hide();
         $('#about-page').css("height", "320px", "padding", "0px");

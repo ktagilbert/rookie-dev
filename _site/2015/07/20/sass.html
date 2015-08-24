@@ -75,12 +75,10 @@
           });
 
       //press resume button to get resume displayed full width
-      //on press of button
-      //append first div with resume feature
 
 var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p><p><a href='https://github.com/ktagilbert'</a>https://github.com/ktagilbert</p></div>");
 
-      $('#resume-button').click(function(event){
+      $('.resume-button').click(function(event){
         event.preventDefault();
         $('.about-content').hide();
         $('#about-page').css("height", "320px", "padding", "0px");
@@ -459,7 +457,7 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
   <article class="post-content">
     <h2 id="bridging-the-gap-between-css-and-sass">Bridging the Gap Between CSS and SASS</h2>
 
-<p>I have a confession. When I first started working on Rooke Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. <em>With an already limited knowledge of CSS, I was intimidated.</em></p>
+<p>I have a confession. When I first started working on Rookie Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. <em>With an already limited knowledge of CSS, I was intimidated.</em></p>
 
 <p>It turns out that SCSS is not that difficult.</p>
 
@@ -483,7 +481,7 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
 <span class="p">}</span>
 
 <span class="nc">.nav-list</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
- <span class="k">color</span><span class="o">:</span> <span class="m">#d3d3d3</span><span class="p">;</span>	
+ <span class="k">color</span><span class="o">:</span> <span class="m">#d3d3d3</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 
 <p>Okay, cool. Here we have some CSS that basically says, “hey for all headers, make the font-family Georgia and the color black.” Below that we have some nested rules that say the list items under the class “nav-list” will all be a light-grey color. Alright, nice. <strong>Now, let’s write the same thing using SASS.</strong></p>
@@ -509,7 +507,7 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">$</span><span class="nt">header-align</span><span class="o">:</span> <span class="nt">center</span><span class="o">;</span>
 <span class="o">$</span><span class="nt">container-color</span><span class="o">:</span> <span class="nf">#fff</span><span class="o">;</span>
-<span class="o">$</span><span class="nt">large</span><span class="o">:</span> <span class="nt">80px</span><span class="o">;</span> 
+<span class="o">$</span><span class="nt">large</span><span class="o">:</span> <span class="nt">80px</span><span class="o">;</span>
 <span class="o">$</span><span class="nt">rookie-blue</span><span class="o">:</span> <span class="nf">#40a9f2</span><span class="o">;</span></code></pre></div>
 
 <p>Here I basically have some rules:</p>
@@ -550,7 +548,6 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
 <p>SCSS is really a bridging tool to help you get comfortable with SASS. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into SASS. <strong>In any file with .scss, you can set style rules using SASS, CSS, or SCSS as seen here.</strong></p>
 
 <p>So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS <a href="http://sass-lang.com/guide">here</a> if you are interested. Let me know how it goes for you!</p>
-
 
   </article>
  

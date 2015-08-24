@@ -11,19 +11,19 @@
     
       <item>
         <title>Great Resources For Learning JavaScript</title>
-        <description>&lt;p&gt;I know from experience that learning JavaScript can be &lt;em&gt;very&lt;/em&gt; challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It tooks me a couple of months to finally be comfortable in the langauge. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.&lt;/p&gt;
+        <description>&lt;p&gt;I know from experience that learning JavaScript can be &lt;em&gt;very&lt;/em&gt; challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It took me a couple of months to finally be comfortable in the language. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.&lt;/p&gt;
 
 &lt;h1 id=&quot;books&quot;&gt;Books:&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;JavaScript the Definitive Guide:&lt;/strong&gt; Okay, it’s long. So just don’t read the whole thing, okay? I found it helpful to read the first 5-10 chapters. It helped me understand what was actually going on in JavaScript. What I found the most helpful is the time the author spent to explain each and every line of his examples. Meaning, you will never have to guess at what a piece of code is doing. Instead, everything is totally straight forward. While reading the Definitive Guide I was able to finally understand some important concepts in JavaScript. Other books would skim over these same concepts as if they were easy to comprehend. So, if you’re like me and having some problems understanding some of the basics, this might be the book for you.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;ftp://91.193.236.10/pub/docs/linux-support/programming/JavaScript/%5BO%60Reilly%5D%20-%20JavaScript.%20The%20Definitive%20Guide,%206th%20ed.%20-%20%5BFlanagan%5D.pdf&quot;&gt;JavaScript the Definitive Guide&lt;/a&gt;:&lt;/strong&gt; Okay, it’s long. So just don’t read the whole thing, okay? I found it helpful to read the first 5-10 chapters. It helped me understand what was actually going on in JavaScript. What I found the most helpful is the time the author spent to explain each and every line of his examples. Meaning, you will never have to guess at what a piece of code is doing. Instead, everything is totally straight forward. While reading the Definitive Guide I was able to finally understand some important concepts in JavaScript. Other books would skim over these same concepts as if they were easy to comprehend. So, if you’re like me and having some problems understanding some of the basics, this might be the book for you.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;JavaScript the Good Parts:&lt;/strong&gt; I would especially recommend this book if you are a visual learner. JavaScript the Good Parts is super easy to skim through and will give you useful info (though, you may have to look up some concepts on Google as it doesn’t go out of its way to help its readers understand everything). I heard that the The Good Parts is a retaliation against the Definitive Guide so it only makes sense that it is shorter and offers a little less explanation. Yet still, it is definitlely more useful than other introductions to JavaScript out there.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://shop.oreilly.com/product/9780596517748.do&quot;&gt;JavaScript the Good Parts&lt;/a&gt;:&lt;/strong&gt; I would especially recommend this book if you are a visual learner. JavaScript the Good Parts is super easy to skim through and will give you useful info (though, you may have to look up some concepts on Google as it doesn’t go out of its way to help its readers understand everything). I heard that the The Good Parts is a retaliation against the Definitive Guide so it only makes sense that it is shorter and offers a little less explanation. Yet still, it is definitely more useful than other introductions to JavaScript out there.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Writing Eloquent JavaScript:&lt;/strong&gt; Read this only if you know the fundamentals of JavaScript already. The books comes highly recommended by programmers but I really don’t think it should be recommended for those just starting to learn about the language. For example, I initially had no idea what was going on when examples showed up filled with ‘for’ loops and counters or unexplained methods. &lt;strong&gt;However, DO read this if you want to learn how to write better JavaScript or if you want to solve some pretty cool problems that the author includes at the end of each chapter.&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://eloquentjavascript.net/&quot;&gt;Writing Eloquent JavaScript&lt;/a&gt;:&lt;/strong&gt; Read this only if you know the fundamentals of JavaScript already. The books comes highly recommended by programmers but I really don’t think it should be recommended for those just starting to learn about the language. For example, I initially had no idea what was going on when examples showed up filled with ‘for’ loops and counters or unexplained methods. &lt;strong&gt;However, DO read this if you want to learn how to write better JavaScript or if you want to solve some pretty cool problems that the author includes at the end of each chapter.&lt;/strong&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -55,11 +55,10 @@
       &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/learnjavascript/&quot;&gt;r/learningjavascript&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://teamtreehouse.com/home&quot;&gt;Treehouse&lt;/a&gt;:&lt;/strong&gt; a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subcription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://teamtreehouse.com/home&quot;&gt;Treehouse&lt;/a&gt;:&lt;/strong&gt; a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subscription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;These are just the best resources that I have been able to find so far. If you find any others that you think should be added to this list let me know and I’ll update this post. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
-
 </description>
         <pubDate>Wed, 05 Aug 2015 10:00:00 -0700</pubDate>
         <link>http://127.0.0.1:4000//2015/08/05/resources.html</link>
@@ -72,7 +71,7 @@
         <title>How to Start Learning SCSS</title>
         <description>&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the Gap Between CSS and SASS&lt;/h2&gt;
 
-&lt;p&gt;I have a confession. When I first started working on Rooke Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have a confession. When I first started working on Rookie Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;It turns out that SCSS is not that difficult.&lt;/p&gt;
 
@@ -96,7 +95,7 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;nc&quot;&gt;.nav-list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#d3d3d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	
+ &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#d3d3d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Okay, cool. Here we have some CSS that basically says, “hey for all headers, make the font-family Georgia and the color black.” Below that we have some nested rules that say the list items under the class “nav-list” will all be a light-grey color. Alright, nice. &lt;strong&gt;Now, let’s write the same thing using SASS.&lt;/strong&gt;&lt;/p&gt;
@@ -122,7 +121,7 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;header-align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;container-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;large&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;large&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;rookie-blue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#40a9f2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Here I basically have some rules:&lt;/p&gt;
@@ -163,7 +162,6 @@
 &lt;p&gt;SCSS is really a bridging tool to help you get comfortable with SASS. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into SASS. &lt;strong&gt;In any file with .scss, you can set style rules using SASS, CSS, or SCSS as seen here.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS &lt;a href=&quot;http://sass-lang.com/guide&quot;&gt;here&lt;/a&gt; if you are interested. Let me know how it goes for you!&lt;/p&gt;
-
 </description>
         <pubDate>Mon, 20 Jul 2015 09:32:21 -0700</pubDate>
         <link>http://127.0.0.1:4000//2015/07/20/sass.html</link>
