@@ -41,8 +41,7 @@ body {
   font-weight: 300;
   color: #111;
   background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%;
-  margin-bottom: 60px; }
+  -webkit-text-size-adjust: 100%; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -806,6 +805,9 @@ a {
   #mobile-menu {
     display: initial;
     width: 20px; }
+
+  .main-content {
+    background-color: #fff; }
 
   .categories-dropdown {
     display: none;
