@@ -3,51 +3,88 @@
 $header-align: center;
 $container-color: #fff;
 $large: 80px;
-$rookie-blue: #40a9f2;
-$purple: #302B45;
-
+$rookie-blue: #72c6ff;
+$orange: #FFB3AA;
+$brown: #1D1E18;
 
 //header
 
 a {
-	color: #666;
+	color: $brown;
 }
 
 .site-header {
-	color: #fff;
-	border-bottom: 0px;
-	padding-left: 10px;
-	border-top: 0px;
-	background-color: $purple;
+	width: 100%;
+	padding: 0;
+	text-align: center;
 }
 
-.site-title, .site-title:visited {
-	padding-left: 50px;
-	padding-top: auto;
-	padding-bottom: auto;
-	font-family: arial;
-	font-size: 20px;
-	letter-spacing: 1px;
-	color: #fff;
-	position: absolute;
-	z-index: 2;
-	margin-left: 10px;
+//desktop menu
+
+#menu {
+	padding-top: 20px;
+	width: 100%;
+  font-weight: bold;
+  font-family: "Lato";
+  color: #fff;
+  height: 70px;
+  position: fixed;
+  background-color: #111;
+	margin: 0;
+	top: 0%;
+}
+
+.menu-item {
+	padding: 0 10px;
+	list-style: none;
+	display: inline-block;
+	line-height: 1;
+	font-size: 16px;
+
+		a {
+			text-align: center;
+			color: #fff;
+
+			&:visited {
+				// TRY THIS
+				color: #fff;
+				text-align: center;
+			}
+		}
 }
 
 .page-heading {
-	color: #fff;
-	text-shadow: 0px 1px 2px #111;
-	padding: 200px 0 200px 0;
 	margin-bottom: 0px;
-	font-size: 50px;
-	font-family: 'Lato', serif;
-	font-weight: 600;
-	background-color: $rookie-blue;
+	font-weight: bold;
+	border-bottom: 4px solid $orange;
+	padding: 10% 0 0 0;
 }
 
-#heading-emphasis {
-	font-style: italic;
+.tagline {
+	line-height: 20;
 }
+
+.logo {
+	color: $orange;
+	padding: 0;
+}
+
+#line-one {
+	font-family: "oleo script", serif;
+  padding: 0;
+  margin: 0;
+  font-size: 6em;
+  letter-spacing: -2px;
+}
+
+#line-two {
+	font-family: "lato", sans-serif;
+	line-height: 0.2;
+	font-size: 8.5em;
+	letter-spacing: -7px;
+}
+
+
 
 //drop-down menu images
 
@@ -68,44 +105,47 @@ a {
 
 #mobile-menu {
 	display: none;
-	width: 30px;
+	width: 200px;
 	float: right;
-	padding: 15px 0 30px 10px;
+	padding: 20px 0 30px 20px;
 	position: absolute;
 	z-index: 100000;
 }
 
+
+
 //drop-down-menu
 
-.side-categories {
-	position: absolute;;
-	display: none;
-	font-size: 16px;
-	width: 17%;
-	color: #d3d3d3;
-	float: left;
-	background: #fff;
-	list-style: none;
-	padding: 65px 10px 10px 10px;
-	margin: 0px;
-	line-height: 4;
-	text-align: center;
-	z-index: 2000;
-	box-shadow: 1px 3px 3px #111;
-
-	li a:hover {
-		width: 100%;
-		font-weight: 500;
-	}
-}
+// .side-categories {
+// 	position: absolute;;
+// 	display: none;
+// 	font-size: 16px;
+// 	width: 17%;
+// 	color: #d3d3d3;
+// 	float: left;
+// 	background: #fff;
+// 	list-style: none;
+// 	padding: 0 10px 10px 10px;
+// 	margin: 0px;
+// 	line-height: 4;
+// 	text-align: center;
+// 	z-index: 2000;
+// 	box-shadow: 1px 3px 3px #111;
+//
+// 	li a:hover {
+// 		width: 100%;
+// 		font-weight: 500;
+// 	}
+// }
 
 //post-details
 
+.post-wrapper {
+	margin: 0 10%;
+  background-color: #fff;
+}
+
 .post-content {
-	margin-right: 10%;
-	margin-left: 10%;
-	opacity: 1;
-	z-index: 100000;
 	margin-bottom: $large;
 }
 
@@ -114,7 +154,7 @@ a {
 }
 
 .post-link {
-	font-family: "Alice", sans-serif;
+	font-family: initial;
 }
 
 .post-list {
@@ -132,20 +172,22 @@ a {
 //about page
 
 #about-page {
-	background-color: #302B45;
-    opacity: 1;
-    color: #fff;
-    padding-top: 150px;
-    padding: 5%;
-    height: 900px;
-		overflow: scroll;
+	background-color: #FFB3AA;
+  opacity: 1;
+  color: #fff;
+  padding-top: 150px;
+  padding: 5%;
+  height: 900px;
+
+	p {
+		font-size: 18px;
+	}
 }
 
 .post {
 	.about-content {
-    	text-shadow: 3px 1px 0px #111;
-    	padding: 0 10% 0 10%;
     	display: none;
+			color: $brown;
 	}
 }
 
@@ -157,12 +199,35 @@ a {
 
 //resume feature
 
+.resume-wrapper {
+		margin: 0 10%;
+}
+
+#resume-feature {
+	text-align: center;
+	display: block;
+	background-color: #fff;
+	display: none;
+	margin: auto;
+	width: 80%;
+
+	h2 {
+		font-family: "Lato", Tahoma;
+		color: #666;
+		font-weight: bold;
+	}
+	h3 {
+		font-family: Georgia, Serif;
+		font-size: 16px;
+	}
+}
+
 .resume-button {
 	font-size: 16px;
   line-height: 50px;
   padding: 10px;
   border: solid 4px #fff;
-	background-color: $purple;
+	background-color: $orange;
 	display: block;
 	outline: none;
 	color: $container-color;
@@ -173,24 +238,25 @@ a {
 
 .resume-button:hover {
 	background-color: #fff;
-	color: $purple;
+	color: $orange;
 	font-weight: bold;
 }
 
-#resume-feature {
+#resume-name {
+	color: $brown;
 	text-align: center;
-	display: block;
-	background-color: #fff;
-	display: none;
+	margin: 0 10%;
 
-	h2 {
-		font-family: "Lato", Tahoma;
-		color: #666;
-		font-weight: bold;
+	h1 {
+		font-size: 4em;
 	}
-	h3 {
-		font-family: Georgia, Serif;
-		font-size: 16px;
+	a {
+		color: $brown;
+	}
+
+	a:visited, a:hover{
+		color: $brown;
+		font-size: 15px;
 	}
 }
 
@@ -222,33 +288,16 @@ a {
 	margin-bottom: 50%
 }
 
-#resume-name {
-	color: #fff;
-	text-align: center;
-
-	h1 {
-		font-size: 4em;
-	}
-	a {
-		color: #fff;
-	}
-
-	a:visited, a:hover{
-		color: #fff;
-		font-size: 15px;
-	}
-}
-
 .resume-header {
-	background-color: #fff;
-    color: #457;
+		background-color: $rookie-blue;
+    color: #fff;
     font-size: 2em;
     letter-spacing: 17px;
     display: block;
     line-height: 1;
     font-weight: bold;
-    padding: 50px 0 100px 0;
-    margin: 0 10% 0 10%
+    padding: 50px 0 50px 0;
+		margin-bottom: $large;
 }
 
 .job-list {
@@ -372,6 +421,7 @@ a {
   font-size: 4em;
   color: #fff;
 	display: none;
+	line-height: 4;
 }
 
 .projects-content {
@@ -399,9 +449,6 @@ a {
 		width: 50%;
 		box-shadow: 1px 1px 5px 3px #d3d3d3;
 	}
-	img:hover {
-		width: 55%;
-	}
 }
 
  //contribute-container
@@ -418,7 +465,7 @@ a {
 
 .contribute-container {
 	font-size: 16px;
- 	background-color: #457;
+ 	background-color: #FFB3AA;
  	display: block;
  	margin: 0px;
  	line-height: 50px;
@@ -445,32 +492,42 @@ a {
 	a:hover {
 		background-color: #fff;
 		color: #457;
-		font-weight: 500;
+		text-decoration: none;
 	}
 }
 
-//footer
+//sticky footer
 
 .site-footer {
-	background: #d3d3d3;
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+	background-color: #483D3F;
+	opacity: 0.9;
 	text-align: center;
-	color: $purple;
-    width: 100%;
-    height: 400px;
+	top: 100%;
+	color: #fff;
+
 	a, a:visited {
-		color: $purple;
+		color: #fff;
 	}
 
 	a:hover {
-		color: #457;
+		color: #fff;
+		text-decoration: none;
+	}
+	h6 {
+		font-family: lato;
+		letter-spacing: 2px;
 	}
 }
 
 .footer-heading {
 	margin: auto;
 
-	h3 {
-		font-family: "Lato";
+	h3, h4, {
+		font-size: 1.5em;
 	}
 }
 
@@ -480,17 +537,6 @@ a {
 		font-size: 14px;
 		list-style: none;
 		padding: 5px;
-	}
-	.social-icon, img {
-		width: 40px;
-		padding: 0;
-		margin-top: 30px;
-	}
-}
-
-.social-icon {
-	img:hover {
-		opacity: 0.7;
 	}
 }
 
@@ -503,6 +549,12 @@ a {
 		margin: 30px;
 		padding-top: 30px;
 		font-weight: bolder;
+		text-align: right;
+		line-height: 10;
+
+		a:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -619,10 +671,6 @@ a {
 	}
 }
 
-
-
-
-
 @media(max-width: 820px) {
 	.row-one li {
 		display: initial;
@@ -642,9 +690,3 @@ a {
 		}
 	}
 }
-
-
-//When screen gets to 700 width, I needed a way to collapse the list into a block v.
-//inline block. margins center the list even when viewed on a smaller screen.
-//Overflow allows all of of the list items to still appear on the screen within
-//the reduced width.

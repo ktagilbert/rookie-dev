@@ -3,16 +3,22 @@ layout: default
 ---
 
 <div class="home">
-    
+
   <div class="page-heading">
-    <p><span id="heading-emphasis">A Place To Learn</span> About Web Development</p>
+    <span class="logo">
+      <p id="line-one">Rookie</p>
+      <p id="line-two">DEV</p>
+    </span>
+    <p class="tagline">A place to learn about web development</p>
   </div>
 
-  
- 
+
+
+
 <div class="main-content">
-  <ul class="post-list"> 
-     
+  <div class="post-wrapper">
+  <ul class="post-list">
+
     {% for post in site.posts %}
       <li><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -20,9 +26,10 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 
-        <p>{{ post.excerpt }}</p> 
+        <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
+</div>
 </div>
 </div>

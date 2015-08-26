@@ -19,11 +19,20 @@ dl, dd, ol, ul, figure {
   dl h4,
   dl h5,
   dl h6, dd h1, dd h2, dd h3, dd h4, dd h5, dd h6, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, figure h1, figure h2, figure h3, figure h4, figure h5, figure h6 {
-    font-family: "Alice"; }
+    font-family: "oleo script";
+    padding-bottom: 30px; }
+
+p, li {
+  font-size: 18px;
+  padding-bottom: 10px; }
 
 /**
  * Basic styling
  */
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   display: block;
   font-family: Helvetica, Arial, sans-serif;
@@ -33,7 +42,7 @@ body {
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
-  height: 100vh; }
+  margin-bottom: 60px; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -82,8 +91,6 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   text-decoration: none; }
-  a:visited {
-    color: #7D7D7D; }
   a:hover {
     color: #457; }
 
@@ -154,18 +161,6 @@ pre {
   vertical-align: middle; }
   .icon > svg path {
     fill: #828282; }
-
-/**
- * Site header
- */
-.site-header {
-  min-height: 56px;
-  position: relative; }
-
-.site-title {
-  line-height: 56px;
-  margin-bottom: 0;
-  float: left; }
 
 /**
  * Site footer
@@ -261,15 +256,14 @@ img {
 
 .post-header {
   margin-bottom: 30px;
-  background-color: #302B45;
+  background-color: #FFB3AA;
   height: 250px; }
 
 .post-title {
   font-size: 50px;
   color: #fff;
   text-align: center;
-  line-height: 1;
-  padding-top: 75px;
+  line-height: 4;
   font-family: "Lato";
   display: none; }
   @media screen and (max-width: 800px) {
@@ -439,37 +433,64 @@ img {
   .highlight .il {
     color: #099; }
 
-.site-header {
-  color: #fff;
-  border-bottom: 0px;
-  padding-left: 10px;
-  border-top: 0px;
-  background-color: #302B45; }
+a {
+  color: #1D1E18; }
 
-.site-title, .site-title:visited {
-  padding-left: 50px;
-  padding-top: auto;
-  padding-bottom: auto;
-  font-family: arial;
-  font-size: 20px;
-  letter-spacing: 1px;
+.site-header {
+  width: 100%;
+  padding: 0;
+  text-align: center; }
+
+#menu {
+  padding-top: 20px;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Lato";
   color: #fff;
-  position: absolute;
-  z-index: 2;
-  margin-left: 10px; }
+  height: 70px;
+  position: fixed;
+  background-color: #111;
+  margin: 0;
+  top: 0%; }
+
+.menu-item {
+  padding: 0 10px;
+  list-style: none;
+  display: inline-block;
+  line-height: 1;
+  font-size: 16px; }
+  .menu-item a {
+    text-align: center;
+    color: #fff; }
+    .menu-item a:visited {
+      color: #fff;
+      text-align: center; }
 
 .page-heading {
-  color: #fff;
-  text-shadow: 0px 1px 2px #111;
-  padding: 200px 0 200px 0;
   margin-bottom: 0px;
-  font-size: 50px;
-  font-family: 'Lato', serif;
-  font-weight: 600;
-  background-color: #40a9f2; }
+  font-weight: bold;
+  border-bottom: 4px solid #FFB3AA;
+  padding: 10% 0 0 0; }
 
-#heading-emphasis {
-  font-style: italic; }
+.tagline {
+  line-height: 20; }
+
+.logo {
+  color: #FFB3AA;
+  padding: 0; }
+
+#line-one {
+  font-family: "oleo script", serif;
+  padding: 0;
+  margin: 0;
+  font-size: 6em;
+  letter-spacing: -2px; }
+
+#line-two {
+  font-family: "lato", sans-serif;
+  line-height: 0.2;
+  font-size: 8.5em;
+  letter-spacing: -7px; }
 
 .nav-alt {
   z-index: 100000;
@@ -486,43 +507,24 @@ img {
 
 #mobile-menu {
   display: none;
-  width: 30px;
+  width: 200px;
   float: right;
-  padding: 15px 0 30px 10px;
+  padding: 20px 0 30px 20px;
   position: absolute;
   z-index: 100000; }
 
-.side-categories {
-  position: absolute;
-  display: none;
-  font-size: 16px;
-  width: 17%;
-  color: #d3d3d3;
-  float: left;
-  background: #fff;
-  list-style: none;
-  padding: 65px 10px 10px 10px;
-  margin: 0px;
-  line-height: 4;
-  text-align: center;
-  z-index: 2000;
-  box-shadow: 1px 3px 3px #111; }
-  .side-categories li a:hover {
-    width: 100%;
-    font-weight: 500; }
+.post-wrapper {
+  margin: 0 10%;
+  background-color: #fff; }
 
 .post-content {
-  margin-right: 10%;
-  margin-left: 10%;
-  opacity: 1;
-  z-index: 100000;
   margin-bottom: 80px; }
 
 .post-meta {
   text-align: center; }
 
 .post-link {
-  font-family: "Alice", sans-serif; }
+  font-family: initial; }
 
 .post-list {
   padding-top: 30px;
@@ -534,28 +536,46 @@ img {
     padding: 40px 15% 40px 15%; }
 
 #about-page {
-  background-color: #302B45;
+  background-color: #FFB3AA;
   opacity: 1;
   color: #fff;
   padding-top: 150px;
   padding: 5%;
-  height: 900px;
-  overflow: scroll; }
+  height: 900px; }
+  #about-page p {
+    font-size: 18px; }
 
 .post .about-content {
-  text-shadow: 3px 1px 0px #111;
-  padding: 0 10% 0 10%;
-  display: none; }
+  display: none;
+  color: #1D1E18; }
 
 .my-background h1 {
   padding-top: 80px; }
+
+.resume-wrapper {
+  margin: 0 10%; }
+
+#resume-feature {
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  display: none;
+  margin: auto;
+  width: 80%; }
+  #resume-feature h2 {
+    font-family: "Lato", Tahoma;
+    color: #666;
+    font-weight: bold; }
+  #resume-feature h3 {
+    font-family: Georgia, Serif;
+    font-size: 16px; }
 
 .resume-button {
   font-size: 16px;
   line-height: 50px;
   padding: 10px;
   border: solid 4px #fff;
-  background-color: #302B45;
+  background-color: #FFB3AA;
   display: block;
   outline: none;
   color: #fff;
@@ -565,21 +585,20 @@ img {
 
 .resume-button:hover {
   background-color: #fff;
-  color: #302B45;
+  color: #FFB3AA;
   font-weight: bold; }
 
-#resume-feature {
+#resume-name {
+  color: #1D1E18;
   text-align: center;
-  display: block;
-  background-color: #fff;
-  display: none; }
-  #resume-feature h2 {
-    font-family: "Lato", Tahoma;
-    color: #666;
-    font-weight: bold; }
-  #resume-feature h3 {
-    font-family: Georgia, Serif;
-    font-size: 16px; }
+  margin: 0 10%; }
+  #resume-name h1 {
+    font-size: 4em; }
+  #resume-name a {
+    color: #1D1E18; }
+  #resume-name a:visited, #resume-name a:hover {
+    color: #1D1E18;
+    font-size: 15px; }
 
 #skill-lists {
   padding: 10% 15px 10% 15px;
@@ -604,25 +623,16 @@ img {
   font-size: 1em;
   margin-bottom: 50%; }
 
-#resume-name {
-  color: #fff;
-  text-align: center; }
-  #resume-name h1 {
-    font-size: 4em; }
-  #resume-name a:visited, #resume-name a:hover {
-    color: #fff;
-    font-size: 15px; }
-
 .resume-header {
-  background-color: #fff;
-  color: #457;
+  background-color: #72c6ff;
+  color: #fff;
   font-size: 2em;
   letter-spacing: 17px;
   display: block;
   line-height: 1;
   font-weight: bold;
-  padding: 50px 0 100px 0;
-  margin: 0 10% 0 10%; }
+  padding: 50px 0 50px 0;
+  margin-bottom: 80px; }
 
 .job-list {
   width: 100%;
@@ -678,7 +688,8 @@ img {
   text-align: center;
   font-size: 4em;
   color: #fff;
-  display: none; }
+  display: none;
+  line-height: 4; }
 
 .projects-content {
   text-align: center; }
@@ -698,8 +709,6 @@ img {
   .portfolio-list img {
     width: 50%;
     box-shadow: 1px 1px 5px 3px #d3d3d3; }
-  .portfolio-list img:hover {
-    width: 55%; }
 
 .container-head {
   text-align: center;
@@ -712,7 +721,7 @@ img {
 
 .contribute-container {
   font-size: 16px;
-  background-color: #457;
+  background-color: #FFB3AA;
   display: block;
   margin: 0px;
   line-height: 50px;
@@ -735,36 +744,37 @@ img {
   .contribute-container a:hover {
     background-color: #fff;
     color: #457;
-    font-weight: 500; }
+    text-decoration: none; }
 
 .site-footer {
-  background: #d3d3d3;
-  text-align: center;
-  color: #302B45;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 400px; }
+  height: 400px;
+  background-color: #483D3F;
+  opacity: 0.9;
+  text-align: center;
+  top: 100%;
+  color: #fff; }
   .site-footer a, .site-footer a:visited {
-    color: #302B45; }
+    color: #fff; }
   .site-footer a:hover {
-    color: #457; }
+    color: #fff;
+    text-decoration: none; }
+  .site-footer h6 {
+    font-family: lato;
+    letter-spacing: 2px; }
 
 .footer-heading {
   margin: auto; }
-  .footer-heading h3 {
-    font-family: "Lato"; }
+  .footer-heading h3, .footer-heading h4 {
+    font-size: 1.5em; }
 
 .footer-list li {
   display: inline-block;
   font-size: 14px;
   list-style: none;
   padding: 5px; }
-.footer-list .social-icon, .footer-list img {
-  width: 40px;
-  padding: 0;
-  margin-top: 30px; }
-
-.social-icon img:hover {
-  opacity: 0.7; }
 
 .design-by {
   font-weight: bolder; }
@@ -773,7 +783,11 @@ img {
     font-size: 12px;
     margin: 30px;
     padding-top: 30px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    text-align: right;
+    line-height: 10; }
+    .design-by li a:hover {
+      text-decoration: underline; }
 
 @media (max-width: 457px) {
   .page-heading {

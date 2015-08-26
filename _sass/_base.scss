@@ -8,8 +8,14 @@ dl, dd, ol, ul, figure {
     padding: 0;
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Alice";
+        font-family: "oleo script";
+        padding-bottom: 30px;
     }
+}
+
+p, li {
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
 
@@ -17,6 +23,10 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
     display: block;
     font-family: $base-font-family;
@@ -26,7 +36,8 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    height: 100vh;
+    // height: 100vh;
+    margin-bottom: 60px;
 }
 
 
@@ -97,10 +108,6 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     text-decoration: none;
-
-    &:visited {
-        color: #7D7D7D;
-    }
 
     &:hover {
         color: #457;
