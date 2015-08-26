@@ -58,6 +58,7 @@ a {
 	font-weight: bold;
 	border-bottom: 4px solid $orange;
 	padding: 10% 0 0 0;
+	height: 600px;
 }
 
 .tagline {
@@ -546,11 +547,9 @@ a {
 	li {
 		list-style: none;
 		font-size: 12px;
-		margin: 30px;
-		padding-top: 30px;
+		margin: auto;
 		font-weight: bolder;
-		text-align: right;
-		line-height: 10;
+		line-height: 4;
 
 		a:hover {
 			text-decoration: underline;
@@ -590,7 +589,7 @@ a {
 		z-index: -100000;
 	}
 	#about-page {
-		height: 1200px;
+		height: 1540px;
 	}
 	.resume-header {
 		font-size: 1.5em;
@@ -668,6 +667,21 @@ a {
 	}
 	.about-page {
 		height: 700px;
+	}
+	#line-one {
+		font-size: 2em;
+		padding-top: 40px;
+	}
+	#line-two {
+		font-size: 3em;
+	}
+	.tagline {
+		line-height: 8;
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+	.page-heading {
+		height: 350px;
 	}
 }
 

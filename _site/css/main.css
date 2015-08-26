@@ -470,7 +470,8 @@ a {
   margin-bottom: 0px;
   font-weight: bold;
   border-bottom: 4px solid #FFB3AA;
-  padding: 10% 0 0 0; }
+  padding: 10% 0 0 0;
+  height: 600px; }
 
 .tagline {
   line-height: 20; }
@@ -781,11 +782,9 @@ a {
   .design-by li {
     list-style: none;
     font-size: 12px;
-    margin: 30px;
-    padding-top: 30px;
+    margin: auto;
     font-weight: bolder;
-    text-align: right;
-    line-height: 10; }
+    line-height: 4; }
     .design-by li a:hover {
       text-decoration: underline; }
 
@@ -810,7 +809,7 @@ a {
     z-index: -100000; }
 
   #about-page {
-    height: 1200px; }
+    height: 1540px; }
 
   .resume-header {
     font-size: 1.5em;
@@ -870,7 +869,22 @@ a {
     font-size: 14px; }
 
   .about-page {
-    height: 700px; } }
+    height: 700px; }
+
+  #line-one {
+    font-size: 2em;
+    padding-top: 40px; }
+
+  #line-two {
+    font-size: 3em; }
+
+  .tagline {
+    line-height: 8;
+    font-size: 14px;
+    letter-spacing: 1px; }
+
+  .page-heading {
+    height: 350px; } }
 @media (max-width: 820px) {
   .row-one li {
     display: initial;
