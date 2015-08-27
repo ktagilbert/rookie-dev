@@ -28,55 +28,36 @@
 
 		$(document).ready(function() {
 
-      //navigation menu: toggles arrow img and shows menu
+      //desktop nav bar changes color on scroll
+      var scroll_start = 0;
+      var startchange = $('p:first');
+      var offset = startchange.offset();
 
-      // $('.categories-dropdown').on('mouseover', function(event) {
-      //   event.preventDefault();
-      //   $('.side-categories').show();
-      //   $('.categories-dropdown').hide();
-      // });
-      //
-      // $(".side-categories").on('mouseleave', function() {
-      //   $('.side-categories').hide();
-      //   $('.categories-dropdown').show();
-      // });
-      //
-      // //home page slid down
-      //
-      // //mobile menu
-      //
-      // $('#mobile-menu').on('click', function(event) {
-      //   event.preventDefault();
-      //   $('.side-categories').show();
-      // });
+        if (startchange.length) {
 
-      //about page slidedown/fadein
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
 
-      $(document).ready(function() {
-          $('.about-content').fadeIn(1000);
+            if(scroll_start > offset.top) {
+              $("#menu").css('background-color', '#111');
+              $('.menu-item').css("color", "#fff");
+              $('.menu-item').children().css("color", "#fff");
+            } else {
+              $('#menu').css('background-color', 'transparent');
+              $('.menu-item').children().css("color", "#1D1E18");
+            }
         });
+      }
 
-      //posts header slidedown/fadein to keep with style of about page
-
-       $(document).ready(function() {
-          $('.post-title').fadeIn(1000);
-        });
-
-        //portfolio fadein
-
-        $(document).ready(function() {
-           $('#portfolio-header').fadeIn(1000);
-         });
-
-        //posts header slidedown/fadein to keep with style of about page
-
-         $(document).ready(function() {
-            $('.post-title').fadeIn(1000);
-          });
+      //page headers fade in & about content fades in
+      $('.about-content').fadeIn(1000);
+      $('.post-title').fadeIn(1000);
+      $('#portfolio-header').fadeIn(1000);
+      $('.post-title').fadeIn(1000);
 
       //press resume button to get resume displayed full width
 
-var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p><p><a href='https://github.com/ktagilbert'</a>https://github.com/ktagilbert</p></div>");
+      var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p><p><a href='https://github.com/ktagilbert'</a>https://github.com/ktagilbert</p></div>");
 
       $('.resume-button').click(function(event){
         event.preventDefault();
@@ -504,21 +485,13 @@ var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Fron
 
 
     <footer class="site-footer">
-
-  <div>
-    <span class="footer-heading">
-      <h4>Do You Like What You See Here?</h4>
-      <h5>send me an email to get in contact sometime</h5>
-      <h6><a href="mailto:ktagilbert@gmail.com">ktagilbert@gmail.com</a></h6>
-    </span>
-
-       <ul class="design-by">
-         <li>
-          <a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert
-          </a>
-        </li>
-      </ul>
- </div>
+    <div class="footer-content">
+      <h3>Do You Like What You See Here?</h4>
+      <ul class="footer-list">
+        <li><a href="mailto:ktagilbert@gmail.com">send me an email to get in contact sometime</a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert</a></li>
+     </ul>
+   </div>
 
 </footer>
 
