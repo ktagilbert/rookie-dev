@@ -33,6 +33,7 @@ a {
   background-color: transparent;
 	margin: 0;
 	top: 0%;
+	z-index: 2000;
 }
 
 .menu-item {
@@ -48,12 +49,11 @@ a {
 	margin-bottom: 0px;
 	font-weight: bold;
 	border-bottom: 4px solid $orange;
-	padding: 10% 0 0 0;
 	height: 600px;
 }
 
 .tagline {
-	line-height: 20;
+	padding: 10% 0 5% 0;
 }
 
 .logo {
@@ -62,9 +62,9 @@ a {
 }
 
 #line-one {
+	margin: 10% 0 0 0;
 	font-family: "oleo script", serif;
   padding: 0;
-  margin: 0;
   font-size: 6em;
   letter-spacing: -2px;
 }
@@ -74,6 +74,19 @@ a {
 	line-height: 0.2;
 	font-size: 8.5em;
 	letter-spacing: -7px;
+	margin-bottom: 0;
+}
+
+#home-arrow {
+	outline: none;
+	border: none;
+	padding: 15px 20px;
+	background-color: #A1C6EA;
+	color: #fff;
+	border-radius: 30px;
+	font-size: 15px;
+	opacity: 0.8;
+	cursor: pointer;
 }
 
 
@@ -435,11 +448,6 @@ a {
 		color: #413a5d;
 		font-weight: bold;
 	}
-
-	li:hover, a:hover{
-		color: #978fb9;
-	}
-
 	img {
 		width: 50%;
 		box-shadow: 1px 1px 5px 3px #d3d3d3;
@@ -655,12 +663,11 @@ a {
 		font-size: 3em;
 	}
 	.tagline {
-		line-height: 8;
 		font-size: 14px;
 		letter-spacing: 1px;
 	}
 	.page-heading {
-		height: 350px;
+		height: 450px;
 	}
 }
 

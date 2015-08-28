@@ -48,6 +48,15 @@
             }
         });
       }
+      //click on #home-arrow to scroll down to post-list
+
+      $('#home-arrow').on('click', function(event){
+        event.preventDefault;
+        $('html, body').animate({
+          scrollTop: $(".post-list").offset().top
+        },900);
+      });
+
 
       //page headers fade in & about content fades in
       $('.about-content').fadeIn(1000);
@@ -431,6 +440,7 @@
       <p id="line-two">DEV</p>
     </span>
     <p class="tagline">A place to learn about web development</p>
+    <p><button id="home-arrow">\/</button></p>
   </div>
 
 
