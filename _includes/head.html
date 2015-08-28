@@ -24,6 +24,16 @@
   <script>
 
 		$(document).ready(function() {
+      //make .page-heading the height of the screen
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+      
+      $(window).resize(function() {
+        setHeight();
+      });
 
       //desktop nav bar changes color on scroll
       var scroll_start = 0;
@@ -47,7 +57,7 @@
       }
       //click on #home-arrow to scroll down to post-list
 
-      $('#home-arrow').on('click', function(event){
+      $('#scroll-arrow').on('click', function(event){
         event.preventDefault;
         $('html, body').animate({
           scrollTop: $(".post-list").offset().top

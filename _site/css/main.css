@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none; }
   a:hover {
-    color: #A1C6EA;
+    color: #1D1E18;
     text-decoration: underline; }
 
 /**
@@ -467,7 +467,7 @@ a {
   margin-bottom: 0px;
   font-weight: bold;
   border-bottom: 4px solid #FFB3AA;
-  height: 600px; }
+  height: 100%; }
 
 .tagline {
   padding: 10% 0 5% 0; }
@@ -477,7 +477,7 @@ a {
   padding: 0; }
 
 #line-one {
-  margin: 10% 0 0 0;
+  margin: 5% 0 0 0;
   font-family: "oleo script", serif;
   padding: 0;
   font-size: 6em;
@@ -490,11 +490,11 @@ a {
   letter-spacing: -7px;
   margin-bottom: 0; }
 
-#home-arrow {
+#scroll-arrow {
   outline: none;
   border: none;
-  padding: 15px 20px;
-  background-color: #A1C6EA;
+  padding: 20px 25px;
+  background-color: #666;
   color: #fff;
   border-radius: 30px;
   font-size: 15px;
@@ -715,7 +715,6 @@ a {
   padding-bottom: 10%; }
   .portfolio-list li, .portfolio-list a:visited {
     padding-bottom: 20px;
-    color: #413a5d;
     font-weight: bold; }
   .portfolio-list img {
     width: 50%;
@@ -884,10 +883,7 @@ a {
 
   .tagline {
     font-size: 14px;
-    letter-spacing: 1px; }
-
-  .page-heading {
-    height: 450px; } }
+    letter-spacing: 1px; } }
 @media (max-width: 820px) {
   .row-one li {
     display: initial;

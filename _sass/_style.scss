@@ -49,7 +49,7 @@ a {
 	margin-bottom: 0px;
 	font-weight: bold;
 	border-bottom: 4px solid $orange;
-	height: 600px;
+	height: 100%;
 }
 
 .tagline {
@@ -62,7 +62,7 @@ a {
 }
 
 #line-one {
-	margin: 10% 0 0 0;
+	margin: 5% 0 0 0;
 	font-family: "oleo script", serif;
   padding: 0;
   font-size: 6em;
@@ -77,11 +77,11 @@ a {
 	margin-bottom: 0;
 }
 
-#home-arrow {
+#scroll-arrow {
 	outline: none;
 	border: none;
-	padding: 15px 20px;
-	background-color: #A1C6EA;
+	padding: 20px 25px;
+	background-color: #666;
 	color: #fff;
 	border-radius: 30px;
 	font-size: 15px;
@@ -445,7 +445,6 @@ a {
 
 	li, a:visited {
 		padding-bottom: 20px;
-		color: #413a5d;
 		font-weight: bold;
 	}
 	img {
@@ -665,9 +664,6 @@ a {
 	.tagline {
 		font-size: 14px;
 		letter-spacing: 1px;
-	}
-	.page-heading {
-		height: 450px;
 	}
 }
 
