@@ -53,7 +53,7 @@ a {
 }
 
 .tagline {
-	padding: 10% 0 5% 0;
+	padding: 10% 0 5%;
 }
 
 .logo {
@@ -546,6 +546,13 @@ a {
 	.page-heading {
 		font-size: 30px;
 	}
+	#line-one {
+		font-size: 3em;
+		padding-top: 40px;
+	}
+	#line-two {
+		font-size: 4em;
+	}
 }
 
 @media(max-width: 550px) {
@@ -566,6 +573,9 @@ a {
 	#mobile-menu {
 		display: initial;
 		width: 20px;
+	}
+	.tagline {
+		padding: 20% 0;
 	}
 	.main-content {
 		background-color: #fff;
@@ -653,13 +663,6 @@ a {
 	}
 	.about-page {
 		height: 700px;
-	}
-	#line-one {
-		font-size: 2em;
-		padding-top: 40px;
-	}
-	#line-two {
-		font-size: 3em;
 	}
 	.tagline {
 		font-size: 14px;
