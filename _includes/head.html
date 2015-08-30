@@ -60,8 +60,8 @@
       //mobile-menu-arrow on click, display mobile menu
       $('#mobile-btn').on('click', function(event) {
         event.preventDefault;
-        $("#mobile-menu").toggle();
-        $("#mobile-wrap").css("position", "absolute");
+        $("#mobile-menu").show();
+        $("#mobile-btn").hide();
       });
 
       //click on #home-arrow to scroll down to post-list

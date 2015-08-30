@@ -63,8 +63,8 @@
       //mobile-menu-arrow on click, display mobile menu
       $('#mobile-btn').on('click', function(event) {
         event.preventDefault;
-        $("#mobile-menu").toggle();
-        $("#mobile-wrap").css("position", "absolute");
+        $("#mobile-menu").show();
+        $("#mobile-btn").hide();
       });
 
       //click on #home-arrow to scroll down to post-list
@@ -435,7 +435,6 @@
 
   <body>
 
-
     <header class="site-header">
 
   <!-- <div class="wrapper"> -->
@@ -451,14 +450,15 @@
 
 
 <div id=mobile-wrap>
-  <span id="mobile-btn"></div>
+  <span id="mobile-btn"></span>
+
   <span id="mobile-menu">
     <ul>
       <li><a href="/">Home</li>
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
       </ul>
-    </span>
+  </span>
 </div>
 
 </header>
@@ -602,9 +602,7 @@
 </html>
 
         <div class="wrapper">
-      </div>
-
-
+        </div>
     <!--</div>-->
 
 
