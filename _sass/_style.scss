@@ -87,6 +87,8 @@ a {
 	font-size: 15px;
 	opacity: 0.8;
 	cursor: pointer;
+	letter-spacing: -1px;
+		font-weight: bold;
 }
 
 //drop-down menu images
@@ -198,6 +200,7 @@ a {
 .my-background {
 	h1 {
 		padding-top: $large;
+		font-size: 2em;
     text-shadow: 3px 5px 2px #e5a199;
 	}
 }
@@ -529,7 +532,7 @@ a {
 
 .footer-list {
 	li {
-		text-align: right;
+		text-align: center;
 		font-family: "lato", sans-serif;
 		font-size: 16px;
 		list-style: none;
@@ -542,6 +545,15 @@ a {
 	.page-heading {
 		font-size: 30px;
 	}
+	.footer-content {
+		text-align: center;
+		margin: auto;
+		font-size: 1em;
+	}
+	.footer-list {
+		text-align: center;
+		font-size: 14px;
+	}
 	#line-one {
 		font-size: 3em;
 		padding-top: 40px;
@@ -553,7 +565,10 @@ a {
 
 @media(max-width: 550px) {
 	.site-footer {
-		height: 200px;
+		height: 150px;
+	}
+	.post-wrapper {
+		margin: 1%;
 	}
 	.post {
 		.about-background {

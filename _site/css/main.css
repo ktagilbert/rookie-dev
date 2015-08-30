@@ -263,7 +263,8 @@ img {
   font-size: 50px;
   color: #fff;
   text-align: center;
-  line-height: 4;
+  line-height: 1;
+  padding-top: 80px;
   font-family: "Lato";
   display: none; }
   @media screen and (max-width: 800px) {
@@ -499,7 +500,9 @@ a {
   border-radius: 30px;
   font-size: 15px;
   opacity: 0.8;
-  cursor: pointer; }
+  cursor: pointer;
+  letter-spacing: -1px;
+  font-weight: bold; }
 
 .nav-alt {
   z-index: 100000;
@@ -563,6 +566,7 @@ a {
 
 .my-background h1 {
   padding-top: 80px;
+  font-size: 2em;
   text-shadow: 3px 5px 2px #e5a199; }
 
 .resume-wrapper {
@@ -781,7 +785,7 @@ a {
     padding-bottom: 0px; }
 
 .footer-list li {
-  text-align: right;
+  text-align: center;
   font-family: "lato", sans-serif;
   font-size: 16px;
   list-style: none;
@@ -792,6 +796,15 @@ a {
   .page-heading {
     font-size: 30px; }
 
+  .footer-content {
+    text-align: center;
+    margin: auto;
+    font-size: 1em; }
+
+  .footer-list {
+    text-align: center;
+    font-size: 14px; }
+
   #line-one {
     font-size: 3em;
     padding-top: 40px; }
@@ -800,7 +813,10 @@ a {
     font-size: 4em; } }
 @media (max-width: 550px) {
   .site-footer {
-    height: 200px; }
+    height: 150px; }
+
+  .post-wrapper {
+    margin: 1%; }
 
   .post .about-background {
     background: none;
