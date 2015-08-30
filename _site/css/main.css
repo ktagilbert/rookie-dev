@@ -456,6 +456,38 @@ a {
   top: 0%;
   z-index: 2000; }
 
+#mobile-menu li {
+  list-style: none;
+  padding: 25px 0;
+  border-bottom: 1px solid #e7e7e7; }
+
+#mobile-wrap {
+  height: 100px;
+  width: 100%;
+  margin: 5%; }
+
+#mobile-btn {
+  border-bottom: 23px double #111;
+  border-top: 8px solid #111;
+  z-index: 30000;
+  width: 10%;
+  height: 7px;
+  width: 42px;
+  height: 5px;
+  margin: 10px 10px;
+  display: none;
+  float: left;
+  cursor: pointer; }
+
+#mobile-menu {
+  display: none;
+  list-style: none;
+  width: 100%;
+  height: 30%;
+  float: left;
+  z-index: 100000;
+  background-color: #fff; }
+
 .menu-item {
   padding: 0 10px;
   margin-right: 20px;
@@ -503,27 +535,6 @@ a {
   cursor: pointer;
   letter-spacing: -1px;
   font-weight: bold; }
-
-.nav-alt {
-  z-index: 100000;
-  display: none;
-  width: 30px;
-  position: absolute; }
-
-.categories-dropdown {
-  width: 30px;
-  float: right;
-  padding: 10px 0 30px 10px;
-  position: absolute;
-  z-index: 100000; }
-
-#mobile-menu {
-  display: none;
-  width: 200px;
-  float: right;
-  padding: 20px 0 30px 20px;
-  position: absolute;
-  z-index: 100000; }
 
 .main-content {
   background-color: #f1f1f1; }
@@ -785,7 +796,7 @@ a {
     padding-bottom: 0px; }
 
 .footer-list li {
-  text-align: center;
+  text-align: right;
   font-family: "lato", sans-serif;
   font-size: 16px;
   list-style: none;
@@ -795,15 +806,6 @@ a {
 @media (max-width: 457px) {
   .page-heading {
     font-size: 30px; }
-
-  .footer-content {
-    text-align: center;
-    margin: auto;
-    font-size: 1em; }
-
-  .footer-list {
-    text-align: center;
-    font-size: 14px; }
 
   #line-one {
     font-size: 3em;
@@ -828,9 +830,14 @@ a {
   .tagline {
     padding: 20% 0; }
 
-  #mobile-menu {
-    display: initial;
-    width: 20px; }
+  .footer-content {
+    text-align: center;
+    margin: auto;
+    font-size: 1em; }
+
+  .footer-list li {
+    text-align: center;
+    font-size: 14px; }
 
   .main-content {
     background-color: #fff; }
@@ -873,6 +880,12 @@ a {
     .inline-experience-left li {
       list-style: none; } }
 @media (max-width: 760px) {
+  #menu {
+    display: none; }
+
+  #mobile-btn {
+    display: initial; }
+
   .side-categories {
     width: 100%;
     overflow: hidden; }

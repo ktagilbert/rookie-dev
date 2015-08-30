@@ -27,13 +27,14 @@
   <script>
 
 		$(document).ready(function() {
+
       //make .page-heading the height of the screen
       function setHeight() {
         windowHeight = $(window).innerHeight();
         $('.page-heading').css('min-height', windowHeight);
       };
       setHeight();
-      
+
       $(window).resize(function() {
         setHeight();
       });
@@ -58,9 +59,16 @@
             }
         });
       }
+
+      //mobile-menu-arrow on click, display mobile menu
+      $('#mobile-btn').on('click', function(event) {
+        event.preventDefault;
+        $("#mobile-menu").show();
+      });
+
       //click on #home-arrow to scroll down to post-list
 
-      $('#scroll-arrow').on('click', function(event){
+      $('#scroll-arrow').on('click', function(event) {
         event.preventDefault;
         $('html, body').animate({
           scrollTop: $(".post-list").offset().top
@@ -433,11 +441,24 @@
       <!-- <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
       <img src ="/assets/navicon.png/" id="mobile-menu" /> -->
 
-        <ul id="menu">
-            <li class="menu-item"><a href="/">Home</li>
-            <li class="menu-item"><a href="/about">About</a></li>
-            <li class="menu-item"><a href="/portfolio">Portfolio</a></li>
-        </ul>
+  <ul id="menu">
+      <li class="menu-item"><a href="/">Home</li>
+      <li class="menu-item"><a href="/about">About</a></li>
+      <li class="menu-item"><a href="/portfolio">Portfolio</a></li>
+  </ul>
+
+
+
+<div id=mobile-wrap>
+  <span id="mobile-btn"></div>
+  <span id="mobile-menu">
+    <ul>
+      <li><a href="/">Home</li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+      </ul>
+    </span>
+</div>
 
 </header>
 
