@@ -462,9 +462,7 @@ a {
   border-bottom: 1px solid #e7e7e7; }
 
 #mobile-wrap {
-  height: 100px;
-  width: 100%;
-  margin: 5%; }
+  width: 100%; }
 
 #mobile-btn {
   border-bottom: 15px double #111;
@@ -486,7 +484,8 @@ a {
   height: 30%;
   float: left;
   z-index: 100000;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 20px 0; }
 
 .menu-item {
   padding: 0 10px;
