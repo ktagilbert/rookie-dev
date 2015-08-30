@@ -467,13 +467,13 @@ a {
   margin: 5%; }
 
 #mobile-btn {
-  border-bottom: 23px double #111;
-  border-top: 8px solid #111;
+  border-bottom: 15px double #111;
+  border-top: 5px solid #111;
   z-index: 30000;
   width: 10%;
   height: 7px;
-  width: 42px;
-  height: 5px;
+  width: 30px;
+  height: 4px;
   margin: 10px 10px;
   display: none;
   float: left;
