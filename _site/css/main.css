@@ -534,9 +534,7 @@ a {
   border-radius: 30px;
   font-size: 15px;
   opacity: 0.8;
-  cursor: pointer;
-  letter-spacing: -1px;
-  font-weight: bold; }
+  cursor: pointer; }
 
 .main-content {
   background-color: #f1f1f1; }
@@ -835,11 +833,14 @@ a {
   .footer-content {
     text-align: center;
     margin: auto;
-    font-size: 1em; }
+    font-size: 1em;
+    padding-right: 0px; }
 
-  .footer-list li {
-    text-align: center;
-    font-size: 14px; }
+  .footer-list {
+    margin-left: 0px; }
+    .footer-list li {
+      text-align: center;
+      font-size: 14px; }
 
   .main-content {
     background-color: #fff; }
