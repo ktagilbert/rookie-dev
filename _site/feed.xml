@@ -10,6 +10,56 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>Mediaquery</title>
+        <description>&lt;p&gt;Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right? Well, there are ways to do this. For examples, you could use &lt;a href=&quot;&amp;quot;https://developer.mozilla.org/en-US/docs/Web/CSS/flex&amp;quot;&quot;&gt;flex properties&lt;/a&gt; but these will only provide a solution in modern browsers. Instead, a technique that many use are media queries.  I touched on media queries a little earlier &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html&quot;&gt;here&lt;/a&gt; at the end of the post. &lt;strong&gt;In this post, I will go into more depth, covering all of the cool things that you can do with media queries!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-a-media-query&quot;&gt;What is a media query?&lt;/h1&gt;
+&lt;p&gt;You can think of media queries as a tool within CSS (or SASS) that will let you change your layout when certain conditions apply (or at certain breakpoints). For example, what if you reduce your screen size to 760px and see that now, that your two-column layout on your home page looks way to busy. Well then you would want to include a rule in your stylesheet that says that when someone views your site at a screen width of 760px, your home page should change to a one-column layout. Now your home page looks much better. Awesome!&lt;/p&gt;
+
+&lt;h1 id=&quot;when-to-use-a-media-query&quot;&gt;When to use a media query&lt;/h1&gt;
+&lt;p&gt;I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider a media query or using a &lt;a href=&quot;http://www.w3schools.com/cssref/css_units.asp&quot;&gt;more flexible unit&lt;/a&gt; in the case of font sizes or height values. Many layout problems can be fixed by using percentages or ems, especially when it comes to defining font sizes. Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.&lt;/p&gt;
+
+&lt;p&gt;A breakpoint is a point where your layout &lt;em&gt;breaks&lt;/em&gt;, indicating that your layout should change. You can see breakpoints in action by going to a site and seeing how the layouts alter at certain points. &lt;a href=&quot;https://css-tricks.com/&quot;&gt;CSS Tricks&lt;/a&gt; is a great example if you want to check it out. Simply make the screen at CSS Tricks smaller and you will notice that the sidebar on the right hand of the screen become thinner and thinner until it disappears completely once your screen reaches a mobile-sized width. &lt;strong&gt;Each little micro-change in the CSS Tricks layout represents a breakpoint.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;max-width-and-min-width&quot;&gt;Max width and Min Width&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The width media feature describes the width of the rendering surface of the output device (such as the width of the document window, or the width of the page box on a printer).&lt;/li&gt;
+  &lt;li&gt;replaces &amp;lt; &amp;gt; operators.&lt;/li&gt;
+  &lt;li&gt;“Most media features can be prefixed with “min-“ or “max-“ to express “greater or equal to” or “less than or equal to” constraints.  This avoids using the “&amp;lt;” and “&amp;gt;” symbols, which would conflict with HTML and XML.  If you use a media feature without specifying a value, the expression resolves to true if the feature’s value is non-zero.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;booleans-in-media-queries&quot;&gt;Booleans in media queries&lt;/h2&gt;
+
+&lt;h3 id=&quot;portrait-and-landscape-properties&quot;&gt;portrait and landscape properties&lt;/h3&gt;
+
+&lt;p&gt;I am most excited about these properties!&lt;/p&gt;
+
+&lt;p&gt;“Indicates whether the viewport is in landscape (the display is wider than it is tall) or portrait (the display is taller than it is wide) mode”
+@media all and (orientation: portrait)&lt;/p&gt;
+
+&lt;h3 id=&quot;what-you-can-accomplish&quot;&gt;What you can accomplish&lt;/h3&gt;
+
+&lt;h4 id=&quot;where-to-learn-more&quot;&gt;Where to learn more&lt;/h4&gt;
+
+&lt;p&gt;I didn’t cover everything that can be done with media queries. There are still many other things you can do with media queries. For example, you could also consider color-index, aspect-ratio, and even other Mozilla specific media features. I’ll let you guys look into these yourself though &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features&quot;&gt;over on MDN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;breakpoints - a width where the layout you have no longer works (and they layout breaks) -a point where the layout should change&lt;/li&gt;
+  &lt;li&gt;media queries just adjust layouts&lt;/li&gt;
+  &lt;li&gt;define mobile-first design&lt;/li&gt;
+  &lt;li&gt;recommended to put breakpoint based on content rather than device size (because new devices with different widths are created all the time.)&lt;/li&gt;
+  &lt;li&gt;major v. minor breaking points&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 05 Sep 2015 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2015/09/05/mediaquery.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2015/09/05/mediaquery.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Great Resources For Learning JavaScript</title>
         <description>&lt;p&gt;I know from experience that learning JavaScript can be &lt;em&gt;very&lt;/em&gt; challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It took me a couple of months to finally be comfortable in the language. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.&lt;/p&gt;
 

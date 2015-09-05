@@ -263,7 +263,7 @@ img {
   font-size: 50px;
   color: #fff;
   text-align: center;
-  line-height: 1;
+  line-height: 3;
   padding-top: 80px;
   font-family: "Lato";
   display: none; }
@@ -539,11 +539,11 @@ a {
   outline: none;
   border: none;
   padding: 15px;
-  background-color: #666;
+  background-color: #9bc2cf;
   color: #fff;
   border-radius: 30px;
   font-size: 15px;
-  opacity: 0.8;
+  opacity: 0.7;
   cursor: pointer; }
 
 .main-content {
@@ -778,7 +778,7 @@ a {
     border-radius: 5px; }
   .contribute-container a:hover {
     background-color: #fff;
-    color: #457;
+    color: #1D1E18;
     text-decoration: none; }
 
 .site-footer {
