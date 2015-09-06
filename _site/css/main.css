@@ -573,24 +573,24 @@ img {
 .post-link {
   font-family: initial; }
 
-.post-nav {
+.PageNavigation {
   margin: 5%; }
-  .post-nav a {
+  .PageNavigation a {
     color: #111; }
-  .post-nav ul {
+  .PageNavigation ul {
     list-style: none;
     text-align: center;
     border-top: 1px solid;
     margin-top: 10%; }
-  .post-nav li {
+  .PageNavigation li {
     display: inline-block;
     width: 45%;
+    padding: 0 10px;
     font-size: 4em;
     font-weight: bold; }
 
 .post-nav-title {
   list-style: none;
-  text-align: center;
   margin-bottom: 20%;
   padding-bottom: 5%;
   border-bottom: 1px solid; }

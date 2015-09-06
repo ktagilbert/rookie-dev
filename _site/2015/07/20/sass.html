@@ -109,8 +109,11 @@
               window.open(this.href, '_blank');
             });
           }
-});
+        });
 
+        //if on top of post list
+
+          //do not display #post-next
 
       //JS Study Program
 
@@ -593,27 +596,32 @@
 
   </article>
 
-  <span class="post-nav">
-      <ul id="post-arrow">
-        <a class="prev" href="/2015/06/24/nav-bar.html">
-          <li id=post-previous><</li>
-        </a>
-        <a class="next" href="/2015/08/05/resources.html">
-          <li id="post-next">></li>
-        </a>
-      </ul>
-  </span>
+<div class="PageNavigation">
+  <ul>
+    
+      <a class="prev" href="/2015/06/24/nav-bar.html">
+        <li id=post-previous><</li>
+      </a>
+    
+    
+      <a class="next" href="/2015/08/05/resources.html">
+        <li id="post-next">></li>
+      </a>
+      <a class="next" href="/2015/08/05/resources.html"></a>
+      
+    </ul>
+</div>
 
-  <span>
+  <div>
       <ul class="post-nav-title">
         <a class="prev" href="/2015/06/24/nav-bar.html">
-          <li>How to Make a Simple Navigation Menu From Scratch</li>
+          <li id="title-prev">How to Make a Simple Navigation Menu From Scratch</li>
         </a>
         <a class="next" href="/2015/08/05/resources.html">
-          <li>Great Resources For Learning JavaScript</li>
+          <li id="title-next">Great Resources For Learning JavaScript</li>
         </a>
       </ul>
-  </span>
+  </div>
 
   
 </div>

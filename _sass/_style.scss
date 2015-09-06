@@ -175,7 +175,7 @@ $brown: #1D1E18;
 	font-family: initial;
 }
 
-.post-nav {
+.PageNavigation {
 	margin: 5%;
 
 	a {
@@ -191,6 +191,7 @@ $brown: #1D1E18;
 	li {
 		display: inline-block;
 		width: 45%;
+		padding: 0 10px;
 		font-size: 4em;
 		font-weight: bold;
 	}
@@ -198,7 +199,6 @@ $brown: #1D1E18;
 
 .post-nav-title {
 	list-style: none;
-	text-align: center;
 	margin-bottom: 20%;
 	padding-bottom: 5%;
 	border-bottom: 1px solid;

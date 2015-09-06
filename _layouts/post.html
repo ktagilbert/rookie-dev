@@ -15,27 +15,32 @@ layout: default
     {{ content }}
   </article>
 
-  <span class="post-nav">
-      <ul id="post-arrow">
-        <a class="prev" href="{{page.previous.url}}">
-          <li id=post-previous><</li>
-        </a>
-        <a class="next" href="{{page.next.url}}">
-          <li id="post-next">></li>
-        </a>
-      </ul>
-  </span>
+<div class="PageNavigation">
+  <ul>
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">
+        <li id=post-previous><</li>
+      </a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">
+        <li id="post-next">></li>
+      </a>
+      <a class="next" href="{{page.next.url}}"></a>
+      {% endif %}
+    </ul>
+</div>
 
-  <span>
+  <div>
       <ul class="post-nav-title">
         <a class="prev" href="{{page.previous.url}}">
-          <li>{{page.previous.title}}</li>
+          <li id="title-prev">{{page.previous.title}}</li>
         </a>
         <a class="next" href="{{page.next.url}}">
-          <li>{{page.next.title}}</li>
+          <li id="title-next">{{page.next.title}}</li>
         </a>
       </ul>
-  </span>
+  </div>
 
   {{ post.next }}
 </div>
