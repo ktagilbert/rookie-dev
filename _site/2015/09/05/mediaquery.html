@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Learning About Media Queries</title>
-  <meta name="description" content="">
+  <meta name="description" content="Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets ...">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://127.0.0.1:4000//2015/09/05/mediaquery.html">
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
@@ -96,6 +96,20 @@
         $('#about-page').css("display", "none")
         $("#resume-feature").delay(50).fadeIn();
       });
+
+      //open links in a new tab
+
+      $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+
+        if(!a.test(this.href)) {
+            $(this).click(function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            });
+          }
+});
 
 
       //JS Study Program

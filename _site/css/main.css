@@ -90,7 +90,8 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #66b2e5; }
   a:hover {
     color: #1D1E18;
     text-decoration: underline; }
@@ -435,13 +436,12 @@ img {
   .highlight .il {
     color: #099; }
 
-a {
-  color: #1D1E18; }
-
 .site-header {
   width: 100%;
   padding: 0;
   text-align: center; }
+  .site-header a {
+    color: #1D1E18; }
 
 #menu {
   text-align: left;
@@ -595,138 +595,6 @@ a {
   padding-top: 80px;
   font-size: 2em;
   text-shadow: 3px 5px 2px #e5a199; }
-
-.resume-wrapper {
-  margin: 0 10%; }
-
-#resume-feature {
-  text-align: center;
-  display: block;
-  background-color: #fff;
-  display: none;
-  margin: auto;
-  width: 80%; }
-  #resume-feature h2 {
-    font-family: "Lato", Tahoma;
-    color: #666;
-    font-weight: bold; }
-  #resume-feature h3 {
-    font-family: Georgia, Serif;
-    font-size: 16px; }
-
-.resume-button {
-  font-size: 16px;
-  line-height: 50px;
-  padding: 10px;
-  border: solid 4px #fff;
-  background-color: #FFB3AA;
-  display: block;
-  outline: none;
-  color: #fff;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 20%; }
-
-.resume-button:hover {
-  background-color: #fff;
-  color: #FFB3AA;
-  font-weight: bold; }
-
-#resume-name {
-  color: #1D1E18;
-  text-align: center;
-  margin: 0 10%; }
-  #resume-name h1 {
-    font-size: 4em; }
-  #resume-name a {
-    color: #1D1E18; }
-  #resume-name a:visited, #resume-name a:hover {
-    color: #1D1E18;
-    font-size: 15px; }
-
-#skill-lists {
-  padding: 10% 15px 10% 15px;
-  display: inline-block;
-  text-align: center; }
-  #skill-lists .inline-list {
-    list-style: none;
-    display: inline-block; }
-
-.skill-set {
-  list-style: none;
-  color: #666;
-  font-family: "Lobster", sans-serif;
-  padding-bottom: 65px;
-  font-size: 1.5em; }
-
-.skill-graphic {
-  font-family: monospace, serif;
-  color: #524975;
-  list-style: none;
-  letter-spacing: -1.5px;
-  font-size: 1em;
-  margin-bottom: 50%; }
-
-.resume-header {
-  background-color: #72c6ff;
-  color: #fff;
-  font-size: 2em;
-  letter-spacing: 17px;
-  display: block;
-  line-height: 1;
-  font-weight: bold;
-  padding: 50px 0 50px 0;
-  margin-bottom: 80px; }
-
-.job-list {
-  width: 100%;
-  height: 400px; }
-  .job-list p {
-    font-weight: 400;
-    font-size: 1em; }
-  .job-list li {
-    font-size: 1em; }
-  .job-list h2, .job-list h3 {
-    font-size: 2em; }
-
-.inline-experience-left {
-  float: left;
-  display: inline-block;
-  width: 40%;
-  position: relative; }
-
-.inline-experience-right {
-  float: right;
-  font-size: 16px;
-  font-family: Georgia, serif;
-  text-align: left;
-  display: inline-block;
-  width: 40%;
-  position: relative; }
-
-#edu {
-  font-weight: bold;
-  color: #457;
-  padding-bottom: 80px; }
-  #edu h1 {
-    font-family: "Lato";
-    letter-spacing: -27px;
-    font-size: 4em;
-    color: #fff;
-    border: 2px solid #457;
-    border-radius: 72px;
-    padding: 5px 22px 5px 0;
-    width: 100px;
-    background-color: #457;
-    margin: auto;
-    text-align: center; }
-  #edu h2 {
-    color: #457;
-    font-size: 2em;
-    padding-top: 50px;
-    font-family: "Lobster", sans-serif; }
-  #edu p {
-    font-size: 1.5em; }
 
 #portfolio-header {
   text-align: center;
