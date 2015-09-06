@@ -86,4 +86,4 @@ I bet you noticed that in the portrait and landscape example we used the word "a
 
 Okay, now I've shown you some key media query properties that you can use while working on your current or next project. I didn't cover everything that can be done with media queries. There are still many other things you can do. For example, you could also consider color-index, aspect-ratio, and even other Mozilla specific media features. I'll let you guys look into these yourself though [over on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features).
 
-**Thanks for reading guys! Hope this post helps.** 
+**Thanks for reading guys! Hope this post helps.**
