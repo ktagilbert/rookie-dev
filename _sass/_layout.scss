@@ -93,13 +93,16 @@
 }
 
 .post-list {
-    margin-left: 0;
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
-        padding-top: 40px;
-        padding-bottom: 40px;
+      width: 25%;
+      padding: 30px;
+      clear: none;
+      display: inline-block;
+      height: 100px;
+      height: 500px;
+      vertical-align: text-top;
     }
 }
 

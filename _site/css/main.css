@@ -230,12 +230,15 @@ pre {
   text-align: center; }
 
 .post-list {
-  margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px; }
+    width: 25%;
+    padding: 30px;
+    clear: none;
+    display: inline-block;
+    height: 100px;
+    height: 500px;
+    vertical-align: text-top; }
 
 .post-meta {
   font-size: 14px;
@@ -567,15 +570,6 @@ img {
 
 .post-link {
   font-family: initial; }
-
-.post-list {
-  padding-top: 30px;
-  margin: 0px;
-  margin: auto;
-  display: inline-block; }
-  .post-list li {
-    margin: auto;
-    padding: 40px 15% 40px 15%; }
 
 #about-page {
   background-color: #FFB3AA;
