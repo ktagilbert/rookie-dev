@@ -3,7 +3,7 @@ layout: post
 title: "How to Make a Simple Navigation Menu From Scratch"
 date: 2015-06-24 16:32:21
 excerpt: >
- Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development.In actuality, it was something that was way over my head. Yet, I was able to get some help that made the process easier to tackle.
+ Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development.In actuality, it was something that was way over my head. 
 ---
 
 Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.**

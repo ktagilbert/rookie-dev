@@ -427,9 +427,6 @@ $brown: #1D1E18;
 	.page-heading {
 		font-size: 30px;
 	}
-	.post-header {
-		height: 350px;
-	}
 	.post-title {
 		line-height: 2;
 	}
@@ -464,6 +461,9 @@ $brown: #1D1E18;
 @media(max-width: 720px) {
 	.tagline {
 		padding: 20% 0;
+	}
+	.post-header {
+		height: 300px;
 	}
 	.footer-content {
 		text-align: center;

@@ -585,9 +585,14 @@ img {
   .PageNavigation li {
     display: inline-block;
     width: 45%;
-    padding: 0 10px;
     font-size: 4em;
     font-weight: bold; }
+
+#post-next {
+  text-align: right; }
+
+#post-previous {
+  text-align: left; }
 
 .post-nav-title {
   list-style: none;
@@ -719,6 +724,9 @@ img {
   .page-heading {
     font-size: 30px; }
 
+  .post-title {
+    line-height: 2; }
+
   #line-one {
     font-size: 3em;
     padding-top: 40px; }
@@ -741,6 +749,9 @@ img {
 @media (max-width: 720px) {
   .tagline {
     padding: 20% 0; }
+
+  .post-header {
+    height: 300px; }
 
   .footer-content {
     text-align: center;
