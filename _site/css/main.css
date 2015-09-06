@@ -56,9 +56,10 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-  max-width: 100%;
-  vertical-align: middle;
-  padding: 30px; }
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0 30px 0; }
 
 /**
  * Figures
@@ -539,7 +540,7 @@ a {
   outline: none;
   border: none;
   padding: 15px;
-  background-color: #9bc2cf;
+  background-color: #666;
   color: #fff;
   border-radius: 30px;
   font-size: 15px;
@@ -555,6 +556,11 @@ a {
 
 .post-content {
   margin-bottom: 80px; }
+
+.post h3 {
+  text-align: center;
+  font-family: 'lato', sans-serif;
+  font-weight: bold; }
 
 .post-meta {
   text-align: center; }

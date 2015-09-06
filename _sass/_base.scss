@@ -56,9 +56,10 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
-    vertical-align: middle;
-    padding: 30px
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0 30px 0;
 }
 
 

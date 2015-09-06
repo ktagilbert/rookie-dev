@@ -137,7 +137,7 @@ a {
 	outline: none;
 	border: none;
 	padding: 15px;
-	background-color: #9bc2cf;
+	background-color: #666;
 	color: #fff;
 	border-radius: 30px;
 	font-size: 15px;
@@ -157,6 +157,14 @@ a {
 
 .post-content {
 	margin-bottom: $large;
+}
+
+.post {
+	h3 {
+		text-align: center;
+		font-family: 'lato', sans-serif;
+		font-weight: bold;
+	}
 }
 
 .post-meta {

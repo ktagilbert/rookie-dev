@@ -24,7 +24,7 @@ I know from experience that learning JavaScript can be *very* challenging. If yo
 - **[JavaScript Is Sexy](http://javascriptissexy.com/):** Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script *and* and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.
 - CodePen
 
-# Some Design Inspirations:
+# Some design inspirations:
 - **[AJ Clarkson's Site and Portfolio](http://ajclarkson.co.uk/blog/)**
 - **[Ashley Farrand's Design Website](http://www.ashleyfarrand.com/about/)**
 - **[Fresh Face](http://www.thisisfreshface.com/)**

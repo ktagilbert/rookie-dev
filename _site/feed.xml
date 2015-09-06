@@ -10,49 +10,86 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Mediaquery</title>
-        <description>&lt;p&gt;Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right? Well, there are ways to do this. For examples, you could use &lt;a href=&quot;&amp;quot;https://developer.mozilla.org/en-US/docs/Web/CSS/flex&amp;quot;&quot;&gt;flex properties&lt;/a&gt; but these will only provide a solution in modern browsers. Instead, a technique that many use are media queries.  I touched on media queries a little earlier &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html&quot;&gt;here&lt;/a&gt; at the end of the post. &lt;strong&gt;In this post, I will go into more depth, covering all of the cool things that you can do with media queries!&lt;/strong&gt;&lt;/p&gt;
+        <title>Learning About Media Queries</title>
+        <description>&lt;p&gt;Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?&lt;/p&gt;
+
+&lt;p&gt;Well, there are ways to do this. For example, you could use &lt;a href=&quot;&amp;quot;https://developer.mozilla.org/en-US/docs/Web/CSS/flex&amp;quot;&quot;&gt;flex properties&lt;/a&gt;. However, these will only really provide a solution in modern browsers. Alternatively, a technique that many use are media queries.&lt;/p&gt;
+
+&lt;p&gt;First, let’s start thinking about your site’s layout. When thinking about a layout, you can start by thinking about the way it will look on a desktop.&lt;/p&gt;
+
+&lt;h3 id=&quot;desktop-layout&quot;&gt;Desktop layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/rookiedevmockup.jpg&quot; alt=&quot;Mobile UI Mock Up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After your desktop layout is perfect, you will want to think about how that same site will look on a smaller screen. Ideally, you will think about the problem of a smaller screen before development. For example, you can think about how your layout will look on a mobile device. In the case of Rookie Dev here, I changed my home page from a three-column layout to a single layout and created a dropdown menu that I’ve indicated with a navicon. &lt;strong&gt;In development, you can make these layout changes with the help media queries.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mobile-layout&quot;&gt;Mobile layout&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/rookiedevmobile.jpg&quot; alt=&quot;Mobile UI Mock Up&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;what-is-a-media-query&quot;&gt;What is a media query?&lt;/h1&gt;
-&lt;p&gt;You can think of media queries as a tool within CSS (or SASS) that will let you change your layout when certain conditions apply (or at certain breakpoints). For example, what if you reduce your screen size to 760px and see that now, that your two-column layout on your home page looks way to busy. Well then you would want to include a rule in your stylesheet that says that when someone views your site at a screen width of 760px, your home page should change to a one-column layout. Now your home page looks much better. Awesome!&lt;/p&gt;
+
+&lt;p&gt;You can think of media queries as a tool that will let you change your layout when certain conditions apply (or at certain breakpoints). For example, what if you reduce your screen size to 760px and see that your two-column layout on your home page looks way to busy. Well, then you would want to include a rule in your stylesheet that says that when someone views your site at a screen width of 760px, your home page should change to a one-column layout. Now your home page looks much better. Awesome!&lt;/p&gt;
+
+&lt;p&gt;To help you gain a grasp on what a media query looks like, you can checkout the example here.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;457px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;.page-heading&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;nf&quot;&gt;#line-one&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;nf&quot;&gt;#line-two&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is an example of a media query I used to help make the Rookie Dev logo and its surrounding div shrink once a user’s screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.&lt;/p&gt;
 
 &lt;h1 id=&quot;when-to-use-a-media-query&quot;&gt;When to use a media query&lt;/h1&gt;
-&lt;p&gt;I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider a media query or using a &lt;a href=&quot;http://www.w3schools.com/cssref/css_units.asp&quot;&gt;more flexible unit&lt;/a&gt; in the case of font sizes or height values. Many layout problems can be fixed by using percentages or ems, especially when it comes to defining font sizes. Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.&lt;/p&gt;
+&lt;p&gt;I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query. &lt;strong&gt;Just remember to base your media query rules on how your content looks rather than on popular device widths.&lt;/strong&gt; If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don’t want).&lt;/p&gt;
 
-&lt;p&gt;A breakpoint is a point where your layout &lt;em&gt;breaks&lt;/em&gt;, indicating that your layout should change. You can see breakpoints in action by going to a site and seeing how the layouts alter at certain points. &lt;a href=&quot;https://css-tricks.com/&quot;&gt;CSS Tricks&lt;/a&gt; is a great example if you want to check it out. Simply make the screen at CSS Tricks smaller and you will notice that the sidebar on the right hand of the screen become thinner and thinner until it disappears completely once your screen reaches a mobile-sized width. &lt;strong&gt;Each little micro-change in the CSS Tricks layout represents a breakpoint.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yet, before you define a media query rule, it can also help to remember that many layout problems can be fixed by using more flexible measurement units. For example, using percentages &lt;a href=&quot;https://css-tricks.com/why-ems/&quot;&gt;or ems&lt;/a&gt; when it comes to defining font sizes. Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.&lt;/p&gt;
 
-&lt;h2 id=&quot;max-width-and-min-width&quot;&gt;Max width and Min Width&lt;/h2&gt;
+&lt;p&gt;A breakpoint is a point where your layout &lt;em&gt;breaks&lt;/em&gt;, indicating that your layout should change. You can see breakpoints in action by going to a site and seeing how the layouts alter at certain points. &lt;a href=&quot;https://css-tricks.com/&quot;&gt;CSS Tricks&lt;/a&gt; is a great example if you want to check it out. Simply make the screen at CSS Tricks smaller. You will notice that the sidebar on the right hand of the screen becomes thinner and thinner until it disappears completely at mobile-sized width. &lt;strong&gt;Each little micro-change in the CSS Tricks layout represents a breakpoint.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;The width media feature describes the width of the rendering surface of the output device (such as the width of the document window, or the width of the page box on a printer).&lt;/li&gt;
-  &lt;li&gt;replaces &amp;lt; &amp;gt; operators.&lt;/li&gt;
-  &lt;li&gt;“Most media features can be prefixed with “min-“ or “max-“ to express “greater or equal to” or “less than or equal to” constraints.  This avoids using the “&amp;lt;” and “&amp;gt;” symbols, which would conflict with HTML and XML.  If you use a media feature without specifying a value, the expression resolves to true if the feature’s value is non-zero.”&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Now, let’s look at the different kinds of media queries that you can use for your own project.&lt;/p&gt;
 
-&lt;h2 id=&quot;booleans-in-media-queries&quot;&gt;Booleans in media queries&lt;/h2&gt;
+&lt;h2 id=&quot;max-width-and-min-width&quot;&gt;Max width and min width&lt;/h2&gt;
 
-&lt;h3 id=&quot;portrait-and-landscape-properties&quot;&gt;portrait and landscape properties&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Here is a technical definition:&lt;/strong&gt; The width media feature describes the width of the rendering surface of the output device (such as the width of the document window, or the width of the page box on a printer).&lt;/p&gt;
 
-&lt;p&gt;I am most excited about these properties!&lt;/p&gt;
-
-&lt;p&gt;“Indicates whether the viewport is in landscape (the display is wider than it is tall) or portrait (the display is taller than it is wide) mode”
-@media all and (orientation: portrait)&lt;/p&gt;
-
-&lt;h3 id=&quot;what-you-can-accomplish&quot;&gt;What you can accomplish&lt;/h3&gt;
-
-&lt;h4 id=&quot;where-to-learn-more&quot;&gt;Where to learn more&lt;/h4&gt;
-
-&lt;p&gt;I didn’t cover everything that can be done with media queries. There are still many other things you can do with media queries. For example, you could also consider color-index, aspect-ratio, and even other Mozilla specific media features. I’ll let you guys look into these yourself though &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features&quot;&gt;over on MDN&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What this really means is that you can make a media query rule that determines what happens to your layout at a certain width. You can think of Min and Max as replacements for the ‘&amp;lt;’ and ‘&amp;gt;’ operators. You can see the Max width media query in action in my example above.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;breakpoints - a width where the layout you have no longer works (and they layout breaks) -a point where the layout should change&lt;/li&gt;
-  &lt;li&gt;media queries just adjust layouts&lt;/li&gt;
-  &lt;li&gt;define mobile-first design&lt;/li&gt;
-  &lt;li&gt;recommended to put breakpoint based on content rather than device size (because new devices with different widths are created all the time.)&lt;/li&gt;
-  &lt;li&gt;major v. minor breaking points&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Min will change layouts when the change should occur at a length that is greater or equal to the pixel width you define.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Max width will apply at a width that is less than or equal to the width you define.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&quot;portrait-and-landscape-properties&quot;&gt;Portrait and landscape properties&lt;/h2&gt;
+&lt;p&gt;I am most excited about these properties! I just recently learned about portrait and landscape properties myself thanks to &lt;a href=&quot;http://teamtreehouse.com&quot;&gt;Treehouse&lt;/a&gt;. If you are making a mobile first design, then you probably want rules that will make your layout look great on smaller screen sizes. Well, if you have been considering breakpoints while implementing new features, then I am sure you will have this covered.&lt;/p&gt;
+
+&lt;p&gt;Yet, what if your user wants to view your project in a landscape mode? For example, what will happen to your layout when a user rotates their phone or tablet? Well, you can make rules for these instances as well. You can see examples of the portrait and landscape properties in action over on &lt;a href=&quot;http://stephen.io/mediaqueries/&quot;&gt;Stephen Gilbert’s site here&lt;/a&gt;. In general, you can begin defining style rules following the syntax below:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;orientation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;portrait&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;orientation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;portrait&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;media-query-syntax&quot;&gt;Media query syntax&lt;/h2&gt;
+&lt;p&gt;I bet you noticed that in the portrait and landscape example we used the word “and” as well as further specifiied our media query within a set of parentheses. One thing I have found is that if you are having trouble remembering how to write out a media query rule, you can draw on what you know about &lt;a href=&quot;http://www.w3schools.com/js/js_operators.asp&quot;&gt;operators&lt;/a&gt;. For example, if you want two rules that apply at once, you should use “and” in the same way you would use &amp;amp;&amp;amp; in JavaScript. You will even see that you can even write something with multiple specifications like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;handheld&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;15em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;where-to-learn-more&quot;&gt;Where to learn more&lt;/h2&gt;
+
+&lt;p&gt;Okay, now I’ve shown you some key media query properties that you can use while working on your current or next project. I didn’t cover everything that can be done with media queries. There are still many other things you can do. For example, you could also consider color-index, aspect-ratio, and even other Mozilla specific media features. I’ll let you guys look into these yourself though &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features&quot;&gt;over on MDN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thanks for reading guys! Hope this post helps.&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 05 Sep 2015 00:00:00 -0700</pubDate>
+        <pubDate>Sat, 05 Sep 2015 10:00:00 -0700</pubDate>
         <link>http://127.0.0.1:4000//2015/09/05/mediaquery.html</link>
         <guid isPermaLink="true">http://127.0.0.1:4000//2015/09/05/mediaquery.html</guid>
         
@@ -87,7 +124,7 @@
   &lt;li&gt;CodePen&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;some-design-inspirations&quot;&gt;Some Design Inspirations:&lt;/h1&gt;
+&lt;h1 id=&quot;some-design-inspirations&quot;&gt;Some design inspirations:&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://ajclarkson.co.uk/blog/&quot;&gt;AJ Clarkson’s Site and Portfolio&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ashleyfarrand.com/about/&quot;&gt;Ashley Farrand’s Design Website&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -119,7 +156,7 @@
     
       <item>
         <title>How to Start Learning SCSS</title>
-        <description>&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the Gap Between CSS and SASS&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the gap between CSS and SASS&lt;/h2&gt;
 
 &lt;p&gt;I have a confession. When I first started working on Rookie Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
 
@@ -137,7 +174,7 @@
   &lt;li&gt;What an extend is&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h2&gt;
+&lt;h1 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h1&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
  &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -150,7 +187,7 @@
 
 &lt;p&gt;Okay, cool. Here we have some CSS that basically says, “hey for all headers, make the font-family Georgia and the color black.” Below that we have some nested rules that say the list items under the class “nav-list” will all be a light-grey color. Alright, nice. &lt;strong&gt;Now, let’s write the same thing using SASS.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;nesting-with-scss&quot;&gt;1. Nesting with SCSS&lt;/h3&gt;
+&lt;h2 id=&quot;nesting-with-scss&quot;&gt;1. Nesting with SCSS&lt;/h2&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
  &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -165,7 +202,7 @@
 
 &lt;p&gt;As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the &lt;a href=&quot;http://writingcenter.fas.harvard.edu/pages/outlining&quot;&gt;Harvard Outline&lt;/a&gt; looks. Maybe that’s just the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway. This part of SCSS is easy and I like it better personally.&lt;/p&gt;
 
-&lt;h3 id=&quot;variables&quot;&gt;2. Variables&lt;/h3&gt;
+&lt;h2 id=&quot;variables&quot;&gt;2. Variables&lt;/h2&gt;
 
 &lt;p&gt;SCSS also introduces the idea of variables. Here’s an example from my own stylesheet:&lt;/p&gt;
 
@@ -194,7 +231,7 @@
   &lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;extend&quot;&gt;Extend&lt;/h3&gt;
+&lt;h2 id=&quot;extend&quot;&gt;Extend&lt;/h2&gt;
 
 &lt;p&gt;Next, SCSS introduces the idea of an extend. Meaning, you can assign a block of code to a variable. Here’s an example.&lt;/p&gt;
 
@@ -208,7 +245,7 @@
 
 &lt;p&gt;This block shows the properties I have assigned to a rounded image at the top of a page. With my extend defined, I can later add a similar image header just by typing in @extend .image-header as if it was another property. &lt;strong&gt;This way, you can include large chunks of style properties that you know you will be using again later just by typing @extend followed by the name you assign to your block code.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;why-use-scss&quot;&gt;Why use SCSS?&lt;/h3&gt;
+&lt;h2 id=&quot;why-use-scss&quot;&gt;Why use SCSS?&lt;/h2&gt;
 &lt;p&gt;SCSS is really a bridging tool to help you get comfortable with SASS. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into SASS. &lt;strong&gt;In any file with .scss, you can set style rules using SASS, CSS, or SCSS as seen here.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS &lt;a href=&quot;http://sass-lang.com/guide&quot;&gt;here&lt;/a&gt; if you are interested. Let me know how it goes for you!&lt;/p&gt;
@@ -224,7 +261,7 @@
         <title>How to Make a Simple Navigation Menu From Scratch</title>
         <description>&lt;p&gt;Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. &lt;strong&gt;What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;start-by-learning-some-general-principles&quot;&gt;Start by Learning Some General Principles&lt;/h2&gt;
+&lt;h2 id=&quot;start-by-learning-some-general-principles&quot;&gt;Start by learning some general principles&lt;/h2&gt;
 &lt;p&gt;If you are like me and don’t know much about web development or these three languages, you may approach the problem by looking at a tutorial and just copying their examples and then pasting them into your text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? &lt;em&gt;Spending some time to really learn the basic principles of the language you are working in can be super helpful.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. &lt;strong&gt;You might want to try doing the same and really hammering down these ideas:&lt;/strong&gt;&lt;/p&gt;
@@ -241,7 +278,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;how-to-approach-the-problem-of-creating-a-menu-for-your-page&quot;&gt;How to Approach the Problem of Creating a Menu For Your Page&lt;/h1&gt;
+&lt;h1 id=&quot;how-to-approach-the-problem-of-creating-a-menu-for-your-page&quot;&gt;How to approach the problem of creating a menu for your page&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for a good one to use):&lt;/li&gt;
 &lt;/ul&gt;
@@ -269,7 +306,7 @@
   &lt;li&gt;So now, depending on what you want the menu to do and look like, you can think about what to do next.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;here-are-some-ideas-for-how-you-may-want-your-menu-to-look&quot;&gt;Here are some ideas for how you may want your menu to look&lt;/h3&gt;
+&lt;h2 id=&quot;here-are-some-ideas-for-how-you-may-want-your-menu-to-look&quot;&gt;Here are some ideas for how you may want your menu to look&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;You may want the menu items to be laid out horizontally across your page.&lt;/li&gt;
   &lt;li&gt;Maybe you will want a menu item to simply display specific content when clicked. Well, you can do that with JavaScript&lt;/li&gt;
@@ -281,18 +318,18 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;css-properties-that-may-help&quot;&gt;CSS Properties That May Help&lt;/h3&gt;
+&lt;h2 id=&quot;css-properties-that-may-help&quot;&gt;CSS properties that may help&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;font-size:&lt;/strong&gt; 
+&lt;p&gt;&lt;strong&gt;font-size:&lt;/strong&gt;
   font-size: 12px
   font-size: 8px&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;color:&lt;/strong&gt; 
+&lt;p&gt;&lt;strong&gt;color:&lt;/strong&gt;
 	color: #fff
 	color: #d3d3d3
 	color: #000000&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;font-family:&lt;/strong&gt; 
+&lt;p&gt;&lt;strong&gt;font-family:&lt;/strong&gt;
 	font-family: georgia, sans-serif  (note: consider having a &lt;a href=&quot;http://www.w3schools.com/cssref/css_websafe_fonts.asp&quot;&gt;fall-back font&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;text-transform:&lt;/strong&gt;
@@ -307,7 +344,7 @@
 	text-align: left
 	text-align: center&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;display&lt;/strong&gt;: inline (for horizontal menu items for example) 
+&lt;p&gt;&lt;strong&gt;display&lt;/strong&gt;: inline (for horizontal menu items for example)
 &lt;strong&gt;letter-spacing&lt;/strong&gt; (change the kerning)&lt;/p&gt;
 
 &lt;p&gt;For more CSS properties, you can also &lt;a href=&quot;http://www.w3schools.com/cssref/&quot;&gt;check out W3Schools&lt;/a&gt;&lt;/p&gt;
@@ -329,7 +366,6 @@
 &lt;p&gt;Again, in my case I worked mostly with HTML and CSS to build a menu. I just wanted to make something simple and didn’t want to spend a lot of time coming up with solutions in JavaScript that I could have otherwise solved with just HTML and CSS.&lt;/p&gt;
 
 &lt;p&gt;Remember, if you are have any trouble you can always Google specific solutions or questions you may have while building out your nav menu. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
-
 </description>
         <pubDate>Wed, 24 Jun 2015 09:32:21 -0700</pubDate>
         <link>http://127.0.0.1:4000//2015/06/24/nav-bar.html</link>
