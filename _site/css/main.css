@@ -230,7 +230,8 @@ pre {
   text-align: center; }
 
 .post-list {
-  list-style: none; }
+  list-style: none;
+  padding-top: 5%; }
   .post-list > li {
     width: 25%;
     padding: 30px;
@@ -794,3 +795,11 @@ img {
     display: initial;
     text-align: center;
     width: 60%; } }
+@media (max-width: 850px) {
+  .post-list li {
+    width: 90%;
+    padding: 10px;
+    height: 100%; } }
+@media (max-width: 1210px) and (min-width: 851px) {
+  .post-list li {
+    width: 40%; } }

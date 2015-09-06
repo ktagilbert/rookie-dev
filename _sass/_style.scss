@@ -175,7 +175,6 @@ $brown: #1D1E18;
 	font-family: initial;
 }
 
-
 //about page
 
 #about-page {
@@ -511,6 +510,24 @@ $brown: #1D1E18;
 			display: initial;
 			text-align: center;
 			width: 60%;
+		}
+	}
+}
+
+@media(max-width: 850px) {
+	.post-list {
+		li {
+			width: 90%;
+			padding: 10px;
+			height: 100%;
+		}
+	}
+}
+
+@media(max-width: 1210px) and (min-width: 851px) {
+	.post-list {
+		li {
+			width: 40%;
 		}
 	}
 }
