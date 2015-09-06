@@ -14,7 +14,31 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-</div> 
+
+  <span class="post-nav">
+      <ul id="post-arrow">
+        <a class="prev" href="{{page.previous.url}}">
+          <li id=post-previous><</li>
+        </a>
+        <a class="next" href="{{page.next.url}}">
+          <li id="post-next">></li>
+        </a>
+      </ul>
+  </span>
+
+  <span>
+      <ul class="post-nav-title">
+        <a class="prev" href="{{page.previous.url}}">
+          <li>{{page.previous.title}}</li>
+        </a>
+        <a class="next" href="{{page.next.url}}">
+          <li>{{page.next.title}}</li>
+        </a>
+      </ul>
+  </span>
+
+  {{ post.next }}
+</div>
 </div>
 
  <!--contribute container-->
