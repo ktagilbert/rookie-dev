@@ -599,16 +599,17 @@ img {
   margin-bottom: 20%;
   padding-bottom: 5%;
   border-bottom: 1px solid; }
-  .post-nav-title a:hover {
-    text-decoration: underline; }
   .post-nav-title li {
     display: inline-block;
-    color: #72c6ff;
-    font-family: 'oleo script', serif;
+    color: #666;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "lato", sans-serif;
     width: 40%;
-    font-size: 1.5em;
     padding: 0 30px;
     vertical-align: text-top; }
+    .post-nav-title li a:hover {
+      text-decoration: underline; }
 
 #about-page {
   background-color: #FFB3AA;

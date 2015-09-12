@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Learning About Media Queries</title>
-  <meta name="description" content="Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets ...">
+  <title>Breaking Into Web Development In Small Steps</title>
+  <meta name="description" content="To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires...">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000//2015/09/05/mediaquery.html">
+  <link rel="canonical" href="http://127.0.0.1:4000//2015/09/12/first-project.html">
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
@@ -494,115 +494,121 @@
 <div class="post">
 
   <header class="post-header">
-  	<h1 class="post-title">Learning About Media Queries</h1>
+  	<h1 class="post-title">Breaking Into Web Development In Small Steps</h1>
   </header>
 
-    <p class="post-meta">Sep 5, 2015</p>
+    <p class="post-meta">Sep 12, 2015</p>
 <div class="wrapper"
   <article class="post-content">
-    <p>Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?</p>
+    <p>It used to be that the words “computer programmer” conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems. All the while, I sat there just waiting to get my required astronomy course over with and browsing Pinterest while I waited for it to start. They were geniuses in my book.</p>
 
-<p>Well, there are ways to do this. For example, you could use <a href="&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/flex&quot;">flex properties</a>. However, these will only really provide a solution in modern browsers. Alternatively, a technique that many use are media queries.</p>
+<p>The thing is, yes, they were smart. They were computer science majors who were taking advanced calculus. They spent all their time reading computer science textbooks and solving algorithms. Yet, to be a computer programmer you don’t have to know advanced calculus, at least not to get started. You don’t even need a computer science degree (although more power to you if you have one!). If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. <strong>I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first. After that, you will hopefully be able to see that breaking into web development isn’t <em>that</em> scary.</strong></p>
 
-<p>First, let’s start thinking about your site’s layout. When thinking about a layout, you can start by thinking about the way it will look on a desktop.</p>
+<h1 id="moving-beyond-wordpress">Moving beyond Wordpress</h1>
 
-<h3 id="desktop-layout">Desktop layout</h3>
-<p><img src="/assets/rookiedevmockup.jpg" alt="Mobile UI Mock Up" /></p>
+<p>I don’t know why your are interested in web development. Maybe it is because you want to do something creative and you have a strong interest in tech already. Maybe, you have been in love with web development since you were a teenager (and in this case you probably know more about the subject than I do). Or, you are like me and arrived at the idea of pursuing web development a little later in life. <strong>I do know that getting into web development is intimidating. It shouldn’t be though!</strong></p>
 
-<p>After your desktop layout is perfect, you will want to think about how that same site will look on a smaller screen. Ideally, you will think about the problem of a smaller screen before development. For example, you can think about how your layout will look on a mobile device. In the case of Rookie Dev here, I changed my home page from a three-column layout to a single layout and created a dropdown menu that I’ve indicated with a navicon. <strong>In development, you can make these layout changes with the help media queries.</strong></p>
+<p>For me, the moment I knew I wanted to be a front-end developer came one-month into unemployment. I had lost interest in much of my former career once I was no longer being paid to do it. Instead, I spent my days messing around with a Wordpress blog that I used to have. That is until the theme I was using had an update that turned my content into an enlarged, pixelated mess. (Has anyone ever had this happen to them before??)</p>
 
-<h3 id="mobile-layout">Mobile layout</h3>
-<p><img src="/assets/rookiedevmobile.jpg" alt="Mobile UI Mock Up" /></p>
+<p>I spent two weeks re-doing the site. Yet, working on the redesign was the most fun I had since being employed. I didn’t even mind that I was sitting at a kitchen table rather than a desk. I didn’t care that I wasn’t being paid to do the work. The work was just fun.</p>
 
-<h1 id="what-is-a-media-query">What is a media query?</h1>
+<p>Once the site was back to how I liked it, I was even a bit proud of my work. In fact, the site looked even better than before because I had found a way to inspect elements and figure out their selectors to make some custom changes of my own.</p>
 
-<p>You can think of media queries as a tool that will let you change your layout when certain conditions apply (or at certain breakpoints). For example, what if you reduce your screen size to 760px and see that your two-column layout on your home page looks way to busy. Well, then you would want to include a rule in your stylesheet that says that when someone views your site at a screen width of 760px, your home page should change to a one-column layout. Now your home page looks much better. Awesome!</p>
+<p>I showed off my work to my S.O. at dinner once it was complete. I pulled the site up on my phone and asked him if he would take a look. He is a self-taught back-end developer who never ceases to impress me with all the cool things that he is able to do. Showing him my work was kind of intimidating to be honest because he really knows how sites should work and function. Yet, he was smiling when he saw what I had done. He then looked up at me and very carefully suggested that I go into front-end development.</p>
 
-<p>To help you gain a grasp on what a media query looks like, you can checkout the example here.</p>
+<p>The thing is, I had been thinking about the same thing for months - ever since I learned how to fix site bugs at work. That was when I first began to study HTML and Markdown. Still, I wasn’t sure if I could be a front-end developer.</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">457px</span><span class="o">)</span> <span class="p">{</span>
-	<span class="nc">.page-heading</span> <span class="p">{</span>
-		<span class="k">font-size</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
-	<span class="p">}</span>
-	<span class="nf">#line-one</span> <span class="p">{</span>
-		<span class="k">font-size</span><span class="o">:</span> <span class="m">3em</span><span class="p">;</span>
-		<span class="k">padding-top</span><span class="o">:</span> <span class="m">40px</span><span class="p">;</span>
-	<span class="p">}</span>
-	<span class="nf">#line-two</span> <span class="p">{</span>
-		<span class="k">font-size</span><span class="o">:</span> <span class="m">4em</span><span class="p">;</span>
-	<span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<p>I didn’t think that I was smart enough to do that. You see, I studied creative writing in college. From there, I thought that I was going to spend my adult life as a secretary or admin assistant while writing a novel during coffee fueled nights. Going into web development was something I had never thought that I could do. <em>It simply didn’t fit in with the idea I had been forming for myself.</em></p>
 
-<p>This is an example of a media query I used to help make the Rookie Dev logo and its surrounding div shrink once a user’s screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.</p>
+<h1 id="where-to-start">Where to start</h1>
 
-<h1 id="when-to-use-a-media-query">When to use a media query</h1>
-<p>I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query. <strong>Just remember to base your media query rules on how your content looks rather than on popular device widths.</strong> If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don’t want).</p>
+<p>That night though I said good-bye to that idea because it just wasn’t working for me. Instead, My S.O. and I sat down together and went over some basic concepts. I learned about arrays, operators, and zero-based indexes in JavaScript. Then, we googled <a href="http://jekyllrb.com/">Jekyll</a> together and my S.O. ran some commands to create a Jekyll powered static blog site that I could work on. <strong>It took us about three hours for me to see that I had it in me to learn a programming language <em>and</em> that I had a means to create a site from scratch.</strong></p>
 
-<p>Yet, before you define a media query rule, it can also help to remember that many layout problems can be fixed by using more flexible measurement units. For example, using percentages <a href="https://css-tricks.com/why-ems/">or ems</a> when it comes to defining font sizes. Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.</p>
+<p>My task for the next day was to learn how to add new pages to the site and begin creating a design I liked. I had to learn how to select elements for manipulation in JavaScript, how to maintain clean, modular code, and how to out specify the base stylesheet included in the Jekyll directory. This was all kind of overwhelming.</p>
 
-<p>A breakpoint is a point where your layout <em>breaks</em>, indicating that your layout should change. You can see breakpoints in action by going to a site and seeing how the layouts alter at certain points. <a href="https://css-tricks.com/">CSS Tricks</a> is a great example if you want to check it out. Simply make the screen at CSS Tricks smaller. You will notice that the sidebar on the right hand of the screen becomes thinner and thinner until it disappears completely at mobile-sized width. <strong>Each little micro-change in the CSS Tricks layout represents a breakpoint.</strong></p>
+<p>What helped was focusing on one task at a time. For example, if I could just learn what the DOM was first before learning how to traverse it, I was okay. This approach helped A LOT!  I started off by learning three basic skills. HTML, CSS, and JavaScript.</p>
 
-<p>Now, let’s look at the different kinds of media queries that you can use for your own project.</p>
+<p>It may help you to take this same approach. <strong>Here are some steps to help you get started!</strong></p>
 
-<h2 id="max-width-and-min-width">Max width and min width</h2>
+<h2 id="make-a-github-account">Make a GitHub account</h2>
 
-<p><strong>Here is a technical definition:</strong> The width media feature describes the width of the rendering surface of the output device (such as the width of the document window, or the width of the page box on a printer).</p>
+<p>If you want to begin a project of your own,  I first suggest you make a GitHub account. Someone once told me “GitHub or get out.” They meant, you need to have a GitHub account before an interviewer will take you seriously. It’s smart advice. Having a GitHub account helps employers know that you have worked on project before, that you know a little something about <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">version control</a>, and that you’re interested in what others in the development community are up to.</p>
 
-<p>What this really means is that you can make a media query rule that determines what happens to your layout at a certain width. You can think of Min and Max as replacements for the ‘&lt;’ and ‘&gt;’ operators. You can see the Max width media query in action in my example above.</p>
+<p>Just go to <a href="https://github.com/">github.com</a> and create an account. You can then create a new repository for the project you want to work on and go from there!</p>
+
+<h2 id="html">HTML</h2>
+
+<p>HTML, or Hypertext Markup Language, is just a way to create a skeleton for how your site will look. For example, it will help you declare where headers will go and where certain blocks of content will be placed on your page. Here are some great steps to help you master it:</p>
 
 <ul>
-  <li>
-    <p>Min will change layouts when the change should occur at a length that is greater or equal to the pixel width you define.</p>
-  </li>
-  <li>
-    <p>Max width will apply at a width that is less than or equal to the width you define.</p>
-  </li>
+  <li><strong>Read up on how to write HTML:</strong> <a href="http://www.w3schools.com/html/default.asp">W3Schools</a> is a great first place to look!</li>
+  <li>Learn the difference between a div and a span: You can think of a div as a dividing element in your markup. It contains and divides certain sections of your layout. A span, on the other hand, is a way to apply stylings to a certain section <em>span</em>-ing a certain length of your markup.</li>
+  <li><strong>Mess around with HTML to create your own custom layouts:</strong> You can try by working on your own project or creating something in a <a href="http://codepen.io/pen/">codepen</a>.</li>
+  <li><strong>Harness the power of the list! Seriously, you can do a lot with lists when they are combined with CSS.</strong></li>
+  <li><strong>Learn how to indent properly:</strong> Elements within element should be indented.</li>
+  <li><strong>Just know that when someone says “show me your markup,”  - this just means show them your HTML file:</strong> I’ll admit, I didn’t know this for a <em>long</em> time!</li>
 </ul>
 
-<h2 id="portrait-and-landscape-properties">Portrait and landscape properties</h2>
-<p>I am most excited about these properties! I just recently learned about portrait and landscape properties myself thanks to <a href="http://teamtreehouse.com">Treehouse</a>. If you are making a mobile first design, then you probably want rules that will make your layout look great on smaller screen sizes. Well, if you have been considering breakpoints while implementing new features, then I am sure you will have this covered.</p>
+<h2 id="scss">SCSS</h2>
 
-<p>Yet, what if your user wants to view your project in a landscape mode? For example, what will happen to your layout when a user rotates their phone or tablet? Well, you can make rules for these instances as well. You can see examples of the portrait and landscape properties in action over on <a href="http://stephen.io/mediaqueries/">Stephen Gilbert’s site here</a>. In general, you can begin defining style rules following the syntax below:</p>
+<p>I recommend learning <a href="http://rookie-dev.herokuapp.com/2015/07/20/sass.html">SCSS</a> first. It will make it easier when you are ready to switch to <a href="http://sass-lang.com/">SASS</a> (a very marketable skill).</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">portrait</span><span class="o">)</span>
-<span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">portrait</span><span class="o">)</span></code></pre></div>
+<ul>
+  <li><strong>Pull up a local version of your project and make changes in the browser:</strong> This will help you identify your class and ID names. It will also help you better visualize what needs to be tweaked. This way, you can experiment with what some properties do. Seriously, sometimes I just experiment with properties until my layout does what I want it to do. Keep in mind that I always use W3 Schools to check that the solution I arrive is a sustainable/pragmatic choice before actually implementing it.</li>
+  <li>Look at other websites that you admire and dissect their source code. While you are at, find what you like about their site and try to implement those features yourself.</li>
+</ul>
 
-<h2 id="media-query-syntax">Media query syntax</h2>
-<p>I bet you noticed that in the portrait and landscape example we used the word “and” as well as further specifiied our media query within a set of parentheses. One thing I have found is that if you are having trouble remembering how to write out a media query rule, you can draw on what you know about <a href="http://www.w3schools.com/js/js_operators.asp">operators</a>. For example, if you want two rules that apply at once, you should use “and” in the same way you would use &amp;&amp; in JavaScript. You will even see that you can even write something with multiple specifications like this:</p>
+<h2 id="javascript">JavaScript</h2>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="nt">handheld</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">grid</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">15em</span><span class="o">)</span></code></pre></div>
+<ul>
+  <li>Check out some great resources <a href="http://rookie-dev.herokuapp.com/2015/08/05/resources.html">here</a></li>
+  <li><strong>Begin by learning about operators</strong>: Operators are just ways to perform math or declare conditional statements.</li>
+  <li><strong>Dive into the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla Developer Network</a>:</strong> Here, you can find out how to traverse your DOM and discover cool new methods!</li>
+  <li><strong>Look into jQuery</strong></li>
+  <li><strong>Add some events using jQuery to your website.</strong></li>
+  <li>Solve some algorithms - <a href="http://adriann.github.io/programming_problems.html">(easy ones)</a></li>
+  <li><strong>THEN learn more advanced concepts</strong></li>
+  <li><strong>find a project that you want to implement using JavaScript</strong></li>
+</ul>
 
-<h2 id="where-to-learn-more">Where to learn more</h2>
+<h2 id="git-commands">Git Commands</h2>
 
-<p>Okay, now I’ve shown you some key media query properties that you can use while working on your current or next project. I didn’t cover everything that can be done with media queries. There are still many other things you can do. For example, you could also consider color-index, aspect-ratio, and even other Mozilla specific media features. I’ll let you guys look into these yourself though <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features">over on MDN</a>.</p>
+<p>Yes, you need to know about version control. This is your first project, meaning you are most likely the only contributor. Yet, if you picture yourself working in web development, you will be working on a team and they will be using some kind of version control. Version control is a way to prevent people from erasing new implementations accidentally or stepping on each other’s toes during development. For Jekyll specific projects, you will really only need to know a few commands to test your site and make sure all of it’s features work properly. If you want to know some more though, I often reference this list <a href="https://gist.github.com/hofmannsven/6814451">here</a>.</p>
 
-<p><strong>Thanks for reading guys! Hope this post helps.</strong></p>
+<ol>
+  <li><strong>cd (change directory):</strong> You need to let your command line know what files you will be working with. To do this, you cd into the correct directory. The directory will be the name of folder all of your project files are in.</li>
+  <li><strong>jekyll serve:</strong> start up your local server.</li>
+  <li><strong>git check out <em>branch name</em>:</strong>  Switch to the branch you want to be working in.</li>
+  <li><strong>git branch:</strong> Find out what branch you are currently in.</li>
+  <li><strong>git status:</strong> See if your branch is up to date or not</li>
+  <li><strong>git diff:</strong> See what changes you have made to so far.</li>
+  <li><strong>git add:</strong> Add your changes to a new commit.</li>
+  <li><strong>git commit -m “<em>insert message here indicating what you are committing”</em>:</strong> Commit your changes to your current branch.</li>
+  <li><strong>git push origin <em>branch name</em>:</strong> Push your changes to a live environment.</li>
+</ol>
+
+<p>Okay, now you have some great steps to focus on. If you are like me, these steps will be able to help A LOT. A common problem I had while learning was not knowing what to do next. I wanted to make this post to help others avoid this problem. Once you have all of these steps mastered, we can talk about overcoming imposter syndrome! <strong>Thanks for reading guys!</strong></p>
 
   </article>
 
 <div class="PageNavigation">
   <ul>
     
-      <a class="prev" href="/2015/08/05/resources.html">
+      <a class="prev" href="/2015/09/05/mediaquery.html">
         <li id=post-previous><</li>
       </a>
     
     
-      <a class="next" href="/2015/09/12/first-project.html">
-        <li id="post-next">></li>
-      </a>
-      <a class="next" href="/2015/09/12/first-project.html"></a>
-      
     </ul>
 </div>
 
   <div>
       <ul class="post-nav-title">
-        <a class="prev" href="/2015/08/05/resources.html">
-          <li id="title-prev">Great Resources For Learning JavaScript</li>
+        <a class="prev" href="/2015/09/05/mediaquery.html">
+          <li id="title-prev">Learning About Media Queries</li>
         </a>
-        <a class="next" href="/2015/09/12/first-project.html">
-          <li id="title-next">Breaking Into Web Development In Small Steps</li>
+        <a class="next" href="">
+          <li id="title-next"></li>
         </a>
       </ul>
   </div>
