@@ -10,20 +10,25 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Breaking Into Web Development In Small Steps</title>
-        <description>&lt;p&gt;It used to be that the words “computer programmer” conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems. All the while, I sat there just waiting to get my required astronomy course over with and browsing Pinterest while I waited for it to start. They were geniuses in my book.&lt;/p&gt;
+        <title>Breaking Into Web Development (In Small Steps)</title>
+        <description>&lt;p&gt;It used to be that the words “computer programmer” conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems. They said things like “back face curling”, “code refactoring,” “data flow analysis, “and heuristic evaluation.” They also threw around words that sounded completely ridiculous to me (e.g unicorn, ruby gem, brain fuck, Boomerang, Emerald, etc.) What was I doing there? Waiting for my required Astronomy 101 course to start and browsing Pinterest on my phone. They were geniuses in my book.&lt;/p&gt;
 
-&lt;p&gt;The thing is, yes, they were smart. They were computer science majors who were taking advanced calculus. They spent all their time reading computer science textbooks and solving algorithms. Yet, to be a computer programmer you don’t have to know advanced calculus, at least not to get started. You don’t even need a computer science degree (although more power to you if you have one!). If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. &lt;strong&gt;I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first. After that, you will hopefully be able to see that breaking into web development isn’t &lt;em&gt;that&lt;/em&gt; scary.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The thing is, yes, they were smart. They were computer science majors who were taking advanced calculus. They spent all their time reading computer science textbooks and solving algorithms. Yet, to be a computer programmer you don’t have to know advanced calculus, at least not to get started. You don’t even need a computer science degree (although more power to you if you have one!).&lt;/p&gt;
 
-&lt;h1 id=&quot;moving-beyond-wordpress&quot;&gt;Moving beyond Wordpress&lt;/h1&gt;
+&lt;p&gt;If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. &lt;strong&gt;I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first. After that, you will hopefully be able to see that breaking into web development isn’t &lt;em&gt;that&lt;/em&gt; scary. as long as you tackle it in small steps.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;I don’t know why your are interested in web development. Maybe it is because you want to do something creative and you have a strong interest in tech already. Maybe, you have been in love with web development since you were a teenager (and in this case you probably know more about the subject than I do). Or, you are like me and arrived at the idea of pursuing web development a little later in life. &lt;strong&gt;I do know that getting into web development is intimidating. It shouldn’t be though!&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;moving-beyond-wordpress-to-create-my-first-project&quot;&gt;Moving beyond Wordpress To Create My First Project&lt;/h1&gt;
+
+&lt;p&gt;I don’t know why your are interested in web development and I’m not going to assume I do. Maybe it is because you want to do something creative and you have a strong interest in tech already. Maybe, you have been in love with web development since you were a teenager (and in this case you probably know more about the subject than I do). Or, you are like me and arrived at the idea of pursuing web development a little later in life. I do know that getting into web development is intimidating. &lt;strong&gt;It shouldn’t be though!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;For me, the moment I knew I wanted to be a front-end developer came one-month into unemployment. I had lost interest in much of my former career once I was no longer being paid to do it. Instead, I spent my days messing around with a Wordpress blog that I used to have. That is until the theme I was using had an update that turned my content into an enlarged, pixelated mess. (Has anyone ever had this happen to them before??)&lt;/p&gt;
 
-&lt;p&gt;I spent two weeks re-doing the site. Yet, working on the redesign was the most fun I had since being employed. I didn’t even mind that I was sitting at a kitchen table rather than a desk. I didn’t care that I wasn’t being paid to do the work. The work was just fun.&lt;/p&gt;
+&lt;h3 id=&quot;my-pixeleted-mess&quot;&gt;My Pixeleted Mess:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/pixelmess.png&quot; alt=&quot;Mobile UI Mock Up&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Once the site was back to how I liked it, I was even a bit proud of my work. In fact, the site looked even better than before because I had found a way to inspect elements and figure out their selectors to make some custom changes of my own.&lt;/p&gt;
+&lt;p&gt;I spent two weeks re-doing the site. The funny thing is working on the redesign was the most fun I had since being employed. I didn’t even mind that I was sitting at a kitchen table rather than a desk. I didn’t care that I wasn’t being paid to do the work. The work was just fun.&lt;/p&gt;
+
+&lt;p&gt;Once the site was back to how I liked it, I was even a bit proud of what I had done. In fact, the site looked even better than before because I had found a way to inspect elements and figure out their selectors to make some custom changes of my own.&lt;/p&gt;
 
 &lt;p&gt;I showed off my work to my S.O. at dinner once it was complete. I pulled the site up on my phone and asked him if he would take a look. He is a self-taught back-end developer who never ceases to impress me with all the cool things that he is able to do. Showing him my work was kind of intimidating to be honest because he really knows how sites should work and function. Yet, he was smiling when he saw what I had done. He then looked up at me and very carefully suggested that I go into front-end development.&lt;/p&gt;
 
@@ -31,23 +36,25 @@
 
 &lt;p&gt;I didn’t think that I was smart enough to do that. You see, I studied creative writing in college. From there, I thought that I was going to spend my adult life as a secretary or admin assistant while writing a novel during coffee fueled nights. Going into web development was something I had never thought that I could do. &lt;em&gt;It simply didn’t fit in with the idea I had been forming for myself.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;where-to-start&quot;&gt;Where to start&lt;/h1&gt;
+&lt;h1 id=&quot;where-to-start---breaking-the-process-down-into-small-steps&quot;&gt;Where to start - breaking the process down into small steps&lt;/h1&gt;
 
 &lt;p&gt;That night though I said good-bye to that idea because it just wasn’t working for me. Instead, My S.O. and I sat down together and went over some basic concepts. I learned about arrays, operators, and zero-based indexes in JavaScript. Then, we googled &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; together and my S.O. ran some commands to create a Jekyll powered static blog site that I could work on. &lt;strong&gt;It took us about three hours for me to see that I had it in me to learn a programming language &lt;em&gt;and&lt;/em&gt; that I had a means to create a site from scratch.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;My task for the next day was to learn how to add new pages to the site and begin creating a design I liked. I had to learn how to select elements for manipulation in JavaScript, how to maintain clean, modular code, and how to out specify the base stylesheet included in the Jekyll directory. This was all kind of overwhelming.&lt;/p&gt;
 
-&lt;p&gt;What helped was focusing on one task at a time. For example, if I could just learn what the DOM was first before learning how to traverse it, I was okay. This approach helped A LOT!  I started off by learning three basic skills. HTML, CSS, and JavaScript.&lt;/p&gt;
+&lt;p&gt;What helped was focusing on one task at a time. For example, if I could just learn what the DOM was before learning how to traverse it, I could prevent a panic attack. This approach helped A LOT! I started off by learning three basic skills. HTML, CSS, and JavaScript.&lt;/p&gt;
 
 &lt;p&gt;It may help you to take this same approach. &lt;strong&gt;Here are some steps to help you get started!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;make-a-github-account&quot;&gt;Make a GitHub account&lt;/h2&gt;
+&lt;h4 id=&quot;note-you-can-learn-these-in-whatever-order-you-wantneed&quot;&gt;Note: You can learn these in whatever order you want/need.&lt;/h4&gt;
 
-&lt;p&gt;If you want to begin a project of your own,  I first suggest you make a GitHub account. Someone once told me “GitHub or get out.” They meant, you need to have a GitHub account before an interviewer will take you seriously. It’s smart advice. Having a GitHub account helps employers know that you have worked on project before, that you know a little something about &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;version control&lt;/a&gt;, and that you’re interested in what others in the development community are up to.&lt;/p&gt;
+&lt;h2 id=&quot;step-one-make-a-github-account&quot;&gt;Step One: Make a GitHub account&lt;/h2&gt;
+
+&lt;p&gt;If you want to begin a project of your own, I first suggest you make a GitHub account. Someone once told me “GitHub or get out.” They meant, you need to have a GitHub account before an interviewer will take you seriously. It’s smart advice. Having a GitHub account helps employers know that you have worked on a project before, that you know a little something about &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;version control&lt;/a&gt;, and that you’re interested in what others in the development community are up to.&lt;/p&gt;
 
 &lt;p&gt;Just go to &lt;a href=&quot;https://github.com/&quot;&gt;github.com&lt;/a&gt; and create an account. You can then create a new repository for the project you want to work on and go from there!&lt;/p&gt;
 
-&lt;h2 id=&quot;html&quot;&gt;HTML&lt;/h2&gt;
+&lt;h2 id=&quot;step-two-learn-some-html&quot;&gt;Step Two: Learn Some HTML&lt;/h2&gt;
 
 &lt;p&gt;HTML, or Hypertext Markup Language, is just a way to create a skeleton for how your site will look. For example, it will help you declare where headers will go and where certain blocks of content will be placed on your page. Here are some great steps to help you master it:&lt;/p&gt;
 
@@ -60,7 +67,7 @@
   &lt;li&gt;&lt;strong&gt;Just know that when someone says “show me your markup,”  - this just means show them your HTML file:&lt;/strong&gt; I’ll admit, I didn’t know this for a &lt;em&gt;long&lt;/em&gt; time!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;scss&quot;&gt;SCSS&lt;/h2&gt;
+&lt;h2 id=&quot;step-three-tackle-scss&quot;&gt;Step Three: Tackle SCSS&lt;/h2&gt;
 
 &lt;p&gt;I recommend learning &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/07/20/sass.html&quot;&gt;SCSS&lt;/a&gt; first. It will make it easier when you are ready to switch to &lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt; (a very marketable skill).&lt;/p&gt;
 
@@ -69,7 +76,7 @@
   &lt;li&gt;Look at other websites that you admire and dissect their source code. While you are at, find what you like about their site and try to implement those features yourself.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;javascript&quot;&gt;JavaScript&lt;/h2&gt;
+&lt;h2 id=&quot;step-four-get-started-with-javascript&quot;&gt;Step Four: Get Started With JavaScript&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Check out some great resources &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/08/05/resources.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
@@ -82,7 +89,7 @@
   &lt;li&gt;&lt;strong&gt;find a project that you want to implement using JavaScript&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;git-commands&quot;&gt;Git Commands&lt;/h2&gt;
+&lt;h2 id=&quot;step-five-learn-some-git-commands&quot;&gt;Step Five: Learn Some Git Commands&lt;/h2&gt;
 
 &lt;p&gt;Yes, you need to know about version control. This is your first project, meaning you are most likely the only contributor. Yet, if you picture yourself working in web development, you will be working on a team and they will be using some kind of version control. Version control is a way to prevent people from erasing new implementations accidentally or stepping on each other’s toes during development. For Jekyll specific projects, you will really only need to know a few commands to test your site and make sure all of it’s features work properly. If you want to know some more though, I often reference this list &lt;a href=&quot;https://gist.github.com/hofmannsven/6814451&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -91,7 +98,7 @@
   &lt;li&gt;&lt;strong&gt;jekyll serve:&lt;/strong&gt; start up your local server.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;git check out &lt;em&gt;branch name&lt;/em&gt;:&lt;/strong&gt;  Switch to the branch you want to be working in.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;git branch:&lt;/strong&gt; Find out what branch you are currently in.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git status:&lt;/strong&gt; See if your branch is up to date or not&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;git status:&lt;/strong&gt; See what files have been modified since your last commit.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;git diff:&lt;/strong&gt; See what changes you have made to so far.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;git add:&lt;/strong&gt; Add your changes to a new commit.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;git commit -m “&lt;em&gt;insert message here indicating what you are committing”&lt;/em&gt;:&lt;/strong&gt; Commit your changes to your current branch.&lt;/li&gt;

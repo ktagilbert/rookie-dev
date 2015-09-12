@@ -13,11 +13,14 @@ The thing is, yes, they were smart. They were computer science majors who were t
 If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. **I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first. After that, you will hopefully be able to see that breaking into web development isn't *that* scary. as long as you tackle it in small steps.**
 
 
-# Moving beyond Wordpress
+# Moving beyond Wordpress To Create My First Project
 
 I don't know why your are interested in web development and I'm not going to assume I do. Maybe it is because you want to do something creative and you have a strong interest in tech already. Maybe, you have been in love with web development since you were a teenager (and in this case you probably know more about the subject than I do). Or, you are like me and arrived at the idea of pursuing web development a little later in life. I do know that getting into web development is intimidating. **It shouldn't be though!**
 
 For me, the moment I knew I wanted to be a front-end developer came one-month into unemployment. I had lost interest in much of my former career once I was no longer being paid to do it. Instead, I spent my days messing around with a Wordpress blog that I used to have. That is until the theme I was using had an update that turned my content into an enlarged, pixelated mess. (Has anyone ever had this happen to them before??)
+
+### My Pixeleted Mess:
+![Mobile UI Mock Up](/assets/pixelmess.png)
 
 I spent two weeks re-doing the site. The funny thing is working on the redesign was the most fun I had since being employed. I didn't even mind that I was sitting at a kitchen table rather than a desk. I didn't care that I wasn't being paid to do the work. The work was just fun.
 
@@ -29,7 +32,7 @@ The thing is, I had been thinking about the same thing for months - ever since I
 
 I didn't think that I was smart enough to do that. You see, I studied creative writing in college. From there, I thought that I was going to spend my adult life as a secretary or admin assistant while writing a novel during coffee fueled nights. Going into web development was something I had never thought that I could do. *It simply didn't fit in with the idea I had been forming for myself.*
 
-# Where to start
+# Where to start - breaking the process down into small steps
 
 That night though I said good-bye to that idea because it just wasn't working for me. Instead, My S.O. and I sat down together and went over some basic concepts. I learned about arrays, operators, and zero-based indexes in JavaScript. Then, we googled [Jekyll](http://jekyllrb.com/) together and my S.O. ran some commands to create a Jekyll powered static blog site that I could work on. **It took us about three hours for me to see that I had it in me to learn a programming language *and* that I had a means to create a site from scratch.**
 
@@ -37,16 +40,18 @@ My task for the next day was to learn how to add new pages to the site and begin
 
 What helped was focusing on one task at a time. For example, if I could just learn what the DOM was before learning how to traverse it, I could prevent a panic attack. This approach helped A LOT! I started off by learning three basic skills. HTML, CSS, and JavaScript.
 
-It may help you to take this same approach. **Here are some steps to help you get started!**
+It may help you to take this same approach. **Here are some steps to help you get started!**  
+
+#### Note: You can learn these in whatever order you want/need.  
 
 
-## Make a GitHub account
+## Step One: Make a GitHub account
 
-If you want to begin a project of your own,  I first suggest you make a GitHub account. Someone once told me "GitHub or get out." They meant, you need to have a GitHub account before an interviewer will take you seriously. It's smart advice. Having a GitHub account helps employers know that you have worked on a project before, that you know a little something about [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), and that you're interested in what others in the development community are up to.
+If you want to begin a project of your own, I first suggest you make a GitHub account. Someone once told me "GitHub or get out." They meant, you need to have a GitHub account before an interviewer will take you seriously. It's smart advice. Having a GitHub account helps employers know that you have worked on a project before, that you know a little something about [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), and that you're interested in what others in the development community are up to.
 
 Just go to [github.com](https://github.com/) and create an account. You can then create a new repository for the project you want to work on and go from there!
 
-## HTML
+## Step Two: Learn Some HTML
 
 HTML, or Hypertext Markup Language, is just a way to create a skeleton for how your site will look. For example, it will help you declare where headers will go and where certain blocks of content will be placed on your page. Here are some great steps to help you master it:
 
@@ -57,14 +62,14 @@ HTML, or Hypertext Markup Language, is just a way to create a skeleton for how y
 - **Learn how to indent properly:** Elements within element should be indented.
 - **Just know that when someone says "show me your markup,"  - this just means show them your HTML file:** I'll admit, I didn't know this for a *long* time!
 
-## SCSS
+## Step Three: Tackle SCSS
 
 I recommend learning [SCSS](http://rookie-dev.herokuapp.com/2015/07/20/sass.html) first. It will make it easier when you are ready to switch to [SASS](http://sass-lang.com/) (a very marketable skill).
 
 - **Pull up a local version of your project and make changes in the browser:** This will help you identify your class and ID names. It will also help you better visualize what needs to be tweaked. This way, you can experiment with what some properties do. Seriously, sometimes I just experiment with properties until my layout does what I want it to do. Keep in mind that I always use W3 Schools to check that the solution I arrive is a sustainable/pragmatic choice before actually implementing it.
 - Look at other websites that you admire and dissect their source code. While you are at, find what you like about their site and try to implement those features yourself.
 
-## JavaScript
+## Step Four: Get Started With JavaScript
 
 - Check out some great resources [here](http://rookie-dev.herokuapp.com/2015/08/05/resources.html)
 - **Begin by learning about operators**: Operators are just ways to perform math or declare conditional statements.
@@ -75,7 +80,7 @@ I recommend learning [SCSS](http://rookie-dev.herokuapp.com/2015/07/20/sass.html
 - **THEN learn more advanced concepts**
 - **find a project that you want to implement using JavaScript**
 
-## Git Commands
+## Step Five: Learn Some Git Commands
 
 Yes, you need to know about version control. This is your first project, meaning you are most likely the only contributor. Yet, if you picture yourself working in web development, you will be working on a team and they will be using some kind of version control. Version control is a way to prevent people from erasing new implementations accidentally or stepping on each other's toes during development. For Jekyll specific projects, you will really only need to know a few commands to test your site and make sure all of it's features work properly. If you want to know some more though, I often reference this list [here](https://gist.github.com/hofmannsven/6814451).
 
