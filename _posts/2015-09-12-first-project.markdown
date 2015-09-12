@@ -1,25 +1,27 @@
 ---
 layout: post
-title: "Breaking Into Web Development In Small Steps"
+title: "Breaking Into Web Development (In Small Steps)"
 date: 2015-09-12 17:00:00
 excerpt: >
  To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires some dedication and a willingness to learn/ask questions.
 ---
 
-It used to be that the words "computer programmer" conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems. All the while, I sat there just waiting to get my required astronomy course over with and browsing Pinterest while I waited for it to start. They were geniuses in my book.
+It used to be that the words "computer programmer" conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems. They said things like "back face curling", "code refactoring," "data flow analysis, "and heuristic evaluation." They also threw around words that sounded completely ridiculous to me (e.g unicorn, ruby gem, brain fuck, Boomerang, Emerald, etc.) What was I doing there? Waiting for my required Astronomy 101 course to start and browsing Pinterest on my phone. They were geniuses in my book.
 
-The thing is, yes, they were smart. They were computer science majors who were taking advanced calculus. They spent all their time reading computer science textbooks and solving algorithms. Yet, to be a computer programmer you don't have to know advanced calculus, at least not to get started. You don't even need a computer science degree (although more power to you if you have one!). If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. **I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first. After that, you will hopefully be able to see that breaking into web development isn't *that* scary.**
+The thing is, yes, they were smart. They were computer science majors who were taking advanced calculus. They spent all their time reading computer science textbooks and solving algorithms. Yet, to be a computer programmer you don't have to know advanced calculus, at least not to get started. You don't even need a computer science degree (although more power to you if you have one!).
+
+If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. **I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first. After that, you will hopefully be able to see that breaking into web development isn't *that* scary. as long as you tackle it in small steps.**
 
 
 # Moving beyond Wordpress
 
-I don't know why your are interested in web development. Maybe it is because you want to do something creative and you have a strong interest in tech already. Maybe, you have been in love with web development since you were a teenager (and in this case you probably know more about the subject than I do). Or, you are like me and arrived at the idea of pursuing web development a little later in life. **I do know that getting into web development is intimidating. It shouldn't be though!**
+I don't know why your are interested in web development and I'm not going to assume I do. Maybe it is because you want to do something creative and you have a strong interest in tech already. Maybe, you have been in love with web development since you were a teenager (and in this case you probably know more about the subject than I do). Or, you are like me and arrived at the idea of pursuing web development a little later in life. I do know that getting into web development is intimidating. **It shouldn't be though!**
 
 For me, the moment I knew I wanted to be a front-end developer came one-month into unemployment. I had lost interest in much of my former career once I was no longer being paid to do it. Instead, I spent my days messing around with a Wordpress blog that I used to have. That is until the theme I was using had an update that turned my content into an enlarged, pixelated mess. (Has anyone ever had this happen to them before??)
 
-I spent two weeks re-doing the site. Yet, working on the redesign was the most fun I had since being employed. I didn't even mind that I was sitting at a kitchen table rather than a desk. I didn't care that I wasn't being paid to do the work. The work was just fun.
+I spent two weeks re-doing the site. The funny thing is working on the redesign was the most fun I had since being employed. I didn't even mind that I was sitting at a kitchen table rather than a desk. I didn't care that I wasn't being paid to do the work. The work was just fun.
 
-Once the site was back to how I liked it, I was even a bit proud of my work. In fact, the site looked even better than before because I had found a way to inspect elements and figure out their selectors to make some custom changes of my own.
+Once the site was back to how I liked it, I was even a bit proud of what I had done. In fact, the site looked even better than before because I had found a way to inspect elements and figure out their selectors to make some custom changes of my own.
 
 I showed off my work to my S.O. at dinner once it was complete. I pulled the site up on my phone and asked him if he would take a look. He is a self-taught back-end developer who never ceases to impress me with all the cool things that he is able to do. Showing him my work was kind of intimidating to be honest because he really knows how sites should work and function. Yet, he was smiling when he saw what I had done. He then looked up at me and very carefully suggested that I go into front-end development.
 
@@ -33,14 +35,14 @@ That night though I said good-bye to that idea because it just wasn't working fo
 
 My task for the next day was to learn how to add new pages to the site and begin creating a design I liked. I had to learn how to select elements for manipulation in JavaScript, how to maintain clean, modular code, and how to out specify the base stylesheet included in the Jekyll directory. This was all kind of overwhelming.
 
-What helped was focusing on one task at a time. For example, if I could just learn what the DOM was first before learning how to traverse it, I was okay. This approach helped A LOT!  I started off by learning three basic skills. HTML, CSS, and JavaScript.
+What helped was focusing on one task at a time. For example, if I could just learn what the DOM was before learning how to traverse it, I could prevent a panic attack. This approach helped A LOT! I started off by learning three basic skills. HTML, CSS, and JavaScript.
 
 It may help you to take this same approach. **Here are some steps to help you get started!**
 
 
 ## Make a GitHub account
 
-If you want to begin a project of your own,  I first suggest you make a GitHub account. Someone once told me "GitHub or get out." They meant, you need to have a GitHub account before an interviewer will take you seriously. It's smart advice. Having a GitHub account helps employers know that you have worked on project before, that you know a little something about [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), and that you're interested in what others in the development community are up to.
+If you want to begin a project of your own,  I first suggest you make a GitHub account. Someone once told me "GitHub or get out." They meant, you need to have a GitHub account before an interviewer will take you seriously. It's smart advice. Having a GitHub account helps employers know that you have worked on a project before, that you know a little something about [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), and that you're interested in what others in the development community are up to.
 
 Just go to [github.com](https://github.com/) and create an account. You can then create a new repository for the project you want to work on and go from there!
 
@@ -81,7 +83,7 @@ Yes, you need to know about version control. This is your first project, meaning
 2. **jekyll serve:** start up your local server.
 3. **git check out *branch name*:**  Switch to the branch you want to be working in.
 4. **git branch:** Find out what branch you are currently in.
-5. **git status:** See what files have been modified since your last commit. 
+5. **git status:** See what files have been modified since your last commit.
 6. **git diff:** See what changes you have made to so far.
 6. **git add:** Add your changes to a new commit.
 7. **git commit -m "*insert message here indicating what you are committing"*:** Commit your changes to your current branch.
