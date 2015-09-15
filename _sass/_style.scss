@@ -236,7 +236,7 @@ $brown: #1D1E18;
   opacity: 1;
   color: #fff;
   padding-top: 150px;
-  padding: 5%;
+  padding: 5% 5% 0 5%;
   height: 100%;
 
 	p {
@@ -246,11 +246,10 @@ $brown: #1D1E18;
 
 .about-sidebar {
 	width: 25%;
-	height: 1200px;
+	height: 100%;
 	float: left;
 	background-color: #fff;
 	padding: 108px 2% 2% 2%;
-	position: absolute;
 	border-right: 5px solid #e5a199;
 
 	img {
