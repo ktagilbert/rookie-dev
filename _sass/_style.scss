@@ -167,7 +167,9 @@ $brown: #1D1E18;
 		font-weight: bold;
 	}
 }
-
+.post-lists {
+	width: 150px;
+}
 .post-meta {
 	text-align: center;
 }
@@ -525,15 +527,9 @@ $brown: #1D1E18;
 	.post-wrapper {
 		margin: 1%;
 	}
-	.post {
-		.about-background {
-			background: none;
-			height: 400px;
-		}
-		.about-content {
-			font-size: 14px;
-			padding-right: 40px;
-		}
+	.about-content {
+		font-size: 14px;
+		padding-right: 40px;
 	}
 }
 
@@ -564,19 +560,6 @@ $brown: #1D1E18;
 	.categories-dropdown {
 		display: none;
 		z-index: -100000;
-	}
-	.resume-header {
-		font-size: 1.5em;
-		letter-spacing: 7px;
-	}
-	.inline-experience-right {
-		display: block;
-		margin: auto;
-		width: 100%;
-
-		p {
-			text-align: center;
-		}
 	}
 }
 
@@ -625,7 +608,6 @@ $brown: #1D1E18;
 
 @media(max-width: 850px) {
 	.about-content {
-		float: left;
 		width: 100%;
 	}
 	#back-to-about {
