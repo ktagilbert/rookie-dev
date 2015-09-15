@@ -251,7 +251,8 @@ $brown: #1D1E18;
 }
 
 .my-background {
-	h1 {
+	.about-header {
+		font-family: "oleo script", "serif";
 		padding-top: $large;
 		font-size: 2em;
     text-shadow: 3px 5px 2px #e5a199;
@@ -319,9 +320,6 @@ $brown: #1D1E18;
 	text-align: center;
 }
 
-.post-header {
-	margin-bottom: 10%;
-}
 .portfolio-list {
 	list-style: none;
 	padding-bottom: 10%;
@@ -412,6 +410,7 @@ $brown: #1D1E18;
 
 	h3 {
 		padding-bottom: 0px;
+		font-family: "oleo script", "serif";
 	}
 }
 

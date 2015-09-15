@@ -19,8 +19,9 @@ dl, dd, ol, ul, figure {
   dl h4,
   dl h5,
   dl h6, dd h1, dd h2, dd h3, dd h4, dd h5, dd h6, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, figure h1, figure h2, figure h3, figure h4, figure h5, figure h6 {
-    font-family: "oleo script";
-    padding-bottom: 30px; }
+    font-family: "lato", "sans-serif";
+    padding-bottom: 30px;
+    font-weight: bold; }
 
 p, li {
   font-size: 18px;
@@ -244,7 +245,8 @@ pre {
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #828282;
+  padding-top: 80px; }
 
 .post-link {
   display: block;
@@ -624,7 +626,8 @@ img {
   display: none;
   color: #fff; }
 
-.my-background h1 {
+.my-background .about-header {
+  font-family: "oleo script", "serif";
   padding-top: 80px;
   font-size: 2em;
   text-shadow: 3px 5px 2px #e5a199; }
@@ -638,9 +641,6 @@ img {
 
 .projects-content {
   text-align: center; }
-
-.post-header {
-  margin-bottom: 10%; }
 
 .portfolio-list {
   list-style: none;
@@ -710,7 +710,8 @@ img {
   font-size: 1.5em;
   float: right; }
   .footer-content h3 {
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    font-family: "oleo script", "serif"; }
 
 .footer-list li {
   text-align: right;
