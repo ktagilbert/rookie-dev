@@ -619,7 +619,7 @@ img {
   color: #fff;
   padding-top: 150px;
   padding: 5%;
-  height: 1200px; }
+  height: 100%; }
   #about-page p {
     font-size: 18px; }
 
@@ -651,15 +651,17 @@ img {
     color: #666;
     font-weight: bold; }
 
-#back-to-about p {
-  text-align: left;
-  color: #666;
-  font-size: 16px;
-  font-weight: bold; }
-#back-to-about .fa {
-  margin-top: 80px;
-  font-size: 2em;
-  color: #FFB3AA; }
+#back-to-about {
+  display: none; }
+  #back-to-about p {
+    text-align: left;
+    color: #666;
+    font-size: 16px;
+    font-weight: bold; }
+  #back-to-about .fa {
+    margin-top: 80px;
+    font-size: 2em;
+    color: #FFB3AA; }
 
 .post .about-content {
   display: none;
@@ -835,9 +837,6 @@ img {
     display: none;
     z-index: -100000; }
 
-  #about-page {
-    height: 1540px; }
-
   .resume-header {
     font-size: 1.5em;
     letter-spacing: 7px; }
@@ -865,9 +864,6 @@ img {
   .my-background {
     font-size: 14px; }
 
-  .about-page {
-    height: 700px; }
-
   .tagline {
     font-size: 14px;
     letter-spacing: 1px; }
@@ -889,6 +885,9 @@ img {
   .about-content {
     float: left;
     width: 100%; }
+
+  #back-to-about {
+    display: initial; }
 
   .post-list li {
     width: 90%;

@@ -237,7 +237,7 @@ $brown: #1D1E18;
   color: #fff;
   padding-top: 150px;
   padding: 5%;
-  height: 1200px;
+  height: 100%;
 
 	p {
 		font-size: 18px;
@@ -281,6 +281,7 @@ $brown: #1D1E18;
 }
 
 #back-to-about {
+	display: none;
 	p {
 		text-align: left;
 		color: #666;
@@ -565,9 +566,6 @@ $brown: #1D1E18;
 		display: none;
 		z-index: -100000;
 	}
-	#about-page {
-		height: 1540px;
-	}
 	.resume-header {
 		font-size: 1.5em;
 		letter-spacing: 7px;
@@ -600,9 +598,6 @@ $brown: #1D1E18;
 	.my-background {
 		font-size: 14px;
 	}
-	.about-page {
-		height: 700px;
-	}
 	.tagline {
 		font-size: 14px;
 		letter-spacing: 1px;
@@ -633,6 +628,9 @@ $brown: #1D1E18;
 	.about-content {
 		float: left;
 		width: 100%;
+	}
+	#back-to-about {
+		display: initial;
 	}
 	.post-list {
 		li {
