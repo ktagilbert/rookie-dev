@@ -71,7 +71,7 @@
       $('#mobile-btn').on('click', function(event) {
         event.preventDefault;
         $("#mobile-menu").show();
-        $("#mobile-btn").hide();j
+        $("#mobile-btn").hide();
       });
 
       //click on #home-arrow to scroll down to post-list
@@ -83,22 +83,32 @@
         },900);
       });
 
-      // display about sidebar on button click at width 850px
+      // display about sidebar on button click
+
       $(".button").click(function(event) {
         event.preventDefault();
         $('.about-content').children().hide();
-        $('#about-page').css("background-color", "#f1f1f1");
-        $('.about-sidebar').show(). css({
+        $('.about-sidebar').fadeIn('700').css({
           "width" : "80%",
           "margin": "0 10%",
           "border-right": "none",
           "height": "100%"
         });
+        $('#about-page').css("background-color", "#f1f1f1");
       });
 
+      //back button on click, go back to original about page
+      //prevent a new tab from opening
 
+        $("#back-to-about").click(function(event) {
+          event.preventDefault();
+          $('.about-sidebar').hide();
+          $('.about-content').children().fadeIn();
+          $('#about-page').css("background-color", "#FFB3AA");
+        });
 
       //page headers fade in & about content fades in
+
       $('.about-content').fadeIn(1000);
       $('.post-title').fadeIn(1000);
       $('#portfolio-header').fadeIn(1000);
@@ -522,6 +532,13 @@
 				<li><i class="fa fa-circle"></i>Adobe Photoshop</li>
 				<li><i class="fa fa-circle"></i>InDesign</li>
 			<ul>
+
+			<span id="back-to-about">
+				<a href="">
+					<i class="fa fa-chevron-left"></i>
+					<p>Back to About</p>
+				</a>
+			</span>
 </div>
 
 <div id="about-page">

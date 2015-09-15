@@ -280,6 +280,20 @@ $brown: #1D1E18;
 	}
 }
 
+#back-to-about {
+	p {
+		text-align: left;
+		color: #666;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.fa {
+		margin-top: 80px;
+		font-size: 2em;
+		color: $orange;
+	}
+}
+
 .post {
 	.about-content {
     	display: none;
@@ -567,29 +581,6 @@ $brown: #1D1E18;
 			text-align: center;
 		}
 	}
-	#skill-lists {
-		width: 80%;
-		display: block;
-		margin-left: 0px;
-	}
-	.skill-graphic {
-		margin-bottom: 10%;
-	}
-	.inline-list {
-		display: block;
-	}
-	.inline-experience-left {
-		width: 100%;
-		display: block;
-		text-align: center;
-
-		h2 {
-			font-size: 25px;
-		}
-		li {
-			list-style: none;
-		}
-	}
 }
 
 @media(max-width: 760px) {
@@ -639,6 +630,10 @@ $brown: #1D1E18;
 }
 
 @media(max-width: 850px) {
+	.about-content {
+		float: left;
+		width: 100%;
+	}
 	.post-list {
 		li {
 			width: 90%;
@@ -648,10 +643,6 @@ $brown: #1D1E18;
 	}
 	.about-sidebar {
 		display: none;
-	}
-	.about-content {
-		width: 100%;
-		position: absolute;
 	}
 	#more-about {
 		display: initial;

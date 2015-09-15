@@ -651,6 +651,16 @@ img {
     color: #666;
     font-weight: bold; }
 
+#back-to-about p {
+  text-align: left;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold; }
+#back-to-about .fa {
+  margin-top: 80px;
+  font-size: 2em;
+  color: #FFB3AA; }
+
 .post .about-content {
   display: none;
   color: #fff;
@@ -837,27 +847,7 @@ img {
     margin: auto;
     width: 100%; }
     .inline-experience-right p {
-      text-align: center; }
-
-  #skill-lists {
-    width: 80%;
-    display: block;
-    margin-left: 0px; }
-
-  .skill-graphic {
-    margin-bottom: 10%; }
-
-  .inline-list {
-    display: block; }
-
-  .inline-experience-left {
-    width: 100%;
-    display: block;
-    text-align: center; }
-    .inline-experience-left h2 {
-      font-size: 25px; }
-    .inline-experience-left li {
-      list-style: none; } }
+      text-align: center; } }
 @media (max-width: 760px) {
   #menu {
     display: none; }
@@ -896,6 +886,10 @@ img {
     text-align: center;
     width: 60%; } }
 @media (max-width: 850px) {
+  .about-content {
+    float: left;
+    width: 100%; }
+
   .post-list li {
     width: 90%;
     padding: 10px;
@@ -903,10 +897,6 @@ img {
 
   .about-sidebar {
     display: none; }
-
-  .about-content {
-    width: 100%;
-    position: absolute; }
 
   #more-about {
     display: initial; } }
