@@ -499,7 +499,8 @@ img {
   margin: 10px 10px;
   display: none;
   float: left;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
 
 #mobile-menu {
   display: none;
@@ -618,19 +619,71 @@ img {
   color: #fff;
   padding-top: 150px;
   padding: 5%;
-  height: 900px; }
+  height: 1200px; }
   #about-page p {
     font-size: 18px; }
 
+.about-sidebar {
+  width: 25%;
+  height: 1200px;
+  float: left;
+  background-color: #fff;
+  padding: 108px 2% 2% 2%;
+  position: absolute;
+  border-right: 5px solid #e5a199; }
+  .about-sidebar img {
+    padding: 0;
+    border-radius: 50%; }
+  .about-sidebar h1 {
+    text-align: center;
+    color: #FFB3AA;
+    font-weight: bold;
+    padding-top: 50px;
+    font-size: 22px; }
+  .about-sidebar li {
+    font-size: 16px;
+    list-style: none; }
+  .about-sidebar a {
+    color: #111;
+    text-align: center; }
+  .about-sidebar .fa {
+    padding-right: 20px;
+    color: #666;
+    font-weight: bold; }
+
 .post .about-content {
   display: none;
-  color: #fff; }
+  color: #fff;
+  width: 70%;
+  float: right;
+  padding-bottom: 80px; }
 
 .my-background .about-header {
   font-family: "oleo script", "serif";
   padding-top: 80px;
   font-size: 2em;
   text-shadow: 3px 5px 2px #e5a199; }
+
+#more-about {
+  display: none; }
+
+.button {
+  border: solid 4px #fff;
+  display: block;
+  color: #fff;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px 25px;
+  background-color: transparent;
+  outline: none;
+  margin-top: 80px;
+  cursor: pointer; }
+
+.button:hover {
+  background-color: #fff;
+  color: #666;
+  font-weight: bold; }
 
 #portfolio-header {
   text-align: center;
@@ -694,7 +747,6 @@ img {
   width: 100%;
   height: 110px;
   background-color: #483D3F;
-  opacity: 0.9;
   top: 100%; }
   .site-footer a, .site-footer a:visited {
     color: #fff; }
@@ -847,7 +899,17 @@ img {
   .post-list li {
     width: 90%;
     padding: 10px;
-    height: 100%; } }
+    height: 100%; }
+
+  .about-sidebar {
+    display: none; }
+
+  .about-content {
+    width: 100%;
+    position: absolute; }
+
+  #more-about {
+    display: initial; } }
 @media (max-width: 1210px) and (min-width: 851px) {
   .post-list li {
     width: 40%; } }

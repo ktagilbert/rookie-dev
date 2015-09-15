@@ -45,7 +45,7 @@
       var startchange = $('p:first');
       var offset = startchange.offset();
 
-        if (startchange.length) {
+        if (startchange.length || $('img')) {
 
           $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
@@ -54,11 +54,15 @@
               $("#menu").css('background-color', '#111');
               $('.menu-item').css("color", "#fff");
               $('.menu-item').children().css("color", "#fff");
-              $(".fa").css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff");
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
             } else {
               $('#menu').css('background-color', 'transparent');
               $('.menu-item').children().css("color", "#1D1E18");
-              $(".fa").css("color", "#1D1E18")
+              $(".fa-twitter").css("color", "#1D1E18")
+              $(".fa-github").css("color", "#1D1E18");
+              $(".fa-envelope").css("color", "#1D1E18");
             }
         });
       }
@@ -79,6 +83,20 @@
         },900);
       });
 
+      // display about sidebar on button click at width 850px
+      $(".button").click(function(event) {
+        event.preventDefault();
+        $('.about-content').children().hide();
+        $('#about-page').css("background-color", "#f1f1f1");
+        $('.about-sidebar').show(). css({
+          "width" : "80%",
+          "margin": "0 10%",
+          "border-right": "none",
+          "height": "100%"
+        });
+      });
+
+
 
       //page headers fade in & about content fades in
       $('.about-content').fadeIn(1000);
@@ -86,18 +104,8 @@
       $('#portfolio-header').fadeIn(1000);
       $('.post-title').fadeIn(1000);
 
-      //press resume button to get resume displayed full width
 
-      var resumeName = ("<div id='resume-name'><h1>Katie Gilbert</h1><p>Freelance Front End Developer</p><p><a href='https://github.com/ktagilbert'</a>https://github.com/ktagilbert</p></div>");
-
-      $('.resume-button').click(function(event){
-        event.preventDefault();
-        $('.about-content').hide();
-        $('#about-page').css("display", "none")
-        $("#resume-feature").delay(50).fadeIn();
-      });
-
-      //open links in a new tab
+      //open all links in a new tab
 
       $('a').each(function() {
         var a = new RegExp('/' + window.location.host + '/');
