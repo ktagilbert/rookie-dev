@@ -263,17 +263,15 @@ img {
 
 .post-header {
   margin-bottom: 30px;
-  background-color: #FFB3AA;
   height: 250px; }
 
 .post-title {
-  font-size: 50px;
-  color: #fff;
+  font-size: 3em;
+  color: #FFB3AA;
   text-align: center;
-  line-height: 3;
-  padding-top: 80px;
-  font-family: "Lato";
-  display: none; }
+  padding-top: 160px;
+  display: none;
+  font-family: "oleo script", "serif"; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
@@ -573,20 +571,19 @@ img {
 .post-link {
   font-family: initial; }
 
-.PageNavigation {
-  margin: 5%; }
-  .PageNavigation a {
-    color: #111; }
-  .PageNavigation ul {
-    list-style: none;
-    text-align: center;
-    border-top: 1px solid;
-    margin-top: 10%; }
-  .PageNavigation li {
-    display: inline-block;
-    width: 45%;
-    font-size: 4em;
-    font-weight: bold; }
+.PageNavigation a {
+  color: #111; }
+.PageNavigation ul {
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid;
+  margin-top: 10%;
+  margin-left: 0px; }
+.PageNavigation li {
+  display: inline-block;
+  width: 30%;
+  font-size: 4em;
+  font-weight: bold; }
 
 #post-next {
   text-align: right; }
@@ -598,7 +595,9 @@ img {
   list-style: none;
   margin-bottom: 20%;
   padding-bottom: 5%;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+  margin-left: 0px;
+  text-align: center; }
   .post-nav-title li {
     display: inline-block;
     color: #666;

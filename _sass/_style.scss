@@ -176,8 +176,6 @@ $brown: #1D1E18;
 }
 
 .PageNavigation {
-	margin: 5%;
-
 	a {
 		color: #111;
 	}
@@ -187,10 +185,11 @@ $brown: #1D1E18;
 		text-align: center;
 		border-top: 1px solid;
 		margin-top: 10%;
+		margin-left: 0px;
 	}
 	li {
 		display: inline-block;
-		width: 45%;
+		width: 30%;
 		font-size: 4em;
 		font-weight: bold;
 	}
@@ -209,6 +208,9 @@ $brown: #1D1E18;
 	margin-bottom: 20%;
 	padding-bottom: 5%;
 	border-bottom: 1px solid;
+	margin-left: 0px;
+	text-align: center;
+
 
 	li {
 		display: inline-block;

@@ -60,7 +60,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Read up on how to write HTML:&lt;/strong&gt; &lt;a href=&quot;http://www.w3schools.com/html/default.asp&quot;&gt;W3Schools&lt;/a&gt; is a great first place to look!&lt;/li&gt;
-  &lt;li&gt;Learn the difference between a div and a span: You can think of a div as a dividing element in your markup. It contains and divides certain sections of your layout. A span, on the other hand, is a way to apply stylings to a certain section &lt;em&gt;span&lt;/em&gt;-ing a certain length of your markup.&lt;/li&gt;
+  &lt;li&gt;Learn the difference between a div and a span: You can think of a div as a dividing element in your markup. It contains and divides certain sections of your layout. A span, on the other hand, is a way to group inline-elements in your document.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Mess around with HTML to create your own custom layouts:&lt;/strong&gt; You can try by working on your own project or creating something in a &lt;a href=&quot;http://codepen.io/pen/&quot;&gt;codepen&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Harness the power of the list! Seriously, you can do a lot with lists when they are combined with CSS.&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Learn how to indent properly:&lt;/strong&gt; Elements within element should be indented.&lt;/li&gt;

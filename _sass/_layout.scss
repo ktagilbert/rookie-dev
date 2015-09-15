@@ -137,18 +137,16 @@ img {
 
 .post-header {
     margin-bottom: $spacing-unit;
-    background-color: #FFB3AA;
     height: 250px;
 }
 
 .post-title {
-    font-size: 50px;
-    color: #fff;
+    font-size: 3em;
+    color: #FFB3AA;
     text-align: center;
-    line-height: 3;
-    padding-top: 80px;
-    font-family: "Lato";
+    padding-top: 160px;
     display: none;
+    font-family: "oleo script", "serif";
 
     @include media-query($on-laptop) {
         font-size: 36px;
