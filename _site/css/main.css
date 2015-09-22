@@ -699,6 +699,40 @@ img {
   color: #666;
   font-weight: bold; }
 
+.question-box {
+  padding-top: 80px;
+  text-align: center;
+  height: 100%;
+  margin: 100px 0 100px 0; }
+
+.ready-button {
+  border: none;
+  background: #72c6ff;
+  font-size: 1.5em;
+  padding: 30px;
+  color: #fff;
+  font-weight: bolder;
+  outline: none; }
+
+.ready-button:hover {
+  padding: 35px; }
+
+#form-name {
+  font-family: "Lato", "Tahoma";
+  font-size: 3em;
+  color: #666;
+  padding: 100px 0 50px 0; }
+
+.next-question {
+  display: none;
+  background-color: #72c6ff;
+  color: #fff;
+  padding: 30px;
+  border: none;
+  font-family: "Lato", "Tahoma";
+  font-size: 1.5em;
+  outline: none; }
+
 #portfolio-header {
   text-align: center;
   font-size: 4em;

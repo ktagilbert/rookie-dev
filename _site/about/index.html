@@ -136,27 +136,27 @@
 
       //JS Study Program
 
-      // var qas = [
-      //   {
-      //     correct: "foo",
-      //     question: "huh?",
-      //     answers: [
-      //       "foo",
-      //       "bar",
-      //       "my butt",
-      //       "your butt"
-      //     ]
-      //   },
-      //   {
-      //     correct: "chocolate",
-      //     question: "what the hell is 'javascript'?",
-      //     answers: [
-      //       "chocolate",
-      //       "bar",
-      //       "in",
-      //       "your butt ( ͡° ͜ʖ ͡°)"
-      //     ]
-      //   },
+      var qas = [
+        {
+          correct: "foo",
+          question: "huh?",
+          answers: [
+            "foo",
+            "bar",
+            "my butt",
+            "your butt"
+          ]
+        },
+        {
+          correct: "chocolate",
+          question: "what the hell is 'javascript'?",
+          answers: [
+            "chocolate",
+            "bar",
+            "in",
+            "your butt ( ͡° ͜ʖ ͡°)"
+          ]
+        },
       //  {
           // question: "explain how 'this' works",
           // answers: [
@@ -418,43 +418,53 @@
           //  "objects of similiar types can inherit properties from each other",
           //   ]
 //           // }
-//        ];
+       ];
 
-//       var counter = 0;
+      var counter = 0;
 
-//       $('.ready-button').on ('click', function(event){
-//         $('.ready-button').hide();
-//         $('.next-question').show();
-//         nextQuestion();
-//       });
+      $('.ready-button').on ('click', function(event){
+        $('.ready-button').hide();
+        $('.next-question').show();
+        nextQuestion();
+      });
 
-//       // right now it displays the next element in the array
-//       // BUT leaves the previous element as well.
+      // right now it displays the next element in the array
+      // BUT leaves the previous element as well.
 
-//       $(".next-question").on('click', function(event) {
-//         event.preventDefault();
+      $(".next-question").on('click', function(event) {
+        event.preventDefault();
 
-//         if (counter == qas.length) {
-//           $(".question-wrapper").html("<h1>YOU FINISHED</h1>");
-//         } else {
-//           nextQuestion();
-//         }
-//       });
+        if (counter == qas.length) {
+          $(".question-wrapper").html("<h1>YOU FINISHED</h1>");
+        } else {
+          nextQuestion();
+        }
+      });
 
-//       function nextQuestion() {
+      function nextQuestion() {
 
-//         $('.answers').empty();
+        $('.answers').empty();
 
-//         var qa = qas[counter];
-//         $('.question').html(qa.question);
+        var qa = qas[counter];
+        $('.question').html(qa.question);
 
-//         $.each(qa.answers, function(i, answer) {
-//           $('.answers').append("<input type='radio' name='check' id='selection'/>" + answer  + "<br />");
+        $.each(qa.answers, function(i, answer) {
+          $('.answers').append("<input type='radio' name='check' class='selection'/>" + answer  + "<br />");
 
-//         });
+        });
 
-//         counter++;
-//       }
+        $('.answers').on('change', function() {
+          if ()) === qa.correct) {
+           alert("You got it!");
+         }
+        });
+
+        counter++;
+      }
+
+
+
+
 
 //       //check to see which element has been selected
 //       //if answer is correct
@@ -484,6 +494,7 @@
       <li class="menu-item"><a href="/">Home</li>
       <li class="menu-item"><a href="/about">About</a></li>
       <li class="menu-item"><a href="/portfolio">Portfolio</a></li>
+      <li class="menu-item"><a href="/jsstudy/">JS Study</a></li>
       <ul id=social-icons>
         <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
         <li><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
