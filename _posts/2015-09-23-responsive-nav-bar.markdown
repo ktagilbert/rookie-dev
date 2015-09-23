@@ -64,7 +64,7 @@ Here is some SCSS as well:
 
 ## Set Up Your Problem
 
-Next, you can start by commenting out what you will need to do to make the nav bar change colors. Commenting out the problem is a great first step in solving your problem. I know that for me, it helps prevent me from getting overwhelmed by a problem. Instead, I can just start by simply solving the first step and then go from there until the problem is solved.
+Next, you can start by commenting out what you will need to do to make the nav bar change colors. Commenting out the problem is a great first step in solving your problem. This method really helps prevent me from getting overwhelmed by a problem. Instead, I can just start by simply solving the first step and then go from there until the rest has been solved as well.
 
 {% highlight JavaScript %}
 //desktop nav bar
@@ -105,7 +105,9 @@ if (startchange.length || $('img')) {
       $('.menu-item').children().css("color", "#fff");
 {% endhighlight %}
 
-You'll notice that at the beginning of my if statement, I used the or operator. You don't have to include an or statement if you don't need it.  I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to black when it reached this image and when it reached the first <p> tags on a page. For you, it will help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tog or the first h1 tag. Either way, just make sure to indicate this at the beginning of your if statement.
+You'll notice that at the beginning of my if statement, I used the or operator (|| - these two pipe symbols). You don't have to include an or statement if you don't need it.  I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first <p> tags on a page.
+
+For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first h1 tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.
 
 
 Next, you can write your else statement. The else statement will provide the css info you need to change when the menu goes back to it's initial state at the top of a window. Now, you are not declaring what the menu will look like normally. Instead, the else statement will help your menu toggle back to its normal state if a user scrolls *back up* to the top of the screen.
