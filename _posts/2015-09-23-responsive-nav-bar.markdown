@@ -105,7 +105,7 @@ if (startchange.length || $('img')) {
       $('.menu-item').children().css("color", "#fff");
 {% endhighlight %}
 
-You'll notice that at the beginning of my if statement, I used the or operator (|| - these two pipe symbols). You don't have to include an or statement if you don't need it.  I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first <p> tags on a page.
+You'll notice that at the beginning of my if statement, I used the or operator. You don't have to include an or statement if you don't need it.  I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first <p> tags on a page.
 
 For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first h1 tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.
 
