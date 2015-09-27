@@ -147,6 +147,7 @@ img {
     text-align: center;
     padding-top: 160px;
     display: none;
+    color: #ffbaa7;
     font-family: "oleo script", "serif";
 
     @include media-query($on-laptop) {

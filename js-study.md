@@ -1,11 +1,10 @@
 ---
-layout: js-study
+<!-- layout: js-study
 title: JS-Study
 permalink: /jsstudy/
 ---
 
-<!-- <div class="question-box">
-	<p> This is meant to help you study.....</p>
+<div class="question-box">
 	<h1 id="form-name">JS Study</h1>
 	<div class="question-wrapper">
 		<h3 class="question"></h3>
@@ -13,6 +12,7 @@ permalink: /jsstudy/
 		<section class="void"></section>
 		</form>
 		<button class="ready-button">Start!</button>
-		<button class="next-question">next question</button>
+		<button id="check-answer">Check Answer</button>
+		<button id='next-button'>Next Question</button>
 	</div>
 </div> -->

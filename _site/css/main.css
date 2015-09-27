@@ -19,7 +19,7 @@ dl, dd, ol, ul, figure {
   dl h4,
   dl h5,
   dl h6, dd h1, dd h2, dd h3, dd h4, dd h5, dd h6, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, figure h1, figure h2, figure h3, figure h4, figure h5, figure h6 {
-    font-family: "lato", "sans-serif";
+    font-family: "georgia", "serif";
     padding-bottom: 30px;
     font-weight: bold; }
 
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   text-decoration: none;
-  color: #66b2e5; }
+  color: #ff8577; }
   a:hover {
     color: #1D1E18;
     text-decoration: underline; }
@@ -273,6 +273,7 @@ img {
   text-align: center;
   padding-top: 160px;
   display: none;
+  color: #ffbaa7;
   font-family: "oleo script", "serif"; }
   @media screen and (max-width: 800px) {
     .post-title {
@@ -515,14 +516,14 @@ img {
 .page-heading {
   margin-bottom: 0px;
   font-weight: bold;
-  border-bottom: 4px solid #FFB3AA;
+  border-bottom: 4px solid #ffbaa7;
   height: 100%; }
 
 .tagline {
   padding: 10% 0 5% 0; }
 
 .logo {
-  color: #FFB3AA;
+  color: #ffbaa7;
   padding: 0; }
 
 #logo-wrap {
@@ -532,13 +533,13 @@ img {
   margin: 5% 0 0 0;
   font-family: "oleo script", serif;
   padding: 0;
-  font-size: 6em;
+  font-size: 8em;
   letter-spacing: -2px; }
 
 #line-two {
   font-family: "lato", sans-serif;
   line-height: 0.2;
-  font-size: 8.5em;
+  font-size: 11.5em;
   letter-spacing: -7px;
   margin-bottom: 0; }
 
@@ -565,8 +566,12 @@ img {
 
 .post h3 {
   text-align: center;
-  font-family: 'lato', sans-serif;
-  font-weight: bold; }
+  padding-bottom: 40px; }
+.post p, .post strong {
+  color: #666; }
+.post .post-title {
+  color: #ffbaa7;
+  text-shadow: 1px 1px 0px #e5a199; }
 
 .post-lists {
   width: 150px; }
@@ -582,7 +587,7 @@ img {
 .PageNavigation ul {
   list-style: none;
   text-align: center;
-  border-top: 1px solid;
+  border-top: 2px solid #d3d3d3;
   margin-top: 10%;
   margin-left: 0px; }
 .PageNavigation li {
@@ -601,7 +606,7 @@ img {
   list-style: none;
   margin-bottom: 20%;
   padding-bottom: 5%;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid #d3d3d3;
   margin-left: 0px;
   text-align: center; }
   .post-nav-title li {
@@ -638,7 +643,7 @@ img {
     border-radius: 50%; }
   .about-sidebar h1 {
     text-align: center;
-    color: #FFB3AA;
+    color: #ffbaa7;
     font-weight: bold;
     padding-top: 50px;
     font-size: 22px; }
@@ -663,7 +668,7 @@ img {
   #back-to-about .fa {
     margin-top: 80px;
     font-size: 2em;
-    color: #FFB3AA; }
+    color: #ffbaa7; }
 
 .post .about-content {
   display: none;
@@ -671,11 +676,14 @@ img {
   width: 70%;
   float: right;
   padding-bottom: 80px; }
+  .post .about-content p {
+    color: #fff; }
 
 .my-background .about-header {
   font-family: "oleo script", "serif";
   padding-top: 80px;
   font-size: 2em;
+  color: #fff;
   text-shadow: 3px 5px 2px #e5a199; }
 
 #more-about {
@@ -698,6 +706,54 @@ img {
   background-color: #fff;
   color: #666;
   font-weight: bold; }
+
+.question-box {
+  margin: 80px 0;
+  text-align: center;
+  height: 100%; }
+
+.ready-button {
+  border: none;
+  background: #72c6ff;
+  font-size: 1.5em;
+  padding: 30px;
+  color: #fff;
+  font-weight: bolder;
+  outline: none; }
+
+.ready-button:hover {
+  padding: 35px; }
+
+.question-wrapper {
+  margin: 80px 0 30px 0; }
+
+#form-name {
+  font-family: "Lato", "Tahoma";
+  font-size: 3em;
+  color: #666; }
+
+#check-answer {
+  padding: 20px;
+  display: none;
+  background-color: #a9a9a9;
+  color: #fff;
+  border: none;
+  font-family: "Lato", "Tahoma";
+  font-size: 1.5em;
+  outline: none; }
+
+#next-button {
+  padding: 20px;
+  display: none;
+  background-color: #72c6ff;
+  color: #fff;
+  border: none;
+  font-family: "Lato", "Tahoma";
+  font-size: 1.5em;
+  outline: none; }
+
+.answers {
+  margin-bottom: 40px; }
 
 #portfolio-header {
   text-align: center;
@@ -760,7 +816,7 @@ img {
   bottom: 0;
   width: 100%;
   height: 110px;
-  background-color: #483D3F;
+  background-color: #4d4d4d;
   top: 100%; }
   .site-footer a, .site-footer a:visited {
     color: #fff; }
