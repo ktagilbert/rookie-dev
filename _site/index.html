@@ -53,7 +53,7 @@
 
             if(scroll_start > offset.top) {
               $("#menu").stop().animate({
-                backgroundColor:'#111'}, "1300");
+                backgroundColor:'#111'}, "700");
               $('.menu-item').css("color", "#fff");
               $('.menu-item').children().css("color", "#fff");
               $(".fa-twitter").css("color", "#fff");
@@ -61,7 +61,7 @@
               $(".fa-envelope").css("color", "#fff");
             } else {
               $('#menu').stop().animate({
-                backgroundColor: 'transparent'}, "1300");
+                backgroundColor: 'transparent'}, "700");
               $('.menu-item').children().css("color", "#1D1E18");
               $(".fa-twitter").css("color", "#1D1E18")
               $(".fa-github").css("color", "#1D1E18");
@@ -112,15 +112,9 @@
         });
 
       //page headers fade in & about content fades in
-
       $('.about-content').fadeIn(1000);
-      $('.post-title').fadeIn(1000);
-      $('#portfolio-header').fadeIn(1000);
-      $('.post-title').fadeIn(1000);
-
 
       //open all links in a new tab
-
       $('a').each(function() {
         var a = new RegExp('/' + window.location.host + '/');
 

@@ -272,7 +272,6 @@ img {
   color: #FFB3AA;
   text-align: center;
   padding-top: 160px;
-  display: none;
   font-family: "oleo script", "serif"; }
   @media screen and (max-width: 800px) {
     .post-title {
@@ -570,7 +569,7 @@ img {
   color: #666; }
 .post .post-title {
   color: #ffbaa7;
-  text-shadow: 1px 1px 0px #e5a199; }
+  text-shadow: 1px 3px 0px #e5a199; }
 
 .post-lists {
   width: 150px; }
@@ -628,7 +627,9 @@ img {
   padding: 5% 5% 0 5%;
   height: 100%; }
   #about-page p {
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 2px 1px #e5a199; }
 
 .about-sidebar {
   width: 25%;

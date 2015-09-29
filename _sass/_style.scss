@@ -170,7 +170,7 @@ $brown: #1D1E18;
 	}
 	.post-title {
 		color: $orange;
-		text-shadow: 1px 1px 0px #e5a199;
+		text-shadow: 1px 3px 0px #e5a199;
 	}
 }
 
@@ -251,6 +251,8 @@ $brown: #1D1E18;
 
 	p {
 		font-size: 18px;
+		font-weight: 500;
+    text-shadow: 0 2px 1px #e5a199;
 	}
 }
 
