@@ -30,6 +30,15 @@
 
 		$(document).ready(function() {
 
+      //if post-nav link is null, remove class
+      function isEmpty( el ) {
+        return !$.trim(el.html())
+      }
+      if (isEmpty($('.title-prev'))) {
+        $('.title-prev').remove();
+      }
+
+
       //make .page-heading the height of the screen
       function setHeight() {
         windowHeight = $(window).innerHeight();
@@ -559,7 +568,8 @@
   	<p class="post-title">How to Make a Simple Navigation Menu From Scratch</p>
   </header>
 
-    <p class="post-meta">Jun 24, 2015</p>
+  <p class="post-meta">Jun 24, 2015</p>
+
 <div class="wrapper"
   <article class="post-content">
     <p>Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. <strong>What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.</strong></p>
@@ -672,28 +682,17 @@
 
   </article>
 
-<div class="PageNavigation">
-  <ul>
-    
-    
-      <a class="next" href="/2015/07/20/sass.html">
-        <li id="post-next">></li>
-      </a>
-      <a class="next" href="/2015/07/20/sass.html"></a>
-      
-    </ul>
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="">
+      <li id="title-prev"></li>
+    </a>
+    <a class="post-nav-link" href="/2015/07/20/sass.html">
+      <li id="title-next">How to Start Learning SCSS</li>
+    </a>
+  </ul>
 </div>
 
-  <div>
-      <ul class="post-nav-title">
-        <a class="prev" href="">
-          <li id="title-prev"></li>
-        </a>
-        <a class="next" href="/2015/07/20/sass.html">
-          <li id="title-next">How to Start Learning SCSS</li>
-        </a>
-      </ul>
-  </div>
   <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -744,5 +743,6 @@
 
 
   </body>
+  <title>Rookie Dev - a place to learn about web development</title>
 
 </html>

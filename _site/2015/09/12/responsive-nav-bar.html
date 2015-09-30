@@ -30,6 +30,15 @@
 
 		$(document).ready(function() {
 
+      //if post-nav link is null, remove class
+      function isEmpty( el ) {
+        return !$.trim(el.html())
+      }
+      if (isEmpty($('.title-prev'))) {
+        $('.title-prev').remove();
+      }
+
+
       //make .page-heading the height of the screen
       function setHeight() {
         windowHeight = $(window).innerHeight();
@@ -559,7 +568,8 @@
   	<p class="post-title">Tutorial: Making a Responsive Navigation Bar</p>
   </header>
 
-    <p class="post-meta">Sep 12, 2015</p>
+  <p class="post-meta">Sep 12, 2015</p>
+
 <div class="wrapper"
   <article class="post-content">
     <p>Earlier, I showed you <a href="http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html">how to make a nav bar from scratch using just HTML and CSS</a>. I really believe creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.</p>
@@ -671,27 +681,17 @@
 
   </article>
 
-<div class="PageNavigation">
-  <ul>
-    
-      <a class="prev" href="/2015/09/12/breaking-into-web-development.html">
-        <li id=post-previous><</li>
-      </a>
-    
-    
-    </ul>
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2015/09/12/breaking-into-web-development.html">
+      <li id="title-prev">Breaking Into Web Development (In Small Steps)</li>
+    </a>
+    <a class="post-nav-link" href="">
+      <li id="title-next"></li>
+    </a>
+  </ul>
 </div>
 
-  <div>
-      <ul class="post-nav-title">
-        <a class="prev" href="/2015/09/12/breaking-into-web-development.html">
-          <li id="title-prev">Breaking Into Web Development (In Small Steps)</li>
-        </a>
-        <a class="next" href="">
-          <li id="title-next"></li>
-        </a>
-      </ul>
-  </div>
   <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -742,5 +742,6 @@
 
 
   </body>
+  <title>Rookie Dev - a place to learn about web development</title>
 
 </html>

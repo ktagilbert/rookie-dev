@@ -30,6 +30,15 @@
 
 		$(document).ready(function() {
 
+      //if post-nav link is null, remove class
+      function isEmpty( el ) {
+        return !$.trim(el.html())
+      }
+      if (isEmpty($('.title-prev'))) {
+        $('.title-prev').remove();
+      }
+
+
       //make .page-heading the height of the screen
       function setHeight() {
         windowHeight = $(window).innerHeight();
@@ -559,7 +568,8 @@
   	<p class="post-title">Breaking Into Web Development (In Small Steps)</p>
   </header>
 
-    <p class="post-meta">Sep 12, 2015</p>
+  <p class="post-meta">Sep 12, 2015</p>
+
 <div class="wrapper"
   <article class="post-content">
     <p>It used to be that the words “computer programmer” conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems. They said things like “back face curling”, “code refactoring,” “data flow analysis, “and heuristic evaluation.” They also threw around words that sounded completely ridiculous to me (e.g unicorn, ruby gem, brain fuck, Boomerang, Emerald, etc.) What was I doing there? Waiting for my required Astronomy 101 course to start and browsing Pinterest on my phone. They were geniuses in my book.</p>
@@ -660,32 +670,17 @@
 
   </article>
 
-<div class="PageNavigation">
-  <ul>
-    
-      <a class="prev" href="/2015/09/05/mediaquery.html">
-        <li id=post-previous><</li>
-      </a>
-    
-    
-      <a class="next" href="/2015/09/12/responsive-nav-bar.html">
-        <li id="post-next">></li>
-      </a>
-      <a class="next" href="/2015/09/12/responsive-nav-bar.html"></a>
-      
-    </ul>
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2015/09/05/mediaquery.html">
+      <li id="title-prev">Learning About Media Queries</li>
+    </a>
+    <a class="post-nav-link" href="/2015/09/12/responsive-nav-bar.html">
+      <li id="title-next">Tutorial: Making a Responsive Navigation Bar</li>
+    </a>
+  </ul>
 </div>
 
-  <div>
-      <ul class="post-nav-title">
-        <a class="prev" href="/2015/09/05/mediaquery.html">
-          <li id="title-prev">Learning About Media Queries</li>
-        </a>
-        <a class="next" href="/2015/09/12/responsive-nav-bar.html">
-          <li id="title-next">Tutorial: Making a Responsive Navigation Bar</li>
-        </a>
-      </ul>
-  </div>
   <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -736,5 +731,6 @@
 
 
   </body>
+  <title>Rookie Dev - a place to learn about web development</title>
 
 </html>

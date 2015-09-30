@@ -30,6 +30,15 @@
 
 		$(document).ready(function() {
 
+      //if post-nav link is null, remove class
+      function isEmpty( el ) {
+        return !$.trim(el.html())
+      }
+      if (isEmpty($('.title-prev'))) {
+        $('.title-prev').remove();
+      }
+
+
       //make .page-heading the height of the screen
       function setHeight() {
         windowHeight = $(window).innerHeight();
@@ -559,7 +568,8 @@
   	<p class="post-title">Great Resources For Learning JavaScript</p>
   </header>
 
-    <p class="post-meta">Aug 5, 2015</p>
+  <p class="post-meta">Aug 5, 2015</p>
+
 <div class="wrapper"
   <article class="post-content">
     <p>I know from experience that learning JavaScript can be <em>very</em> challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It took me a couple of months to finally be comfortable in the language. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.</p>
@@ -612,32 +622,17 @@
 
   </article>
 
-<div class="PageNavigation">
-  <ul>
-    
-      <a class="prev" href="/2015/07/20/sass.html">
-        <li id=post-previous><</li>
-      </a>
-    
-    
-      <a class="next" href="/2015/09/05/mediaquery.html">
-        <li id="post-next">></li>
-      </a>
-      <a class="next" href="/2015/09/05/mediaquery.html"></a>
-      
-    </ul>
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2015/07/20/sass.html">
+      <li id="title-prev">How to Start Learning SCSS</li>
+    </a>
+    <a class="post-nav-link" href="/2015/09/05/mediaquery.html">
+      <li id="title-next">Learning About Media Queries</li>
+    </a>
+  </ul>
 </div>
 
-  <div>
-      <ul class="post-nav-title">
-        <a class="prev" href="/2015/07/20/sass.html">
-          <li id="title-prev">How to Start Learning SCSS</li>
-        </a>
-        <a class="next" href="/2015/09/05/mediaquery.html">
-          <li id="title-next">Learning About Media Queries</li>
-        </a>
-      </ul>
-  </div>
   <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -688,5 +683,6 @@
 
 
   </body>
+  <title>Rookie Dev - a place to learn about web development</title>
 
 </html>

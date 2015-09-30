@@ -186,42 +186,13 @@ $brown: #1D1E18;
 	font-family: initial;
 }
 
-.PageNavigation {
-	a {
-		color: #111;
-	}
-
-	ul {
-		list-style: none;
-		text-align: center;
-		border-top: 2px solid #d3d3d3;
-		margin-top: 10%;
-		margin-left: 0px;
-	}
-	li {
-		display: inline-block;
-		width: 30%;
-		font-size: 4em;
-		font-weight: bold;
-	}
-}
-
-#post-next {
-	text-align: right;
-}
-
-#post-previous {
-	text-align: left;
-}
-
 .post-nav-title {
 	list-style: none;
-	margin-bottom: 20%;
-	padding-bottom: 5%;
-	border-bottom: 2px solid #d3d3d3;
+	margin: 10% 0;
+	padding: 5% 0;
+	border-top: 2px solid #d3d3d3;
 	margin-left: 0px;
 	text-align: center;
-
 
 	li {
 		display: inline-block;
@@ -229,15 +200,28 @@ $brown: #1D1E18;
 		font-size: 1em;
 		font-weight: bold;
 		font-family: "lato", sans-serif;
-		width: 40%;
-		padding: 0 30px;
-		vertical-align: text-top;
+		border: 1px solid #d3d3d3;
+		height: 70px;
+		padding: 20px 15px 15px;
+		margin-bottom: 100px;
 
-		a:hover {
-			text-decoration: underline;
+		&:hover {
+			background-color: $orange;
 		}
 	}
 }
+
+#title-prev {
+	float: left;
+	width: 41%;
+}
+
+#title-next {
+	float: right;
+	width: 50%;
+}
+
+
 
 //about page
 

@@ -30,6 +30,15 @@
 
 		$(document).ready(function() {
 
+      //if post-nav link is null, remove class
+      function isEmpty( el ) {
+        return !$.trim(el.html())
+      }
+      if (isEmpty($('.title-prev'))) {
+        $('.title-prev').remove();
+      }
+
+
       //make .page-heading the height of the screen
       function setHeight() {
         windowHeight = $(window).innerHeight();
@@ -559,7 +568,8 @@
   	<p class="post-title">How to Start Learning SCSS</p>
   </header>
 
-    <p class="post-meta">Jul 20, 2015</p>
+  <p class="post-meta">Jul 20, 2015</p>
+
 <div class="wrapper"
   <article class="post-content">
     <h2 id="bridging-the-gap-between-css-and-sass">Bridging the gap between CSS and SASS</h2>
@@ -658,32 +668,17 @@
 
   </article>
 
-<div class="PageNavigation">
-  <ul>
-    
-      <a class="prev" href="/2015/06/24/nav-bar.html">
-        <li id=post-previous><</li>
-      </a>
-    
-    
-      <a class="next" href="/2015/08/05/resources.html">
-        <li id="post-next">></li>
-      </a>
-      <a class="next" href="/2015/08/05/resources.html"></a>
-      
-    </ul>
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2015/06/24/nav-bar.html">
+      <li id="title-prev">How to Make a Simple Navigation Menu From Scratch</li>
+    </a>
+    <a class="post-nav-link" href="/2015/08/05/resources.html">
+      <li id="title-next">Great Resources For Learning JavaScript</li>
+    </a>
+  </ul>
 </div>
 
-  <div>
-      <ul class="post-nav-title">
-        <a class="prev" href="/2015/06/24/nav-bar.html">
-          <li id="title-prev">How to Make a Simple Navigation Menu From Scratch</li>
-        </a>
-        <a class="next" href="/2015/08/05/resources.html">
-          <li id="title-next">Great Resources For Learning JavaScript</li>
-        </a>
-      </ul>
-  </div>
   <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -734,5 +729,6 @@
 
 
   </body>
+  <title>Rookie Dev - a place to learn about web development</title>
 
 </html>

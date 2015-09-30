@@ -9,38 +9,24 @@ layout: default
   	<p class="post-title">{{ page.title }}</p>
   </header>
 
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
 <div class="wrapper"
   <article class="post-content">
     {{ content }}
   </article>
 
-<div class="PageNavigation">
-  <ul>
-    {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">
-        <li id=post-previous><</li>
-      </a>
-    {% endif %}
-    {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}">
-        <li id="post-next">></li>
-      </a>
-      <a class="next" href="{{page.next.url}}"></a>
-      {% endif %}
-    </ul>
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="{{page.previous.url}}">
+      <li id="title-prev">{{page.previous.title}}</li>
+    </a>
+    <a class="post-nav-link" href="{{page.next.url}}">
+      <li id="title-next">{{page.next.title}}</li>
+    </a>
+  </ul>
 </div>
 
-  <div>
-      <ul class="post-nav-title">
-        <a class="prev" href="{{page.previous.url}}">
-          <li id="title-prev">{{page.previous.title}}</li>
-        </a>
-        <a class="next" href="{{page.next.url}}">
-          <li id="title-next">{{page.next.title}}</li>
-        </a>
-      </ul>
-  </div>
   {% include comments.html %}
 
 </div>
