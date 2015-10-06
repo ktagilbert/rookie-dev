@@ -20,7 +20,9 @@ layout: default
 
 <div class="main-content">
   <div class="post-wrapper">
+
   <ul class="post-list">
+      <gcse:search></gcse:search>
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>

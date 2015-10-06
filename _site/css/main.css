@@ -232,7 +232,7 @@ pre {
 
 .post-list {
   list-style: none;
-  padding: 5% 0;
+  padding: 2% 0 5%;
   margin-bottom: 0px; }
   .post-list > li {
     width: 25%;
@@ -446,6 +446,24 @@ img {
   text-align: center; }
   .site-header a {
     color: #1D1E18; }
+
+#gsc-i-id1 {
+  font-size: 1em; }
+
+td.gsc-search-button input {
+  background-color: #ffbaa7; }
+
+#___gcse_0 form {
+  float: right;
+  width: 30%;
+  padding-bottom: 0px; }
+
+.gsc-results-wrapper-overlay.gsc-results-wrapper-visible {
+  box-shadow: none;
+  border: 1px solid #a9a9a9; }
+
+a.gs-title {
+  color: #ffbaa7; }
 
 #menu {
   text-align: left;

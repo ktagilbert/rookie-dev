@@ -19,6 +19,32 @@ $brown: #1D1E18;
 	}
 }
 
+//search
+#gsc-i-id1 {
+	font-size: 1em;
+}
+td.gsc-search-button {
+	input {
+		background-color: $orange;
+	}
+}
+
+#___gcse_0 {
+	form {
+		float: right;
+		width: 30%;
+		padding-bottom: 0px;
+	}
+}
+
+.gsc-results-wrapper-overlay.gsc-results-wrapper-visible {
+	box-shadow: none;
+	border: 1px solid #a9a9a9;
+}
+
+a.gs-title {
+	color: $orange;
+}
 //desktop menu
 
 #menu {

@@ -14,4 +14,5 @@ markdown: kramdown
 
 # Heroku Config
 gems: ['kramdown']
+
 exclude: ['vendor', 'Procfile', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'config.ru']

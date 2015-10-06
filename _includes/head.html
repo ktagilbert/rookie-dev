@@ -27,6 +27,19 @@
 
 		$(document).ready(function() {
 
+    //google custom search
+    
+    (function() {
+      var cx = '000781641682772655655:rujiwi4am0e';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+
       //make .page-heading the height of the screen
       function setHeight() {
         windowHeight = $(window).innerHeight();
