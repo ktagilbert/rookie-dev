@@ -19,12 +19,15 @@ layout: default
   </div>
 
 <div class="main-content">
-  <div class="post-wrapper">
 
+  <div class="post-wrapper">
+    <input type="text" id="search-text" name="search">
+    <div id="no-results">
+      <p>Sorry, there are no results for that search. Try again?</p>
+    </div>
   <ul class="post-list">
-      <gcse:search></gcse:search>
     {% for post in site.posts %}
-      <li>
+      <li class="article">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

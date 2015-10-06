@@ -27,18 +27,47 @@
 
 		$(document).ready(function() {
 
-    //google custom search
-    
-    (function() {
-      var cx = '000781641682772655655:rujiwi4am0e';
-      var gcse = document.createElement('script');
-      gcse.type = 'text/javascript';
-      gcse.async = true;
-      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          '//cse.google.com/cse.js?cx=' + cx;
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(gcse, s);
-    })();
+    //search function
+
+
+    var $articleTitles = $('.post-link');
+    var searchTerm = "";
+
+    function search() {
+
+      $articleTitles.each(function(i, elem) {
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) {
+          $(elem).closest('.article').hide();
+          $('.article').css({
+            'width': '90%',
+            'margin': '0 5%'
+          });
+        } else {
+          $(elem).closest('.article').show();
+          $('.article').css({
+            'width': '25%',
+            'margin': '0'
+          });
+        }
+      });
+      if ($('.article:hidden').length === $articleTitles.length) {
+        $('#no-results').show();
+       }
+     }
+
+     $("#search-text").on('keydown', function(e) {
+       if (e.keyCode === 8) {
+         if (searchTerm.length > 0) {
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1);
+           $('#no-results').hide();
+           search();
+         }
+       } else {
+         searchTerm += String.fromCharCode(e.keyCode);
+         search();
+       }
+     });
+
 
       //make .page-heading the height of the screen
       function setHeight() {

@@ -232,7 +232,7 @@ pre {
 
 .post-list {
   list-style: none;
-  padding: 2% 0 5%;
+  padding: 7% 0 5%;
   margin-bottom: 0px; }
   .post-list > li {
     width: 25%;
@@ -447,23 +447,17 @@ img {
   .site-header a {
     color: #1D1E18; }
 
-#gsc-i-id1 {
-  font-size: 1em; }
-
-td.gsc-search-button input {
-  background-color: #ffbaa7; }
-
-#___gcse_0 form {
+#search-text {
   float: right;
-  width: 30%;
-  padding-bottom: 0px; }
+  margin: 1%;
+  outline: none;
+  width: 15%;
+  padding: 5px;
+  font-size: 0.7em; }
 
-.gsc-results-wrapper-overlay.gsc-results-wrapper-visible {
-  box-shadow: none;
-  border: 1px solid #a9a9a9; }
-
-a.gs-title {
-  color: #ffbaa7; }
+#no-results {
+  display: none;
+  text-align: center; }
 
 #menu {
   text-align: left;
@@ -588,9 +582,6 @@ a.gs-title {
 .post .post-title {
   color: #ffbaa7;
   text-shadow: 1px 3px 0px #e5a199; }
-
-.post-lists {
-  width: 150px; }
 
 .post-meta {
   text-align: center; }
