@@ -90,16 +90,15 @@ $brown: #1D1E18;
 #mobile-btn {
 	border-bottom: 15px double #111;
 	border-top: 5px solid #111;
-	z-index: 30000;
 	width: 10%;
 	height: 7px;
 	width: 30px;
 	height: 4px;
-	margin: 10px 10px;
+	margin: 2%;
 	display: none;
-	float: left;
 	cursor: pointer;
-	position: relative;
+	position: absolute;
+	right: 90%;
 }
 
 #mobile-menu {
@@ -512,7 +511,8 @@ $brown: #1D1E18;
 	top: 100%;
 
 	a, a:visited {
-		color: #d3d3d3;
+		color: #f1eee4;
+		text-shadow: none;
 	}
 
 	a:hover {
@@ -522,7 +522,8 @@ $brown: #1D1E18;
 }
 
 .footer-content {
-	color: #d3d3d3;
+  color: #f1eee4;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
 	text-align: right;
 	width: 100%;
 	padding-right: 40px;

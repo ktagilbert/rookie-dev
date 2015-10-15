@@ -502,16 +502,15 @@ img {
 #mobile-btn {
   border-bottom: 15px double #111;
   border-top: 5px solid #111;
-  z-index: 30000;
   width: 10%;
   height: 7px;
   width: 30px;
   height: 4px;
-  margin: 10px 10px;
+  margin: 2%;
   display: none;
-  float: left;
   cursor: pointer;
-  position: relative; }
+  position: absolute;
+  right: 90%; }
 
 #mobile-menu {
   display: none;
@@ -644,7 +643,7 @@ img {
   width: 50%; }
 
 #about-page {
-  background-color: #f1f1f1;
+  background-color: #F8F3DF;
   opacity: 1;
   padding-top: 150px;
   padding: 5% 5% 0 5%;
@@ -840,13 +839,15 @@ img {
   background-color: #4E5F76;
   top: 100%; }
   .site-footer a, .site-footer a:visited {
-    color: #d3d3d3; }
+    color: #f1eee4;
+    text-shadow: none; }
   .site-footer a:hover {
     color: #292768;
     text-decoration: underline; }
 
 .footer-content {
-  color: #d3d3d3;
+  color: #f1eee4;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
   text-align: right;
   width: 100%;
   padding-right: 40px;
