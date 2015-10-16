@@ -22,11 +22,19 @@ layout: default
 
 <div class="main-content">
 
+
+
   <div class="post-wrapper">
+    
+  <div class="search">
+    <i class="fa fa-search"></i>
     <input type="text" id="search-text" name="search">
-    <div id="no-results">
-      <p>Sorry, there are no results for that search. Try again?</p>
-    </div>
+  </div>
+
+  <div id="no-results">
+    <p>Sorry, there are no results for that search. Try again?</p>
+  </div>
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li class="article">

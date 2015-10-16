@@ -447,18 +447,6 @@ img {
   .site-header a {
     color: #1D1E18; }
 
-#search-text {
-  float: right;
-  margin: 1%;
-  outline: none;
-  width: 15%;
-  padding: 5px;
-  font-size: 0.7em; }
-
-#no-results {
-  display: none;
-  text-align: center; }
-
 #menu {
   text-align: left;
   padding: 10px 0 0 10px;
@@ -517,10 +505,12 @@ img {
   list-style: none;
   width: 100%;
   height: 30%;
-  float: left;
-  z-index: 100000;
   background-color: #fff;
   padding: 20px 0; }
+  #mobile-menu .fa {
+    float: left;
+    font-size: 1.5em;
+    cursor: pointer; }
 
 .home {
   background-color: #CFEAE1;
@@ -587,6 +577,25 @@ img {
   cursor: pointer;
   position: absolute;
   top: 30%; }
+
+#search-text {
+  float: right;
+  margin: 1%;
+  outline: none;
+  width: 15%;
+  padding: 5px;
+  font-size: 0.7em;
+  display: none; }
+
+#no-results {
+  display: none;
+  text-align: center; }
+
+.fa-search {
+  float: right;
+  padding: 1.5% 2% 0 0;
+  float: right;
+  cursor: pointer; }
 
 .main-content {
   background-color: #f1f1f1;
@@ -937,6 +946,9 @@ img {
   .post-nav-title {
     display: none; } }
 @media (max-width: 830px) {
+  #search-text {
+    width: 100%; }
+
   .top-angle {
     display: none; }
 
@@ -978,7 +990,13 @@ img {
     display: initial; } }
 @media (max-width: 1000px) {
   .top-angle {
-    bottom: 55%; } }
+    bottom: 55%; }
+
+  #search-text {
+    width: 250px; } }
+@media (max-width: 1200px) {
+  .top-angle {
+    bottom: 45%; } }
 @media (max-width: 1210px) and (min-width: 851px) {
   .post-list li {
     width: 40%; } }
