@@ -3,7 +3,7 @@ layout: post
 title: "Tutorial: Making a Responsive Navigation Bar"
 date: 2015-09-23 17:00:00
 excerpt: >
- If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial the will help.
+ If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
 ---
 
 Earlier, I showed you [how to make a nav bar from scratch using just HTML and CSS](http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html). I really believe creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Tutorial: Making a Responsive Navigation Bar</title>
-  <meta name="description" content="If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial the wi...">
+  <meta name="description" content="If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that w...">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://127.0.0.1:4000//2015/09/23/responsive-nav-bar.html">
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
@@ -121,9 +121,10 @@
       });
 
       //close mobile menu
-      $('.fa-times').on('click', function(event) {
+      $('#close-menu').on('click', function(event) {
         event.preventDefault;
         $('#mobile-menu').hide();
+        $("#mobile-btn").show();
       });
 
       //click on #home-arrow to scroll down to post-list
@@ -207,7 +208,8 @@
   <span id="mobile-btn"></span>
 
   <span id="mobile-menu">
-    <ul><i class="fa fa-times"></i>
+    <p id="close-menu">X</p>
+    <ul>
       <li><a href="/">Home</li>
       <li><a href="/about">About</a></li>
       <li><a href="/portfolio">Portfolio</a></li>

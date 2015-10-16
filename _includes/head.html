@@ -118,9 +118,10 @@
       });
 
       //close mobile menu
-      $('.fa-times').on('click', function(event) {
+      $('#close-menu').on('click', function(event) {
         event.preventDefault;
         $('#mobile-menu').hide();
+        $("#mobile-btn").show();
       });
 
       //click on #home-arrow to scroll down to post-list

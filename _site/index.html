@@ -121,9 +121,10 @@
       });
 
       //close mobile menu
-      $('.fa-times').on('click', function(event) {
+      $('#close-menu').on('click', function(event) {
         event.preventDefault;
         $('#mobile-menu').hide();
+        $("#mobile-btn").show();
       });
 
       //click on #home-arrow to scroll down to post-list
@@ -207,7 +208,8 @@
   <span id="mobile-btn"></span>
 
   <span id="mobile-menu">
-    <ul><i class="fa fa-times"></i>
+    <p id="close-menu">X</p>
+    <ul>
       <li><a href="/">Home</li>
       <li><a href="/about">About</a></li>
       <li><a href="/portfolio">Portfolio</a></li>
@@ -259,7 +261,7 @@
           <a class="post-link" href="/2015/09/23/responsive-nav-bar.html">Tutorial: Making a Responsive Navigation Bar</a>
         </h2>
 
-        <p>If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial the will help.
+        <p>If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
 </p>
       </li>
     

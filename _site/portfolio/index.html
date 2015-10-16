@@ -121,9 +121,10 @@
       });
 
       //close mobile menu
-      $('.fa-times').on('click', function(event) {
+      $('#close-menu').on('click', function(event) {
         event.preventDefault;
         $('#mobile-menu').hide();
+        $("#mobile-btn").show();
       });
 
       //click on #home-arrow to scroll down to post-list
@@ -207,7 +208,8 @@
   <span id="mobile-btn"></span>
 
   <span id="mobile-menu">
-    <ul><i class="fa fa-times"></i>
+    <p id="close-menu">X</p>
+    <ul>
       <li><a href="/">Home</li>
       <li><a href="/about">About</a></li>
       <li><a href="/portfolio">Portfolio</a></li>
