@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Learning About UI Design Basics</title>
+  <meta name="description" content="If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that w...">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://127.0.0.1:4000//2015/10/17/UI.html">
+  <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oleo Script" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55144371-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+
+		$(document).ready(function() {
+
+    //search function
+    $('.fa-search').on('click', function(event) {
+    $('#search-text').animate({width: 'toggle'}, '700');
+  });
+
+    var $articleTitles = $('.post-link');
+    var searchTerm = "";
+
+    function search() {
+
+      $articleTitles.each(function(i, elem) {
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) {
+          $(elem).closest('.article').hide();
+          $('.article').css({
+            'width': '90%',
+            'margin': '0 5%'
+          });
+        } else {
+          $(elem).closest('.article').show();
+          $('.article').css({
+            'width': '25%',
+            'margin': '0'
+          });
+        }
+      });
+      if ($('.article:hidden').length === $articleTitles.length) {
+        $('#no-results').show();
+       }
+     }
+
+     $("#search-text").on('keydown', function(e) {
+       if (e.keyCode === 8) {
+         if (searchTerm.length > 0) {
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1);
+           $('#no-results').hide();
+           search();
+         }
+       } else {
+         searchTerm += String.fromCharCode(e.keyCode);
+         search();
+       }
+     });
+
+      //make .page-heading the height of the screen
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //desktop nav bar changes color on scroll
+      var scroll_start = 0;
+      var startchange = $('p:first');
+      var offset = startchange.offset();
+
+        if (startchange.length || $('img')) {
+
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+
+            if(scroll_start > offset.top) {
+              $("#menu").stop().animate({
+                backgroundColor:'#111'}, "700");
+              $('.menu-item').css("color", "#fff");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff");
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
+            } else {
+              $('#menu').stop().animate({
+                backgroundColor: 'transparent'}, "700");
+              $('.menu-item').children().css("color", "#1D1E18");
+              $(".fa-twitter").css("color", "#1D1E18")
+              $(".fa-github").css("color", "#1D1E18");
+              $(".fa-envelope").css("color", "#1D1E18");
+            }
+        });
+      }
+
+      //mobile-menu-arrow on click, display mobile menu
+      $('#mobile-btn').on('click', function(event) {
+        event.preventDefault;
+        $("#mobile-menu").show();
+        $("#mobile-btn").hide();
+      });
+
+      //close mobile menu
+      $('#close-menu').on('click', function(event) {
+        event.preventDefault;
+        $('#mobile-menu').hide();
+        $("#mobile-btn").show();
+      });
+
+      //click on #home-arrow to scroll down to post-list
+
+      $('.fa-chevron-down').on('click', function(event) {
+        event.preventDefault;
+        $('html, body').animate({
+          scrollTop: $(".post-list").offset().top
+        },900);
+      });
+
+      // display about sidebar on button click
+
+      $(".button").click(function(event) {
+        event.preventDefault();
+        $('.about-content').children().hide();
+        $('.about-sidebar').fadeIn('700').css({
+          "width" : "80%",
+          "margin": "0 10%",
+          "border-right": "none",
+          "height": "100%"
+        });
+        $('#about-page').css("background-color", "#f1f1f1");
+        $('.about-content').css("padding-bottom", "0");
+      });
+
+      //back button on click, go back to original about page
+      //prevent a new tab from opening
+
+        $("#back-to-about").click(function(event) {
+          event.preventDefault();
+          $('.about-sidebar').hide();
+          $('.about-content').children().fadeIn();
+          $('#about-page').css("background-color", "#FFB3AA");
+        });
+
+      //page headers fade in & about content fades in
+      $('.about-content').fadeIn(1000);
+
+      //open all links in a new tab
+      $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+
+        if(!a.test(this.href)) {
+            $(this).click(function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            });
+          }
+        });
+
+    });
+ 	</script>
+ </head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <!-- <div class="wrapper"> -->
+      <!-- <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
+      <img src ="/assets/navicon.png/" id="mobile-menu" /> -->
+
+  <ul id="menu">
+      <li class="menu-item"><a href="/">Home</li>
+      <li class="menu-item"><a href="/about">About</a></li>
+      <li class="menu-item"><a href="/portfolio">Portfolio</a></li>
+      <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
+      <ul id=social-icons>
+        <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+  </ul>
+
+
+
+<div id=mobile-wrap>
+  <span id="mobile-btn"></span>
+
+  <span id="mobile-menu">
+    <p id="close-menu">X</p>
+    <ul>
+      <li><a href="/">Home</li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+  </span>
+</div>
+
+</header>
+
+    <!--<div class="page-content">-->
+        <!DOCTYPE html>
+<html>
+<div class="post">
+
+  <header class="post-header">
+  	<p class="post-title">Learning About UI Design Basics</p>
+  </header>
+
+  <p class="post-meta">Oct 17, 2015</p>
+
+<div class="wrapper"
+  <article class="post-content">
+    <p><img src="/assets/stagesofui.jpg" alt="Grasping UI Design" /></p>
+
+<p>Yesterday, I launched a new design for Rookie Dev. I’m excited but also wanted to create a post about why the need for a re-design. As you can tell, my blog has gone through a few designs. Here is why: one of the reasons I made Rookie Dev was because I wanted to work on a project that would help me learn and practice front-end web development. The site is a tool for me to experiment and learn with. One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works.</p>
+
+<h1 id="what-is-ui-design">What is UI Design?</h1>
+<p>UI design stands for user interface design. It entails creating an interface that works for your targeted user. If you are a UI Designer, you have to think about what your user is going to respond well to and create something that captures the purpose of your site. Here is a good quote to help you think about it:</p>
+
+<h3 id="user-interface-ui-design-focuses-on-anticipating-what-users-might-need-to-do-and-ensuring-that-the-interface-has-elements-that-are-easy-to-access-understand-and-use-to-facilitate-those-actions-ui-brings-together-concepts-from-interaction-design-visual-design-and-information-architecture">“User Interface (UI) Design focuses on anticipating what users might need to do and ensuring that the interface has elements that are easy to access, understand, and use to facilitate those actions. UI brings together concepts from interaction design, visual design, and information. architecture.”</h3>
+
+<p><strong>Here are some things that go into creating a solid UI Design:</strong>
+- knowledge of color theory
+- font choice
+- readability
+- consideration of how the site will look on different platforms/screen sizes
+- use contrast
+- use of spacing
+- organization of content
+- alignment of text, images, and inputs
+- site navigation
+- branding
+- consistency
+- purposeful page layout
+- hierarchy of text</p>
+
+<p>I’m going to touch on a few of these components today to help you get on your way to designing a great site. I do want to note that I am not an expert but I do have a passion for great UI. I can also lend you my knowledge of what goes into excellent branding from my experience in marketing, what I have studied concerning color theory, what I know about typography, hierarchy, spacing, and readability from my days spent laying out newspapers, and my knowledge of contrast from various art classes. <strong>I am also sure that if you draw on your various experiences, that you know a lot about these components as well!</strong> So here we go!</p>
+
+<h2 id="color-theory">Color theory</h2>
+
+<p>Great sites make great use of color. More importantly, they chose their colors for specific reasons. They seek to create a color palette that is harmonious, creates contrast, is vibrant,  elicits certain responses from users, and captures the purpose of the site. If you have taken any art class, you will have studied colors. If you can remember that class, you will probably recall that certain colors elicit certain responses.</p>
+
+<p><img src="/assets/colortheory1.jpg" alt="Color Theory" /></p>
+
+<p><img src="/assets/colortheory2.jpg" alt="Color Theory Basics" /></p>
+
+<p>So when you are working on a site, you can trying thinking about how you want your users to react to the colors on the page. For example, if you have a site about sharing knowledge, you could try a color palette that includes green, blue, black and white, or grey. For Rookie Dev, I stuck a shade of blue-green, black, white, grey, and orange. I wanted to associate the site with knowledge while showing incorporating some of my own personality which is whimsicaly/silly. I also wanted the content to be easily readable and not having colors that would overwhelm my audience.</p>
+
+<h2 id="font-choice-readability">Font choice/ Readability</h2>
+
+<p><a href="http://www.creativebloq.com/web-design/choose-web-fonts-1233034">Here is a great article</a></p>
+
+<ul>
+  <li>I suggest spending some time on Google Fonts to find 2-3 fonts that will work for your site.</li>
+  <li>Pair sans-serif fonts with a serif font</li>
+  <li>Think about the color of the text. Will it be harsh on the eyes? Will there be too much contrast? Think about what you like to read. Is it black test on a white background or is it a grey text on a creamy background? Then think about what these colors choices indicate about the site. Will it give a modern look or a more old-fashioned look? All of these will contribute to the context of your site (look up site design context here)</li>
+  <li>is it too small to read</li>
+  <li>how wide is the content on your page? (Google link to how wide content should be on a page)</li>
+</ul>
+
+<h2 id="navigation">Navigation</h2>
+
+<p>Mobile v. Desktop require different considerations.</p>
+
+<p>Desktop navigations should take up space. Don’t use a hamburger icon for desktop. You don’t need it. You need something that is easy to see, readily available, and will help your user easily navigate the site.</p>
+
+<p>Mobile sites are good for slideDown menus that are trendy right now. So go for it because your screen real estate actually calls for it here.</p>
+
+<ul>
+  <li>I forgot to account for post navigation when making Rookie Dev originally.</li>
+</ul>
+
+<h2 id="consistency">Consistency</h2>
+
+<ul>
+  <li>define colors for headers, links, menu items, etc.</li>
+  <li>have set font sizes for different header sizes</li>
+  <li>be consistent with your colors</li>
+</ul>
+
+<p>Okay, these are just some of the basics I wanted to touch on. These basics will help you as learn more about UI Design. I also think they will be able to help you at least start designing your own website. The best lesson here is to design your site before creating it! Don’t follow my lead and make 3 different designs for one site. I was dumb because I was new to everything. Instead, sit down with a sketch pad or PhotoShop or whatever else you want to use and think about how the site should function and look. Think about it carefully. Then make a plan and put it into action.</p>
+
+<p>Article from forbes (http://www.forbes.com/sites/quora/2013/12/23/what-do-i-need-to-know-to-become-a-ui-designer/):
+- All design that is beautiful has scaffolding of some kind. We crave order. It makes apps and interactions easy to understand, books feel like stories and movies feel cohesive. Most designs are built on grids of some kind, and most apps have very orderly grids. While grids are a topic for an entire post of their own, most site are built on very simple, squared off grids.</p>
+
+  </article>
+
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2015/09/23/responsive-nav-bar.html">
+      <li id="title-prev">Tutorial: Making a Responsive Navigation Bar</li>
+    </a>
+    <a class="post-nav-link" href="">
+      <li id="title-next"></li>
+    </a>
+  </ul>
+</div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'rookiedev';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+</div>
+</div>
+
+ <!--contribute container-->
+
+ <div class="contribute-container">
+ 		<span class="container-head">Want To Contribute to Rookie Dev?</span>
+ 	<ul>
+ 		<li>
+ 			<a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
+ 		 </li>
+  	</ul>
+ </div>
+
+</html>
+
+        <div class="wrapper">
+        </div>
+    <!--</div>-->
+
+
+
+    <footer class="site-footer">
+    <div class="footer-content">
+      <h3>Do You Like What You See Here?</h4>
+      <ul class="footer-list">
+        <li><a href="mailto:ktagilbert@gmail.com">send me an email to get in contact sometime</a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert</a></li>
+     </ul>
+   </div>
+
+</footer>
+
+
+  </body>
+  <title>Rookie Dev - a place to learn about web development</title>
+  
+
+</html>

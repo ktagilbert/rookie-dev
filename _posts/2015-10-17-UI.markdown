@@ -1,0 +1,78 @@
+---
+layout: post
+title: "Learning About UI Design Basics"
+date: 2015-10-17 12:26:00
+excerpt: >
+ If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
+---
+
+![Grasping UI Design](/assets/stagesofui.jpg)
+
+
+Yesterday, I launched a new design for Rookie Dev. I'm excited but also wanted to create a post about why the need for a re-design. As you can tell, my blog has gone through a few designs. Here is why: one of the reasons I made Rookie Dev was because I wanted to work on a project that would help me learn and practice front-end web development. The site is a tool for me to experiment and learn with. One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works.
+
+# What is UI Design?
+UI design stands for user interface design. It entails creating an interface that works for your targeted user. If you are a UI Designer, you have to think about what your user is going to respond well to and create something that captures the purpose of your site. Here is a good quote to help you think about it:
+
+### "User Interface (UI) Design focuses on anticipating what users might need to do and ensuring that the interface has elements that are easy to access, understand, and use to facilitate those actions. UI brings together concepts from interaction design, visual design, and information. architecture."
+
+**Here are some things that go into creating a solid UI Design:**
+- knowledge of color theory
+- font choice
+- readability
+- consideration of how the site will look on different platforms/screen sizes
+- use contrast
+- use of spacing
+- organization of content
+- alignment of text, images, and inputs
+- site navigation
+- branding
+- consistency
+- purposeful page layout
+- hierarchy of text
+
+I'm going to touch on a few of these components today to help you get on your way to designing a great site. I do want to note that I am not an expert but I do have a passion for great UI. I can also lend you my knowledge of what goes into excellent branding from my experience in marketing, what I have studied concerning color theory, what I know about typography, hierarchy, spacing, and readability from my days spent laying out newspapers, and my knowledge of contrast from various art classes. **I am also sure that if you draw on your various experiences, that you know a lot about these components as well!** So here we go!
+
+## Color theory
+
+Great sites make great use of color. More importantly, they chose their colors for specific reasons. They seek to create a color palette that is harmonious, creates contrast, is vibrant,  elicits certain responses from users, and captures the purpose of the site. If you have taken any art class, you will have studied colors. If you can remember that class, you will probably recall that certain colors elicit certain responses.
+
+
+![Color Theory](/assets/colortheory1.jpg)
+
+![Color Theory Basics](/assets/colortheory2.jpg)
+
+So when you are working on a site, you can trying thinking about how you want your users to react to the colors on the page. For example, if you have a site about sharing knowledge, you could try a color palette that includes green, blue, black and white, or grey. For Rookie Dev, I stuck a shade of blue-green, black, white, grey, and orange. I wanted to associate the site with knowledge while showing incorporating some of my own personality which is whimsicaly/silly. I also wanted the content to be easily readable and not having colors that would overwhelm my audience.
+
+##Font choice/ Readability
+
+[Here is a great article](http://www.creativebloq.com/web-design/choose-web-fonts-1233034)
+
+- I suggest spending some time on Google Fonts to find 2-3 fonts that will work for your site.
+- Pair sans-serif fonts with a serif font
+- Think about the color of the text. Will it be harsh on the eyes? Will there be too much contrast? Think about what you like to read. Is it black test on a white background or is it a grey text on a creamy background? Then think about what these colors choices indicate about the site. Will it give a modern look or a more old-fashioned look? All of these will contribute to the context of your site (look up site design context here)
+- is it too small to read
+- how wide is the content on your page? (Google link to how wide content should be on a page)
+
+##Navigation
+
+Mobile v. Desktop require different considerations.
+
+Desktop navigations should take up space. Don't use a hamburger icon for desktop. You don't need it. You need something that is easy to see, readily available, and will help your user easily navigate the site.
+
+Mobile sites are good for slideDown menus that are trendy right now. So go for it because your screen real estate actually calls for it here.
+
+- I forgot to account for post navigation when making Rookie Dev originally.
+
+## Consistency
+
+- define colors for headers, links, menu items, etc.
+- have set font sizes for different header sizes
+- be consistent with your colors
+
+
+Okay, these are just some of the basics I wanted to touch on. These basics will help you as learn more about UI Design. I also think they will be able to help you at least start designing your own website. The best lesson here is to design your site before creating it! Don't follow my lead and make 3 different designs for one site. I was dumb because I was new to everything. Instead, sit down with a sketch pad or PhotoShop or whatever else you want to use and think about how the site should function and look. Think about it carefully. Then make a plan and put it into action. 
+
+
+Article from forbes (http://www.forbes.com/sites/quora/2013/12/23/what-do-i-need-to-know-to-become-a-ui-designer/):
+- All design that is beautiful has scaffolding of some kind. We crave order. It makes apps and interactions easy to understand, books feel like stories and movies feel cohesive. Most designs are built on grids of some kind, and most apps have very orderly grids. While grids are a topic for an entire post of their own, most site are built on very simple, squared off grids.

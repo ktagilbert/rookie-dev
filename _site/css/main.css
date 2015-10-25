@@ -21,7 +21,8 @@ dl, dd, ol, ul, figure {
   dl h6, dd h1, dd h2, dd h3, dd h4, dd h5, dd h6, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, figure h1, figure h2, figure h3, figure h4, figure h5, figure h6 {
     font-family: "georgia", "serif";
     padding-bottom: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #292768; }
 
 p, li {
   font-size: 18px;
@@ -851,7 +852,8 @@ sticky footer
   float: right; }
   .footer-content h3 {
     padding-bottom: 0px;
-    font-family: "oleo script", "serif"; }
+    font-family: "oleo script", "serif";
+    color: #f1eee4; }
 
 .footer-list li {
   text-align: right;
