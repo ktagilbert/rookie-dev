@@ -125,7 +125,7 @@ home page
 	background-color: #fff;
 	width: 100%;
 	height: 100%;
-	bottom: 64.5%;
+	bottom: 60.5%;
 	position: absolute;
 	right: 90%;
 	-ms-transform: skew(25deg); /* IE 9 */
@@ -171,7 +171,7 @@ home page
 	padding: 10% 0 5% 0;
 	color: $blue;
 	top: 15%;
-	left: 34%;
+	left: 35%;
 	position: absolute;
 }
 
@@ -188,6 +188,7 @@ home page
 	cursor: pointer;
 	position: absolute;
 	top: 25%;
+	left: 47%;
 }
 
 /*********************************
@@ -226,6 +227,10 @@ post details
 .post-wrapper {
 	margin: 0 10%;
   background-color: #fff;
+}
+
+.post-list:nth-child(1n) {
+	padding-top: 3%;
 }
 
 .post-content {
@@ -332,7 +337,7 @@ about page
 	height: 100%;
 	float: left;
 	background-color: #fff;
-	padding: 108px 2% 2% 2%;
+	padding: 108px 2% 5% 2%;
 	border-right: 4px solid #666;
 
 	img {
@@ -382,9 +387,9 @@ about page
 }
 
 .button {
-    border: solid 4px #fff;
+    border: solid 4px $blue;
     display: block;
-    color: #fff;
+    color: $blue;
     margin: auto;
     border-radius: 5px;
     font-size: 18px;
@@ -393,12 +398,6 @@ about page
 		outline: none;
 		margin-top: 80px;
 		cursor: pointer;
-}
-
-.button:hover {
-	background-color: #fff;
-	color: #666;
-	font-weight: bold;
 }
 
 /*********************************
@@ -654,8 +653,12 @@ media queries
 }
 
 @media(max-width: 850px) {
-	.about-content {
-		width: 100%;
+	.post {
+		.about-content {
+			width: 100%;
+			float: none;
+			margin: auto;
+		}
 	}
 	#back-to-about {
 		display: initial;
@@ -696,5 +699,11 @@ media queries
 		li {
 			width: 40%;
 		}
+	}
+}
+
+@media(max-width: 1430px) {
+	.top-angle {
+		bottom: 43%;
 	}
 }
