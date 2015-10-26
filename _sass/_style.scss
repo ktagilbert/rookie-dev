@@ -403,46 +403,41 @@ about page
 /*********************************
 portfolio page
 *********************************/
-#portfolio-header {
+
+.portfolio-page {
 	text-align: center;
-  font-size: 4em;
-  color: #fff;
-	display: none;
-	line-height: 4;
+	width: 100%;
+	margin: 5% 2% 0 2%;
 }
 
-.projects-content {
-	text-align: center;
+.portfolio-intro {
+	p {
+		width: 80%;
+		margin: auto;
+	}
 }
 
-.portfolio-list {
+#portfolio {
 	list-style: none;
-	padding-bottom: 10%;
+	margin: 1% 2%;
+	padding: 5%;
+	height: 90%;
 
-	li, a:visited {
-		padding-bottom: 20px;
-		font-weight: bold;
+	li {
+		width: 45%;
+		display: inline-block;
+		list-style: none;
 	}
-	img {
-		width: 50%;
-		box-shadow: 1px 1px 5px 3px #d3d3d3;
-	}
+}
+
+.projects-img {
+	max-width: 100%;
+	padding: 0px;
 }
 
 /*********************************
 contribute container
 *********************************/
-
-.container-head {
- 	text-align: $header-align;
- 	font-size: 22px;
- 	font-weight: 400px;
- 	color: #909090;
- 	display: block;
- 	padding: 0 0 18px 0;
- 	margin-left: 0px;
-	font-weight: bold;
-}
 
 .contribute-container {
 	font-size: 16px;
@@ -453,6 +448,8 @@ contribute container
  	padding: 10px 0 10px 0;
  	position: relative;
  	overflow: hidden;
+	float: inherit;
+	clear: both;
 
  	li {
  		list-style: none;
@@ -475,6 +472,17 @@ contribute container
 		font-weight: 500;
 		text-decoration: none;
 	}
+}
+
+.container-head {
+ 	text-align: $header-align;
+ 	font-size: 22px;
+ 	font-weight: 400px;
+ 	color: #909090;
+ 	display: block;
+ 	padding: 0 0 18px 0;
+ 	margin-left: 0px;
+	font-weight: bold;
 }
 
 /*********************************
