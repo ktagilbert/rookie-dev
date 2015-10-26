@@ -552,13 +552,6 @@ home page
   height: 100%;
   overflow: hidden; }
 
-.tagline {
-  padding: 10% 0 5% 0;
-  color: #292768;
-  top: 19%;
-  left: 34%;
-  position: absolute; }
-
 .logo {
   color: #EB4144;
   padding: 0;
@@ -582,10 +575,18 @@ home page
   letter-spacing: -7px;
   margin-bottom: 0; }
 
+.tagline {
+  padding: 10% 0 5% 0;
+  color: #292768;
+  top: 15%;
+  left: 34%;
+  position: absolute; }
+
 .fa-chevron-down {
   outline: none;
   border: none;
   padding: 15px;
+  margin-bottom: 2%;
   background-color: #666;
   color: #fff;
   border-radius: 30px;
@@ -593,7 +594,7 @@ home page
   opacity: 0.7;
   cursor: pointer;
   position: absolute;
-  top: 30%; }
+  top: 25%; }
 
 /*********************************
 search field
@@ -793,10 +794,11 @@ contribute container
   text-align: center;
   font-size: 22px;
   font-weight: 400px;
-  color: #292768;
+  color: #909090;
   display: block;
   padding: 0 0 18px 0;
-  margin-left: 0px; }
+  margin-left: 0px;
+  font-weight: bold; }
 
 .contribute-container {
   font-size: 16px;
@@ -814,14 +816,15 @@ contribute container
     text-align: center;
     width: 210px;
     margin-top: 20px;
-    border: solid 3px #666;
+    border: solid 3px #909090;
     display: block;
     padding: 3px;
-    color: #292768;
+    color: #909090;
     margin: auto;
     border-radius: 5px; }
   .contribute-container a:hover {
-    color: #EB4144;
+    color: #292768;
+    font-weight: 500;
     text-decoration: none; }
 
 /*********************************
