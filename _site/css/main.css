@@ -529,7 +529,7 @@ mobile menu
 home page
 *********************************/
 .home {
-  background-color: #CFEAE1;
+  background-color: #dcf8e8;
   overflow: hidden; }
 
 .top-angle {
@@ -770,23 +770,56 @@ portfolio page
   width: 100%;
   margin: 5% 2% 0 2%; }
 
-.portfolio-intro p {
-  width: 80%;
-  margin: auto; }
+#portfolio-intro {
+  text-align: center; }
+  #portfolio-intro p {
+    margin: auto;
+    width: 65%; }
 
 #portfolio {
-  list-style: none;
+  list-style: none; }
+
+#gallery-wrapper {
   margin: 1% 2%;
   padding: 5%;
   height: 90%; }
-  #portfolio li {
-    width: 45%;
-    display: inline-block;
-    list-style: none; }
 
-.projects-img {
-  max-width: 100%;
-  padding: 0px; }
+.rows {
+  display: inline-block;
+  list-style: none;
+  max-height: 480px;
+  background-color: #F8F3DF;
+  width: 90%;
+  margin: 0;
+  padding: 0; }
+  .rows li {
+    display: inline-block;
+    max-height: 480px; }
+  .rows img {
+    width: 50%;
+    float: left;
+    z-index: 3000;
+    clear: none;
+    min-height: 100%;
+    padding: 0px; }
+  .rows .img-right {
+    float: right;
+    width: 50%; }
+  .rows .portfolio-txt {
+    text-align: center;
+    width: 50%;
+    color: #111; }
+  .rows h4 {
+    padding: 20% 2% 0 2%; }
+  .rows h4, .rows p {
+    color: #222; }
+  .rows a {
+    font-size: 0.8em;
+    color: #444;
+    font-weight: bold; }
+
+.rows:nth-of-type(even) {
+  background-color: #dff1f8; }
 
 /*********************************
 contribute container
