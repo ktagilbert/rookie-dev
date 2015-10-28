@@ -765,6 +765,9 @@ about page
 /*********************************
 portfolio page
 *********************************/
+#portfolio {
+  list-style: none; }
+
 .portfolio-page {
   text-align: center;
   width: 100%;
@@ -775,9 +778,6 @@ portfolio page
   #portfolio-intro p {
     margin: auto;
     width: 65%; }
-
-#portfolio {
-  list-style: none; }
 
 #gallery-wrapper {
   margin: 1% 2%;
@@ -1003,6 +1003,9 @@ media queries
     text-align: center;
     width: 60%; } }
 @media (max-width: 850px) {
+  #gallery-wrapper {
+    width: 80%; }
+
   .post .about-content {
     width: 100%;
     float: none;
@@ -1026,7 +1029,20 @@ media queries
     bottom: 55%; }
 
   #search-text {
-    width: 250px; } }
+    width: 250px; }
+
+  .rows {
+    display: block;
+    overflow: hidden; }
+    .rows h4 {
+      font-size: 0.7em;
+      text-align: left; }
+    .rows li, .rows img {
+      width: 100%; }
+
+  #gallery-wrapper {
+    width: 60%;
+    margin: auto; } }
 @media (max-width: 1200px) {
   .top-angle {
     bottom: 45%; } }
