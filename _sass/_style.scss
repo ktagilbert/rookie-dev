@@ -4,7 +4,7 @@ $header-align: center;
 $container-color: #fff;
 $large: 80px;
 $orange: #EB4144;
-$mint: #dcf8e8;
+$mint: #edf4f4;
 $tan: #F8F3DF;
 $blue: #292768;
 
@@ -278,7 +278,7 @@ post details
 		margin-bottom: 100px;
 
 		&:hover {
-			background-color: $tan;
+			background-color: #dff1f8;
 			color: $blue;
 		}
 	}
@@ -485,11 +485,12 @@ contribute container
 
 .contribute-container {
 	font-size: 16px;
- 	background-color: #f1f1f1;
  	display: block;
- 	margin: 0px;
+ 	margin: 5% 0 0.5px;
  	line-height: 50px;
- 	padding: 10px 0 10px 0;
+ 	padding: 3%;
+	border-top: 2px solid #222;
+	border-bottom: 2px solid #222;
  	position: relative;
  	overflow: hidden;
 	float: inherit;
@@ -504,12 +505,11 @@ contribute container
 		text-align: $header-align;
 		width: 210px;
 		margin-top: 20px;
-		border: solid 3px #909090;
+		border: solid 2px #111;
 		display: block;
 		padding: 3px;
-		color: #909090;
 		margin: auto;
-		border-radius: 5px;
+		color: #333;
 	}
 	a:hover {
 		color: $blue;
@@ -522,7 +522,7 @@ contribute container
  	text-align: $header-align;
  	font-size: 22px;
  	font-weight: 400px;
- 	color: #909090;
+ 	color: #111;
  	display: block;
  	padding: 0 0 18px 0;
  	margin-left: 0px;
@@ -534,16 +534,16 @@ sticky footer
 *********************************/
 
 .site-footer {
-	border: none;
+	border: 2px solid #222;
 	position: absolute;
   bottom: 0;
   width: 100%;
   height: 110px;
-	background-color: #4E5F76;
+	background-color: #edf4f4;
 	top: 100%;
 
 	a, a:visited {
-		color: #f1eee4;
+		color: #111;
 		text-shadow: none;
 	}
 
@@ -554,8 +554,7 @@ sticky footer
 }
 
 .footer-content {
-  color: #f1eee4;
-  text-shadow: 1px 2px 0px #2c2e38, 3px 3px 0px #5c5f72;
+  color: #111;
 	text-align: right;
 	width: 100%;
 	padding-right: 40px;
@@ -565,7 +564,8 @@ sticky footer
 	h3 {
 		padding-bottom: 0px;
 		font-family: "oleo script", "serif";
-		color: #f1eee4;
+		color: #111;
+		font-size: 1em;
 	}
 }
 

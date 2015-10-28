@@ -529,7 +529,7 @@ mobile menu
 home page
 *********************************/
 .home {
-  background-color: #dcf8e8;
+  background-color: #edf4f4;
   overflow: hidden; }
 
 .top-angle {
@@ -668,7 +668,7 @@ post details
     padding: 20px 15px 15px;
     margin-bottom: 100px; }
     .post-nav-title li:hover {
-      background-color: #F8F3DF;
+      background-color: #dff1f8;
       color: #292768; }
 
 #title-prev {
@@ -826,11 +826,12 @@ contribute container
 *********************************/
 .contribute-container {
   font-size: 16px;
-  background-color: #f1f1f1;
   display: block;
-  margin: 0px;
+  margin: 5% 0 0.5px;
   line-height: 50px;
-  padding: 10px 0 10px 0;
+  padding: 3%;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
   position: relative;
   overflow: hidden;
   float: inherit;
@@ -842,12 +843,11 @@ contribute container
     text-align: center;
     width: 210px;
     margin-top: 20px;
-    border: solid 3px #909090;
+    border: solid 2px #111;
     display: block;
     padding: 3px;
-    color: #909090;
     margin: auto;
-    border-radius: 5px; }
+    color: #333; }
   .contribute-container a:hover {
     color: #292768;
     font-weight: 500;
@@ -857,7 +857,7 @@ contribute container
   text-align: center;
   font-size: 22px;
   font-weight: 400px;
-  color: #909090;
+  color: #111;
   display: block;
   padding: 0 0 18px 0;
   margin-left: 0px;
@@ -867,23 +867,22 @@ contribute container
 sticky footer
 *********************************/
 .site-footer {
-  border: none;
+  border: 2px solid #222;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 110px;
-  background-color: #4E5F76;
+  background-color: #edf4f4;
   top: 100%; }
   .site-footer a, .site-footer a:visited {
-    color: #f1eee4;
+    color: #111;
     text-shadow: none; }
   .site-footer a:hover {
     color: #292768;
     text-decoration: underline; }
 
 .footer-content {
-  color: #f1eee4;
-  text-shadow: 1px 2px 0px #2c2e38, 3px 3px 0px #5c5f72;
+  color: #111;
   text-align: right;
   width: 100%;
   padding-right: 40px;
@@ -892,7 +891,8 @@ sticky footer
   .footer-content h3 {
     padding-bottom: 0px;
     font-family: "oleo script", "serif";
-    color: #f1eee4; }
+    color: #111;
+    font-size: 1em; }
 
 .footer-list li {
   text-align: right;
