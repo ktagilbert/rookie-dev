@@ -579,6 +579,9 @@ sticky footer
 		padding: 5px;
 		line-height: 1;
 	}
+	li:last-of-type {
+		font-size: 12px;
+	}
 }
 
 /*********************************
@@ -759,9 +762,6 @@ media queries
 		margin: auto;
 	}
 }
-
-
-
 
 @media(max-width: 1210px) and (min-width: 851px) {
 	.post-list {

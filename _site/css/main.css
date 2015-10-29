@@ -902,6 +902,8 @@ sticky footer
   list-style: none;
   padding: 5px;
   line-height: 1; }
+.footer-list li:last-of-type {
+  font-size: 12px; }
 
 /*********************************
 media queries
