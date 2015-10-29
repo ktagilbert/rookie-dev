@@ -575,7 +575,7 @@ home page
   margin-bottom: 0; }
 
 .tagline {
-  padding: 10% 0 5% 0;
+  padding: 7% 0 2% 0;
   color: #292768;
   top: 15%;
   left: 35%;
@@ -593,7 +593,7 @@ home page
   opacity: 0.7;
   cursor: pointer;
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 47%; }
 
 /*********************************
@@ -827,13 +827,14 @@ contribute container
 .contribute-container {
   font-size: 16px;
   display: block;
-  margin: 5% 0 0.5px;
+  margin-bottom: 1px;
   line-height: 50px;
   padding: 3%;
   border-top: 2px solid #222;
   border-bottom: 2px solid #222;
   position: relative;
   overflow: hidden;
+  background-color: #fff;
   float: inherit;
   clear: both; }
   .contribute-container li {
@@ -872,7 +873,7 @@ sticky footer
   bottom: 0;
   width: 100%;
   height: 110px;
-  background-color: #edf4f4;
+  background-color: #dff1f8;
   top: 100%; }
   .site-footer a, .site-footer a:visited {
     color: #111;
@@ -1043,12 +1044,20 @@ media queries
   #gallery-wrapper {
     width: 60%;
     margin: auto; } }
-@media (max-width: 1200px) {
-  .top-angle {
-    bottom: 45%; } }
 @media (max-width: 1210px) and (min-width: 851px) {
   .post-list li {
     width: 40%; } }
 @media (max-width: 1430px) {
   .top-angle {
-    bottom: 43%; } }
+    bottom: 43%; }
+
+  .fa-chevron-down {
+    top: 21%;
+    left: 51%; } }
+@media (max-width: 1200px) {
+  .top-angle {
+    bottom: 45%; }
+
+  .fa-chevron-down {
+    top: 19%;
+    left: 55%; } }
