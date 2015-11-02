@@ -71,7 +71,7 @@ Mobile sites are good for slideDown menus that are trendy right now. So go for i
 - be consistent with your colors
 
 
-Okay, these are just some of the basics I wanted to touch on. These basics will help you as learn more about UI Design. I also think they will be able to help you at least start designing your own website. The best lesson here is to design your site before creating it! Don't follow my lead and make 3 different designs for one site. I was dumb because I was new to everything. Instead, sit down with a sketch pad or PhotoShop or whatever else you want to use and think about how the site should function and look. Think about it carefully. Then make a plan and put it into action. 
+Okay, these are just some of the basics I wanted to touch on. These basics will help you as learn more about UI Design. I also think they will be able to help you at least start designing your own website. The best lesson here is to design your site before creating it! Don't follow my lead and make 3 different designs for one site. I was dumb because I was new to everything. Instead, sit down with a sketch pad or PhotoShop or whatever else you want to use and think about how the site should function and look. Think about it carefully. Then make a plan and put it into action.
 
 
 Article from forbes (http://www.forbes.com/sites/quora/2013/12/23/what-do-i-need-to-know-to-become-a-ui-designer/):

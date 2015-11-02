@@ -553,12 +553,11 @@ home page
 
 .logo {
   color: #EB4144;
-  padding: 0;
-  position: absolute;
-  left: 35%; }
+  padding: 0; }
 
 #logo-wrap {
-  margin: 5%; }
+  margin: 5%;
+  text-align: center; }
 
 #line-one {
   margin: 5% 0 0 0;
@@ -575,11 +574,9 @@ home page
   margin-bottom: 0; }
 
 .tagline {
-  padding: 7% 0 2% 0;
+  padding: 10% 0 2% 0;
   color: #292768;
-  top: 15%;
-  left: 35%;
-  position: absolute; }
+  position: relative; }
 
 .fa-chevron-down {
   outline: none;
@@ -591,10 +588,7 @@ home page
   border-radius: 30px;
   font-size: 15px;
   opacity: 0.7;
-  cursor: pointer;
-  position: absolute;
-  top: 15%;
-  left: 47%; }
+  cursor: pointer; }
 
 /*********************************
 search field
@@ -987,12 +981,6 @@ media queries
     display: none; }
 
   .logo {
-    position: initial; }
-
-  .tagline {
-    position: initial; }
-
-  .fa-chevron-down {
     position: initial; } }
 @media (max-width: 820px) {
   .row-one img {
@@ -1056,10 +1044,3 @@ media queries
   .fa-chevron-down {
     top: 21%;
     left: 51%; } }
-@media (max-width: 1200px) {
-  .top-angle {
-    bottom: 45%; }
-
-  .fa-chevron-down {
-    top: 19%;
-    left: 55%; } }
