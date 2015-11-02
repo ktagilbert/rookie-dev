@@ -148,6 +148,7 @@ home page
 #logo-wrap {
 	margin: 5%;
 	text-align: center;
+	position: relative;
 }
 
 #line-one {
@@ -293,7 +294,7 @@ about page
 *********************************/
 
 #about-page {
-	background-color: $tan;
+	background-color: #f1f1f1;
   opacity: 1;
   padding-top: 150px;
   padding: 5% 5% 0 5%;
