@@ -536,7 +536,7 @@ home page
   background-color: #fff;
   width: 100%;
   height: 100%;
-  bottom: 60.5%;
+  bottom: 57.5%;
   position: absolute;
   right: 90%;
   -ms-transform: skew(25deg);
@@ -678,16 +678,13 @@ post details
 about page
 *********************************/
 #about-page {
-  background-color: #f1f1f1;
-  opacity: 1;
   padding-top: 150px;
   padding: 5% 5% 0 5%;
   height: 100%;
   color: #292768; }
   #about-page p {
     font-size: 18px;
-    font-weight: 500;
-    color: #292768; }
+    font-weight: 500; }
 
 .my-background .about-header {
   font-family: "oleo script", "serif";
@@ -706,9 +703,9 @@ about page
   width: 25%;
   height: 100%;
   float: left;
-  background-color: #fff;
+  background-color: #f1f1f1;
   padding: 108px 2% 5% 2%;
-  border-right: 4px solid #666; }
+  border-right: 2px solid #666; }
   .about-sidebar img {
     padding: 0;
     border-radius: 50%; }

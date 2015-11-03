@@ -125,7 +125,7 @@ home page
 	background-color: #fff;
 	width: 100%;
 	height: 100%;
-	bottom: 60.5%;
+	bottom: 57.5%;
 	position: absolute;
 	right: 90%;
 	-ms-transform: skew(25deg); /* IE 9 */
@@ -294,8 +294,6 @@ about page
 *********************************/
 
 #about-page {
-	background-color: #f1f1f1;
-  opacity: 1;
   padding-top: 150px;
   padding: 5% 5% 0 5%;
   height: 100%;
@@ -304,7 +302,6 @@ about page
 	p {
 		font-size: 18px;
 		font-weight: 500;
-		color: $blue;
 	}
 }
 
@@ -331,9 +328,9 @@ about page
 	width: 25%;
 	height: 100%;
 	float: left;
-	background-color: #fff;
+	background-color: #f1f1f1;
 	padding: 108px 2% 5% 2%;
-	border-right: 4px solid #666;
+	border-right: 2px solid #666;
 
 	img {
 		padding: 0;
