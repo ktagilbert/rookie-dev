@@ -61,6 +61,8 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  max-height: 100%;
+  max-width: 100%;
   padding: 0 0 30px 0; }
 
 /**
@@ -441,6 +443,21 @@ img {
     color: #099; }
 
 /*********************************
+fonts
+*********************************/
+@font-face {
+  font-family: "lato";
+  src: url("//fonts.googleapis.com/css?family=Lato"); }
+@font-face {
+  font-family: "oleo-script";
+  src: url("//fonts.googleapis.com/css?family=Oleo Script"); }
+@font-face {
+  font-family: "alice";
+  src: url("//fonts.googleapis.com/css?family=Alice"); }
+/*********************************
+variables
+*********************************/
+/*********************************
 header
 *********************************/
 .site-header {
@@ -456,7 +473,7 @@ desktop menu
   padding: 10px 0 0 10px;
   width: 100%;
   font-weight: bold;
-  font-family: "lato", serif;
+  font-family: "lato", tahoma, sans-serif;
   color: #111;
   height: 40px;
   position: fixed;
@@ -568,7 +585,7 @@ home page
   letter-spacing: -2px; }
 
 #line-two {
-  font-family: "lato", sans-serif;
+  font-family: "lato", tahoma, sans-serif;
   line-height: 0.2;
   font-size: 11.5em;
   letter-spacing: -7px;
@@ -657,7 +674,7 @@ post details
     color: #666;
     font-size: 1em;
     font-weight: bold;
-    font-family: "lato", sans-serif;
+    font-family: "lato", tahoma, sans-serif;
     border: 1px solid #d3d3d3;
     height: 70px;
     padding: 20px 15px 15px;
@@ -788,7 +805,8 @@ portfolio page
     display: inline-block;
     max-height: 480px; }
   .rows img {
-    width: 50%;
+    max-width: 50%;
+    max-height: auto;
     float: left;
     z-index: 3000;
     clear: none;
@@ -796,7 +814,7 @@ portfolio page
     padding: 0px; }
   .rows .img-right {
     float: right;
-    width: 50%; }
+    max-width: 50%; }
   .rows .portfolio-txt {
     text-align: center;
     width: 50%;
@@ -889,7 +907,7 @@ sticky footer
 
 .footer-list li {
   text-align: right;
-  font-family: "lato", sans-serif;
+  font-family: "lato", tahoma, sans-serif;
   font-size: 16px;
   list-style: none;
   padding: 5px;
@@ -1012,7 +1030,14 @@ media queries
     display: none; }
 
   #more-about {
-    display: initial; } }
+    display: initial; }
+
+  .rows li, .rows .portfolio-text, .rows h4, .rows a {
+    max-width: 100%;
+    margin: 0 7%; }
+  .rows img {
+    max-width: 100%;
+    margin: 0 10%; } }
 @media (max-width: 1000px) {
   .top-angle {
     bottom: 55%; }
@@ -1021,17 +1046,20 @@ media queries
     width: 250px; }
 
   .rows {
-    display: block;
-    overflow: hidden; }
-    .rows h4 {
-      font-size: 0.7em;
-      text-align: left; }
-    .rows li, .rows img {
-      width: 100%; }
+    background-color: transparent; }
+    .rows li, .rows .portfolio-text, .rows h4, .rows a {
+      display: block;
+      font-size: 16px;
+      font-family: tahoma;
+      width: 100%;
+      padding-left: 10%;
+      text-align: center; }
+    .rows img {
+      padding: 10% 0;
+      max-width: 80%; }
 
-  #gallery-wrapper {
-    width: 60%;
-    margin: auto; } }
+  .rows:nth-of-type(even) {
+    background-color: transparent; } }
 @media (max-width: 1210px) and (min-width: 851px) {
   .post-list li {
     width: 40%; } }
