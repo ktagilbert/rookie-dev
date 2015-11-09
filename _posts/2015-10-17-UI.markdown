@@ -1,0 +1,73 @@
+---
+layout: post
+title: "An Intro to UI Design Basics"
+date: 2015-10-17 12:26:00
+excerpt: >
+ If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
+---
+
+![Learning About UI Design](/assets/uxpic.jpg)
+
+
+A few days ago, I launched a new design for Rookie Dev. I'm excited but also wanted to create a post about why the need for a re-design. If you have been following me for a while you will have noticed that my blog has gone through a few different looks. Here is why: one of the reasons I made Rookie Dev was because I wanted to work on a project that would help me learn and practice front-end web development. The site is a tool for me to experiment and learn with. One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works.
+
+# What is UI Design?
+UI design stands for user interface design. It entails creating an interface that works for your targeted user. If you are a UI Designer, you have to think about what your user is going to respond well to and create something that captures the purpose of your site. Here is a good quote that may help you understand better
+
+### "User Interface (UI) Design focuses on anticipating what users might need to do and ensuring that the interface has elements that are easy to access, understand, and use to facilitate those actions. UI brings together concepts from interaction design, visual design, and information. architecture."
+
+**Some key concepts that go into creating a solid UI Design:**
+- knowledge of color theory
+- font choice
+- readability
+- consideration of how the site will look on different platforms/screen sizes
+- use contrast
+- use of spacing
+- organization of content
+- alignment of text, images, and inputs
+- site navigation
+- branding
+- consistency
+- purposeful page layout
+- hierarchy of text
+
+I'm going to touch on a few of these components today to help you get on your way to designing a great site. I do want to note that I am not an expert but I do have a passion for UI Design. I formed my knowledge of UI Design just by drawing on a bunch of different experiences I've had. I knew a little bit about branding from my experience in marketing and I studied color theory during various art courses. Then, I realized I also knew what I know about typography, hierarchy, spacing, and readability from my days spent laying out newspapers. After that, I just used Google to help me learn more. **So I am also sure that if you draw on your various experiences that you know a lot too! More than you would expect probably.**
+
+## Color theory
+
+Great sites make great use of color. More importantly, they chose their colors for specific reasons. They seek to create a color palette that is harmonious, creates contrast, is vibrant,  elicits certain responses from users, and captures the purpose of the site. If you have taken any art class, you will have studied colors. If you can remember that class, you will probably recall that certain colors elicit certain responses.
+
+
+![Color Theory](/assets/colortheory1.jpg)
+
+![Color Theory Basics](/assets/colortheory2.jpg)
+
+So when you are working on a site, you can try thinking about how you want your users to react to the colors on the page. For example, if you have a site about sharing knowledge, you could try using a color palette that includes green, blue, black and white, or grey. For Rookie Dev, I stuck to shades of blue, black, white, grey, and orange. I chose these colors because I wanted to associate the site with knowledge while still incorporating some of my own personality which is a bit whimsical. I also wanted the content to be easily readable and to avoid colors that would be overwhelming.
+
+##Font choice/ Readability
+
+![font pairing for web design](/assets/creativemess.jpg)
+
+When you begin to think about your fonts, I suggest spending some time on Google Fonts to find 2-3 that will work for your site.
+
+- Pro tip: pairing a sans-serif fonts with a serif font will help provide balance.
+- Think about the color of your text. Will your combinations be harsh on the eyes? Will there be too much contrast? Think about what you like to read. Do you want black text on a white background or would grey text on a creamy background be better for your purpose?
+- Put some careful thought into how large or small you want your fonts to be. Remember, think about hierarchy. Take time to decide how large all of your headers will be and then decide on how large the paragraph text will be in relation.
+- Finally, consider how wide he content on your page is? Does it span the whole width of the screen without any margins? If so, you may want to spent some time reading [Google's material design guidelines](https://www.google.com/design/spec/material-design/introduction.html) -  I found it super helpful!
+
+##Navigation
+
+The first thing you should consider is how you want to your users to be able to navigate on your desktop site vs. your mobile site. Mobile v. Desktop definitely require different considerations! You can save the hamburger icon for your mobile site where space is limited (I learned this lesson the hard way!). You don't need it for your desktop site because space isn't an issue there. Instead, focus on creating a menu that is easy to find and use.  
+
+Then, on mobile site you can think about simplifying things and strategically using your limited screen real estate. When you are working on the mobile design site, you can think about using a menu that slides down from an icon and then goes away when the user wishes to close it.
+
+
+## Consistency
+
+Consistency is simple. Once, you have gone through and made all your initial design decisions go through them again. This time ask yourself if you use your colors consistently across the site. Then do the same for everything else you have decided on. Make sure your buttons all look the same. Make sure your icons are uniform. Make sure your margins are consistent. Make sure your hover effects are appropriately uniform. *Seriously, go through everything.* There's even a bonus for being consistent with your design elements - it will help you avoid repeating code (as long as you utilize the purpose of classes vs. id's).
+
+Okay, these are just some of the basics I wanted to touch on. I hope that they will help you as you learn more about UI Design.
+
+**The best lesson here is to design your site before creating it!** Don't follow my lead and make 3 different designs for one site. I was dumb because I was new to everything. Instead, sit down with a sketch pad, PhotoShop,  or whatever else you want to use and think about how the site should look and function. Then make a plan and put it into action.
+
+Let me know how it goes!
