@@ -720,16 +720,14 @@ about page
   width: 25%;
   height: 100%;
   float: left;
-  background-color: #f1f1f1;
+  background-color: #edf4f4;
   padding: 108px 2% 5% 2%;
-  border-right: 2px solid #666; }
+  border-right: 2px solid; }
   .about-sidebar img {
     padding: 0;
     border-radius: 50%; }
   .about-sidebar h1 {
     text-align: center;
-    color: #666;
-    font-weight: bold;
     padding-top: 50px;
     font-size: 22px; }
   .about-sidebar li {
@@ -740,8 +738,7 @@ about page
     text-align: center; }
   .about-sidebar .fa {
     padding-right: 20px;
-    color: #EB4144;
-    font-weight: bold; }
+    color: #EB4144; }
 
 #back-to-about {
   display: none; }
@@ -802,19 +799,14 @@ portfolio page
   margin: 0;
   padding: 0; }
   .rows li {
-    display: inline-block;
-    max-height: 480px; }
+    display: inline-block; }
   .rows img {
+    max-height: 800px;
     max-width: 50%;
-    max-height: auto;
     float: left;
     z-index: 3000;
     clear: none;
-    min-height: 100%;
     padding: 0px; }
-  .rows .img-right {
-    float: right;
-    max-width: 50%; }
   .rows .portfolio-txt {
     text-align: center;
     width: 50%;

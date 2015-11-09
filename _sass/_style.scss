@@ -27,7 +27,7 @@ $header-align: center;
 $container-color: #fff;
 $large: 80px;
 $orange: #EB4144;
-$mint: #edf4f4;
+$skyblue: #edf4f4;
 $tan: #F8F3DF;
 $blue: #292768;
 
@@ -140,7 +140,7 @@ home page
 *********************************/
 
 .home {
-	background-color: $mint;
+	background-color: $skyblue;
 	overflow: hidden;
 }
 
@@ -351,9 +351,9 @@ about page
 	width: 25%;
 	height: 100%;
 	float: left;
-	background-color: #f1f1f1;
+	background-color: $skyblue;
 	padding: 108px 2% 5% 2%;
-	border-right: 2px solid #666;
+	border-right: 2px solid;
 
 	img {
 		padding: 0;
@@ -362,8 +362,6 @@ about page
 
 	h1 {
 		text-align: center;
-		color: #666;
-		font-weight: bold;
 		padding-top: 50px;
 		font-size: 22px;
 	}
@@ -378,7 +376,6 @@ about page
 	.fa {
 			padding-right: 20px;
 			color: $orange;
-			font-weight: bold;
 	}
 }
 
@@ -454,24 +451,15 @@ portfolio page
 
 	li {
 		display: inline-block;
-		max-height: 480px;
 	}
-
 	img {
+		max-height: 800px;
 		max-width: 50%;
-		max-height: auto;
 		float: left;
 		z-index: 3000;
 		clear: none;
-		min-height: 100%;
 		padding: 0px;
 	}
-
-	.img-right {
-		float: right;
-		max-width: 50%;
-	}
-
 	.portfolio-txt {
 		text-align: center;
 		width: 50%;
