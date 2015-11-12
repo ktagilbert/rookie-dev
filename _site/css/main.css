@@ -614,11 +614,15 @@ home page
 /*********************************
 search field
 *********************************/
+.search {
+  overflow: hidden;
+  height: 80px; }
+
 #search-text {
   float: right;
   margin: 1%;
   outline: none;
-  width: 15%;
+  width: 18%;
   padding: 5px;
   font-size: 0.7em;
   display: none; }
@@ -663,7 +667,8 @@ post details
   text-align: center; }
 
 .post-link {
-  font-family: initial; }
+  font-family: initial;
+  margin-top: 2%; }
 
 .post-nav-title {
   list-style: none;
