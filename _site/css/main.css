@@ -703,78 +703,91 @@ post details
 about page
 *********************************/
 #about-page {
-  padding-top: 150px;
   padding: 5% 5% 0 5%;
   height: 100%;
+  width: 90%;
   color: #292768; }
   #about-page p {
     font-size: 18px;
     font-weight: 500; }
 
-.my-background .about-header {
-  font-family: "oleo script", "serif";
-  padding-top: 80px;
-  font-size: 2em;
-  color: #EB4144; }
+#name-intro {
+  overflow: hidden; }
+  #name-intro .katie-pic {
+    float: left;
+    width: 30%;
+    padding: 2%;
+    position: relative; }
+  #name-intro .about-me {
+    float: right;
+    width: 60%;
+    position: relative;
+    padding-top: 6%; }
+  #name-intro h1 {
+    color: #EB4144; }
 
-.post .about-content {
-  display: none;
-  color: #111;
-  width: 70%;
-  float: right;
-  padding-bottom: 80px; }
-
-.about-sidebar {
-  width: 25%;
-  height: 100%;
-  float: left;
-  background-color: #edf4f4;
-  padding: 108px 2% 5% 2%;
-  border-right: 2px solid; }
-  .about-sidebar img {
-    padding: 0;
-    border-radius: 50%; }
-  .about-sidebar h1 {
-    text-align: center;
-    padding-top: 50px;
-    font-size: 22px; }
-  .about-sidebar li {
-    font-size: 16px;
+#background-info {
+  border-top: 2px solid #222;
+  padding: 2%;
+  margin-top: 3%; }
+  #background-info .text-left {
+    float: left;
+    width: 60%;
+    position: relative;
+    padding-top: 3%; }
+    #background-info .text-left p {
+      font-size: 0.9em; }
+  #background-info #skills-list {
+    width: 35%;
+    float: right;
+    position: relative;
+    display: inline-block;
     list-style: none; }
-  .about-sidebar a {
-    color: #111;
-    text-align: center; }
-  .about-sidebar .fa {
-    padding-right: 20px;
-    color: #EB4144; }
+    #background-info #skills-list h3 {
+      padding: 0;
+      color: #111;
+      letter-spacing: 4px;
+      font-size: 1.5em; }
+    #background-info #skills-list ul {
+      list-style: none; }
+    #background-info #skills-list li {
+      font-size: 0.95rem; }
+    #background-info #skills-list .list-left {
+      float: left;
+      width: 49%; }
+    #background-info #skills-list .list-right {
+      float: right;
+      width: 49%;
+      list-style: none; }
+    #background-info #skills-list .fa {
+      padding-right: 10px;
+      color: #EB4144;
+      font-size: 0.8em; }
 
-#back-to-about {
-  display: none; }
-  #back-to-about p {
+#list-column ul {
+  list-style: none;
+  text-align: center; }
+#list-column li {
+  width: 31%;
+  position: relative;
+  display: inline-block;
+  padding: 1%;
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: #111; }
+  #list-column li p {
+    font-size: 1rem;
     text-align: left;
-    color: #666;
-    font-size: 16px;
-    font-weight: bold; }
-  #back-to-about .fa {
-    margin-top: 80px;
-    font-size: 2em;
-    color: #EB4144; }
-
-#more-about {
-  display: none; }
-
-.button {
-  border: solid 4px #292768;
-  display: block;
-  color: #292768;
-  margin: auto;
-  border-radius: 5px;
-  font-size: 18px;
-  padding: 20px 25px;
-  background-color: transparent;
-  outline: none;
-  margin-top: 80px;
-  cursor: pointer; }
+    padding: 30px 0 20px; }
+  #list-column li button {
+    background-color: #EB4144;
+    outline: none;
+    width: 100%;
+    padding: 5%;
+    border: none; }
+  #list-column li a {
+    color: #fff;
+    font-size: 1.2rem; }
 
 /*********************************
 portfolio page
@@ -793,7 +806,7 @@ portfolio page
     margin: auto;
     width: 65%; }
 
-#gallery-wrapper {
+.gallery-wrapper {
   margin: 1% 2%;
   padding: 5%;
   height: 90%; }
@@ -1010,7 +1023,7 @@ media queries
     text-align: center;
     width: 60%; } }
 @media (max-width: 850px) {
-  #gallery-wrapper {
+  .gallery-wrapper {
     width: 80%; }
 
   .post .about-content {
