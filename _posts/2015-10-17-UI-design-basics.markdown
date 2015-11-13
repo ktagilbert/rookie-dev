@@ -3,7 +3,8 @@ layout: post
 title: "An Intro to UI Design Basics"
 date: 2015-10-17 12:26:00
 excerpt: >
- If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
+ One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works. UI design stands for user interface design. It entails creating an interface that works for your targeted user.
+
 ---
 
 ![Learning About UI Design](/assets/uxpic.jpg)

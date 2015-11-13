@@ -722,19 +722,21 @@ about page
     float: right;
     width: 60%;
     position: relative;
-    padding-top: 6%; }
+    padding-top: 2%; }
   #name-intro h1 {
     color: #EB4144; }
 
 #background-info {
   border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
   padding: 2%;
-  margin-top: 3%; }
+  margin: 3% 0;
+  overflow: auto; }
   #background-info .text-left {
     float: left;
     width: 60%;
     position: relative;
-    padding-top: 3%; }
+    padding: 5% 0; }
     #background-info .text-left p {
       font-size: 0.9em; }
   #background-info #skills-list {
@@ -744,7 +746,7 @@ about page
     display: inline-block;
     list-style: none; }
     #background-info #skills-list h3 {
-      padding: 0;
+      padding: 20px 0;
       color: #111;
       letter-spacing: 4px;
       font-size: 1.5em; }
@@ -766,7 +768,8 @@ about page
 
 #list-column ul {
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  padding: 5% 0; }
 #list-column li {
   width: 31%;
   position: relative;
@@ -774,17 +777,20 @@ about page
   padding: 1%;
   font-weight: bolder;
   font-size: 1.5em;
-  color: #111; }
+  color: #111;
+  vertical-align: text-top; }
   #list-column li p {
     font-size: 1rem;
     text-align: left;
-    padding: 30px 0 20px; }
+    padding: 30px 0 20px;
+    height: 420px; }
   #list-column li button {
     background-color: #EB4144;
     outline: none;
     width: 100%;
     padding: 5%;
-    border: none; }
+    border: none;
+    vertical-align: bottom; }
   #list-column li a {
     color: #fff;
     font-size: 1.2rem; }
