@@ -431,7 +431,6 @@ about page
 			font-size: 1rem;
 			text-align: left;
 			padding: 30px 0 20px;
-			height: 420px;
 		}
 		button {
 			background-color: $orange;
@@ -813,6 +812,19 @@ media queries
 	.post-list {
 		li {
 			width: 40%;
+		}
+	}
+}
+
+@media(max-width: 1137px) {
+	#list-column {
+		li {
+			display: initial;
+		}
+		li > button {
+			padding: 2%;
+			width: 50%;
+			margin: 0 25% 10%;
 		}
 	}
 }

@@ -30,12 +30,7 @@
 
 		$(document).ready(function() {
 
-    //portfolio action
-    //  var caption = $(this).attr('title');
-    //
-    //  $('.projects-img').hover(function() {
-    //    $(this)..append('<div class="title">' + caption + '</div>');
-    //  });
+
     //search function
     $('.fa-search').on('click', function(event) {
     $('#search-text').animate({width: 'toggle'}, '700');
@@ -141,34 +136,6 @@
           scrollTop: $(".post-list").offset().top
         },900);
       });
-
-      // display about sidebar on button click
-
-      $(".button").click(function(event) {
-        event.preventDefault();
-        $('.about-content').children().hide();
-        $('.about-sidebar').fadeIn('700').css({
-          "width" : "80%",
-          "margin": "0 10%",
-          "border-right": "none",
-          "height": "100%"
-        });
-        $('#about-page').css("background-color", "#f1f1f1");
-        $('.about-content').css("padding-bottom", "0");
-      });
-
-      //back button on click, go back to original about page
-      //prevent a new tab from opening
-
-        $("#back-to-about").click(function(event) {
-          event.preventDefault();
-          $('.about-sidebar').hide();
-          $('.about-content').children().fadeIn();
-          $('#about-page').css("background-color", "#F8F3DF");
-        });
-
-      //page headers fade in & about content fades in
-      $('.about-content').fadeIn(1000);
 
       //open all links in a new tab
       $('a').each(function() {
@@ -352,7 +319,7 @@
     <a class="post-nav-link" href="/2015/09/12/breaking-into-web-development.html">
       <li id="title-prev">Breaking Into Web Development (In Small Steps)</li>
     </a>
-    <a class="post-nav-link" href="/2015/10/17/UI-design-basics.html">
+    <a class="post-nav-link" href="/2015/10/17/UI.html">
       <li id="title-next">An Intro to UI Design Basics</li>
     </a>
   </ul>
