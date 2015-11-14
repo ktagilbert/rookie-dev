@@ -782,7 +782,8 @@ about page
   #list-column li p {
     font-size: 1rem;
     text-align: left;
-    padding: 30px 0 20px; }
+    padding: 30px 0 20px;
+    height: 400px; }
   #list-column li button {
     background-color: #EB4144;
     outline: none;
@@ -1087,7 +1088,15 @@ media queries
   #list-column li > button {
     padding: 2%;
     width: 50%;
-    margin: 0 25% 10%; } }
+    margin: 0 25% 10%; }
+  #list-column li > p {
+    height: auto; } }
+@media (max-width: 1150px) {
+  #background-info #skills-list {
+    width: initial;
+    float: none; }
+  #background-info .text-left {
+    width: initial; } }
 @media (max-width: 1430px) {
   .top-angle {
     bottom: 43%; }
