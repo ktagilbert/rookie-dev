@@ -1056,7 +1056,17 @@ media queries
     margin: 0 7%; }
   .rows img {
     max-width: 100%;
-    margin: 0 10%; } }
+    margin: 0 10%; }
+
+  #name-intro .about-me {
+    float: none;
+    width: 100%; }
+    #name-intro .about-me h1 {
+      text-align: center; }
+  #name-intro .katie-pic {
+    float: none;
+    border-radius: 50%;
+    width: 45%; } }
 @media (max-width: 1000px) {
   .top-angle {
     bottom: 55%; }
@@ -1093,8 +1103,15 @@ media queries
     height: auto; } }
 @media (max-width: 1150px) {
   #background-info #skills-list {
-    width: initial;
+    width: 100%;
     float: none; }
+    #background-info #skills-list ul {
+      margin: 0; }
+    #background-info #skills-list h3 {
+      text-align: left;
+      margin-left: 3%; }
+    #background-info #skills-list li {
+      font-size: 1em; }
   #background-info .text-left {
     width: initial; } }
 @media (max-width: 1430px) {

@@ -779,6 +779,21 @@ media queries
 			margin: 0 10%;
 		}
 	}
+	#name-intro {
+		.about-me {
+			float: none;
+			width: 100%;
+
+			h1 {
+				text-align: center;
+			}
+		}
+		.katie-pic {
+			float: none;
+			border-radius: 50%;
+			width: 45%;
+		}
+	}
 }
 
 @media(max-width: 1000px) {
@@ -836,8 +851,20 @@ media queries
 @media(max-width: 1150px) {
 	#background-info {
 		#skills-list {
-			width: initial;
+			width: 100%;
 			float: none;
+
+			ul {
+				margin: 0;
+			}
+
+			h3 {
+				text-align: left;
+				margin-left: 3%;
+			}
+			li {
+			font-size: 1em;
+			}
 		}
 		.text-left {
 			width: initial;
