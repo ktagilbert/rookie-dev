@@ -448,6 +448,25 @@ about page
 	}
 }
 
+.personal-time {
+	width: 100%;
+	background-color: #f1f1f1;
+
+	.hobbies {
+		list-style: none;
+		text-align: center;
+		padding: 5% 0;
+
+		li {
+			max-width: 25%;
+			display: inline-block;
+			font-weight: bold;
+			font-family: "lato", tahoma;
+			font-size: 1.3em;
+			padding: 0 3%;
+		}
+	}
+}
 /*********************************
 portfolio page
 *********************************/
@@ -763,12 +782,6 @@ media queries
 			height: 100%;
 		}
 	}
-	.about-sidebar {
-		display: none;
-	}
-	#more-about {
-		display: initial;
-	}
 	.rows {
 		li, .portfolio-text, h4, a {
 			max-width: 100%;
@@ -844,6 +857,13 @@ media queries
 		}
 		li > p {
 			height: auto;
+		}
+	}
+	.hobbies {
+		li {
+			h4 {
+				font-size: 0.7em;
+			}
 		}
 	}
 }

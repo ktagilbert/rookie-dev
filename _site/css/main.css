@@ -795,6 +795,21 @@ about page
     color: #fff;
     font-size: 1.2rem; }
 
+.personal-time {
+  width: 100%;
+  background-color: #f1f1f1; }
+  .personal-time .hobbies {
+    list-style: none;
+    text-align: center;
+    padding: 5% 0; }
+    .personal-time .hobbies li {
+      max-width: 25%;
+      display: inline-block;
+      font-weight: bold;
+      font-family: "lato", tahoma;
+      font-size: 1.3em;
+      padding: 0 3%; }
+
 /*********************************
 portfolio page
 *********************************/
@@ -1045,12 +1060,6 @@ media queries
     padding: 10px;
     height: 100%; }
 
-  .about-sidebar {
-    display: none; }
-
-  #more-about {
-    display: initial; }
-
   .rows li, .rows .portfolio-text, .rows h4, .rows a {
     max-width: 100%;
     margin: 0 7%; }
@@ -1100,7 +1109,10 @@ media queries
     width: 50%;
     margin: 0 25% 10%; }
   #list-column li > p {
-    height: auto; } }
+    height: auto; }
+
+  .hobbies li h4 {
+    font-size: 0.7em; } }
 @media (max-width: 1150px) {
   #background-info #skills-list {
     width: 100%;
