@@ -459,6 +459,12 @@ about page
 	width: 100%;
 	background-color: #f1f1f1;
 
+	h2 {
+		text-align: center;
+		padding-top: 2%;
+		color: #111;
+	}
+
 	.hobbies {
 		list-style: none;
 		text-align: center;
@@ -471,6 +477,14 @@ about page
 			font-family: "lato", tahoma;
 			font-size: 1.3em;
 			padding: 0 3%;
+		}
+		h4 {
+			vertical-align: text-top;
+			display: inherit;
+		}
+		img {
+			display: inherit;
+			vertical-align: middle;
 		}
 	}
 }
@@ -680,6 +694,13 @@ media queries
 	.about-content {
 		font-size: 14px;
 		padding-right: 40px;
+	}
+	.personal-time {
+		.hobbies {
+			h4 {
+				font-size: 0.5em;
+			}
+		}
 	}
 }
 

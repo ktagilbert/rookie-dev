@@ -802,6 +802,10 @@ about page
 .personal-time {
   width: 100%;
   background-color: #f1f1f1; }
+  .personal-time h2 {
+    text-align: center;
+    padding-top: 2%;
+    color: #111; }
   .personal-time .hobbies {
     list-style: none;
     text-align: center;
@@ -813,6 +817,12 @@ about page
       font-family: "lato", tahoma;
       font-size: 1.3em;
       padding: 0 3%; }
+    .personal-time .hobbies h4 {
+      vertical-align: text-top;
+      display: inherit; }
+    .personal-time .hobbies img {
+      display: inherit;
+      vertical-align: middle; }
 
 /*********************************
 portfolio page
@@ -978,7 +988,10 @@ media queries
 
   .about-content {
     font-size: 14px;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+
+  .personal-time .hobbies h4 {
+    font-size: 0.5em; } }
 @media (max-width: 720px) {
   .tagline {
     padding: 20% 0; }
