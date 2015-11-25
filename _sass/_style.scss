@@ -411,6 +411,13 @@ about page
 	}
 }
 
+#creative-work {
+	.mobile-img {
+		display: none;
+		padding: 0px;
+	}
+}
+
 #list-column {
 	ul {
 		list-style: none;
@@ -806,6 +813,12 @@ media queries
 			border-radius: 50%;
 			width: 45%;
 		}
+	}
+	#desktop-creative-work {
+		display: none;
+	}
+	.mobile-img {
+		display: block;
 	}
 }
 

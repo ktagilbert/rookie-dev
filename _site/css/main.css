@@ -766,6 +766,10 @@ about page
       color: #EB4144;
       font-size: 0.8em; }
 
+#creative-work .mobile-img {
+  display: none;
+  padding: 0px; }
+
 #list-column ul {
   list-style: none;
   text-align: center;
@@ -1075,7 +1079,13 @@ media queries
   #name-intro .katie-pic {
     float: none;
     border-radius: 50%;
-    width: 45%; } }
+    width: 45%; }
+
+  #desktop-creative-work {
+    display: none; }
+
+  .mobile-img {
+    display: block; } }
 @media (max-width: 1000px) {
   .top-angle {
     bottom: 55%; }

@@ -137,6 +137,15 @@
         },900);
       });
 
+      //about page creative work change
+        if ($(window).width() < 960) {
+          $('#desktop-creative-work').hide();
+          $('.mobile-img').show()
+        } else {
+          $('#desktop-creative-work').show();
+          $('.mobile-img').hide();
+        }
+
       //open all links in a new tab
       $('a').each(function() {
         var a = new RegExp('/' + window.location.host + '/');
