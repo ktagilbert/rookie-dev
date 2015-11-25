@@ -138,13 +138,15 @@
       });
 
       //about page creative work change
-        if ($(window).width() < 960) {
+      $(window).resize(function() {
+        if ($(window).width() < 850) {
           $('#desktop-creative-work').hide();
           $('.mobile-img').show()
         } else {
           $('#desktop-creative-work').show();
           $('.mobile-img').hide();
         }
+      });
 
       //open all links in a new tab
       $('a').each(function() {
