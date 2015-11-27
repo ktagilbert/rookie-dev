@@ -1108,16 +1108,18 @@ media queries
 
   .rows {
     background-color: transparent; }
-    .rows li, .rows .portfolio-text, .rows h4, .rows a {
-      display: block;
-      font-size: 16px;
-      font-family: tahoma;
-      width: 100%;
-      padding-left: 10%;
-      text-align: center; }
+    .rows li, .rows .portfolio-text {
+      display: none;
+      background-color: #edf4f4;
+      position: absolute;
+      max-width: 100%;
+      opacity: 0.95; }
     .rows img {
       padding: 10% 0;
-      max-width: 80%; }
+      max-width: 80%;
+      padding: 0;
+      box-shadow: 3px 2px 1px 0px #d3d3d3;
+      border: solid 1px #f2f2f2; }
 
   .rows:nth-of-type(even) {
     background-color: transparent; } }
