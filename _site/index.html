@@ -13,7 +13,6 @@
   <link rel="alternate" type="application/rss+xml" title="Rookie Dev" href="http://127.0.0.1:4000//feed.xml" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oleo Script" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -33,19 +32,39 @@
 
     //portfolio-text
 
-    var $txt = $('.portfolio-txt');
+    //new approach:
+    //on hover hide img
+    //show h4 in it's space and have a background of $skyblue
 
-    $('.portfolio-img').each(function(i, elem) {
-      var $img = $('.portfolio-img');
+    // $('.portfolio-img').each(function(i, elem) {
+    //    var $img = $('.portfolio-img');
+    //    var $row = $('.rows');
+    //
+    //    $img.on('mouseoover').addClass('hover');
+    //      if (($img).hasClass('hover')) {
+    //        $(elem).on('mouseover', function(e) {
+    //          console.log("you hovered");
+    //       })
+    //   };
 
-      $img.on('mouseoover').addClass('hover');
-        if (($img).hasClass('hover')) {
-          $(elem).on('mouseover', function(event) {
-            event.preventDefault;
-            $(elem).closest('.portfolio-txt').show();
-          })
-        }
-    });
+    // var $txt = $('.portfolio-txt');
+    //
+    // $('.rows').each(function(i, elem) {
+    //   var $img = $('.portfolio-img');
+    //   var $row = $('.rows');
+    //
+    //   $img.on('mouseoover').addClass('hover');
+    //     if (($img).hasClass('hover')) {
+    //       $(elem).on('mouseover', function(event) {
+    //         event.preventDefault;
+    //         $('.portfolio-img').siblings().show();
+    //         $txt.css({
+    //           'width': '63%',
+    //           'display': 'block'
+    //         });
+    //       })
+    //     }
+    // });
       // if ($(elem).is('hover') === true) {
       //   $(elem).closest('.portfolio-txt').show();
     // $('.portfolio-img').on('mouseover', function(event) {
@@ -240,11 +259,10 @@
 
   <div id="logo-wrap">
     <span class="logo">
-      <p id="line-one">Rookie</p>
-      <p id="line-two">DEV</p>
-      <p class="tagline">A place to learn about web development</p>
+      <p id="line-one">Katie Gilbert</p>
+      <p class="tagline">Portfolio & Technical Marketing Blog</p>
       <i class="fa fa-chevron-down"></i>
-    </span>  
+    </span>
   </div>
 
   </div>

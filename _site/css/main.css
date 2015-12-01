@@ -274,7 +274,7 @@ img {
   color: #FFB3AA;
   text-align: center;
   padding-top: 160px;
-  font-family: "oleo script", "serif"; }
+  font-family: "alice", "serif"; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
@@ -450,9 +450,6 @@ fonts
   src: url("//fonts.googleapis.com/css?family=Lato"); }
 @font-face {
   font-family: "oleo-script";
-  src: url("//fonts.googleapis.com/css?family=Oleo Script"); }
-@font-face {
-  font-family: "alice";
   src: url("//fonts.googleapis.com/css?family=Alice"); }
 /*********************************
 variables
@@ -579,25 +576,20 @@ home page
   position: relative; }
 
 #line-one {
-  margin: 5% 0 0 0;
-  font-family: "oleo script", serif;
-  padding: 0;
-  font-size: 8em;
-  letter-spacing: -0.3rem;
-  -webkit-text-size-adjust: none; }
-
-#line-two {
-  font-family: "lato", tahoma, sans-serif;
-  line-height: 0.2;
-  font-size: 11.5em;
-  letter-spacing: -1rem;
-  margin-bottom: 0;
-  -webkit-text-size-adjust: none; }
+  letter-spacing: -4px;
+  font-family: lato;
+  font-size: 7em;
+  font-weight: 100;
+  color: #EB4144;
+  padding: 5% 0 0;
+  font-family: "alice", serif; }
 
 .tagline {
-  padding: 10% 0 2% 0;
+  padding: 2% 0 2% 0;
   color: #292768;
-  position: relative; }
+  position: relative;
+  font-size: 1.1em;
+  font-family: pt sans; }
 
 .fa-chevron-down {
   outline: none;
@@ -836,7 +828,8 @@ portfolio page
   margin: 5% 2% 0 2%; }
 
 #portfolio-intro {
-  text-align: center; }
+  text-align: center;
+  padding-top: 5%; }
   #portfolio-intro p {
     margin: auto;
     width: 65%; }
@@ -852,7 +845,7 @@ portfolio page
   max-height: 480px;
   background-color: #F8F3DF;
   width: 90%;
-  margin: 0;
+  margin: 2% 0 0;
   padding: 0; }
   .rows li {
     display: inline-block; }
@@ -1077,8 +1070,8 @@ media queries
     padding: 10px;
     height: 100%; }
 
-  .rows li, .rows .portfolio-text, .rows h4, .rows a {
-    max-width: 100%;
+  .rows li, .rows .portfolio-text, .rows a {
+    width: 100%;
     margin: 0 7%; }
   .rows img {
     max-width: 100%;
@@ -1112,7 +1105,7 @@ media queries
       display: none;
       background-color: #edf4f4;
       position: absolute;
-      max-width: 100%;
+      width: 58%;
       opacity: 0.95; }
     .rows img {
       padding: 10% 0;

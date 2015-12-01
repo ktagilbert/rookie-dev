@@ -10,14 +10,8 @@ fonts
 
 @font-face {
 	font-family: "oleo-script";
-	src: url("//fonts.googleapis.com/css?family=Oleo Script");
-}
-
-@font-face {
-	font-family: "alice";
 	src: url("//fonts.googleapis.com/css?family=Alice");
 }
-
 
 /*********************************
 variables
@@ -176,27 +170,21 @@ home page
 }
 
 #line-one {
-	margin: 5% 0 0 0;
-	font-family: "oleo script", serif;
-  padding: 0;
-  font-size: 8em;
-  letter-spacing: -0.3rem;
-	-webkit-text-size-adjust: none;
-}
-
-#line-two {
-	font-family: "lato", tahoma, sans-serif;
-	line-height: 0.2;
-	font-size: 11.5em;
-	letter-spacing: -1rem;
-	margin-bottom: 0;
-	-webkit-text-size-adjust: none;
+	letter-spacing: -4px;
+  font-family: lato;
+  font-size: 7em;
+  font-weight: 100;
+  color: $orange;
+	padding: 5% 0 0;
+	font-family: "alice", serif;
 }
 
 .tagline {
-	padding: 10% 0 2% 0;
+	padding: 2% 0 2% 0;
 	color: $blue;
 	position: relative;
+	font-size: 1.1em;
+	font-family: pt sans;
 }
 
 .fa-chevron-down {
@@ -504,6 +492,7 @@ portfolio page
 
 #portfolio-intro {
 	text-align: center;
+	padding-top: 5%;
 	p {
 		margin: auto;
 		width: 65%;
@@ -522,7 +511,7 @@ portfolio page
 	max-height: 480px;
 	background-color: $tan;
 	width: 90%;
-	margin: 0;
+	margin: 2% 0 0;
 	padding: 0;
 
 	li {
@@ -811,8 +800,8 @@ media queries
 		}
 	}
 	.rows {
-		li, .portfolio-text, h4, a {
-			max-width: 100%;
+		li, .portfolio-text, a {
+			width: 100%;
 			margin: 0 7%;
 		}
 		img {
@@ -857,7 +846,7 @@ media queries
 			display: none;
 			background-color: $skyblue;
 			position: absolute;
-			max-width: 100%;
+			width: 58%;
 			opacity: 0.95;
 
 			// display: block;
