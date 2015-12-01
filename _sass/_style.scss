@@ -128,6 +128,7 @@ mobile menu
 	font-size: 1.1em;
 	cursor: pointer;
 	padding: 2.5%;
+	position: absolute;
 }
 
 /*********************************
@@ -684,13 +685,6 @@ media queries
 		font-size: 14px;
 		padding-right: 40px;
 	}
-	.personal-time {
-		.hobbies {
-			h4 {
-				font-size: 0.5em;
-			}
-		}
-	}
 }
 
 @media(max-width: 720px) {
@@ -758,6 +752,17 @@ media queries
 	}
 	.logo {
 		position: initial;
+	}
+	.personal-time {
+		.hobbies {
+			width: 100%;
+
+			li {
+				display: block;
+				margin: auto;
+				max-width: 50%;
+			}
+		}
 	}
 }
 
@@ -848,13 +853,6 @@ media queries
 			position: absolute;
 			width: 58%;
 			opacity: 0.95;
-
-			// display: block;
-			// font-size: 16px;
-			// font-family: tahoma;
-			// width: 100%;
-			// padding-left: 10%;
-			// text-align: center;
 		}
 		img {
 			padding: 10% 0;
@@ -894,7 +892,7 @@ media queries
 	.hobbies {
 		li {
 			h4 {
-				font-size: 0.7em;
+				font-size: 1em;
 			}
 		}
 	}
