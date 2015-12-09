@@ -705,7 +705,8 @@ about page
     font-weight: 500; }
 
 #name-intro {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0 5%; }
   #name-intro .katie-pic {
     float: left;
     width: 30%;
@@ -722,7 +723,7 @@ about page
 #background-info {
   border-top: 2px solid #222;
   border-bottom: 2px solid #222;
-  padding: 2%;
+  padding: 2% 5%;
   margin: 3% 0;
   overflow: auto; }
   #background-info .text-left {
@@ -798,7 +799,9 @@ about page
   .personal-time h2 {
     text-align: center;
     padding-top: 2%;
-    color: #111; }
+    color: #111;
+    font-family: "alice";
+    font-size: 2em; }
   .personal-time .hobbies {
     list-style: none;
     text-align: center;
@@ -807,13 +810,13 @@ about page
     .personal-time .hobbies li {
       max-width: 25%;
       display: inline-block;
-      font-weight: bold;
-      font-family: "lato", tahoma;
       font-size: 1.3em;
-      padding: 0 3%; }
+      padding: 0 2%; }
     .personal-time .hobbies h4 {
       vertical-align: text-top;
-      display: inherit; }
+      display: inherit;
+      font-family: "pt-sans", tahoma;
+      font-weight: 100; }
     .personal-time .hobbies img {
       display: inherit;
       vertical-align: middle; }
