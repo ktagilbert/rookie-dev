@@ -802,7 +802,8 @@ about page
   .personal-time .hobbies {
     list-style: none;
     text-align: center;
-    padding: 5% 0; }
+    padding: 5% 0;
+    margin-bottom: 0; }
     .personal-time .hobbies li {
       max-width: 25%;
       display: inline-block;
@@ -1129,8 +1130,7 @@ media queries
     display: initial; }
   #list-column li > button {
     padding: 2%;
-    width: 50%;
-    margin: 0 25% 10%; }
+    margin-bottom: 10%; }
   #list-column li > p {
     height: auto; }
 

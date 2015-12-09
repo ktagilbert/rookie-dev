@@ -458,6 +458,7 @@ about page
 		list-style: none;
 		text-align: center;
 		padding: 5% 0;
+		margin-bottom: 0;
 
 		li {
 			max-width: 25%;
@@ -882,8 +883,7 @@ media queries
 		}
 		li > button {
 			padding: 2%;
-			width: 50%;
-			margin: 0 25% 10%;
+			margin-bottom: 10%;
 		}
 		li > p {
 			height: auto;
