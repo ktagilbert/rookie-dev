@@ -3,13 +3,13 @@ layout: post
 title: "How to Start Learning SCSS"
 date: 2015-07-20 16:32:21
 excerpt: >
- Rookie Dev here is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. About midway through, after performing what seemed to me like a million git commands, he paused and looked at me saying "well, I'm really sorry and I'm not sorry."
+ This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. About midway through, after performing what seemed to me like a million git commands, he paused and looked at me saying "well, I'm really sorry and I'm not sorry."
 ---
 
 ## Bridging the gap between CSS and SASS
 
 
-I have a confession. When I first started working on Rookie Dev, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. *With an already limited knowledge of CSS, I was intimidated.*
+I have a confession. When I first started working on this blog, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. *With an already limited knowledge of CSS, I was intimidated.*
 
 It turns out that SCSS is not that difficult.
 
@@ -71,7 +71,7 @@ Here I basically have some rules:
 - header align stands in for text-align center.
 - texts within a container will appear white
 - "large" stands in for padding: 80px
-- $rookie-blue is one of my brand color
+- $rookie-blue was one of my brand colors (before the re-design!)
 
 I can use these rules inside my style sheet to save myself some time and keep some of my style properties uniform across the site here.
 

@@ -8,7 +8,7 @@ excerpt: >
 
 Earlier, I showed you [how to make a nav bar from scratch using just HTML and CSS](http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html). I really believe creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.
 
-When I redesigned Rookie Dev my nav bar was the first thing I wanted to change. I had a simple, static navigation that was pretty boring. So I took a look at other sites and noticed that their nav bars changed colors as users scrolled down.
+When I redesigned this blog my nav bar was the first thing I wanted to change. I had a simple, static navigation that was pretty boring. So I took a look at other sites and noticed that their nav bars changed colors as users scrolled down.
 
 Now, I didn't want a nav bar that changed colors just for the fun of it. I wanted it to solve a problem I was having. I was really looking for a super clean, all white nav bar. Yet, when that same element reached some text or an image, the menu text overlapped and became unreadable. **I realized that I needed the nav bar to change colors when it reached these elements.**
 

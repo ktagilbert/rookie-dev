@@ -15,7 +15,7 @@ First, let's start thinking about your site's layout. When thinking about a layo
 ### Desktop layout
 ![Mobile UI Mock Up](/assets/rookiedevmockup.jpg)
 
-After your desktop layout is perfect, you will want to think about how that same site will look on a smaller screen. Ideally, you will think about the problem of a smaller screen before development. For example, you can think about how your layout will look on a mobile device. In the case of Rookie Dev here, I changed my home page from a three-column layout to a single layout and created a dropdown menu that I've indicated with a navicon. **In development, you can make these layout changes with the help media queries.**
+After your desktop layout is perfect, you will want to think about how that same site will look on a smaller screen. Ideally, you will think about the problem of a smaller screen before development. For example, you can think about how your layout will look on a mobile device. In the case of the blog here, I changed my home page from a three-column layout to a single layout and created a dropdown menu that I've indicated with a navicon. **In development, you can make these layout changes with the help media queries.**
 
 ### Mobile layout
 ![Mobile UI Mock Up](/assets/rookiedevmobile.jpg)
@@ -42,7 +42,7 @@ To help you gain a grasp on what a media query looks like, you can checkout the 
 }
 {% endhighlight %}
 
-This is an example of a media query I used to help make the Rookie Dev logo and its surrounding div shrink once a user's screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.
+This is an example of a media query I used to help make this blog's logo. I made it to help make the surrounding div shrink once a user's screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.
 
 # When to use a media query
 I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query. **Just remember to base your media query rules on how your content looks rather than on popular device widths.** If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don't want).
