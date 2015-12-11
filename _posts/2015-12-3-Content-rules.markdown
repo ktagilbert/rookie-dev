@@ -78,6 +78,6 @@ Now that you have two great solutions in front of you, I'm going to end by sayin
 
 I'll put my opinion on pay aside for now though because what I really want you to do is ask yourself those 11 questions!
 
-[Download the 12 questions here](/downloads/questionstoHelpYouImproveYourCopywritingWorkflow.pdf) and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!
+[Download the 12 questions here](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!
 
 Let me know what you think. Thanks for reading guys!
