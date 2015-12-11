@@ -651,10 +651,12 @@ post details
 .post h3 {
   text-align: center;
   padding-bottom: 40px; }
-.post p, .post strong {
-  color: #666; }
+.post p {
+  color: #666;
+  font-weight: 500; }
 .post .post-title {
-  color: #EB4144; }
+  color: #EB4144;
+  margin: 0 10%; }
 
 .post-meta {
   text-align: center; }

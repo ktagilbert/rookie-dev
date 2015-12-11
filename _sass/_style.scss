@@ -258,11 +258,13 @@ post details
 		text-align: center;
 		padding-bottom: 40px;
 	}
-	p, strong {
+	p {
 		color: #666;
+		font-weight: 500;
 	}
 	.post-title {
 		color: $orange;
+		margin: 0 10%;
 	}
 }
 

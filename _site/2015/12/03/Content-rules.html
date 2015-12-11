@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>How to Improve Your Copywriting Workflow and Why</title>
+  <meta name="description" content="We are all trying to accommodate Google, right? So we abide by these rules and and end-up forcing our copywriters to write the same article over and again. I...">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://127.0.0.1:4000//2015/12/03/Content-rules.html">
+  <link rel="alternate" type="application/rss+xml" title="Katie Gilbert Technical Marketing Blog & Portfolio" href="http://127.0.0.1:4000//feed.xml" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55144371-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+
+		$(document).ready(function() {
+
+
+    //portfolio-text
+
+    //new approach:
+    //on hover hide img
+    //show h4 in it's space and have a background of $skyblue
+
+    // $('.portfolio-img').each(function(i, elem) {
+    //    var $img = $('.portfolio-img');
+    //    var $row = $('.rows');
+    //
+    //    $img.on('mouseoover').addClass('hover');
+    //      if (($img).hasClass('hover')) {
+    //        $(elem).on('mouseover', function(e) {
+    //          console.log("you hovered");
+    //       })
+    //   };
+
+    // var $txt = $('.portfolio-txt');
+    //
+    // $('.rows').each(function(i, elem) {
+    //   var $img = $('.portfolio-img');
+    //   var $row = $('.rows');
+    //
+    //   $img.on('mouseoover').addClass('hover');
+    //     if (($img).hasClass('hover')) {
+    //       $(elem).on('mouseover', function(event) {
+    //         event.preventDefault;
+    //         $('.portfolio-img').siblings().show();
+    //         $txt.css({
+    //           'width': '63%',
+    //           'display': 'block'
+    //         });
+    //       })
+    //     }
+    // });
+      // if ($(elem).is('hover') === true) {
+      //   $(elem).closest('.portfolio-txt').show();
+    // $('.portfolio-img').on('mouseover', function(event) {
+    //   event.preventDefault;
+    //   $('.portfolio-txt').closest('.portfolio-txt').show('700');
+    //   $('.portfolio-txt').css('display','block');
+    // });
+    //
+    //   $('.portfolio-img').on('mouseout', function() {
+    //       $('.portfolio-txt').hide('slow');
+    //       // css('display', 'none');
+    //   });
+
+    //search function
+    $('.fa-search').on('click', function(event) {
+    $('#search-text').animate({width: 'toggle'}, '700');
+  });
+
+    var $articleTitles = $('.post-link');
+    var searchTerm = "";
+
+    function search() {
+
+      $articleTitles.each(function(i, elem) {
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) {
+          $(elem).closest('.article').hide();
+          $('.article').css({
+            'width': '90%',
+            'margin': '0 5%'
+          });
+        } else {
+          $(elem).closest('.article').show();
+          $('.article').css({
+            'width': '25%',
+            'margin': '0'
+          });
+        }
+      });
+      if ($('.article:hidden').length === $articleTitles.length) {
+        $('#no-results').show();
+       }
+     }
+
+     $("#search-text").on('keydown', function(e) {
+       if (e.keyCode === 8) {
+         if (searchTerm.length > 0) {
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1);
+           $('#no-results').hide();
+           search();
+         }
+       } else {
+         searchTerm += String.fromCharCode(e.keyCode);
+         search();
+       }
+     });
+
+      //make .page-heading the height of the screen
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //desktop nav bar changes color on scroll
+      var scroll_start = 0;
+      var startchange = $('p:first');
+      var offset = startchange.offset();
+
+        if (startchange.length || $('img')) {
+
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+
+            if(scroll_start > offset.top) {
+              $("#menu").stop().animate({
+                backgroundColor:'#111'}, "700");
+              $('.menu-item').css("color", "#fff");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff");
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
+            } else {
+              $('#menu').stop().animate({
+                backgroundColor: 'transparent'}, "700");
+              $('.menu-item').children().css("color", "#1D1E18");
+              $(".fa-twitter").css("color", "#1D1E18")
+              $(".fa-github").css("color", "#1D1E18");
+              $(".fa-envelope").css("color", "#1D1E18");
+            }
+        });
+      }
+
+      //mobile-menu-arrow on click, display mobile menu
+      $('#mobile-btn').on('click', function(event) {
+        event.preventDefault;
+        $("#mobile-menu").show();
+        $("#mobile-btn").hide();
+      });
+
+      //close mobile menu
+      $('#close-menu').on('click', function(event) {
+        event.preventDefault;
+        $('#mobile-menu').hide();
+        $("#mobile-btn").show();
+      });
+
+      //click on #home-arrow to scroll down to post-list
+
+      $('.fa-chevron-down').on('click', function(event) {
+        event.preventDefault;
+        $('html, body').animate({
+          scrollTop: $(".post-list").offset().top
+        },900);
+      });
+
+      //about page creative work change
+      $(window).resize(function() {
+        if ($(window).width() < 850) {
+          $('#desktop-creative-work').hide();
+          $('.mobile-img').show()
+        } else {
+          $('#desktop-creative-work').show();
+          $('.mobile-img').hide();
+        }
+      });
+
+      //open all links in a new tab
+      $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+
+        if(!a.test(this.href)) {
+            $(this).click(function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            });
+          }
+        });
+
+    });
+ 	</script>
+ </head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <!-- <div class="wrapper"> -->
+      <!-- <img src ="/assets/arrow-alt.png/" class="categories-dropdown" />
+      <img src ="/assets/navicon.png/" id="mobile-menu" /> -->
+
+  <ul id="menu">
+      <li class="menu-item"><a href="/">Home</li>
+      <li class="menu-item"><a href="/about">About</a></li>
+      <li class="menu-item"><a href="/portfolio">Portfolio</a></li>
+      <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
+      <ul id=social-icons>
+        <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+  </ul>
+
+
+
+<div id=mobile-wrap>
+  <span id="mobile-btn"></span>
+
+  <span id="mobile-menu">
+    <p id="close-menu">X</p>
+    <ul>
+      <li><a href="/">Home</li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+  </span>
+</div>
+
+</header>
+
+    <!--<div class="page-content">-->
+        <!DOCTYPE html>
+<html>
+<div class="post">
+
+  <header class="post-header">
+  	<p class="post-title">How to Improve Your Copywriting Workflow and Why</p>
+  </header>
+
+  <p class="post-meta">Dec 3, 2015</p>
+
+<div class="wrapper"
+  <article class="post-content">
+    <p><img src="/assets/copywriter.jpg" alt="Improve Your Copywriting Workflow" /></p>
+
+<p>So if you are a marketing manager or working at a marketing agency, chances are you have a ton of clients who all have the same deal going on. You;ll need to write some landing page copy for the sale for them. The good news is that you have freelance copy writers on hand to help you do it! Problem solved, right? <strong>No.</strong></p>
+
+<p>The problem with many agencies is that they only have 5-10 freelancers on hand at any time. That means that each writer is writing around 10 or more versions of the same article for each sale or event that pops up.</p>
+
+<p>The traditional formula is to have that writer re-write intro and conclusion for each version and update any location details. Don’t forget, they also have to look up each location, find landmarks to mention, get all the info correct, and copy-edit their article around 3 times once it is finished and turned back in for review. Then, you’ll have someone on your staff edit it again. Once that is all done,  you will publish it on the client’s site and hope that nothing goes wrong from there.</p>
+
+<p>We are all trying to accommodate Google, right? So we abide by these rules and and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. <em>But is it really working well enough for you?</em></p>
+
+<h1 id="the-three-things-that-are-breaking-your-copywriting-workflow">The three things that are breaking your copywriting workflow</h1>
+
+<p>1) You writers are bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It’s not because they are lazy. <strong>It’s because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.</strong> The task is no longer creative, it is formulaic and incredibly boring. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.</p>
+
+<p>2) You are missing deadlines because you have to keep going back to give your writer more instructions in order to get the copy you want.</p>
+
+<p>3) Your writers are too scared to tell you that your process isn’t working for them. The fear is that once they speak up, they will be replaced because of how many other content writers are out there that would be happy to replace them.</p>
+
+<p>So to make your copywriting workflow actually work, some things need to happen. <em>You need to set some new standards.</em></p>
+
+<p>First, try asking yourself some questions. <strong>I suggest sitting down with a new document and thoroughly writing out your answers to the questions below so that you can see how to improve your process before even having to read this rest of this article.</strong></p>
+
+<h2 id="questions-to-ask-yourself-to-improve-your-copywriting-workflow">12 Questions to ask yourself to improve your copywriting workflow</h2>
+
+<ol>
+  <li>Are you giving your writers relevant persona information?</li>
+  <li>Are you providing your writers with a consistent style guide that is thorough?</li>
+  <li>Have you been expecting your writers to assume what they should be doing at any point during their assignment?</li>
+  <li>Did you ask your writers to read over some examples of content they should model their work after?</li>
+  <li>Are your writers actually reading the examples you are giving them?</li>
+  <li>Do you check-in with your writers? Have you asked them how they are doing or to give you any feedback?</li>
+  <li>Are you making sure your writers feel valued?</li>
+  <li>Have you explained the specific goal of each writing assignment to you writers?</li>
+  <li>Do they know about your conversion needs?</li>
+  <li>Have they been told about the importance of effective CTA’s?</li>
+  <li>Have you told them what keywords to focus on?</li>
+  <li>Is there a clear, hard deadline in place for each stage of the assignment?</li>
+</ol>
+
+<p>Okay, now that you have your answers, you can already begin to see where you could be making improvements in your workflow.</p>
+
+<p>I am asking you to do this small assignment because too often I have seen companies devalue their writers. The assumption is that anyone can write. It’s not hard right? This happens because employees at these companies already know the company voice. They have been around for a while and have read all of the marketing copy and company brochures. They could write a blog post or article in just one afternoon because they know all there is to know. So the assumption is that professional writers will have no problem completing the assignment either. There is also the assumption that writing is easy.</p>
+
+<h4 id="these-two-assumptions-are-detrimental-for-your-business">These two assumptions are detrimental for your business.</h4>
+
+<p>Here is why:</p>
+
+<ul>
+  <li>
+    <p>Your freelance writers know next to nothing about your company. On top of that, they are being paid to write, not research. To them, it doesn’t make sense to waste their time reading your examples or memorizing the company voice if they are only going to be getting $20 to write a flawless blog post at the end of the day.</p>
+  </li>
+  <li>
+    <p>Writing is harder than you think it is. There’s a reason English, Journalism, and Creative Writing are whole fields of study. Professional writers have most likely spent four years in post-secondary classes learning about grammar, being quizzed on various style guides, formatting papers just right, and being critiqued on sentence structure and word choice. They have also read everything put in from them from articles by Gloria Steinem to novels and plays by Chaucer, Melville, Hawthorne, Tolstoy, Shakespeare, Austen, you name it!! Some have even taken the GRE. Meaning, they have been tasked with identifying the author and year of publication for excerpts of writing! Can you do that?</p>
+  </li>
+</ul>
+
+<p>But now, they are being tasked with writing for you and they are finding that your task is much more difficult than their ones in school. <strong>It is more difficult because they are either not being given clear instructions OR are not being given enough time or money to give you what you are looking for.</strong></p>
+
+<p>I can tell you from personal experience that each article I write for a client or franchise takes at least an hour and a half to write not including fact checking or copy editing. And my managers tell me to slow down at work! So that’s about 3 hours for each article no matter the length. Seriously, a longer article takes me about the same time to copy edit as a shorter one because both require the same amount of attention to detail. Around the 3rd article I edit, I stop caring. The same goes for when I’m the one copy editing these articles. Around the 10th time I read the same repeated phrase it’s almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager.</p>
+
+<h4 id="heres-the-thing-your-content-is-super-important">Here’s the thing: your content is SUPER important.</h4>
+
+<p>Content is king right now! So treat it like the king. It (and by extension your writers) should be your top priority as they are one of your most valuable resources. Meaning, they need to be treated well and be given all of the information you can give them to make their job perfectly clear. <em>So, go ahead, ask yourself those 12 questions at the beginning of this article to help yourself get better copy from your writers.</em></p>
+
+<h4 id="whats-the-solution">what’s the solution?</h4>
+
+<p>Hire more writers. Get more team members in your department to contribute to copy-editing. Don’t leave it to just one person on your team. Delegate the task to your interns as well. <strong>Afterall, this copy is important to you and your client so why would you trust it to someone who is going to become a zombie after a certain word count or hour of work?</strong></p>
+
+<p>Another solution is to assign each a writer just one-three clients rather than 10-30 articles for one sale. That way, they will AT LEAST have different topics to write about and that will help fuel their interest and motivation.</p>
+
+<p>Now that you have two great solutions in front of you, I’m going to end by saying you need to also consider paying your writers more. They deserve more than a fraction of a dollar per word and more than $15 per article. That’s me being conservative by the way. I really think that writers deserve $50 per article considering how many hours they put into the work. This is not minimum wage level work. It is work done by a highly educated being with an incredibly valuable skill that not everyone has! Believe me, a CEO once tried to write my articles for me and it was pure crap! <strong>Another bonus of raising their pay is that you will end up with more motivated and content writers who will want to stick by you and give you the quality you and your clients deserve.</strong></p>
+
+<p>I’ll put my opinion on pay aside for now though because what I really want you to do is ask yourself those 11 questions!</p>
+
+<p><a href="/downloads/questionstoHelpYouImproveYourCopywritingWorkflow.pdf">Download the 12 questions here</a> and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!</p>
+
+<p>Let me know what you think. Thanks for reading guys!</p>
+
+  </article>
+
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2015/10/17/UI.html">
+      <li id="title-prev">An Intro to UI Design Basics</li>
+    </a>
+    <a class="post-nav-link" href="">
+      <li id="title-next"></li>
+    </a>
+  </ul>
+</div>
+
+<!--contribute container-->
+
+<div class="contribute-container">
+   <span class="container-head">Want To Contribute to the Blog?</span>
+ <ul>
+   <li>
+     <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
+    </li>
+   </ul>
+</div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'rookiedev';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+</div>
+</div>
+
+
+
+</html>
+
+        <div class="wrapper">
+        </div>
+    <!--</div>-->
+
+
+
+    <footer class="site-footer">
+    <div class="footer-content">
+      <h3>Do You Like What You See Here?</h4>
+      <ul class="footer-list">
+        <li><a href="mailto:ktagilbert@gmail.com">send me an email to get in contact sometime</a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert</a></li>
+        <li>© 2015—2016 all rights reserved</li>
+     </ul>
+   </div>
+
+</footer>
+
+
+  </body>
+  <title>Technical Marketing Blog & Portfolio</title>
+
+
+</html>
