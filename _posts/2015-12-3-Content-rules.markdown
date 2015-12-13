@@ -26,7 +26,7 @@ We are all trying to accommodate Google, right? So we abide by these rules and a
 3) Your writers are too scared to tell you that your process isn't working for them. The fear is that once they speak up, they will be replaced because of how many other content writers are out there that would be happy to take over for them.   
 
 
-So to make your copywriting workflow actually work, some things need to happen. First, try asking yourself some questions. **I suggest sitting down with a new document and thoroughly writing out your answers to the questions below so that you can see how to improve your process before even having to read this rest of this article.** OR, [download these questions here]((/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf)) to save for your next meeting!
+So to make your copywriting workflow actually work, some things need to happen. First, try asking yourself some questions. **I suggest sitting down with a new document and thoroughly writing out your answers to the questions below so that you can see how to improve your process before even having to read this rest of this article.** OR, [download these questions here](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and save them for your next meeting!
 
 ## 12 Questions to help you improve your copywriting workflow
 
