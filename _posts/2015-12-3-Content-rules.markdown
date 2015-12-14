@@ -34,7 +34,7 @@ So to make your copywriting workflow actually work, some things need to happen. 
 2. Are you providing your writers with a consistent style guide that is thorough?
 3. Have you been expecting your writers to assume what they should be doing at any point during their assignment?
 4. Did you ask your writers to read over some examples of content they should model their work after?
-5. Are your writers actually reading the examples you are giving them?
+5. Are your writers actually reading the examples?
 6. Do you check-in with your writers? Have you asked them how they are doing or to give you any feedback?
 7. Are you making sure your writers feel valued?
 8. Have you explained the specific goal of each writing assignment to you writers?
@@ -77,3 +77,5 @@ Now that you have two great solutions in front of you, I'm going to end by sayin
 If you haven't already, the best thing you can do right now is [download the 12 questions to help you improve your copywriting workflow](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!
 
 Let me know what you think and thanks for reading guys!
+
+[![12 Questions to Help You Improve Your Copywriting Workflow](/assets/12Questions.png)](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf)
