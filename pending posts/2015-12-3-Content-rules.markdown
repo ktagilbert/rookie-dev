@@ -3,7 +3,7 @@ layout: post
 title: How to Improve Your Copywriting Workflow and Why
 date: 2015-12-3 16:32:21
 excerpt: >
- We are all trying to accommodate Google, right? So we abide by these rules and and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
+ We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
 
 ---
 ![Improve Your Copywriting Workflow](/assets/copywriter.jpg)
@@ -12,14 +12,14 @@ If you are a marketing manager or working at a marketing agency, chances are tha
 
 The problem with many agencies is that they only have 5-10 freelancers on hand at any time. Meaning, each writer is pumping out around 10 or more versions of the same article for each sale or event that comes up.
 
-The traditional formula is to have that freelancer re-write an intro and conclusion for each version and update any location details. Don't forget, they also have to look up each location, find landmarks to mention, get all the info correct, and copy-edit their article around 3 times once it is finished before turning back in the final product review. Then, you'll have someone on your staff edit it again. Once that is all done, you will finally publish it the copy on the client's site and hope that nothing goes wrong from there.
+The traditional formula is to have that freelancer re-write an intro and conclusion for each version and update any location details. Don't forget, they also have to look up each location, find landmarks to mention, get all the info correct, and copy-edit their article around 3 times once it is finished before turning back in a final product for you to review. Then, you'll have someone on your staff edit it again. Once that is all done, you will finally publish it to the client's site. Wow, just typing that was exhausting!
 
-We are all trying to accommodate Google, right? So we abide by these rules and and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. *But is it really working well enough for you?* Let's think about where the process is potentially breaking down.
+We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. *But is it really working well enough for you?* Let's think about where the process is potentially breaking down.
 
 
 # The three things that may be breaking your copywriting workflow
 
-1) You writers are becoming bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It's not because they are lazy. **It's because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.** The task is no longer creative but instead formulaic.  More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.
+1) You writers are becoming bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It's not because they are lazy. **It's because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.** The task is no longer creative but instead formulaic. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.
 
 2) You are missing deadlines because you have to keep going back to give your writer more instructions in order to get the copy you want.
 
@@ -54,11 +54,11 @@ Here is why:
 
 - Your freelance writers know next to nothing about your company. On top of that, they are being paid to write not research. To them, it doesn't make sense to waste their time reading your examples or memorizing the company voice if they are only going to be getting $20 to write a flawless blog post at the end of the day.
 
-- Writing is harder than you think it is. There's a reason English, Journalism, and Creative Writing are whole fields of study. Professional writers have most likely spent four years in post-secondary classes learning about grammar, being quizzed on various style guides, formatting papers just right, and being critiqued on sentence structure and word choice. They have also read everything put in front of them from articles by Gloria Steinem to novels and plays by Chaucer, Melville, Hawthorne, Tolstoy, Shakespeare, Austen, you name it!! Some have even taken the GRE. Meaning, they have been tasked with identifying the author and year of publication for canonized excerpts of writing! Can you do that?
+- Writing is harder than you think it is. There's a reason English, Journalism, and Creative Writing are whole fields of study. Professional writers have most likely spent four years in post-secondary classes learning about grammar, being quizzed on various style guides, formatting papers just right, and being critiqued on sentence structure and word choice. They have also read everything put in front of them from articles by Gloria Steinem to novels and plays by Chaucer, Melville, Hawthorne, Tolstoy, Shakespeare, Austen, you name it!! Some have even taken the GRE.
 
-But now, they are being tasked with writing for you and they are finding that your task is much more difficult than the ones they had in school. **It is more difficult because they are either not being given clear instructions OR are not being given enough time or money to give you what you are looking for.**
+But now, they are being tasked with writing for you and they are finding that your task is much more difficult than the ones they had in school. **It is more difficult because they are either not being given clear instructions OR they are not being given enough time or money to give you what you are looking for.**
 
-I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don't miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I'm the one copy editing these articles. Around the 10th time I read the same repeated phrase it's almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down and at the end of it all I as the writer have only earned about $20-$30 for my time.
+I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don't miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I'm the one copy editing these articles. Around the 10th time I read the same repeated phrase it's almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down and at the end of it all writers only earn about $20-$30 their time my time.
 
 
 #### Here's the thing: your content is SUPER important.
@@ -72,9 +72,8 @@ The best solution I can offer you is to simply try hiring more writers. Get more
 
 Another solution is to assign each a writer just one-three clients rather than 10-30 articles for one sale. That way, they will AT LEAST have different topics to write about and that will help fuel their interest and motivation.
 
-Now that you have two great solutions in front of you, I'm going to end by saying you need to also consider paying your writers more. They deserve more than a fraction of a dollar per word and more than $15 per article. That's me being conservative by the way. I really think that writers deserve $50 per article considering how many hours they put into the work. This is not minimum wage level work. It is work done by a highly educated being with an incredibly valuable skill that not everyone has! Believe me, a CEO once tried to write my articles for me and it was not pretty! **Another bonus of raising their pay is that you will end up with more motivated and content writers who will want to stick by you and give you the quality you and your clients deserve.**
 
-If you haven't already, the best thing you can do right now is [download the 12 questions to help you improve your copywriting workflow](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!
+Now that you have two great solutions in front you, the best thing you can do moving forward is  to[download the 12 questions to help you improve your copywriting workflow](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!
 
 Let me know what you think and thanks for reading guys!
 
