@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Improve Your Copywriting Workflow and Why
+title: How to Improve Your Copywriting Workflow
 date: 2015-12-3 16:32:21
 excerpt: >
  We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
