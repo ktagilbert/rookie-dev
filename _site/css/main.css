@@ -235,7 +235,10 @@ pre {
 
 .post-list {
   list-style: none;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 5%; }
   .post-list > li {
     width: 25%;
     padding: 30px;
@@ -642,9 +645,6 @@ post details
   margin: 0 10%;
   background-color: #fff; }
 
-.post-list:nth-child(1n) {
-  padding-top: 3%; }
-
 .post-content {
   margin-bottom: 80px; }
 
@@ -728,35 +728,27 @@ about page
   padding: 2% 5%;
   margin: 3% 2%;
   overflow: auto; }
-  #background-info .text-left {
-    float: left;
-    width: 60%;
-    position: relative;
+  #background-info .background-text {
     padding: 5% 0; }
-    #background-info .text-left p {
+    #background-info .background-text p {
       font-size: 0.9em; }
+  #background-info h3 {
+    padding: 20px 0;
+    color: #111;
+    letter-spacing: 4px;
+    font-size: 1.5em; }
   #background-info #skills-list {
-    width: 35%;
-    float: right;
-    position: relative;
-    display: inline-block;
-    list-style: none; }
-    #background-info #skills-list h3 {
-      padding: 20px 0;
-      color: #111;
-      letter-spacing: 4px;
-      font-size: 1.5em; }
-    #background-info #skills-list ul {
-      list-style: none; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    height: 250px;
+    margin: auto; }
     #background-info #skills-list li {
-      font-size: 0.95rem; }
-    #background-info #skills-list .list-left {
-      float: left;
-      width: 49%; }
-    #background-info #skills-list .list-right {
-      float: right;
-      width: 49%;
-      list-style: none; }
+      width: 30%;
+      justify-content: space-between;
+      margin: auto; }
     #background-info #skills-list .fa {
       padding-right: 10px;
       color: #EB4144;
@@ -1076,11 +1068,6 @@ media queries
   #back-to-about {
     display: initial; }
 
-  .post-list li {
-    width: 90%;
-    padding: 10px;
-    height: 100%; }
-
   .rows li, .rows .portfolio-text, .rows a {
     width: 100%;
     margin: 0 7%; }
@@ -1141,19 +1128,6 @@ media queries
 
   .hobbies li h4 {
     font-size: 1em; } }
-@media (max-width: 1150px) {
-  #background-info #skills-list {
-    width: 100%;
-    float: none; }
-    #background-info #skills-list ul {
-      margin: 0; }
-    #background-info #skills-list h3 {
-      text-align: left;
-      margin-left: 3%; }
-    #background-info #skills-list li {
-      font-size: 1em; }
-  #background-info .text-left {
-    width: initial; } }
 @media (max-width: 1430px) {
   .top-angle {
     bottom: 43%; }

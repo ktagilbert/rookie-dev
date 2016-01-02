@@ -95,6 +95,9 @@
 .post-list {
     list-style: none;
     margin-bottom: 0px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%; 
 
     > li {
       width: 25%;
