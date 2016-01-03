@@ -244,8 +244,6 @@ pre {
     padding: 30px;
     clear: none;
     display: inline-block;
-    height: 100px;
-    height: 500px;
     vertical-align: text-top; }
 
 .post-meta {
@@ -1006,7 +1004,13 @@ media queries
 
   .categories-dropdown {
     display: none;
-    z-index: -100000; } }
+    z-index: -100000; }
+
+  #skills #skills-list {
+    height: 100%; }
+    #skills #skills-list li {
+      width: 100%;
+      padding: 10px; } }
 @media (max-width: 760px) {
   #menu {
     display: none; }
@@ -1057,6 +1061,12 @@ media queries
     display: initial;
     text-align: center;
     width: 60%; } }
+@media (max-width: 880px) {
+  .post-list li {
+    width: 100%; }
+
+  #skills #skills-list li {
+    width: 50%; } }
 @media (max-width: 850px) {
   .gallery-wrapper {
     width: 80%; }
