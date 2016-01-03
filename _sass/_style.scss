@@ -314,9 +314,8 @@ about page
 *********************************/
 
 #about-page {
-  padding: 5% 5% 0 5%;
+  padding: 5% 0;
   height: 100%;
-	width: 90%;
 	color: #292768;
 
 	p {
@@ -347,25 +346,28 @@ about page
 }
 
 #background-info {
-	border-top: 2px solid #222;
-	border-bottom: 2px solid #222;
 	padding: 2% 5%;
 	margin: 3% 2%;
 	overflow: auto;
 
 	.background-text {
 		padding: 5% 0;
-
-		p {
-			font-size: 0.9em;
-		}
 	}
+}
+
+#skills {
+	// background-color: $orange;
+	color: #fff;
+	background:linear-gradient(rgba(235, 65, 68, 0.8), rgba(235, 65 ,68, 0.8)), url("/assets/skillsBackground.png");
+	padding: 5% 0;
+
 	h3 {
 		padding: 20px 0;
-		color: #111;
+		color: #fff;
 		letter-spacing: 4px;
 		font-size: 1.5em;
 	}
+
 	#skills-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -374,25 +376,22 @@ about page
 		list-style: none;
 		height: 250px;
 		margin: auto;
+		width: 70%;
+		padding: 5%;
+		background-color: #fff;
 
 		li {
 			width: 30%;
 			justify-content: space-between;
 			margin: auto;
+			color: #666;
 		}
 
 		.fa {
-				padding-right: 10px;
-				color: $orange;
-				font-size: 0.8em;
+			padding-right: 10px;
+			color: $orange;
+			font-size: 0.7em;
 		}
-	}
-}
-
-#creative-work {
-	.mobile-img {
-		display: none;
-		padding: 0px;
 	}
 }
 
@@ -401,6 +400,7 @@ about page
 		list-style: none;
 		text-align: center;
 		padding: 5% 0;
+		margin: 0 5%;
 	}
 	li {
 		width: 31%;
@@ -435,13 +435,12 @@ about page
 
 .personal-time {
 	width: 100%;
-	background-color: #f1f1f1;
+	background-color: $skyblue;
 
 	h2 {
 		text-align: center;
 		padding-top: 2%;
-		color: #111;
-		font-family: "alice";
+		color: $orange;
 		font-size: 2em;
 	}
 
@@ -460,8 +459,9 @@ about page
 		h4 {
 			vertical-align: text-top;
 			display: inherit;
+			color: #444;
 			font-family: "pt-sans", tahoma;
-			font-weight: 100;
+			font-weight: 500;
 		}
 		img {
 			display: inherit;

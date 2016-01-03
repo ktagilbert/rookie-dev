@@ -698,9 +698,8 @@ post details
 about page
 *********************************/
 #about-page {
-  padding: 5% 5% 0 5%;
+  padding: 5% 0;
   height: 100%;
-  width: 90%;
   color: #292768; }
   #about-page p {
     font-size: 18px;
@@ -723,45 +722,47 @@ about page
     color: #EB4144; }
 
 #background-info {
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
   padding: 2% 5%;
   margin: 3% 2%;
   overflow: auto; }
   #background-info .background-text {
     padding: 5% 0; }
-    #background-info .background-text p {
-      font-size: 0.9em; }
-  #background-info h3 {
+
+#skills {
+  color: #fff;
+  background: linear-gradient(rgba(235, 65, 68, 0.8), rgba(235, 65, 68, 0.8)), url("/assets/skillsBackground.png");
+  padding: 5% 0; }
+  #skills h3 {
     padding: 20px 0;
-    color: #111;
+    color: #fff;
     letter-spacing: 4px;
     font-size: 1.5em; }
-  #background-info #skills-list {
+  #skills #skills-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
     list-style: none;
     height: 250px;
-    margin: auto; }
-    #background-info #skills-list li {
+    margin: auto;
+    width: 70%;
+    padding: 5%;
+    background-color: #fff; }
+    #skills #skills-list li {
       width: 30%;
       justify-content: space-between;
-      margin: auto; }
-    #background-info #skills-list .fa {
+      margin: auto;
+      color: #666; }
+    #skills #skills-list .fa {
       padding-right: 10px;
       color: #EB4144;
-      font-size: 0.8em; }
-
-#creative-work .mobile-img {
-  display: none;
-  padding: 0px; }
+      font-size: 0.7em; }
 
 #list-column ul {
   list-style: none;
   text-align: center;
-  padding: 5% 0; }
+  padding: 5% 0;
+  margin: 0 5%; }
 #list-column li {
   width: 31%;
   position: relative;
@@ -789,12 +790,11 @@ about page
 
 .personal-time {
   width: 100%;
-  background-color: #f1f1f1; }
+  background-color: #edf4f4; }
   .personal-time h2 {
     text-align: center;
     padding-top: 2%;
-    color: #111;
-    font-family: "alice";
+    color: #EB4144;
     font-size: 2em; }
   .personal-time .hobbies {
     list-style: none;
@@ -809,8 +809,9 @@ about page
     .personal-time .hobbies h4 {
       vertical-align: text-top;
       display: inherit;
+      color: #444;
       font-family: "pt-sans", tahoma;
-      font-weight: 100; }
+      font-weight: 500; }
     .personal-time .hobbies img {
       display: inherit;
       vertical-align: middle; }
