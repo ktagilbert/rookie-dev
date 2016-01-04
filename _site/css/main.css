@@ -546,7 +546,7 @@ mobile menu
 home page
 *********************************/
 .home {
-  background-color: #edf4f4;
+  background-color: rgba(223, 241, 248, 0.9);
   overflow: hidden; }
 
 .top-angle {
@@ -796,23 +796,23 @@ about page
     font-size: 2em; }
   .personal-time .hobbies {
     list-style: none;
-    text-align: center;
     padding: 5% 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap; }
     .personal-time .hobbies li {
-      max-width: 25%;
-      display: inline-block;
+      width: 25%;
+      margin: auto;
       font-size: 1.3em;
-      padding: 0 2%; }
+      text-align: center; }
+    .personal-time .hobbies #big-picture {
+      flex-basis: 30%; }
     .personal-time .hobbies h4 {
       vertical-align: text-top;
       display: inherit;
-      color: #444;
+      color: #666;
       font-family: "pt-sans", tahoma;
       font-weight: 500; }
-    .personal-time .hobbies img {
-      display: inherit;
-      vertical-align: middle; }
 
 /*********************************
 portfolio page
@@ -1045,11 +1045,9 @@ media queries
     position: initial; }
 
   .personal-time .hobbies {
-    width: 100%; }
+    flex-direction: column; }
     .personal-time .hobbies li {
-      display: block;
-      margin: auto;
-      max-width: 50%; } }
+      width: 45%; } }
 @media (max-width: 820px) {
   .row-one img {
     margin: auto;
