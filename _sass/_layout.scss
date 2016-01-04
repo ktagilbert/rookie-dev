@@ -146,7 +146,7 @@ img {
     color: #FFB3AA;
     text-align: center;
     padding-top: 160px;
-    font-family: "alice", "serif";
+    font-family: georgia, serif;
 
     @include media-query($on-laptop) {
         font-size: 36px;

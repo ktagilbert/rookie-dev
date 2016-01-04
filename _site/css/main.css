@@ -275,7 +275,7 @@ img {
   color: #FFB3AA;
   text-align: center;
   padding-top: 160px;
-  font-family: "alice", "serif"; }
+  font-family: georgia, serif; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
