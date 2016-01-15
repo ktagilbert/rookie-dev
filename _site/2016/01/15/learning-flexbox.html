@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Katie Gilbert Technical Marketing Blog & Portfolio</title>
-  <meta name="description" content="">
+  <title>Learning About Flexbox (And Why It's a Great Tool)</title>
+  <meta name="description" content="Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is su...">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000//">
+  <link rel="canonical" href="http://127.0.0.1:4000//2016/01/15/learning-flexbox.html">
   <link rel="alternate" type="application/rss+xml" title="Katie Gilbert Technical Marketing Blog & Portfolio" href="http://127.0.0.1:4000//feed.xml" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
@@ -251,132 +251,110 @@
 </header>
 
     <!--<div class="page-content">-->
-        <div class="home">
+        <!DOCTYPE html>
+<html>
+<div class="post">
 
-  <div class="page-heading">
-    <span class="top-angle">
-    </span>
+  <header class="post-header">
+  	<p class="post-title">Learning About Flexbox (And Why It's a Great Tool)</p>
+  </header>
 
-  <div id="logo-wrap">
-    <span class="logo">
-      <p id="line-one">Katie Gilbert</p>
-      <p class="tagline">Portfolio & Technical Marketing Blog</p>
-      <i class="fa fa-chevron-down"></i>
-    </span>
-  </div>
+  <p class="post-meta">Jan 15, 2016</p>
 
-  </div>
+<div class="wrapper"
+  <article class="post-content">
+    <p>Before I begin telling you about flexbox properties, I want to fill you in on a debate surrounding the tool. When I first started learning about web development, the internet told me not to use flexbox. People were ADAMANT that flexbox was not the best tool to use because modern browsers didn’t support it and there were other tools to use to achieve the same layout results. I saw the rants on reddit and I believed them without doing any research of my own.</p>
 
-<div class="main-content">
+<p>Then, when I was working on my <a href="http://localhost:4000/about/">about page</a>, I found myself wrestling with absolute positioning, z-index, and clear properties. It was a huge pain that involved <em>way</em> too many lines of css. So, I reconsidered my uninformed stance on flexbox. I pulled up a new tab and began researching which browsers supported flex properties (btw, this is what I should have done in the first place!).</p>
 
+<p><strong>In a couple of seconds I found that 95.31% of browsers support flexbox properties.</strong> Wow, okay, that’s good. AND, because my targeted audience are a bunch of awesome nerds who mostly use Chrome, I quickly decided that I could overlook that remaining 5.69% because I’m pretty sure those who use IE 8 or 9 won’t be visiting my blog anytime soon….or ever.</p>
 
+<h1 id="what-browsers-support-flexbox">What browsers support flexbox:</h1>
 
-  <div class="post-wrapper">
+<p><img src="/assets/canIUseFlexbox.png" alt="What Browsers Support FlexBox?" /></p>
 
-  <div class="search">
-    <i class="fa fa-search"></i>
-    <input type="text" id="search-text" name="search">
-  </div>
+<p>I go to <a href="http://caniuse.com/">Can I Use</a> to see which browsers and operating systems will/will not support different methods or tools. A quick search on their site showed me exactly which browsers would not be compatible with flexbox properties. <strong>Here is what I found:</strong></p>
 
-  <div id="no-results">
-    <p>Sorry, there are no results for that search. Try again?</p>
-  </div>
+<ul>
+  <li>Android does not support the flex-wrap property and I must use the -webkit preface if I went to use other flexbox properties.</li>
+  <li>Internet Explore only supports 2012 syntax</li>
+  <li>IE 8 and 9 do not support flexbox at all.</li>
+</ul>
 
-  <ul class="post-list">
-    
-      <li class="article">
-        <span class="post-meta">Jan 15, 2016</span>
-        <h2>
-          <a class="post-link" href="/2016/01/15/learning-flexbox.html">Learning About Flexbox (And Why It's a Great Tool)</a>
-        </h2>
+<h2 id="using-analytics-to-help-determine-which-tools-to-use">Using analytics to help determine which tools to use</h2>
 
-        <p>Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container.
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Dec 3, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/12/03/content-workflow.html">How to Improve Your Copywriting Workflow</a>
-        </h2>
+<p>To see if I could go forward with using flexbox properties, I took a look at my Google Analytics page to see which browsers my visitors typically use. <strong>A quick look under the Technology tab told me that 0% of my visitors use Internet Explore and around 14% use Android.</strong> That told me that I would only need to consider the -webkit prefix moving forward and find a work around for flex-wrap. No problem!</p>
 
-        <p>We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Oct 17, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/10/17/UI.html">An Intro to UI Design Basics</a>
-        </h2>
+<h2 id="the-lesson-to-be-learned">The Lesson to be learned</h2>
 
-        <p>One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works. UI design stands for user interface design. It entails creating an interface that works for your targeted user.
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Sep 23, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/09/23/responsive-nav-bar.html">Tutorial: Making a Responsive Navigation Bar</a>
-        </h2>
+<p>I wanted to tell you all of this before teaching you about flex properties because I learned two awesome lessons here:</p>
 
-        <p>If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Sep 12, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/09/12/breaking-into-web-development.html">Breaking Into Web Development (In Small Steps)</a>
-        </h2>
+<p>1) You should always research new tools yourself before believing what anyone else has to say about them.</p>
 
-        <p>To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires some dedication and a willingness to learn/ask questions.
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Sep 5, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/09/05/mediaquery.html">Learning About Media Queries</a>
-        </h2>
+<p>2) Take the time to see which browsers and operating systems will support any new tools or methods you want to use before going ahead and using them. A quick look at Google Analytics will then tell you what accommodations you’ll need to make for your users.</p>
 
-        <p>Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?                                                                                                                                                                      
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Aug 5, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/08/05/resources.html">Great Resources For Learning JavaScript</a>
-        </h2>
+<h2 id="learning-about-flex-properties">Learning about Flex Properties</h2>
 
-        <p>So I know from experience that learning JavaScript can be *very* challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help.
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Jul 20, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/07/20/sass.html">How to Start Learning SCSS</a>
-        </h2>
+<p>Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container. Then, you declare flex-properties for your flex items. Here is some more info to help:</p>
 
-        <p>This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. About midway through, after performing what seemed to me like a million git commands, he paused and looked at me saying "well, I'm really sorry and I'm not sorry."
-</p>
-      </li>
-    
-      <li class="article">
-        <span class="post-meta">Jun 24, 2015</span>
-        <h2>
-          <a class="post-link" href="/2015/06/24/nav-bar.html">How to Make a Simple Navigation Menu From Scratch</a>
-        </h2>
+<blockquote>
+  <p><a href="">Treehouse</a> helps explain that flexbox just gives you a flexible way to layout page content that ends up taking less time and involves fewer changes to your markup.</p>
+</blockquote>
 
-        <p>Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development.In actuality, it was something that was way over my head.
-</p>
-      </li>
-    
+<p><strong>Flex Containers:</strong> These can be inline element such as a div, unordered list, or span element.</p>
+
+<p><strong>Flex items:</strong> Flex items are anything inside of your flex containers. They are just your children elements.</p>
+
+<p>You first step will be to declare a flex container. It will look something like this:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span>
+<span class="p">}</span></code></pre></div>
+
+<p>That’s all there is to it! After that, you can think about how you want your flex items to behave. Do you want them to be inline elements? Or should they appear in a column? Should any be larger in width than others? What should happen to them on different screen sizes? These are all things that flexbox properties can help you figure out.</p>
+
+<h4 id="get-flexible-with-flex-items">Get flexible with flex items</h4>
+<p>When it comes to creating the layout you want, you’ll need to make a few more declarations to get things exactly how you want them. Here a few to get you started:</p>
+
+<ul>
+  <li><strong>flex-basis:</strong> This one is my favorites! Flex-basis allows you to determine the proportions of your flex items. Instead of declaring set widths for elements that require multiple media queries at the bottom of your stylesheet to maintain, use flex-basis instead. You can set a length using rem, em, or a percentage to make a particular element bigger or smaller than the others around it.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#large-picture</span> <span class="p">{</span>
+  <span class="n">flex</span><span class="o">-</span><span class="n">basis</span><span class="o">:</span> <span class="m">30%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<ul>
+  <li><strong>flex-direction:</strong> flex items run along the main axis (x) and cross axis (y). If you want to change this, declare a flex-direction in your flex container. Use row, row-reverse, column, or column reverse. Row will give you inline elements and “column” will you give you…well, columns. If you want to flip which items appear first in your layout, then tack on “reverse” to make it happen.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="n">flex</span><span class="o">-</span><span class="k">direction</span><span class="o">:</span> <span class="n">column</span><span class="p">;</span></code></pre></div>
+
+<ul>
+  <li><strong>flex-wrap:</strong>
+<img src="/assets/flexWrap.png" alt="example of flex-wrap" />
+ flex items, by default, all try to squeeze into one line. If you want them to wrap (say for different resolutions), you can use flex-wrap to make them move down to different lines as needed.</li>
+</ul>
+
+<p>Okay, this should get you well on your way to using flexbox!! Thanks for reading guys. Remember, if you have any questions, leave a comment below.</p>
+
+  </article>
+
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2015/12/03/content-workflow.html">
+      <li id="title-prev">How to Improve Your Copywriting Workflow</li>
+    </a>
+    <a class="post-nav-link" href="">
+      <li id="title-next"></li>
+    </a>
   </ul>
 </div>
-</div>
+
+<!--contribute container-->
+
 <div class="contribute-container">
    <span class="container-head">Want To Contribute to the Blog?</span>
  <ul>
@@ -385,7 +363,28 @@
     </li>
    </ul>
 </div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'rookiedev';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
 </div>
+</div>
+
+
+
+</html>
 
         <div class="wrapper">
         </div>
