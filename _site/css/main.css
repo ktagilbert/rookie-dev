@@ -249,7 +249,8 @@ pre {
 .post-meta {
   font-size: 14px;
   color: #828282;
-  padding-top: 80px; }
+  padding-top: 80px;
+  margin: 5% 0 0; }
 
 .post-link {
   display: block;
@@ -278,7 +279,7 @@ img {
   font-family: georgia, serif; }
   @media screen and (max-width: 800px) {
     .post-title {
-      font-size: 36px; } }
+      font-size: 2em; } }
 
 .post-content {
   margin-bottom: 30px; }
@@ -960,9 +961,6 @@ media queries
 @media (max-width: 457px) {
   .page-heading {
     font-size: 30px; }
-
-  .post-title {
-    line-height: 2; }
 
   #line-one {
     font-size: 3em;

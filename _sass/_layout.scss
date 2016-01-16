@@ -112,6 +112,7 @@
     font-size: $small-font-size;
     color: $grey-color;
     padding-top: 80px;
+    margin: 5% 0 0;
 }
 
 .post-link {
@@ -149,7 +150,7 @@ img {
     font-family: georgia, serif;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 2em;
     }
 }
 
