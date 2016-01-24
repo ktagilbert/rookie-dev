@@ -357,7 +357,7 @@
 
 &lt;h3 id=&quot;nav-bar-that-changes-on-scroll&quot;&gt;Nav Bar that Changes on scroll&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/navbaronchange.png&quot; alt=&quot;Responsive Nav Bar&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/responsiveNav.jpg&quot; alt=&quot;Responsive Nav Bar&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Alright, hope this helps guys! &lt;strong&gt;Let me know how your nav bar turns out. I’d love to see links to your end results.&lt;/strong&gt;&lt;/p&gt;
 </description>
@@ -475,7 +475,9 @@
     
       <item>
         <title>Learning About Media Queries</title>
-        <description>&lt;p&gt;Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/mediaQuery.jpg&quot; alt=&quot;Learning about media queries&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?&lt;/p&gt;
 
 &lt;p&gt;Well, there are ways to do this. For example, you could use &lt;a href=&quot;&amp;quot;https://developer.mozilla.org/en-US/docs/Web/CSS/flex&amp;quot;&quot;&gt;flex properties&lt;/a&gt;. However, these will only really provide a solution in modern browsers. Alternatively, a technique that many use are media queries.&lt;/p&gt;
 
@@ -562,7 +564,9 @@
     
       <item>
         <title>Great Resources For Learning JavaScript</title>
-        <description>&lt;p&gt;I know from experience that learning JavaScript can be &lt;em&gt;very&lt;/em&gt; challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It took me a couple of months to finally be comfortable in the language. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/LearnJs.jpg&quot; alt=&quot;Resources for learning JavaScript&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I know from experience that learning JavaScript can be &lt;em&gt;very&lt;/em&gt; challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It took me a couple of months to finally be comfortable in the language. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.&lt;/p&gt;
 
 &lt;h1 id=&quot;books&quot;&gt;Books:&lt;/h1&gt;
 
@@ -619,7 +623,9 @@
     
       <item>
         <title>How to Start Learning SCSS</title>
-        <description>&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the gap between CSS and SASS&lt;/h2&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/brainstorm.jpg&quot; alt=&quot;First SCSS project&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the gap between CSS and SASS&lt;/h2&gt;
 
 &lt;p&gt;I have a confession. When I first started working on this blog, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
 

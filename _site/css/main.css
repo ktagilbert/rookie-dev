@@ -245,10 +245,10 @@ pre {
     clear: none;
     display: inline-block;
     align-items: center; }
-  .post-list > img {
+  .post-list > img, .post-list .index-img {
     align-items: center;
     display: inline-flex;
-    vertical-align: baseline; }
+    overflow: hidden; }
   .post-list > .excerpt {
     align-items: baseline; }
 
@@ -654,7 +654,8 @@ post details
   font-weight: 500; }
 .post .post-title {
   color: #EB4144;
-  margin: 0 10%; }
+  margin: 0 10%;
+  font-size: 2.5em; }
 
 .post-meta {
   text-align: center; }
@@ -973,6 +974,10 @@ media queries
 
   .post-wrapper {
     margin: 1%; }
+
+  .post .post-header p {
+    font-size: 2em;
+    width: 90%; }
 
   .about-content {
     font-size: 14px;

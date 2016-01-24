@@ -2,12 +2,14 @@
 layout: post
 title: "How to Start Learning SCSS"
 date: 2015-07-20 16:32:21
+image: "brainstorm.jpg"
 excerpt: >
- This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. About midway through, after performing what seemed to me like a million git commands, he paused and looked at me saying "well, I'm really sorry and I'm not sorry."
+ This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up. 
 ---
 
-## Bridging the gap between CSS and SASS
+![First SCSS project](/assets/brainstorm.jpg)
 
+## Bridging the gap between CSS and SASS
 
 I have a confession. When I first started working on this blog, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. *With an already limited knowledge of CSS, I was intimidated.*
 

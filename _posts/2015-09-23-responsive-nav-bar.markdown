@@ -2,7 +2,7 @@
 layout: post
 title: "Tutorial: Making a Responsive Navigation Bar"
 date: 2015-09-23 17:00:00
-image: "normalnavbar.png"
+image: "responsiveNav.jpg"
 excerpt: >
  If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
 ---
@@ -126,6 +126,6 @@ Next, you can write your else statement. The else statement will provide the css
 
 ### Nav Bar that Changes on scroll
 
-![Responsive Nav Bar](/assets/navbaronchange.png)
+![Responsive Nav Bar](/assets/responsiveNav.jpg)
 
 Alright, hope this helps guys! **Let me know how your nav bar turns out. I'd love to see links to your end results.**

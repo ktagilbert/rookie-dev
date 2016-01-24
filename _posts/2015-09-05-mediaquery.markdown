@@ -2,10 +2,11 @@
 layout: post
 title: "Learning About Media Queries"
 date: 2015-09-05 17:00:00
-image: "rookiedevmockup.jpg"
+image: "mediaQuery.jpg"
 excerpt: >
- Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?                                                                                                                                                                      
+ Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop.                                                                                                                                                                   
 ---
+![Learning about media queries](/assets/mediaQuery.jpg)
 
 Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?
 
