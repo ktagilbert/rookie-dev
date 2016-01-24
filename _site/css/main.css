@@ -244,7 +244,13 @@ pre {
     padding: 30px;
     clear: none;
     display: inline-block;
-    vertical-align: text-top; }
+    align-items: center; }
+  .post-list > img {
+    align-items: center;
+    display: inline-flex;
+    vertical-align: baseline; }
+  .post-list > .excerpt {
+    align-items: baseline; }
 
 .post-meta {
   font-size: 14px;
@@ -254,11 +260,8 @@ pre {
 
 .post-link {
   display: block;
-  font-size: 28px;
   color: #5a5a5a;
   font-weight: 900; }
-  .post-link li, .post-link a:hover {
-    font-size: 28px; }
 
 /**
  * Posts
@@ -272,14 +275,10 @@ img {
   height: 250px; }
 
 .post-title {
-  font-size: 3em;
   color: #FFB3AA;
   text-align: center;
   padding-top: 160px;
   font-family: georgia, serif; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 2em; } }
 
 .post-content {
   margin-bottom: 30px; }
@@ -661,8 +660,8 @@ post details
   text-align: center; }
 
 .post-link {
-  font-family: initial;
-  margin-top: 2%; }
+  margin-bottom: 5%;
+  height: 120px; }
 
 .post-nav-title {
   list-style: none;

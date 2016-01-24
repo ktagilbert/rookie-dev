@@ -1,0 +1,9 @@
+
+<svg
+  version="1.1"
+     baseProfile="full"
+     width="300" height="200"
+     xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="50" style="fill:rgb(223, 241, 248);"/>
+  <text x="50" y="60" font-family="tahoma" font-size="30px" font-weight="bold" text-anchor="middle" style="fill:#666;">CSS</text>
+</svg>

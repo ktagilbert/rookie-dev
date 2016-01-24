@@ -2,6 +2,7 @@
 layout: post
 title: "Tutorial: Making a Responsive Navigation Bar"
 date: 2015-09-23 17:00:00
+image: "normalnavbar.png"
 excerpt: >
  If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
 ---

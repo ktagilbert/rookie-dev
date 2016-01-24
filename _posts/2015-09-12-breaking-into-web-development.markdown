@@ -2,6 +2,7 @@
 layout: post
 title: "Breaking Into Web Development (In Small Steps)"
 date: 2015-09-12 17:00:00
+image: "pixelmess.png"
 excerpt: >
  To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires some dedication and a willingness to learn/ask questions.
 ---
@@ -56,7 +57,7 @@ Just go to [github.com](https://github.com/) and create an account. You can then
 HTML, or Hypertext Markup Language, is just a way to create a skeleton for how your site will look. For example, it will help you declare where headers will go and where certain blocks of content will be placed on your page. Here are some great steps to help you master it:
 
 - **Read up on how to write HTML:** [W3Schools](http://www.w3schools.com/html/default.asp) is a great first place to look!
-- Learn the difference between a div and a span: You can think of a div as a dividing element in your markup. It contains and divides certain sections of your layout. A span, on the other hand, is a way to group inline-elements in your document. 
+- Learn the difference between a div and a span: You can think of a div as a dividing element in your markup. It contains and divides certain sections of your layout. A span, on the other hand, is a way to group inline-elements in your document.
 - **Mess around with HTML to create your own custom layouts:** You can try by working on your own project or creating something in a [codepen](http://codepen.io/pen/).
 - **Harness the power of the list! Seriously, you can do a lot with lists when they are combined with CSS.**
 - **Learn how to indent properly:** Elements within element should be indented.

@@ -36,14 +36,15 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li class="article">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
+        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-
-        <p>{{ post.excerpt }}</p>
+          <img src="{{ site.baseurl }}/assets/{{ post.image }}" class="index-img">
+        </h3>
+        <p class="excerpt">{{ post.excerpt }}</p>
       </li>
     {% endfor %}
+
   </ul>
 </div>
 </div>

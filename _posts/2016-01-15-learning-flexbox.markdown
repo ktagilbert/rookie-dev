@@ -2,9 +2,11 @@
 layout: post
 title: "Learning About Flexbox (And Why It's a Great Tool)"
 date: 2016-01-15 12:43:21
+image: "canIUseFlexbox.png"
 excerpt: >
  Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container.
 ---
+
 Before I begin telling you about flexbox properties, I want to fill you in on a debate surrounding the tool. When I first started learning about web development, the internet told me not to use flexbox. People were ADAMANT that flexbox was not the best tool to use because modern browsers didn't support it and there were other tools to use to achieve the same layout results. I saw the rants on reddit and I believed them without doing any research of my own.
 
 Then, when I was working on my [about page](http://localhost:4000/about/), I found myself wrestling with absolute positioning, z-index, and clear properties. It was a huge pain that involved *way* too many lines of css. So, I reconsidered my uninformed stance on flexbox. I pulled up a new tab and began researching which browsers supported flex properties (btw, this is what I should have done in the first place!).

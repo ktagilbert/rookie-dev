@@ -104,7 +104,16 @@
       padding: 30px;
       clear: none;
       display: inline-block;
-      vertical-align: text-top;
+      // vertical-align: text-top;
+      align-items: center;
+    }
+    > img {
+      align-items: center;
+      display: inline-flex;
+      vertical-align: baseline;
+    }
+    > .excerpt {
+      align-items: baseline;
     }
 }
 
@@ -117,13 +126,8 @@
 
 .post-link {
     display: block;
-    font-size: 28px;
     color: #5a5a5a;
     font-weight: 900;
-
-    li, a:hover {
-        font-size: 28px;
-    }
 }
 
 
@@ -143,15 +147,10 @@ img {
 }
 
 .post-title {
-    font-size: 3em;
     color: #FFB3AA;
     text-align: center;
     padding-top: 160px;
     font-family: georgia, serif;
-
-    @include media-query($on-laptop) {
-        font-size: 2em;
-    }
 }
 
 .post-content {
