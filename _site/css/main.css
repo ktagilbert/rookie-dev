@@ -974,11 +974,21 @@ media queries
     height: 150px; }
 
   .post-wrapper {
-    margin: 1%; }
+    margin: 1%;
+    background-color: #f2f2f2; }
+
+  .main-content {
+    background-color: #f2f2f2 !important; }
 
   .about-content {
     font-size: 14px;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+
+  .post-list {
+    width: 85%; }
+    .post-list .article {
+      background-color: #fff;
+      margin-bottom: 5%; } }
 @media (max-width: 720px) {
   .tagline {
     padding: 20% 0; }
@@ -1064,10 +1074,7 @@ media queries
     width: 90%; }
 
   .post-list li {
-    width: 100%; }
-
-  #skills #skills-list li {
-    width: 50%; } }
+    width: 100%; } }
 @media (max-width: 850px) {
   .gallery-wrapper {
     width: 80%; }

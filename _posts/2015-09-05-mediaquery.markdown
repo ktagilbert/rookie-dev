@@ -8,9 +8,9 @@ excerpt: >
 ---
 ![Learning about media queries](/assets/mediaQuery.jpg)
 
-Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what device they are viewing it on, right?
+Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what they are viewing it on, right?
 
-Well, there are ways to do this. For example, you could use [flex properties]("https://developer.mozilla.org/en-US/docs/Web/CSS/flex"). However, these will only really provide a solution in modern browsers. Alternatively, a technique that many use are media queries.
+Well, there are ways to do this. For example, you could use [flex properties]("/2015/09/05/mediaquery.html"). Alternatively, a technique that many use are media queries. Media queries are something that I imagine you will always use, so it's worth learning about them early on.
 
 First, let's start thinking about your site's layout. When thinking about a layout, you can start by thinking about the way it will look on a desktop.
 
