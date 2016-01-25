@@ -46,7 +46,7 @@ Great sites make great use of color. More importantly, they chose their colors f
 
 So when you are working on a site, you can try thinking about how you want your users to react to the colors on the page. For example, if you have a site about sharing knowledge, you could try using a color palette that includes green, blue, black and white, or grey. For this blog, I stuck to shades of blue, black, white, grey, and orange. I chose these colors because I wanted to associate the site with knowledge while still incorporating some of my own personality which is a bit whimsical. I also wanted the content to be easily readable and to avoid colors that would be overwhelming.
 
-##Font choice/ Readability
+## Font choice/ Readability
 
 ![font pairing for web design](/assets/creativemess.jpg)
 
@@ -57,7 +57,7 @@ When you begin to think about your fonts, I suggest spending some time on Google
 - Put some careful thought into how large or small you want your fonts to be. Remember, think about hierarchy. Take time to decide how large all of your headers will be and then decide on how large the paragraph text will be in relation.
 - Finally, consider how wide he content on your page is? Does it span the whole width of the screen without any margins? If so, you may want to spent some time reading [Google's material design guidelines](https://www.google.com/design/spec/material-design/introduction.html) -  I found it super helpful!
 
-##Navigation
+## Navigation
 
 The first thing you should consider is how you want to your users to be able to navigate on your desktop site vs. your mobile site. Mobile v. Desktop definitely require different considerations! You can save the hamburger icon for your mobile site where space is limited (I learned this lesson the hard way!). You don't need it for your desktop site because space isn't an issue there. Instead, focus on creating a menu that is easy to find and use.  
 

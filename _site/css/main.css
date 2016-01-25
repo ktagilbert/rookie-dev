@@ -254,9 +254,7 @@ pre {
 
 .post-meta {
   font-size: 14px;
-  color: #828282;
-  padding-top: 80px;
-  margin: 5% 0 0; }
+  color: #828282; }
 
 .post-link {
   display: block;
@@ -629,7 +627,10 @@ search field
   float: right;
   padding: 1.5% 2% 0 0;
   float: right;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #292768; }
+  .fa-search:hover {
+    color: #666; }
 
 /*********************************
 post details
@@ -975,10 +976,6 @@ media queries
   .post-wrapper {
     margin: 1%; }
 
-  .post .post-header p {
-    font-size: 2em;
-    width: 90%; }
-
   .about-content {
     font-size: 14px;
     padding-right: 40px; } }
@@ -1062,6 +1059,10 @@ media queries
     text-align: center;
     width: 60%; } }
 @media (max-width: 880px) {
+  .post .post-header p {
+    font-size: 2em;
+    width: 90%; }
+
   .post-list li {
     width: 100%; }
 

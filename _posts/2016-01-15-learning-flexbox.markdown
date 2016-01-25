@@ -55,7 +55,7 @@ You first step will be to declare a flex container. It will look something like 
 
 That's all there is to it! After that, you can think about how you want your flex items to behave. Do you want them to be inline elements? Or should they appear in a column? Should any be larger in width than others? What should happen to them on different screen sizes? These are all things that flexbox properties can help you figure out.
 
-#### Get flexible with flex items
+## Get flexible with flex items
 When it comes to creating the layout you want, you'll need to make a few more declarations to get things exactly how you want them. Here a few to get you started:
 
 - **flex-basis:** This one is my favorites! Flex-basis allows you to determine the proportions of your flex items. Instead of declaring set widths for elements that require multiple media queries at the bottom of your stylesheet to maintain, use flex-basis instead. You can set a length using rem, em, or a percentage to make a particular element bigger or smaller than the others around it.

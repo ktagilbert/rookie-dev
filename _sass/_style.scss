@@ -229,6 +229,11 @@ search field
 	padding: 1.5% 2% 0 0;
 	float: right;
 	cursor: pointer;
+	color: $blue;
+
+	&:hover {
+		color: #666;
+	}
 }
 
 /*********************************
@@ -671,14 +676,6 @@ media queries
 	.post-wrapper {
 		margin: 1%;
 	}
-	.post {
-		.post-header {
-			p {
-				font-size: 2em;
-				width: 90%;
-			}
-		}
-	}
 	.about-content {
 		font-size: 14px;
 		padding-right: 40px;
@@ -789,6 +786,14 @@ media queries
 }
 
 @media(max-width: 880px) {
+	.post {
+		.post-header {
+			p {
+				font-size: 2em;
+				width: 90%;
+			}
+		}
+	}
 	.post-list {
 		li {
 			width: 100%;

@@ -61,7 +61,7 @@
 
 &lt;p&gt;That’s all there is to it! After that, you can think about how you want your flex items to behave. Do you want them to be inline elements? Or should they appear in a column? Should any be larger in width than others? What should happen to them on different screen sizes? These are all things that flexbox properties can help you figure out.&lt;/p&gt;
 
-&lt;h4 id=&quot;get-flexible-with-flex-items&quot;&gt;Get flexible with flex items&lt;/h4&gt;
+&lt;h2 id=&quot;get-flexible-with-flex-items&quot;&gt;Get flexible with flex items&lt;/h2&gt;
 &lt;p&gt;When it comes to creating the layout you want, you’ll need to make a few more declarations to get things exactly how you want them. Here a few to get you started:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -138,7 +138,7 @@
 
 &lt;p&gt;I am asking you to do this small assignment because too often I have seen companies devalue their writers. The assumption is that anyone can write. This happens because employees at these companies already know the company voice. They have been around for a while and have read all of the marketing copy and company brochures. They could write a blog post or article in just one afternoon because they know all there is to know. So the assumption is that professional writers will have no problem completing the assignment either. There is also the assumption that writing is easy.&lt;/p&gt;
 
-&lt;h4 id=&quot;these-two-assumptions-are-detrimental-for-your-business&quot;&gt;These two assumptions are detrimental for your business.&lt;/h4&gt;
+&lt;h2 id=&quot;these-two-assumptions-are-detrimental-for-your-business&quot;&gt;These two assumptions are detrimental for your business.&lt;/h2&gt;
 
 &lt;p&gt;Here is why:&lt;/p&gt;
 
@@ -155,11 +155,11 @@
 
 &lt;p&gt;I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don’t miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I’m the one copy editing these articles. Around the 10th time I read the same repeated phrase it’s almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down and at the end of it all writers only earn about $20-$30 their time my time.&lt;/p&gt;
 
-&lt;h4 id=&quot;heres-the-thing-your-content-is-super-important&quot;&gt;Here’s the thing: your content is SUPER important.&lt;/h4&gt;
+&lt;h2 id=&quot;heres-the-thing-your-content-is-super-important&quot;&gt;Here’s the thing: your content is SUPER important.&lt;/h2&gt;
 
 &lt;p&gt;To fix the process, let’s remember that content is king right now! Meaning, you should be treating it like the king. It (and by extension your writers) should be your top priority as they are one of your most valuable resources. The best thing you can do to treat your content and your writers like kings is to give them all of the information you can to make their job perfectly clear and work to reduce their frustration during assignments. &lt;em&gt;So, go ahead, ask yourself those 12 questions at the beginning of this article to help yourself get better copy from your writers!&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;whats-the-solution&quot;&gt;what’s the solution?&lt;/h4&gt;
+&lt;h2 id=&quot;whats-the-solution&quot;&gt;What’s the solution?&lt;/h2&gt;
 
 &lt;p&gt;The best solution I can offer you is to simply try hiring more writers. Get more team members in your department or find more qualified freelancer to contribute to copy-editing. Then, get multiple people to help copy edit. You can even delegate the task to your interns as well to help. &lt;strong&gt;But it really is important that you spread out assignments between more writers to avoid being handed mediocre copy.  Afterall, this copy is important to you and your client so why would you trust it to someone who is going to become a zombie after a certain word count or hour of work?&lt;/strong&gt;&lt;/p&gt;
 
@@ -355,7 +355,7 @@
 
 &lt;p&gt;&lt;strong&gt;Now you’re done!&lt;/strong&gt; In the end, you will get a nav bar that changes state on scroll. It will look something like this:&lt;/p&gt;
 
-&lt;h3 id=&quot;nav-bar-that-changes-on-scroll&quot;&gt;Nav Bar that Changes on scroll&lt;/h3&gt;
+&lt;h2 id=&quot;nav-bar-that-changes-on-scroll&quot;&gt;Nav Bar that Changes on scroll&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/responsiveNav.jpg&quot; alt=&quot;Responsive Nav Bar&quot; /&gt;&lt;/p&gt;
 
@@ -395,7 +395,7 @@
 
 &lt;p&gt;I didn’t think that I was smart enough to do that. You see, I studied creative writing in college. From there, I thought that I was going to spend my adult life as a secretary or admin assistant while writing a novel during coffee fueled nights. Going into web development was something I had never thought that I could do. &lt;em&gt;It simply didn’t fit in with the idea I had been forming for myself.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;where-to-start---breaking-the-process-down-into-small-steps&quot;&gt;Where to start - breaking the process down into small steps&lt;/h1&gt;
+&lt;h2 id=&quot;where-to-start---breaking-the-process-down-into-small-steps&quot;&gt;Where to start - breaking the process down into small steps&lt;/h2&gt;
 
 &lt;p&gt;That night though I said good-bye to that idea because it just wasn’t working for me. Instead, My S.O. and I sat down together and went over some basic concepts. I learned about arrays, operators, and zero-based indexes in JavaScript. Then, we googled &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; together and my S.O. ran some commands to create a Jekyll powered static blog site that I could work on. &lt;strong&gt;It took us about three hours for me to see that I had it in me to learn a programming language &lt;em&gt;and&lt;/em&gt; that I had a means to create a site from scratch.&lt;/strong&gt;&lt;/p&gt;
 
@@ -512,7 +512,7 @@
 
 &lt;p&gt;This is an example of a media query I used to help make this blog’s logo. I made it to help make the surrounding div shrink once a user’s screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.&lt;/p&gt;
 
-&lt;h1 id=&quot;when-to-use-a-media-query&quot;&gt;When to use a media query&lt;/h1&gt;
+&lt;h2 id=&quot;when-to-use-a-media-query&quot;&gt;When to use a media query&lt;/h2&gt;
 &lt;p&gt;I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query. &lt;strong&gt;Just remember to base your media query rules on how your content looks rather than on popular device widths.&lt;/strong&gt; If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don’t want).&lt;/p&gt;
 
 &lt;p&gt;Yet, before you define a media query rule, it can also help to remember that many layout problems can be fixed by using more flexible measurement units. For example, using percentages &lt;a href=&quot;https://css-tricks.com/why-ems/&quot;&gt;or ems&lt;/a&gt; when it comes to defining font sizes. Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.&lt;/p&gt;
@@ -582,7 +582,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;websites&quot;&gt;Websites:&lt;/h1&gt;
+&lt;h2 id=&quot;websites&quot;&gt;Websites:&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.w3schools.com/js/default.asp&quot;&gt;W3Schools&lt;/a&gt;:&lt;/strong&gt; This is a great go-to resource for anything that may come up. It will cover anything from syntax to basic explanations about what some methods do. It is a trusted resource for many and definitely a good site to check out.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;:&lt;/strong&gt; If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out.&lt;/li&gt;
@@ -591,7 +591,7 @@
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://javascriptissexy.com/&quot;&gt;JavaScript Is Sexy&lt;/a&gt;:&lt;/strong&gt; Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script &lt;em&gt;and&lt;/em&gt; and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;some-design-inspirations&quot;&gt;Some design inspirations:&lt;/h1&gt;
+&lt;h2 id=&quot;some-design-inspirations&quot;&gt;Some design inspirations:&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://ajclarkson.co.uk/blog/&quot;&gt;AJ Clarkson’s Site and Portfolio&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ashleyfarrand.com/about/&quot;&gt;Ashley Farrand’s Design Website&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -599,7 +599,7 @@
   &lt;li&gt;You can also check out my pinterest board for more web design inspirations &lt;a href=&quot;https://www.pinterest.com/ktagilbert/web-design/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;miscellaneous&quot;&gt;Miscellaneous:&lt;/h1&gt;
+&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous:&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Subreddits:
@@ -625,13 +625,13 @@
         <title>How to Start Learning SCSS</title>
         <description>&lt;p&gt;&lt;img src=&quot;/assets/brainstorm.jpg&quot; alt=&quot;First SCSS project&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the gap between CSS and SASS&lt;/h2&gt;
+&lt;h1 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the gap between CSS and SASS&lt;/h1&gt;
 
 &lt;p&gt;I have a confession. When I first started working on this blog, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;It turns out that SCSS is not that difficult.&lt;/p&gt;
 
-&lt;h1 id=&quot;what-helped-me-learn-about-scss&quot;&gt;What helped me learn about SCSS:&lt;/h1&gt;
+&lt;h2 id=&quot;what-helped-me-learn-about-scss&quot;&gt;What helped me learn about SCSS:&lt;/h2&gt;
 &lt;p&gt;I simply pulled open my computer and read up on SASS. I started by typing in “learning SASS” into Google. I  was then directed to &lt;a href=&quot;http://sass-lang.com/&quot;&gt;sass-lang.com&lt;/a&gt;. The words “CSS with Superpowers” appeared on my screen.&lt;/p&gt;
 
 &lt;p&gt;It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! &lt;strong&gt;Here I am going to show you some basics to help you get started with SCSS.&lt;/strong&gt;&lt;/p&gt;
@@ -643,7 +643,7 @@
   &lt;li&gt;What an extend is&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h1&gt;
+&lt;h2 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h2&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
  &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -730,7 +730,7 @@
         <title>How to Make a Simple Navigation Menu From Scratch</title>
         <description>&lt;p&gt;Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. &lt;strong&gt;What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;start-by-learning-some-general-principles&quot;&gt;Start by learning some general principles&lt;/h2&gt;
+&lt;h1 id=&quot;start-by-learning-some-general-principles&quot;&gt;Start by learning some general principles&lt;/h1&gt;
 &lt;p&gt;If you are like me and don’t know much about web development or these three languages, you may approach the problem by looking at a tutorial and just copying their examples and then pasting them into your text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? &lt;em&gt;Spending some time to really learn the basic principles of the language you are working in can be super helpful.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. &lt;strong&gt;You might want to try doing the same and really hammering down these ideas:&lt;/strong&gt;&lt;/p&gt;
@@ -747,7 +747,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;how-to-approach-the-problem-of-creating-a-menu-for-your-page&quot;&gt;How to approach the problem of creating a menu for your page&lt;/h1&gt;
+&lt;h2 id=&quot;how-to-approach-the-problem-of-creating-a-menu-for-your-page&quot;&gt;How to approach the problem of creating a menu for your page&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for a good one to use):&lt;/li&gt;
 &lt;/ul&gt;

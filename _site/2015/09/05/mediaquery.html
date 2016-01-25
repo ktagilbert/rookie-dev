@@ -205,9 +205,10 @@
   <header class="post-header">
   	<p class="post-title">Learning About Media Queries</p>
   </header>
-  <p class="post-meta">Sep 5, 2015</p>
 
-<div class="wrapper"
+<div class="wrapper">
+  <p class="post-meta">Sep 5, 2015
+  </p>
   <article class="post-content">
     <p><img src="/assets/mediaQuery.jpg" alt="Learning about media queries" /></p>
 
@@ -246,7 +247,7 @@
 
 <p>This is an example of a media query I used to help make this blog’s logo. I made it to help make the surrounding div shrink once a user’s screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.</p>
 
-<h1 id="when-to-use-a-media-query">When to use a media query</h1>
+<h2 id="when-to-use-a-media-query">When to use a media query</h2>
 <p>I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query. <strong>Just remember to base your media query rules on how your content looks rather than on popular device widths.</strong> If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don’t want).</p>
 
 <p>Yet, before you define a media query rule, it can also help to remember that many layout problems can be fixed by using more flexible measurement units. For example, using percentages <a href="https://css-tricks.com/why-ems/">or ems</a> when it comes to defining font sizes. Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.</p>

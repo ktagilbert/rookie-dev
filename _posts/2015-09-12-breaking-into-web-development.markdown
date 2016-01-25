@@ -33,7 +33,7 @@ The thing is, I had been thinking about the same thing for months - ever since I
 
 I didn't think that I was smart enough to do that. You see, I studied creative writing in college. From there, I thought that I was going to spend my adult life as a secretary or admin assistant while writing a novel during coffee fueled nights. Going into web development was something I had never thought that I could do. *It simply didn't fit in with the idea I had been forming for myself.*
 
-# Where to start - breaking the process down into small steps
+## Where to start - breaking the process down into small steps
 
 That night though I said good-bye to that idea because it just wasn't working for me. Instead, My S.O. and I sat down together and went over some basic concepts. I learned about arrays, operators, and zero-based indexes in JavaScript. Then, we googled [Jekyll](http://jekyllrb.com/) together and my S.O. ran some commands to create a Jekyll powered static blog site that I could work on. **It took us about three hours for me to see that I had it in me to learn a programming language *and* that I had a means to create a site from scratch.**
 

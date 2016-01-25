@@ -46,7 +46,7 @@ To help you gain a grasp on what a media query looks like, you can checkout the 
 
 This is an example of a media query I used to help make this blog's logo. I made it to help make the surrounding div shrink once a user's screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.
 
-# When to use a media query
+## When to use a media query
 I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query. **Just remember to base your media query rules on how your content looks rather than on popular device widths.** If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don't want).
 
 Yet, before you define a media query rule, it can also help to remember that many layout problems can be fixed by using more flexible measurement units. For example, using percentages [or ems](https://css-tricks.com/why-ems/) when it comes to defining font sizes. Yet, if your overall layout isn't working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.

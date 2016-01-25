@@ -20,7 +20,7 @@ In the end, I was able to create a nav bar that changed colors when the user scr
 ![Simple Nav Bar](/assets/normalnavbar.png)
 
 
-#How to Approach the Problem
+# How to Approach the Problem
 
 If you are looking to build a great, responsive nav bar that utilizes some jQuery here is how to start. First, you can navigate to where you are including your javascript. You can start by making sure you have a jQuery library included along with your other script tags. (I keep mine in my head.html file.)
 
@@ -124,7 +124,7 @@ Next, you can write your else statement. The else statement will provide the css
 
 **Now you're done!** In the end, you will get a nav bar that changes state on scroll. It will look something like this:
 
-### Nav Bar that Changes on scroll
+## Nav Bar that Changes on scroll
 
 ![Responsive Nav Bar](/assets/responsiveNav.jpg)
 

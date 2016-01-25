@@ -8,9 +8,12 @@ layout: default
   <header class="post-header">
   	<p class="post-title">{{ page.title }}</p>
   </header>
-  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
-<div class="wrapper"
+<div class="wrapper">
+  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •
+    {{ page.author }}{% endif %}{% if page.meta %} •
+    {{ page.meta }}{% endif %}
+  </p>
   <article class="post-content">
     {{ content }}
   </article>

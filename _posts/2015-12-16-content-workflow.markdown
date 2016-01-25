@@ -49,7 +49,7 @@ Okay, now that you have your answers, you can already begin to see where you cou
 I am asking you to do this small assignment because too often I have seen companies devalue their writers. The assumption is that anyone can write. This happens because employees at these companies already know the company voice. They have been around for a while and have read all of the marketing copy and company brochures. They could write a blog post or article in just one afternoon because they know all there is to know. So the assumption is that professional writers will have no problem completing the assignment either. There is also the assumption that writing is easy.
 
 
-#### These two assumptions are detrimental for your business.
+## These two assumptions are detrimental for your business.
 
 Here is why:
 
@@ -62,12 +62,12 @@ But now, they are being tasked with writing for you and they are finding that yo
 I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don't miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I'm the one copy editing these articles. Around the 10th time I read the same repeated phrase it's almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down and at the end of it all writers only earn about $20-$30 their time my time.
 
 
-#### Here's the thing: your content is SUPER important.
+## Here's the thing: your content is SUPER important.
 
 To fix the process, let's remember that content is king right now! Meaning, you should be treating it like the king. It (and by extension your writers) should be your top priority as they are one of your most valuable resources. The best thing you can do to treat your content and your writers like kings is to give them all of the information you can to make their job perfectly clear and work to reduce their frustration during assignments. *So, go ahead, ask yourself those 12 questions at the beginning of this article to help yourself get better copy from your writers!*
 
 
-####what's the solution?
+## What's the solution?
 
 The best solution I can offer you is to simply try hiring more writers. Get more team members in your department or find more qualified freelancer to contribute to copy-editing. Then, get multiple people to help copy edit. You can even delegate the task to your interns as well to help. **But it really is important that you spread out assignments between more writers to avoid being handed mediocre copy.  Afterall, this copy is important to you and your client so why would you trust it to someone who is going to become a zombie after a certain word count or hour of work?**
 
