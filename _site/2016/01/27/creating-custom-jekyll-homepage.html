@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="description" content="A personal technical marketing blog and portfolio by Katie Gilbert in Portland, OR.
+    Visit to learn about web development, technical marketing, or to contact me for work.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Marketing Blog & Portfolio | Katie Gilbert</title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://127.0.0.1:4000//2016/01/27/creating-custom-jekyll-homepage.html">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://127.0.0.1:4000//feed.xml" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55144371-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+
+		$(document).ready(function() {
+
+    //search function
+    $('.fa-search').on('click', function(event) {
+    $('#search-text').animate({width: 'toggle'}, '700');
+  });
+
+    var $articleTitles = $('.post-link');
+    var searchTerm = "";
+
+    function search() {
+
+      $articleTitles.each(function(i, elem) {
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) {
+          $(elem).closest('.article').hide();
+          $('.article').css({
+            'width': '90%',
+            'margin': '0 5%'
+          });
+        } else {
+          $(elem).closest('.article').show();
+          $('.article').css({
+            'width': '25%',
+            'margin': '0'
+          });
+        }
+      });
+      if ($('.article:hidden').length === $articleTitles.length) {
+        $('#no-results').show();
+       }
+     }
+
+     $("#search-text").on('keydown', function(e) {
+       if (e.keyCode === 8) {
+         if (searchTerm.length > 0) {
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1);
+           $('#no-results').hide();
+           search();
+         }
+       } else {
+         searchTerm += String.fromCharCode(e.keyCode);
+         search();
+       }
+     });
+
+      //make .page-heading the height of the screen
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //desktop nav bar changes color on scroll
+      var scroll_start = 0;
+      var startchange = $('p:first');
+      var offset = startchange.offset();
+
+        if (startchange.length || $('img')) {
+
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+
+            if(scroll_start > offset.top) {
+              $("#menu").stop().animate({
+                backgroundColor:'#111'}, "700");
+              $('.menu-item').css("color", "#fff");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff");
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
+            } else {
+              $('#menu').stop().animate({
+                backgroundColor: 'transparent'}, "700");
+              $('.menu-item').children().css("color", "#1D1E18");
+              $(".fa-twitter").css("color", "#1D1E18")
+              $(".fa-github").css("color", "#1D1E18");
+              $(".fa-envelope").css("color", "#1D1E18");
+            }
+        });
+      }
+
+      //mobile-menu-arrow on click, display mobile menu
+      $('#mobile-btn').on('click', function(event) {
+        event.preventDefault;
+        $("#mobile-menu").show();
+        $("#mobile-btn").hide();
+      });
+
+      //close mobile menu
+      $('#close-menu').on('click', function(event) {
+        event.preventDefault;
+        $('#mobile-menu').hide();
+        $("#mobile-btn").show();
+      });
+
+      //click on #home-arrow to scroll down to post-list
+
+      $('.fa-chevron-down').on('click', function(event) {
+        event.preventDefault;
+        $('html, body').animate({
+          scrollTop: $(".post-list").offset().top
+        },900);
+      });
+
+      //about page creative work change
+      $(window).resize(function() {
+        if ($(window).width() < 850) {
+          $('#desktop-creative-work').hide();
+          $('.mobile-img').show()
+        } else {
+          $('#desktop-creative-work').show();
+          $('.mobile-img').hide();
+        }
+      });
+
+      //open all links in a new tab
+      $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+
+        if(!a.test(this.href)) {
+            $(this).click(function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            });
+          }
+        });
+
+    });
+ </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <ul id="menu">
+      <li class="menu-item"><a href="/">Home</li>
+      <li class="menu-item"><a href="/about">About</a></li>
+      <li class="menu-item"><a href="/portfolio">Portfolio</a></li>
+      <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
+      <ul id=social-icons>
+        <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+  </ul>
+
+<div id=mobile-wrap>
+  <span id="mobile-btn"></span>
+
+  <span id="mobile-menu">
+    <p id="close-menu">X</p>
+    <ul>
+      <li><a href="/">Home</li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+  </span>
+</div>
+
+</header>
+
+    <!--<div class="page-content">-->
+        <!DOCTYPE html>
+<html>
+<div class="post">
+
+  <header class="post-header">
+  	<p class="post-title">How I Customized My Jekyll Home Page Layout</p>
+  </header>
+
+<div class="wrapper">
+  <p class="post-meta">Jan 27, 2016
+  </p>
+  <article class="post-content">
+    <p><img src="/assets/jekyllDefaultSite.jpg" alt="Default Jekyll Layout" />
+When you start work on your new <a href="https://jekyllrb.com/">Jekyll powered site</a>, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. To get started, you can open your “index.html” file in the root of your repo to get started on some layout changes.</p>
+
+<h1 id="customizing-your-jekyll-powered-home-page">Customizing your Jekyll powered home page</h1>
+
+<p>At first, I didn’t know what I wanted layout wise for my home page. <a href="/2015/10/17/UI.html">(see my post here for more info on thinking about your UI Design before coding!)</a> I tried a lot of different options resulting in weeks of work. In the end I didn’t like anything I tried out but hey, at least I got a lot of practice in SCSS out of the process. Yet, I  was <em>finally</em> able to settle on <strong>a three column desktop layout to help display my posts they way I wanted to.</strong></p>
+
+<h2 id="step-1-creating-columns">Step 1: Creating columns</h2>
+
+<p><img src="/assets/threeColumnLayout.jpg" alt="Three Column Blog Layout" /></p>
+
+<p>I used <a href="/2016/01/15/learning-flexbox.html">flexbox properties</a> to achieve my three column layout. I chose three columns because I wanted to stick with larger images to really showcase each post on my home page. Plus, I just thought that four columns looked too cluttered and boring. The four columns layout was reminiscent of a newspaper spread with two many articles on the page.</p>
+
+<h2 id="heres-how-i-made-columns-using-flexbox">Here’s how I made columns using flexbox:</h2>
+
+<p>I went into my “sass” folder and created a file called “style.scss” to help contain all of my custom style changes. (Note: I had to include this new stylesheet in the head of my site.) Here is what the SCSS looks like:</p>
+
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.post-list</span> <span class="p">{</span>
+  <span class="na">list-style</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+  <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+  <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="n">flex</span><span class="p">;</span>
+  <span class="na">flex-wrap</span><span class="o">:</span> <span class="n">wrap</span><span class="p">;</span>
+  <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">5</span><span class="kt">%</span><span class="p">;</span>
+
+  <span class="nt">li</span> <span class="p">{</span>
+    <span class="na">width</span><span class="o">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
+    <span class="na">padding</span><span class="o">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+    <span class="na">clear</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>
+    <span class="na">align-items</span><span class="o">:</span> <span class="no">center</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">img</span><span class="o">,</span> <span class="nc">.post-img</span> <span class="p">{</span>
+    <span class="na">align-items</span><span class="o">:</span> <span class="no">center</span><span class="p">;</span>
+    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="n">flex</span><span class="p">;</span>
+    <span class="na">overflow</span><span class="o">:</span> <span class="no">hidden</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.excerpt</span> <span class="p">{</span>
+    <span class="na">align-items</span><span class="o">:</span> <span class="no">baseline</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>If you don’t want to use flexbox, you can achieve the same effect using styled lists and <a href="/2015/09/05/mediaquery.html">media queries</a>.</p>
+
+<h2 id="step-2-including-post-excerpts-in-jekyll">Step 2: Including post excerpts in Jekyll</h2>
+<p>Out of the box, a Jekyll site display posts with the help of a post title and post link. But I wanted to include excerpts on my home page with the goal of getting more visitors to click on my posts. I mean, why spend hours writing blog articles if no one clicks on them, right? <strong>I learned that if you give vistors an idea of what they are going to read, they will typically be more apt to click on that post and continue reading if they like the content they’ve been shown already.</strong></p>
+
+<p>Thankfully, Jekyll uses liquid templating to help you include dynamic features throughout your site. All you have to do reference whatever file you want to include with a liquid tag. If you want, you can check out <a href="http://jekyllrb.com/docs/templates/">Jekyll’s documentation on liquid templating here.</a></p>
+
+<p>In this case, I didn’t have to create any markup of my own. All I had to do was include some my meta info for each of my posts. So, now each of my posts contain some neat meta info that I can reference in my markup:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: post
+title: &quot;How I Customized My Jekyll Home Page Layout&quot;
+date: 2016-01-27 12:43:21
+image: &quot;jekyllDefaultSite.jpg&quot;
+excerpt: &gt;
+ Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container.
+---</code></pre></div>
+
+<h2 id="step-3-using-liquid-tags-to-include-images">Step 3: Using liquid tags to include images</h2>
+
+<p>For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was boring. A simple solution was to include some images.</p>
+
+<p>They’re a bunch of way to include images for each of your post but I went with what I think is the easiest option. <strong>In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.</strong> Just include “image” in your meta info and pair it with a file in your “assets” folder. You can see how I’ve included an image for each of my post in the code snippet above.</p>
+
+<h2 id="optimize-your-photos-for-the-web-first">Optimize Your photos for the web first</h2>
+
+<p><strong>PRO TIP: To make sure all of your images appear uniformly, make sure you give them a uniform width and height.</strong> I resized all of my images in Photoshop as either 1300px by 750px or 650px by 375px (for smaller original images) and then clicked “save for web” when I was all done.</p>
+
+<p>When I save my photos I also like to make sure they load progressively and adjust the quality of the photos to help reduce the image’s file size as much as possible (this will reduce your image’s load time!). <a href="http://madefreshly.com/blog/howto/how-to-properly-optimize-images-for-web-in-photoshop/">Here’s some more info on optimizing photos.</a></p>
+
+<p>Once my images were in place, I was finally happy with my home page! Believe me, it took months to get my site to look exactly how I wanted it to. Of course, that was my own fault for not mocking up a design before implementing layouts. Plus, I think I spent 2 whole days just learning how to associate my posts with an image. In the end though, the time was well worth it and I ended up learning a ton.</p>
+
+<p><strong>Let me know how your layouts turns out and if you have any questions, let me know in the comments.</strong> Thanks for reading guys!</p>
+
+  </article>
+
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2016/01/15/learning-flexbox.html">
+      <li id="title-prev">Learning About Flexbox (And Why It's a Great Tool)</li>
+    </a>
+    <a class="post-nav-link" href="">
+      <li id="title-next"></li>
+    </a>
+  </ul>
+</div>
+
+<!--contribute container-->
+
+<div class="contribute-container">
+   <span class="container-head">Want To Contribute to the Blog?</span>
+ <ul>
+   <li>
+     <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
+    </li>
+   </ul>
+</div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'rookiedev';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+</div>
+</div>
+
+
+
+</html>
+
+        <div class="wrapper">
+        </div>
+    <!--</div>-->
+
+
+
+    <footer class="site-footer">
+    <div class="footer-content">
+      <h3>Do You Like What You See Here?</h4>
+      <ul class="footer-list">
+        <li><a href="mailto:ktagilbert@gmail.com">send me an email to get in contact sometime</a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert</a></li>
+        <li>© 2016—2017 all rights reserved</li>
+     </ul>
+   </div>
+
+</footer>
+
+
+  </body>
+  <title>Technical Marketing Blog & Portfolio</title>
+
+
+</html>

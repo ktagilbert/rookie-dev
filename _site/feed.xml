@@ -10,10 +10,94 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>How I Customized My Jekyll Home Page Layout</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/jekyllDefaultSite.jpg&quot; alt=&quot;Default Jekyll Layout&quot; /&gt;
+When you start work on your new &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll powered site&lt;/a&gt;, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. To get started, you can open your “index.html” file in the root of your repo to get started on some layout changes.&lt;/p&gt;
+
+&lt;h1 id=&quot;customizing-your-jekyll-powered-home-page&quot;&gt;Customizing your Jekyll powered home page&lt;/h1&gt;
+
+&lt;p&gt;At first, I didn’t know what I wanted layout wise for my home page. &lt;a href=&quot;/2015/10/17/UI.html&quot;&gt;(see my post here for more info on thinking about your UI Design before coding!)&lt;/a&gt; I tried a lot of different options resulting in weeks of work. In the end I didn’t like anything I tried out but hey, at least I got a lot of practice in SCSS out of the process. Yet, I  was &lt;em&gt;finally&lt;/em&gt; able to settle on &lt;strong&gt;a three column desktop layout to help display my posts they way I wanted to.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-creating-columns&quot;&gt;Step 1: Creating columns&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/threeColumnLayout.jpg&quot; alt=&quot;Three Column Blog Layout&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I used &lt;a href=&quot;/2016/01/15/learning-flexbox.html&quot;&gt;flexbox properties&lt;/a&gt; to achieve my three column layout. I chose three columns because I wanted to stick with larger images to really showcase each post on my home page. Plus, I just thought that four columns looked too cluttered and boring. The four columns layout was reminiscent of a newspaper spread with two many articles on the page.&lt;/p&gt;
+
+&lt;h2 id=&quot;heres-how-i-made-columns-using-flexbox&quot;&gt;Here’s how I made columns using flexbox:&lt;/h2&gt;
+
+&lt;p&gt;I went into my “sass” folder and created a file called “style.scss” to help contain all of my custom style changes. (Note: I had to include this new stylesheet in the head of my site.) Here is what the SCSS looks like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.post-list&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;list-style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;inline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;flex-wrap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;inline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.post-img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;inline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.excerpt&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you don’t want to use flexbox, you can achieve the same effect using styled lists and &lt;a href=&quot;/2015/09/05/mediaquery.html&quot;&gt;media queries&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-including-post-excerpts-in-jekyll&quot;&gt;Step 2: Including post excerpts in Jekyll&lt;/h2&gt;
+&lt;p&gt;Out of the box, a Jekyll site display posts with the help of a post title and post link. But I wanted to include excerpts on my home page with the goal of getting more visitors to click on my posts. I mean, why spend hours writing blog articles if no one clicks on them, right? &lt;strong&gt;I learned that if you give vistors an idea of what they are going to read, they will typically be more apt to click on that post and continue reading if they like the content they’ve been shown already.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Thankfully, Jekyll uses liquid templating to help you include dynamic features throughout your site. All you have to do reference whatever file you want to include with a liquid tag. If you want, you can check out &lt;a href=&quot;http://jekyllrb.com/docs/templates/&quot;&gt;Jekyll’s documentation on liquid templating here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this case, I didn’t have to create any markup of my own. All I had to do was include some my meta info for each of my posts. So, now each of my posts contain some neat meta info that I can reference in my markup:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: post
+title: &amp;quot;How I Customized My Jekyll Home Page Layout&amp;quot;
+date: 2016-01-27 12:43:21
+image: &amp;quot;jekyllDefaultSite.jpg&amp;quot;
+excerpt: &amp;gt;
+ Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container.
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-3-using-liquid-tags-to-include-images&quot;&gt;Step 3: Using liquid tags to include images&lt;/h2&gt;
+
+&lt;p&gt;For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was boring. A simple solution was to include some images.&lt;/p&gt;
+
+&lt;p&gt;They’re a bunch of way to include images for each of your post but I went with what I think is the easiest option. &lt;strong&gt;In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.&lt;/strong&gt; Just include “image” in your meta info and pair it with a file in your “assets” folder. You can see how I’ve included an image for each of my post in the code snippet above.&lt;/p&gt;
+
+&lt;h2 id=&quot;optimize-your-photos-for-the-web-first&quot;&gt;Optimize Your photos for the web first&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;PRO TIP: To make sure all of your images appear uniformly, make sure you give them a uniform width and height.&lt;/strong&gt; I resized all of my images in Photoshop as either 1300px by 750px or 650px by 375px (for smaller original images) and then clicked “save for web” when I was all done.&lt;/p&gt;
+
+&lt;p&gt;When I save my photos I also like to make sure they load progressively and adjust the quality of the photos to help reduce the image’s file size as much as possible (this will reduce your image’s load time!). &lt;a href=&quot;http://madefreshly.com/blog/howto/how-to-properly-optimize-images-for-web-in-photoshop/&quot;&gt;Here’s some more info on optimizing photos.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once my images were in place, I was finally happy with my home page! Believe me, it took months to get my site to look exactly how I wanted it to. Of course, that was my own fault for not mocking up a design before implementing layouts. Plus, I think I spent 2 whole days just learning how to associate my posts with an image. In the end though, the time was well worth it and I ended up learning a ton.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let me know how your layouts turns out and if you have any questions, let me know in the comments.&lt;/strong&gt; Thanks for reading guys!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Jan 2016 04:43:21 -0800</pubDate>
+        <link>http://127.0.0.1:4000//2016/01/27/creating-custom-jekyll-homepage.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/01/27/creating-custom-jekyll-homepage.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Learning About Flexbox (And Why It&#39;s a Great Tool)</title>
         <description>&lt;p&gt;Before I begin telling you about flexbox properties, I want to fill you in on a debate surrounding the tool. When I first started learning about web development, the internet told me not to use flexbox. People were ADAMANT that flexbox was not the best tool to use because modern browsers didn’t support it and there were other tools to use to achieve the same layout results. I saw the rants on reddit and I believed them without doing any research of my own.&lt;/p&gt;
 
-&lt;p&gt;Then, when I was working on my &lt;a href=&quot;http://localhost:4000/about/&quot;&gt;about page&lt;/a&gt;, I found myself wrestling with absolute positioning, z-index, and clear properties. It was a huge pain that involved &lt;em&gt;way&lt;/em&gt; too many lines of css. So, I reconsidered my uninformed stance on flexbox. I pulled up a new tab and began researching which browsers supported flex properties (btw, this is what I should have done in the first place!).&lt;/p&gt;
+&lt;p&gt;Then, when I was working on my about page, I found myself wrestling with absolute positioning, z-index, and clear properties. It was a huge pain that involved &lt;em&gt;way&lt;/em&gt; too many lines of css. So, I reconsidered my uninformed stance on flexbox. I pulled up a new tab and began researching which browsers supported flex properties (btw, this is what I should have done in the first place!).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;In a couple of seconds I found that 95.31% of browsers support flexbox properties.&lt;/strong&gt; Wow, okay, that’s good. AND, because my targeted audience are a bunch of awesome nerds who mostly use Chrome, I quickly decided that I could overlook that remaining 5.69% because I’m pretty sure those who use IE 8 or 9 won’t be visiting my blog anytime soon….or ever.&lt;/p&gt;
 
