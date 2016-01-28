@@ -655,8 +655,9 @@ post details
   font-weight: 500; }
 .post .post-title {
   color: #EB4144;
-  margin: 0 10%;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0; }
 
 .post-meta {
   text-align: center; }
@@ -984,6 +985,12 @@ media queries
     font-size: 14px;
     padding-right: 40px; }
 
+  .post-link {
+    height: initial; }
+
+  .excerpt {
+    margin: 0; }
+
   .post-list {
     width: 85%; }
     .post-list .article {
@@ -1071,7 +1078,7 @@ media queries
 @media (max-width: 880px) {
   .post .post-header p {
     font-size: 2em;
-    width: 90%; }
+    margin: 0; }
 
   .post-list li {
     width: 100%; } }
@@ -1083,9 +1090,6 @@ media queries
     width: 100%;
     float: none;
     margin: auto; }
-
-  #back-to-about {
-    display: initial; }
 
   .rows li, .rows .portfolio-text, .rows a {
     width: 100%;
