@@ -3,8 +3,8 @@
   <channel>
     <title></title>
     <description></description>
-    <link>http://127.0.0.1:4000//</link>
-    <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://ktgilbert.com//</link>
+    <atom:link href="http://ktgilbert.com//feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Wed, 15 Jul 2015 19:50:33 -0700</pubDate>
     <lastBuildDate>Wed, 15 Jul 2015 19:50:33 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
@@ -87,8 +87,8 @@ excerpt: &amp;gt;
 &lt;p&gt;&lt;strong&gt;Let me know how your layouts turns out and if you have any questions, feel free post it in the comments below.&lt;/strong&gt; Thanks for reading guys!&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Jan 2016 04:43:21 -0800</pubDate>
-        <link>http://127.0.0.1:4000//2016/01/27/creating-custom-jekyll-homepage.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/01/27/creating-custom-jekyll-homepage.html</guid>
+        <link>http://ktgilbert.com//2016/01/27/creating-custom-jekyll-homepage.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2016/01/27/creating-custom-jekyll-homepage.html</guid>
         
         
       </item>
@@ -175,8 +175,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Okay, this should get you well on your way to using flexbox!! Thanks for reading guys. Remember, if you have any questions, leave a comment below.&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Jan 2016 04:43:21 -0800</pubDate>
-        <link>http://127.0.0.1:4000//2016/01/15/learning-flexbox.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/01/15/learning-flexbox.html</guid>
+        <link>http://ktgilbert.com//2016/01/15/learning-flexbox.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2016/01/15/learning-flexbox.html</guid>
         
         
       </item>
@@ -258,8 +258,8 @@ excerpt: &amp;gt;
 &lt;p&gt;&lt;a href=&quot;/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf&quot;&gt;&lt;img src=&quot;/assets/12Questions.png&quot; alt=&quot;12 Questions to Help You Improve Your Copywriting Workflow&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Dec 2015 08:32:21 -0800</pubDate>
-        <link>http://127.0.0.1:4000//2015/12/03/content-workflow.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/12/03/content-workflow.html</guid>
+        <link>http://ktgilbert.com//2015/12/03/content-workflow.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/12/03/content-workflow.html</guid>
         
         
       </item>
@@ -332,8 +332,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Let me know how it goes!&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Oct 2015 05:26:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2015/10/17/UI.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/10/17/UI.html</guid>
+        <link>http://ktgilbert.com//2015/10/17/UI.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/10/17/UI.html</guid>
         
         
       </item>
@@ -448,8 +448,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Alright, hope this helps guys! &lt;strong&gt;Let me know how your nav bar turns out. I’d love to see links to your end results.&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 23 Sep 2015 10:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2015/09/23/responsive-nav-bar.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/09/23/responsive-nav-bar.html</guid>
+        <link>http://ktgilbert.com//2015/09/23/responsive-nav-bar.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/09/23/responsive-nav-bar.html</guid>
         
         
       </item>
@@ -553,8 +553,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Okay, now you have some great steps to focus on. If you are like me, these steps will be able to help A LOT. A common problem I had while learning was not knowing what to do next. I wanted to make this post to help others avoid this problem. Once you have all of these steps mastered, we can talk about overcoming imposter syndrome! &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 12 Sep 2015 10:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2015/09/12/breaking-into-web-development.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/09/12/breaking-into-web-development.html</guid>
+        <link>http://ktgilbert.com//2015/09/12/breaking-into-web-development.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/09/12/breaking-into-web-development.html</guid>
         
         
       </item>
@@ -642,8 +642,8 @@ excerpt: &amp;gt;
 &lt;p&gt;&lt;strong&gt;Thanks for reading guys! Hope this post helps.&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Sep 2015 10:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2015/09/05/mediaquery.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/09/05/mediaquery.html</guid>
+        <link>http://ktgilbert.com//2015/09/05/mediaquery.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/09/05/mediaquery.html</guid>
         
         
       </item>
@@ -701,8 +701,8 @@ excerpt: &amp;gt;
 &lt;p&gt;These are just the best resources that I have been able to find so far. If you find any others that you think should be added to this list let me know and I’ll update this post. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Aug 2015 10:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2015/08/05/resources.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/08/05/resources.html</guid>
+        <link>http://ktgilbert.com//2015/08/05/resources.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/08/05/resources.html</guid>
         
         
       </item>
@@ -806,8 +806,8 @@ excerpt: &amp;gt;
 &lt;p&gt;So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS &lt;a href=&quot;http://sass-lang.com/guide&quot;&gt;here&lt;/a&gt; if you are interested. Let me know how it goes for you!&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Jul 2015 09:32:21 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2015/07/20/sass.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/07/20/sass.html</guid>
+        <link>http://ktgilbert.com//2015/07/20/sass.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/07/20/sass.html</guid>
         
         
       </item>
@@ -923,8 +923,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Remember, if you are have any trouble you can always Google specific solutions or questions you may have while building out your nav menu. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Jun 2015 09:32:21 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2015/06/24/nav-bar.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2015/06/24/nav-bar.html</guid>
+        <link>http://ktgilbert.com//2015/06/24/nav-bar.html</link>
+        <guid isPermaLink="true">http://ktgilbert.com//2015/06/24/nav-bar.html</guid>
         
         
       </item>
