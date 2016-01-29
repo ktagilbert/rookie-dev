@@ -1,7 +1,7 @@
 # Site settings
 email: ktagilbert@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://127.0.0.1:400/" # the base hostname & protocol for your site
+url: "ktgilbert.com/" # the base hostname & protocol for your site
 twitter_username: Kt_a_Gilbert
 github_username:  ktagilbert
 time: "2015-07-15 19:50:33 -0700"
