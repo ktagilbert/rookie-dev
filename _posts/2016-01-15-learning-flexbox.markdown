@@ -17,6 +17,7 @@ Then, when I was working on my about page, I found myself wrestling with absolut
 
 ![What Browsers Support FlexBox?](/assets/canIUseFlexbox.png)
 
+
 I go to [Can I Use](http://caniuse.com/) to see which browsers and operating systems will/will not support different methods or tools. A quick search on their site showed me exactly which browsers would not be compatible with flexbox properties. **Here is what I found:**
 
 - Android does not support the flex-wrap property and I must use the -webkit preface if I went to use other flexbox properties.
@@ -28,6 +29,9 @@ I go to [Can I Use](http://caniuse.com/) to see which browsers and operating sys
 To see if I could go forward with using flexbox properties, I took a look at my Google Analytics page to see which browsers my visitors typically use. **A quick look under the Technology tab told me that 0% of my visitors use Internet Explore and around 14% use Android.** That told me that I would only need to consider the -webkit prefix moving forward and find a work around for flex-wrap. No problem!
 
 ## The Lesson to be learned
+
+[![Learning About New Web Development Tools](/assets/webDevTip1.jpg)](
+https://twitter.com/intent/tweet?text={{ page.title }} url=http://bit.ly/1Sn3ppa &via=KT_a_Gilbert)
 
 I wanted to tell you all of this before teaching you about flex properties because I learned two awesome lessons here:
 

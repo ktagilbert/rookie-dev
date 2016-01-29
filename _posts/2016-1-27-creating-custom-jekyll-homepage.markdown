@@ -74,9 +74,9 @@ excerpt: >
 
 ## Step 3: Using liquid tags to include images
 
-For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was boring. A simple solution was to include some images.
+For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was *boring.* A simple solution was to include some images.
 
-They're a bunch of way to include images for each of your post but I went with what I think is the easiest option. **In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.** Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you'll include your liquid tag in the "index.html" file in the root of your site. You can see how I've included an image for each of my post in the code snippet above.
+They're a bunch of way to include images for each of your post but I went with what I think is the easiest option. **In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.** Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you'll include your liquid tag in the "index.html" file. You can see how I've included an image for each of my post in the code snippet above.
 
 ## Optimize Your photos for the web first
 

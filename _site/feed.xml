@@ -72,9 +72,9 @@ excerpt: &amp;gt;
 
 &lt;h2 id=&quot;step-3-using-liquid-tags-to-include-images&quot;&gt;Step 3: Using liquid tags to include images&lt;/h2&gt;
 
-&lt;p&gt;For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was boring. A simple solution was to include some images.&lt;/p&gt;
+&lt;p&gt;For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was &lt;em&gt;boring.&lt;/em&gt; A simple solution was to include some images.&lt;/p&gt;
 
-&lt;p&gt;They’re a bunch of way to include images for each of your post but I went with what I think is the easiest option. &lt;strong&gt;In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.&lt;/strong&gt; Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you’ll include your liquid tag in the “index.html” file in the root of your site. You can see how I’ve included an image for each of my post in the code snippet above.&lt;/p&gt;
+&lt;p&gt;They’re a bunch of way to include images for each of your post but I went with what I think is the easiest option. &lt;strong&gt;In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.&lt;/strong&gt; Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you’ll include your liquid tag in the “index.html” file. You can see how I’ve included an image for each of my post in the code snippet above.&lt;/p&gt;
 
 &lt;h2 id=&quot;optimize-your-photos-for-the-web-first&quot;&gt;Optimize Your photos for the web first&lt;/h2&gt;
 
@@ -118,6 +118,8 @@ excerpt: &amp;gt;
 &lt;p&gt;To see if I could go forward with using flexbox properties, I took a look at my Google Analytics page to see which browsers my visitors typically use. &lt;strong&gt;A quick look under the Technology tab told me that 0% of my visitors use Internet Explore and around 14% use Android.&lt;/strong&gt; That told me that I would only need to consider the -webkit prefix moving forward and find a work around for flex-wrap. No problem!&lt;/p&gt;
 
 &lt;h2 id=&quot;the-lesson-to-be-learned&quot;&gt;The Lesson to be learned&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/intent/tweet?text=Learning About Flexbox (And Why It&#39;s a Great Tool) url=http://bit.ly/1Sn3ppa &amp;amp;via=KT_a_Gilbert&quot;&gt;&lt;img src=&quot;/assets/webDevTip1.jpg&quot; alt=&quot;Learning About New Web Development Tools&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I wanted to tell you all of this before teaching you about flex properties because I learned two awesome lessons here:&lt;/p&gt;
 
