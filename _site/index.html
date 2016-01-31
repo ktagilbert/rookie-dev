@@ -35,45 +35,45 @@
 		$(document).ready(function() {
 
     //search function
-    $('.fa-search').on('click', function(event) {
-    $('#search-text').animate({width: 'toggle'}, '700');
-  });
+    $('.fa-search').on('click', function(event) { // on click of search icon
+      $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
+    });
 
     var $articleTitles = $('.post-link');
     var searchTerm = "";
 
     function search() {
 
-      $articleTitles.each(function(i, elem) {
-        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) {
-          $(elem).closest('.article').hide();
+      $articleTitles.each(function(i, elem) { // search through each '.post-link' (aka the title of each post)
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) { // if index of the user's input(aka. the string) is -1
+          $(elem).closest('.article').hide();  //hide articles
           $('.article').css({
             'width': '90%',
             'margin': '0 5%'
           });
-        } else {
-          $(elem).closest('.article').show();
+        } else { // else (if the string is greater -1)
+          $(elem).closest('.article').show(); // show the closest article in the search results
           $('.article').css({
             'width': '25%',
             'margin': '0'
           });
         }
       });
-      if ($('.article:hidden').length === $articleTitles.length) {
+      if ($('.article:hidden').length === $articleTitles.length) { //if no articles match the user's input, then show "no results found"
         $('#no-results').show();
        }
      }
 
-     $("#search-text").on('keydown', function(e) {
-       if (e.keyCode === 8) {
-         if (searchTerm.length > 0) {
-           searchTerm = searchTerm.substring(0, searchTerm.length - 1);
-           $('#no-results').hide();
-           search();
+     $("#search-text").on('keydown', function(e) { // this essentially watches which keys on the keyboard a user enters into the search field.
+       if (e.keyCode === 8) { //if a user presses keyCode 8 (aka backspace/delete)
+         if (searchTerm.length > 0) { // if the user's input doesn't contain anything
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1); // extract the character from index position -1
+           $('#no-results').hide(); //hide "show no result"
+           search(); //run search function
          }
        } else {
-         searchTerm += String.fromCharCode(e.keyCode);
-         search();
+         searchTerm += String.fromCharCode(e.keyCode); // search term = the value of the string that is generated from the user's key presses.
+         search(); // run search function
        }
      });
 
@@ -230,6 +230,18 @@
     </div>
 
   <ul class="post-list">
+    
+      <li class="article">
+        <!-- <span class="post-meta">Jan 30, 2016</span> -->
+        <h3>
+          <a class="post-link" href="/2016/01/30/client-side-search-function.html">A Client Side Search Function Made with jQuery</a>
+          <a href="/2016/01/30/client-side-search-function.html">
+            <img src="/assets/searchFunction.jpg" class="index-img">
+          </a>
+        </h3>
+        <p class="excerpt">There are a TON of ways to make a search function. So that's why I had to sit down and think about what I could make using only the tools that I had at my disposal.The end result is a simple search function that does exactly what I need it to do. Here's how:
+</p>
+      </li>
     
       <li class="article">
         <!-- <span class="post-meta">Jan 27, 2016</span> -->
