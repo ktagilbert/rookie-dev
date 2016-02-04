@@ -3,18 +3,19 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
-<div class="post">
+
+<div itemscope itemtype="http://schema.org/Article" class="post">
 
   <header class="post-header">
-  	<p class="post-title">{{ page.title }}</p>
+  	<p itemprop="name" class="post-title">{{ page.title }}</p>
   </header>
 
 <div class="wrapper">
-  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •
+  <p itemprop="datePublished" class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •
     {{ page.author }}{% endif %}{% if page.meta %} •
     {{ page.meta }}{% endif %}
   </p>
-  <article class="post-content">
+  <article itemprop="articleBody" class="post-content">
     {{ content }}
   </article>
 

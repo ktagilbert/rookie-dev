@@ -8,6 +8,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Technical Marketing Blog & Portfolio | Katie Gilbert</title>
+  <meta property="og:title" content="Katie Gilbert| Technical Marketing Blog & Portfolio" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@KT_a_Gilbert">
+  <meta name="twitter:creator" content="@KT_a_Gilbert">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="a great read from">
+  <meta name="twitter:image" content="/assets/" class="index-img">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="ktgilbert.com//2016/01/27/creating-custom-jekyll-homepage.html">
@@ -203,16 +212,17 @@
     <!--<div class="page-content">-->
         <!DOCTYPE html>
 <html>
-<div class="post">
+
+<div itemscope itemtype="http://schema.org/Article" class="post">
 
   <header class="post-header">
-  	<p class="post-title">How I Customized My Jekyll Home Page Layout</p>
+  	<p itemprop="name" class="post-title">How I Customized My Jekyll Home Page Layout</p>
   </header>
 
 <div class="wrapper">
-  <p class="post-meta">Jan 27, 2016
+  <p itemprop="datePublished" class="post-meta">Jan 27, 2016
   </p>
-  <article class="post-content">
+  <article itemprop="articleBody" class="post-content">
     <p><img src="/assets/jekyllDefaultSite.jpg" alt="Default Jekyll Layout" />
 When you start work on your new <a href="https://jekyllrb.com/">Jekyll powered site</a>, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. To get started, you can open your “index.html” file in the root of your repo to make some layout changes.</p>
 
