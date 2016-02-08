@@ -11,13 +11,6 @@
   <meta property="og:title" content="Katie Gilbert| Technical Marketing Blog & Portfolio" />
   <meta property="og:type" content="website" />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@KT_a_Gilbert">
-  <meta name="twitter:creator" content="@KT_a_Gilbert">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="a great read from">
-  <meta name="twitter:image" content="/assets/" class="index-img">
-
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="ktgilbert.com//2016/01/30/client-side-search-function.html">
   <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
@@ -184,8 +177,8 @@
 
   <ul id="menu">
       <li class="menu-item"><a href="/">Home</li>
-      <li class="menu-item"><a href="/about">About</a></li>
-      <li class="menu-item"><a href="/portfolio">Portfolio</a></li>
+      <li class="menu-item"><a href="/about/">About</a></li>
+      <li class="menu-item"><a href="/portfolio/">Portfolio</a></li>
       <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
       <ul id=social-icons>
         <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
@@ -306,8 +299,8 @@
 <span class="kd">function</span> <span class="nx">search</span><span class="p">()</span> <span class="p">{</span>
 
   <span class="nx">$articleTitles</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">elem</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// search through each &#39;.post-link&#39; (aka the title of each post)</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">text</span><span class="p">().</span><span class="nx">toUpperCase</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">searchTerm</span><span class="p">)</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// if index of the user&#39;s input(aka. the string) is -1</span>
-      <span class="nx">$</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">closest</span><span class="p">(</span><span class="s1">&#39;.article&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>  <span class="c1">//hide articles</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">text</span><span class="p">().</span><span class="nx">toUpperCase</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">searchTerm</span><span class="p">)</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// if index of the user&#39;s input(aka. the string) is -1, that means the article does not match the search query</span>
+      <span class="nx">$</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">closest</span><span class="p">(</span><span class="s1">&#39;.article&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>  <span class="c1">//hide all articles that do not match the query</span>
       <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.article&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span>
         <span class="s1">&#39;width&#39;</span><span class="o">:</span> <span class="s1">&#39;90%&#39;</span><span class="p">,</span>
         <span class="s1">&#39;margin&#39;</span><span class="o">:</span> <span class="s1">&#39;0 5%&#39;</span>

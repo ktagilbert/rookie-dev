@@ -493,7 +493,12 @@ portfolio page
 
 #portfolio-intro {
 	text-align: center;
-	padding-top: 5%;
+	padding: 5% 0;
+
+	h2 {
+		color: $orange;
+	}
+
 	p {
 		margin: auto;
 		width: 65%;
@@ -506,48 +511,40 @@ portfolio page
 	height: 90%;
 }
 
-.rows {
-	display: inline-block;
-	list-style: none;
-	max-height: 480px;
-	background-color: $tan;
-	width: 90%;
-	margin: 2% 0 0;
-	padding: 0;
+.box {
+	  padding:5px;
+	  width: 500px;
+		height: 500px;
+		margin: auto;
+	}
+	.overlay {
+	  background:rgba(223, 241,	248, .9);
+	  text-align:center;
+	  opacity:0;
+	  width:100%;
+		height:100%;
+	  -webkit-transition: all 0.3s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  -ms-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
 
-	li {
-		display: inline-block;
+		p, a, a:hover {
+			text-decoration: none !important;
+			font-size: 1.5em;
+			padding-top: 40%;
+		}
 	}
-	img {
-		max-height: 800px;
-		max-width: 50%;
-		float: left;
-		z-index: 3000;
-		clear: none;
-		padding: 0px;
+	.box:hover {
+	  border:1px solid #555;
+	  border-radius:5px;
 	}
-	.portfolio-txt {
-		text-align: center;
-		width: 50%;
-		color: #111;
+	.box:hover .overlay {
+		opacity:1;
 	}
-	h4 {
-		padding: 20% 2% 0 2%;
+	.search {
+	  position:relative;
 	}
-	h4, p {
-		color: #222;
-	}
-	a {
-		font-size: 0.8em;
-		color: #444;
-		font-weight: bold;
-	}
-}
-
-.rows:nth-of-type(even) {
-		background-color: #dff1f8;
-}
-
 
 /*********************************
 contribute container

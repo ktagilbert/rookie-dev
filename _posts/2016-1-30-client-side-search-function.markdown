@@ -96,8 +96,8 @@ var searchTerm = "";
 function search() {
 
   $articleTitles.each(function(i, elem) { // search through each '.post-link' (aka the title of each post)
-    if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) { // if index of the user's input(aka. the string) is -1
-      $(elem).closest('.article').hide();  //hide articles
+    if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) { // if index of the user's input(aka. the string) is -1, that means the article does not match the search query
+      $(elem).closest('.article').hide();  //hide all articles that do not match the query
       $('.article').css({
         'width': '90%',
         'margin': '0 5%'

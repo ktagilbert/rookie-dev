@@ -830,7 +830,9 @@ portfolio page
 
 #portfolio-intro {
   text-align: center;
-  padding-top: 5%; }
+  padding: 5% 0; }
+  #portfolio-intro h2 {
+    color: #EB4144; }
   #portfolio-intro p {
     margin: auto;
     width: 65%; }
@@ -840,38 +842,37 @@ portfolio page
   padding: 5%;
   height: 90%; }
 
-.rows {
-  display: inline-block;
-  list-style: none;
-  max-height: 480px;
-  background-color: #F8F3DF;
-  width: 90%;
-  margin: 2% 0 0;
-  padding: 0; }
-  .rows li {
-    display: inline-block; }
-  .rows img {
-    max-height: 800px;
-    max-width: 50%;
-    float: left;
-    z-index: 3000;
-    clear: none;
-    padding: 0px; }
-  .rows .portfolio-txt {
-    text-align: center;
-    width: 50%;
-    color: #111; }
-  .rows h4 {
-    padding: 20% 2% 0 2%; }
-  .rows h4, .rows p {
-    color: #222; }
-  .rows a {
-    font-size: 0.8em;
-    color: #444;
-    font-weight: bold; }
+.box {
+  padding: 5px;
+  width: 500px;
+  height: 500px;
+  margin: auto; }
 
-.rows:nth-of-type(even) {
-  background-color: #dff1f8; }
+.overlay {
+  background: rgba(223, 241, 248, 0.9);
+  text-align: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .overlay p, .overlay a, .overlay a:hover {
+    text-decoration: none !important;
+    font-size: 1.5em;
+    padding-top: 40%; }
+
+.box:hover {
+  border: 1px solid #555;
+  border-radius: 5px; }
+
+.box:hover .overlay {
+  opacity: 1; }
+
+.search {
+  position: relative; }
 
 /*********************************
 contribute container
