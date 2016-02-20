@@ -234,13 +234,15 @@ pre {
   text-align: center; }
 
 .post-list {
+  justify-content: center;
   list-style: none;
   margin-bottom: 0px;
   display: inline-flex;
   flex-wrap: wrap;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-left: 0; }
   .post-list > li {
-    width: 25%;
+    width: 27%;
     padding: 30px;
     clear: none;
     display: inline-block;
@@ -641,7 +643,7 @@ post details
   border-top: 4px solid #EB4144; }
 
 .post-wrapper {
-  margin: 0 10%;
+  margin: 0 2%;
   background-color: #fff; }
 
 .post-content {

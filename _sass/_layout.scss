@@ -93,14 +93,16 @@
 }
 
 .post-list {
+    justify-content: center;
     list-style: none;
     margin-bottom: 0px;
     display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
+    margin-left: 0;
 
     > li {
-      width: 25%;
+      width: 27%;
       padding: 30px;
       clear: none;
       display: inline-block;

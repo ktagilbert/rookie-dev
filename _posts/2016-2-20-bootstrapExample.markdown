@@ -4,7 +4,7 @@ title: "Your first Bootstrap Project - (Part 1)"
 date: 2016-02-20
 image: "bootstrap.jpg"
 excerpt: >
- Now I know, Bootstrap is *old news* to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site.
+ Now I know, Bootstrap is old news to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site.
 ---
 
 ![Bootstrap Tutorial](/assets/bootstrap.jpg)
@@ -24,15 +24,17 @@ To start on your own Bootstrap project, go to the [Bootstrap "getting started" p
 First, I recommend installing bower and Grunt if you don't already have them installed on your computer.
 [Bower](http://bower.io/) is just a package manager that helps you keep track all of your libraries, framework, etc . It just helps you make sure you install the right version of your packages and their dependencies.
 
-After that, you'll go back into your terminal and install grunt. The Bootstrap getting started page shows you how to do this as well. Yet, I ran into some errors while trying to install it. So if that happens to you, simply make sure you're in your root directory and run the command ```sudo npm install -g grunt-cli```. The sudo part is called *super user do*. It basically lets you force commands by overriding security measures that could be causing your errors. In short, it lets you act as if you are the superuser on your computer. From there, you can continue on with the installation as usual.
+After that, you'll go back into your terminal and install Grunt. The Bootstrap getting started page shows you how to do this as well. Yet, I ran into some errors while trying to install it. So if that happens to you, simply make sure you're in your root directory and run the command ```sudo npm install -g grunt-cli```.
 
-Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a 'config.yml' file in the root of your project, it will let you serve up your project locally with the command ```jekyll serve``` .
+The sudo part is called *super user do*. It basically lets you force commands by overriding security measures that could be causing your errors. In short, it lets you act as if you are the superuser on your computer. From there, you can continue on with the installation as usual.
 
-Okay, now that you have bower and Grunt installed, go ahead and unzip your Bootstrap folder. Go ahead and take a look at. You'll see that it include a bunch of minified CSS, JavaScript, and even some fonts.
+Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a 'config.yml' file in the root of your project, it will let you serve up your project locally while you're developing with the command ```jekyll serve``` .
 
-**Here, you can see why so many people use frameworks.** They just provide a bunch of styling for you right out of the box to make building a site a little easier and faster. Fair warning though: using Bootstrap did not speed up the development process for me at all! I am so used to creating layouts on my own that having to out specify some of the built-in styles was pretty time consuming and frustrating. At the end though, I was happy with the results (which I'll share here in a second).
+Okay, now that you have bower and Grunt installed, go ahead and unzip your Bootstrap folder. You'll see that it includes a bunch of minified CSS, JavaScript, and even some fonts.
 
-Now, all you have to do to start your own Bootstrap project is to copy the HTML below into your project's index.html file.
+**Here, you can see why so many people use frameworks.** They just provide a bunch of styling for you right out of the box to make building a site a little easier and faster. Fair warning though: using Bootstrap did not speed up the development process for me at all! I am so used to creating my own layouts that having to out specify some of the built-in styles was pretty time consuming and frustrating. At the end though, I was happy with the results (which I'll share here in a second).
+
+Now, all you have to do is copy the HTML below into your project's index.html file. Then, you'll be able to start your own Bootstrap site!
 
 {% highlight HTML %}
 <!DOCTYPE html>
@@ -63,7 +65,7 @@ Now, all you have to do to start your own Bootstrap project is to copy the HTML 
 
 {% endhighlight %}
 
-Alright! You have bootstrap installed!! Now, you can begin to create pages.
+Alright! You have bootstrap installed. Now, you can begin to create pages.
 
 ## My Bootstrap Example
 
@@ -73,8 +75,8 @@ I started by making just a one page example. You can [checkout the project for y
 
 ## Becoming familiar with Bootstrap
 
-Okay, there are couple of things to know about Bootstrap before you get started. The first is that most of the styling you will do will be in HTMl. Don't worry, I'm not talking about inline styles. Bootstrap just has a bunch of classes with associated styles for you to use already.
+Okay, there are couple of things to know about Bootstrap before you get started. The first is that most of the styling you will do will be done in HTML Don't worry, I'm not talking about inline styles. Bootstrap just has a bunch of classes with associated styles for you to use already.
 
-To get started, take a couple of hours to become familiar with the different classes you now have at your disposal [by taking a look at Bootstrap's CSS page](http://getbootstrap.com/css/). Then, explore the other pages the framework has for you on their [customize page](http://getbootstrap.com/customize/). If you want to override any of the existing styles you see here, you'll have to make a "styles.css" file in your css folder and include it in the head of your HTMl. Then, you'll have to out-specify the Bootstrap styling.
+To get started, take a couple of hours to become familiar with the different classes you now have at your disposal [by taking a look at Bootstrap's CSS page](http://getbootstrap.com/css/). Then, explore the other pages the framework has for you on their [customize page](http://getbootstrap.com/customize/). If you want to override any of the existing styles you see here, you'll have to make a "styles.css" file in your css folder and include it in the head of your HTML. Then, you'll have to out-specify the Bootstrap styling.
 
 Okay, I'll leave with the task of installing and exploring Bootstrap for today. **Tomorrow, I'll go more in depth on how I made my example project.** Stay tuned and thanks for reading guys!
