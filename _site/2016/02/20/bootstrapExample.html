@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="description" content="A personal technical marketing blog and portfolio by Katie Gilbert in Portland, OR.
+    Visit to learn about web development, technical marketing, or to contact me for work.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Marketing Blog & Portfolio | Katie Gilbert</title>
+  <meta property="og:title" content="Katie Gilbert| Technical Marketing Blog & Portfolio" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="ktgilbert.com//2016/02/20/bootstrapExample.html">
+  <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55144371-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script src="//load.sumome.com/" data-sumo-site-id="cc1befe725826873b8e3ea65b755ae587661065149cd815eb2b2331e9c5c7c2d" async="async"></script>
+
+
+  <script>
+
+		$(document).ready(function() {
+
+    //search function
+    $('.fa-search').on('click', function(event) { // on click of search icon
+      $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
+    });
+
+    var $articleTitles = $('.post-link');
+    var searchTerm = "";
+
+    function search() {
+
+      $articleTitles.each(function(i, elem) { // search through each '.post-link' (aka the title of each post)
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) { // if index of the user's input(aka. the string) is -1
+          $(elem).closest('.article').hide();  //hide articles
+          $('.article').css({
+            'width': '90%',
+            'margin': '0 5%'
+          });
+        } else { // else (if the string is greater -1)
+          $(elem).closest('.article').show(); // show the closest article in the search results
+          $('.article').css({
+            'width': '25%',
+            'margin': '0'
+          });
+        }
+      });
+      if ($('.article:hidden').length === $articleTitles.length) { //if no articles match the user's input, then show "no results found"
+        $('#no-results').show();
+       }
+     }
+
+     $("#search-text").on('keydown', function(e) { // this essentially watches which keys on the keyboard a user enters into the search field.
+       if (e.keyCode === 8) { //if a user presses keyCode 8 (aka backspace/delete)
+         if (searchTerm.length > 0) { // if the user's input doesn't contain anything
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1); // extract the character from index position -1
+           $('#no-results').hide(); //hide "show no result"
+           search(); //run search function
+         }
+       } else {
+         searchTerm += String.fromCharCode(e.keyCode); // search term = the value of the string that is generated from the user's key presses.
+         search(); // run search function
+       }
+     });
+
+      //make .page-heading the height of the screen
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //desktop nav bar changes color on scroll
+      var scroll_start = 0;
+      var startchange = $('p:first');
+      var offset = startchange.offset();
+
+        if (startchange.length || $('img')) {
+
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+
+            if(scroll_start > offset.top) {
+              $("#menu").stop().animate({
+                backgroundColor:'#111'}, "700");
+              $('.menu-item').css("color", "#fff");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff");
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
+            } else {
+              $('#menu').stop().animate({
+                backgroundColor: 'transparent'}, "700");
+              $('.menu-item').children().css("color", "#1D1E18");
+              $(".fa-twitter").css("color", "#1D1E18")
+              $(".fa-github").css("color", "#1D1E18");
+              $(".fa-envelope").css("color", "#1D1E18");
+            }
+        });
+      }
+
+      //mobile-menu-arrow on click, display mobile menu
+      $('#mobile-btn').on('click', function(event) {
+        event.preventDefault;
+        $("#mobile-menu").show();
+        $("#mobile-btn").hide();
+      });
+
+      //close mobile menu
+      $('#close-menu').on('click', function(event) {
+        event.preventDefault;
+        $('#mobile-menu').hide();
+        $("#mobile-btn").show();
+      });
+
+      //click on #home-arrow to scroll down to post-list
+
+      $('.fa-chevron-down').on('click', function(event) {
+        event.preventDefault;
+        $('html, body').animate({
+          scrollTop: $(".post-list").offset().top
+        },900);
+      });
+
+      //about page creative work change
+      $(window).resize(function() {
+        if ($(window).width() < 850) {
+          $('#desktop-creative-work').hide();
+          $('.mobile-img').show()
+        } else {
+          $('#desktop-creative-work').show();
+          $('.mobile-img').hide();
+        }
+      });
+
+      //open all links in a new tab
+      $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+
+        if(!a.test(this.href)) {
+            $(this).click(function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            });
+          }
+        });
+
+    });
+ </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <ul id="menu">
+      <li class="menu-item"><a href="/">Home</li>
+      <li class="menu-item"><a href="/about/">About</a></li>
+      <li class="menu-item"><a href="/portfolio/">Portfolio</a></li>
+      <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
+      <ul id=social-icons>
+        <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+  </ul>
+
+<div id=mobile-wrap>
+  <span id="mobile-btn"></span>
+
+  <span id="mobile-menu">
+    <p id="close-menu">X</p>
+    <ul>
+      <li><a href="/">Home</li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+  </span>
+</div>
+
+</header>
+
+    <!--<div class="page-content">-->
+        <!DOCTYPE html>
+<html>
+
+<div itemscope itemtype="http://schema.org/Article" class="post">
+
+  <header class="post-header">
+  	<p itemprop="name" class="post-title">Your first Bootstrap Project - (Part 1)</p>
+  </header>
+
+<div class="wrapper">
+  <p itemprop="datePublished" class="post-meta">Feb 20, 2016
+  </p>
+  <article itemprop="articleBody" class="post-content">
+    <p><img src="/assets/bootstrap.jpg" alt="Bootstrap Tutorial" /></p>
+
+<p>Before I start talking about Bootstrap, I have some big news. <strong>I was hired as an SEO Specialist/Web Developer a couple of weeks ago!</strong> My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).</p>
+
+<p>Yet, once I started my new role I immediately wanted to beef up on a few things. My first priority was to become more comfortable with Bootstrap. Now I know, Bootstrap is <em>old news</em> to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site. Even better, you may even become more comfortable with common design patterns or methods of structuring your styles.</p>
+
+<p>Now, I had experimented with Bootstrap once before. I actually used it for my blog here for a few days just so I could see what it was all about. Though I decided to get rid of it in favor of learning how to layout out pages myself, the experience did teach me how to create a sticky footer. That alone was well worth the effort, believe me. The sticky footer problem was driving me pretty damn crazy.</p>
+
+<p>This time around I decided to just create a one page example project. First, I had to remember how to download and install Bootstrap though. For someone who is new to frameworks, it can be intimidating even to install a framework and include it in a project. At least it was for me when I first started back in July. So, I want to give you guys a little walkthrough on how to get started since it can be a little confusing.</p>
+
+<h1 id="downloading-and-installing-bootstrap-336">Downloading and Installing Bootstrap 3.3.6</h1>
+
+<p>To start on your own Bootstrap project, go to the <a href="http://getbootstrap.com/getting-started/">Bootstrap “getting started” page</a>. Here you can click “download bootstrap”. After that, you’ll just follow the directions on the page to install it.</p>
+
+<p>First, I recommend installing bower and Grunt if you don’t already have them installed on your computer.
+<a href="http://bower.io/">Bower</a> is just a package manager that helps you keep track all of your libraries, framework, etc . It just helps you make sure you install the right version of your packages and their dependencies.</p>
+
+<p>After that, you’ll go back into your terminal and install grunt. The Bootstrap getting started page shows you how to do this as well. Yet, I ran into some errors while trying to install it. So if that happens to you, simply make sure you’re in your root directory and run the command <code>sudo npm install -g grunt-cli</code>. The sudo part is called <em>super user do</em>. It basically lets you force commands by overriding security measures that could be causing your errors. In short, it lets you act as if you are the superuser on your computer. From there, you can continue on with the installation as usual.</p>
+
+<p>Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a ‘config.yml’ file in the root of your project, it will let you serve up your project locally with the command <code>jekyll serve</code> .</p>
+
+<p>Okay, now that you have bower and Grunt installed, go ahead and unzip your Bootstrap folder. Go ahead and take a look at. You’ll see that it include a bunch of minified CSS, JavaScript, and even some fonts.</p>
+
+<p><strong>Here, you can see why so many people use frameworks.</strong> They just provide a bunch of styling for you right out of the box to make building a site a little easier and faster. Fair warning though: using Bootstrap did not speed up the development process for me at all! I am so used to creating layouts on my own that having to out specify some of the built-in styles was pretty time consuming and frustrating. At the end though, I was happy with the results (which I’ll share here in a second).</p>
+
+<p>Now, all you have to do to start your own Bootstrap project is to copy the HTML below into your project’s index.html file.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=edge&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Bootstrap 101 Template<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+
+    <span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&quot;</span> <span class="na">integrity=</span><span class="s">&quot;sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7&quot;</span> <span class="na">crossorigin=</span><span class="s">&quot;anonymous&quot;</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+    <span class="c">&lt;!-- Bootstrap --&gt;</span>
+
+    <span class="c">&lt;!-- jQuery (necessary for Bootstrap&#39;s JavaScript plugins) --&gt;</span>
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+   <span class="c">&lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;</span>
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js&quot;</span> <span class="na">integrity=</span><span class="s">&quot;sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS&quot;</span> <span class="na">crossorigin=</span><span class="s">&quot;anonymous&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>Alright! You have bootstrap installed!! Now, you can begin to create pages.</p>
+
+<h2 id="my-bootstrap-example">My Bootstrap Example</h2>
+
+<p>I started by making just a one page example. You can <a href="https://github.com/ktagilbert/Bootstrap-Example">checkout the project for yourself here</a>. <em>And</em> it looks like this:</p>
+
+<p><img src="/assets/bootstrapExample2.jpg" alt="Example bootstrap project" /></p>
+
+<h2 id="becoming-familiar-with-bootstrap">Becoming familiar with Bootstrap</h2>
+
+<p>Okay, there are couple of things to know about Bootstrap before you get started. The first is that most of the styling you will do will be in HTMl. Don’t worry, I’m not talking about inline styles. Bootstrap just has a bunch of classes with associated styles for you to use already.</p>
+
+<p>To get started, take a couple of hours to become familiar with the different classes you now have at your disposal <a href="http://getbootstrap.com/css/">by taking a look at Bootstrap’s CSS page</a>. Then, explore the other pages the framework has for you on their <a href="http://getbootstrap.com/customize/">customize page</a>. If you want to override any of the existing styles you see here, you’ll have to make a “styles.css” file in your css folder and include it in the head of your HTMl. Then, you’ll have to out-specify the Bootstrap styling.</p>
+
+<p>Okay, I’ll leave with the task of installing and exploring Bootstrap for today. <strong>Tomorrow, I’ll go more in depth on how I made my example project.</strong> Stay tuned and thanks for reading guys!</p>
+
+  </article>
+
+<div>
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/2016/01/30/client-side-search-function.html">
+      <li id="title-prev">A Client Side Search Function Made with jQuery</li>
+    </a>
+    <a class="post-nav-link" href="">
+      <li id="title-next"></li>
+    </a>
+  </ul>
+</div>
+
+<!--contribute container-->
+
+<div class="contribute-container">
+   <span class="container-head">Want To Contribute to the Blog?</span>
+ <ul>
+   <li>
+     <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
+    </li>
+   </ul>
+</div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'rookiedev';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+</div>
+</div>
+
+
+
+</html>
+
+        <div class="wrapper">
+        </div>
+    <!--</div>-->
+
+
+
+    <footer class="site-footer">
+    <div class="footer-content">
+      <h3>Do You Like What You See Here?</h4>
+      <ul class="footer-list">
+        <li><a href="mailto:ktagilbert@gmail.com">send me an email to get in contact sometime</a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert</a></li>
+        <li>© 2016—2017 all rights reserved</li>
+     </ul>
+   </div>
+
+</footer>
+
+
+  </body>
+  <title>Technical Marketing Blog & Portfolio</title>
+
+
+</html>

@@ -10,6 +10,84 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>Your first Bootstrap Project - (Part 1)</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/bootstrap.jpg&quot; alt=&quot;Bootstrap Tutorial&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I start talking about Bootstrap, I have some big news. &lt;strong&gt;I was hired as an SEO Specialist/Web Developer a couple of weeks ago!&lt;/strong&gt; My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).&lt;/p&gt;
+
+&lt;p&gt;Yet, once I started my new role I immediately wanted to beef up on a few things. My first priority was to become more comfortable with Bootstrap. Now I know, Bootstrap is &lt;em&gt;old news&lt;/em&gt; to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site. Even better, you may even become more comfortable with common design patterns or methods of structuring your styles.&lt;/p&gt;
+
+&lt;p&gt;Now, I had experimented with Bootstrap once before. I actually used it for my blog here for a few days just so I could see what it was all about. Though I decided to get rid of it in favor of learning how to layout out pages myself, the experience did teach me how to create a sticky footer. That alone was well worth the effort, believe me. The sticky footer problem was driving me pretty damn crazy.&lt;/p&gt;
+
+&lt;p&gt;This time around I decided to just create a one page example project. First, I had to remember how to download and install Bootstrap though. For someone who is new to frameworks, it can be intimidating even to install a framework and include it in a project. At least it was for me when I first started back in July. So, I want to give you guys a little walkthrough on how to get started since it can be a little confusing.&lt;/p&gt;
+
+&lt;h1 id=&quot;downloading-and-installing-bootstrap-336&quot;&gt;Downloading and Installing Bootstrap 3.3.6&lt;/h1&gt;
+
+&lt;p&gt;To start on your own Bootstrap project, go to the &lt;a href=&quot;http://getbootstrap.com/getting-started/&quot;&gt;Bootstrap “getting started” page&lt;/a&gt;. Here you can click “download bootstrap”. After that, you’ll just follow the directions on the page to install it.&lt;/p&gt;
+
+&lt;p&gt;First, I recommend installing bower and Grunt if you don’t already have them installed on your computer.
+&lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt; is just a package manager that helps you keep track all of your libraries, framework, etc . It just helps you make sure you install the right version of your packages and their dependencies.&lt;/p&gt;
+
+&lt;p&gt;After that, you’ll go back into your terminal and install grunt. The Bootstrap getting started page shows you how to do this as well. Yet, I ran into some errors while trying to install it. So if that happens to you, simply make sure you’re in your root directory and run the command &lt;code&gt;sudo npm install -g grunt-cli&lt;/code&gt;. The sudo part is called &lt;em&gt;super user do&lt;/em&gt;. It basically lets you force commands by overriding security measures that could be causing your errors. In short, it lets you act as if you are the superuser on your computer. From there, you can continue on with the installation as usual.&lt;/p&gt;
+
+&lt;p&gt;Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a ‘config.yml’ file in the root of your project, it will let you serve up your project locally with the command &lt;code&gt;jekyll serve&lt;/code&gt; .&lt;/p&gt;
+
+&lt;p&gt;Okay, now that you have bower and Grunt installed, go ahead and unzip your Bootstrap folder. Go ahead and take a look at. You’ll see that it include a bunch of minified CSS, JavaScript, and even some fonts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Here, you can see why so many people use frameworks.&lt;/strong&gt; They just provide a bunch of styling for you right out of the box to make building a site a little easier and faster. Fair warning though: using Bootstrap did not speed up the development process for me at all! I am so used to creating layouts on my own that having to out specify some of the built-in styles was pretty time consuming and frustrating. At the end though, I was happy with the results (which I’ll share here in a second).&lt;/p&gt;
+
+&lt;p&gt;Now, all you have to do to start your own Bootstrap project is to copy the HTML below into your project’s index.html file.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X-UA-Compatible&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IE=edge&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Bootstrap 101 Template&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Latest compiled and minified CSS --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;anonymous&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Latest compiled and minified JavaScript --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bootstrap --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- jQuery (necessary for Bootstrap&amp;#39;s JavaScript plugins) --&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+   &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Include all compiled plugins (below), or include individual files as needed --&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;anonymous&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Alright! You have bootstrap installed!! Now, you can begin to create pages.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-bootstrap-example&quot;&gt;My Bootstrap Example&lt;/h2&gt;
+
+&lt;p&gt;I started by making just a one page example. You can &lt;a href=&quot;https://github.com/ktagilbert/Bootstrap-Example&quot;&gt;checkout the project for yourself here&lt;/a&gt;. &lt;em&gt;And&lt;/em&gt; it looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/bootstrapExample2.jpg&quot; alt=&quot;Example bootstrap project&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;becoming-familiar-with-bootstrap&quot;&gt;Becoming familiar with Bootstrap&lt;/h2&gt;
+
+&lt;p&gt;Okay, there are couple of things to know about Bootstrap before you get started. The first is that most of the styling you will do will be in HTMl. Don’t worry, I’m not talking about inline styles. Bootstrap just has a bunch of classes with associated styles for you to use already.&lt;/p&gt;
+
+&lt;p&gt;To get started, take a couple of hours to become familiar with the different classes you now have at your disposal &lt;a href=&quot;http://getbootstrap.com/css/&quot;&gt;by taking a look at Bootstrap’s CSS page&lt;/a&gt;. Then, explore the other pages the framework has for you on their &lt;a href=&quot;http://getbootstrap.com/customize/&quot;&gt;customize page&lt;/a&gt;. If you want to override any of the existing styles you see here, you’ll have to make a “styles.css” file in your css folder and include it in the head of your HTMl. Then, you’ll have to out-specify the Bootstrap styling.&lt;/p&gt;
+
+&lt;p&gt;Okay, I’ll leave with the task of installing and exploring Bootstrap for today. &lt;strong&gt;Tomorrow, I’ll go more in depth on how I made my example project.&lt;/strong&gt; Stay tuned and thanks for reading guys!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Feb 2016 00:00:00 -0800</pubDate>
+        <link>ktgilbert.com//2016/02/20/bootstrapExample.html</link>
+        <guid isPermaLink="true">ktgilbert.com//2016/02/20/bootstrapExample.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>A Client Side Search Function Made with jQuery</title>
         <description>&lt;p&gt;&lt;img src=&quot;/assets/searchFunction.jpg&quot; alt=&quot;Client side search function tutorial&quot; /&gt;&lt;/p&gt;
 
@@ -855,111 +933,6 @@ excerpt: &amp;gt;
         <pubDate>Wed, 05 Aug 2015 10:00:00 -0700</pubDate>
         <link>ktgilbert.com//2015/08/05/resources.html</link>
         <guid isPermaLink="true">ktgilbert.com//2015/08/05/resources.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>How to Start Learning SCSS</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/brainstorm.jpg&quot; alt=&quot;First SCSS project&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;bridging-the-gap-between-css-and-sass&quot;&gt;Bridging the gap between CSS and SASS&lt;/h1&gt;
-
-&lt;p&gt;I have a confession. When I first started working on this blog, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. &lt;em&gt;With an already limited knowledge of CSS, I was intimidated.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;It turns out that SCSS is not that difficult.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-helped-me-learn-about-scss&quot;&gt;What helped me learn about SCSS:&lt;/h2&gt;
-&lt;p&gt;I simply pulled open my computer and read up on SASS. I started by typing in “learning SASS” into Google. I  was then directed to &lt;a href=&quot;http://sass-lang.com/&quot;&gt;sass-lang.com&lt;/a&gt;. The words “CSS with Superpowers” appeared on my screen.&lt;/p&gt;
-
-&lt;p&gt;It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! &lt;strong&gt;Here I am going to show you some basics to help you get started with SCSS.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;you-will-learn-three-cool-things&quot;&gt;You will learn three cool things:&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;How SCCS does nesting&lt;/li&gt;
-  &lt;li&gt;How to use Variables&lt;/li&gt;
-  &lt;li&gt;What an extend is&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;differences-between-css-and-scss&quot;&gt;Differences between CSS and SCSS&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;.nav-list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#d3d3d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Okay, cool. Here we have some CSS that basically says, “hey for all headers, make the font-family Georgia and the color black.” Below that we have some nested rules that say the list items under the class “nav-list” will all be a light-grey color. Alright, nice. &lt;strong&gt;Now, let’s write the same thing using SASS.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;nesting-with-scss&quot;&gt;1. Nesting with SCSS&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Georgia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#111&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;.nav-list&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#d3d3d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the &lt;a href=&quot;http://writingcenter.fas.harvard.edu/pages/outlining&quot;&gt;Harvard Outline&lt;/a&gt; looks. Maybe that’s just the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway. This part of SCSS is easy and I like it better personally.&lt;/p&gt;
-
-&lt;h2 id=&quot;variables&quot;&gt;2. Variables&lt;/h2&gt;
-
-&lt;p&gt;SCSS also introduces the idea of variables. Here’s an example from my own stylesheet:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;header-align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;container-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;large&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;rookie-blue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#40a9f2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Here I basically have some rules:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;header align stands in for text-align center.&lt;/li&gt;
-  &lt;li&gt;texts within a container will appear white&lt;/li&gt;
-  &lt;li&gt;“large” stands in for padding: 80px&lt;/li&gt;
-  &lt;li&gt;$rookie-blue was one of my brand colors (before the re-design!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I can use these rules inside my style sheet to save myself some time and keep some of my style properties uniform across the site here.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.container-head&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;22px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;extend&quot;&gt;Extend&lt;/h2&gt;
-
-&lt;p&gt;Next, SCSS introduces the idea of an extend. Meaning, you can assign a block of code to a variable. Here’s an example.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@extend&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.image-header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;145px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;145px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This block shows the properties I have assigned to a rounded image at the top of a page. With my extend defined, I can later add a similar image header just by typing in @extend .image-header as if it was another property. &lt;strong&gt;This way, you can include large chunks of style properties that you know you will be using again later just by typing @extend followed by the name you assign to your block code.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;why-use-scss&quot;&gt;Why use SCSS?&lt;/h2&gt;
-&lt;p&gt;SCSS is really a bridging tool to help you get comfortable with SASS. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into SASS. &lt;strong&gt;In any file with .scss, you can set style rules using SASS, CSS, or SCSS as seen here.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS &lt;a href=&quot;http://sass-lang.com/guide&quot;&gt;here&lt;/a&gt; if you are interested. Let me know how it goes for you!&lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Jul 2015 09:32:21 -0700</pubDate>
-        <link>ktgilbert.com//2015/07/20/sass.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2015/07/20/sass.html</guid>
         
         
       </item>
