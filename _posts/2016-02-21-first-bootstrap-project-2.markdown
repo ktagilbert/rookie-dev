@@ -118,4 +118,4 @@ With just the inclusions of ```<nav class="navbar navbar-default">``` You can ha
 Alright! I would now say that you know enough about Bootstrap to start on your own project. Again, learning Bootstrap really just involves becoming familiar with the different classes unique to the framework. So once you can do that, you'll be on your way to building your own site.
 
 
-**Thanks for reading guys! And as always, let me know if you have any questions by leaving a comment below.**
+**Thanks for reading guys! And as always, let me know if you have any questions by leaving a comment below.** ALSO! I'd love to hear what your favorite framework is. 
