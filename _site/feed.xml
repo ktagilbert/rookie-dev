@@ -10,6 +10,125 @@
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>Your first Bootstrap Project - (Part 2)</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/wireframe.jpg&quot; alt=&quot;frameworks for web designers&quot; /&gt;
+Yesterday, I showed you &lt;a href=&quot;/2016/02/20/bootstrapExample.html&quot;&gt;how to install and set up your first Bootstrap project&lt;/a&gt;. So today, I am going to go over the benefits of using the framework and will also introduce a few elements that I found the most useful.&lt;/p&gt;
+
+&lt;h1 id=&quot;benefits-of-using-the-bootstrap-framework&quot;&gt;Benefits of using the Bootstrap framework&lt;/h1&gt;
+
+&lt;p&gt;The fact is, Bootstrap is just one framework you can choose from. It looks nice, it speeds up the development process, and it comes with responsive elements to help make sure your site looks great across different platforms.&lt;/p&gt;
+
+&lt;p&gt;These are all great features. Still, there are other frameworks to choose from. For example, I personally like &lt;a href=&quot;http://materializecss.com/&quot;&gt;Materialize&lt;/a&gt; by Google, &lt;a href=&quot;http://foundation.zurb.com/learn/about.html&quot;&gt;Foundation&lt;/a&gt;, and &lt;a href=&quot;http://getskeleton.com/&quot;&gt;Skeleton&lt;/a&gt;. Still, there is a reason Bootstrap seems to be the most popular framework out there.&lt;/p&gt;
+
+&lt;h2 id=&quot;features-that-make-bootstrap-useful&quot;&gt;7 features that make Bootstrap useful&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It pushes out new versions regularly to keep up with new compilers and versions of JavaScript.&lt;/li&gt;
+  &lt;li&gt;It has official themes for dashboards, web apps, and marketing pages&lt;/li&gt;
+  &lt;li&gt;The framework includes tons of built in components to save you time including glyphicons, dropdown menus, buttons, and nav bars (plus tons more!)&lt;/li&gt;
+  &lt;li&gt;It includes a solution for pagination (which I think is super cool)&lt;/li&gt;
+  &lt;li&gt;People love the fonts included with Bootstrap.&lt;/li&gt;
+  &lt;li&gt;Probably the most useful aspect is that Bootstrap comes with a grid system and containers with uniform widths. The grid system helps remove many of the complications involved in creating layouts. Plus it’s fluid to make responsive design &lt;em&gt;super&lt;/em&gt; easy&lt;/li&gt;
+  &lt;li&gt;It has a huge support community that will be able to help you answer most of your questions. This is especially awesome for those who choose Bootstrap as their first framework!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-process-of-learning-bootstrap&quot;&gt;The process of learning Bootstrap&lt;/h2&gt;
+&lt;p&gt;To get started with Bootstrap, I really only had to become familiar with the different classes that would help me design my one page &lt;a href=&quot;https://github.com/ktagilbert/Bootstrap-Example&quot;&gt;example project&lt;/a&gt;. I just started by reading about the Bootstrap grid system and components. From there, it was easy to start building my site.&lt;/p&gt;
+
+&lt;p&gt;There a ton of resources out there to help you learn these classes as well so I’m not going to try and cover everything you need to know about the framework. Instead, I’m just going to tell you about the elements that I think have the most common use cases.&lt;/p&gt;
+
+&lt;h2 id=&quot;jumbotron&quot;&gt;1. Jumbotron&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/jumbotron.png&quot; alt=&quot;Jumbotron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I used the Jumbotron class to make my containers with blue backgrounds. Here’s an example:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jumbotron&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;left-li pull-left&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;half-width-img&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;assets/webDesign.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;right-li pull-right&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;half-width-txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text-center&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Thanks for visiting!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;
+          Artisan brooklyn selvage next level vegan. Farm-to-table whatever organic slow-carb,
+          marfa butcher pinterest beard tumblr austin kombucha intelligentsia distillery pour-over. Try-hard letterpress
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here you can see that the Jumbotron class gave me a uniform and fluid container with pre-set padding so that any text or headers within the container aren’t just floating at the top left by default. That way all you have to do is include your headers and text. Then you can move on to the next part of your layout.&lt;/p&gt;
+
+&lt;h2 id=&quot;containers&quot;&gt;2. Containers&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;div class=&quot;container-fluid&quot;&amp;gt;&lt;/code&gt; : a responsive container that spans the entire width of a window.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;div class=&quot;container&quot;&amp;gt;&lt;/code&gt; : a responsive fixed-width container.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;columns&quot;&gt;3. Columns&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/twoColumnLayout.png&quot; alt=&quot;Two Column Layout&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Columns were my favorite elements. All you have to do to create columns with Bootstrap is use &lt;code&gt;&amp;lt;div class=&quot;col-md&quot;&amp;gt;&lt;/code&gt;. You also have to define a width for the column that all together adds up to 12. For example, if you want three columns you will use &lt;code&gt;&amp;lt;div class=&quot;col-md-4&quot;&amp;gt;&lt;/code&gt;. Likewise, two columns would be &lt;code&gt;&amp;lt;div class=&quot;col-md-12&quot;&amp;gt;&lt;/code&gt; and four columns would be &lt;code&gt;&amp;lt;div class=&quot;col-md-3&quot;&amp;gt;&lt;/code&gt;. For mobile layouts you can also use  the&lt;code&gt;&amp;lt;div class=&quot;col-sm&quot;&amp;gt;&lt;/code&gt; element or even &lt;code&gt;&amp;lt;div class=&quot;col-xs&quot;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of the how to make the two column layout above:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;section&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;intro-content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-lg-12 text-center&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Welcome to my sample project&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/br&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-lg-4 col-lg-offset-2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;margin-text&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Salvia aesthetic organic, trust fund man bun photo booth small batch cred heirloom
+        chicharrones tacos pickled hashtag vegan quinoa. Typewriter sartorial twee, 90&amp;#39;s neutra art party mixtape
+        keffiyeh kinfolk fixie DIY. Neutra bushwick everyday carry yuccie kale chips hashtag drinking vinegar portland.
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-lg-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;margin-text&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; Cold-pressed pour-over affogato +1 hella hammock. Leggings hammock +1 food truck,
+        pour-over XOXO pabst letterpress offal migas. Kale chips disrupt cronut mumblecore irony. Photo booth blue
+        bottle slow-carb, tumblr DIY health goth kogi butcher gochujang man braid readymade..
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;4. Images&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/responsiveImgClass.png&quot; alt=&quot;Responsive Image Class&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The framework also comes with image styling that I found particular useful. There are a few different image classes that may help you out:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;img class=&quot;img-responsive&quot;&amp;gt;&lt;/code&gt; : will automatically adjust to different screen widths.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;img class=&quot;thumbnail&quot;&amp;gt;&lt;/code&gt; : will give you an image with a slight border.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;img class=&quot;img-circle&quot;&lt;/code&gt; : gives you a perfectly circular image so you don’t have to mess around with border-radius.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;glyphicons&quot;&gt;5. Glyphicons&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/glyphicon.png&quot; alt=&quot;Bootstrap Glyphicons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Glyphicons are icons you can use for your site. Instead of pulling in a separate library, Bootstrap has done that work for you. To include an icon on your site, you will use an element that look like this: &lt;code&gt;&amp;lt;span class=&quot;glyphicon glyphicon-search&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;/span&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;navbars&quot;&gt;6 Navbars&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/navBar.png&quot; alt=&quot;Bootstrap Navbar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With just the inclusions of &lt;code&gt;&amp;lt;nav class=&quot;navbar navbar-default&quot;&amp;gt;&lt;/code&gt; You can have a nav bar on your site. You just have to go in and create links from there. Plus, the Bootstrap navbars are responsive. They will collapse on mobile size screens and will toggle to a horizontal bar as a user’s viewport increases.&lt;/p&gt;
+
+&lt;h2 id=&quot;starting-your-own-project&quot;&gt;Starting your own project&lt;/h2&gt;
+
+&lt;p&gt;Alright! I would now say that you know enough about Bootstrap to start on your own project. Again, learning Bootstrap really just involves becoming familiar with the different classes unique to the framework. So once you can do that, you’ll be on your way to building your own site.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thanks for reading guys! And as always, let me know if you have any questions by leaving a comment below.&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 21 Feb 2016 00:00:00 -0800</pubDate>
+        <link>ktgilbert.com//2016/02/21/first-bootstrap-project-2.html</link>
+        <guid isPermaLink="true">ktgilbert.com//2016/02/21/first-bootstrap-project-2.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Your first Bootstrap Project - (Part 1)</title>
         <description>&lt;p&gt;&lt;img src=&quot;/assets/bootstrap.jpg&quot; alt=&quot;Bootstrap Tutorial&quot; /&gt;&lt;/p&gt;
 
@@ -80,7 +199,7 @@
 
 &lt;p&gt;To get started, take a couple of hours to become familiar with the different classes you now have at your disposal &lt;a href=&quot;http://getbootstrap.com/css/&quot;&gt;by taking a look at Bootstrap’s CSS page&lt;/a&gt;. Then, explore the other pages the framework has for you on their &lt;a href=&quot;http://getbootstrap.com/customize/&quot;&gt;customize page&lt;/a&gt;. If you want to override any of the existing styles you see here, you’ll have to make a “styles.css” file in your css folder and include it in the head of your HTML. Then, you’ll have to out-specify the Bootstrap styling.&lt;/p&gt;
 
-&lt;p&gt;Okay, I’ll leave with the task of installing and exploring Bootstrap for today. &lt;strong&gt;Tomorrow, I’ll go more in depth on how I made my example project.&lt;/strong&gt; Stay tuned and thanks for reading guys!&lt;/p&gt;
+&lt;p&gt;Okay, I’ll leave you with the task of installing and exploring Bootstrap for today. &lt;strong&gt;Tomorrow, I’ll go more in depth on how I made my example project.&lt;/strong&gt; Stay tuned and thanks for reading guys!&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 -0800</pubDate>
         <link>ktgilbert.com//2016/02/20/bootstrapExample.html</link>
@@ -876,65 +995,6 @@ excerpt: &amp;gt;
         <pubDate>Sat, 05 Sep 2015 10:00:00 -0700</pubDate>
         <link>ktgilbert.com//2015/09/05/mediaquery.html</link>
         <guid isPermaLink="true">ktgilbert.com//2015/09/05/mediaquery.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Great Resources For Learning JavaScript</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/learnJs.jpg&quot; alt=&quot;Resources for learning JavaScript&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I know from experience that learning JavaScript can be &lt;em&gt;very&lt;/em&gt; challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help. It took me a couple of months to finally be comfortable in the language. I tried books, blogs, in-person instruction, forums, and videos. Some helped and others didn’t as to be expected. In the end, here is a compiled collection of some the better resources I was able to find.&lt;/p&gt;
-
-&lt;h1 id=&quot;books&quot;&gt;Books:&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;ftp://91.193.236.10/pub/docs/linux-support/programming/JavaScript/%5BO%60Reilly%5D%20-%20JavaScript.%20The%20Definitive%20Guide,%206th%20ed.%20-%20%5BFlanagan%5D.pdf&quot;&gt;JavaScript the Definitive Guide&lt;/a&gt;:&lt;/strong&gt; Okay, it’s long. So just don’t read the whole thing, okay? I found it helpful to read the first 5-10 chapters. It helped me understand what was actually going on in JavaScript. What I found the most helpful is the time the author spent to explain each and every line of his examples. Meaning, you will never have to guess at what a piece of code is doing. Instead, everything is totally straight forward. While reading the Definitive Guide I was able to finally understand some important concepts in JavaScript. Other books would skim over these same concepts as if they were easy to comprehend. So, if you’re like me and having some problems understanding some of the basics, this might be the book for you.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://shop.oreilly.com/product/9780596517748.do&quot;&gt;JavaScript the Good Parts&lt;/a&gt;:&lt;/strong&gt; I would especially recommend this book if you are a visual learner. JavaScript the Good Parts is super easy to skim through and will give you useful info (though, you may have to look up some concepts on Google as it doesn’t go out of its way to help its readers understand everything). I heard that the The Good Parts is a retaliation against the Definitive Guide so it only makes sense that it is shorter and offers a little less explanation. Yet still, it is definitely more useful than other introductions to JavaScript out there.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://eloquentjavascript.net/&quot;&gt;Writing Eloquent JavaScript&lt;/a&gt;:&lt;/strong&gt; Read this only if you know the fundamentals of JavaScript already. The books comes highly recommended by programmers but I really don’t think it should be recommended for those just starting to learn about the language. For example, I initially had no idea what was going on when examples showed up filled with ‘for’ loops and counters or unexplained methods. &lt;strong&gt;However, DO read this if you want to learn how to write better JavaScript or if you want to solve some pretty cool problems that the author includes at the end of each chapter.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;websites&quot;&gt;Websites:&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.w3schools.com/js/default.asp&quot;&gt;W3Schools&lt;/a&gt;:&lt;/strong&gt; This is a great go-to resource for anything that may come up. It will cover anything from syntax to basic explanations about what some methods do. It is a trusted resource for many and definitely a good site to check out.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;:&lt;/strong&gt; If you have a question, you can get an answer here. Many use Stack Overflow to debug their code if they are truly stumped. Yet, these days it is more common to just browse through others questions to see if a solution is already out there for you to check out.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://jshint.com/&quot;&gt;JsHint&lt;/a&gt;:&lt;/strong&gt; If you don’t know how to debug your own code yet, you can use JS Hint. It will tell what problems are present and where to find them. Yet, it may be better to just look up how to your console to debug yourself.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://codepen.io/pen/&quot;&gt;CodePen&lt;/a&gt;:&lt;/strong&gt; Want to just try something out to see how it works? CodePen (which was suggested to me via a reply to this post actually) will give you a workspace to mess around in. It will be your own no-stakes sandbox if you want ever want it.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://javascriptissexy.com/&quot;&gt;JavaScript Is Sexy&lt;/a&gt;:&lt;/strong&gt; Java Script is Sexy provides a series of posts for almost thing you could think of concerning Java Script &lt;em&gt;and&lt;/em&gt; and it links to several other awesome resources out there. For example, I used the site to find the subreddits listed below and JavaScript the Definitive Guide.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;some-design-inspirations&quot;&gt;Some design inspirations:&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://ajclarkson.co.uk/blog/&quot;&gt;AJ Clarkson’s Site and Portfolio&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ashleyfarrand.com/about/&quot;&gt;Ashley Farrand’s Design Website&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.thisisfreshface.com/&quot;&gt;Fresh Face&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;You can also check out my pinterest board for more web design inspirations &lt;a href=&quot;https://www.pinterest.com/ktagilbert/web-design/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous:&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Subreddits:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/webdev/&quot;&gt;r/webdev&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/web_design/&quot;&gt;r/webdesign&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/learnjavascript/&quot;&gt;r/learningjavascript&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://teamtreehouse.com/home&quot;&gt;Treehouse&lt;/a&gt;:&lt;/strong&gt; a bunch of videos and challenges to help you learn new languages. Treehouse was my favorite resource. Everyone has their own learning style really but for me, watching videos helped the concepts click in my head. Treehouse mixes information with practical challenges that you type yourself. The mix of info and challenges helps gives concepts in JavaScript a practical implementation. Yes, you can choose to skip over the challenges but I really suggest you at least give them a try for your own sake. Also, note that Treehouse has a subscription fee. It is $25 a month for the basic subscription but there is a 14 day free trial period if you just want to check it out.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These are just the best resources that I have been able to find so far. If you find any others that you think should be added to this list let me know and I’ll update this post. &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Aug 2015 10:00:00 -0700</pubDate>
-        <link>ktgilbert.com//2015/08/05/resources.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2015/08/05/resources.html</guid>
         
         
       </item>

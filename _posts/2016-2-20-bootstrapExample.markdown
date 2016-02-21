@@ -79,4 +79,4 @@ Okay, there are couple of things to know about Bootstrap before you get started.
 
 To get started, take a couple of hours to become familiar with the different classes you now have at your disposal [by taking a look at Bootstrap's CSS page](http://getbootstrap.com/css/). Then, explore the other pages the framework has for you on their [customize page](http://getbootstrap.com/customize/). If you want to override any of the existing styles you see here, you'll have to make a "styles.css" file in your css folder and include it in the head of your HTML. Then, you'll have to out-specify the Bootstrap styling.
 
-Okay, I'll leave with the task of installing and exploring Bootstrap for today. **Tomorrow, I'll go more in depth on how I made my example project.** Stay tuned and thanks for reading guys!
+Okay, I'll leave you with the task of installing and exploring Bootstrap for today. **Tomorrow, I'll go more in depth on how I made my example project.** Stay tuned and thanks for reading guys!
