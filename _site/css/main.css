@@ -826,59 +826,23 @@ about page
 /*********************************
 portfolio page
 *********************************/
-#portfolio {
-  list-style: none; }
-
-.portfolio-page {
-  text-align: center;
-  width: 100%;
-  margin: 5% 2% 0 2%; }
-
 #portfolio-intro {
   text-align: center;
+  margin-top: 5%;
   padding: 5% 0; }
-  #portfolio-intro h2 {
+  #portfolio-intro h1 {
     color: #EB4144; }
   #portfolio-intro p {
     margin: auto;
     width: 65%; }
 
-.gallery-wrapper {
-  margin: 1% 2%;
-  padding: 5%;
-  height: 90%; }
-
-.box {
-  padding: 5px;
-  width: 500px;
-  height: 500px;
-  margin: auto; }
-
-.overlay {
-  background: rgba(223, 241, 248, 0.9);
-  text-align: center;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .overlay p, .overlay a, .overlay a:hover {
-    text-decoration: none !important;
-    font-size: 1.5em;
-    padding-top: 40%; }
-
-.box:hover {
-  border: 1px solid #555;
-  border-radius: 5px; }
-
-.box:hover .overlay {
-  opacity: 1; }
-
-.search {
-  position: relative; }
+#portfolio-list {
+  list-style: none;
+  margin: 0 8%; }
+  #portfolio-list li {
+    display: inline-block;
+    width: 40%;
+    padding: 4%; }
 
 /*********************************
 contribute container

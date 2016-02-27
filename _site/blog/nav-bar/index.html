@@ -12,13 +12,14 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="ktgilbert.com//2016/01/15/learning-flexbox.html">
+  <link rel="canonical" href="ktgilbert.com//blog/nav-bar">
   <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <link rel="stylesheet" rel="prefetch"  type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" rel="prefetch"type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -209,101 +210,130 @@
 <div itemscope itemtype="http://schema.org/Article" class="post">
 
   <header class="post-header">
-  	<p itemprop="name" class="post-title">Learning About Flexbox (And Why It's a Great Tool)</p>
+  	<p itemprop="name" class="post-title">How to Make a Simple Navigation Menu From Scratch</p>
   </header>
 
 <div class="wrapper">
-  <p itemprop="datePublished" class="post-meta">Jan 15, 2016
+  <p itemprop="datePublished" class="post-meta">Jun 24, 2015
   </p>
   <article itemprop="articleBody" class="post-content">
-    <p>Before I begin telling you about flexbox properties, I want to fill you in on a debate surrounding the tool. When I first started learning about web development, the internet told me not to use flexbox. People were ADAMANT that flexbox was not the best tool to use because modern browsers didn’t support it and there were other tools to use to achieve the same layout results. I saw the rants on reddit and I believed them without doing any research of my own.</p>
+    <p>Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. <strong>What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.</strong></p>
 
-<p>Then, when I was working on my about page, I found myself wrestling with absolute positioning, z-index, and clear properties. It was a huge pain that involved <em>way</em> too many lines of css. So, I reconsidered my uninformed stance on flexbox. I pulled up a new tab and began researching which browsers supported flex properties (btw, this is what I should have done in the first place!).</p>
+<h1 id="start-by-learning-some-general-principles">Start by learning some general principles</h1>
+<p>If you are like me and don’t know much about web development or these three languages, you may approach the problem by looking at a tutorial and just copying their examples and then pasting them into your text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? <em>Spending some time to really learn the basic principles of the language you are working in can be super helpful.</em></p>
 
-<p><strong>In a couple of seconds I found that 95.31% of browsers support flexbox properties.</strong> Wow, okay, that’s good. AND, because my targeted audience are a bunch of awesome nerds who mostly use Chrome, I quickly decided that I could overlook that remaining 5.69% because I’m pretty sure those who use IE 8 or 9 won’t be visiting my blog anytime soon….or ever.</p>
+<p>Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. <strong>You might want to try doing the same and really hammering down these ideas:</strong></p>
 
-<h1 id="what-browsers-support-flexbox">What browsers support flexbox:</h1>
+<ol>
+  <li>
+    <p>The difference between an id and a class in CSS</p>
+  </li>
+  <li>
+    <p>HTML syntax - just how to write it, what tags are, etc. You may want to try going over some common things you can do in HTML such as building a list, making text bold, or creating a header. <em>Definitely, go over what divs and span tags are!</em></p>
+  </li>
+  <li>
+    <p>Some basic JavaScript functions. Maybe, learn what a function is as well.</p>
+  </li>
+</ol>
 
-<p><img src="/assets/canIUseFlexbox.png" alt="What Browsers Support FlexBox?" /></p>
-
-<p>I go to <a href="http://caniuse.com/">Can I Use</a> to see which browsers and operating systems will/will not support different methods or tools. A quick search on their site showed me exactly which browsers would not be compatible with flexbox properties. <strong>Here is what I found:</strong></p>
-
+<h2 id="how-to-approach-the-problem-of-creating-a-menu-for-your-page">How to approach the problem of creating a menu for your page</h2>
 <ul>
-  <li>Android does not support the flex-wrap property and I must use the -webkit preface if I went to use other flexbox properties.</li>
-  <li>Internet Explore only supports 2012 syntax</li>
-  <li>IE 8 and 9 do not support flexbox at all.</li>
+  <li>In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for a good one to use):</li>
 </ul>
 
-<h2 id="using-analytics-to-help-determine-which-tools-to-use">Using analytics to help determine which tools to use</h2>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+	<span class="nt">&lt;li&gt;</span>Page 1<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;li&gt;</span>Page 2<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;li&gt;</span>Page 3<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
-<p>To see if I could go forward with using flexbox properties, I took a look at my Google Analytics page to see which browsers my visitors typically use. <strong>A quick look under the Technology tab told me that 0% of my visitors use Internet Explore and around 14% use Android.</strong> That told me that I would only need to consider the -webkit prefix moving forward and find a work around for flex-wrap. No problem!</p>
+<ul>
+  <li>Okay great, these are the pages that you are going to be listed in your menu! Pretty awesome, right? Next, you are just going to think about how to make these “pages” look and function the way you want them to.</li>
+  <li>You can think about what to do in steps to make it easier if you want. I personally found approaching the process piece-by-piece easier to manage.</li>
+  <li>One place you could start is by thinking about the fact that these pages should be able to be click-able. Meaning, they should be linked. You can add the a href tag to your list to make this happen.</li>
+</ul>
 
-<h2 id="the-lesson-to-be-learned">The Lesson to be learned</h2>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Page 1<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Page 2<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Page 3<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
-<p><a href="https://twitter.com/intent/tweet?text=Learning About Flexbox (And Why It's a Great Tool) url=http://bit.ly/1Sn3ppa &amp;via=KT_a_Gilbert"><img src="/assets/webDevTip1.jpg" alt="Learning About New Web Development Tools" /></a></p>
+<ul>
+  <li>Note thAT I’ve put “#” in the place of an actual link for now because I don’t have content or links for these pages yet.</li>
+  <li>So now, depending on what you want the menu to do and look like, you can think about what to do next.</li>
+</ul>
 
-<p>I wanted to tell you all of this before teaching you about flex properties because I learned two awesome lessons here:</p>
+<h2 id="here-are-some-ideas-for-how-you-may-want-your-menu-to-look">Here are some ideas for how you may want your menu to look</h2>
+<ol>
+  <li>You may want the menu items to be laid out horizontally across your page.</li>
+  <li>Maybe you will want a menu item to simply display specific content when clicked. Well, you can do that with JavaScript</li>
+  <li>You could simply think about the style of the menu.
+    <ul>
+      <li>Maybe you want the menu to have a background color</li>
+      <li>Or, you want to change the font-size, font-color, or font-family of your text.</li>
+    </ul>
+  </li>
+</ol>
 
-<p>1) You should always research new tools yourself before believing what anyone else has to say about them.</p>
+<h2 id="css-properties-that-may-help">CSS properties that may help</h2>
 
-<p>2) Take the time to see which browsers and operating systems will support any new tools or methods you want to use before going ahead and using them. A quick look at Google Analytics will then tell you what accommodations you’ll need to make for your users.</p>
+<p><strong>font-size:</strong>
+  font-size: 12px
+  font-size: 8px</p>
 
-<h2 id="learning-about-flex-properties">Learning about Flex Properties</h2>
+<p><strong>color:</strong>
+	color: #fff
+	color: #d3d3d3
+	color: #000000</p>
 
-<p>Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container. Then, you declare flex-properties for your flex items. Here is some more info to help:</p>
+<p><strong>font-family:</strong>
+	font-family: georgia, sans-serif  (note: consider having a <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">fall-back font</a>)</p>
 
-<blockquote>
-  <p><a href="">Treehouse</a> helps explain that flexbox just gives you a flexible way to layout page content that ends up taking less time and involves fewer changes to your markup.</p>
-</blockquote>
+<p><strong>text-transform:</strong>
+	text-transform: uppercase
+	text-transform: lowercase
+	text-transform: capitalize</p>
 
-<p><strong>Flex Containers:</strong> These can be inline element such as a div, unordered list, or span element.</p>
+<p><strong>background:</strong> (change the color of an element’s background) }</p>
 
-<p><strong>Flex items:</strong> Flex items are anything inside of your flex containers. They are just your children elements.</p>
+<p><strong>text-align:</strong>
+	text-align: right
+	text-align: left
+	text-align: center</p>
 
-<p>You first step will be to declare a flex container. It will look something like this:</p>
+<p><strong>display</strong>: inline (for horizontal menu items for example)
+<strong>letter-spacing</strong> (change the kerning)</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span>
+<p>For more CSS properties, you can also <a href="http://www.w3schools.com/cssref/">check out W3Schools</a></p>
+
+<p><strong>One thing I can’t help but share:</strong> I ran into a problem with CSS while working on my practice menu. I wanted the menu to look great on a computer, tablet, or mobile device. Yet, when the width of my page got to a certain point, the menu looked ugly. I asked for help and got an awesome solution in return.</p>
+
+<p>You can actually create a rule that says “hey, when the width of  someone’s screen gets to “x width,” I want something special to happen. In this example, I wanted an element on my menu to disappear and to make room for other items to appear nicely on a smaller screen. So cool, right?! It looks like this in case you want to try it for yourself.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">545px</span><span class="o">)</span> <span class="p">{</span>
+
+	<span class="nf">#site-title</span> <span class="p">{</span>
+		<span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+	<span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 
-<p>That’s all there is to it! After that, you can think about how you want your flex items to behave. Do you want them to be inline elements? Or should they appear in a column? Should any be larger in width than others? What should happen to them on different screen sizes? These are all things that flexbox properties can help you figure out.</p>
+<p>In the end, I created a test site that looks like like this:
+<img src="/assets/test-menu.jpg" alt="creating a menu from scratch" /></p>
 
-<h2 id="get-flexible-with-flex-items">Get flexible with flex items</h2>
-<p>When it comes to creating the layout you want, you’ll need to make a few more declarations to get things exactly how you want them. Here a few to get you started:</p>
+<p>Again, in my case I worked mostly with HTML and CSS to build a menu. I just wanted to make something simple and didn’t want to spend a lot of time coming up with solutions in JavaScript that I could have otherwise solved with just HTML and CSS.</p>
 
-<ul>
-  <li><strong>flex-basis:</strong> This one is my favorites! Flex-basis allows you to determine the proportions of your flex items. Instead of declaring set widths for elements that require multiple media queries at the bottom of your stylesheet to maintain, use flex-basis instead. You can set a length using rem, em, or a percentage to make a particular element bigger or smaller than the others around it.</li>
-</ul>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#large-picture</span> <span class="p">{</span>
-  <span class="n">flex</span><span class="o">-</span><span class="n">basis</span><span class="o">:</span> <span class="m">30%</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
-
-<ul>
-  <li><strong>flex-direction:</strong> flex items run along the main axis (x) and cross axis (y). If you want to change this, declare a flex-direction in your flex container. Use row, row-reverse, column, or column reverse. Row will give you inline elements and “column” will you give you…well, columns. If you want to flip which items appear first in your layout, then tack on “reverse” to make it happen.</li>
-</ul>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span><span class="p">;</span>
-  <span class="n">flex</span><span class="o">-</span><span class="k">direction</span><span class="o">:</span> <span class="n">column</span><span class="p">;</span></code></pre></div>
-
-<ul>
-  <li><strong>flex-wrap:</strong>
-<img src="/assets/flexWrap.png" alt="example of flex-wrap" />
- flex items, by default, all try to squeeze into one line. If you want them to wrap (say for different resolutions), you can use flex-wrap to make them move down to different lines as needed.</li>
-</ul>
-
-<p>Okay, this should get you well on your way to using flexbox!! Thanks for reading guys. Remember, if you have any questions, leave a comment below.</p>
+<p>Remember, if you are have any trouble you can always Google specific solutions or questions you may have while building out your nav menu. <strong>Thanks for reading guys!</strong></p>
 
   </article>
 
 <div>
   <ul class="post-nav-title">
-    <a class="post-nav-link" href="/2015/12/03/content-workflow.html">
-      <li id="title-prev">How to Improve Your Copywriting Workflow</li>
+    <a class="post-nav-link" href="">
+      <li id="title-prev"></li>
     </a>
-    <a class="post-nav-link" href="/2016/01/27/creating-custom-jekyll-homepage.html">
-      <li id="title-next">How I Customized My Jekyll Home Page Layout</li>
+    <a class="post-nav-link" href="/blog/sass">
+      <li id="title-next">How to Start Learning SCSS</li>
     </a>
   </ul>
 </div>

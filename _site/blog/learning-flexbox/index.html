@@ -12,13 +12,14 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="ktgilbert.com//2015/07/20/sass.html">
+  <link rel="canonical" href="ktgilbert.com//blog/learning-flexbox">
   <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <link rel="stylesheet" rel="prefetch"  type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" rel="prefetch"type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -209,118 +210,101 @@
 <div itemscope itemtype="http://schema.org/Article" class="post">
 
   <header class="post-header">
-  	<p itemprop="name" class="post-title">How to Start Learning SCSS</p>
+  	<p itemprop="name" class="post-title">Learning About Flexbox (And Why It's a Great Tool)</p>
   </header>
 
 <div class="wrapper">
-  <p itemprop="datePublished" class="post-meta">Jul 20, 2015
+  <p itemprop="datePublished" class="post-meta">Jan 15, 2016
   </p>
   <article itemprop="articleBody" class="post-content">
-    <p><img src="/assets/brainstorm.jpg" alt="First SCSS project" /></p>
+    <p>Before I begin telling you about flexbox properties, I want to fill you in on a debate surrounding the tool. When I first started learning about web development, the internet told me not to use flexbox. People were ADAMANT that flexbox was not the best tool to use because modern browsers didn’t support it and there were other tools to use to achieve the same layout results. I saw the rants on reddit and I believed them without doing any research of my own.</p>
 
-<h1 id="bridging-the-gap-between-css-and-sass">Bridging the gap between CSS and SASS</h1>
+<p>Then, when I was working on my about page, I found myself wrestling with absolute positioning, z-index, and clear properties. It was a huge pain that involved <em>way</em> too many lines of css. So, I reconsidered my uninformed stance on flexbox. I pulled up a new tab and began researching which browsers supported flex properties (btw, this is what I should have done in the first place!).</p>
 
-<p>I have a confession. When I first started working on this blog, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. <em>With an already limited knowledge of CSS, I was intimidated.</em></p>
+<p><strong>In a couple of seconds I found that 95.31% of browsers support flexbox properties.</strong> Wow, okay, that’s good. AND, because my targeted audience are a bunch of awesome nerds who mostly use Chrome, I quickly decided that I could overlook that remaining 5.69% because I’m pretty sure those who use IE 8 or 9 won’t be visiting my blog anytime soon….or ever.</p>
 
-<p>It turns out that SCSS is not that difficult.</p>
+<h1 id="what-browsers-support-flexbox">What browsers support flexbox:</h1>
 
-<h2 id="what-helped-me-learn-about-scss">What helped me learn about SCSS:</h2>
-<p>I simply pulled open my computer and read up on SASS. I started by typing in “learning SASS” into Google. I  was then directed to <a href="http://sass-lang.com/">sass-lang.com</a>. The words “CSS with Superpowers” appeared on my screen.</p>
+<p><img src="/assets/canIUseFlexbox.png" alt="What Browsers Support FlexBox?" /></p>
 
-<p>It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! <strong>Here I am going to show you some basics to help you get started with SCSS.</strong></p>
-
-<h2 id="you-will-learn-three-cool-things">You will learn three cool things:</h2>
-<ol>
-  <li>How SCCS does nesting</li>
-  <li>How to use Variables</li>
-  <li>What an extend is</li>
-</ol>
-
-<h2 id="differences-between-css-and-scss">Differences between CSS and SCSS</h2>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.h1</span> <span class="p">{</span>
- <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="p">;</span>
- <span class="k">color</span><span class="o">:</span> <span class="m">#111</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.nav-list</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
- <span class="k">color</span><span class="o">:</span> <span class="m">#d3d3d3</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
-
-<p>Okay, cool. Here we have some CSS that basically says, “hey for all headers, make the font-family Georgia and the color black.” Below that we have some nested rules that say the list items under the class “nav-list” will all be a light-grey color. Alright, nice. <strong>Now, let’s write the same thing using SASS.</strong></p>
-
-<h2 id="nesting-with-scss">1. Nesting with SCSS</h2>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.h1</span> <span class="p">{</span>
- <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="p">;</span>
- <span class="k">color</span><span class="o">:</span> <span class="m">#111</span><span class="o">:</span>
-<span class="p">}</span>
-
-<span class="nc">.nav-list</span> <span class="p">{</span>
- <span class="n">li</span> <span class="err">{</span>
- <span class="k">color</span><span class="o">:</span> <span class="m">#d3d3d3</span><span class="p">;</span>
- <span class="p">}</span>
-<span class="err">}</span></code></pre></div>
-
-<p>As you can see, it’s not that different. I like to compare the way nesting looks in SCSS to the way the <a href="http://writingcenter.fas.harvard.edu/pages/outlining">Harvard Outline</a> looks. Maybe that’s just the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway. This part of SCSS is easy and I like it better personally.</p>
-
-<h2 id="variables">2. Variables</h2>
-
-<p>SCSS also introduces the idea of variables. Here’s an example from my own stylesheet:</p>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">$</span><span class="nt">header-align</span><span class="o">:</span> <span class="nt">center</span><span class="o">;</span>
-<span class="o">$</span><span class="nt">container-color</span><span class="o">:</span> <span class="nf">#fff</span><span class="o">;</span>
-<span class="o">$</span><span class="nt">large</span><span class="o">:</span> <span class="nt">80px</span><span class="o">;</span>
-<span class="o">$</span><span class="nt">rookie-blue</span><span class="o">:</span> <span class="nf">#40a9f2</span><span class="o">;</span></code></pre></div>
-
-<p>Here I basically have some rules:</p>
+<p>I go to <a href="http://caniuse.com/">Can I Use</a> to see which browsers and operating systems will/will not support different methods or tools. A quick search on their site showed me exactly which browsers would not be compatible with flexbox properties. <strong>Here is what I found:</strong></p>
 
 <ul>
-  <li>header align stands in for text-align center.</li>
-  <li>texts within a container will appear white</li>
-  <li>“large” stands in for padding: 80px</li>
-  <li>$rookie-blue was one of my brand colors (before the re-design!)</li>
+  <li>Android does not support the flex-wrap property and I must use the -webkit preface if I went to use other flexbox properties.</li>
+  <li>Internet Explore only supports 2012 syntax</li>
+  <li>IE 8 and 9 do not support flexbox at all.</li>
 </ul>
 
-<p>I can use these rules inside my style sheet to save myself some time and keep some of my style properties uniform across the site here.</p>
+<h2 id="using-analytics-to-help-determine-which-tools-to-use">Using analytics to help determine which tools to use</h2>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container-head</span> <span class="p">{</span>
-  <span class="k">text-align</span><span class="o">:</span> <span class="err">$</span><span class="n">header</span><span class="o">-</span><span class="n">align</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="o">:</span> <span class="m">22px</span><span class="p">;</span>
-  <span class="k">font-weight</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
-  <span class="k">color</span><span class="o">:</span> <span class="err">$</span><span class="n">container</span><span class="o">-</span><span class="k">color</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-  <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
+<p>To see if I could go forward with using flexbox properties, I took a look at my Google Analytics page to see which browsers my visitors typically use. <strong>A quick look under the Technology tab told me that 0% of my visitors use Internet Explore and around 14% use Android.</strong> That told me that I would only need to consider the -webkit prefix moving forward and find a work around for flex-wrap. No problem!</p>
+
+<h2 id="the-lesson-to-be-learned">The Lesson to be learned</h2>
+
+<p><a href="https://twitter.com/intent/tweet?text=Learning About Flexbox (And Why It's a Great Tool) url=http://bit.ly/1Sn3ppa &amp;via=KT_a_Gilbert"><img src="/assets/webDevTip1.jpg" alt="Learning About New Web Development Tools" /></a></p>
+
+<p>I wanted to tell you all of this before teaching you about flex properties because I learned two awesome lessons here:</p>
+
+<p>1) You should always research new tools yourself before believing what anyone else has to say about them.</p>
+
+<p>2) Take the time to see which browsers and operating systems will support any new tools or methods you want to use before going ahead and using them. A quick look at Google Analytics will then tell you what accommodations you’ll need to make for your users.</p>
+
+<h2 id="learning-about-flex-properties">Learning about Flex Properties</h2>
+
+<p>Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container. Then, you declare flex-properties for your flex items. Here is some more info to help:</p>
+
+<blockquote>
+  <p><a href="">Treehouse</a> helps explain that flexbox just gives you a flexible way to layout page content that ends up taking less time and involves fewer changes to your markup.</p>
+</blockquote>
+
+<p><strong>Flex Containers:</strong> These can be inline element such as a div, unordered list, or span element.</p>
+
+<p><strong>Flex items:</strong> Flex items are anything inside of your flex containers. They are just your children elements.</p>
+
+<p>You first step will be to declare a flex container. It will look something like this:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span>
 <span class="p">}</span></code></pre></div>
 
-<h2 id="extend">Extend</h2>
+<p>That’s all there is to it! After that, you can think about how you want your flex items to behave. Do you want them to be inline elements? Or should they appear in a column? Should any be larger in width than others? What should happen to them on different screen sizes? These are all things that flexbox properties can help you figure out.</p>
 
-<p>Next, SCSS introduces the idea of an extend. Meaning, you can assign a block of code to a variable. Here’s an example.</p>
+<h2 id="get-flexible-with-flex-items">Get flexible with flex items</h2>
+<p>When it comes to creating the layout you want, you’ll need to make a few more declarations to get things exactly how you want them. Here a few to get you started:</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@extend</span> <span class="nc">.image-header</span> <span class="p">{</span>
- <span class="nt">width</span><span class="o">:</span> <span class="nt">145px</span><span class="o">;</span>
- <span class="nt">border-radius</span><span class="o">:</span> <span class="nt">100</span><span class="o">%;</span>
- <span class="nt">padding</span><span class="o">:</span> <span class="nt">0px</span><span class="o">;</span>
- <span class="nt">margin-left</span><span class="o">:</span> <span class="nt">41</span><span class="o">%;</span>
- <span class="nt">height</span><span class="o">:</span> <span class="nt">145px</span><span class="o">;</span>
+<ul>
+  <li><strong>flex-basis:</strong> This one is my favorites! Flex-basis allows you to determine the proportions of your flex items. Instead of declaring set widths for elements that require multiple media queries at the bottom of your stylesheet to maintain, use flex-basis instead. You can set a length using rem, em, or a percentage to make a particular element bigger or smaller than the others around it.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#large-picture</span> <span class="p">{</span>
+  <span class="n">flex</span><span class="o">-</span><span class="n">basis</span><span class="o">:</span> <span class="m">30%</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 
-<p>This block shows the properties I have assigned to a rounded image at the top of a page. With my extend defined, I can later add a similar image header just by typing in @extend .image-header as if it was another property. <strong>This way, you can include large chunks of style properties that you know you will be using again later just by typing @extend followed by the name you assign to your block code.</strong></p>
+<ul>
+  <li><strong>flex-direction:</strong> flex items run along the main axis (x) and cross axis (y). If you want to change this, declare a flex-direction in your flex container. Use row, row-reverse, column, or column reverse. Row will give you inline elements and “column” will you give you…well, columns. If you want to flip which items appear first in your layout, then tack on “reverse” to make it happen.</li>
+</ul>
 
-<h2 id="why-use-scss">Why use SCSS?</h2>
-<p>SCSS is really a bridging tool to help you get comfortable with SASS. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into SASS. <strong>In any file with .scss, you can set style rules using SASS, CSS, or SCSS as seen here.</strong></p>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="n">flex</span><span class="o">-</span><span class="k">direction</span><span class="o">:</span> <span class="n">column</span><span class="p">;</span></code></pre></div>
 
-<p>So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS <a href="http://sass-lang.com/guide">here</a> if you are interested. Let me know how it goes for you!</p>
+<ul>
+  <li><strong>flex-wrap:</strong>
+<img src="/assets/flexWrap.png" alt="example of flex-wrap" />
+ flex items, by default, all try to squeeze into one line. If you want them to wrap (say for different resolutions), you can use flex-wrap to make them move down to different lines as needed.</li>
+</ul>
+
+<p>Okay, this should get you well on your way to using flexbox!! Thanks for reading guys. Remember, if you have any questions, leave a comment below.</p>
 
   </article>
 
 <div>
   <ul class="post-nav-title">
-    <a class="post-nav-link" href="/2015/06/24/nav-bar.html">
-      <li id="title-prev">How to Make a Simple Navigation Menu From Scratch</li>
+    <a class="post-nav-link" href="/blog/content-workflow">
+      <li id="title-prev">How to Improve Your Copywriting Workflow</li>
     </a>
-    <a class="post-nav-link" href="/2015/08/05/resources.html">
-      <li id="title-next">Great Resources For Learning JavaScript</li>
+    <a class="post-nav-link" href="/blog/creating-custom-jekyll-homepage">
+      <li id="title-next">How I Customized My Jekyll Home Page Layout</li>
     </a>
   </ul>
 </div>

@@ -12,7 +12,7 @@
       <item>
         <title>Your first Bootstrap Project - (Part 2)</title>
         <description>&lt;p&gt;&lt;img src=&quot;/assets/wireframe.jpg&quot; alt=&quot;frameworks for web designers&quot; /&gt;
-Yesterday, I showed you &lt;a href=&quot;/2016/02/20/bootstrapExample.html&quot;&gt;how to install and set up your first Bootstrap project&lt;/a&gt;. So today, I am going to go over the benefits of using the framework and will also introduce a few elements that I found the most useful.&lt;/p&gt;
+Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to install and set up your first Bootstrap project&lt;/a&gt;. So today, I am going to go over the benefits of using the framework and will also introduce a few elements that I found the most useful.&lt;/p&gt;
 
 &lt;h1 id=&quot;benefits-of-using-the-bootstrap-framework&quot;&gt;Benefits of using the Bootstrap framework&lt;/h1&gt;
 
@@ -122,8 +122,8 @@ Yesterday, I showed you &lt;a href=&quot;/2016/02/20/bootstrapExample.html&quot;
 &lt;p&gt;&lt;strong&gt;Thanks for reading guys! And as always, let me know if you have any questions by leaving a comment below.&lt;/strong&gt; ALSO! I’d love to hear what your favorite framework is.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Feb 2016 00:00:00 -0800</pubDate>
-        <link>ktgilbert.com//2016/02/21/first-bootstrap-project-2.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2016/02/21/first-bootstrap-project-2.html</guid>
+        <link>ktgilbert.com//blog/first-bootstrap-project-2</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/first-bootstrap-project-2</guid>
         
         
       </item>
@@ -202,8 +202,8 @@ Yesterday, I showed you &lt;a href=&quot;/2016/02/20/bootstrapExample.html&quot;
 &lt;p&gt;Okay, I’ll leave you with the task of installing and exploring Bootstrap for today. &lt;strong&gt;Tomorrow, I’ll go more in depth on how I made my example project.&lt;/strong&gt; Stay tuned and thanks for reading guys!&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 -0800</pubDate>
-        <link>ktgilbert.com//2016/02/20/bootstrapExample.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2016/02/20/bootstrapExample.html</guid>
+        <link>ktgilbert.com//blog/bootstrapExample</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/bootstrapExample</guid>
         
         
       </item>
@@ -354,8 +354,8 @@ Yesterday, I showed you &lt;a href=&quot;/2016/02/20/bootstrapExample.html&quot;
 &lt;p&gt;&lt;strong&gt;Thanks for reading guys!&lt;/strong&gt; I hope this tutorial helps. Again, if you want to see the search function in action, just go to &lt;a href=&quot;http://ktgilbert.herokuapp.com/&quot;&gt;my home page&lt;/a&gt; and click the search icon. Also, let me know in the comments if you have any questions!&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Jan 2016 00:00:00 -0800</pubDate>
-        <link>ktgilbert.com//2016/01/30/client-side-search-function.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2016/01/30/client-side-search-function.html</guid>
+        <link>ktgilbert.com//blog/client-side-search-function</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/client-side-search-function</guid>
         
         
       </item>
@@ -367,13 +367,13 @@ When you start work on your new &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;
 
 &lt;h1 id=&quot;customizing-your-jekyll-powered-home-page&quot;&gt;Customizing your Jekyll powered home page&lt;/h1&gt;
 
-&lt;p&gt;At first, I didn’t know what I wanted layout wise for my home page. &lt;a href=&quot;/2015/10/17/UI.html&quot;&gt;(see my post here for more info on thinking about your UI Design before coding!)&lt;/a&gt; I tried a lot of different options resulting in weeks of work. In the end I didn’t like anything I tried out but hey, at least I got a lot of practice in SCSS out of the process. Yet, I  was &lt;em&gt;finally&lt;/em&gt; able to settle on &lt;strong&gt;a three column desktop layout to help display my posts they way I wanted to.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At first, I didn’t know what I wanted layout wise for my home page. &lt;a href=&quot;/blog/UI&quot;&gt;(see my post here for more info on thinking about your UI Design before coding!)&lt;/a&gt; I tried a lot of different options resulting in weeks of work. In the end I didn’t like anything I tried out but hey, at least I got a lot of practice in SCSS out of the process. Yet, I  was &lt;em&gt;finally&lt;/em&gt; able to settle on &lt;strong&gt;a three column desktop layout to help display my posts they way I wanted to.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1-creating-columns&quot;&gt;Step 1: Creating columns&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/threeColumnLayout.jpg&quot; alt=&quot;Three Column Blog Layout&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I used &lt;a href=&quot;/2016/01/15/learning-flexbox.html&quot;&gt;flexbox properties&lt;/a&gt; to achieve my three column layout. I chose three columns because I wanted to stick with larger images to really showcase each post on my home page. Plus, I just thought that four columns looked too cluttered and boring. The four columns layout was reminiscent of a newspaper spread with two many articles on the page.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href=&quot;/blog/learning-flexbox&quot;&gt;flexbox properties&lt;/a&gt; to achieve my three column layout. I chose three columns because I wanted to stick with larger images to really showcase each post on my home page. Plus, I just thought that four columns looked too cluttered and boring. The four columns layout was reminiscent of a newspaper spread with two many articles on the page.&lt;/p&gt;
 
 &lt;h2 id=&quot;heres-how-i-made-columns-using-flexbox&quot;&gt;Here’s how I made columns using flexbox:&lt;/h2&gt;
 
@@ -403,7 +403,7 @@ When you start work on your new &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;If you don’t want to use flexbox, you can achieve the same effect using styled lists and &lt;a href=&quot;/2015/09/05/mediaquery.html&quot;&gt;media queries&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you don’t want to use flexbox, you can achieve the same effect using styled lists and &lt;a href=&quot;/blog/mediaquery&quot;&gt;media queries&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-2-including-post-excerpts-in-jekyll&quot;&gt;Step 2: Including post excerpts in Jekyll&lt;/h2&gt;
 &lt;p&gt;Out of the box, a Jekyll site displays posts with the help of a post title and post link. But I wanted to include excerpts on my home page with the goal of getting more visitors to click on my posts. I mean, why spend hours writing blog articles if no one clicks on them, right? &lt;strong&gt;I learned that if you give vistors an idea of what they are going to read, they will typically be more apt to click on that post and continue reading if they like the content they’ve been shown already.&lt;/strong&gt;&lt;/p&gt;
@@ -438,8 +438,8 @@ excerpt: &amp;gt;
 &lt;p&gt;&lt;strong&gt;Let me know how your layouts turns out and if you have any questions, feel free post it in the comments below.&lt;/strong&gt; Thanks for reading guys!&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Jan 2016 04:43:21 -0800</pubDate>
-        <link>ktgilbert.com//2016/01/27/creating-custom-jekyll-homepage.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2016/01/27/creating-custom-jekyll-homepage.html</guid>
+        <link>ktgilbert.com//blog/creating-custom-jekyll-homepage</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/creating-custom-jekyll-homepage</guid>
         
         
       </item>
@@ -526,8 +526,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Okay, this should get you well on your way to using flexbox!! Thanks for reading guys. Remember, if you have any questions, leave a comment below.&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Jan 2016 04:43:21 -0800</pubDate>
-        <link>ktgilbert.com//2016/01/15/learning-flexbox.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2016/01/15/learning-flexbox.html</guid>
+        <link>ktgilbert.com//blog/learning-flexbox</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/learning-flexbox</guid>
         
         
       </item>
@@ -609,8 +609,8 @@ excerpt: &amp;gt;
 &lt;p&gt;&lt;a href=&quot;/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf&quot;&gt;&lt;img src=&quot;/assets/12Questions.png&quot; alt=&quot;12 Questions to Help You Improve Your Copywriting Workflow&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Dec 2015 08:32:21 -0800</pubDate>
-        <link>ktgilbert.com//2015/12/03/content-workflow.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2015/12/03/content-workflow.html</guid>
+        <link>ktgilbert.com//blog/content-workflow</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/content-workflow</guid>
         
         
       </item>
@@ -683,8 +683,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Let me know how it goes!&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Oct 2015 05:26:00 -0700</pubDate>
-        <link>ktgilbert.com//2015/10/17/UI.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2015/10/17/UI.html</guid>
+        <link>ktgilbert.com//blog/UI</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/UI</guid>
         
         
       </item>
@@ -799,8 +799,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Alright, hope this helps guys! &lt;strong&gt;Let me know how your nav bar turns out. I’d love to see links to your end results.&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 23 Sep 2015 10:00:00 -0700</pubDate>
-        <link>ktgilbert.com//2015/09/23/responsive-nav-bar.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2015/09/23/responsive-nav-bar.html</guid>
+        <link>ktgilbert.com//blog/responsive-nav-bar</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/responsive-nav-bar</guid>
         
         
       </item>
@@ -904,8 +904,8 @@ excerpt: &amp;gt;
 &lt;p&gt;Okay, now you have some great steps to focus on. If you are like me, these steps will be able to help A LOT. A common problem I had while learning was not knowing what to do next. I wanted to make this post to help others avoid this problem. Once you have all of these steps mastered, we can talk about overcoming imposter syndrome! &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 12 Sep 2015 10:00:00 -0700</pubDate>
-        <link>ktgilbert.com//2015/09/12/breaking-into-web-development.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2015/09/12/breaking-into-web-development.html</guid>
+        <link>ktgilbert.com//blog/breaking-into-web-development</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/breaking-into-web-development</guid>
         
         
       </item>
@@ -993,8 +993,8 @@ excerpt: &amp;gt;
 &lt;p&gt;&lt;strong&gt;Thanks for reading guys! Hope this post helps.&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Sep 2015 10:00:00 -0700</pubDate>
-        <link>ktgilbert.com//2015/09/05/mediaquery.html</link>
-        <guid isPermaLink="true">ktgilbert.com//2015/09/05/mediaquery.html</guid>
+        <link>ktgilbert.com//blog/mediaquery</link>
+        <guid isPermaLink="true">ktgilbert.com//blog/mediaquery</guid>
         
         
       </item>
