@@ -502,14 +502,36 @@ portfolio page
 
 #portfolio-list {
 	list-style: none;
-	margin: 0 8%;
+	margin: 0 8% 10%;
 
-	li {
+	.folio-item {
 		display: inline-block;
 		width: 40%;
-		padding: 4%;
+		margin: 4%;
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 }
+
+.folio-img {
+	padding-bottom: 0;
+}
+
+.folio-img:hover {
+	opacity: 0.1;
+}
+
+.folio-item:hover {
+	background-color: rgb(102, 102, 102);
+	z-index: 1000;
+
+	&::after {
+		content: attr(data-text);
+		color: #fff;
+		margin: 0;
+	}
+}
+
 
 /*********************************
 contribute container

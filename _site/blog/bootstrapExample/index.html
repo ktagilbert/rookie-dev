@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="ktgilbert.com//blog/learning-flexbox">
+  <link rel="canonical" href="ktgilbert.com//blog/bootstrapExample">
   <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
   <link rel="stylesheet" rel="prefetch"  type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" rel="prefetch"type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
@@ -219,101 +219,93 @@
 <div itemscope itemtype="http://schema.org/Article" class="post">
 
   <header class="post-header">
-  	<p itemprop="name" class="post-title">Learning About Flexbox (And Why It's a Great Tool)</p>
+  	<p itemprop="name" class="post-title">Your first Bootstrap Project - (Part 1)</p>
   </header>
 
 <div class="wrapper">
-  <p itemprop="datePublished" class="post-meta">Jan 15, 2016
+  <p itemprop="datePublished" class="post-meta">Feb 20, 2016
   </p>
   <article itemprop="articleBody" class="post-content">
-    <p>Before I begin telling you about flexbox properties, I want to fill you in on a debate surrounding the tool. When I first started learning about web development, the internet told me not to use flexbox. People were ADAMANT that flexbox was not the best tool to use because modern browsers didn’t support it and there were other tools to use to achieve the same layout results. I saw the rants on reddit and I believed them without doing any research of my own.</p>
+    <p><img src="/assets/bootstrap.jpg" alt="Bootstrap Tutorial" /></p>
 
-<p>Then, when I was working on my about page, I found myself wrestling with absolute positioning, z-index, and clear properties. It was a huge pain that involved <em>way</em> too many lines of css. So, I reconsidered my uninformed stance on flexbox. I pulled up a new tab and began researching which browsers supported flex properties (btw, this is what I should have done in the first place!).</p>
+<p>Before I start talking about Bootstrap, I have some big news. <strong>I was hired as an SEO Specialist/Web Developer a couple of weeks ago!</strong> My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).</p>
 
-<p><strong>In a couple of seconds I found that 95.31% of browsers support flexbox properties.</strong> Wow, okay, that’s good. AND, because my targeted audience are a bunch of awesome nerds who mostly use Chrome, I quickly decided that I could overlook that remaining 5.69% because I’m pretty sure those who use IE 8 or 9 won’t be visiting my blog anytime soon….or ever.</p>
+<p>Yet, once I started my new role I immediately wanted to beef up on a few things. My first priority was to become more comfortable with Bootstrap. Now I know, Bootstrap is <em>old news</em> to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site. Even better, you may even become more comfortable with common design patterns or methods of structuring your styles.</p>
 
-<h1 id="what-browsers-support-flexbox">What browsers support flexbox:</h1>
+<p>Now, I had experimented with Bootstrap once before. I actually used it for my blog here for a few days just so I could see what it was all about. Though I decided to get rid of it in favor of learning how to layout out pages myself, the experience did teach me how to create a sticky footer. That alone was well worth the effort, believe me. The sticky footer problem was driving me pretty damn crazy.</p>
 
-<p><img src="/assets/canIUseFlexbox.png" alt="What Browsers Support FlexBox?" /></p>
+<p>This time around I decided to just create a one page example project. First, I had to remember how to download and install Bootstrap though. For someone who is new to frameworks, it can be intimidating even to install a framework and include it in a project. At least it was for me when I first started back in July. So, I want to give you guys a little walkthrough on how to get started since it can be a little confusing.</p>
 
-<p>I go to <a href="http://caniuse.com/">Can I Use</a> to see which browsers and operating systems will/will not support different methods or tools. A quick search on their site showed me exactly which browsers would not be compatible with flexbox properties. <strong>Here is what I found:</strong></p>
+<h1 id="downloading-and-installing-bootstrap-336">Downloading and Installing Bootstrap 3.3.6</h1>
 
-<ul>
-  <li>Android does not support the flex-wrap property and I must use the -webkit preface if I went to use other flexbox properties.</li>
-  <li>Internet Explore only supports 2012 syntax</li>
-  <li>IE 8 and 9 do not support flexbox at all.</li>
-</ul>
+<p>To start on your own Bootstrap project, go to the <a href="http://getbootstrap.com/getting-started/">Bootstrap “getting started” page</a>. Here you can click “download bootstrap”. After that, you’ll just follow the directions on the page to install it.</p>
 
-<h2 id="using-analytics-to-help-determine-which-tools-to-use">Using analytics to help determine which tools to use</h2>
+<p>First, I recommend installing bower and Grunt if you don’t already have them installed on your computer.
+<a href="http://bower.io/">Bower</a> is just a package manager that helps you keep track all of your libraries, framework, etc . It just helps you make sure you install the right version of your packages and their dependencies.</p>
 
-<p>To see if I could go forward with using flexbox properties, I took a look at my Google Analytics page to see which browsers my visitors typically use. <strong>A quick look under the Technology tab told me that 0% of my visitors use Internet Explore and around 14% use Android.</strong> That told me that I would only need to consider the -webkit prefix moving forward and find a work around for flex-wrap. No problem!</p>
+<p>After that, you’ll go back into your terminal and install Grunt. The Bootstrap getting started page shows you how to do this as well. Yet, I ran into some errors while trying to install it. So if that happens to you, simply make sure you’re in your root directory and run the command <code>sudo npm install -g grunt-cli</code>.</p>
 
-<h2 id="the-lesson-to-be-learned">The Lesson to be learned</h2>
+<p>The sudo part is called <em>super user do</em>. It basically lets you force commands by overriding security measures that could be causing your errors. In short, it lets you act as if you are the superuser on your computer. From there, you can continue on with the installation as usual.</p>
 
-<p><a href="https://twitter.com/intent/tweet?text=Learning About Flexbox (And Why It's a Great Tool) url=http://bit.ly/1Sn3ppa &amp;via=KT_a_Gilbert"><img src="/assets/webDevTip1.jpg" alt="Learning About New Web Development Tools" /></a></p>
+<p>Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a ‘config.yml’ file in the root of your project, it will let you serve up your project locally while you’re developing with the command <code>jekyll serve</code> .</p>
 
-<p>I wanted to tell you all of this before teaching you about flex properties because I learned two awesome lessons here:</p>
+<p>Okay, now that you have bower and Grunt installed, go ahead and unzip your Bootstrap folder. You’ll see that it includes a bunch of minified CSS, JavaScript, and even some fonts.</p>
 
-<p>1) You should always research new tools yourself before believing what anyone else has to say about them.</p>
+<p><strong>Here, you can see why so many people use frameworks.</strong> They just provide a bunch of styling for you right out of the box to make building a site a little easier and faster. Fair warning though: using Bootstrap did not speed up the development process for me at all! I am so used to creating my own layouts that having to out specify some of the built-in styles was pretty time consuming and frustrating. At the end though, I was happy with the results (which I’ll share here in a second).</p>
 
-<p>2) Take the time to see which browsers and operating systems will support any new tools or methods you want to use before going ahead and using them. A quick look at Google Analytics will then tell you what accommodations you’ll need to make for your users.</p>
+<p>Now, all you have to do is copy the HTML below into your project’s index.html file. Then, you’ll be able to start your own Bootstrap site!</p>
 
-<h2 id="learning-about-flex-properties">Learning about Flex Properties</h2>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=edge&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Bootstrap 101 Template<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
 
-<p>Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container. Then, you declare flex-properties for your flex items. Here is some more info to help:</p>
+    <span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&quot;</span> <span class="na">integrity=</span><span class="s">&quot;sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7&quot;</span> <span class="na">crossorigin=</span><span class="s">&quot;anonymous&quot;</span><span class="nt">&gt;</span>
 
-<blockquote>
-  <p><a href="">Treehouse</a> helps explain that flexbox just gives you a flexible way to layout page content that ends up taking less time and involves fewer changes to your markup.</p>
-</blockquote>
+    <span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+    <span class="c">&lt;!-- Bootstrap --&gt;</span>
 
-<p><strong>Flex Containers:</strong> These can be inline element such as a div, unordered list, or span element.</p>
+    <span class="c">&lt;!-- jQuery (necessary for Bootstrap&#39;s JavaScript plugins) --&gt;</span>
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
-<p><strong>Flex items:</strong> Flex items are anything inside of your flex containers. They are just your children elements.</p>
+   <span class="c">&lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;</span>
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js&quot;</span> <span class="na">integrity=</span><span class="s">&quot;sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS&quot;</span> <span class="na">crossorigin=</span><span class="s">&quot;anonymous&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
-<p>You first step will be to declare a flex container. It will look something like this:</p>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span>
-<span class="p">}</span></code></pre></div>
+<p>Alright! You have bootstrap installed. Now, you can begin to create pages.</p>
 
-<p>That’s all there is to it! After that, you can think about how you want your flex items to behave. Do you want them to be inline elements? Or should they appear in a column? Should any be larger in width than others? What should happen to them on different screen sizes? These are all things that flexbox properties can help you figure out.</p>
+<h2 id="my-bootstrap-example">My Bootstrap Example</h2>
 
-<h2 id="get-flexible-with-flex-items">Get flexible with flex items</h2>
-<p>When it comes to creating the layout you want, you’ll need to make a few more declarations to get things exactly how you want them. Here a few to get you started:</p>
+<p>I started by making just a one page example. You can <a href="https://github.com/ktagilbert/Bootstrap-Example">checkout the project for yourself here</a>. <em>And</em> it looks like this:</p>
 
-<ul>
-  <li><strong>flex-basis:</strong> This one is my favorites! Flex-basis allows you to determine the proportions of your flex items. Instead of declaring set widths for elements that require multiple media queries at the bottom of your stylesheet to maintain, use flex-basis instead. You can set a length using rem, em, or a percentage to make a particular element bigger or smaller than the others around it.</li>
-</ul>
+<p><img src="/assets/bootstrapExample2.jpg" alt="Example bootstrap project" /></p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#large-picture</span> <span class="p">{</span>
-  <span class="n">flex</span><span class="o">-</span><span class="n">basis</span><span class="o">:</span> <span class="m">30%</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<h2 id="becoming-familiar-with-bootstrap">Becoming familiar with Bootstrap</h2>
 
-<ul>
-  <li><strong>flex-direction:</strong> flex items run along the main axis (x) and cross axis (y). If you want to change this, declare a flex-direction in your flex container. Use row, row-reverse, column, or column reverse. Row will give you inline elements and “column” will you give you…well, columns. If you want to flip which items appear first in your layout, then tack on “reverse” to make it happen.</li>
-</ul>
+<p>Okay, there are couple of things to know about Bootstrap before you get started. The first is that most of the styling you will do will be done in HTML Don’t worry, I’m not talking about inline styles. Bootstrap just has a bunch of classes with associated styles for you to use already.</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.your-list</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">flex</span><span class="p">;</span>
-  <span class="n">flex</span><span class="o">-</span><span class="k">direction</span><span class="o">:</span> <span class="n">column</span><span class="p">;</span></code></pre></div>
+<p>To get started, take a couple of hours to become familiar with the different classes you now have at your disposal <a href="http://getbootstrap.com/css/">by taking a look at Bootstrap’s CSS page</a>. Then, explore the other pages the framework has for you on their <a href="http://getbootstrap.com/customize/">customize page</a>. If you want to override any of the existing styles you see here, you’ll have to make a “styles.css” file in your css folder and include it in the head of your HTML. Then, you’ll have to out-specify the Bootstrap styling.</p>
 
-<ul>
-  <li><strong>flex-wrap:</strong>
-<img src="/assets/flexWrap.png" alt="example of flex-wrap" />
- flex items, by default, all try to squeeze into one line. If you want them to wrap (say for different resolutions), you can use flex-wrap to make them move down to different lines as needed.</li>
-</ul>
-
-<p>Okay, this should get you well on your way to using flexbox!! Thanks for reading guys. Remember, if you have any questions, leave a comment below.</p>
+<p>Okay, I’ll leave you with the task of installing and exploring Bootstrap for today. <strong>Tomorrow, I’ll go more in depth on how I made my example project.</strong> Stay tuned and thanks for reading guys!</p>
 
   </article>
 
 <div>
   <ul class="post-nav-title">
-    <a class="post-nav-link" href="/blog/content-workflow">
-      <li id="title-prev">How to Improve Your Copywriting Workflow</li>
+    <a class="post-nav-link" href="/blog/client-side-search-function">
+      <li id="title-prev">A Client Side Search Function Made with jQuery</li>
     </a>
-    <a class="post-nav-link" href="/blog/creating-custom-jekyll-homepage">
-      <li id="title-next">How I Customized My Jekyll Home Page Layout</li>
+    <a class="post-nav-link" href="/blog/first-bootstrap-project-2">
+      <li id="title-next">Your first Bootstrap Project - (Part 2)</li>
     </a>
   </ul>
 </div>

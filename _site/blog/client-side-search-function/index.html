@@ -34,10 +34,19 @@
 
 
   <script>
+  $(document).ready(function() {
 
-		$(document).ready(function() {
+    //portfolio overlay
+    // $('.folio-item').on('mouseover', function() {
+    //   $(this).attr('data-text').show();
+    // });
+    //
+    // // $('.folio-item').on('mouseout', function() {
+    // //   $('.folio-overlay').hide();
+    // // });
 
     //search function
+
     $('.fa-search').on('click', function(event) { // on click of search icon
       $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
     });
@@ -127,6 +136,7 @@
         $("#mobile-btn").hide();
       });
 
+
       //close mobile menu
       $('#close-menu').on('click', function(event) {
         event.preventDefault;
@@ -166,7 +176,6 @@
             });
           }
         });
-
     });
  </script>
 </head>
@@ -367,8 +376,8 @@
     <a class="post-nav-link" href="/blog/creating-custom-jekyll-homepage">
       <li id="title-prev">How I Customized My Jekyll Home Page Layout</li>
     </a>
-    <a class="post-nav-link" href="">
-      <li id="title-next"></li>
+    <a class="post-nav-link" href="/blog/bootstrapExample">
+      <li id="title-next">Your first Bootstrap Project - (Part 1)</li>
     </a>
   </ul>
 </div>
