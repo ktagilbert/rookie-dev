@@ -837,8 +837,9 @@ portfolio page
     width: 65%; }
 
 #portfolio-list {
-  list-style: none;
-  margin: 0 8% 10%; }
+  list-style: none; }
+  #portfolio-list .parent-container {
+    height: 500px; }
   #portfolio-list .folio-item {
     display: inline-block;
     width: 40%;
@@ -853,12 +854,18 @@ portfolio page
   opacity: 0.1; }
 
 .folio-item:hover {
-  background-color: #666666;
+  background-color: #EB4144;
   z-index: 1000; }
-  .folio-item:hover::after {
-    content: attr(data-text);
-    color: #fff;
-    margin: 0; }
+
+.overlay {
+  color: #fff;
+  position: absolute;
+  display: block;
+  width: 38%;
+  padding-top: 20px;
+  text-align: center;
+  display: none;
+  font-weight: 500; }
 
 /*********************************
 contribute container

@@ -12,37 +12,47 @@ permalink: /portfolio/
   </div>
 
   <ul id="portfolio-list">
-    <li data-text="A one page bootstrap example I made to become familiar with the framework." class="folio-item">
+    <li class="folio-item">
+      <p class="overlay">A one page example site I made to become more familiar with the Bootstrap framework. You can click here to go the github page for this project.</p>
       <a href="https://github.com/ktagilbert/Bootstrap-Example">
         <img class="folio-img" src="/assets/jumbotron.png"/>
       </a>
     </li>
-    <li data-text="A a UI design mockup I made for my about page. Click to see the full image" class="folio-item">
+
+    <li class="folio-item">
+      <p class="overlay">A design mock-up I made for my about page. Click to see the full image</p>
       <a href="https://www.pinterest.com/pin/176273772893125758/">
         <img class="folio-img" src="/assets/aboutpagemockupcropped.jpg" />
+
       </a>
     </li>
 
-    <li data-text="A blog series I created for Caring Senior Service. Click to go to the series on their blog." class="folio-item">
+    <li class="folio-item">
+      <p class="overlay">A weekly blog series I created for Caring Senior Service. Click to read the series over on their blog.</p>
       <a href="http://www.caringseniorservice.com/blog/golden-inspirations-storytelling-improve-senior-health">
         <img class="folio-img" src="/assets/blog2css.jpg" />
+
+        </span>
       </a>
     </li>
 
-    <li data-text="An eBook I authored for Caring Senior Service. The eBook became their most downloaded piece of content and their highest converting piece of content while I worked there. Click to read the eBook" class="folio-item">
+    <li class="folio-item">
+      <p class="overlay">An eBook I wrote about long-term care. The eBook became the highest converting piece of content we had at Caring Senior Service while I worked there.</p>
       <a href="https://d2jt48ltdp5cjc.cloudfront.net/uploads/88fce90d-e7cb-4fa3-9d17-439b7d2d8cba.pdf">
         <img class="folio-img" src="/assets/ebookcss.jpg" />
       </a>
     </li>
 
-    <li data-text="A blog article I wrote for Etumos LLC. Click to go to the full article." class="folio-item">
+    <li class="folio-item">
+      <p class="overlay">A blog article I wrote for Etumos LLC. Click here to read it over on their blog.</p>
       <a href="http://etumos.com/marketing-automation/robust-and-scalable-how-to-build-your-ideal-marketing-technology-framework/">
-
         <img class="folio-img" src="/assets/etumosblog.png" />
+
       </a>
     </li>
 
-    <li data-text="A logo I designed for a literary themed blog" class="folio-item">
+    <li class="folio-item">
+      <p class="overlay">A logo I designed for a literary themed blog</p>
       <img class="folio-img" src="/assets/logostoryarch.png" />
     </li>
   </ul>

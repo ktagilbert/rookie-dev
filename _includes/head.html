@@ -33,16 +33,17 @@
   <script>
   $(document).ready(function() {
 
-    //portfolio overlay
-    // $('.folio-item').on('mouseover', function() {
-    //   $(this).attr('data-text').show();
-    // });
-    //
-    // // $('.folio-item').on('mouseout', function() {
-    // //   $('.folio-overlay').hide();
-    // // });
-
-    //search function
+    //overlay
+    $('.folio-item').each(function(item) {
+      $(this).on('mouseover', function() {
+        $('.overlay').eq(item).show();
+      })
+      $('.folio-item').on('mouseleave', function() {
+        $('.overlay').hide();
+      })
+    });
+    //for each element .folio-item
+    //display overlay on hover
 
     $('.fa-search').on('click', function(event) { // on click of search icon
       $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
