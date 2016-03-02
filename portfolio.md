@@ -11,6 +11,8 @@ permalink: /portfolio/
     </p>
   </div>
 
+  <div class="page-wrapper">
+
   <ul id="portfolio-list">
     <li class="folio-item">
       <p class="overlay">A one page example site I made to become more familiar with the Bootstrap framework. You can click here to go the github page for this project.</p>
@@ -56,6 +58,7 @@ permalink: /portfolio/
       <img class="folio-img" src="/assets/logostoryarch.png" />
     </li>
   </ul>
+  </div>
 
 
 <!--contribute-container-->
