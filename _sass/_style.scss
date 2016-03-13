@@ -284,6 +284,19 @@ media queries
 	}
 }
 
+@media(max-width: 690px) {
+	#portfolio-list {
+		.folio-item {
+			display: block !important;
+			margin: auto !important;
+			width: 90% !important;
+		}
+		.overlay {
+			width: 65%;
+		}
+	}
+}
+
 @media(max-width: 720px) {
 	.tagline {
 		padding: 20% 0;
