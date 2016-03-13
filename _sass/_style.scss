@@ -188,14 +188,16 @@ img {
 
 .post-header {
     margin-bottom: $spacing-unit;
-    height: 250px;
-}
+		background-color: $skyblue;
+		opacity: 1;
 
-.post-title {
-    color: #FFB3AA;
-    text-align: center;
-    padding-top: 160px;
-    font-family: georgia, serif;
+	.post-title {
+		  color: $orange;
+		  text-align: center;
+		  font-family: georgia, serif;
+			padding: 100px 2% 2%;
+			font-weight: 600;
+	}
 }
 
 .post-content {

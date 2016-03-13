@@ -14,11 +14,10 @@ permalink: /about/
 
 <div class="page-wrapper">
 	<div>
-		<p>Welcome to the blog! Here, you will be able to find resources to help you learn the basics of web development
-			and improve your marketing efforts along the way. I originally made this blog when I began to learn about front-end web development.
+		<p>Welcome to the blog! I originally made this blog when I began to learn about front-end web development.
 			I wanted to help aspiring web developers learn things in an easy and understandable way.
 			Since then, I have also learned how valuable programming skills are in the marketing world. So it has evolved (a lot!) since
-			I originally deployed the site in much the same way that I have. But now, I hope it will help others learn while I continue
+			The site has changed a lot (just like I have). But now, I hope it will help others learn while I continue
 			to learn about technical marketing as well. I hope you enjoy!
 		</p>
 		<p>I initially studied creative writing in college. After graduation, I went into digital marketing to focus on inbound
@@ -86,24 +85,6 @@ permalink: /about/
 </div>
 
 </div>
-</div>
-
-<div class="personal-time">
-	<h2>When I'm Not Working, I'm....</h2>
-	<ul class="hobbies">
-		<li>
-			<h4>Knitting</h4>
-			<img src="/assets/knitting.png"/>
-		</li>
-		<li id="big-picture">
-			<h4>Playing With the Pup</h4>
-			<img src="/assets/pup.png"/>
-		</li>
-		<li>
-			<h4>Enjoying the PNW</h4>
-			<img src="/assets/pnw.png"/>
-		</li>
-	</ul>
 </div>
 
 <div class="contribute-container">

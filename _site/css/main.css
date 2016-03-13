@@ -471,13 +471,14 @@ img {
 
 .post-header {
   margin-bottom: 30px;
-  height: 250px; }
-
-.post-title {
-  color: #FFB3AA;
-  text-align: center;
-  padding-top: 160px;
-  font-family: georgia, serif; }
+  background-color: #dff1f8;
+  opacity: 1; }
+  .post-header .post-title {
+    color: #EB4144;
+    text-align: center;
+    font-family: georgia, serif;
+    padding: 100px 2% 2%;
+    font-weight: 600; }
 
 .post-content {
   margin-bottom: 30px; }
@@ -680,7 +681,7 @@ media queries
     background-color: transparent; }
     .rows li, .rows .portfolio-text {
       display: none;
-      background-color: #edf4f4;
+      background-color: #dff1f8;
       position: absolute;
       width: 58%;
       opacity: 0.95; }
@@ -768,13 +769,13 @@ about page
     font-weight: 500; }
 
 #name-intro {
-  background-color: #EB4144;
+  background-color: #dff1f8;
   margin-bottom: 5%; }
   #name-intro #about-header {
     padding: 7% 10% 0;
     vertical-align: text-bottom !important;
-    font-size: 5em;
-    color: #fff; }
+    font-size: 4.5em;
+    color: #EB4144; }
 
 #background-info {
   padding: 2% 5%;
@@ -842,34 +843,6 @@ about page
   #list-column li a {
     color: #fff;
     font-size: 1.2rem; }
-
-.personal-time {
-  width: 100%;
-  background-color: #edf4f4; }
-  .personal-time h2 {
-    text-align: center;
-    padding-top: 2%;
-    color: #EB4144;
-    font-size: 2em; }
-  .personal-time .hobbies {
-    list-style: none;
-    padding: 5% 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-wrap: wrap; }
-    .personal-time .hobbies li {
-      width: 25%;
-      margin: auto;
-      font-size: 1.3em;
-      text-align: center; }
-    .personal-time .hobbies #big-picture {
-      flex-basis: 30%; }
-    .personal-time .hobbies h4 {
-      vertical-align: text-top;
-      display: inherit;
-      color: #666;
-      font-family: "pt-sans", tahoma;
-      font-weight: 500; }
 
 /*********************************
 portfolio page

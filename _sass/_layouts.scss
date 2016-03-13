@@ -14,14 +14,14 @@ about page
 }
 
 #name-intro {
-  background-color: $orange;
+  background-color: $skyblue;
   margin-bottom: 5%;
 
   #about-header {
     padding: 7% 10% 0;
     vertical-align: text-bottom !important;
-    font-size: 5em;
-    color: #fff;
+    font-size: 4.5em;
+    color: $orange;
   }
 }
 
@@ -109,43 +109,6 @@ about page
 		a {
 			color: #fff;
 			font-size: 1.2rem;
-		}
-	}
-}
-
-.personal-time {
-	width: 100%;
-	background-color: $skyblue;
-
-	h2 {
-		text-align: center;
-		padding-top: 2%;
-		color: $orange;
-		font-size: 2em;
-	}
-
-	.hobbies {
-		list-style: none;
-		padding: 5% 0;
-		margin-bottom: 0;
-		display: flex;
-		flex-wrap: wrap;
-
-		li {
-			width: 25%;
-			margin: auto;
-			font-size: 1.3em;
-			text-align: center;
-		}
-		#big-picture {
-			flex-basis: 30%;
-		}
-		h4 {
-			vertical-align: text-top;
-			display: inherit;
-			color: #666;
-			font-family: "pt-sans", tahoma;
-			font-weight: 500;
 		}
 	}
 }

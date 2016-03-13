@@ -36,15 +36,6 @@
   <script>
   $(document).ready(function() {
 
-    //change menu item a tag text color
-    //if page = /about/
-    if (top.location.pathname === '/about/') {
-      $('.menu-item > a').css('color', '#fff');
-      $('#social-icons > li > a').css('color', '#fff');
-    }
-    //change "menu-item > a.css(color: #fff)
-
-
     //overlay on portfolio items
     $('.folio-item').each(function(item) {
       $(this).on('mouseover', function() {
@@ -54,9 +45,9 @@
         $('.overlay').hide();
       })
     });
-    //for each element .folio-item
-    //display overlay on hover
 
+
+    //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
       $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
     });
@@ -114,6 +105,7 @@
       function setHeight() {
         windowHeight = $(window).innerHeight();
         $('#name-intro').css('min-height', windowHeight / 2);
+        $('.post-header').css('min-height', windowHeight/ 2.5);
       };
       setHeight();
 
