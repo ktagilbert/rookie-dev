@@ -1,0 +1,54 @@
+/*********************************
+sticky footer
+*********************************/
+
+.site-footer {
+	border: 2px solid #222;
+	position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+	background-color: #dff1f8;
+	top: 100%;
+
+	a, a:visited {
+		color: #111;
+		text-shadow: none;
+	}
+
+	a:hover {
+		color: #292768;
+		text-decoration: underline;
+	}
+}
+
+.footer-content {
+  color: #111;
+	text-align: right;
+	width: 100%;
+	padding-right: 40px;
+	font-size: 1.5em;
+	float: right;
+
+	h3 {
+		padding-bottom: 0px;
+		font-family: "oleo script", "serif";
+		color: #111;
+		font-size: 1em;
+	}
+}
+
+.footer-list {
+	li {
+		text-align: right;
+		font-family: "lato", tahoma, sans-serif;
+		font-size: 16px;
+		list-style: none;
+		padding: 5px;
+		line-height: 1;
+	}
+	li:last-of-type {
+		font-size: 12px;
+	}
+}

@@ -7,8 +7,13 @@ permalink: /about/
 <div class="post">
 <div id="name-intro">
 	<img src="/assets/katie.jpg" class="katie-pic" />
-	<span class="about-me">
-		<h1 class="about-header">Hi, my name is Katie</h1>
+</div>
+
+<div class="page-wrapper">
+	<div>
+		<h1 id="about-header">
+			Hi, my name is Katie
+		</h1>
 		<p>Welcome to the blog! Here, you will be able to find resources to help you learn the basics of web development
 			and improve your marketing efforts along the way. I originally made this blog when I began to learn about front-end web development.
 			I wanted to help aspiring web developers learn things in an easy and understandable way.
@@ -16,21 +21,15 @@ permalink: /about/
 			I originally deployed the site in much the same way that I have. But now, I hope it will help others learn while I continue
 			to learn about technical marketing as well. I hope you enjoy!
 		</p>
-	</span>
-</div>
-
-<div id="background-info">
-	<span class="background-text">
 		<p>I initially studied creative writing in college. After graduation, I went into digital marketing to focus on inbound
 		lead generation and content creation. At my first job out of college, I became adept at designing landing pages as well as
 		 generating and tracking inbound leads. Yet, over time I became more and more interested in fixing little site bugs that
 		 popped up over the weeks. Anything from creating interactive buttons for subscribers to fixing off-centered divs became
 		 fun challenges for me. So I began making time to learn more about HTML, CSS, and JavaScript.
 		</p>
-		<p>This leads me to now. Front-end web development is something that I enjoy doing but also an incredibly valuable skill to have as a marketer.
-			 I believe that both marketing and programming combines logic with creativity. It is the combination that has drawn me to both fields.
+		<p>This leads me to now. Front-end web development is something that I enjoy doing but also an incredibly valuable skill to have as a marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that has drawn me to both fields.
 		</p>
-	</span>
+	</div>
 </div>
 
 <div id="skills">

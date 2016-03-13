@@ -1,0 +1,222 @@
+/*********************************
+about page
+*********************************/
+
+#about-page {
+  padding-bottom: 5%;
+  height: 100%;
+	color: #292768;
+
+	p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+#name-intro {
+  background-color: $orange;
+  height: 300px;
+
+	.katie-pic {
+    width: 28%;
+    position: absolute;
+    border-radius: 50%;
+    padding: 2%;
+    right: 35%;
+    top: 1%;
+	}
+}
+
+#about-header {
+	padding-top: 10%;
+  margin-top: 10%;
+}
+
+#background-info {
+	padding: 2% 5%;
+	margin: 3% 2%;
+	overflow: auto;
+
+	.background-text {
+		padding: 5% 0;
+	}
+}
+
+#skills {
+	// background-color: $orange;
+	color: #fff;
+	background:linear-gradient(rgba(235, 65, 68, 0.8), rgba(235, 65 ,68, 0.8)), url("/assets/skillsBackground.png");
+	padding: 5% 0;
+
+	h3 {
+		padding: 20px 0;
+		color: #fff;
+		letter-spacing: 4px;
+		font-size: 1.5em;
+	}
+
+	#skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: column;
+		list-style: none;
+		height: 250px;
+		margin: auto;
+		width: 70%;
+		padding: 5%;
+		background-color: #fff;
+
+		li {
+			width: 30%;
+			justify-content: space-between;
+			margin: auto;
+			color: #666;
+		}
+
+		.fa {
+			padding-right: 10px;
+			color: $orange;
+			font-size: 0.7em;
+		}
+	}
+}
+
+#list-column {
+	ul {
+		list-style: none;
+		text-align: center;
+		padding: 5% 0;
+		margin: 0 5%;
+	}
+	li {
+		width: 31%;
+		position: relative;
+		display: inline-block;
+		padding: 1%;
+		font-weight: bolder;
+		font-size: 1.5em;
+		color: #111;
+		vertical-align: text-top;
+
+		p {
+			font-size: 1rem;
+			text-align: left;
+			padding: 30px 0 20px;
+			height: 400px;
+		}
+		button {
+			background-color: $orange;
+			outline: none;
+			width: 100%;
+			padding: 5%;
+			border: none;
+			vertical-align: bottom;
+		}
+		a {
+			color: #fff;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.personal-time {
+	width: 100%;
+	background-color: $skyblue;
+
+	h2 {
+		text-align: center;
+		padding-top: 2%;
+		color: $orange;
+		font-size: 2em;
+	}
+
+	.hobbies {
+		list-style: none;
+		padding: 5% 0;
+		margin-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			width: 25%;
+			margin: auto;
+			font-size: 1.3em;
+			text-align: center;
+		}
+		#big-picture {
+			flex-basis: 30%;
+		}
+		h4 {
+			vertical-align: text-top;
+			display: inherit;
+			color: #666;
+			font-family: "pt-sans", tahoma;
+			font-weight: 500;
+		}
+	}
+}
+
+/*********************************
+portfolio page
+*********************************/
+#portfolio-intro {
+	text-align: center;
+	margin-top: 5%;
+	padding: 5% 0;
+	margin: 0 10%;
+
+	h1 {
+		color: $orange;
+	}
+
+	p {
+		margin: auto;
+	}
+}
+
+#portfolio-list {
+	list-style: none;
+	margin-left: 0;
+
+	.parent-container {
+		height: 500px;
+	}
+
+	.folio-item {
+		display: inline-block;
+		width: 44%;
+		margin: 4%;
+		padding-bottom: 30px;
+		margin: 0 2%;
+	}
+}
+
+.page-wrapper {
+	margin: 0% 10% 10%;
+}
+
+.folio-img {
+	padding-bottom: 0;
+}
+
+.folio-img:hover {
+	opacity: 0.1;
+}
+
+.folio-item:hover {
+	background-color: $orange;
+	z-index: 1000;
+}
+
+.overlay {
+	color: #fff;
+	position: absolute;
+	display: block;
+	width: 35%;
+	padding: 10px 0 0 0;
+	margin-bottom: 0;
+	text-align: center;
+	display: none;
+	font-weight: 500;
+}
