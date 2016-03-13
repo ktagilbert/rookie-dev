@@ -412,6 +412,9 @@ media queries
   .tagline {
     padding: 20% 0; }
 
+  #about-header {
+    font-size: 3em !important; }
+
   .post-header {
     height: 300px; }
 
@@ -625,18 +628,12 @@ about page
 
 #name-intro {
   background-color: #EB4144;
-  height: 300px; }
-  #name-intro .katie-pic {
-    width: 28%;
-    position: absolute;
-    border-radius: 50%;
-    padding: 2%;
-    right: 35%;
-    top: 1%; }
-
-#about-header {
-  padding-top: 10%;
-  margin-top: 10%; }
+  margin-bottom: 5%; }
+  #name-intro #about-header {
+    padding: 7% 10% 0;
+    vertical-align: text-bottom !important;
+    font-size: 5em;
+    color: #fff; }
 
 #background-info {
   padding: 2% 5%;

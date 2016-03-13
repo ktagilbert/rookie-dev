@@ -36,7 +36,16 @@
   <script>
   $(document).ready(function() {
 
-    //overlay
+    //change menu item a tag text color
+    //if page = /about/
+    if (top.location.pathname === '/about/') {
+      $('.menu-item > a').css('color', '#fff');
+      $('#social-icons > li > a').css('color', '#fff');
+    }
+    //change "menu-item > a.css(color: #fff)
+
+
+    //overlay on portfolio items
     $('.folio-item').each(function(item) {
       $(this).on('mouseover', function() {
         $('.overlay').eq(item).show();
@@ -94,6 +103,17 @@
       function setHeight() {
         windowHeight = $(window).innerHeight();
         $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //make .name-intro have a dynamic height
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('#name-intro').css('min-height', windowHeight / 2);
       };
       setHeight();
 

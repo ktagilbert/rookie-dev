@@ -36,7 +36,16 @@
   <script>
   $(document).ready(function() {
 
-    //overlay
+    //change menu item a tag text color
+    //if page = /about/
+    if (top.location.pathname === '/about/') {
+      $('.menu-item > a').css('color', '#fff');
+      $('#social-icons > li > a').css('color', '#fff');
+    }
+    //change "menu-item > a.css(color: #fff)
+
+
+    //overlay on portfolio items
     $('.folio-item').each(function(item) {
       $(this).on('mouseover', function() {
         $('.overlay').eq(item).show();
@@ -94,6 +103,17 @@
       function setHeight() {
         windowHeight = $(window).innerHeight();
         $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //make .name-intro have a dynamic height
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('#name-intro').css('min-height', windowHeight / 2);
       };
       setHeight();
 
@@ -217,14 +237,14 @@
         <div id="about-page">
 <div class="post">
 <div id="name-intro">
-	<img src="/assets/katie.jpg" class="katie-pic" />
+	<h1 id="about-header">
+		Hi, my name is Katie
+	</h1>
+	<!-- <img src="/assets/katie.jpg" class="katie-pic" /> -->
 </div>
 
 <div class="page-wrapper">
 	<div>
-		<h1 id="about-header">
-			Hi, my name is Katie
-		</h1>
 		<p>Welcome to the blog! Here, you will be able to find resources to help you learn the basics of web development
 			and improve your marketing efforts along the way. I originally made this blog when I began to learn about front-end web development.
 			I wanted to help aspiring web developers learn things in an easy and understandable way.

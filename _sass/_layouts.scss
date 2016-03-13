@@ -15,21 +15,14 @@ about page
 
 #name-intro {
   background-color: $orange;
-  height: 300px;
+  margin-bottom: 5%;
 
-	.katie-pic {
-    width: 28%;
-    position: absolute;
-    border-radius: 50%;
-    padding: 2%;
-    right: 35%;
-    top: 1%;
-	}
-}
-
-#about-header {
-	padding-top: 10%;
-  margin-top: 10%;
+  #about-header {
+    padding: 7% 10% 0;
+    vertical-align: text-bottom !important;
+    font-size: 5em;
+    color: #fff;
+  }
 }
 
 #background-info {

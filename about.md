@@ -6,14 +6,14 @@ permalink: /about/
 <div id="about-page">
 <div class="post">
 <div id="name-intro">
-	<img src="/assets/katie.jpg" class="katie-pic" />
+	<h1 id="about-header">
+		Hi, my name is Katie
+	</h1>
+	<!-- <img src="/assets/katie.jpg" class="katie-pic" /> -->
 </div>
 
 <div class="page-wrapper">
 	<div>
-		<h1 id="about-header">
-			Hi, my name is Katie
-		</h1>
 		<p>Welcome to the blog! Here, you will be able to find resources to help you learn the basics of web development
 			and improve your marketing efforts along the way. I originally made this blog when I began to learn about front-end web development.
 			I wanted to help aspiring web developers learn things in an easy and understandable way.
