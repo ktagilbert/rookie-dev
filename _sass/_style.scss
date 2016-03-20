@@ -60,6 +60,12 @@ home page
 	font-family: pt sans;
 }
 
+@media(max-width: 470px) {
+	.tagline {
+		font-size: 18px;
+	}
+}
+
 /*********************************
 header
 *********************************/
@@ -92,7 +98,6 @@ Post styling
     justify-content: center;
     list-style: none;
     margin-bottom: 0px;
-    display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
     margin-left: 0;
@@ -255,9 +260,6 @@ media queries
 }
 
 @media(max-width: 550px) {
-	.site-footer {
-		height: 150px;
-	}
 	.post-wrapper {
 		margin: 1%;
 		background-color: #f2f2f2;
@@ -299,16 +301,13 @@ media queries
 }
 
 @media(max-width: 720px) {
-	.tagline {
-		padding: 20% 0;
-	}
 	.post-header {
 		height: 300px;
 	}
 	.footer-content {
 		text-align: center;
 		margin: auto;
-		font-size: 1em;
+		font-size: 18px;
 		padding-right: 0px;
 	}
 	.footer-list {
@@ -344,10 +343,6 @@ media queries
 	}
 	.my-background {
 		font-size: 14px;
-	}
-	.tagline {
-		font-size: 14px;
-		letter-spacing: 1px;
 	}
 	.post-nav-title {
 		display: none;
@@ -469,9 +464,5 @@ media queries
 @media(max-width: 1430px) {
 	.top-angle {
 		bottom: 43%;
-	}
-	.fa-chevron-down {
-		top: 21%;
-		left: 51%;
 	}
 }
