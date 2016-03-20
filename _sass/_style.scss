@@ -302,9 +302,6 @@ media queries
 	.tagline {
 		padding: 20% 0;
 	}
-	#about-header {
-		font-size: 3em !important;
-	}
 	.post-header {
 		height: 300px;
 	}
@@ -328,16 +325,6 @@ media queries
 	.categories-dropdown {
 		display: none;
 		z-index: -100000;
-	}
-	#skills {
-		#skills-list {
-			height: 100%;
-
-			li {
-				width: 100%;
-				padding: 10px;
-			}
-		}
 	}
 }
 
@@ -376,14 +363,6 @@ media queries
 	}
 	.logo {
 		position: initial;
-	}
-	.personal-time {
-		.hobbies {
-			flex-direction: column;
-			li {
-				width: 45%;
-			}
-		}
 	}
 }
 
@@ -441,21 +420,6 @@ media queries
 			margin: 0 10%;
 		}
 	}
-	#name-intro {
-		.about-me {
-			float: none;
-			width: 100%;
-
-			h1 {
-				text-align: center;
-			}
-		}
-		.katie-pic {
-			float: none;
-			border-radius: 50%;
-			width: 45%;
-		}
-	}
 	#desktop-creative-work {
 		display: none;
 	}
@@ -498,28 +462,6 @@ media queries
 	.post-list {
 		li {
 			width: 40%;
-		}
-	}
-}
-
-@media(max-width: 1137px) {
-	#list-column {
-		li {
-			display: initial;
-		}
-		li > button {
-			padding: 2%;
-			margin-bottom: 10%;
-		}
-		li > p {
-			height: auto;
-		}
-	}
-	.hobbies {
-		li {
-			h4 {
-				font-size: 1em;
-			}
 		}
 	}
 }

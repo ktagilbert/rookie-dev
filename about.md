@@ -15,12 +15,10 @@ permalink: /about/
 		<h1>Hi, my name is Katie</h1>
 		<p>Welcome to the blog! I originally made this blog when I began to learn about front-end web development.
 			I wanted to help aspiring web developers learn things in an easy and understandable way.
-			Since then, I have also learned how valuable programming skills are in the marketing world. So it has evolved (a lot!) since
-			The site has changed a lot (just like I have). But now, I hope it will help others learn while I continue
-			to learn about technical marketing as well. I hope you enjoy!
+			Since then, I have also learned how valuable programming skills are in the marketing world. So it has evolved (a lot!). Now, I hope it will help others learn while I continue to learn about technical marketing as well. I hope you enjoy!
 		</p>
 		<p>I initially studied creative writing in college. After graduation, I went into digital marketing to focus on inbound
-		lead generation and content creation. At my first job out of college, I became adept at designing landing pages as well as
+		 lead generation and content creation. At my first job out of college, I became adept at designing landing pages as well as
 		 generating and tracking inbound leads. Yet, over time I became more and more interested in fixing little site bugs that
 		 popped up over the weeks. Anything from creating interactive buttons for subscribers to fixing off-centered divs became
 		 fun challenges for me. So I began making time to learn more about HTML, CSS, and JavaScript.
@@ -65,7 +63,7 @@ permalink: /about/
 		<li>Design
 			<p>Design has always been a strong interest of mine. Before I knew what I wanted to do for I career, I actually considered becoming a graphic designer or interior designer. Now, however, I stick
 				to designing for the web and creating the occasional graphic and logo. I began by learning how to layout newspaper articles while in High School using Adobe InDesign. Later, in college,
-				I designed marketing flyers, presentation boards, and brochures for company events during my time as a marketing asisstant. Now, I have been learning about UI/UX Design
+				I designed marketing flyers, presentation boards, and brochures for company events during my time as a marketing assistant. Now, I have been learning about UI/UX Design
 				using Treehouse as well as many other resources (textbooks, articles, and basically whatever I can get my hands on!). You can check out some
 				of my work over on my Portfolio to see more!
 			</p>

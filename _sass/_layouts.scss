@@ -89,6 +89,24 @@ about page
 	}
 }
 
+@media (max-width: 875px) {
+  #skills {
+    margin-right: 0;
+    #skills-list {
+      flex-wrap: none;
+      display: inline-block;
+      height: 100%;
+      padding: 5% 10px;
+      margin-left: 10%;
+      margin-right: 10%;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
 #list-column {
 	ul {
 		list-style: none;
@@ -126,6 +144,24 @@ about page
 		}
 	}
 }
+
+@media(max-width: 1130px) {
+	#list-column {
+		li {
+      display: initial;
+
+      p {
+        height: auto;
+      }
+      button {
+        height: auto;
+        padding: 2% 0;
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
+
 
 /*********************************
 portfolio page
