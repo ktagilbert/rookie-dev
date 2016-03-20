@@ -307,7 +307,7 @@ media queries
 	.footer-content {
 		text-align: center;
 		margin: auto;
-		font-size: 18px;
+		font-size: 1em;
 		padding-right: 0px;
 	}
 	.footer-list {
@@ -327,12 +327,9 @@ media queries
 	}
 }
 
-@media(max-width: 760px) {
+@media(max-width: 770px) {
 	#menu {
 		display: none;
-	}
-	#mobile-btn {
-		display: initial;
 	}
 	.side-categories {
 		width: 100%;

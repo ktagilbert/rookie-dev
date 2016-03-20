@@ -165,14 +165,12 @@
         },900);
       });
 
-      //about page creative work change
+      //show mobile menu
       $(window).resize(function() {
-        if ($(window).width() < 850) {
-          $('#desktop-creative-work').hide();
-          $('.mobile-img').show()
+        if ($(window).width() < 770) {
+          $('#mobile-menu').show();
         } else {
-          $('#desktop-creative-work').show();
-          $('.mobile-img').hide();
+          $('#mobile-menu').hide();
         }
       });
 
