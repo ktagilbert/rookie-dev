@@ -5,12 +5,15 @@ layout: default
 <html>
 
 <div itemscope itemtype="http://schema.org/Article" class="post">
-
+<div class="blue-page-header">
+</div>
+<div class="wrapper">
+  <div class="absolute-container">
   <header class="post-header">
   	<p itemprop="name" class="post-title">{{ page.title }}</p>
   </header>
 
-<div class="wrapper">
+<div class="text-wrapper">
   <p itemprop="datePublished" class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •
     {{ page.author }}{% endif %}{% if page.meta %} •
     {{ page.meta }}{% endif %}
@@ -19,7 +22,6 @@ layout: default
     {{ content }}
   </article>
 
-<div>
   <ul class="post-nav-title">
     <a class="post-nav-link" href="{{page.previous.url}}">
       <li id="title-prev">{{page.previous.title}}</li>
@@ -28,24 +30,9 @@ layout: default
       <li id="title-next">{{page.next.title}}</li>
     </a>
   </ul>
-</div>
-
-<!--contribute container-->
-
-<div class="contribute-container">
-   <span class="container-head">Want To Contribute to the Blog?</span>
- <ul>
-   <li>
-     <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
-    </li>
-   </ul>
-</div>
-
-  {% include comments.html %}
-
+  </div>
 </div>
 </div>
-
-
+</div>
 
 </html>

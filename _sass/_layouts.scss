@@ -11,18 +11,32 @@ about page
 		font-size: 18px;
 		font-weight: 500;
 	}
+  h1 {
+    color: $orange;
+    padding: 8% 0 0;
+  }
 }
 
-#name-intro {
+.blue-page-header {
   background-color: $skyblue;
-  margin-bottom: 5%;
+  z-index: -1;
+  height: 300px;
+  right: 0;
+  top: 0%;
+  bottom: 100%;
+  left: 0%;
+  position: absolute;
+}
 
-  #about-header {
-    padding: 7% 10% 0;
-    vertical-align: text-bottom !important;
-    font-size: 4.5em;
-    color: $orange;
-  }
+.absolute-container {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 5%;
+  z-index: 10;
+  clear: both;
+  padding: 0;
+  margin-top: 10%;
 }
 
 #background-info {

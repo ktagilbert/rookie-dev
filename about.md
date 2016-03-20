@@ -4,16 +4,15 @@ title: About
 permalink: /about/
 ---
 <div id="about-page">
-<div class="post">
-<div id="name-intro">
-	<h1 id="about-header">
-		Hi, my name is Katie
-	</h1>
-	<!-- <img src="/assets/katie.jpg" class="katie-pic" /> -->
+<div class="blue-page-header">
 </div>
+<div class="post">
 
+<div class="wrapper">
+<div class="absolute-container">
 <div class="page-wrapper">
 	<div>
+		<h1>Hi, my name is Katie</h1>
 		<p>Welcome to the blog! I originally made this blog when I began to learn about front-end web development.
 			I wanted to help aspiring web developers learn things in an easy and understandable way.
 			Since then, I have also learned how valuable programming skills are in the marketing world. So it has evolved (a lot!) since
@@ -29,6 +28,8 @@ permalink: /about/
 		<p>This leads me to now. Front-end web development is something that I enjoy doing but also an incredibly valuable skill to have as a marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that has drawn me to both fields.
 		</p>
 	</div>
+</div>
+</div>
 </div>
 
 <div id="skills">
@@ -83,15 +84,5 @@ permalink: /about/
 		</li>
 	</ul>
 </div>
-
 </div>
-</div>
-
-<div class="contribute-container">
-   <span class="container-head">Want To Contribute to the Blog?</span>
- <ul>
-   <li>
-     <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
-    </li>
-   </ul>
 </div>
