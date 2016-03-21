@@ -163,15 +163,6 @@
         },900);
       });
 
-      //show mobile menu
-      $(window).resize(function() {
-        if ($(window).width() < 770) {
-          $('#mobile-menu').show();
-        } else {
-          $('#mobile-menu').hide();
-        }
-      });
-
       //open all links in a new tab
       $('a').each(function() {
         var a = new RegExp('/' + window.location.host + '/');

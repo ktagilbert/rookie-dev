@@ -85,10 +85,10 @@ mobile menu
 	width: 30px;
 	height: 4px;
 	margin: 2%;
-	display: none;
 	cursor: pointer;
 	position: absolute;
 	right: 87%;
+	display: none;
 }
 
 #close-menu {
@@ -97,6 +97,15 @@ mobile menu
 	cursor: pointer;
 	padding: 2.5%;
 	position: absolute;
+}
+
+@media(max-width: 770px) {
+	#menu {
+		display: none;
+	}
+	#mobile-btn {
+		display: initial;
+	}
 }
 
 /*********************************
