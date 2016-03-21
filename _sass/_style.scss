@@ -101,6 +101,7 @@ Post styling
     flex-wrap: wrap;
     margin-bottom: 5%;
     margin-left: 0;
+		display: inline-flex;
 
     > li {
       width: 27%;
@@ -279,6 +280,7 @@ media queries
 	}
 	.post-list {
 		width: 85%;
+		display: inline-block;
 
 		.article {
 			background-color: #fff;
@@ -376,7 +378,7 @@ media queries
 	.post {
 		.post-header {
 			p {
-				font-size: 2em;
+				font-size: 1.5em;
 				margin: 0;
 			}
 		}
