@@ -11,7 +11,6 @@ sticky footer
 	background-color: #dff1f8;
 	top: 100%;
 	clear: both;
-	z-index: -10;
 
 	a, a:visited {
 		color: #111;
@@ -35,19 +34,21 @@ sticky footer
 	h3 {
 		padding-bottom: 0px;
 		color: #111;
-		font-weight: 400;
+		font-family: 700;
 		font-size: 1em;
+		font-family: "PT Sans", "sans-serif";
 	}
 }
 
 .footer-list {
 	li {
 		text-align: right;
-		font-family: "lato", tahoma, sans-serif;
+		font-family: pt sans;
 		font-size: 16px;
 		list-style: none;
 		padding: 5px 5px 0 5px;
 		line-height: 1;
+		font-family: "PT Sans", "sans-serif";
 	}
 	li:last-of-type {
 		font-size: 12px;

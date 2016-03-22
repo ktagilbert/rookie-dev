@@ -6,8 +6,8 @@ desktop menu
 	text-align: left;
 	padding: 10px 0 0 10px;
 	width: 100%;
-  font-weight: bold;
-  font-family: "lato", tahoma, sans-serif;
+  font-family: "PT Sans", "sans-serif";;
+	font-weight: 700;
 	color: #111;
   height: 40px;
   position: fixed;
@@ -44,5 +44,13 @@ desktop menu
 	}
 	a {
 		color: $blue;
+	}
+}
+
+@media(max-width: 750px) {
+	.footer-content {
+		h3 {
+			font-size: 18px;
+		}
 	}
 }

@@ -44,7 +44,6 @@ home page
 
 #line-one {
 	letter-spacing: -4px;
-  font-family: lato;
   font-size: 7em;
   font-weight: 100;
   color: $orange;
@@ -57,7 +56,8 @@ home page
 	color: $blue;
 	position: relative;
 	font-size: 1.1em;
-	font-family: pt sans;
+	font-family: "PT Sans", "sans-serif";
+	font-weight: 700;
 }
 
 @media(max-width: 470px) {
