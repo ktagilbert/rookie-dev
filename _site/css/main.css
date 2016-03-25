@@ -440,10 +440,10 @@ Post styling
   color: #666;
   font-weight: 500; }
 .post .post-title {
-  color: #EB4144;
   font-size: 2.5em;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  color: #292768; }
 
 .post-meta {
   text-align: center;
@@ -477,8 +477,8 @@ Post styling
     padding: 20px 15px 15px;
     margin-bottom: 100px; }
     .post-nav-title li:hover {
-      background-color: #dff1f8;
-      color: #292768; }
+      background-color: rgba(235, 65, 68, 0.9);
+      color: #fff; }
 
 .pagination {
   text-align: center;
@@ -492,7 +492,6 @@ img {
   margin-bottom: 30px;
   opacity: 1; }
   .post-header .post-title {
-    color: #EB4144;
     text-align: center;
     font-family: georgia, serif;
     padding: 100px 2% 2%;
@@ -733,12 +732,24 @@ about page
   #about-page p {
     font-size: 18px;
     font-weight: 500; }
-  #about-page h1 {
+  #about-page h2 {
     color: #EB4144;
-    padding: 8% 0 0; }
+    font-size: 2em; }
+
+.page-header {
+  height: 300px;
+  background: #dff1f8 url("/assets/shattered.png");
+  margin-bottom: 3%; }
+
+.header-1 {
+  font-size: 4em;
+  font-family: "Pt Sans";
+  padding-top: 120px;
+  text-align: center;
+  color: #292768; }
 
 .blue-page-header {
-  background-color: #dff1f8;
+  background-color: #a9a9a9;
   z-index: -1;
   height: 300px;
   right: 0;
@@ -748,7 +759,18 @@ about page
   position: absolute; }
 
 @media (max-width: 650px) {
-  height: 200px; }
+  .blue-page-header {
+    display: none; }
+
+  .text-wrapper {
+    width: 90%; }
+
+  .wrapper {
+    width: 100%;
+    margin: 0; }
+
+  .post-title {
+    margin: 1%; } }
 .absolute-container {
   position: relative;
   background-color: #fff;
@@ -862,7 +884,7 @@ portfolio page
   text-align: center;
   margin-top: 5%;
   padding: 5% 0;
-  margin: 0 10%; }
+  margin: 0 15%; }
   #portfolio-intro h1 {
     color: #EB4144; }
   #portfolio-intro p {
@@ -1068,7 +1090,7 @@ desktop menu
   line-height: 1;
   font-size: 14px; }
   .menu-item a {
-    color: #292768;
+    color: #111;
     -webkit-text-size-adjust: none; }
 
 #social-icons {
@@ -1081,7 +1103,7 @@ desktop menu
     margin-right: 10px;
     border-radius: 20px; }
   #social-icons a {
-    color: #292768; }
+    color: #111; }
 
 @media (max-width: 750px) {
   .footer-content h3 {

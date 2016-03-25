@@ -11,14 +11,28 @@ about page
 		font-size: 18px;
 		font-weight: 500;
 	}
-  h1 {
+  h2 {
     color: $orange;
-    padding: 8% 0 0;
+    font-size: 2em;
   }
 }
 
+.page-header {
+  height: 300px;
+  background: $skyblue url('/assets/shattered.png');
+  margin-bottom: 3%;
+}
+
+.header-1 {
+  font-size: 4em;
+  font-family: "Pt Sans";
+  padding-top: 120px;
+  text-align: center;
+  color: $blue;
+}
+
 .blue-page-header {
-  background-color: $skyblue;
+  background-color: #a9a9a9;
   z-index: -1;
   height: 300px;
   right: 0;
@@ -29,7 +43,19 @@ about page
 }
 
 @media(max-width: 650px) {
-  height: 200px;
+  .blue-page-header {
+    display: none;
+  }
+  .text-wrapper {
+    width: 90%;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .post-title {
+    margin: 1%;
+  }
 }
 
 .absolute-container {
@@ -65,7 +91,6 @@ about page
 }
 
 #skills {
-	// background-color: $orange;
 	color: #fff;
 	background:linear-gradient(rgba(235, 65, 68, 0.8), rgba(235, 65 ,68, 0.8)), url("/assets/skillsBackground.png");
 	padding: 5% 0;
@@ -185,7 +210,7 @@ portfolio page
 	text-align: center;
 	margin-top: 5%;
 	padding: 5% 0;
-	margin: 0 10%;
+	margin: 0 15%;
 
 	h1 {
 		color: $orange;
