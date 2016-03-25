@@ -11,10 +11,11 @@
     
       <item>
         <title>Your first Bootstrap Project - (Part 2)</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/wireframe.jpg&quot; alt=&quot;frameworks for web designers&quot; /&gt;
-Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to install and set up your first Bootstrap project&lt;/a&gt;. So today, I am going to go over the benefits of using the framework and will also introduce a few elements that I found the most useful.&lt;/p&gt;
+        <description>&lt;p&gt;Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to install and set up your first Bootstrap project&lt;/a&gt;. So today, I am going to go over the benefits of using the framework and will also introduce a few elements that I found the most useful.&lt;/p&gt;
 
 &lt;h1 id=&quot;benefits-of-using-the-bootstrap-framework&quot;&gt;Benefits of using the Bootstrap framework&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/wireframe.jpg&quot; alt=&quot;frameworks for web designers&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The fact is, Bootstrap is just one framework you can choose from. It looks nice, it speeds up the development process, and it comes with responsive elements to help make sure your site looks great across different platforms.&lt;/p&gt;
 
@@ -130,9 +131,7 @@ Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to 
     
       <item>
         <title>Your first Bootstrap Project - (Part 1)</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/bootstrap.jpg&quot; alt=&quot;Bootstrap Tutorial&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Before I start talking about Bootstrap, I have some big news. &lt;strong&gt;I was hired as an SEO Specialist/Web Developer a couple of weeks ago!&lt;/strong&gt; My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).&lt;/p&gt;
+        <description>&lt;p&gt;Before I start talking about Bootstrap, I have some big news. &lt;strong&gt;I was hired as an SEO Specialist/Web Developer a couple of weeks ago!&lt;/strong&gt; My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).&lt;/p&gt;
 
 &lt;p&gt;Yet, once I started my new role I immediately wanted to beef up on a few things. My first priority was to become more comfortable with Bootstrap. Now I know, Bootstrap is &lt;em&gt;old news&lt;/em&gt; to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site. Even better, you may even become more comfortable with common design patterns or methods of structuring your styles.&lt;/p&gt;
 
@@ -141,6 +140,7 @@ Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to 
 &lt;p&gt;This time around I decided to just create a one page example project. First, I had to remember how to download and install Bootstrap though. For someone who is new to frameworks, it can be intimidating even to install a framework and include it in a project. At least it was for me when I first started back in July. So, I want to give you guys a little walkthrough on how to get started since it can be a little confusing.&lt;/p&gt;
 
 &lt;h1 id=&quot;downloading-and-installing-bootstrap-336&quot;&gt;Downloading and Installing Bootstrap 3.3.6&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/bootstrap.jpg&quot; alt=&quot;Bootstrap Tutorial&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To start on your own Bootstrap project, go to the &lt;a href=&quot;http://getbootstrap.com/getting-started/&quot;&gt;Bootstrap “getting started” page&lt;/a&gt;. Here you can click “download bootstrap”. After that, you’ll just follow the directions on the page to install it.&lt;/p&gt;
 
@@ -210,9 +210,7 @@ Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to 
     
       <item>
         <title>A Client Side Search Function Made with jQuery</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/searchFunction.jpg&quot; alt=&quot;Client side search function tutorial&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A few months ago, I wanted to make a search function for a site I was working on. I didn’t know where to start so I &lt;a href=&quot;http://www.rubberduckdebugging.com/&quot;&gt;rubber ducked the problem&lt;/a&gt;. My thought process went something like this:&lt;/p&gt;
+        <description>&lt;p&gt;A few months ago, I wanted to make a search function for a site I was working on. I didn’t know where to start so I &lt;a href=&quot;http://www.rubberduckdebugging.com/&quot;&gt;rubber ducked the problem&lt;/a&gt;. My thought process went something like this:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;I’ve seen search functions before. A LOT of them actually. Hmmmm! What do I like about the search functions that I have seen and used?&lt;/li&gt;
@@ -224,6 +222,9 @@ Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to 
 &lt;/ol&gt;
 
 &lt;h1 id=&quot;how-i-made-a-client-side-search-function&quot;&gt;How I made a client side search function&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/searchFunction.jpg&quot; alt=&quot;Client side search function tutorial&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;I went to my desk and called my fiance over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:&lt;/p&gt;
 
 &lt;p&gt;The first step was to create a search field that would allow a user to enter in a search term. This a simple, un-intimidating step that will help you get the ball rolling. All you need to know is some CSS and HTML to make your search field look and function they way you want it to.&lt;/p&gt;
@@ -362,8 +363,9 @@ Yesterday, I showed you &lt;a href=&quot;/blog/bootstrapExample&quot;&gt;how to 
     
       <item>
         <title>How I Customized My Jekyll Home Page Layout</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/jekyllDefaultSite.jpg&quot; alt=&quot;Default Jekyll Layout&quot; /&gt;
-When you start work on your new &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll powered site&lt;/a&gt;, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. To get started, you can open your “index.html” file in the root of your repo to make some layout changes.&lt;/p&gt;
+        <description>&lt;p&gt;When you start work on your new &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll powered site&lt;/a&gt;, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. To get started, you can open your “index.html” file in the root of your repo to make some layout changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/jekyllDefaultSite.jpg&quot; alt=&quot;Default Jekyll Layout&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;customizing-your-jekyll-powered-home-page&quot;&gt;Customizing your Jekyll powered home page&lt;/h1&gt;
 
@@ -534,9 +536,7 @@ excerpt: &amp;gt;
     
       <item>
         <title>How to Improve Your Copywriting Workflow</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/copywriter.jpg&quot; alt=&quot;Improve Your Copywriting Workflow&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are a marketing manager or working at a marketing agency, chances are that you have a ton of clients who all have the same deal going on. You’ll need to write some landing page copy for the sale for them. The good news is that you have freelance copy writers on hand to help you do it! Problem solved, right? Well, not exactly.&lt;/p&gt;
+        <description>&lt;p&gt;If you are a marketing manager or working at a marketing agency, chances are that you have a ton of clients who all have the same deal going on. You’ll need to write some landing page copy for the sale for them. The good news is that you have freelance copy writers on hand to help you do it! Problem solved, right? Well, not exactly.&lt;/p&gt;
 
 &lt;p&gt;The problem with many agencies is that they only have 5-10 freelancers on hand at any time. Meaning, each writer is pumping out around 10 or more versions of the same article for each sale or event that comes up.&lt;/p&gt;
 
@@ -545,6 +545,7 @@ excerpt: &amp;gt;
 &lt;p&gt;We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. &lt;em&gt;But is it really working well enough for you?&lt;/em&gt; Let’s think about where the process is potentially breaking down.&lt;/p&gt;
 
 &lt;h1 id=&quot;the-three-things-that-may-be-breaking-your-copywriting-workflow&quot;&gt;The three things that may be breaking your copywriting workflow&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/copywriter.jpg&quot; alt=&quot;Improve Your Copywriting Workflow&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;1) You writers are becoming bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It’s not because they are lazy. &lt;strong&gt;It’s because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.&lt;/strong&gt; The task is no longer creative but instead formulaic. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.&lt;/p&gt;
 
@@ -617,11 +618,11 @@ excerpt: &amp;gt;
     
       <item>
         <title>An Intro to UI Design Basics</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/uxpic.jpg&quot; alt=&quot;Learning About UI Design&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A few days ago, I launched a new design for the blog here. I’m excited but also wanted to create a post about why the need for a re-design. If you have been following me for a while you will have noticed that my blog has gone through a few different looks. Here is why: one of the reasons I made this blog was because I wanted to work on a project that would help me learn and practice front-end web development. The site is a tool for me to experiment and learn with. One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works.&lt;/p&gt;
+        <description>&lt;p&gt;A few days ago, I launched a new design for the blog here. I’m excited but also wanted to create a post about why the need for a re-design. If you have been following me for a while you will have noticed that my blog has gone through a few different looks. Here is why: one of the reasons I made this blog was because I wanted to work on a project that would help me learn and practice front-end web development. The site is a tool for me to experiment and learn with. One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-is-ui-design&quot;&gt;What is UI Design?&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/uxpic.jpg&quot; alt=&quot;Learning About UI Design&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;UI design stands for user interface design. It entails creating an interface that works for your targeted user. If you are a UI Designer, you have to think about what your user is going to respond well to and create something that captures the purpose of your site. Here is a good quote that may help you understand better&lt;/p&gt;
 
 &lt;h3 id=&quot;user-interface-ui-design-focuses-on-anticipating-what-users-might-need-to-do-and-ensuring-that-the-interface-has-elements-that-are-easy-to-access-understand-and-use-to-facilitate-those-actions-ui-brings-together-concepts-from-interaction-design-visual-design-and-information-architecture&quot;&gt;“User Interface (UI) Design focuses on anticipating what users might need to do and ensuring that the interface has elements that are easy to access, understand, and use to facilitate those actions. UI brings together concepts from interaction design, visual design, and information. architecture.”&lt;/h3&gt;
@@ -912,13 +913,13 @@ excerpt: &amp;gt;
     
       <item>
         <title>Learning About Media Queries</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/mediaQuery.jpg&quot; alt=&quot;Learning about media queries&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what they are viewing it on, right?&lt;/p&gt;
+        <description>&lt;p&gt;Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop. I mean you worked so hard to make it look wonderful on your desktop computer that you want everyone who sees it to appreciate your work no matter what they are viewing it on, right?&lt;/p&gt;
 
 &lt;p&gt;Well, there are ways to do this. For example, you could use &lt;a href=&quot;&amp;quot;/2015/09/05/mediaquery.html&amp;quot;&quot;&gt;flex properties&lt;/a&gt;. Alternatively, a technique that many use are media queries. Media queries are something that I imagine you will always use, so it’s worth learning about them early on.&lt;/p&gt;
 
 &lt;p&gt;First, let’s start thinking about your site’s layout. When thinking about a layout, you can start by thinking about the way it will look on a desktop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/mediaQuery.jpg&quot; alt=&quot;Learning about media queries&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;desktop-layout&quot;&gt;Desktop layout&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/rookiedevmockup.jpg&quot; alt=&quot;Mobile UI Mock Up&quot; /&gt;&lt;/p&gt;

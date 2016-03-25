@@ -6,7 +6,6 @@ image: "searchFunction.jpg"
 excerpt: >
  There are a TON of ways to make a search function. So that's why I had to sit down and think about what I could make using only the tools that I had at my disposal.The end result is a simple search function that does exactly what I need it to do. Here's how:
 ---
-![Client side search function tutorial](/assets/searchFunction.jpg)
 
 A few months ago, I wanted to make a search function for a site I was working on. I didn't know where to start so I [rubber ducked the problem](http://www.rubberduckdebugging.com/). My thought process went something like this:
 
@@ -18,6 +17,9 @@ A few months ago, I wanted to make a search function for a site I was working on
 6. I think that's possible! I'm going to try it.
 
 # How I made a client side search function
+
+![Client side search function tutorial](/assets/searchFunction.jpg)
+
 I went to my desk and called my fiance over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:
 
 The first step was to create a search field that would allow a user to enter in a search term. This a simple, un-intimidating step that will help you get the ball rolling. All you need to know is some CSS and HTML to make your search field look and function they way you want it to.

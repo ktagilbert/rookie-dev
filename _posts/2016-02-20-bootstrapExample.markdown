@@ -7,8 +7,6 @@ excerpt: >
  Now I know, Bootstrap is old news to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site.
 ---
 
-![Bootstrap Tutorial](/assets/bootstrap.jpg)
-
 Before I start talking about Bootstrap, I have some big news. **I was hired as an SEO Specialist/Web Developer a couple of weeks ago!** My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).
 
 Yet, once I started my new role I immediately wanted to beef up on a few things. My first priority was to become more comfortable with Bootstrap. Now I know, Bootstrap is *old news* to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site. Even better, you may even become more comfortable with common design patterns or methods of structuring your styles.  
@@ -18,6 +16,7 @@ Now, I had experimented with Bootstrap once before. I actually used it for my bl
 This time around I decided to just create a one page example project. First, I had to remember how to download and install Bootstrap though. For someone who is new to frameworks, it can be intimidating even to install a framework and include it in a project. At least it was for me when I first started back in July. So, I want to give you guys a little walkthrough on how to get started since it can be a little confusing.
 
 # Downloading and Installing Bootstrap 3.3.6
+![Bootstrap Tutorial](/assets/bootstrap.jpg)
 
 To start on your own Bootstrap project, go to the [Bootstrap "getting started" page](http://getbootstrap.com/getting-started/). Here you can click "download bootstrap". After that, you'll just follow the directions on the page to install it.
 

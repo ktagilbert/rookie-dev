@@ -6,10 +6,11 @@ image: "wireframe.jpg"
 excerpt: >
  Yesterday, I showed you how to install and set up your first Bootstrap project. So today, I am going to go over the benefits of using the framework and will go over a few elements that I found the most useful.
 ---
-![frameworks for web designers](/assets/wireframe.jpg)
 Yesterday, I showed you [how to install and set up your first Bootstrap project]({% post_url 2016-02-20-bootstrapExample %}). So today, I am going to go over the benefits of using the framework and will also introduce a few elements that I found the most useful.
 
 # Benefits of using the Bootstrap framework
+
+![frameworks for web designers](/assets/wireframe.jpg)
 
 The fact is, Bootstrap is just one framework you can choose from. It looks nice, it speeds up the development process, and it comes with responsive elements to help make sure your site looks great across different platforms.
 
@@ -118,4 +119,4 @@ With just the inclusions of ```<nav class="navbar navbar-default">``` You can ha
 Alright! I would now say that you know enough about Bootstrap to start on your own project. Again, learning Bootstrap really just involves becoming familiar with the different classes unique to the framework. So once you can do that, you'll be on your way to building your own site.
 
 
-**Thanks for reading guys! And as always, let me know if you have any questions by leaving a comment below.** ALSO! I'd love to hear what your favorite framework is. 
+**Thanks for reading guys! And as always, let me know if you have any questions by leaving a comment below.** ALSO! I'd love to hear what your favorite framework is.

@@ -19,7 +19,7 @@ dl, dd, ol, ul, figure {
   dl h4,
   dl h5,
   dl h6, dd h1, dd h2, dd h3, dd h4, dd h5, dd h6, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, figure h1, figure h2, figure h3, figure h4, figure h5, figure h6 {
-    font-family: "georgia", "serif";
+    font-family: "Pt Sans", "sans-serif";
     padding-bottom: 30px;
     font-weight: bold;
     color: #292768; }
@@ -489,7 +489,7 @@ img {
   max-height: 100%; }
 
 .post-header {
-  margin-bottom: 30px;
+  margin-bottom: 1%;
   opacity: 1; }
   .post-header .post-title {
     text-align: center;
@@ -743,13 +743,11 @@ about page
 
 .header-1 {
   font-size: 4em;
-  font-family: "Pt Sans";
   padding-top: 120px;
   text-align: center;
   color: #292768; }
 
 .blue-page-header {
-  background-color: #a9a9a9;
   z-index: -1;
   height: 300px;
   right: 0;

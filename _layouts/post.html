@@ -5,8 +5,12 @@ layout: default
 <html>
 
 <div itemscope itemtype="http://schema.org/Article" class="post">
-<div class="blue-page-header">
-</div>
+
+{% for post in site.posts %}
+  <div class="blue-page-header" style="background-image: url('/assets/{{ page.image }}');">
+  </div>
+{% endfor %}
+
 <div class="wrapper">
   <div class="absolute-container">
   <header class="post-header">

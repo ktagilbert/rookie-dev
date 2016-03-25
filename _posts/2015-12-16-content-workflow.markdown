@@ -7,7 +7,6 @@ excerpt: >
  We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
 
 ---
-![Improve Your Copywriting Workflow](/assets/copywriter.jpg)
 
 If you are a marketing manager or working at a marketing agency, chances are that you have a ton of clients who all have the same deal going on. You'll need to write some landing page copy for the sale for them. The good news is that you have freelance copy writers on hand to help you do it! Problem solved, right? Well, not exactly.
 
@@ -19,6 +18,7 @@ We are all trying to accommodate Google, right? So we abide by these rules and e
 
 
 # The three things that may be breaking your copywriting workflow
+![Improve Your Copywriting Workflow](/assets/copywriter.jpg)
 
 1) You writers are becoming bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It's not because they are lazy. **It's because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.** The task is no longer creative but instead formulaic. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.
 

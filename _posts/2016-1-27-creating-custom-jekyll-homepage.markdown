@@ -7,8 +7,9 @@ excerpt: >
  When you start work on your new Jekyll powered site, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. Let's get started.
 ---
 
-![Default Jekyll Layout](/assets/jekyllDefaultSite.jpg)
 When you start work on your new [Jekyll powered site](https://jekyllrb.com/), you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. To get started, you can open your "index.html" file in the root of your repo to make some layout changes.
+
+![Default Jekyll Layout](/assets/jekyllDefaultSite.jpg)
 
 #Customizing your Jekyll powered home page
 

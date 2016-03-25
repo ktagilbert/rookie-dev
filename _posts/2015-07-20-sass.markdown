@@ -7,8 +7,6 @@ excerpt: >
  This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up.
 ---
 
-![First SCSS project](/assets/brainstorm.jpg)
-
 # Bridging the gap between CSS and SASS
 
 I have a confession. When I first started working on this blog, I had no idea what SCSS was. The language just seemed like something that was going to be extremely difficult to learn. *With an already limited knowledge of CSS, I was intimidated.*
@@ -16,6 +14,8 @@ I have a confession. When I first started working on this blog, I had no idea wh
 It turns out that SCSS is not that difficult.
 
 ## What helped me learn about SCSS:
+![First SCSS project](/assets/brainstorm.jpg)
+
  I simply pulled open my computer and read up on SASS. I started by typing in "learning SASS" into Google. I  was then directed to [sass-lang.com](http://sass-lang.com/). The words "CSS with Superpowers" appeared on my screen.
 
 It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! **Here I am going to show you some basics to help you get started with SCSS.**
