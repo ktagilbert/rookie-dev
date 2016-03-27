@@ -48,15 +48,6 @@
       })
     });
 
-    //if blog page, make nav css transparent
-
-    if (window.location.href.indexOf("blog") > -1) {
-        $("#menu").css({
-          'background-color': '#fff',
-          'opacity': '0.8'
-        });
-      }
-
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
       $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
@@ -239,7 +230,9 @@
 
 </div>
 
-<div class="main-content" href="#article-content">
+<a name="article-content">
+  <div class="main-content">
+</a>
   <div class="post-wrapper">
 
     <div class="search">
@@ -282,7 +275,7 @@
         <h3 itemscope itemtype="http://schema.org/Article">
           <a itemprop="url" class="post-link" href="/blog/responsive-nav-bar">Tutorial: Making a Responsive Navigation Bar</a>
           <a href="/blog/responsive-nav-bar">
-            <img itemprop="image" src="/assets/responsiveNav.jpg" class="index-img">
+            <img itemprop="image" src="/assets/learningJS.jpg" class="index-img">
           </a>
         </h3>
         <p class="excerpt">If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
@@ -294,7 +287,7 @@
         <h3 itemscope itemtype="http://schema.org/Article">
           <a itemprop="url" class="post-link" href="/blog/breaking-into-web-development">Breaking Into Web Development (In Small Steps)</a>
           <a href="/blog/breaking-into-web-development">
-            <img itemprop="image" src="/assets/learning-step.jpg" class="index-img">
+            <img itemprop="image" src="/assets/learning-steps.jpg" class="index-img">
           </a>
         </h3>
         <p class="excerpt">To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires some dedication and a willingness to learn/ask questions.
@@ -306,7 +299,7 @@
         <h3 itemscope itemtype="http://schema.org/Article">
           <a itemprop="url" class="post-link" href="/blog/mediaquery">Learning About Media Queries</a>
           <a href="/blog/mediaquery">
-            <img itemprop="image" src="/assets/mediaQuery.jpg" class="index-img">
+            <img itemprop="image" src="/assets/designer-board-typo-word.jpg" class="index-img">
           </a>
         </h3>
         <p class="excerpt">Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop.                                                                                                                                                                   

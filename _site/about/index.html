@@ -48,15 +48,6 @@
       })
     });
 
-    //if blog page, make nav css transparent
-
-    if (window.location.href.indexOf("blog") > -1) {
-        $("#menu").css({
-          'background-color': '#fff',
-          'opacity': '0.8'
-        });
-      }
-
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
       $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)

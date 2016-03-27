@@ -48,15 +48,6 @@
       })
     });
 
-    //if blog page, make nav css transparent
-
-    if (window.location.href.indexOf("blog") > -1) {
-        $("#menu").css({
-          'background-color': '#fff',
-          'opacity': '0.8'
-        });
-      }
-
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
       $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
@@ -239,7 +230,9 @@
 
 </div>
 
-<div class="main-content" href="#article-content">
+<a name="article-content">
+  <div class="main-content">
+</a>
   <div class="post-wrapper">
 
     <div class="search">
@@ -270,7 +263,7 @@
         <h3 itemscope itemtype="http://schema.org/Article">
           <a itemprop="url" class="post-link" href="/blog/nav-bar">How to Make a Simple Navigation Menu From Scratch</a>
           <a href="/blog/nav-bar">
-            <img itemprop="image" src="/assets/test-menu.jpg" class="index-img">
+            <img itemprop="image" src="/assets/navPost.jpg" class="index-img">
           </a>
         </h3>
         <p class="excerpt">Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head.

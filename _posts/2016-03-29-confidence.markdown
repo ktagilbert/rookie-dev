@@ -20,7 +20,7 @@ As adults, challenges tend to stop us in our tracks. Maybe that's just me? But w
 
 Learning web development was a lot like learning how to ski. That's the best way I can describe it. Learning CSS & HTML was like going down the bunny hill. It gave me a chance to gain some footing in and build my initial confidence.
 
-After a few goes down the small hill, I got on the ski lift and went down my first real slope. Or, as it translates in the web development world, I began programming in JavaScript.
+After a few runs down the small hill, I got on the ski lift and went down my first real slope. Or, as it translates in the web development world, I began programming in JavaScript.
 
 You see, when I went first went skiing, I went too fast down the mountain. It's because I was pointing my skis vertically, causing me to fall on my face. What I should have done is skiied parallel across the mountain. Instead I fell over and over again all the way down to the bottom of my run. **But** I still had to get back up each time and ski a little further before I could finally take a rest.
 
@@ -32,7 +32,7 @@ During each fall, I lost a bit of confidence. I even began to think that remaini
 
 ![Overoming Imposter Syndrome in Web Development](/assets/wonder-woman.jpg)
 
-Yet, I knew I wanted a career in web development. That was my driving motivation to keep getting better. That and working on this blog site. The thing that was holding me back was the idea that I wasn't a good programmer. In fact, I felt like a terrible one.
+Yet, I knew I wanted a career in web development. That was my driving motivation to keep getting better. The thing that was holding me back was the idea that I wasn't a good programmer. In fact, I felt like a terrible one.
 
 In reality, I knew everything I needed to be an entry level front-end developer. The idea of being a part of a development team just scared me though.
 
@@ -53,7 +53,7 @@ As Alicia points out in a follow-up article to her original post, imposter syndr
 
 So what helped me was hearing that I actually was a good entry level programmer. As you can see, most of the bullets above include people confirming my abilities. That and seeing that other programmers once felt the same way that I did.
 
-Don't get me wrong though. I'm still not brimming with confidence about my abilities. **I'm just less anxious about calling myself a web developer now.** When people ask me what I do, I don't mutter something about learning programming under my breath. Instead, I can calmly state, "I'm a web developer." If people ask follow up questions I can say more. If not, that's fine too cause I'd honestly rather leave it at that.  
+Don't get me wrong though. I'm still not brimming with confidence. **I'm just less anxious about calling myself a web developer now.** When people ask me what I do, I don't mutter something about learning programming under my breath. Instead, I can calmly state, "I'm a web developer." If people ask follow up questions I can say more. If not, that's fine too cause I'd honestly rather leave it at that.  
 
 ## Calling yourself a web developer
 
@@ -69,8 +69,8 @@ Now, [as I mentioned earlier on the blog](http://localhost:4000/blog/bootstrapEx
 
 I didn't even want to go the interview. I was scared it was going to be fruitless. Plus, it would mean taking another day off of work without pay. But that felt too pathetic. Why would I be afraid of a job interview? It would just be a conversation. No big deal!!
 
-That's what I told myself and it worked! I went in to the job interview and just focused on selling myself. I didn't hem and haw about what I knew and what I didn't. Instead, I clearly stated my abilities and what I had done in the past. **Again, it wasn't my confidence talking. It was me being realistic with myself.** I just wanted to tell this interviewer what I realistically knew and was comfortable doing as well as what I wanted for my future.
+That's what I told myself at least. I then went in to the job interview and just focused on selling myself. I didn't hem and haw about what I knew and what I didn't. Instead, I clearly stated my abilities and what I had done in the past. **Again, it wasn't my confidence talking. It was me being realistic with myself.** I just wanted to tell this interviewer what I realistically knew and was comfortable doing as well as what I wanted for my future.
 
-Long story short, I got the job. It's been two months now and I have to say, all the work I put into learning web development has really paid off!
+Long story short, I got the job. It's been two months now and I have to say, the trouble was worth it. It just took being realistic with myself and others to get there. 
 
 What about you? I'd love to hear your imposter syndrome story too! **Let me know in the comments and thanks for reading guys.**

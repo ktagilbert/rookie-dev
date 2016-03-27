@@ -2,7 +2,7 @@
 layout: post
 title: "Learning About Media Queries"
 date: 2015-09-05 17:00:00
-image: "mediaQuery.jpg"
+image: "designer-board-typo-word.jpg"
 excerpt: >
  Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop.                                                                                                                                                                   
 ---

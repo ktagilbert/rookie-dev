@@ -752,7 +752,10 @@ about page
   top: 0%;
   bottom: 100%;
   left: 0%;
-  position: absolute; }
+  position: absolute;
+  background: no-repeat;
+  background-size: 100%;
+  background-position: center; }
 
 @media (max-width: 650px) {
   .blue-page-header {
@@ -779,7 +782,7 @@ about page
 
 @media (max-width: 650px) {
   .absolute-container {
-    margin-top: 20%;
+    margin-top: 0;
     padding: 0 10%; }
 
   h1 {
