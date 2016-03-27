@@ -122,7 +122,7 @@
           $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
 
-            if((scroll_start > offset.top) && (window.location.href.indexOf("blog") < -1)) {
+            if (scroll_start > offset.top) {
               $("#menu").stop().animate({
                 backgroundColor:'#111'}, "700");
               $('.menu-item').css("color", "#fff");

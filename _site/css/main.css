@@ -397,6 +397,9 @@ header
   padding: 0;
   text-align: center; }
 
+@media (max-width: 720px) {
+  .site-header {
+    height: 50px; } }
 /*********************************
 Post styling
 *********************************/
@@ -495,6 +498,9 @@ img {
     padding: 100px 2% 2%;
     font-weight: 600; }
 
+@media-query (max-width: 720px) {
+  .post-header {
+    height: 150px; } }
 .post-content {
   margin-bottom: 30px; }
   .post-content h1 {
@@ -564,9 +570,6 @@ media queries
   #portfolio-list .overlay {
     width: 65%; } }
 @media (max-width: 720px) {
-  .post-header {
-    height: 300px; }
-
   .footer-content {
     text-align: center;
     margin: auto;
@@ -783,7 +786,7 @@ about page
 @media (max-width: 650px) {
   .absolute-container {
     margin-top: 0;
-    padding: 0 10%; }
+    padding: 0 10; }
 
   h1 {
     padding: 4% 0 0;
