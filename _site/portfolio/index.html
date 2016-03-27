@@ -48,6 +48,14 @@
       })
     });
 
+    //if blog page, make nav css transparent
+
+    if (window.location.href.indexOf("blog") > -1) {
+        $("#menu").css({
+          'background-color': '#fff',
+          'opacity': '0.8'
+        });
+      }
 
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
@@ -125,7 +133,7 @@
           $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
 
-            if(scroll_start > offset.top) {
+            if((scroll_start > offset.top) && (window.location.href.indexOf("blog") < -1)) {
               $("#menu").stop().animate({
                 backgroundColor:'#111'}, "700");
               $('.menu-item').css("color", "#fff");

@@ -453,11 +453,9 @@ Post styling
 .post-link {
   display: block;
   color: #5a5a5a;
-  font-weight: 900; }
-
-.post-link {
-  margin-bottom: 5%;
-  height: 120px; }
+  font-weight: 900;
+  height: 120px;
+  margin-bottom: 0; }
 
 .post-nav-title {
   list-style: none;
