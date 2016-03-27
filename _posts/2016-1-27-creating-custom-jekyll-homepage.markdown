@@ -2,7 +2,7 @@
 layout: post
 title: "How I Customized My Jekyll Home Page Layout"
 date: 2016-01-27 12:43:21
-image: "jekyllDefaultSite.jpg"
+image: "uxpost.jpg"
 excerpt: >
  When you start work on your new Jekyll powered site, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. Let's get started.
 ---

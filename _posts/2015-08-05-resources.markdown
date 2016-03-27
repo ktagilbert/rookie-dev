@@ -2,7 +2,7 @@
 layout: post
 title: "Great Resources For Learning JavaScript"
 date: 2015-08-05 17:00:00
-image: "learnJs.jpg"
+image: "programming.jpg"
 excerpt: >
  So I know from experience that learning JavaScript can be *very* challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help.
 ---

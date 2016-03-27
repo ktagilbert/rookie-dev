@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="A personal technical marketing blog and portfolio by Katie Gilbert in Portland, OR.
+    Visit to learn about web development, technical marketing, or to contact me for work.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Marketing Blog & Portfolio | Katie Gilbert</title>
+  <meta property="og:title" content="Katie Gilbert| Technical Marketing Blog & Portfolio" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="ktgilbert.com//blog/confidence">
+  <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
+  <link rel="stylesheet" rel="prefetch"  type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" rel="prefetch" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <link  rel="styelsheet" rel="prefetch" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans:400, 700" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55144371-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script src="//load.sumome.com/" data-sumo-site-id="cc1befe725826873b8e3ea65b755ae587661065149cd815eb2b2331e9c5c7c2d" async="async"></script>
+
+
+  <script>
+  $(document).ready(function() {
+
+
+    //overlay on portfolio items
+    $('.folio-item').each(function(item) {
+      $(this).on('mouseover', function() {
+        $('.overlay').eq(item).show();
+      })
+      $('.folio-item').on('mouseleave', function() {
+        $('.overlay').hide();
+      })
+    });
+
+
+    //search function
+    $('.fa-search').on('click', function(event) { // on click of search icon
+      $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
+    });
+
+    var $articleTitles = $('.post-link');
+    var searchTerm = "";
+
+    function search() {
+
+      $articleTitles.each(function(i, elem) { // search through each '.post-link' (aka the title of each post)
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) { // if index of the user's input(aka. the string) is -1
+          $(elem).closest('.article').hide();  //hide articles
+          $('.article').css({
+            'width': '90%',
+            'margin': '0 5%'
+          });
+        } else { // else (if the string is greater -1)
+          $(elem).closest('.article').show(); // show the closest article in the search results
+          $('.article').css({
+            'width': '25%',
+            'margin': '0'
+          });
+        }
+      });
+      if ($('.article:hidden').length === $articleTitles.length) { //if no articles match the user's input, then show "no results found"
+        $('#no-results').show();
+       }
+     }
+
+     $("#search-text").on('keydown', function(e) { // this essentially watches which keys on the keyboard a user enters into the search field.
+       if (e.keyCode === 8) { //if a user presses keyCode 8 (aka backspace/delete)
+         if (searchTerm.length > 0) { // if the user's input doesn't contain anything
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1); // extract the character from index position -1
+           $('#no-results').hide(); //hide "show no result"
+           search(); //run search function
+         }
+       } else {
+         searchTerm += String.fromCharCode(e.keyCode); // search term = the value of the string that is generated from the user's key presses.
+         search(); // run search function
+       }
+     });
+
+      //make .page-heading the height of the screen
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('.page-heading').css('min-height', windowHeight);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //make .name-intro have a dynamic height
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('#name-intro').css('min-height', windowHeight / 2);
+        $('.post-header').css('min-height', windowHeight/ 2.5);
+      };
+      setHeight();
+
+      $(window).resize(function() {
+        setHeight();
+      });
+
+      //desktop nav bar changes color on scroll
+      var scroll_start = 0;
+      var startchange = $('p:first');
+      var offset = startchange.offset();
+
+        if (startchange.length || $('img')) {
+
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+
+            if(scroll_start > offset.top) {
+              $("#menu").stop().animate({
+                backgroundColor:'#111'}, "700");
+              $('.menu-item').css("color", "#fff");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff");
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
+            } else {
+              $('#menu').stop().animate({
+                backgroundColor: 'transparent'}, "700");
+              $('.menu-item').children().css("color", "#1D1E18");
+              $(".fa-twitter").css("color", "#1D1E18")
+              $(".fa-github").css("color", "#1D1E18");
+              $(".fa-envelope").css("color", "#1D1E18");
+            }
+        });
+      }
+
+      //mobile-menu-arrow on click, display mobile menu
+      $('#mobile-btn').on('click', function(event) {
+        event.preventDefault;
+        $("#mobile-menu").show();
+        $("#mobile-btn").hide();
+      });
+
+
+      //close mobile menu
+      $('#close-menu').on('click', function(event) {
+        event.preventDefault;
+        $('#mobile-menu').hide();
+        $("#mobile-btn").show();
+      });
+
+      //click on #home-arrow to scroll down to post-list
+
+      $('.fa-chevron-down').on('click', function(event) {
+        event.preventDefault;
+        $('html, body').animate({
+          scrollTop: $(".post-list").offset().top
+        },900);
+      });
+
+      //open all links in a new tab
+      $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+
+        if(!a.test(this.href)) {
+            $(this).click(function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            });
+          }
+        });
+    });
+ </script>
+</head>
+
+<body>
+    <header class="site-header">
+
+  <ul id="menu">
+      <li class="menu-item"><a href="/">Home</li>
+      <li class="menu-item"><a href="/about/">About</a></li>
+      <li class="menu-item"><a href="/portfolio/">Portfolio</a></li>
+      <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
+      <ul id=social-icons>
+        <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+  </ul>
+
+<div id=mobile-wrap>
+  <span id="mobile-btn"></span>
+
+  <span id="mobile-menu">
+    <p id="close-menu">X</p>
+    <ul>
+      <li><a href="/">Home</li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+  </span>
+</div>
+
+</header>
+
+    <!--<div class="page-content">-->
+          <!DOCTYPE html>
+<html>
+
+<div itemscope itemtype="http://schema.org/Article" class="post">
+
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+  <div class="blue-page-header" style="background-image: url('/assets/skiing.jpeg');">
+  </div>
+
+
+<div class="wrapper">
+  <div class="absolute-container">
+  <header class="post-header">
+  	<p itemprop="name" class="post-title">My Imposter Syndrome Article</p>
+  </header>
+
+<div class="text-wrapper">
+  <p itemprop="datePublished" class="post-meta">Mar 29, 2016
+  </p>
+  <article itemprop="articleBody" class="post-content">
+    <p>Building confidence in anything is hard. Actually, it’s not so let me rephrase. Building confidence in anything as an adult is hard.</p>
+
+<p>Remember when you were a kid and picking up a new sport was almost second nature? Or diving into a new, higher reading level book was a breeze? I think that as a kid, we didn’t let challenges get to us. We just approached them and overcame them. Probably because they were a part of our everyday lives.</p>
+
+<p>As adults, challenges tend to stop us in our tracks. Maybe that’s just me? But when I have to try something new, my brain seems to stop. It’s as if I have to convince myself that I can tackle the new thing. That’s what happened with me and web development.</p>
+
+<h1 id="web-development-learning-curve">Web Development Learning Curve</h1>
+
+<p><img src="/assets/skiing.jpeg" alt="web developing learning curve" /></p>
+
+<p>Learning web development was a lot like learning how to ski. That’s the best way I can describe it. Learning CSS &amp; HTML was like going down the bunny hill. It gave me a chance to gain some footing in and build my initial confidence.</p>
+
+<p>After a few goes down the small hill, I got on the ski lift and went down my first real slope. Or, as it translates in the web development world, I began programming in JavaScript.</p>
+
+<p>You see, when I went first went skiing, I went too fast down the mountain. It’s because I was pointing my skis vertically, causing me to fall on my face. What I should have done is skiied parallel across the mountain. Instead I fell over and over again all the way down to the bottom of my run. <strong>But</strong> I still had to get back up each time and ski a little further before I could finally take a rest.</p>
+
+<p>In web development, I fell on my face a lot. I made stupid mistakes. I interviewed for positions and was rejected. I even considered giving it up after a period of remaining stagnant.</p>
+
+<p>During each fall, I lost a bit of confidence. I even began to think that remaining in marketing would be the safer choice for my career. That’s when I began to feel like an imposter.</p>
+
+<h1 id="how-i-got-past-imposter-syndrome-at-least-temporarilyfor-now">How I got past imposter syndrome (at least temporarily…for now)</h1>
+
+<p><img src="/assets/wonder-woman.jpg" alt="Overoming Imposter Syndrome in Web Development" /></p>
+
+<p>Yet, I knew I wanted a career in web development. That was my driving motivation to keep getting better. That and working on this blog site. The thing that was holding me back was the idea that I wasn’t a good programmer. In fact, I felt like a terrible one.</p>
+
+<p>In reality, I knew everything I needed to be an entry level front-end developer. The idea of being a part of a development team just scared me though.</p>
+
+<p><strong>Here’s what helped</strong></p>
+
+<ul>
+  <li>I contributed to an open source project and my pull requests were accepted</li>
+  <li>I showed this blog to a few friends and it was well received</li>
+  <li>I asked r/webdev to critique my blog and was able to make some <em>much needed</em> improvements.</li>
+  <li>I interviewed at a major retail company as a junior front-end developer and <em>almost</em> got the role (it was down to me and one other person)</li>
+  <li>I got bored at my part-time job. So bored that I just had to do something/anything that would help me feel fulfilled. Even if it was the one thing that was scaring me: applying for another junior developer role</li>
+  <li>Reading <a href="https://davidwalsh.name/">this article by David Walsh</a> about imposter syndrome.</li>
+  <li>Then reading another <a href="https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5#.pv9l09mov">article about imposter syndrome by Alicia Liu</a>.</li>
+  <li>Realizing that maybe everyone feels like an imposter in their field at some point.</li>
+</ul>
+
+<h2 id="realizing-that-youre-better-at-programming-that-youd-thought">Realizing that you’re better at programming that you’d thought</h2>
+
+<p>As Alicia points out in a follow-up article to her original post, imposter syndrome isn’t just about a lack of confidence. <strong>It’s about thinking you’re not as good at something as you really are.</strong> It’s a psychological thing.</p>
+
+<p>So what helped me was hearing that I actually was a good entry level programmer. As you can see, most of the bullets above include people confirming my abilities. That and seeing that other programmers once felt the same way that I did.</p>
+
+<p>Don’t get me wrong though. I’m still not brimming with confidence about my abilities. <strong>I’m just less anxious about calling myself a web developer now.</strong> When people ask me what I do, I don’t mutter something about learning programming under my breath. Instead, I can calmly state, “I’m a web developer.” If people ask follow up questions I can say more. If not, that’s fine too cause I’d honestly rather leave it at that.</p>
+
+<h2 id="calling-yourself-a-web-developer">Calling yourself a web developer</h2>
+
+<p>That was my goal though! <strong>I just wanted to call myself a web developer.</strong> Not someone learning web development or someone trying to become a web developer. I wanted to cross that bridge completely and imposter syndrome was stopping me from doing that.</p>
+
+<p>It was stopping me from applying for tech roles. It was making me shy when I talked about what I was learning. It was also making me unable to speak up about what I knew.</p>
+
+<p>I wouldn’t say I <em>overcame</em> imposter syndrome either. It’s more like I just got sick of it. So it just kind of went away when I began to ignore it and pay attention to the goals I wanted to accomplish.</p>
+
+<h2 id="what-changed">What changed</h2>
+
+<p>Now, <a href="http://localhost:4000/blog/bootstrapExample/">as I mentioned earlier on the blog</a>, I was just offered my first role as a web developer. The opportunity came one day after I had a huge break down in front of my fiance. I had just learned that <a href="http://www.wweek.com/2016/02/29/portland-is-literally-the-worst-place-in-the-us-for-women-in-tech/">Portland, OR is one of the worst places in the country for women in tech</a> to work. They are underpaid here and finding a job is difficult for them. It made sense! I had been interviewing for months and was getting no where. I was at the point of giving up again. But I had one more job interview the next day.</p>
+
+<p>I didn’t even want to go the interview. I was scared it was going to be fruitless. Plus, it would mean taking another day off of work without pay. But that felt too pathetic. Why would I be afraid of a job interview? It would just be a conversation. No big deal!!</p>
+
+<p>That’s what I told myself and it worked! I went in to the job interview and just focused on selling myself. I didn’t hem and haw about what I knew and what I didn’t. Instead, I clearly stated my abilities and what I had done in the past. <strong>Again, it wasn’t my confidence talking. It was me being realistic with myself.</strong> I just wanted to tell this interviewer what I realistically knew and was comfortable doing as well as what I wanted for my future.</p>
+
+<p>Long story short, I got the job. It’s been two months now and I have to say, all the work I put into learning web development has really paid off!</p>
+
+<p>What about you? I’d love to hear your imposter syndrome story too! <strong>Let me know in the comments and thanks for reading guys.</strong></p>
+
+  </article>
+
+  <ul class="post-nav-title">
+    <a class="post-nav-link" href="/blog/first-bootstrap-project-2">
+      <li id="title-prev">Your first Bootstrap Project - (Part 2)</li>
+    </a>
+    <a class="post-nav-link" href="">
+      <li id="title-next"></li>
+    </a>
+  </ul>
+  </div>
+</div>
+</div>
+</div>
+
+</html>
+
+
+      </div>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h3>Do You Like What You See Here?</h4>
+      <ul class="footer-list">
+        <li><a href="mailto:ktagilbert@gmail.com">send me an email to get in contact sometime</a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert</a></li>
+        <li>© 2016—2017 all rights reserved</li>
+     </ul>
+   </div>
+
+</footer>
+
+</body>
+</html>
