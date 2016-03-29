@@ -65,12 +65,12 @@ I wouldn't say I *overcame* imposter syndrome either. It's more like I just got 
 
 ## What changed
 
-Now, [as I mentioned earlier on the blog](http://localhost:4000/blog/bootstrapExample/), I was just offered my first role as a web developer. The opportunity came one day after I had a huge break down in front of my fiance. I had just learned that [Portland, OR is one of the worst places in the country for women in tech](http://www.wweek.com/2016/02/29/portland-is-literally-the-worst-place-in-the-us-for-women-in-tech/) to work. They are underpaid here and finding a job is difficult for them. It made sense! I had been interviewing for months and was getting no where. I was at the point of giving up again. But I had one more job interview the next day.
+Now, [as I mentioned earlier on the blog](/blog/bootstrapExample/), I was just offered my first role as a web developer. The opportunity came one day after I had a huge break down in front of my fiance. I had just learned that [Portland, OR is one of the worst places in the country for women in tech](http://www.wweek.com/2016/02/29/portland-is-literally-the-worst-place-in-the-us-for-women-in-tech/) to work. They are underpaid here and finding a job is difficult for them. It made sense! I had been interviewing for months and was getting no where. I was at the point of giving up again. But I had one more job interview the next day.
 
 I didn't even want to go the interview. I was scared it was going to be fruitless. Plus, it would mean taking another day off of work without pay. But that felt too pathetic. Why would I be afraid of a job interview? It would just be a conversation. No big deal!!
 
 That's what I told myself at least. I then went in to the job interview and just focused on selling myself. I didn't hem and haw about what I knew and what I didn't. Instead, I clearly stated my abilities and what I had done in the past. **Again, it wasn't my confidence talking. It was me being realistic with myself.** I just wanted to tell this interviewer what I realistically knew and was comfortable doing as well as what I wanted for my future.
 
-Long story short, I got the job. It's been two months now and I have to say, the trouble was worth it. It just took being realistic with myself and others to get there. 
+Long story short, I got the job. It's been two months now and I have to say, the trouble was worth it. It just took being realistic with myself and others to get there.
 
 What about you? I'd love to hear your imposter syndrome story too! **Let me know in the comments and thanks for reading guys.**

@@ -37,6 +37,16 @@
   <script>
   $(document).ready(function() {
 
+    //make .page-heading the height of the screen
+    function setHeight() {
+      windowHeight = $(window).innerHeight();
+      $('.page-heading').css('min-height', windowHeight);
+    };
+    setHeight();
+
+    $(window).resize(function() {
+      setHeight();
+    });
 
     //overlay on portfolio items
     $('.folio-item').each(function(item) {
@@ -90,17 +100,6 @@
          search(); // run search function
        }
      });
-
-      //make .page-heading the height of the screen
-      function setHeight() {
-        windowHeight = $(window).innerHeight();
-        $('.page-heading').css('min-height', windowHeight);
-      };
-      setHeight();
-
-      $(window).resize(function() {
-        setHeight();
-      });
 
       //make .name-intro have a dynamic height
       function setHeight() {
@@ -216,8 +215,8 @@
     <!--<div class="page-content">-->
           <!DOCTYPE html>
 <html>
-
 <div itemscope itemtype="http://schema.org/Article" class="post">
+
 
 
   <div class="blue-page-header" style="background-image: url('/assets/designer-board-typo-word.jpg');">

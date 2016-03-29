@@ -22,8 +22,6 @@ home page
 .page-heading {
 	margin-bottom: 0px;
 	font-weight: bold;
-	height: 100%;
-	overflow: hidden;
   font-size: 20px;
   padding-bottom: 40px;
   font-family: georgia;
@@ -75,10 +73,9 @@ header
 	padding: 0;
 	text-align: center;
 }
-
 @media(max-width: 720px) {
 	.site-header {
-		height: 50px;
+		background-color: transparent;
 	}
 }
 
@@ -209,6 +206,7 @@ img {
 @media-query(max-width: 720px) {
 	.post-header {
 		height: 150px;
+		z-index: -100;
 	}
 }
 
@@ -350,9 +348,6 @@ media queries
 }
 
 @media (max-width: 830px) {
-	#search-text {
-		width: 100%;
-	}
 	.top-angle {
 		display: none;
 	}
@@ -426,9 +421,6 @@ media queries
 @media(max-width: 1000px) {
 	.top-angle {
 		bottom: 55%;
-	}
-	#search-text {
-		width: 250px;
 	}
 	.rows {
 		background-color: transparent;

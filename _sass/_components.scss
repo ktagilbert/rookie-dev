@@ -36,6 +36,13 @@ search field
 	display: none;
 }
 
+@media (max-width: 720px) {
+	#search-text {
+		display: initial;
+		width: 80%
+	}
+}
+
 #no-results {
 	display: none;
 	text-align: center;
