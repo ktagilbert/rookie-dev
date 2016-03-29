@@ -784,7 +784,6 @@ about page
   .absolute-container {
     margin-top: 0;
     padding: 0 10;
-    height: 0;
     z-index: -100; }
 
   h1 {
