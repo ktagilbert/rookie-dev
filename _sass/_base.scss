@@ -171,8 +171,9 @@ pre {
  * Wrapper
  */
 .wrapper {
-    width: 80%;
+    width: 60%;
     margin: auto;
+    padding-bottom: 5%;
     background-color: transparent;
     @extend %clearfix;
 

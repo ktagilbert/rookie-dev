@@ -138,8 +138,9 @@ pre {
  * Wrapper
  */
 .wrapper {
-  width: 80%;
+  width: 60%;
   margin: auto;
+  padding-bottom: 5%;
   background-color: transparent; }
   @media screen and (max-width: 800px) {
     .wrapper {
@@ -184,6 +185,18 @@ fonts
 @font-face {
   font-family: "PT Sans", "sans-serif";
   src: url("//fonts.googleapis.com/css?family=PT+Sans"); }
+#intro-paragraph {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1em;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 10%; }
+
+#background-header {
+  text-align: center;
+  margin: 5% 0; }
+
 .fa-chevron-down {
   outline: none;
   border: none;
@@ -724,17 +737,6 @@ sticky footer
 /*********************************
 about page
 *********************************/
-#about-page {
-  padding-bottom: 5%;
-  height: 100%;
-  color: #292768; }
-  #about-page p {
-    font-size: 18px;
-    font-weight: 500; }
-  #about-page h2 {
-    color: #EB4144;
-    font-size: 2em; }
-
 .page-header {
   height: 300px;
   background: #dff1f8 url("/assets/shattered.png");
@@ -790,94 +792,51 @@ about page
   h1 {
     padding: 4% 0 0;
     font-size: 1.5em !important; } }
-#background-info {
-  padding: 2% 5%;
-  margin: 3% 2%;
-  overflow: auto; }
-  #background-info .background-text {
-    padding: 5% 0; }
-
-#skills {
-  color: #fff;
-  background: linear-gradient(rgba(235, 65, 68, 0.8), rgba(235, 65, 68, 0.8)), url("/assets/skillsBackground.png");
-  padding: 5% 0; }
-  #skills h3 {
-    padding: 20px 0;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 1.5em; }
-  #skills #skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    list-style: none;
-    height: 250px;
-    margin: auto;
-    width: 70%;
-    padding: 5%;
-    background-color: #fff; }
-    #skills #skills-list li {
-      width: 30%;
-      justify-content: space-between;
-      margin: auto;
-      color: #666; }
-    #skills #skills-list .fa {
-      padding-right: 10px;
-      color: #EB4144;
-      font-size: 0.7em; }
-
-@media (max-width: 875px) {
-  #skills {
-    margin-right: 0; }
-    #skills #skills-list {
-      flex-wrap: none;
-      display: inline-block;
-      height: 100%;
-      padding: 5% 10px;
-      margin-left: 10%;
-      margin-right: 10%; }
-      #skills #skills-list p {
-        width: 100%; } }
-#list-column ul {
-  list-style: none;
+/*********************************
+contact form
+*********************************/
+#contact {
   text-align: center;
-  padding: 5% 0;
-  margin: 0 5%; }
-#list-column li {
-  width: 31%;
-  position: relative;
-  display: inline-block;
-  padding: 1%;
-  font-weight: bolder;
-  font-size: 1.5em;
-  color: #111;
-  vertical-align: text-top; }
-  #list-column li p {
-    font-size: 1rem;
-    text-align: left;
-    padding: 30px 0 20px;
-    height: 400px; }
-  #list-column li button {
-    background-color: #EB4144;
-    outline: none;
-    width: 100%;
-    padding: 5%;
-    border: none;
-    vertical-align: bottom; }
-  #list-column li a {
-    color: #fff;
-    font-size: 1.2rem; }
+  background-color: #dff1f8;
+  width: 100%;
+  padding: 5% 0; }
+  #contact h2 {
+    color: #111;
+    padding: 0; }
 
-@media (max-width: 1130px) {
-  #list-column li {
-    display: initial; }
-    #list-column li p {
-      height: auto; }
-    #list-column li button {
-      height: auto;
-      padding: 2% 0;
-      margin-bottom: 10%; } }
+.card {
+  width: 70%;
+  margin: auto;
+  background-color: #fff;
+  height: 95%;
+  padding: 5% 0;
+  box-shadow: 1px 3px 7px 0px #777; }
+
+form {
+  padding: 50px 0; }
+  form input, form textarea {
+    border: none;
+    border-bottom: 1px solid #666;
+    width: 40%;
+    height: 50px; }
+  form .text {
+    outline: none;
+    font-size: 1em;
+    margin: 10px; }
+  form textarea {
+    outline: none;
+    padding: 10px; }
+  form label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.8em; }
+  form #submit {
+    background-color: transparent;
+    margin: 50px;
+    border: 1px solid; }
+    form #submit:hover {
+      background-color: #111;
+      color: #fff; }
+
 /*********************************
 portfolio page
 *********************************/

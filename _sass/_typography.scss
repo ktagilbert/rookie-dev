@@ -12,6 +12,20 @@ fonts
 	src: url("//fonts.googleapis.com/css?family=PT+Sans");
 }
 
+#intro-paragraph {
+		text-align: center;
+    font-weight: 500;
+		font-size: 1.1em;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+#background-header {
+	text-align: center;
+	margin: 5% 0;
+}
+
 // @font-face {
 // 	font-family: "Alice"
 // 	src: url("//fonts.googleapis.com/css?family=Alice");
