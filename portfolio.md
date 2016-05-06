@@ -9,8 +9,8 @@ permalink: /portfolio/
 </div>
 
 <div id="portfolio-intro">
-  <p>Here are some examples of just my best work. I have included examples of blog articles,
-    an eBook that I have authored, graphics I have created, as well as some examples of my front-end development work so far.
+  <p>Here are some examples of work. I have included examples of blog articles,
+    an eBook that I have authored, as well as some examples of my front-end development work.
   </p>
 </div>
 
@@ -28,6 +28,14 @@ permalink: /portfolio/
       <p class="overlay">Digital Agency Website. I lead a team to design and develop the website. We used Jekyll, Sass, and Bootstrap.</p>
       <a href="http://vmphq.com">
         <img class="folio-img" src="/assets/vmp.jpg" />
+
+      </a>
+    </li>
+
+    <li class="folio-item">
+      <p class="overlay">A three page bootstrap website. I transferred over their VRBO content and turned into a new site for them.</p>
+      <a href="http://mauiluxurybreathtaking.com/">
+        <img class="folio-img" src="/assets/maui.jpg" />
 
       </a>
     </li>
@@ -54,11 +62,6 @@ permalink: /portfolio/
         <img class="folio-img" src="/assets/etumosblog.png" />
 
       </a>
-    </li>
-
-    <li class="folio-item">
-      <p class="overlay">A logo I designed for a literary themed blog</p>
-      <img class="folio-img" src="/assets/logostoryarch.png" />
     </li>
   </ul>
   </div>
