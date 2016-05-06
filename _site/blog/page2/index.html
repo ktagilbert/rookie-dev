@@ -12,22 +12,22 @@
   <meta property="og:type" content="website" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="ktgilbert.com//blog/page2/">
@@ -119,18 +119,6 @@
        }
      });
 
-      //make .name-intro have a dynamic height
-      function setHeight() {
-        windowHeight = $(window).innerHeight();
-        $('#name-intro').css('min-height', windowHeight / 2);
-        $('.post-header').css('min-height', windowHeight/ 2.5);
-      };
-      setHeight();
-
-      $(window).resize(function() {
-        setHeight();
-      });
-
       //desktop nav bar changes color on scroll
       var scroll_start = 0;
       var startchange = $('p:first');
@@ -160,27 +148,12 @@
         });
       }
 
-      //mobile-menu-arrow on click, display mobile menu
-      $('#mobile-btn').on('click', function(event) {
-        event.preventDefault;
-        $("#mobile-menu").show();
-        $("#mobile-btn").hide();
-      });
-
-
-      //close mobile menu
-      $('#close-menu').on('click', function(event) {
-        event.preventDefault;
-        $('#mobile-menu').hide();
-        $("#mobile-btn").show();
-      });
-
-      //click on #home-arrow to scroll down to post-list
+      //click on #home-arrow to scroll down to next section
 
       $('.fa-chevron-down').on('click', function(event) {
         event.preventDefault;
         $('html, body').animate({
-          scrollTop: $(".post-list").offset().top
+          scrollTop: $("#background").offset().top
         },900);
       });
 
@@ -214,18 +187,6 @@
       </ul>
   </ul>
 
-<div id=mobile-wrap>
-  <span id="mobile-btn"></span>
-
-  <span id="mobile-menu">
-    <p id="close-menu">X</p>
-    <ul>
-      <li><a href="/">Home</li>
-      <li><a href="/portfolio">Portfolio</a></li>
-    </ul>
-  </span>
-</div>
-
 </header>
 
     <!--<div class="page-content">-->
@@ -236,6 +197,7 @@
     <span class="logo">
       <h1 id="line-one">Katie Gilbert</h1>
       <h2 class="tagline">Web Development Blog & Portfolio</h2>
+      <i class="fa fa-chevron-down"></i>
     </span>
   </div>
 </div>
@@ -245,21 +207,23 @@
   <div id="background">
    <h2 id="background-header">My Background</h2>
    <p id=intro-paragraph>
-     Hi, my name is Katie. I am a detail oriented front-end developer who finds joy in keeping my files organized,
-    writing clean, modular code, and, believe it or not, working in CSS. (That’s why two of my favorite things right
-     now are SASS and Jekyll.)
+    Hi, my name is Katie. I am a detail oriented front-end developer who finds joy in keeping my files organized,
+    writing clean, modular code, and, believe it or not, working in CSS.
    </p>
    <p>
      I come with a background in digital marketing and web development. If this comes as a surprise, once you meet me
-      it will soon make sense. I literally just love website. That’s why I sought to learn about how website can convert
-       visitors into customers, how they do so using colors, content, and layouts, and spent my career learning about SEO.
+     it will soon make sense. I literally just love websites. That’s why I sought to learn about how website can convert
+     visitors into customers, how they do so using colors, content, and layouts, and have spent my career so far learning
+    about SEO.
    </p>
    <p>
      I have since worked in both B2C and B2B digital marketing as well as joined a web development team where I create
       websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
    </p>
    <p>
-     Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that has drawn me to both fields.
+     Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a
+     marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that
+     has drawn me to both fields.
    </p>
  </div>
 </div>

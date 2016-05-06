@@ -9,8 +9,8 @@ permalink: /portfolio/
 </div>
 
 <div id="portfolio-intro">
-  <p>Here are some examples of work. I have included examples of blog articles,
-    an eBook that I have authored, as well as some examples of my front-end development work.
+  <p>Here are some examples of my work. Including, blog articles,
+    an eBook that I have authored, as well as front-end development work.
   </p>
 </div>
 

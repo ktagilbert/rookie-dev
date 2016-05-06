@@ -10,22 +10,22 @@
   <meta property="og:type" content="website" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -117,18 +117,6 @@
        }
      });
 
-      //make .name-intro have a dynamic height
-      function setHeight() {
-        windowHeight = $(window).innerHeight();
-        $('#name-intro').css('min-height', windowHeight / 2);
-        $('.post-header').css('min-height', windowHeight/ 2.5);
-      };
-      setHeight();
-
-      $(window).resize(function() {
-        setHeight();
-      });
-
       //desktop nav bar changes color on scroll
       var scroll_start = 0;
       var startchange = $('p:first');
@@ -158,27 +146,12 @@
         });
       }
 
-      //mobile-menu-arrow on click, display mobile menu
-      $('#mobile-btn').on('click', function(event) {
-        event.preventDefault;
-        $("#mobile-menu").show();
-        $("#mobile-btn").hide();
-      });
-
-
-      //close mobile menu
-      $('#close-menu').on('click', function(event) {
-        event.preventDefault;
-        $('#mobile-menu').hide();
-        $("#mobile-btn").show();
-      });
-
-      //click on #home-arrow to scroll down to post-list
+      //click on #home-arrow to scroll down to next section
 
       $('.fa-chevron-down').on('click', function(event) {
         event.preventDefault;
         $('html, body').animate({
-          scrollTop: $(".post-list").offset().top
+          scrollTop: $("#background").offset().top
         },900);
       });
 

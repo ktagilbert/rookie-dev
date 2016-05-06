@@ -11,12 +11,6 @@
 	cursor: pointer;
 }
 
-@media(max-width: 850px) {
-	.fa-chevron-down {
-		display: none !important;
-	}
-}
-
 /*********************************
 search field
 *********************************/
@@ -81,41 +75,6 @@ mobile menu
 	}
 }
 
-#mobile-wrap {
-	width: 100%;
-}
-
-#mobile-btn {
-	border-bottom: 15px double #111;
-	border-top: 5px solid #111;
-	width: 10%;
-	height: 7px;
-	width: 30px;
-	height: 4px;
-	margin: 2%;
-	cursor: pointer;
-	position: absolute;
-	right: 87%;
-	display: none;
-}
-
-#close-menu {
-	float: left;
-	font-size: 1.1em;
-	cursor: pointer;
-	padding: 2.5%;
-	position: absolute;
-}
-
-@media(max-width: 770px) {
-	#menu {
-		display: none;
-	}
-	#mobile-btn {
-		display: initial;
-		top: 0%;
-	}
-}
 
 /*********************************
 post-nav buttons
