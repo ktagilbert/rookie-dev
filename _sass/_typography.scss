@@ -26,7 +26,11 @@ fonts
 	margin: 5% 0;
 }
 
-// @font-face {
-// 	font-family: "Alice"
-// 	src: url("//fonts.googleapis.com/css?family=Alice");
-// }
+@media(max-width: 700px) {
+	#line-one {
+		padding-top: 30% !important;
+	}
+	.page-heading {
+		height: 500px !important;
+	}
+}

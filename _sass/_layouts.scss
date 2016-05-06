@@ -64,7 +64,7 @@ about page
   }
   h1 {
     padding: 4% 0 0;
-    font-size: 1.5em !important;
+    font-size: 3em !important;
   }
 }
 
@@ -89,7 +89,21 @@ contact form
   background-color: #fff;
   height: 95%;
   padding: 5% 0;
-  box-shadow: 1px 3px 7px 0px #777;
+  border: 1px solid #777;
+}
+
+@media(max-width: 800px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media(max-width: 850px) {
+  form {
+    input, textarea {
+      width: 70% !important;
+    }
+  }
 }
 
 form {
@@ -162,6 +176,22 @@ portfolio page
     padding: 0;
 	}
 }
+
+@media(max-with: 700px) {
+  .folio-item {
+    max-height: 100% !important;
+    max-width: 100% !important;
+    margin: 5% 0;
+    padding: 10px !important;
+  }
+  .overlay {
+    font-size: 0.9em !important;
+  }
+  .folio-img {
+    max-width: 100% !important;
+  }
+}
+
 
 .page-wrapper {
 	margin: 0% 10% 10%;

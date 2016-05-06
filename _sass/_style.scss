@@ -27,6 +27,7 @@ home page
   font-family: georgia;
   letter-spacing: 3px;
   text-align: center;
+	height: 600px;
 }
 
 .logo {
@@ -253,18 +254,6 @@ img {
 media queries
 *********************************/
 
-@media(max-width: 457px) {
-	.page-heading {
-		font-size: 30px;
-}
-	#line-one {
-		font-size: 3em;
-		padding-top: 40px;
-	}
-	#line-two {
-		font-size: 4em;
-	}
-}
 
 @media(max-width: 550px) {
 	.post-wrapper {
@@ -300,10 +289,12 @@ media queries
 		.folio-item {
 			display: block !important;
 			margin: auto !important;
-			width: 90% !important;
+			width: 100% !important;
+			padding: 3% !important;
 		}
 		.overlay {
-			width: 65%;
+			width: 70%;
+			font-size: 0.9em;
 		}
 	}
 }
@@ -345,15 +336,6 @@ media queries
 	}
 	.post-nav-title {
 		display: none;
-	}
-}
-
-@media (max-width: 830px) {
-	.top-angle {
-		display: none;
-	}
-	.logo {
-		position: initial;
 	}
 }
 
