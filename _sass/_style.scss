@@ -421,3 +421,12 @@ media queries
 		bottom: 43%;
 	}
 }
+
+#sketch-pics, li {
+	display: inline-block;
+	list-style: none;
+
+	li {
+		width: 50%;
+	}
+}

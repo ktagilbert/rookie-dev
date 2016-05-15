@@ -26,7 +26,7 @@ permalink: /portfolio/
 
     <li class="folio-item">
       <p class="overlay">Digital Agency Website. I lead a team to design and develop the website. We used Jekyll, Sass, and Bootstrap.</p>
-      <a href="http://vmphq.com">
+      <a href="/vmp-website/">
         <img class="folio-img" src="/assets/vmp.jpg" />
 
       </a>

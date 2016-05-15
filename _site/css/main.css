@@ -632,6 +632,12 @@ media queries
 @media (max-width: 1430px) {
   .top-angle {
     bottom: 43%; } }
+#sketch-pics, li {
+  display: inline-block;
+  list-style: none; }
+  #sketch-pics li, li li {
+    width: 50%; }
+
 /*********************************
 sticky footer
 *********************************/
