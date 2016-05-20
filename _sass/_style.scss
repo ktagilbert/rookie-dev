@@ -1,17 +1,18 @@
-/*********************************
+jeky/*********************************
 home page
 *********************************/
 
 .page-heading {
 	margin-bottom: 0px;
 	font-weight: bold;
-  font-size: 20px;
+  font-size: 4vw;
   padding-bottom: 40px;
   font-family: georgia;
-  letter-spacing: 3px;
   text-align: center;
 	height: 600px;
 	background-color: $skyblue;
+	display: block;
+	width: 100%;
 	top: 0%;
 }
 
@@ -22,7 +23,6 @@ home page
 
 #line-one {
 	letter-spacing: -4px;
-  font-size: 7em;
   font-weight: 100;
   color: $orange;
 	padding: 7% 0 0;
