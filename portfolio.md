@@ -25,14 +25,6 @@ permalink: /portfolio/
     </li>
 
     <li class="folio-item">
-      <p class="overlay">Digital Agency Website. I lead a team to design and develop the website. We used Jekyll, Sass, and Bootstrap.</p>
-      <a href="/vmp-website/">
-        <img class="folio-img" src="/assets/vmp.jpg" />
-
-      </a>
-    </li>
-
-    <li class="folio-item">
       <p class="overlay">A three page bootstrap website. I transferred over their VRBO content and turned into a new site for them.</p>
       <a href="http://mauiluxurybreathtaking.com/">
         <img class="folio-img" src="/assets/maui.jpg" />
@@ -86,15 +78,3 @@ permalink: /portfolio/
     </li>
   </ul>
   </div>
-
-
-<!--contribute-container-->
-
- <div class="contribute-container">
- 		<span class="container-head">Want To Contribute to the Blog?</span>
- 	<ul>
- 		<li>
- 			<a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
- 		 </li>
-  	</ul>
- </div>

@@ -1,37 +1,43 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 
+  <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A personal technical marketing blog and portfolio by Katie Gilbert in Portland, OR.
     Visit to learn about web development, technical marketing, or to contact me for work.">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <title>
+     
+       Freelance Technical Marketer | Katie Gilbert
+     
+   </title>
+
+ <!--open graph protocol -->
+ <meta property="og:title" content="Katie Gilbert | Freelance Technical Marketer" />
+ <meta property="og:type" content="website" />
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <!-- Latest compiled and minified JavaScript -->
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="canonical" href="ktgilbert.com//blog/page3/">
+   <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
+
+
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Technical Marketing Blog & Portfolio | Katie Gilbert</title>
-  <meta property="og:title" content="Katie Gilbert| Technical Marketing Blog & Portfolio" />
-  <meta property="og:type" content="website" />
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="/css/main.css">
+
   <link rel="canonical" href="ktgilbert.com//blog/page3/">
-  <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
+
   <link rel="stylesheet" rel="prefetch"  type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" rel="prefetch" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
   <link  rel="styelsheet" rel="prefetch" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans:400, 700" />
@@ -131,12 +137,12 @@
 
             if (scroll_start > offset.top) {
               $("#menu").stop().animate({
-                backgroundColor:'#111'}, "700");
-              $('.menu-item').css("color", "#fff");
-              $('.menu-item').children().css("color", "#fff");
-              $(".fa-twitter").css("color", "#fff");
-              $(".fa-github").css("color", "#fff");
-              $(".fa-envelope").css("color", "#fff");
+                backgroundColor:'rgba(151, 212, 246, 0.8)'}, "700");
+              $('.menu-item').css("color", "#0c6090");
+              $('.menu-item').children().css("color", "#0c6090");
+              $(".fa-twitter").css("color", "#0c6090");
+              $(".fa-github").css("color", "#0c6090");
+              $(".fa-envelope").css("color", "#0c6090");
             } else {
               $('#menu').stop().animate({
                 backgroundColor: 'transparent'}, "700");
@@ -176,29 +182,28 @@
 <body>
     <header class="site-header">
 
-  <ul id="menu">
-      <li class="menu-item"><a href="/">Home</li>
-      <li class="menu-item"><a href="/portfolio/">Portfolio</a></li>
-      <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
-      <ul id=social-icons>
-        <li><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
-        <li><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
-      </ul>
+<nav id="menu" class="navbar navbar-default" role="navigation">
+  <ul>
+    <li class="menu-item pull-left"><a href="/">Home</li>
+    <li class="menu-item pull-left"><a href="/portfolio/">Portfolio</a></li>
+    <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
+    <li class="menu-item pull-right"><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
+    <li class="menu-item pull-right"><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
+    <li class="menu-item pull-right"><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
   </ul>
-
+</nav>
 </header>
 
     <!--<div class="page-content">-->
-          <div class="home">
+    <div class="page-content">
+        <div class="home">
+
 <header class="page-heading">
-  <div id="logo-wrap">
-    <span class="logo">
+    <span class="col-md-12 logo">
       <h1 id="line-one">Katie Gilbert</h1>
       <h2 class="tagline">Web Development Blog & Portfolio</h2>
       <i class="fa fa-chevron-down"></i>
     </span>
-  </div>
 </header>
 
 
@@ -217,7 +222,7 @@
    </p>
    <p>
      I have since worked in both B2C and B2B digital marketing as well as joined a web development team where I create
-      websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
+     websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
    </p>
    <p>
      Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a
@@ -289,7 +294,7 @@
   </ul>
 
 
-<div class="pagination">
+<div class="pagination col-md-12 text-center">
   
     <a href="/blog/page2/#article-content">&laquo; Prev</a>
   
@@ -315,19 +320,9 @@
 
 </div>
 </div>
-
-<div class="contribute-container">
-   <span class="container-head">Want To Contribute to the Blog?</span>
- <ul>
-   <li>
-     <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
-    </li>
-   </ul>
-</div>
 </div>
 
-
-      </div>
+    </div>
   <footer class="site-footer">
     <div class="footer-content">
       <h3>Do You Like What You See Here?</h4>

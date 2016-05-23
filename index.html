@@ -2,14 +2,13 @@
 layout: default
 ---
 <div class="home">
+
 <header class="page-heading">
-  <div id="logo-wrap">
-    <span class="logo">
+    <span class="col-md-12 logo">
       <h1 id="line-one">Katie Gilbert</h1>
       <h2 class="tagline">Web Development Blog & Portfolio</h2>
       <i class="fa fa-chevron-down"></i>
     </span>
-  </div>
 </header>
 
 
@@ -28,7 +27,7 @@ layout: default
    </p>
    <p>
      I have since worked in both B2C and B2B digital marketing as well as joined a web development team where I create
-      websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
+     websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
    </p>
    <p>
      Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a
@@ -87,7 +86,7 @@ layout: default
   </ul>
 
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<div class="pagination col-md-12 text-center">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | append: "#article-content" | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
@@ -112,14 +111,5 @@ layout: default
   </div>
 {% endif %}
 </div>
-</div>
-
-<div class="contribute-container">
-   <span class="container-head">Want To Contribute to the Blog?</span>
- <ul>
-   <li>
-     <a href="mailto:ktagilbert@gmail.com">Submit an idea or article</a>
-    </li>
-   </ul>
 </div>
 </div>

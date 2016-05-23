@@ -343,10 +343,10 @@ home page
 
 #line-one {
   letter-spacing: -4px;
-  font-size: 7em;
+  font-size: 6em;
   font-weight: 100;
   color: #EB4144;
-  padding: 7% 0 0;
+  padding: 16% 0 0;
   font-family: "alice", serif; }
 
 .tagline {
@@ -688,7 +688,8 @@ about page
 .page-header {
   height: 300px;
   background: #DDF1FC url("/assets/shattered.png");
-  margin-bottom: 3%; }
+  margin-bottom: 3%;
+  margin-top: 0; }
 
 .header-1 {
   font-size: 4em;
@@ -983,20 +984,17 @@ portfolio page
 /*********************************
 desktop menu
 *********************************/
-#menu {
-  text-align: left;
-  padding: 10px 0 0 10px;
-  max-width: 100%;
-  min-width: 100%;
-  font-family: "PT Sans", "sans-serif";
-  font-weight: 700;
-  color: #111;
-  height: 40px;
-  position: fixed;
+.navbar-default {
+  width: 100%;
   background-color: transparent;
-  margin: 0;
+  z-index: 20;
   top: 0%;
-  z-index: 2000; }
+  color: #111;
+  border: none;
+  text-align: right;
+  height: 80px;
+  position: fixed;
+  padding: 40px 0 0 0; }
 
 .menu-item {
   padding: 0 10px;
@@ -1004,22 +1002,15 @@ desktop menu
   list-style: none;
   display: inline-block;
   line-height: 1;
-  font-size: 14px; }
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: "PT Sans", "sans-serif";
+  padding: 0; }
+  .menu-item i {
+    font-size: 1.1em; }
   .menu-item a {
     color: #111;
     -webkit-text-size-adjust: none; }
-
-#social-icons {
-  list-style: none;
-  float: right;
-  margin-right: 15px; }
-  #social-icons li {
-    display: inline-block;
-    padding: 0 5px;
-    margin-right: 10px;
-    border-radius: 20px; }
-  #social-icons a {
-    color: #111; }
 
 @media (max-width: 750px) {
   .footer-content h3 {
