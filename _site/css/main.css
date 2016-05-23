@@ -647,26 +647,28 @@ sticky footer
   bottom: 0%;
   width: 100%;
   height: 200px;
-  background-color: #dff1f8;
+  background-color: #333;
   top: 100%;
   clear: both; }
   .site-footer a, .site-footer a:visited {
-    color: #111;
+    color: #fff;
     text-shadow: none; }
   .site-footer a:hover {
-    color: #292768;
+    color: #fff;
     text-decoration: underline; }
 
 .footer-content {
-  color: #111;
+  color: #fff;
   text-align: right;
   width: 100%;
   padding: 10px 10px 0 10px;
   font-size: 1.5em;
-  float: right; }
+  float: right;
+  position: absolute;
+  bottom: 1.5%; }
   .footer-content h3 {
     padding-bottom: 0px;
-    color: #111;
+    color: #fff;
     font-family: 700;
     font-size: 1em;
     font-family: "PT Sans", "sans-serif"; }
@@ -676,8 +678,9 @@ sticky footer
   font-family: pt sans;
   font-size: 16px;
   list-style: none;
-  padding: 5px 5px 0 5px;
+  padding: 5px;
   line-height: 1;
+  display: block;
   font-family: "PT Sans", "sans-serif"; }
 .footer-list li:last-of-type {
   font-size: 12px; }

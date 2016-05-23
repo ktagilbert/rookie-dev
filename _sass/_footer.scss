@@ -8,32 +8,34 @@ sticky footer
   bottom: 0%;
   width: 100%;
   height: 200px;
-	background-color: #dff1f8;
+	background-color: $grey;
 	top: 100%;
 	clear: both;
 
 	a, a:visited {
-		color: #111;
+		color: $container-color;
 		text-shadow: none;
 	}
 
 	a:hover {
-		color: #292768;
+		color: $container-color;
 		text-decoration: underline;
 	}
 }
 
 .footer-content {
-  color: #111;
+  color: $container-color;
 	text-align: right;
 	width: 100%;
 	padding: 10px 10px 0 10px;
 	font-size: 1.5em;
 	float: right;
+	position: absolute;
+	bottom: 1.5%;
 
 	h3 {
 		padding-bottom: 0px;
-		color: #111;
+		color: $container-color;
 		font-family: 700;
 		font-size: 1em;
 		font-family: "PT Sans", "sans-serif";
@@ -46,9 +48,11 @@ sticky footer
 		font-family: pt sans;
 		font-size: 16px;
 		list-style: none;
-		padding: 5px 5px 0 5px;
+		padding: 5px;
 		line-height: 1;
+		display: block;
 		font-family: "PT Sans", "sans-serif";
+
 	}
 	li:last-of-type {
 		font-size: 12px;
