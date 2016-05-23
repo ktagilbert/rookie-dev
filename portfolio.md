@@ -34,7 +34,7 @@ permalink: /portfolio/
 
     <li class="folio-item">
       <p class="overlay">An industry targeted blog article about how construction firms can grow their client base with the help of SEO. </p>
-      <a href="http://vmphq.com/blog/2016/05/03/construction-company-client-base.html">
+      <a href="http://vmphq.com/blog/2016/05/04/construction-company-client-base.html">
         <img class="folio-img" src="/assets/construction1.jpg"/>
       </a>
     </li>
@@ -73,7 +73,6 @@ permalink: /portfolio/
       <p class="overlay">A blog article I wrote for Etumos LLC. Click here to read it over on their blog.</p>
       <a href="http://etumos.com/marketing-automation/robust-and-scalable-how-to-build-your-ideal-marketing-technology-framework/">
         <img class="folio-img" src="/assets/etumosblog.png" />
-
       </a>
     </li>
   </ul>
