@@ -25,9 +25,9 @@
    <!-- Bootstrap -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="/css/main.css">
-   <link rel="canonical" href="ktgilbert.com//blog/page3/">
+   <link rel="canonical" href="ktgilbert.com//blog.html">
    <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
-
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Neuton:400,300|Ovo' rel='stylesheet' type='text/css'>
 
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@
 
 
 
-  <link rel="canonical" href="ktgilbert.com//blog/page3/">
+  <link rel="canonical" href="ktgilbert.com//blog.html">
 
   <link rel="stylesheet" rel="prefetch"  type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" rel="prefetch" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
@@ -54,33 +54,29 @@
     ga('create', 'UA-55144371-2', 'auto');
     ga('send', 'pageview');
   </script>
-
-  <script src="//load.sumome.com/" data-sumo-site-id="cc1befe725826873b8e3ea65b755ae587661065149cd815eb2b2331e9c5c7c2d" async="async"></script>
-
-
   <script>
-  $(document).ready(function() {
-
-    //make .page-heading the height of the screen
-    function setHeight() {
-      windowHeight = $(window).innerHeight();
-      $('.page-heading').css('min-height', windowHeight);
-    };
-    setHeight();
-
-    $(window).resize(function() {
-      setHeight();
-    });
-
-    //overlay on portfolio items
-    $('.folio-item').each(function(item) {
-      $(this).on('mouseover', function() {
-        $('.overlay').eq(item).show();
-      })
-      $('.folio-item').on('mouseleave', function() {
-        $('.overlay').hide();
-      })
-    });
+  // $(document).ready(function() {
+  //
+  //   //make .page-heading the height of the screen
+  //   function setHeight() {
+  //     windowHeight = $(window).innerHeight();
+  //     $('.page-heading').css('min-height', windowHeight);
+  //   };
+  //   setHeight();
+  //
+  //   $(window).resize(function() {
+  //     setHeight();
+  //   });
+  //
+  //   //overlay on portfolio items
+  //   $('.folio-item').each(function(item) {
+  //     $(this).on('mouseover', function() {
+  //       $('.overlay').eq(item).show();
+  //     })
+  //     $('.folio-item').on('mouseleave', function() {
+  //       $('.overlay').hide();
+  //     })
+  //   });
 
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
@@ -137,7 +133,7 @@
 
             if (scroll_start > offset.top) {
               $("#menu").stop().animate({
-                backgroundColor:'rgba(235, 65, 68, 0.9)'}, "500");
+                backgroundColor:'#43b5db'}, "500");
               $('.menu-item').css("color", "#fff");
               $('.menu-item').children().css("color", "#fff");
               $(".fa-twitter").css("color", "#fff");
@@ -146,10 +142,10 @@
             } else {
               $('#menu').stop().animate({
                 backgroundColor: 'transparent'}, "700");
-              $('.menu-item').children().css("color", "#1D1E18");
-              $(".fa-twitter").css("color", "#1D1E18")
-              $(".fa-github").css("color", "#1D1E18");
-              $(".fa-envelope").css("color", "#1D1E18");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff")
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
             }
         });
       }
@@ -186,6 +182,7 @@
   <ul>
     <li class="menu-item pull-left"><a href="/">Home</li>
     <li class="menu-item pull-left"><a href="/portfolio/">Portfolio</a></li>
+    <li class="menu-item pull-left"><a href="/blog.html">Blog</a></li>
     <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
     <li class="menu-item pull-right"><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
     <li class="menu-item pull-right"><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
@@ -195,69 +192,21 @@
 </header>
 
     <!--<div class="page-content">-->
-    <div class="page-content">
-        <div class="home">
 
-<header class="page-heading">
-    <span class="col-md-12 logo">
-      <h1 id="line-one">Katie Gilbert</h1>
-      <h2 class="tagline">Web Development Blog & Portfolio</h2>
-      <i class="fa fa-chevron-down"></i>
-    </span>
-</header>
+    <div>
+        <p class="post-title"></p>
+<div class="post">
 
+  <header class="post-header">
+  </header>
 
-<div class="wrapper">
-  <div id="background">
-   <h2 id="background-header">My Background</h2>
-   <p id=intro-paragraph>
-    Hi, my name is Katie. I am a detail oriented front-end developer who finds joy in keeping my files organized,
-    writing clean, modular code, and, believe it or not, working in CSS.
-   </p>
-   <p>
-     I come with a background in digital marketing and web development. If this comes as a surprise, once you meet me
-     it will soon make sense. I literally just love websites. That’s why I sought to learn about how website can convert
-     visitors into customers, how they do so using colors, content, and layouts, and have spent my career so far learning
-    about SEO.
-   </p>
-   <p>
-     I have since worked in both B2C and B2B digital marketing as well as joined a web development team where I create
-     websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
-   </p>
-   <p>
-     Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a
-     marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that
-     has drawn me to both fields.
-   </p>
- </div>
-</div>
-
-<!-- <div id="contact">
-  <div class="card">
-   <h2>Contact me for Freelance Work or a Resume</h2>
-   <p>I'll get back to you within 3 days</p>
-   <form action="https://formspree.io/ktagilbert@gmail.com"
-       method="POST">
-    <label>Your Name</label><br/>
-     <input class="text" type="text" name="name" required><br/>
-     <label>Email</label><br/>
-     <input class="text" type="email" name="_replyto" required><br/>
-     <label>What Can I do for you?</label><br/>
-     <textarea class="text" placeholder="Your message" required></textarea><br/>
-     <input type="submit" id="submit" value="Send">
-  </form>
- </div>
-</div> -->
-
-
-<a name="article-content">
-  <div class="main-content">
-</a>
+  	<article class="post-content">
+    	<div class="main-content">
   <div class="post-wrapper">
 
     <div class="search">
       <i class="fa fa-search"></i>
-      <input type="text" id="search-text" name="search">
+      <input type="text" id="search-text" name="search" />
     </div>
 
     <div id="no-results">
@@ -266,63 +215,19 @@
 
   <ul class="post-list">
     
-      <li class="article">
-        <!-- <span class="post-meta">Jul 20, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/sass">How to Start Learning SCSS</a>
-          <a href="/blog/sass">
-            <img itemprop="image" src="/assets/brainstorm.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up.
-</p>
-      </li>
-    
-      <li class="article">
-        <!-- <span class="post-meta">Jun 24, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/nav-bar">How to Make a Simple Navigation Menu From Scratch</a>
-          <a href="/blog/nav-bar">
-            <img itemprop="image" src="/assets/navPost.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head.
-</p>
-      </li>
-    
 
   </ul>
 
 
-<div class="pagination col-md-12 text-center">
-  
-    <a href="/blog/page2/#article-content">&laquo; Prev</a>
-  
-
-  
-    
-      <a href="/blog/page2/#article-content">1</a>
-    
-  
-    
-      <a href="/blog/page2/#article-content">2</a>
-    
-  
-    
-      <em>3</em>
-    
-  
-
-  
-    <span>Next &raquo;</span>
-  
-  </div>
-
 </div>
+</div>
+
+  	</article>
 </div>
 </div>
 
     </div>
+
   <footer class="site-footer">
     <div class="footer-content">
       <h3>Do You Like What You See Here?</h4>

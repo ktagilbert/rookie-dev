@@ -1,3 +1,20 @@
+p {
+  padding: 20px;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+body > div.absolute-container > header > div.col-lg-12.text-center > h1 {
+  padding-top: 5%;
+}
+
+section {
+  margin: 5% 0;
+}
+
 /**
  * Syntax highlighting styles
  */

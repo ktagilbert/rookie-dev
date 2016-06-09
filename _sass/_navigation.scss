@@ -1,13 +1,13 @@
 /*********************************
-desktop menu
+menu
 *********************************/
 
 .navbar-default {
-  width: 100%;
+  max-width: 100%;
   background-color: transparent;
   z-index: 20;
 	top: 0%;
-  color: #111;
+  color: #fff;
   border: none;
   text-align: right;
   height: 80px;
@@ -32,16 +32,7 @@ desktop menu
 	}
 
 	a {
-		color: #111;
+		color: #fff;
 		-webkit-text-size-adjust: none;
-	}
-}
-
-
-@media(max-width: 750px) {
-	.footer-content {
-		h3 {
-			font-size: 18px;
-		}
 	}
 }

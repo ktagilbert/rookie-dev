@@ -7,14 +7,15 @@ about page
   background: $skyblue url('/assets/shattered.png');
   margin-bottom: 3%;
   margin-top: 0;
+  width: 100%;
+  border: none;
 }
 
-.header-1 {
-  font-size: 4em;
-  padding-top: 120px;
-  text-align: center;
-  color: $blue;
-}
+// .header-1 {
+//   font-size: 4em;
+//   padding-top: 120px;
+//   text-align: center;
+// }
 
 .blue-page-header {
   z-index: -1;
@@ -60,7 +61,6 @@ about page
   .absolute-container {
     margin-top: 0;
     padding: 0 10;
-    // height: 0;
     z-index: -100;
   }
   h1 {
@@ -69,77 +69,77 @@ about page
   }
 }
 
-/*********************************
-contact form
-*********************************/
-#contact {
-  text-align: center;
-  background-color: $skyblue;
-  width: 100%;
-  padding: 5% 0;
-
-  h2 {
-    color: #111;
-    padding: 0;
-  }
-}
-
-.card {
-  width: 70%;
-  margin: auto;
-  background-color: #fff;
-  height: 95%;
-  padding: 5% 0;
-  border: 1px solid #777;
-}
-
-@media(max-width: 800px) {
-  .card {
-    width: 90%;
-  }
-}
-
-@media(max-width: 850px) {
-  form {
-    input, textarea {
-      width: 70% !important;
-    }
-  }
-}
-
-form {
-  padding: 50px 0;
-
-  input, textarea {
-    border: none;
-    border-bottom: 1px solid #666;
-    width: 40%;
-    height: 50px;
-  }
-  .text {
-    outline: none;
-    font-size: 1em;
-    margin: 10px;
-  }
-  textarea {
-    outline: none;
-    padding: 10px;
-  }
-  label {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 0.8em;
-  }
-  #submit {
-    background-color: transparent;
-    margin: 50px;
-    border: 1px solid;
-
-    &:hover {
-      background-color: #111;
-      color: #fff;
-    }
-  }
-}
+// /*********************************
+// contact form
+// *********************************/
+// #contact {
+//   text-align: center;
+//   background-color: $skyblue;
+//   width: 100%;
+//   padding: 5% 0;
+//
+//   h2 {
+//     color: #111;
+//     padding: 0;
+//   }
+// }
+//
+// .card {
+//   width: 70%;
+//   margin: auto;
+//   background-color: #fff;
+//   height: 95%;
+//   padding: 5% 0;
+//   border: 1px solid #777;
+// }
+//
+// @media(max-width: 800px) {
+//   .card {
+//     width: 90%;
+//   }
+// }
+//
+// @media(max-width: 850px) {
+//   form {
+//     input, textarea {
+//       width: 70% !important;
+//     }
+//   }
+// }
+//
+// form {
+//   padding: 50px 0;
+//
+//   input, textarea {
+//     border: none;
+//     border-bottom: 1px solid #666;
+//     width: 40%;
+//     height: 50px;
+//   }
+//   .text {
+//     outline: none;
+//     font-size: 1em;
+//     margin: 10px;
+//   }
+//   textarea {
+//     outline: none;
+//     padding: 10px;
+//   }
+//   label {
+//     font-family: 'PT Sans', sans-serif;
+//     font-size: 0.8em;
+//   }
+//   #submit {
+//     background-color: transparent;
+//     margin: 50px;
+//     border: 1px solid;
+//
+//     &:hover {
+//       background-color: #111;
+//       color: #fff;
+//     }
+//   }
+// }
 
 
 /*********************************

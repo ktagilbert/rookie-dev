@@ -1,47 +1,226 @@
-/*********************************
-home page
-*********************************/
 
-.page-heading {
-	margin-bottom: 0px;
-	font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 40px;
-  font-family: georgia;
-  letter-spacing: 3px;
+.intro-text {
+  width: 75%;
+  margin: auto;
+}
+
+.menu-item, a {
+  color: #fff;
+  font-weight: 700;
+}
+
+#visit-checklist {
+   h2 {
+     margin-bottom: 10%;
+   }
+}
+
+
+#contact-form > .container {
+  width: 100% !important;
+  margin-right: 0;
+}
+
+.header-cta {
+  border: 2px solid #fff;
+  width: 30%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.column-header {
+  height: 50px;
+}
+
+.header-cta {
+   a {
+     padding: 15px;
+     color: #fff;
+     font-weight: 700;
+     z-index: 10;
+  }
+}
+
+.header-cta {
+   a:hover {
+     cursor: pointer;
+  }
+}
+
+body {
+  div.page-header {
+    div {
+      p:hover {
+        cursor: pointer;
+        background-color: rgba(173, 216, 230, 0.2);
+      }
+    }
+  }
+}
+
+.page-header {
+    .header-cta {
+      a {
+      cursor: pointer;
+    }
+  }
+}
+
+.home-absolute-container {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  z-index: 10;
+  clear: both;
+  padding: 2%;
+  width: 90%;
+  height: 700px;
+  margin-top: 47%;
+}
+
+.fa-center {
+  width: 100%;
   text-align: center;
-	height: 600px;
-	background-color: $skyblue;
-	top: 0%;
+  margin-bottom: $large / 2;
+  font-size: 2em;
 }
 
-.logo {
-	color: $orange;
-	padding: 0;
+#bottom-content {
+  border-bottom: solid 1px #fcc118;
+  padding: 0 0 5% 0;
 }
 
-#line-one {
-	letter-spacing: -4px;
-  font-size: 6em;
+#contact-form {
+  div {
+     h2 {
+       margin-bottom: 5%;
+     }
+   }
+}
+
+#contact-form {
+  font-size: 1.2em;
+  width: 70%;
+  margin: auto;
+}
+
+#visit-checklist {
+  background-color: rgb(67, 181, 219);
+  color: #fff;
+  font-weight: bold;
+  padding: 5% 0;
+}
+
+.checklist-item {
+  display: inline-block;
+  width: 100%;
+  font-size: 1em;
   font-weight: 100;
-  color: $orange;
-	padding: 16% 0 0;
-	font-family: "alice", serif;
+  padding-bottom: $large / 2 ;
+  margin-left: 15%;
 }
 
-.tagline {
-	padding: 2% 0 2% 0;
-	color: $blue;
-	position: relative;
-	font-size: 1.1em;
-	font-family: "PT Sans", "sans-serif";
-	font-weight: 700;
+.checklist-item > i {
+  color: #fff;
+  padding-right: 10px;
 }
 
-@media(max-width: 470px) {
-	.tagline {
-		font-size: 18px;
-	}
+.dropdown {
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid;
+  outline: 0;
+}
+
+.dropdown > option {
+  font-size: 1em;
+  padding: 10px 0;
+}
+
+.dropdown:active {
+  outline-color: transparent;
+}
+
+input {
+  outline: none;
+  outline-color: none;
+  width: 100% !important;
+  margin-left: 0 !important;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+#contact-form > div > form > input.submit {
+  border: 1px solid;
+  color: #111;
+  margin-bottom: 100px;
+  background-color: transparent;
+  width: 40% !important;
+  margin-top: 10%;
+  float: right;
+  padding: 15px;
+}
+
+#contact-form > div > form > input.submit:hover {
+  background-color: #2599BF;
+  color: #fff;
+
+}
+
+@media(max-width: 650px) {
+  .absolute-container {
+    margin-top: 0;
+    padding: 0 10;
+    // height: 0;
+    z-index: -100;
+  }
+  h1 {
+    padding: 4% 0 0;
+  }
+}
+
+.page-header {
+  z-index: -1;
+  right: 0;
+  color: #fff;
+  top: 0%;
+  height: 700px !important;
+  left: 0%;
+  margin-top: 0;
+  position: absolute;
+  padding-bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid;
+}
+
+.home-header {
+  padding-top: 15%;
+  margin: 0;
+  min-width: 100%;
+}
+
+.home-overlay {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(67, 181, 219, 0.8);
+}
+
+#visit-checklist > div > div > div.col-lg-8.text-center > i {
+    font-size: 15em;
+    margin: 5% 0 0 25%;
+    color: #fff;
+}
+
+body > section.three-col > div > div > div > div > i {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 5%;
 }
 
 /*********************************
@@ -49,14 +228,8 @@ header
 *********************************/
 
 .site-header {
-	width: 100%;
 	padding: 0;
 	text-align: center;
-}
-@media(max-width: 720px) {
-	.site-header {
-		background-color: transparent;
-	}
 }
 
 
@@ -67,7 +240,7 @@ Post styling
 	width: 100%;
 	background-color: #fff;
 	position: relative;
-	border-top: 4px solid $orange;
+	border-top: 4px solid $gold;
 }
 
 .post-wrapper {
@@ -118,7 +291,7 @@ Post styling
 		font-size: 2.5em;
 		text-align: center;
 		margin: 0;
-		color: $blue
+		color: $skyblue;
 	}
 }
 
@@ -150,14 +323,13 @@ Post styling
 		color: #666;
 		font-size: 1em;
 		font-weight: bold;
-		font-family: "lato", tahoma, sans-serif;
 		border: 1px solid #d3d3d3;
 		height: 70px;
 		padding: 20px 15px 15px;
 		margin-bottom: 100px;
 
 		&:hover {
-			background-color: rgba($orange, 0.9);
+			background-color: rgba($skyblue, 0.9);
 			color: #fff;
 		}
 	}
@@ -179,7 +351,6 @@ img {
 
 	.post-title {
 		  text-align: center;
-		  font-family: georgia, serif;
 			padding: 100px 2% 2%;
 			font-weight: 600;
 	}
@@ -413,20 +584,5 @@ media queries
 		li {
 			width: 40%;
 		}
-	}
-}
-
-@media(max-width: 1430px) {
-	.top-angle {
-		bottom: 43%;
-	}
-}
-
-#sketch-pics, li {
-	display: inline-block;
-	list-style: none;
-
-	li {
-		width: 50%;
 	}
 }

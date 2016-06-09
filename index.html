@@ -1,115 +1,133 @@
 ---
 layout: default
 ---
-<div class="home">
-
-<header class="page-heading">
-    <span class="col-md-12 logo">
-      <h1 id="line-one">Katie Gilbert</h1>
-      <h2 class="tagline">Web Development Blog & Portfolio</h2>
-      <i class="fa fa-chevron-down"></i>
-    </span>
-</header>
-
-
-<div class="wrapper">
-  <div id="background">
-   <h2 id="background-header">My Background</h2>
-   <p id=intro-paragraph>
-    Hi, my name is Katie. I am a detail oriented front-end developer who finds joy in keeping my files organized,
-    writing clean, modular code, and, believe it or not, working in CSS.
-   </p>
-   <p>
-     I come with a background in digital marketing and web development. If this comes as a surprise, once you meet me
-     it will soon make sense. I literally just love websites. That’s why I sought to learn about how website can convert
-     visitors into customers, how they do so using colors, content, and layouts, and have spent my career so far learning
-    about SEO.
-   </p>
-   <p>
-     I have since worked in both B2C and B2B digital marketing as well as joined a web development team where I create
-     websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
-   </p>
-   <p>
-     Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a
-     marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that
-     has drawn me to both fields.
-   </p>
- </div>
-</div>
-
-<!-- <div id="contact">
-  <div class="card">
-   <h2>Contact me for Freelance Work or a Resume</h2>
-   <p>I'll get back to you within 3 days</p>
-   <form action="https://formspree.io/ktagilbert@gmail.com"
-       method="POST">
-    <label>Your Name</label><br/>
-     <input class="text" type="text" name="name" required><br/>
-     <label>Email</label><br/>
-     <input class="text" type="email" name="_replyto" required><br/>
-     <label>What Can I do for you?</label><br/>
-     <textarea class="text" placeholder="Your message" required></textarea><br/>
-     <input type="submit" id="submit" value="Send">
-  </form>
- </div>
-</div> -->
-
-
-<a name="article-content">
-  <div class="main-content">
-</a>
-  <div class="post-wrapper">
-
-    <div class="search">
-      <i class="fa fa-search"></i>
-      <input type="text" id="search-text" name="search">
+<section>
+  <div class="page-header" style="background: url('assets/cool-flowers.jpg');">
+      <div class="home-overlay">
+      <div class="container home-header">
+        <h1 class="text-center hero-header">Katie Gilbert</h1>
+        <h3 class="text-center">Technical Marketer</h3>
+      </div>
+      <p class="header-cta text-center"><a href="#">View My Portfolio</a></p>
     </div>
-
-    <div id="no-results">
-      <p>Sorry, I haven't blogged about that yet. Try again?</p>
-    </div>
-
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li class="article">
-        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <img itemprop="image" src="{{ site.baseurl }}/assets/{{ post.image }}" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">{{ post.excerpt }}</p>
-      </li>
-    {% endfor %}
-
-  </ul>
-
-{% if paginator.total_pages > 1 %}
-<div class="pagination col-md-12 text-center">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | append: "#article-content" | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | append: "#article-content" | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | append: "#article-content" | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | append: "#article-content" |  replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
   </div>
-{% endif %}
-</div>
-</div>
-</div>
+</section>
+
+    <!--Contains the welcome message. Lowering the margin will change the height of the container-->
+<section>
+    <div class="home-absolute-container">
+      <div class="intro-header">
+        <div class="col-lg-12 text-center">
+            <h1>Welcome!</h1>
+            <br/>
+        </div>
+
+        <div class="col-lg-12">
+            <p class="intro-text text-center">
+              Hi, my name is Katie. I am a detail oriented front-end developer who finds joy in keeping my files
+              organized, writing clean, modular code, and, believe it or not, working in CSS.
+            </p>
+            <p class="intro-text">
+              I come with a background in digital marketing and web development. If this comes as a surprise, once you
+              meet me it will soon make sense. I literally just love websites. That’s why I sought to learn about how
+              website can convert visitors into customers, how they do so using colors, content, and layouts, and have
+              spent my career so far learning about SEO.
+            </p>
+            <p class="intro-text">
+              I have since worked in both B2C and B2B digital marketing as well as joined a web development team where
+              I create websites for clients, build SEO strategies, and educate other departments about SEO and inbound
+              marketing.
+            </p>
+            <p class="intro-text">
+              Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that has drawn me to both fields.
+            </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="three-col">
+    <div class="container-fluid">
+      <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-heart fa-center" aria-hidden="true"></i>
+          <h3 class="column-header text-center">Digital Marketing</h3>
+          <p>I spent the first two years of my career focusing on B2C Marketing
+            and the last year on B2B marketing. Meaning, I can help you with whatever audience you are trying to target.
+            I am adapt at creating personas to help you define and target your audience in a more strategic mnanner and can then
+            move on to defining some KPIs that we can work together to achieve. Once we know what your business goals are, I will work
+            to meet them using a combination of strategic SEO efforts and content marketing.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-eye fa-center" aria-hidden="true"></i>
+          <h3 class="column-header text-center">Copywriting</h3>
+          <p>I studied English, Creative Writing and Journalism during my three years at Seattle University. I have since taken over
+            online content creation for two different companies. Now, I am excited to dothe same for you. I can help with website content,
+            blog articles, and even social media content creation. Just let me know what you are looking for in an
+            <a href="mailto:ktagilbert@gmail.com">email</a> today or <a href="/portfolio/">head over to my portfolio</a> to read some of my work.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-check-square-o fa-center" aria-hidden="true"></i>
+          <h3 class="column-header text-center">Web Development</h3>
+          <p>
+            I am a front-end web developer who can help you build static websites. These can help you display the value of your comapny
+            and create a good first impression with new visitors and potential customers. It is my goal to create websites that will make you
+            look good and will you attract new customers. Plus, each website I make will include key on-page SEO elements such as sitemaps, robots.txt files,
+            alt-text for all your images, and canonical urls. <a href="mailto:ktagilbert@gmail.com">Reach out to me today</a> to learn more!
+          </p>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="visit-checklist">
+    <div class="container">
+      <h2 class="text-center">How To Get Started</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <ul>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>Send me an Email including what your services you are looking for</li>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>I'll send you a strategy proposal for your approval</li>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>Once approved I'll send you an email with some simple questions to help get you started toward growing your digital presence</li>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>I'll start working and send you bi-monthly updates on how everything is going.</li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center">
+           <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form">
+    <div class="container">
+      <h2 class="text-center">Reach Out to Me Today</h2>
+      <form action="mail.php" method="GET | POST">
+        <label>Name</label><br/>
+        <input type="text" name="name"><br/>
+        <label>Phone Number</label><br/>
+        <input type="text" name="phone-number"><br/>
+        <label>Reason for Appointment</label><br/>
+        <select class="dropdown" name="dropdown">
+          <option value="contacts">Ask about/order contacts</option>
+          <option value="glasses">Ask about/order Glasses</option>
+          <option value="exam">Schedule an Eye Exam</option>
+        </select>
+        <input type="submit" value="Submit" class="submit">
+      </form>
+
+    </div>
+  </section>

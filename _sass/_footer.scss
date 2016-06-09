@@ -58,3 +58,11 @@ sticky footer
 		font-size: 12px;
 	}
 }
+
+@media(max-width: 750px) {
+	.footer-content {
+		h3 {
+			font-size: 18px;
+		}
+	}
+}

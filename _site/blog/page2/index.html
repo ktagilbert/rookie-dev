@@ -27,7 +27,7 @@
    <link rel="stylesheet" href="/css/main.css">
    <link rel="canonical" href="ktgilbert.com//blog/page2/">
    <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
-
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Neuton:400,300|Ovo' rel='stylesheet' type='text/css'>
 
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,33 +54,29 @@
     ga('create', 'UA-55144371-2', 'auto');
     ga('send', 'pageview');
   </script>
-
-  <script src="//load.sumome.com/" data-sumo-site-id="cc1befe725826873b8e3ea65b755ae587661065149cd815eb2b2331e9c5c7c2d" async="async"></script>
-
-
   <script>
-  $(document).ready(function() {
-
-    //make .page-heading the height of the screen
-    function setHeight() {
-      windowHeight = $(window).innerHeight();
-      $('.page-heading').css('min-height', windowHeight);
-    };
-    setHeight();
-
-    $(window).resize(function() {
-      setHeight();
-    });
-
-    //overlay on portfolio items
-    $('.folio-item').each(function(item) {
-      $(this).on('mouseover', function() {
-        $('.overlay').eq(item).show();
-      })
-      $('.folio-item').on('mouseleave', function() {
-        $('.overlay').hide();
-      })
-    });
+  // $(document).ready(function() {
+  //
+  //   //make .page-heading the height of the screen
+  //   function setHeight() {
+  //     windowHeight = $(window).innerHeight();
+  //     $('.page-heading').css('min-height', windowHeight);
+  //   };
+  //   setHeight();
+  //
+  //   $(window).resize(function() {
+  //     setHeight();
+  //   });
+  //
+  //   //overlay on portfolio items
+  //   $('.folio-item').each(function(item) {
+  //     $(this).on('mouseover', function() {
+  //       $('.overlay').eq(item).show();
+  //     })
+  //     $('.folio-item').on('mouseleave', function() {
+  //       $('.overlay').hide();
+  //     })
+  //   });
 
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
@@ -137,7 +133,7 @@
 
             if (scroll_start > offset.top) {
               $("#menu").stop().animate({
-                backgroundColor:'rgba(235, 65, 68, 0.9)'}, "500");
+                backgroundColor:'#43b5db'}, "500");
               $('.menu-item').css("color", "#fff");
               $('.menu-item').children().css("color", "#fff");
               $(".fa-twitter").css("color", "#fff");
@@ -146,10 +142,10 @@
             } else {
               $('#menu').stop().animate({
                 backgroundColor: 'transparent'}, "700");
-              $('.menu-item').children().css("color", "#1D1E18");
-              $(".fa-twitter").css("color", "#1D1E18")
-              $(".fa-github").css("color", "#1D1E18");
-              $(".fa-envelope").css("color", "#1D1E18");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff")
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
             }
         });
       }
@@ -186,6 +182,7 @@
   <ul>
     <li class="menu-item pull-left"><a href="/">Home</li>
     <li class="menu-item pull-left"><a href="/portfolio/">Portfolio</a></li>
+    <li class="menu-item pull-left"><a href="/blog.html">Blog</a></li>
     <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
     <li class="menu-item pull-right"><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
     <li class="menu-item pull-right"><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
@@ -195,182 +192,141 @@
 </header>
 
     <!--<div class="page-content">-->
-    <div class="page-content">
-        <div class="home">
 
-<header class="page-heading">
-    <span class="col-md-12 logo">
-      <h1 id="line-one">Katie Gilbert</h1>
-      <h2 class="tagline">Web Development Blog & Portfolio</h2>
-      <i class="fa fa-chevron-down"></i>
-    </span>
-</header>
-
-
-<div class="wrapper">
-  <div id="background">
-   <h2 id="background-header">My Background</h2>
-   <p id=intro-paragraph>
-    Hi, my name is Katie. I am a detail oriented front-end developer who finds joy in keeping my files organized,
-    writing clean, modular code, and, believe it or not, working in CSS.
-   </p>
-   <p>
-     I come with a background in digital marketing and web development. If this comes as a surprise, once you meet me
-     it will soon make sense. I literally just love websites. That’s why I sought to learn about how website can convert
-     visitors into customers, how they do so using colors, content, and layouts, and have spent my career so far learning
-    about SEO.
-   </p>
-   <p>
-     I have since worked in both B2C and B2B digital marketing as well as joined a web development team where I create
-     websites for clients, build SEO strategies, and educate other departments about SEO and inbound marketing.
-   </p>
-   <p>
-     Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a
-     marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that
-     has drawn me to both fields.
-   </p>
- </div>
-</div>
-
-<!-- <div id="contact">
-  <div class="card">
-   <h2>Contact me for Freelance Work or a Resume</h2>
-   <p>I'll get back to you within 3 days</p>
-   <form action="https://formspree.io/ktagilbert@gmail.com"
-       method="POST">
-    <label>Your Name</label><br/>
-     <input class="text" type="text" name="name" required><br/>
-     <label>Email</label><br/>
-     <input class="text" type="email" name="_replyto" required><br/>
-     <label>What Can I do for you?</label><br/>
-     <textarea class="text" placeholder="Your message" required></textarea><br/>
-     <input type="submit" id="submit" value="Send">
-  </form>
- </div>
-</div> -->
-
-
-<a name="article-content">
-  <div class="main-content">
-</a>
-  <div class="post-wrapper">
-
-    <div class="search">
-      <i class="fa fa-search"></i>
-      <input type="text" id="search-text" name="search">
+    <div>
+        <section>
+  <div class="page-header" style="background: url('assets/cool-flowers.jpg');">
+      <div class="home-overlay">
+      <div class="container home-header">
+        <h1 class="text-center hero-header">Katie Gilbert</h1>
+        <h3 class="text-center">Technical Marketer</h3>
+      </div>
+      <p class="header-cta text-center"><a href="#">View My Portfolio</a></p>
     </div>
-
-    <div id="no-results">
-      <p>Sorry, I haven't blogged about that yet. Try again?</p>
-    </div>
-
-  <ul class="post-list">
-    
-      <li class="article">
-        <!-- <span class="post-meta">Dec 3, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/content-workflow">How to Improve Your Copywriting Workflow</a>
-          <a href="/blog/content-workflow">
-            <img itemprop="image" src="/assets/copywriter.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
-</p>
-      </li>
-    
-      <li class="article">
-        <!-- <span class="post-meta">Oct 17, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/UI">An Intro to UI Design Basics</a>
-          <a href="/blog/UI">
-            <img itemprop="image" src="/assets/uxpic.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works. UI design stands for user interface design. It entails creating an interface that works for your targeted user.
-</p>
-      </li>
-    
-      <li class="article">
-        <!-- <span class="post-meta">Sep 23, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/responsive-nav-bar">Tutorial: Making a Responsive Navigation Bar</a>
-          <a href="/blog/responsive-nav-bar">
-            <img itemprop="image" src="/assets/learningJS.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
-</p>
-      </li>
-    
-      <li class="article">
-        <!-- <span class="post-meta">Sep 12, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/breaking-into-web-development">Breaking Into Web Development (In Small Steps)</a>
-          <a href="/blog/breaking-into-web-development">
-            <img itemprop="image" src="/assets/learning-steps.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires some dedication and a willingness to learn/ask questions.
-</p>
-      </li>
-    
-      <li class="article">
-        <!-- <span class="post-meta">Sep 5, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/mediaquery">Learning About Media Queries</a>
-          <a href="/blog/mediaquery">
-            <img itemprop="image" src="/assets/designer-board-typo-word.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop.                                                                                                                                                                   
-</p>
-      </li>
-    
-      <li class="article">
-        <!-- <span class="post-meta">Aug 5, 2015</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="/blog/resources">Great Resources For Learning JavaScript</a>
-          <a href="/blog/resources">
-            <img itemprop="image" src="/assets/programming.jpg" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">So I know from experience that learning JavaScript can be *very* challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help.
-</p>
-      </li>
-    
-
-  </ul>
-
-
-<div class="pagination col-md-12 text-center">
-  
-    <a href="/index.html#article-content">&laquo; Prev</a>
-  
-
-  
-    
-      <a href="/index.html#article-content">1</a>
-    
-  
-    
-      <em>2</em>
-    
-  
-    
-      <a href="/blog/page3/#article-content">3</a>
-    
-  
-
-  
-    <a href="/blog/page3/#article-content">Next &raquo;</a>
-  
   </div>
+</section>
 
-</div>
-</div>
-</div>
+    <!--Contains the welcome message. Lowering the margin will change the height of the container-->
+<section>
+    <div class="home-absolute-container">
+      <div class="intro-header">
+        <div class="col-lg-12 text-center">
+            <h1>Welcome!</h1>
+            <br/>
+        </div>
+
+        <div class="col-lg-12">
+            <p class="intro-text text-center">
+              Hi, my name is Katie. I am a detail oriented front-end developer who finds joy in keeping my files
+              organized, writing clean, modular code, and, believe it or not, working in CSS.
+            </p>
+            <p class="intro-text">
+              I come with a background in digital marketing and web development. If this comes as a surprise, once you
+              meet me it will soon make sense. I literally just love websites. That’s why I sought to learn about how
+              website can convert visitors into customers, how they do so using colors, content, and layouts, and have
+              spent my career so far learning about SEO.
+            </p>
+            <p class="intro-text">
+              I have since worked in both B2C and B2B digital marketing as well as joined a web development team where
+              I create websites for clients, build SEO strategies, and educate other departments about SEO and inbound
+              marketing.
+            </p>
+            <p class="intro-text">
+              Front-end web development is something that I enjoy doing but it's also an incredibly valuable skill to have as a marketer. I believe that both marketing and programming combines logic with creativity. It is the combination that has drawn me to both fields.
+            </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="three-col">
+    <div class="container-fluid">
+      <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-heart fa-center" aria-hidden="true"></i>
+          <h3 class="column-header text-center">Digital Marketing</h3>
+          <p>I spent the first two years of my career focusing on B2C Marketing
+            and the last year on B2B marketing. Meaning, I can help you with whatever audience you are trying to target.
+            I am adapt at creating personas to help you define and target your audience in a more strategic mnanner and can then
+            move on to defining some KPIs that we can work together to achieve. Once we know what your business goals are, I will work
+            to meet them using a combination of strategic SEO efforts and content marketing.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-eye fa-center" aria-hidden="true"></i>
+          <h3 class="column-header text-center">Copywriting</h3>
+          <p>I studied English, Creative Writing and Journalism during my three years at Seattle University. I have since taken over
+            online content creation for two different companies. Now, I am excited to dothe same for you. I can help with website content,
+            blog articles, and even social media content creation. Just let me know what you are looking for in an
+            <a href="mailto:ktagilbert@gmail.com">email</a> today or <a href="/portfolio/">head over to my portfolio</a> to read some of my work.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-check-square-o fa-center" aria-hidden="true"></i>
+          <h3 class="column-header text-center">Web Development</h3>
+          <p>
+            I am a front-end web developer who can help you build static websites. These can help you display the value of your comapny
+            and create a good first impression with new visitors and potential customers. It is my goal to create websites that will make you
+            look good and will you attract new customers. Plus, each website I make will include key on-page SEO elements such as sitemaps, robots.txt files,
+            alt-text for all your images, and canonical urls. <a href="mailto:ktagilbert@gmail.com">Reach out to me today</a> to learn more!
+          </p>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="visit-checklist">
+    <div class="container">
+      <h2 class="text-center">How To Get Started</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <ul>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>Send me an Email including what your services you are looking for</li>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>I'll send you a strategy proposal for your approval</li>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>Once approved I'll send you an email with some simple questions to help get you started toward growing your digital presence</li>
+            <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>I'll start working and send you bi-monthly updates on how everything is going.</li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center">
+           <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form">
+    <div class="container">
+      <h2 class="text-center">Reach Out to Me Today</h2>
+      <form action="mail.php" method="GET | POST">
+        <label>Name</label><br/>
+        <input type="text" name="name"><br/>
+        <label>Phone Number</label><br/>
+        <input type="text" name="phone-number"><br/>
+        <label>Reason for Appointment</label><br/>
+        <select class="dropdown" name="dropdown">
+          <option value="contacts">Ask about/order contacts</option>
+          <option value="glasses">Ask about/order Glasses</option>
+          <option value="exam">Schedule an Eye Exam</option>
+        </select>
+        <input type="submit" value="Submit" class="submit">
+      </form>
 
     </div>
+  </section>
+
+    </div>
+
   <footer class="site-footer">
     <div class="footer-content">
       <h3>Do You Like What You See Here?</h4>

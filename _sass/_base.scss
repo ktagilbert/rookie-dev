@@ -6,13 +6,6 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: "Pt Sans", "sans-serif";
-      padding-bottom: 30px;
-      font-weight: bold;
-      color: #292768;;
-  }
 }
 
 p, li {
@@ -28,6 +21,7 @@ p, li {
 html {
   position: relative;
   min-height: 100%;
+  max-width: 100%;
 }
 body {
     display: block;
@@ -35,6 +29,7 @@ body {
     font-size: 18px;
     line-height: $base-line-height;
     font-weight: 300;
+    max-width: 100%;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -111,10 +106,10 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     text-decoration: none;
-    color: #EB4144;
+    color: rgb(67, 181, 219);
 
     &:hover {
-        color: #1D1E18;
+        color: rgb(67, 181, 219);
         text-decoration: underline;
     }
 }
@@ -222,4 +217,16 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+@media (min-width: 1200px) {
+.container {
+    max-width: 100% !important;
+    margin-right: 0;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-right: 0;
 }

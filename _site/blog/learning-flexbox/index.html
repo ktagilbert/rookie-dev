@@ -27,7 +27,7 @@
    <link rel="stylesheet" href="/css/main.css">
    <link rel="canonical" href="ktgilbert.com//blog/learning-flexbox">
    <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
-
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Neuton:400,300|Ovo' rel='stylesheet' type='text/css'>
 
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,33 +54,29 @@
     ga('create', 'UA-55144371-2', 'auto');
     ga('send', 'pageview');
   </script>
-
-  <script src="//load.sumome.com/" data-sumo-site-id="cc1befe725826873b8e3ea65b755ae587661065149cd815eb2b2331e9c5c7c2d" async="async"></script>
-
-
   <script>
-  $(document).ready(function() {
-
-    //make .page-heading the height of the screen
-    function setHeight() {
-      windowHeight = $(window).innerHeight();
-      $('.page-heading').css('min-height', windowHeight);
-    };
-    setHeight();
-
-    $(window).resize(function() {
-      setHeight();
-    });
-
-    //overlay on portfolio items
-    $('.folio-item').each(function(item) {
-      $(this).on('mouseover', function() {
-        $('.overlay').eq(item).show();
-      })
-      $('.folio-item').on('mouseleave', function() {
-        $('.overlay').hide();
-      })
-    });
+  // $(document).ready(function() {
+  //
+  //   //make .page-heading the height of the screen
+  //   function setHeight() {
+  //     windowHeight = $(window).innerHeight();
+  //     $('.page-heading').css('min-height', windowHeight);
+  //   };
+  //   setHeight();
+  //
+  //   $(window).resize(function() {
+  //     setHeight();
+  //   });
+  //
+  //   //overlay on portfolio items
+  //   $('.folio-item').each(function(item) {
+  //     $(this).on('mouseover', function() {
+  //       $('.overlay').eq(item).show();
+  //     })
+  //     $('.folio-item').on('mouseleave', function() {
+  //       $('.overlay').hide();
+  //     })
+  //   });
 
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
@@ -137,7 +133,7 @@
 
             if (scroll_start > offset.top) {
               $("#menu").stop().animate({
-                backgroundColor:'rgba(235, 65, 68, 0.9)'}, "500");
+                backgroundColor:'#43b5db'}, "500");
               $('.menu-item').css("color", "#fff");
               $('.menu-item').children().css("color", "#fff");
               $(".fa-twitter").css("color", "#fff");
@@ -146,10 +142,10 @@
             } else {
               $('#menu').stop().animate({
                 backgroundColor: 'transparent'}, "700");
-              $('.menu-item').children().css("color", "#1D1E18");
-              $(".fa-twitter").css("color", "#1D1E18")
-              $(".fa-github").css("color", "#1D1E18");
-              $(".fa-envelope").css("color", "#1D1E18");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff")
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
             }
         });
       }
@@ -186,6 +182,7 @@
   <ul>
     <li class="menu-item pull-left"><a href="/">Home</li>
     <li class="menu-item pull-left"><a href="/portfolio/">Portfolio</a></li>
+    <li class="menu-item pull-left"><a href="/blog.html">Blog</a></li>
     <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
     <li class="menu-item pull-right"><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
     <li class="menu-item pull-right"><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
@@ -195,7 +192,8 @@
 </header>
 
     <!--<div class="page-content">-->
-    <div class="page-content">
+
+    <div>
         <!DOCTYPE html>
 <html>
 <div itemscope itemtype="http://schema.org/Article" class="post">
@@ -352,6 +350,7 @@
 </html>
 
     </div>
+
   <footer class="site-footer">
     <div class="footer-content">
       <h3>Do You Like What You See Here?</h4>
