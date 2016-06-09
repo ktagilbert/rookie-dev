@@ -55,28 +55,6 @@
     ga('send', 'pageview');
   </script>
   <script>
-  // $(document).ready(function() {
-  //
-  //   //make .page-heading the height of the screen
-  //   function setHeight() {
-  //     windowHeight = $(window).innerHeight();
-  //     $('.page-heading').css('min-height', windowHeight);
-  //   };
-  //   setHeight();
-  //
-  //   $(window).resize(function() {
-  //     setHeight();
-  //   });
-  //
-  //   //overlay on portfolio items
-  //   $('.folio-item').each(function(item) {
-  //     $(this).on('mouseover', function() {
-  //       $('.overlay').eq(item).show();
-  //     })
-  //     $('.folio-item').on('mouseleave', function() {
-  //       $('.overlay').hide();
-  //     })
-  //   });
 
     //search function
     $('.fa-search').on('click', function(event) { // on click of search icon
@@ -180,9 +158,9 @@
 
 <nav id="menu" class="navbar navbar-default" role="navigation">
   <ul>
-    <li class="menu-item pull-left"><a href="/">Home</li>
+    <li class="menu-item pull-left"><a href="/">Home</a></li>
     <li class="menu-item pull-left"><a href="/portfolio/">Portfolio</a></li>
-    <li class="menu-item pull-left"><a href="/blog.html">Blog</a></li>
+    <li class="menu-item pull-left"><a href="/blog/">Blog</a></li>
     <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
     <li class="menu-item pull-right"><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
     <li class="menu-item pull-right"><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
@@ -342,15 +320,39 @@
     </div>
 
   <footer class="site-footer">
-    <div class="footer-content">
-      <h3>Do You Like What You See Here?</h4>
+  <div class="row">
+    <div class="col-lg-12 social-icons-row">
+      <ul id="social-icons">
+        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://plus.google.com/u/0/+KatieGilbertStoryArch"><i class="fa fa-google-plus" aria-hidden="true"></a></i></li>
+        <li><a href="https://twitter.com/@KT_a_Gilbert"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
       <ul class="footer-list">
-        <li><a href="mailto:ktagilbert@gmail.com">send me an email to get in contact sometime</a></li>
-        <li><a href="https://www.linkedin.com/in/gilbertkatie" target="_blank">site designed by Katie Gilbert</a></li>
-        <li>© 2016—2017 all rights reserved</li>
-     </ul>
-   </div>
-
+        <li>Home</li>
+        <li>Portfolio</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+      <div class="col-lg-3">
+        <ul class="footer-list">
+          <li><a href="tel:971-212-3698"></a></li>
+          <li><a href="mailto:ktagilbert@gmail.com"></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <p class="text-small pull-right">Point Dexter is a local eye care clinic. We take eye health seriously and make your comfort our top priority. That is why we offer modern eye exam practices and
+          take the time to make sure you choose the right pair of glasses or contacts for your lifestyle. What can we do for you today?
+        </p>
+        <p class="text-small pull-right">Copyright© 2016-2017</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 </body>

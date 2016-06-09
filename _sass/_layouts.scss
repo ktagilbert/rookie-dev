@@ -3,7 +3,7 @@ about page
 *********************************/
 
 .page-header {
-  height: 300px;
+  height: 300px !important;
   background: $skyblue url('/assets/shattered.png');
   margin-bottom: 3%;
   margin-top: 0;
@@ -11,11 +11,19 @@ about page
   border: none;
 }
 
-// .header-1 {
-//   font-size: 4em;
-//   padding-top: 120px;
-//   text-align: center;
-// }
+.header-1 {
+    text-align: center;
+    padding-top: 50px;
+    color: #111;
+    font-weight: bold;
+    padding-top: 110px !important;
+}
+
+.page-header {
+  .header-1 {
+    font-size: 3em;
+  }
+}
 
 .blue-page-header {
   z-index: -1;
@@ -30,21 +38,21 @@ about page
   background-position: center;
 }
 
-@media(max-width: 650px) {
-  .blue-page-header {
-    display: none;
-  }
-  .text-wrapper {
-    width: 90%;
-  }
-  .wrapper {
-    width: 100%;
-    margin: 0;
-  }
-  .post-title {
-    margin: 1%;
-  }
-}
+// @media(max-width: 650px) {
+//   .blue-page-header {
+//     display: none;
+//   }
+//   .text-wrapper {
+//     width: 90%;
+//   }
+//   .wrapper {
+//     width: 100%;
+//     margin: 0;
+//   }
+//   .post-title {
+//     margin: 1%;
+//   }
+// }
 
 .absolute-container {
   position: relative;
@@ -69,79 +77,6 @@ about page
   }
 }
 
-// /*********************************
-// contact form
-// *********************************/
-// #contact {
-//   text-align: center;
-//   background-color: $skyblue;
-//   width: 100%;
-//   padding: 5% 0;
-//
-//   h2 {
-//     color: #111;
-//     padding: 0;
-//   }
-// }
-//
-// .card {
-//   width: 70%;
-//   margin: auto;
-//   background-color: #fff;
-//   height: 95%;
-//   padding: 5% 0;
-//   border: 1px solid #777;
-// }
-//
-// @media(max-width: 800px) {
-//   .card {
-//     width: 90%;
-//   }
-// }
-//
-// @media(max-width: 850px) {
-//   form {
-//     input, textarea {
-//       width: 70% !important;
-//     }
-//   }
-// }
-//
-// form {
-//   padding: 50px 0;
-//
-//   input, textarea {
-//     border: none;
-//     border-bottom: 1px solid #666;
-//     width: 40%;
-//     height: 50px;
-//   }
-//   .text {
-//     outline: none;
-//     font-size: 1em;
-//     margin: 10px;
-//   }
-//   textarea {
-//     outline: none;
-//     padding: 10px;
-//   }
-//   label {
-//     font-family: 'PT Sans', sans-serif;
-//     font-size: 0.8em;
-//   }
-//   #submit {
-//     background-color: transparent;
-//     margin: 50px;
-//     border: 1px solid;
-//
-//     &:hover {
-//       background-color: #111;
-//       color: #fff;
-//     }
-//   }
-// }
-
-
 /*********************************
 portfolio page
 *********************************/
@@ -149,7 +84,7 @@ portfolio page
 	text-align: center;
 	margin-top: 5%;
 	padding: 5% 0;
-	margin: 0 15%;
+	margin: 0% 5%;
 
 	h1 {
 		color: $orange;

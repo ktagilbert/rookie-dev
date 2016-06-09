@@ -196,6 +196,131 @@ fonts
 @media (max-width: 700px) {
   h2 {
     font-size: 2em; } }
+.blog-page-articles {
+  text-align: left;
+  width: 60%;
+  margin: auto; }
+  .blog-page-articles .post-list {
+    display: block; }
+  .blog-page-articles .post-link {
+    width: 100%;
+    text-align: left; }
+  .blog-page-articles h3 {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .blog-page-articles img {
+    width: 30%;
+    float: left;
+    margin-right: 3%; }
+  .blog-page-articles li {
+    margin: 3% 0;
+    float: right;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #666; }
+  .blog-page-articles p {
+    color: #111; }
+
+@media (max-width: 850px) {
+  .blog-page-articles {
+    width: 100%;
+    margin: auto; }
+    .blog-page-articles .article {
+      margin: 3% 2%;
+      padding-bottom: 5%;
+      border-bottom: 1px solid #666;
+      background-color: #fff;
+      padding: 5%;
+      border: none; }
+    .blog-page-articles .index-img {
+      width: 100%;
+      padding-bottom: 5%;
+      margin: auto; }
+    .blog-page-articles .post-meta {
+      display: none; }
+    .blog-page-articles p {
+      text-align: left;
+      padding: 0; } }
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10%; }
+  .post-list .row {
+    margin: auto;
+    float: left; }
+
+#blog .post-list .article {
+  margin-bottom: 30px;
+  padding: 2%; }
+
+#blog .blog-list-header h2 {
+  padding-bottom: 0;
+  color: #111; }
+  #blog .blog-list-header h2 a {
+    color: #111; }
+  #blog .blog-list-header h2 a:hover {
+    color: #43b5db; }
+
+.post-link {
+  display: block;
+  color: #666;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5%;
+  vertical-align: text-top;
+  margin: auto !important;
+  width: 100%;
+  text-align: left; }
+
+@media (max-width: 1000px) {
+  #blog {
+    padding-bottom: 5%; }
+    #blog .post-list .article {
+      display: none; }
+    #blog .post-list .article:first-of-type {
+      display: initial; }
+      #blog .post-list .article:first-of-type p {
+        text-align: left; } }
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: 30px; }
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-top: 25%; }
+  @media screen and (max-width: 800px) {
+    .post-title {
+      font-size: 36px; } }
+
+.post-content {
+  margin-bottom: 30px; }
+  .post-content h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 800px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+  .post-content a {
+    color: #666;
+    font-weight: bold; }
+  .post-content ul, .post-content li {
+    font-size: 18px;
+    padding-bottom: 2%; }
+
 /*********************************
 search field
 *********************************/
@@ -294,7 +419,7 @@ body div.page-header div p:hover {
   cursor: pointer;
   background-color: rgba(173, 216, 230, 0.2); }
 
-.page-header .header-cta a {
+.home-page-header .header-cta a {
   cursor: pointer; }
 
 .home-absolute-container {
@@ -390,7 +515,7 @@ input {
 
   h1 {
     padding: 4% 0 0; } }
-.page-header {
+.home-page-header {
   z-index: -1;
   right: 0;
   color: #fff;
@@ -419,6 +544,10 @@ input {
   font-size: 15em;
   margin: 5% 0 0 25%;
   color: #fff; }
+
+.three-col {
+  border-top: 1px solid #fcc118;
+  padding-top: 80px; }
 
 body > section.three-col > div > div > div > div > i {
   display: block;
@@ -449,27 +578,6 @@ Post styling
 .post-content {
   margin-bottom: 80px; }
 
-.post-list {
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 0px;
-  flex-wrap: wrap;
-  margin-bottom: 5%;
-  margin-left: 0;
-  display: inline-flex; }
-  .post-list > li {
-    width: 27%;
-    padding: 30px;
-    clear: none;
-    display: inline-block;
-    align-items: center; }
-  .post-list > img, .post-list .index-img {
-    align-items: center;
-    display: inline-flex;
-    overflow: hidden; }
-  .post-list > .excerpt {
-    align-items: baseline; }
-
 .post h3 {
   text-align: center;
   padding-bottom: 40px; }
@@ -480,7 +588,7 @@ Post styling
   font-size: 2.5em;
   text-align: center;
   margin: 0;
-  color: #43b5db; }
+  padding-top: 80px; }
 
 .post-meta {
   text-align: center;
@@ -491,7 +599,6 @@ Post styling
   display: block;
   color: #5a5a5a;
   font-weight: 900;
-  height: 120px;
   margin-bottom: 0; }
 
 .post-nav-title {
@@ -521,14 +628,6 @@ Post styling
 img {
   max-width: 100%;
   max-height: 100%; }
-
-.post-header {
-  margin-bottom: 1%;
-  opacity: 1; }
-  .post-header .post-title {
-    text-align: center;
-    padding: 100px 2% 2%;
-    font-weight: 600; }
 
 @media-query (max-width: 720px) {
   .post-header {
@@ -693,62 +792,57 @@ media queries
 sticky footer
 *********************************/
 .site-footer {
-  border: 2px solid #222;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  height: 200px;
-  background-color: rgba(173, 216, 230, 0.2);
-  top: 100%;
-  clear: both; }
-  .site-footer a, .site-footer a:visited {
-    color: #fff;
-    text-shadow: none; }
-  .site-footer a:hover {
-    color: #fff;
-    text-decoration: underline; }
-
-.footer-content {
+  background-color: #1A6B86;
   color: #fff;
-  text-align: right;
-  width: 100%;
-  padding: 10px 10px 0 10px;
-  font-size: 1.5em;
-  float: right;
+  clear: both;
   position: absolute;
-  bottom: 1.5%; }
-  .footer-content h3 {
-    padding-bottom: 0px;
-    color: #fff;
-    font-family: 700;
-    font-size: 1em;
-    font-family: "PT Sans", "sans-serif"; }
+  top: 100%; }
 
-.footer-list li {
-  text-align: right;
-  font-family: pt sans;
-  font-size: 16px;
+.site-footer > ul, li {
   list-style: none;
-  padding: 5px;
-  line-height: 1;
-  display: block;
-  font-family: "PT Sans", "sans-serif"; }
-.footer-list li:last-of-type {
-  font-size: 12px; }
+  display: inline-block;
+  padding: 20px;
+  font-size: 14px; }
 
-@media (max-width: 750px) {
-  .footer-content h3 {
-    font-size: 18px; } }
+.site-footer > #social-icons > li {
+  padding: 0 20px;
+  margin: 0; }
+
+.site-footer > #social-icons > li > a > i {
+  color: #fff; }
+
+.site-footer > #social-icons > li > a > i:hover {
+  font-size: 1.1em; }
+
+.site-footer > #social-icons {
+  padding: 0;
+  margin: 0; }
+
+.social-icons-row {
+  text-align: center;
+  height: 70px;
+  background-color: #2599BF; }
+
 /*********************************
 about page
 *********************************/
 .page-header {
-  height: 300px;
+  height: 300px !important;
   background: #43b5db url("/assets/shattered.png");
   margin-bottom: 3%;
   margin-top: 0;
   width: 100%;
   border: none; }
+
+.header-1 {
+  text-align: center;
+  padding-top: 50px;
+  color: #111;
+  font-weight: bold;
+  padding-top: 110px !important; }
+
+.page-header .header-1 {
+  font-size: 3em; }
 
 .blue-page-header {
   z-index: -1;
@@ -762,19 +856,6 @@ about page
   background-size: 100%;
   background-position: center; }
 
-@media (max-width: 650px) {
-  .blue-page-header {
-    display: none; }
-
-  .text-wrapper {
-    width: 90%; }
-
-  .wrapper {
-    width: 100%;
-    margin: 0; }
-
-  .post-title {
-    margin: 1%; } }
 .absolute-container {
   position: relative;
   background-color: #fff;
@@ -801,7 +882,7 @@ portfolio page
   text-align: center;
   margin-top: 5%;
   padding: 5% 0;
-  margin: 0 15%; }
+  margin: 0% 5%; }
   #portfolio-intro h1 {
     color: #EB4144; }
   #portfolio-intro p {

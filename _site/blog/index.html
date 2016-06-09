@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal technical marketing blog and portfolio by Katie Gilbert in Portland, OR.
+    Visit to learn about web development, technical marketing, or to contact me for work.">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <title>
+     
+       Blog
+     
+   </title>
+
+ <!--open graph protocol -->
+ <meta property="og:title" content="Katie Gilbert | Freelance Technical Marketer" />
+ <meta property="og:type" content="website" />
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <!-- Latest compiled and minified JavaScript -->
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="canonical" href="ktgilbert.com//blog/">
+   <link rel="alternate" type="application/rss+xml" title="" href="ktgilbert.com//feed.xml" />
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Neuton:400,300|Ovo' rel='stylesheet' type='text/css'>
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Marketing Blog & Portfolio | Katie Gilbert</title>
+
+
+
+  <link rel="canonical" href="ktgilbert.com//blog/">
+
+  <link rel="stylesheet" rel="prefetch"  type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" rel="prefetch" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+  <link  rel="styelsheet" rel="prefetch" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans:400, 700" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55144371-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+
+    //search function
+    $('.fa-search').on('click', function(event) { // on click of search icon
+      $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
+    });
+
+    var $articleTitles = $('.post-link');
+    var searchTerm = "";
+
+    function search() {
+
+      $articleTitles.each(function(i, elem) { // search through each '.post-link' (aka the title of each post)
+        if ($(elem).text().toUpperCase().indexOf(searchTerm) === -1) { // if index of the user's input(aka. the string) is -1
+          $(elem).closest('.article').hide();  //hide articles
+          $('.article').css({
+            'width': '90%',
+            'margin': '0 5%'
+          });
+        } else { // else (if the string is greater -1)
+          $(elem).closest('.article').show(); // show the closest article in the search results
+          $('.article').css({
+            'width': '25%',
+            'margin': '0'
+          });
+        }
+      });
+      if ($('.article:hidden').length === $articleTitles.length) { //if no articles match the user's input, then show "no results found"
+        $('#no-results').show();
+       }
+     }
+
+     $("#search-text").on('keydown', function(e) { // this essentially watches which keys on the keyboard a user enters into the search field.
+       if (e.keyCode === 8) { //if a user presses keyCode 8 (aka backspace/delete)
+         if (searchTerm.length > 0) { // if the user's input doesn't contain anything
+           searchTerm = searchTerm.substring(0, searchTerm.length - 1); // extract the character from index position -1
+           $('#no-results').hide(); //hide "show no result"
+           search(); //run search function
+         }
+       } else {
+         searchTerm += String.fromCharCode(e.keyCode); // search term = the value of the string that is generated from the user's key presses.
+         search(); // run search function
+       }
+     });
+
+      //desktop nav bar changes color on scroll
+      var scroll_start = 0;
+      var startchange = $('p:first');
+      var offset = startchange.offset();
+
+        if (startchange.length || $('img')) {
+
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+
+            if (scroll_start > offset.top) {
+              $("#menu").stop().animate({
+                backgroundColor:'#43b5db'}, "500");
+              $('.menu-item').css("color", "#fff");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff");
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
+            } else {
+              $('#menu').stop().animate({
+                backgroundColor: 'transparent'}, "700");
+              $('.menu-item').children().css("color", "#fff");
+              $(".fa-twitter").css("color", "#fff")
+              $(".fa-github").css("color", "#fff");
+              $(".fa-envelope").css("color", "#fff");
+            }
+        });
+      }
+
+      //click on #home-arrow to scroll down to next section
+
+      $('.fa-chevron-down').on('click', function(event) {
+        event.preventDefault;
+        $('html, body').animate({
+          scrollTop: $("#background").offset().top
+        },900);
+      });
+
+      //open all links in a new tab
+      $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+
+        if(!a.test(this.href)) {
+            $(this).click(function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              window.open(this.href, '_blank');
+            });
+          }
+        });
+    });
+ </script>
+</head>
+
+<body>
+    <header class="site-header">
+
+<nav id="menu" class="navbar navbar-default" role="navigation">
+  <ul>
+    <li class="menu-item pull-left"><a href="/">Home</a></li>
+    <li class="menu-item pull-left"><a href="/portfolio/">Portfolio</a></li>
+    <li class="menu-item pull-left"><a href="/blog/">Blog</a></li>
+    <!-- <li class="menu-item"><a href="/jsstudy/">JS Study</a></li> -->
+    <li class="menu-item pull-right"><a href="https://twitter.com/KT_a_Gilbert"><i class="fa fa-twitter"></i></a></li>
+    <li class="menu-item pull-right"><a href="https://github.com/ktagilbert"><i class="fa fa-github"></i></a></li>
+    <li class="menu-item pull-right"><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
+  </ul>
+</nav>
+</header>
+
+    <!--<div class="page-content">-->
+
+    <div>
+        <!-- <p class="post-title">Blog</p> -->
+<div class="post">
+
+  	<article class="post-content">
+    	<div class="blog-page">
+
+<div class="page-header">
+  <h1 class="header-1">Technical Marketing Blog</h1>
+</div>
+
+
+<div class="container">
+<div class="search">
+  <i class="fa fa-search"></i>
+  <input type="text" id="search-text" name="search" />
+</div>
+</div>
+
+<div id="no-results">
+<p>Sorry, there are no results for that search. Try again?</p>
+</div>
+
+<div class="container blog-page-articles">
+<ul class="post-list">
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/confidence">My Imposter Syndrome Article</a>
+      <a href="/blog/confidence">
+          <img class="index-img" itemprop="image" src="/assets/skiing.jpeg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">Yesterday, I showed you how to install and set up your first Bootstrap project. So today, I am going to go over the benefits of using the framework and will go over a few elements that I found the most useful.
+</p>
+      <span class="post-meta pull-right">Mar 27, 2016</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/first-bootstrap-project-2">Your first Bootstrap Project - (Part 2)</a>
+      <a href="/blog/first-bootstrap-project-2">
+          <img class="index-img" itemprop="image" src="/assets/wireframe.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">Yesterday, I showed you how to install and set up your first Bootstrap project. So today, I am going to go over the benefits of using the framework and will go over a few elements that I found the most useful.
+</p>
+      <span class="post-meta pull-right">Feb 21, 2016</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/bootstrapExample">Your first Bootstrap Project - (Part 1)</a>
+      <a href="/blog/bootstrapExample">
+          <img class="index-img" itemprop="image" src="/assets/bootstrap.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">Now I know, Bootstrap is old news to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site.
+</p>
+      <span class="post-meta pull-right">Feb 20, 2016</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/client-side-search-function">A Client Side Search Function Made with jQuery</a>
+      <a href="/blog/client-side-search-function">
+          <img class="index-img" itemprop="image" src="/assets/layout.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">There are a TON of ways to make a search function. So that's why I had to sit down and think about what I could make using only the tools that I had at my disposal.The end result is a simple search function that does exactly what I need it to do. Here's how:
+</p>
+      <span class="post-meta pull-right">Jan 30, 2016</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/creating-custom-jekyll-homepage">How I Customized My Jekyll Home Page Layout</a>
+      <a href="/blog/creating-custom-jekyll-homepage">
+          <img class="index-img" itemprop="image" src="/assets/uxpost.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">When you start work on your new Jekyll powered site, you’ll have a super clean layout to work with. It’s pretty awesome. But, if you want to make your site look a little different, you’ll need to make some customizations yourself. Let's get started.
+</p>
+      <span class="post-meta pull-right">Jan 27, 2016</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/learning-flexbox">Learning About Flexbox (And Why It's a Great Tool)</a>
+      <a href="/blog/learning-flexbox">
+          <img class="index-img" itemprop="image" src="/assets/tooldbox.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements, which I think is super cool. All you have to do to get started is declare a flex container.
+</p>
+      <span class="post-meta pull-right">Jan 15, 2016</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/content-workflow">How to Improve Your Copywriting Workflow</a>
+      <a href="/blog/content-workflow">
+          <img class="index-img" itemprop="image" src="/assets/copywriter.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
+</p>
+      <span class="post-meta pull-right">Dec 3, 2015</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/UI">An Intro to UI Design Basics</a>
+      <a href="/blog/UI">
+          <img class="index-img" itemprop="image" src="/assets/uxpic.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">One of the lessons I learned later -  after how to make a site and create a stylesheet - is how to implement a UI Design that works. UI design stands for user interface design. It entails creating an interface that works for your targeted user.
+</p>
+      <span class="post-meta pull-right">Oct 17, 2015</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/responsive-nav-bar">Tutorial: Making a Responsive Navigation Bar</a>
+      <a href="/blog/responsive-nav-bar">
+          <img class="index-img" itemprop="image" src="/assets/learningJS.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
+</p>
+      <span class="post-meta pull-right">Sep 23, 2015</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/breaking-into-web-development">Breaking Into Web Development (In Small Steps)</a>
+      <a href="/blog/breaking-into-web-development">
+          <img class="index-img" itemprop="image" src="/assets/learning-steps.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires some dedication and a willingness to learn/ask questions.
+</p>
+      <span class="post-meta pull-right">Sep 12, 2015</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/mediaquery">Learning About Media Queries</a>
+      <a href="/blog/mediaquery">
+          <img class="index-img" itemprop="image" src="/assets/designer-board-typo-word.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop.                                                                                                                                                                   
+</p>
+      <span class="post-meta pull-right">Sep 5, 2015</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/resources">Great Resources For Learning JavaScript</a>
+      <a href="/blog/resources">
+          <img class="index-img" itemprop="image" src="/assets/programming.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">So I know from experience that learning JavaScript can be *very* challenging. If you are learning about JavaScript in school or are teaching yourself, I wanted to help you find some great resources that may help.
+</p>
+      <span class="post-meta pull-right">Aug 5, 2015</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/sass">How to Start Learning SCSS</a>
+      <a href="/blog/sass">
+          <img class="index-img" itemprop="image" src="/assets/brainstorm.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up.
+</p>
+      <span class="post-meta pull-right">Jul 20, 2015</span>
+    </li>
+    
+  
+    <li class="article">
+      <h3 itemscope="" itemtype="http://schema.org/Article">
+
+      <a itemprop="url" class="post-link" href="/blog/nav-bar">How to Make a Simple Navigation Menu From Scratch</a>
+      <a href="/blog/nav-bar">
+          <img class="index-img" itemprop="image" src="/assets/navPost.jpg" alt="Velocity Marketing Partners Digital Marketing Blog" />
+      </a>
+      </h3>
+      <p class="col-md-8">Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head.
+</p>
+      <span class="post-meta pull-right">Jun 24, 2015</span>
+    </li>
+    
+  
+</ul>
+</div>
+</div>
+
+  	</article>
+</div>
+</div>
+
+    </div>
+
+  <footer class="site-footer">
+  <div class="row">
+    <div class="col-lg-12 social-icons-row">
+      <ul id="social-icons">
+        <li><a href="https://github.com/ktagilbert"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://plus.google.com/u/0/+KatieGilbertStoryArch"><i class="fa fa-google-plus" aria-hidden="true"></a></i></li>
+        <li><a href="https://twitter.com/@KT_a_Gilbert"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/gilbertkatie"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
+      <ul class="footer-list">
+        <li>Home</li>
+        <li>Portfolio</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+      <div class="col-lg-3">
+        <ul class="footer-list">
+          <li><a href="tel:971-212-3698"></a></li>
+          <li><a href="mailto:ktagilbert@gmail.com"></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <p class="text-small pull-right">Point Dexter is a local eye care clinic. We take eye health seriously and make your comfort our top priority. That is why we offer modern eye exam practices and
+          take the time to make sure you choose the right pair of glasses or contacts for your lifestyle. What can we do for you today?
+        </p>
+        <p class="text-small pull-right">Copyright© 2016-2017</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

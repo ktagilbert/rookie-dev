@@ -1,59 +1,42 @@
 ---
 layout: page
+title: Blog
+permalink: /blog/
 ---
+<div class="blog-page">
 
-  <div class="main-content">
-  <div class="post-wrapper">
+<div class="page-header">
+  <h1 class="header-1">Technical Marketing Blog</h1>
+</div>
 
-    <div class="search">
-      <i class="fa fa-search"></i>
-      <input type="text" id="search-text" name="search">
-    </div>
 
-    <div id="no-results">
-      <p>Sorry, I haven't blogged about that yet. Try again?</p>
-    </div>
+<div class="container">
+<div class="search">
+  <i class="fa fa-search"></i>
+  <input type="text" id="search-text" name="search">
+</div>
+</div>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li class="article">
-        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-        <h3 itemscope itemtype="http://schema.org/Article">
-          <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <img itemprop="image" src="{{ site.baseurl }}/assets/{{ post.image }}" class="index-img">
-          </a>
-        </h3>
-        <p class="excerpt">{{ post.excerpt }}</p>
-      </li>
-    {% endfor %}
+<div id="no-results">
+<p>Sorry, there are no results for that search. Try again?</p>
+</div>
 
-  </ul>
+<div class="container blog-page-articles">
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li class="article">
+      <h3 itemscope itemtype="http://schema.org/Article">
 
-{% if paginator.total_pages > 1 %}
-<div class="pagination col-md-12 text-center">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | append: "#article-content" | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | append: "#article-content" | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | append: "#article-content" | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
+      <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+          <img class="col-md-4" itemprop="image" src="{{ site.baseurl }}/assets/{{ post.image }}" class="index-img" alt="Velocity Marketing Partners Digital Marketing Blog"/>
+      </a>
+      </h3>
+      <p class="col-md-8">{{ post.excerpt }}</p>
+      <span class="post-meta pull-right">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+    </span>
   {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | append: "#article-content" |  replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-  </div>
-{% endif %}
+</ul>
 </div>
 </div>

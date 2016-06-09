@@ -2,13 +2,13 @@
 layout: default
 ---
 <section>
-  <div class="page-header" style="background: url('assets/cool-flowers.jpg');">
+  <div class="home-page-header" style="background: url('assets/cool-flowers.jpg');">
       <div class="home-overlay">
       <div class="container home-header">
         <h1 class="text-center hero-header">Katie Gilbert</h1>
         <h3 class="text-center">Technical Marketer</h3>
       </div>
-      <p class="header-cta text-center"><a href="#">View My Portfolio</a></p>
+      <p class="header-cta text-center"><a href="/portfolio/">View My Portfolio</a></p>
     </div>
   </div>
 </section>
@@ -55,7 +55,7 @@ layout: default
       <div class="row">
 
         <div class="col-lg-4 col-md-4 col-xs-12">
-          <i class="fa fa-heart fa-center" aria-hidden="true"></i>
+          <i class="fa fa-line-chart fa-center" aria-hidden="true"></i>
           <h3 class="column-header text-center">Digital Marketing</h3>
           <p>I spent the first two years of my career focusing on B2C Marketing
             and the last year on B2B marketing. Meaning, I can help you with whatever audience you are trying to target.
@@ -66,7 +66,7 @@ layout: default
         </div>
 
         <div class="col-lg-4 col-md-4 col-xs-12">
-          <i class="fa fa-eye fa-center" aria-hidden="true"></i>
+          <i class="fa fa-pencil fa-center" aria-hidden="true"></i>
           <h3 class="column-header text-center">Copywriting</h3>
           <p>I studied English, Creative Writing and Journalism during my three years at Seattle University. I have since taken over
             online content creation for two different companies. Now, I am excited to dothe same for you. I can help with website content,
@@ -76,7 +76,7 @@ layout: default
         </div>
 
         <div class="col-lg-4 col-md-4 col-xs-12">
-          <i class="fa fa-check-square-o fa-center" aria-hidden="true"></i>
+          <i class="fa fa fa-laptop fa-center" aria-hidden="true"></i>
           <h3 class="column-header text-center">Web Development</h3>
           <p>
             I am a front-end web developer who can help you build static websites. These can help you display the value of your comapny
@@ -118,13 +118,14 @@ layout: default
       <form action="mail.php" method="GET | POST">
         <label>Name</label><br/>
         <input type="text" name="name"><br/>
-        <label>Phone Number</label><br/>
+        <label>Email</label><br/>
         <input type="text" name="phone-number"><br/>
         <label>Reason for Appointment</label><br/>
         <select class="dropdown" name="dropdown">
-          <option value="contacts">Ask about/order contacts</option>
-          <option value="glasses">Ask about/order Glasses</option>
-          <option value="exam">Schedule an Eye Exam</option>
+          <option value="Digital Marketing">SEO/Digital Marketing</option>
+          <option value="copywriting">Copywriting</option>
+          <option value="web-dev">Web Development</option>
+          <option value="other">All/Other</option>
         </select>
         <input type="submit" value="Submit" class="submit">
       </form>

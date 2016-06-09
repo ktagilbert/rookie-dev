@@ -3,66 +3,41 @@ sticky footer
 *********************************/
 
 .site-footer {
-	border: 2px solid #222;
+  background-color: #1A6B86;
+  color: #fff;
+  clear: both;
 	position: absolute;
-  bottom: 0%;
-  width: 100%;
-  height: 200px;
-	background-color: $grey;
 	top: 100%;
-	clear: both;
-
-	a, a:visited {
-		color: $container-color;
-		text-shadow: none;
-	}
-
-	a:hover {
-		color: $container-color;
-		text-decoration: underline;
-	}
 }
 
-.footer-content {
-  color: $container-color;
-	text-align: right;
-	width: 100%;
-	padding: 10px 10px 0 10px;
-	font-size: 1.5em;
-	float: right;
-	position: absolute;
-	bottom: 1.5%;
-
-	h3 {
-		padding-bottom: 0px;
-		color: $container-color;
-		font-family: 700;
-		font-size: 1em;
-		font-family: "PT Sans", "sans-serif";
-	}
+.site-footer > ul, li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  font-size: 14px;
 }
 
-.footer-list {
-	li {
-		text-align: right;
-		font-family: pt sans;
-		font-size: 16px;
-		list-style: none;
-		padding: 5px;
-		line-height: 1;
-		display: block;
-		font-family: "PT Sans", "sans-serif";
 
-	}
-	li:last-of-type {
-		font-size: 12px;
-	}
+.site-footer > #social-icons > li {
+  padding: 0 20px;
+  margin: 0;
 }
 
-@media(max-width: 750px) {
-	.footer-content {
-		h3 {
-			font-size: 18px;
-		}
-	}
+.site-footer > #social-icons > li > a > i {
+  color: #fff;
+}
+
+.site-footer > #social-icons > li > a> i:hover {
+  font-size: 1.1em;
+}
+
+.site-footer > #social-icons {
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons-row {
+  text-align: center;
+  height: 70px;
+  background-color: #2599BF;
 }
