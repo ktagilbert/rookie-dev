@@ -397,11 +397,13 @@ post-nav buttons
 *********************************/
 #title-prev {
   float: left;
-  width: 41%; }
+  width: 45%;
+  height: 100px; }
 
 #title-next {
   float: right;
-  width: 50%; }
+  width: 45%;
+  height: 100px; }
 
 #submit {
   background-color: transparent;
@@ -830,7 +832,7 @@ about page
 *********************************/
 .page-header {
   height: 300px !important;
-  background: #43b5db url("/assets/shattered.png");
+  background: url("/assets/shattered.png");
   margin-bottom: 3%;
   margin-top: 0;
   width: 100%;
