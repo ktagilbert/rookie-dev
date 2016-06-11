@@ -77,3 +77,18 @@ post-nav buttons
 	float: right;
 	width: 50%;
 }
+
+#submit {
+  background-color: transparent;;
+  outline: none;
+  border: 1px solid $skyblue;
+  color: $skyblue;
+  width: 300px;
+  padding: 20px;
+  margin: 2% 15% 0;
+}
+
+#submit:hover {
+  background-color: $skyblue;
+  color: #fff;
+}

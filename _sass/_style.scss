@@ -19,6 +19,9 @@
     width: 70%;
     margin: auto;
   }
+  h2 {
+    padding-bottom: 10%;
+  }
 }
 
 .header-cta {
@@ -141,49 +144,14 @@ body {
   width: 100%;
   font-size: 1em;
   font-weight: 100;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: $large / 2 ;
 }
 
 .checklist-item > i {
   color: #fff;
   padding-right: 10px;
-}
-
-// .dropdown {
-//   background-color: transparent;
-//   padding: 10px;
-//   width: 100%;
-//   box-shadow: none;
-//   border: none;
-//   border-bottom: 1px solid;
-//   outline: 0;
-// }
-//
-// .dropdown > option {
-//   font-size: 1em;
-//   padding: 10px 0;
-// }
-//
-// .dropdown:active {
-//   outline-color: transparent;
-// }
-
-
-// #contact-form > div > form > input.submit {
-//   border: 1px solid;
-//   color: #111;
-//   margin-bottom: 100px;
-//   background-color: transparent;
-//   width: 40% !important;
-//   margin-top: 10%;
-//   float: right;
-//   padding: 15px;
-// }
-
-#contact-form > div > form > input.submit:hover {
-  background-color: #2599BF;
-  color: #fff;
-
 }
 
 @media(max-width: 650px) {

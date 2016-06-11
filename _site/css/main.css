@@ -179,7 +179,8 @@ fonts
 
 .contact-input {
   width: 100%;
-  margin: 10px 0; }
+  margin: 10px 0;
+  outline: none; }
 
 #intro-paragraph {
   text-align: center;
@@ -387,6 +388,19 @@ post-nav buttons
   float: right;
   width: 50%; }
 
+#submit {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #43b5db;
+  color: #43b5db;
+  width: 300px;
+  padding: 20px;
+  margin: 2% 15% 0; }
+
+#submit:hover {
+  background-color: #43b5db;
+  color: #fff; }
+
 .intro-text {
   width: 75%;
   margin: auto; }
@@ -400,6 +414,8 @@ post-nav buttons
 #contact-form .container {
   width: 70%;
   margin: auto; }
+#contact-form h2 {
+  padding-bottom: 10%; }
 
 .header-cta {
   border: 2px solid #fff;
@@ -485,15 +501,13 @@ body div.page-header div p:hover {
   width: 100%;
   font-size: 1em;
   font-weight: 100;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 40px; }
 
 .checklist-item > i {
   color: #fff;
   padding-right: 10px; }
-
-#contact-form > div > form > input.submit:hover {
-  background-color: #2599BF;
-  color: #fff; }
 
 @media (max-width: 650px) {
   .absolute-container {
