@@ -82,8 +82,10 @@ a {
   text-decoration: none;
   color: #43b5db; }
   a:hover {
-    color: #43b5db;
+    color: #1A6B86;
     text-decoration: underline; }
+  a:visited {
+    color: default; }
 
 /**
  * Blockquotes
@@ -160,10 +162,10 @@ pre {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 100% !important;
-    margin-right: 0; } }
+    max-width: 100% !important; } }
 .container {
   width: 100%;
+  padding: 0 10%;
   margin-right: 0; }
 
 /*********************************
@@ -174,6 +176,10 @@ fonts
 *********************************/
 .hero-header {
   font-size: 6em; }
+
+.contact-input {
+  width: 100%;
+  margin: 10px 0; }
 
 #intro-paragraph {
   text-align: center;
@@ -198,7 +204,6 @@ fonts
     font-size: 2em; } }
 .blog-page-articles {
   text-align: left;
-  width: 60%;
   margin: auto; }
   .blog-page-articles .post-list {
     display: block; }
@@ -216,7 +221,7 @@ fonts
     margin: 3% 0;
     float: right;
     padding-bottom: 5%;
-    border-bottom: 1px solid #666; }
+    border-bottom: 1px solid #fcc118; }
   .blog-page-articles p {
     color: #111; }
 
@@ -330,12 +335,12 @@ search field
 
 #search-text {
   float: right;
-  margin: 1%;
+  margin: 1% 1%;
   outline: none;
+  width: 20%;
   width: 18%;
   padding: 5px;
-  font-size: 0.7em;
-  display: none; }
+  font-size: 0.7em; }
 
 @media (max-width: 720px) {
   #search-text {
@@ -348,9 +353,9 @@ search field
 .fa-search {
   float: right;
   padding: 1.5% 2% 0 0;
-  float: right;
   cursor: pointer;
-  color: #43b5db; }
+  color: #43b5db;
+  font-size: 20px; }
   .fa-search:hover {
     color: #666; }
 
@@ -386,22 +391,22 @@ post-nav buttons
   width: 75%;
   margin: auto; }
 
-.menu-item, a {
-  color: #fff;
-  font-weight: 700; }
-
 #visit-checklist h2 {
   margin-bottom: 10%; }
 
-#contact-form > .container {
-  width: 100% !important;
-  margin-right: 0; }
+#contact-form {
+  padding: 5% 0; }
+
+#contact-form .container {
+  width: 70%;
+  margin: auto; }
 
 .header-cta {
   border: 2px solid #fff;
   width: 30%;
   margin: auto;
-  margin-top: 5%; }
+  margin-top: 5%;
+  width: 300px; }
 
 .column-header {
   height: 50px; }
@@ -433,6 +438,24 @@ body div.page-header div p:hover {
   height: 700px;
   margin-top: 47%; }
 
+@media (max-width: 1040px) {
+  .home-absolute-container {
+    margin-top: 55%; } }
+@media (max-width: 780px) {
+  .home-absolute-container {
+    margin-top: 5%;
+    position: relative;
+    z-index: 0;
+    height: 100%; }
+
+  .home-page-header {
+    position: relative !important;
+    height: 400px !important;
+    z-index: 10;
+    top: 0%; }
+
+  .intro-text {
+    width: 100%; } }
 .fa-center {
   width: 100%;
   text-align: center;
@@ -462,46 +485,11 @@ body div.page-header div p:hover {
   width: 100%;
   font-size: 1em;
   font-weight: 100;
-  padding-bottom: 40px;
-  margin-left: 15%; }
+  padding-bottom: 40px; }
 
 .checklist-item > i {
   color: #fff;
   padding-right: 10px; }
-
-.dropdown {
-  background-color: transparent;
-  padding: 10px;
-  width: 100%;
-  box-shadow: none;
-  border: none;
-  border-bottom: 1px solid;
-  outline: 0; }
-
-.dropdown > option {
-  font-size: 1em;
-  padding: 10px 0; }
-
-.dropdown:active {
-  outline-color: transparent; }
-
-input {
-  outline: none;
-  outline-color: none;
-  width: 100% !important;
-  margin-left: 0 !important;
-  border: none;
-  border-bottom: 1px solid; }
-
-#contact-form > div > form > input.submit {
-  border: 1px solid;
-  color: #111;
-  margin-bottom: 100px;
-  background-color: transparent;
-  width: 40% !important;
-  margin-top: 10%;
-  float: right;
-  padding: 15px; }
 
 #contact-form > div > form > input.submit:hover {
   background-color: #2599BF;
@@ -660,30 +648,6 @@ img {
 /*********************************
 media queries
 *********************************/
-@media (max-width: 550px) {
-  .post-wrapper {
-    margin: 1%;
-    background-color: #f2f2f2; }
-
-  .main-content {
-    background-color: #f2f2f2 !important; }
-
-  .about-content {
-    font-size: 14px;
-    padding-right: 40px; }
-
-  .post-link {
-    height: initial; }
-
-  .excerpt {
-    margin: 0; }
-
-  .post-list {
-    width: 85%;
-    display: inline-block; }
-    .post-list .article {
-      background-color: #fff;
-      margin-bottom: 5%; } }
 @media (max-width: 690px) {
   #portfolio-list .folio-item {
     display: block !important;
@@ -785,9 +749,6 @@ media queries
 
   .rows:nth-of-type(even) {
     background-color: transparent; } }
-@media (max-width: 1210px) and (min-width: 851px) {
-  .post-list li {
-    width: 40%; } }
 /*********************************
 sticky footer
 *********************************/
@@ -837,7 +798,7 @@ about page
 .header-1 {
   text-align: center;
   padding-top: 50px;
-  color: #111;
+  color: #1A6B86;
   font-weight: bold;
   padding-top: 110px !important; }
 
@@ -1081,11 +1042,10 @@ section {
 menu
 *********************************/
 .navbar-default {
-  max-width: 100%;
+  width: 100%;
   background-color: transparent;
   z-index: 20;
   top: 0%;
-  color: #fff;
   border: none;
   text-align: right;
   height: 80px;
@@ -1104,6 +1064,3 @@ menu
   padding: 0; }
   .menu-item i {
     font-size: 1.1em; }
-  .menu-item a {
-    color: #fff;
-    -webkit-text-size-adjust: none; }

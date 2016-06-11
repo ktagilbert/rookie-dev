@@ -17,11 +17,32 @@ permalink: /portfolio/
   <div class="page-wrapper">
 
   <ul id="portfolio-list">
+  <div class="col-lg-4 col-sm-6 col-xs-12"><a href="mailto:allies@vmphq.com">
+    <div class="team-member wow fadeIn" data-wow-offset="10">
+      <figure>
+        <img src=
+          "/assets/jumbotron.png" class="img-responsive" alt="Allie Sewell, Sales Manager at Velocity Marketing Partners" />
+        <figcaption>
+          <p>I'm Allie. I'm looking forward to working with you soon!</p>
+        </figcaption>
+      </figure>
+        <h3>Bootstrap Example</h3>
+      </div>
+    </a></div>
+
+
+
     <li class="folio-item">
-      <p class="overlay">A one page example site I made to become more familiar with the Bootstrap framework. You can click here to go the github page for this project.</p>
+    <figure>
       <a href="https://github.com/ktagilbert/Bootstrap-Example">
         <img class="folio-img" src="/assets/jumbotron.png"/>
-      </a>
+        </a>
+      <figcaption>
+        <p>
+          A one page example site I made to become more familiar with the Bootstrap framework. You can click here to go the github page for this project.
+          </p>
+        </figcaption>
+    </figure>
     </li>
 
     <li class="folio-item">

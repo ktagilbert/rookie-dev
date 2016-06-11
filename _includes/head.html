@@ -53,12 +53,11 @@
     ga('create', 'UA-55144371-2', 'auto');
     ga('send', 'pageview');
   </script>
+
   <script>
+  $(document).ready(function() {
 
     //search function
-    $('.fa-search').on('click', function(event) { // on click of search icon
-      $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
-    });
 
     var $articleTitles = $('.post-link');
     var searchTerm = "";
@@ -74,10 +73,6 @@
           });
         } else { // else (if the string is greater -1)
           $(elem).closest('.article').show(); // show the closest article in the search results
-          $('.article').css({
-            'width': '25%',
-            'margin': '0'
-          });
         }
       });
       if ($('.article:hidden').length === $articleTitles.length) { //if no articles match the user's input, then show "no results found"
@@ -119,13 +114,9 @@
             } else {
               $('#menu').stop().animate({
                 backgroundColor: 'transparent'}, "700");
-              $('.menu-item').children().css("color", "#fff");
-              $(".fa-twitter").css("color", "#fff")
-              $(".fa-github").css("color", "#fff");
-              $(".fa-envelope").css("color", "#fff");
             }
         });
-      }
+      };
 
       //click on #home-arrow to scroll down to next section
 

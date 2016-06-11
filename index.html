@@ -1,17 +1,16 @@
 ---
 layout: default
 ---
-<section>
-  <div class="home-page-header" style="background: url('assets/cool-flowers.jpg');">
-      <div class="home-overlay">
-      <div class="container home-header">
-        <h1 class="text-center hero-header">Katie Gilbert</h1>
-        <h3 class="text-center">Technical Marketer</h3>
-      </div>
-      <p class="header-cta text-center"><a href="/portfolio/">View My Portfolio</a></p>
+
+<div class="home-page-header" style="background: url('assets/cool-flowers.jpg');">
+  <div class="home-overlay">
+    <div class="container home-header">
+      <h1 class="text-center hero-header">Katie Gilbert</h1>
+      <h3 class="text-center">Technical Marketer</h3>
     </div>
+    <p class="header-cta text-center"><a href="/portfolio/">View My Portfolio</a></p>
   </div>
-</section>
+</div>
 
     <!--Contains the welcome message. Lowering the margin will change the height of the container-->
 <section>
@@ -115,20 +114,11 @@ layout: default
   <section id="contact-form">
     <div class="container">
       <h2 class="text-center">Reach Out to Me Today</h2>
-      <form action="mail.php" method="GET | POST">
-        <label>Name</label><br/>
-        <input type="text" name="name"><br/>
-        <label>Email</label><br/>
-        <input type="text" name="phone-number"><br/>
-        <label>Reason for Appointment</label><br/>
-        <select class="dropdown" name="dropdown">
-          <option value="Digital Marketing">SEO/Digital Marketing</option>
-          <option value="copywriting">Copywriting</option>
-          <option value="web-dev">Web Development</option>
-          <option value="other">All/Other</option>
-        </select>
-        <input type="submit" value="Submit" class="submit">
+      <form action="https://formspree.io/ktagilbert@gmail.com" method="POST">
+        <input class="contact-input" type="Name" name="name"><br/>
+        <input class="contact-input" type="Email" name="_replyto"><br/>
+        <input class="contact-input" type="message" name="what can I help you with?"><br/>
+        <input class="contact-input" type="Submit" value="Send">
       </form>
-
     </div>
   </section>

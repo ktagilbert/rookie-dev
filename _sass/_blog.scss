@@ -1,6 +1,5 @@
 .blog-page-articles {
   text-align: left;
-  width: 60%;
   margin: auto;
 
   .post-list {
@@ -25,7 +24,7 @@
     margin: 3% 0;
     float: right;
     padding-bottom: 5%;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid $gold;
 
   }
   p {

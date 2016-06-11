@@ -109,8 +109,11 @@ a {
     color: rgb(67, 181, 219);
 
     &:hover {
-        color: rgb(67, 181, 219);
+        color: #1A6B86;
         text-decoration: underline;
+    }
+    &:visited {
+      color: default;
     }
 }
 
@@ -222,11 +225,11 @@ pre {
 @media (min-width: 1200px) {
 .container {
     max-width: 100% !important;
-    margin-right: 0;
   }
 }
 
 .container {
   width: 100%;
+  padding: 0 10%;
   margin-right: 0;
 }

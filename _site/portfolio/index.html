@@ -54,12 +54,11 @@
     ga('create', 'UA-55144371-2', 'auto');
     ga('send', 'pageview');
   </script>
+
   <script>
+  $(document).ready(function() {
 
     //search function
-    $('.fa-search').on('click', function(event) { // on click of search icon
-      $('#search-text').animate({width: 'toggle'}, '700'); // make the search field's width expand (aka reveal the search field slowly)
-    });
 
     var $articleTitles = $('.post-link');
     var searchTerm = "";
@@ -75,10 +74,6 @@
           });
         } else { // else (if the string is greater -1)
           $(elem).closest('.article').show(); // show the closest article in the search results
-          $('.article').css({
-            'width': '25%',
-            'margin': '0'
-          });
         }
       });
       if ($('.article:hidden').length === $articleTitles.length) { //if no articles match the user's input, then show "no results found"
@@ -120,13 +115,9 @@
             } else {
               $('#menu').stop().animate({
                 backgroundColor: 'transparent'}, "700");
-              $('.menu-item').children().css("color", "#fff");
-              $(".fa-twitter").css("color", "#fff")
-              $(".fa-github").css("color", "#fff");
-              $(".fa-envelope").css("color", "#fff");
             }
         });
-      }
+      };
 
       //click on #home-arrow to scroll down to next section
 
@@ -167,6 +158,7 @@
     <li class="menu-item pull-right"><a href="mailto:ktagilbert@gmail.com"><i class="fa fa-envelope"></i></a></li>
   </ul>
 </nav>
+
 </header>
 
     <!--<div class="page-content">-->
@@ -186,11 +178,31 @@
   <div class="page-wrapper">
 
   <ul id="portfolio-list">
+  <div class="col-lg-4 col-sm-6 col-xs-12"><a href="mailto:allies@vmphq.com">
+    <div class="team-member wow fadeIn" data-wow-offset="10">
+      <figure>
+        <img src="/assets/jumbotron.png" class="img-responsive" alt="Allie Sewell, Sales Manager at Velocity Marketing Partners" />
+        <figcaption>
+          <p>I'm Allie. I'm looking forward to working with you soon!</p>
+        </figcaption>
+      </figure>
+        <h3>Bootstrap Example</h3>
+      </div>
+    </a></div>
+
+
+
     <li class="folio-item">
-      <p class="overlay">A one page example site I made to become more familiar with the Bootstrap framework. You can click here to go the github page for this project.</p>
+    <figure>
       <a href="https://github.com/ktagilbert/Bootstrap-Example">
         <img class="folio-img" src="/assets/jumbotron.png" />
-      </a>
+        </a>
+      <figcaption>
+        <p>
+          A one page example site I made to become more familiar with the Bootstrap framework. You can click here to go the github page for this project.
+          </p>
+        </figcaption>
+    </figure>
     </li>
 
     <li class="folio-item">
@@ -265,9 +277,9 @@
   <div class="row">
     <div class="col-lg-2">
       <ul class="footer-list">
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>Blog</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/portfolio/">Portfolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
       </ul>
     </div>
       <div class="col-lg-3">
@@ -277,8 +289,9 @@
         </ul>
       </div>
       <div class="col-lg-7">
-        <p class="text-small pull-right">Point Dexter is a local eye care clinic. We take eye health seriously and make your comfort our top priority. That is why we offer modern eye exam practices and
-          take the time to make sure you choose the right pair of glasses or contacts for your lifestyle. What can we do for you today?
+        <p class="text-small pull-right">
+          Reach out to me to find out how I can help improve your SEO rankings or help you with a new website project.
+          I am always happy to any questions and will get back to you right away. I can't wait to hear from you.
         </p>
         <p class="text-small pull-right">Copyright© 2016-2017</p>
       </div>

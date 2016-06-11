@@ -3,11 +3,11 @@ menu
 *********************************/
 
 .navbar-default {
-  max-width: 100%;
+  width: 100%;
   background-color: transparent;
   z-index: 20;
 	top: 0%;
-  color: #fff;
+  // color: #fff;
   border: none;
   text-align: right;
   height: 80px;
@@ -29,10 +29,5 @@ menu
 
 	i {
 		font-size: 1.1em;
-	}
-
-	a {
-		color: #fff;
-		-webkit-text-size-adjust: none;
 	}
 }
