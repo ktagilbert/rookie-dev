@@ -10,6 +10,14 @@
    }
 }
 
+@media(max-width: 800px) {
+  #visit-checklist {
+    .col-lg-8 {
+      display: none;
+    }
+  }
+}
+
 #contact-form {
   padding: 5% 0;
 }
@@ -21,6 +29,15 @@
   }
   h2 {
     padding-bottom: 10%;
+  }
+}
+
+@media(max-width: 930px) {
+  #contact-form {
+    .container {
+      width: 100%;
+      padding: 0;
+    }
   }
 }
 

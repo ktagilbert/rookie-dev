@@ -40,3 +40,24 @@ fonts
 		font-size: 2em;
 	}
 }
+
+
+.site-header > #menu > ul > li > a {
+	color: #fff;
+}
+
+.site-footer {
+	.footer-list {
+		a {
+			color: #fff;
+		}
+		a:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+}
+
+.text-small {
+	font-size: 0.8em;
+}

@@ -23,12 +23,25 @@ sticky footer
   margin: 0;
 }
 
+.site-footer {
+  #social-icons {
+    li {
+      a {
+        padding: 5px, 0;
+        color: #fff;
+      }
+    }
+  }
+}
+
 .site-footer > #social-icons > li > a > i {
   color: #fff;
 }
 
-.site-footer > #social-icons > li > a> i:hover {
+.site-footer > #social-icons > li > a:hover {
   font-size: 1.1em;
+  cursor: pointer;
+  color: #1A6B86;
 }
 
 .site-footer > #social-icons {

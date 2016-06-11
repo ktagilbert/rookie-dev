@@ -141,6 +141,9 @@ pre {
   margin: auto;
   padding: 0; }
 
+@media (max-width: 840px) {
+  .text-wrapper {
+    width: 100%; } }
 /**
  * Clearfix
  */
@@ -203,6 +206,18 @@ fonts
 @media (max-width: 700px) {
   h2 {
     font-size: 2em; } }
+.site-header > #menu > ul > li > a {
+  color: #fff; }
+
+.site-footer .footer-list a {
+  color: #fff; }
+.site-footer .footer-list a:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+
+.text-small {
+  font-size: 0.8em; }
+
 .blog-page-articles {
   text-align: left;
   margin: auto; }
@@ -393,9 +408,8 @@ post-nav buttons
   outline: none;
   border: 1px solid #43b5db;
   color: #43b5db;
-  width: 300px;
-  padding: 20px;
-  margin: 2% 15% 0; }
+  width: 100%;
+  padding: 20px; }
 
 #submit:hover {
   background-color: #43b5db;
@@ -408,6 +422,9 @@ post-nav buttons
 #visit-checklist h2 {
   margin-bottom: 10%; }
 
+@media (max-width: 800px) {
+  #visit-checklist .col-lg-8 {
+    display: none; } }
 #contact-form {
   padding: 5% 0; }
 
@@ -417,6 +434,10 @@ post-nav buttons
 #contact-form h2 {
   padding-bottom: 10%; }
 
+@media (max-width: 930px) {
+  #contact-form .container {
+    width: 100%;
+    padding: 0; } }
 .header-cta {
   border: 2px solid #fff;
   width: 30%;
@@ -783,11 +804,17 @@ sticky footer
   padding: 0 20px;
   margin: 0; }
 
+.site-footer #social-icons li a {
+  padding: 5px, 0;
+  color: #fff; }
+
 .site-footer > #social-icons > li > a > i {
   color: #fff; }
 
-.site-footer > #social-icons > li > a > i:hover {
-  font-size: 1.1em; }
+.site-footer > #social-icons > li > a:hover {
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #1A6B86; }
 
 .site-footer > #social-icons {
   padding: 0;

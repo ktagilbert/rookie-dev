@@ -58,8 +58,18 @@
   <script>
   $(document).ready(function() {
 
-    //search function
 
+    //overlay on portfolio items
+    $('.folio-item').each(function(item) {
+      $(this).on('mouseover', function() {
+        $('.overlay').eq(item).show();
+      })
+      $('.folio-item').on('mouseleave', function() {
+        $('.overlay').hide();
+      })
+    });
+
+    //search function
     var $articleTitles = $('.post-link');
     var searchTerm = "";
 
@@ -258,7 +268,7 @@
     <div class="container">
       <h2 class="text-center">How To Get Started</h2>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-m-4 col-sm-12">
           <ul>
             <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>Send me an Email including what your services you are looking for</li>
             <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>I'll send you a strategy proposal for your approval</li>
@@ -266,7 +276,7 @@
             <li class="checklist-item"><i class="fa fa-check" aria-hidden="true"></i>I'll start working and send you bi-monthly updates on how everything is going.</li>
           </ul>
         </div>
-        <div class="col-lg-8 text-center">
+        <div class="col-lg-8 text-center col-m-8">
            <i class="fa fa-check-square-o" aria-hidden="true"></i>
         </div>
       </div>
@@ -317,7 +327,7 @@
       <div class="col-lg-7">
         <p class="text-small pull-right">
           Reach out to me to find out how I can help improve your SEO rankings or help you with a new website project.
-          I am always happy to any questions and will get back to you right away. I can't wait to hear from you.
+          I am always happy to answer any questions and will get back to you right away. I can't wait to hear from you.
         </p>
         <p class="text-small pull-right">Copyright© 2016-2017</p>
       </div>

@@ -189,6 +189,11 @@ pre {
   padding: 0;
 }
 
+@media(max-width: 840px) {
+  .text-wrapper {
+    width: 100%;
+  }
+}
 
 
 /**

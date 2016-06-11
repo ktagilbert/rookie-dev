@@ -57,8 +57,18 @@
   <script>
   $(document).ready(function() {
 
-    //search function
 
+    //overlay on portfolio items
+    $('.folio-item').each(function(item) {
+      $(this).on('mouseover', function() {
+        $('.overlay').eq(item).show();
+      })
+      $('.folio-item').on('mouseleave', function() {
+        $('.overlay').hide();
+      })
+    });
+
+    //search function
     var $articleTitles = $('.post-link');
     var searchTerm = "";
 
