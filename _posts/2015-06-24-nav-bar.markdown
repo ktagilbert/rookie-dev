@@ -41,7 +41,7 @@ Before I made my nav, I spent a couple of nights studying the basics of my three
 </ul>
 {% endhighlight %}
 
-- Note thAT I've put "#" in the place of an actual link for now because I don't have content or links for these pages yet.
+- Note that I've put "#" in the place of an actual link for now because I don't have content or links for these pages yet.
 - So now, depending on what you want the menu to do and look like, you can think about what to do next.
 
 ## Here are some ideas for how you may want your menu to look

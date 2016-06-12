@@ -9,10 +9,12 @@
   .post-link {
     width: 100%;
     text-align: left;
+    display: table-cell;
+    vertical-align: text-top;
   }
   h3 {
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding: 0;
+    margin-bottom: 20px;
   }
 
   img {
@@ -160,6 +162,7 @@
 
     h3 {
         font-size: 26px;
+        padding: 0;
 
         @include media-query($on-laptop) {
             font-size: 22px;

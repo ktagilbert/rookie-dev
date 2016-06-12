@@ -225,10 +225,12 @@ fonts
     display: block; }
   .blog-page-articles .post-link {
     width: 100%;
-    text-align: left; }
+    text-align: left;
+    display: table-cell;
+    vertical-align: text-top; }
   .blog-page-articles h3 {
-    padding-bottom: 0;
-    margin-bottom: 0; }
+    padding: 0;
+    margin-bottom: 20px; }
   .blog-page-articles img {
     width: 30%;
     float: left;
@@ -326,7 +328,8 @@ fonts
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
-    font-size: 26px; }
+    font-size: 26px;
+    padding: 0; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
         font-size: 22px; } }
@@ -559,6 +562,9 @@ body div.page-header div p:hover {
   margin: 0;
   min-width: 100%; }
 
+@media (max-width: 700px) {
+  .home-header {
+    padding-top: 150px; } }
 .home-overlay {
   max-width: 100%;
   height: 100%;
@@ -608,7 +614,8 @@ Post styling
   padding-bottom: 40px; }
 .post p {
   color: #666;
-  font-weight: 500; }
+  font-weight: 500;
+  padding: 5px 0; }
 .post .post-title {
   font-size: 2.5em;
   text-align: center;
@@ -673,8 +680,7 @@ img {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px;
-    padding-top: 15px;
-    padding-bottom: 20px; }
+    margin-bottom: 15px; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
         font-size: 22px; } }
