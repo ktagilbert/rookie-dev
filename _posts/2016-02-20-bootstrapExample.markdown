@@ -3,6 +3,7 @@ layout: post
 title: "Your first Bootstrap Project - (Part 1)"
 date: 2016-02-20
 image: "bootstrap.jpg"
+comments: true
 description: >
  If you are new to web development, it can help to immerse yourself in a front-end framework. Start by learning about Bootstrap to see how to quickly build responsive layouts.
 excerpt: >

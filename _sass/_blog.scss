@@ -179,6 +179,10 @@
     a {
       font-weight: bold;
     }
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
     ul, li {
       font-size: 18px;
       padding-bottom: 2%;

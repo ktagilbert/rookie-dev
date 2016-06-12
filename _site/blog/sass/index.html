@@ -15,7 +15,7 @@
        How to Start Learning SCSS
      
    </title>
-   <meta name="description" content="Don't be intimidated by Sass or SCSS. These are just preprocessors that can be learned in a matter of a week. Find resources for learning Sass here. 
+   <meta name="description" content="Don't be intimidated by Sass or SCSS. These are just preprocessors that can be learned in a matter of a week. Find resources for learning Sass here.
 ">
  <!--open graph protocol -->
 
@@ -145,15 +145,6 @@
             }
         });
       };
-
-      //click on #home-arrow to scroll down to next section
-
-      $('.fa-chevron-down').on('click', function(event) {
-        event.preventDefault;
-        $('html, body').animate({
-          scrollTop: $("#background").offset().top
-        },900);
-      });
 
       //open all links in a new tab
       $('a').each(function() {
@@ -356,8 +347,22 @@
       <li id="title-next">Great Resources For Learning JavaScript</li>
     </a>
   </ul>
-  
+
   <!--disqus comments-->
+  
+      <div id="disqus_thread"></div>
+      <script>
+
+      (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//ktgilbert.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
   </div>

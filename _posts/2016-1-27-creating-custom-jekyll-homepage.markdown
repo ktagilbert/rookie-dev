@@ -3,6 +3,7 @@ layout: post
 title: "How I Customized My Jekyll Home Page Layout"
 date: 2016-01-27 12:43:21
 image: "uxpost.jpg"
+comments: true
 description: >
  Create columns and learn about liquid templating for your Jekyll powered site. See how I customized my static, Jekyll site here.
 excerpt: >

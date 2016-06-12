@@ -3,6 +3,7 @@ layout: post
 title: "Learning About Flexbox (And Why It's a Great Tool)"
 date: 2016-01-15 12:43:21
 image: "tooldbox.jpg"
+comments: true
 description: >
  Flex properties are just a way for you to position elements along a vertical and horizontal axis. They also help you proportion elements. Read more to get started with flex properties today.
 excerpt: >

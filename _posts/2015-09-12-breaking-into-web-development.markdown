@@ -3,6 +3,7 @@ layout: post
 title: "Breaking Into Web Development (In Small Steps)"
 date: 2015-09-12 17:00:00
 image: "learning-steps.jpg"
+comments: true
 description: >
  Here are 6 steps that can help begin breaking into web development. Read more to see what skills to begin developing while you continue to learn about the field.
 excerpt: >

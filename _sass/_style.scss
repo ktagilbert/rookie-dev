@@ -263,32 +263,6 @@ Post styling
 .post-content {
 	margin-bottom: $large;
 }
-// .post-list {
-//     justify-content: center;
-//     list-style: none;
-//     margin-bottom: 0px;
-//     flex-wrap: wrap;
-//     margin-bottom: 5%;
-//     margin-left: 0;
-// 		display: inline-flex;
-//
-//     > li {
-//       width: 27%;
-//       padding: 30px;
-//       clear: none;
-//       display: inline-block;
-//       // vertical-align: text-top;
-//       align-items: center;
-//     }
-//     > img, .index-img {
-//       align-items: center;
-//       display: inline-flex;
-//       overflow: hidden;
-//     }
-//     > .excerpt {
-//       align-items: baseline;
-//     }
-// }
 
 .post {
 	h3 {
@@ -400,41 +374,6 @@ img {
     }
 }
 
-
-/*********************************
-media queries
-*********************************/
-
-
-// @media(max-width: 550px) {
-// 	.post-wrapper {
-// 		margin: 1%;
-// 		background-color: #f2f2f2;
-// 	}
-// 	.main-content {
-// 		background-color: #f2f2f2 !important;
-// 	}
-// 	.about-content {
-// 		font-size: 14px;
-// 		padding-right: 40px;
-// 	}
-// 	.post-link {
-// 		height: initial;
-// 	}
-// 	.excerpt {
-// 		margin: 0;
-// 	}
-// 	.post-list {
-// 		width: 85%;
-// 		display: inline-block;
-//
-// 		.article {
-// 			background-color: #fff;
-// 			margin-bottom: 5%;
-// 		}
-// 	}
-// }
-
 @media(max-width: 690px) {
 	#portfolio-list {
 		.folio-item {
@@ -479,14 +418,19 @@ media queries
 		width: 100%;
 		overflow: hidden;
 	}
-	.about-content {
-		font-size: 14px;
-	}
-	.my-background {
-		font-size: 14px;
-	}
 	.post-nav-title {
-		display: none;
+		height: 160px;
+
+    #title-prev {
+      width: 49%;
+      height: 100%;
+      padding: 10px 5px;
+    }
+    #title-next {
+      width: 49%;
+      height: 100%;
+      padding: 10px 5px;
+    }
 	}
 }
 
@@ -527,13 +471,6 @@ media queries
 	.gallery-wrapper {
 		width: 80%;
 	}
-	.post {
-		.about-content {
-			width: 100%;
-			float: none;
-			margin: auto;
-		}
-	}
 	.rows {
 		li, .portfolio-text, a {
 			width: 100%;
@@ -553,9 +490,6 @@ media queries
 }
 
 @media(max-width: 1000px) {
-	.top-angle {
-		bottom: 55%;
-	}
 	.rows {
 		background-color: transparent;
 

@@ -3,6 +3,7 @@ layout: post
 title: "Your first Bootstrap Project - (Part 2)"
 date: 2016-02-21
 image: "wireframe.jpg"
+comments: true
 description: >
  Part 2 to learning about Bootstrap - learn about the benefits of the front-end framework and some of the useful elements you can use.
 excerpt: >

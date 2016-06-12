@@ -3,6 +3,7 @@ layout: post
 title: "A Client Side Search Function Made with jQuery"
 date: 2016-01-30
 image: "layout.jpg"
+comments: true
 description: >
  A great intermediate project for any web developer is creating a client side search function with JavaScript and jQuery. See how to think about the problem and begin developing your search function here.
 excerpt: >

@@ -3,6 +3,7 @@ layout: post
 title: How to Improve Your Copywriting Workflow
 date: 2015-12-3 16:32:21
 image: "copywriter.jpg"
+comments: true
 description: >
  Want to know how your agency can improve its copywriting workflow? Read more to see how your agency may be failing your writers and how to improve the situation.
 excerpt: >

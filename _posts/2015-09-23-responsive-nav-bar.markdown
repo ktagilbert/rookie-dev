@@ -3,8 +3,9 @@ layout: post
 title: "Tutorial: Making a Responsive Navigation Bar"
 date: 2015-09-23 17:00:00
 image: "learningJS.jpg"
+comments: true
 description: >
- A great first jQuery or JavaScript problem to solve is how to make a responsive menu for your site. See how to make one that changes color on scroll using JavaScript here. 
+ A great first jQuery or JavaScript problem to solve is how to make a responsive menu for your site. See how to make one that changes color on scroll using JavaScript here.
 excerpt: >
  If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
 ---

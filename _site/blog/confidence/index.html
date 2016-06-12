@@ -146,15 +146,6 @@
         });
       };
 
-      //click on #home-arrow to scroll down to next section
-
-      $('.fa-chevron-down').on('click', function(event) {
-        event.preventDefault;
-        $('html, body').animate({
-          scrollTop: $("#background").offset().top
-        },900);
-      });
-
       //open all links in a new tab
       $('a').each(function() {
         var a = new RegExp('/' + window.location.host + '/');
@@ -329,7 +320,7 @@
       <li id="title-next"></li>
     </a>
   </ul>
-  
+
   <!--disqus comments-->
   
       <div id="disqus_thread"></div>
