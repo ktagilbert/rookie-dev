@@ -2,6 +2,7 @@
 layout: post
 title: "My Imposter Syndrome Article"
 image: "skiing.jpeg"
+comments: true
 date: 2016-03-27
 excerpt: >
  Yesterday, I showed you how to install and set up your first Bootstrap project. So today, I am going to go over the benefits of using the framework and will go over a few elements that I found the most useful.
