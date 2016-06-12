@@ -3,6 +3,7 @@ layout: post
 title: "How to Start Learning SCSS"
 date: 2015-07-20 16:32:21
 image: "brainstorm.jpg"
+description: Don't be intimidated by Sass or SCSS. These are just preprocessors that can be learned in a matter of a week. Find resources for learning Sass here. 
 excerpt: >
  This blog is actually is the first site I have ever made. I made it using Jekyll. One night, my SO sat me down and showed me how to set up Jekyll and start using it. Sitting in our apartment, with my laptop on his lap, he started setting things up.
 ---

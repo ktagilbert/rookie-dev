@@ -3,6 +3,7 @@ layout: post
 title: "Breaking Into Web Development (In Small Steps)"
 date: 2015-09-12 17:00:00
 image: "learning-steps.jpg"
+description: Here are 6 steps that can help begin breaking into web development. Read more to see what skills to begin developing while you continue to learn about the field.
 excerpt: >
  To be a computer programmer you don't have to know advanced calculus, at least not to get started. If you really want to get into the field, it just requires some dedication and a willingness to learn/ask questions.
 ---

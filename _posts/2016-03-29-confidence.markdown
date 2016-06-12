@@ -4,8 +4,10 @@ title: "My Imposter Syndrome Article"
 image: "skiing.jpeg"
 comments: true
 date: 2016-03-27
+description: My cliche imposter syndrome article. Learning how to deal with feeling like a terrible web developer and overcoming it (in small steps!)
 excerpt: >
- Yesterday, I showed you how to install and set up your first Bootstrap project. So today, I am going to go over the benefits of using the framework and will go over a few elements that I found the most useful.
+ Learning web development was a lot like learning how to ski. That's the best way I can describe it. Learning CSS & HTML was like going down the bunny hill. It gave me a chance to gain some footing in and build my initial confidence.
+
 ---
 
 Building confidence in anything is hard. Actually, it's not so let me rephrase. Building confidence in anything as an adult is hard.

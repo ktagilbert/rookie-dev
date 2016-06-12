@@ -178,12 +178,14 @@ variables
 fonts
 *********************************/
 .hero-header {
-  font-size: 6em; }
+  font-size: 10vw; }
 
 .contact-input {
   width: 100%;
   margin: 10px 0;
-  outline: none; }
+  outline: none;
+  font-size: 0.8em;
+  padding: 0 10px; }
 
 #intro-paragraph {
   text-align: center;
@@ -564,7 +566,7 @@ body div.page-header div p:hover {
 
 @media (max-width: 700px) {
   .home-header {
-    padding-top: 150px; } }
+    padding-top: 200px; } }
 .home-overlay {
   max-width: 100%;
   height: 100%;

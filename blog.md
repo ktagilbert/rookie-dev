@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Blog
+title: Technical Marketing & Web Development Blog | Katie Gilbert
+description: Read about web development and technical marketing to learn about breaking into web development or to get some cool starter front-end project ideas.
 permalink: /blog/
 ---
 <div class="blog-page">
@@ -29,7 +30,7 @@ permalink: /blog/
 
       <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <a href="{{ post.url | prepend: site.baseurl }}">
-          <img class="col-md-4" itemprop="image" src="{{ site.baseurl }}/assets/{{ post.image }}" class="index-img" alt="Velocity Marketing Partners Digital Marketing Blog"/>
+          <img class="col-md-4" itemprop="image" src="{{ site.baseurl }}/assets/{{ post.image }}" class="index-img"/>
       </a>
       </h3>
       <p class="col-md-8">{{ post.excerpt }}</p>

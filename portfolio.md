@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Portfolio
+title: Digital Marketing & Web Development Portfolio | Katie Gilbert
+description: Reach out to me for a custom business website. I can help you showcase your blog, portfolio, or boutique. Click to see my work or reach out to me today in Oregon.
 permalink: /portfolio/
 ---
 <div class="portfolio-page">
