@@ -22,14 +22,14 @@ We are all trying to accommodate Google, right? So we abide by these rules and e
 # The three things that may be breaking your copywriting workflow
 ![Improve Your Copywriting Workflow](/assets/copywriter.jpg)
 
-1) You writers are becoming bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It's not because they are lazy. **It's because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.** The task is no longer creative but instead formulaic. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.
+1) Your writers are getting bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It's not because they are lazy. **It's because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.** The task is no longer creative but instead formulaic. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.
 
 2) You are missing deadlines because you have to keep going back to give your writer more instructions in order to get the copy you want.
 
 3) Your writers are too scared to tell you that your process isn't working for them. The fear is that once they speak up, they will be replaced because of how many other content writers are out there that would be happy to take over for them.   
 
 
-So to make your copywriting workflow actually work, some things need to happen. First, try asking yourself some questions. **I suggest sitting down with a new document and thoroughly writing out your answers to the questions below so that you can see how to improve your process before even having to read this rest of this article.** OR, [download these questions here](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and save them for your next meeting!
+So to make your copywriting workflow actually work, some things need to happen. First, try asking yourself some questions. **I suggest sitting down with a new document and thoroughly writing out your answers to the questions below so that you can see how to improve your process before even having to read the rest of this article.** OR, [download these questions here](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and save them for your next meeting!
 
 ## 12 Questions to help you improve your copywriting workflow
 
@@ -61,22 +61,22 @@ Here is why:
 
 But now, they are being tasked with writing for you and they are finding that your task is much more difficult than the ones they had in school. **It is more difficult because they are either not being given clear instructions OR they are not being given enough time or money to give you what you are looking for.**
 
-I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don't miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I'm the one copy editing these articles. Around the 10th time I read the same repeated phrase it's almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down and at the end of it all writers only earn about $20-$30 their time my time.
+I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don't miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I'm the one copy editing these articles. Around the 10th time I read the same repeated phrase it's almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down.
 
 
 ## Here's the thing: your content is SUPER important.
 
-To fix the process, let's remember that content is king right now! Meaning, you should be treating it like the king. It (and by extension your writers) should be your top priority as they are one of your most valuable resources. The best thing you can do to treat your content and your writers like kings is to give them all of the information you can to make their job perfectly clear and work to reduce their frustration during assignments. *So, go ahead, ask yourself those 12 questions at the beginning of this article to help yourself get better copy from your writers!*
+To fix the process, let's remember that content is king right now! Meaning, you should be treating it like the king. It (and by extension your writers) should be your top priority as they are one of your most valuable resources. The best thing you can do to treat your content and your writers like kings is to give them all of the information you can to make their job perfectly clear and work to reduce their frustration during assignments. *So go ahead, ask yourself those 12 questions at the beginning of this article to help get better copy from your writers!*
 
 
 ## What's the solution?
 
-The best solution I can offer you is to simply try hiring more writers. Get more team members in your department or find more qualified freelancer to contribute to copy-editing. Then, get multiple people to help copy edit. You can even delegate the task to your interns as well to help. **But it really is important that you spread out assignments between more writers to avoid being handed mediocre copy.  Afterall, this copy is important to you and your client so why would you trust it to someone who is going to become a zombie after a certain word count or hour of work?**
+The best solution I can offer you is to simply try hiring more writers. Get more team members in your department or find more qualified freelancers to contribute to copy-editing. Then, get multiple people to help copy edit. You can even delegate the task to your interns as well to help. **But it really is important that you spread out assignments between more writers to avoid being handed mediocre copy.  Afterall, this copy is important to you and your client so why would you trust it to someone who is going to become a zombie after a certain word count or hour of work?**
 
 Another solution is to assign each a writer just one-three clients rather than 10-30 articles for one sale. That way, they will AT LEAST have different topics to write about and that will help fuel their interest and motivation.
 
 
-Now that you have two great solutions in front you, the best thing you can do moving forward is  to[download the 12 questions to help you improve your copywriting workflow](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!
+Now that you have two great solutions in front you, the best thing you can do moving forward is [download the 12 questions to help you improve your copywriting workflow](/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf) and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!
 
 Let me know what you think and thanks for reading guys!
 

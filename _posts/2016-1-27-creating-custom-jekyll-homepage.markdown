@@ -78,11 +78,11 @@ excerpt: >
 
 For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was *boring.* A simple solution was to include some images.
 
-They're a bunch of way to include images for each of your post but I went with what I think is the easiest option. **In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.** Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you'll include your liquid tag in the "index.html" file. You can see how I've included an image for each of my post in the code snippet above.
+There are a bunch of ways to include images for each of your post but I went with what I think is the easiest option. **In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.** Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you'll include your liquid tag in the "index.html" file. You can see how I've included an image for each of my post in the code snippet above.
 
 ## Optimize Your photos for the web first
 
-**PRO TIP: To make sure all of your images appear uniformly, make sure you give them a uniform width and height.** I resized all of my images in Photoshop as either 1300px by 750px or 650px by 375px (for smaller original images) and then clicked “save for web" when I was all done.
+**PRO TIP: To make sure all of your images appear uniformly, make sure you give them a uniform width and height.** I resized all of my images in PhotoShop as either 1300px by 750px or 650px by 375px (for smaller original images) and then clicked “save for web" when I was all done.
 
 When I save my photos I also like to make sure they load progressively and I adjust the quality of the photos to help reduce the image’s file size (this will reduce your image's load time!). [Here’s some more info on optimizing photos.](http://madefreshly.com/blog/howto/how-to-properly-optimize-images-for-web-in-photoshop/)
 

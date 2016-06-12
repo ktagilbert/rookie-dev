@@ -21,7 +21,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/skiing.jpeg&quot; alt=&quot;web developing learning curve&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Learning web development was a lot like learning how to ski. That’s the best way I can describe it. Learning CSS &amp;amp; HTML was like going down the bunny hill. It gave me a chance to gain some footing in and build my initial confidence.&lt;/p&gt;
+&lt;p&gt;Learning web development was a lot like learning how to ski. That’s the best way I can describe it. Learning CSS &amp;amp; HTML was like going down the bunny hill. It gave me a chance to gain some footing and build my initial confidence.&lt;/p&gt;
 
 &lt;p&gt;After a few runs down the small hill, I got on the ski lift and went down my first real slope. Or, as it translates in the web development world, I began programming in JavaScript.&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 
 &lt;p&gt;In web development, I fell on my face a lot. I made stupid mistakes. I interviewed for positions and was rejected. I even considered giving it up after a period of remaining stagnant.&lt;/p&gt;
 
-&lt;p&gt;During each fall, I lost a bit of confidence. I even began to think that remaining in marketing would be the safer choice for my career. That’s when I began to feel like an imposter.&lt;/p&gt;
+&lt;p&gt;During each fall I lost a bit of confidence. I even began to think that remaining in marketing would be the safer choice for my career. That’s when I began to feel like an imposter.&lt;/p&gt;
 
 &lt;h1 id=&quot;how-i-got-past-imposter-syndrome-at-least-temporarilyfor-now&quot;&gt;How I got past imposter syndrome (at least temporarily…for now)&lt;/h1&gt;
 
@@ -70,7 +70,7 @@
 
 &lt;h2 id=&quot;what-changed&quot;&gt;What changed&lt;/h2&gt;
 
-&lt;p&gt;Now, &lt;a href=&quot;/blog/bootstrapExample/&quot;&gt;as I mentioned earlier on the blog&lt;/a&gt;, I was just offered my first role as a web developer. The opportunity came one day after I had a huge break down in front of my fiance. I had just learned that &lt;a href=&quot;http://www.wweek.com/2016/02/29/portland-is-literally-the-worst-place-in-the-us-for-women-in-tech/&quot;&gt;Portland, OR is one of the worst places in the country for women in tech&lt;/a&gt; to work. They are underpaid here and finding a job is difficult for them. It made sense! I had been interviewing for months and was getting no where. I was at the point of giving up again. But I had one more job interview the next day.&lt;/p&gt;
+&lt;p&gt;Now, &lt;a href=&quot;/blog/bootstrapExample/&quot;&gt;as I mentioned earlier on the blog&lt;/a&gt;, I was just offered my first role as a web developer. The opportunity came one day after I had a huge break down in front of my S.O.. I had just learned that &lt;a href=&quot;http://www.wweek.com/2016/02/29/portland-is-literally-the-worst-place-in-the-us-for-women-in-tech/&quot;&gt;Portland, OR is one of the worst places in the country for women in tech&lt;/a&gt; to work. They are underpaid here and finding a job is difficult for them. It made sense! I had been interviewing for months and was getting no where. I was at the point of giving up again. But I had one more job interview the next day.&lt;/p&gt;
 
 &lt;p&gt;I didn’t even want to go the interview. I was scared it was going to be fruitless. Plus, it would mean taking another day off of work without pay. But that felt too pathetic. Why would I be afraid of a job interview? It would just be a conversation. No big deal!!&lt;/p&gt;
 
@@ -114,7 +114,7 @@
 &lt;h2 id=&quot;the-process-of-learning-bootstrap&quot;&gt;The process of learning Bootstrap&lt;/h2&gt;
 &lt;p&gt;To get started with Bootstrap, I really only had to become familiar with the different classes that would help me design my one page &lt;a href=&quot;https://github.com/ktagilbert/Bootstrap-Example&quot;&gt;example project&lt;/a&gt;. I just started by reading about the Bootstrap grid system and components. From there, it was easy to start building my site.&lt;/p&gt;
 
-&lt;p&gt;There a ton of resources out there to help you learn these classes as well so I’m not going to try and cover everything you need to know about the framework. Instead, I’m just going to tell you about the elements that I think have the most common use cases.&lt;/p&gt;
+&lt;p&gt;There are a ton of resources out there to help you learn these classes as well so I’m not going to try and cover everything you need to know about the framework. Instead, I’m just going to tell you about the elements that I think have the most common use cases.&lt;/p&gt;
 
 &lt;h2 id=&quot;jumbotron&quot;&gt;1. Jumbotron&lt;/h2&gt;
 
@@ -150,7 +150,7 @@
 &lt;h2 id=&quot;columns&quot;&gt;3. Columns&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/twoColumnLayout.png&quot; alt=&quot;Two Column Layout&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Columns were my favorite elements. All you have to do to create columns with Bootstrap is use &lt;code&gt;&amp;lt;div class=&quot;col-md&quot;&amp;gt;&lt;/code&gt;. You also have to define a width for the column that all together adds up to 12. For example, if you want three columns you will use &lt;code&gt;&amp;lt;div class=&quot;col-md-4&quot;&amp;gt;&lt;/code&gt;. Likewise, two columns would be &lt;code&gt;&amp;lt;div class=&quot;col-md-12&quot;&amp;gt;&lt;/code&gt; and four columns would be &lt;code&gt;&amp;lt;div class=&quot;col-md-3&quot;&amp;gt;&lt;/code&gt;. For mobile layouts you can also use  the&lt;code&gt;&amp;lt;div class=&quot;col-sm&quot;&amp;gt;&lt;/code&gt; element or even &lt;code&gt;&amp;lt;div class=&quot;col-xs&quot;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Columns were my favorite elements. All you have to do to create columns with Bootstrap is use &lt;code&gt;&amp;lt;div class=&quot;col-md&quot;&amp;gt;&lt;/code&gt; or similarly &lt;code&gt;col-lg&lt;/code&gt;, &lt;code&gt;col-sm&lt;/code&gt;, or &lt;code&gt;col-xs&lt;/code&gt;. You also have to define a width for the column that all together adds up to 12. For example, if you want three columns you will use &lt;code&gt;&amp;lt;div class=&quot;col-md-4&quot;&amp;gt;&lt;/code&gt; three times within a ‘row’ element. Likewise, two columns would be &lt;code&gt;&amp;lt;div class=&quot;col-md-6&quot;&amp;gt;&lt;/code&gt; and four columns would be &lt;code&gt;&amp;lt;div class=&quot;col-md-3&quot;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Here is an example of the how to make the two column layout above:&lt;/p&gt;
 
@@ -209,7 +209,7 @@
     
       <item>
         <title>Your first Bootstrap Project - (Part 1)</title>
-        <description>&lt;p&gt;Before I start talking about Bootstrap, I have some big news. &lt;strong&gt;I was hired as an SEO Specialist/Web Developer a couple of weeks ago!&lt;/strong&gt; My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).&lt;/p&gt;
+        <description>&lt;p&gt;Before I start talking about Bootstrap, I have some big news. &lt;strong&gt;I was hired as an SEO Specialist/Web Developer a couple of weeks ago!&lt;/strong&gt; My new role marks the first time I feel comfortable enough to call myself a web developer (&lt;a href=&quot;/blog/confidence/&quot;&gt;more on that later&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;Yet, once I started my new role I immediately wanted to beef up on a few things. My first priority was to become more comfortable with Bootstrap. Now I know, Bootstrap is &lt;em&gt;old news&lt;/em&gt; to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site. Even better, you may even become more comfortable with common design patterns or methods of structuring your styles.&lt;/p&gt;
 
@@ -229,7 +229,7 @@
 
 &lt;p&gt;The sudo part is called &lt;em&gt;super user do&lt;/em&gt;. It basically lets you force commands by overriding security measures that could be causing your errors. In short, it lets you act as if you are the superuser on your computer. From there, you can continue on with the installation as usual.&lt;/p&gt;
 
-&lt;p&gt;Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a ‘config.yml’ file in the root of your project, it will let you serve up your project locally while you’re developing with the command &lt;code&gt;jekyll serve&lt;/code&gt; .&lt;/p&gt;
+&lt;p&gt;Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a ‘config.yml’ file in the root of your project, it will let you serve up your project locally while you’re developing with the command &lt;code&gt;grunt serve&lt;/code&gt; .&lt;/p&gt;
 
 &lt;p&gt;Okay, now that you have bower and Grunt installed, go ahead and unzip your Bootstrap folder. You’ll see that it includes a bunch of minified CSS, JavaScript, and even some fonts.&lt;/p&gt;
 
@@ -303,11 +303,11 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/searchFunction.jpg&quot; alt=&quot;Client side search function tutorial&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I went to my desk and called my fiance over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:&lt;/p&gt;
+&lt;p&gt;I went to my desk and called my S.O. over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:&lt;/p&gt;
 
 &lt;p&gt;The first step was to create a search field that would allow a user to enter in a search term. This a simple, un-intimidating step that will help you get the ball rolling. All you need to know is some CSS and HTML to make your search field look and function they way you want it to.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Here is how we made ours using a search icon from &lt;a href=&quot;https://fortawesome.github.io/Font-Awesome/&quot;&gt;font-awesome&lt;/a&gt;:&lt;/strong&gt; (note: I ended up using the search function for this site as well so you can see it in action on &lt;a href=&quot;http://ktgilbert.herokuapp.com/&quot;&gt;my home page!&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here is how we made ours using a search icon from &lt;a href=&quot;https://fortawesome.github.io/Font-Awesome/&quot;&gt;font-awesome&lt;/a&gt;:&lt;/strong&gt; (note: I ended up using the search function for this site as well so you can see it in action on &lt;a href=&quot;/blog/&quot;&gt;my blog page!&lt;/a&gt;):&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;search&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fa fa-search&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
@@ -334,7 +334,6 @@
   &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.7&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;nn&quot;&gt;#no-results&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -356,10 +355,8 @@
 
 &lt;p&gt;Here, I have removed the outer glow of the text-field, set an adequate width for the input area, and have styled the font of the user’s input as well as the font for what will show up when there are no matching articles.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;One note:&lt;/strong&gt; I’ve  also included “display: none” because right away I knew that I would add some jQuery later on to make the input field display after a user clicks on the icon. But I’ll get to that in a second. For now, let’s go into adding functionality to the search field.&lt;/p&gt;
-
 &lt;h2 id=&quot;creating-a-client-side-search-function-with-jquery&quot;&gt;Creating a client side search function with jQuery&lt;/h2&gt;
-&lt;p&gt;Right now, the search field does next to nothing. A user can type in it and that’s all. So, now you are going to want to make it actually search for something. &lt;strong&gt;My fiance helped me figure out how to add some functionality to my search function using jQuery. Here’s what we came up with:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Right now, the search field does next to nothing. A user can type in it and that’s all. So, now you are going to want to make it actually search for something. &lt;strong&gt;My S.O. helped me figure out how to add some functionality to my search function using jQuery. Here’s what we came up with:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.fa-search&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// on click of search icon&lt;/span&gt;
   &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#search-text&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;toggle&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;700&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// make the search field&amp;#39;s width expand (aka reveal the search field slowly)&lt;/span&gt;
@@ -428,9 +425,9 @@
 &lt;h2 id=&quot;take-away-lessons&quot;&gt;Take away lessons:&lt;/h2&gt;
 &lt;p&gt;When I was tasked with creating this search function, I was overwhelmed. There are a TON of ways to make a search function. So that’s why &lt;strong&gt;I had to sit down and think about what I could make using only the tools that I had at my disposal.&lt;/strong&gt; The end result is a simple search function that does exactly what I need it to do.&lt;/p&gt;
 
-&lt;p&gt;It’s not fancy. It’s not especially innovative. &lt;em&gt;But&lt;/em&gt; it works for my static blog and it accomplishes the function I need it do. And that’s totally fine. Plus, pair programming with my fiance helped me learn a bunch of cool new methods so I truly enjoyed the process of making this.&lt;/p&gt;
+&lt;p&gt;It’s not fancy. It’s not especially innovative. &lt;em&gt;But&lt;/em&gt; it works for my static blog and it accomplishes the function I need it to do. Plus, pair programming with my S.O. helped me learn a bunch of cool new methods so I truly enjoyed the process of making this.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Thanks for reading guys!&lt;/strong&gt; I hope this tutorial helps. Again, if you want to see the search function in action, just go to &lt;a href=&quot;http://ktgilbert.herokuapp.com/&quot;&gt;my home page&lt;/a&gt; and click the search icon. Also, let me know in the comments if you have any questions!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Thanks for reading guys!&lt;/strong&gt; I hope this tutorial helps. Again, if you want to see the search function in action, just go to &lt;a href=&quot;/blog/&quot;&gt;my blog page&lt;/a&gt; and click the search icon. Also, let me know in the comments if you have any questions!&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Jan 2016 00:00:00 -0800</pubDate>
         <link>ktgilbert.com//blog/client-side-search-function</link>
@@ -505,11 +502,11 @@ excerpt: &amp;gt;
 
 &lt;p&gt;For a while I was cool with just having a post title, link to the post, and an excerpt in this three column layout. But, after a while I realized that all that text was &lt;em&gt;boring.&lt;/em&gt; A simple solution was to include some images.&lt;/p&gt;
 
-&lt;p&gt;They’re a bunch of way to include images for each of your post but I went with what I think is the easiest option. &lt;strong&gt;In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.&lt;/strong&gt; Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you’ll include your liquid tag in the “index.html” file. You can see how I’ve included an image for each of my post in the code snippet above.&lt;/p&gt;
+&lt;p&gt;There are a bunch of ways to include images for each of your post but I went with what I think is the easiest option. &lt;strong&gt;In the same way that you can include excerpts with liquid tags, you can associate each of your posts with an image.&lt;/strong&gt; Just include “image” in your meta info and pair it with a file in your “assets” folder. Then, you’ll include your liquid tag in the “index.html” file. You can see how I’ve included an image for each of my post in the code snippet above.&lt;/p&gt;
 
 &lt;h2 id=&quot;optimize-your-photos-for-the-web-first&quot;&gt;Optimize Your photos for the web first&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;PRO TIP: To make sure all of your images appear uniformly, make sure you give them a uniform width and height.&lt;/strong&gt; I resized all of my images in Photoshop as either 1300px by 750px or 650px by 375px (for smaller original images) and then clicked “save for web” when I was all done.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PRO TIP: To make sure all of your images appear uniformly, make sure you give them a uniform width and height.&lt;/strong&gt; I resized all of my images in PhotoShop as either 1300px by 750px or 650px by 375px (for smaller original images) and then clicked “save for web” when I was all done.&lt;/p&gt;
 
 &lt;p&gt;When I save my photos I also like to make sure they load progressively and I adjust the quality of the photos to help reduce the image’s file size (this will reduce your image’s load time!). &lt;a href=&quot;http://madefreshly.com/blog/howto/how-to-properly-optimize-images-for-web-in-photoshop/&quot;&gt;Here’s some more info on optimizing photos.&lt;/a&gt;&lt;/p&gt;
 
@@ -579,10 +576,10 @@ excerpt: &amp;gt;
 &lt;p&gt;That’s all there is to it! After that, you can think about how you want your flex items to behave. Do you want them to be inline elements? Or should they appear in a column? Should any be larger in width than others? What should happen to them on different screen sizes? These are all things that flexbox properties can help you figure out.&lt;/p&gt;
 
 &lt;h2 id=&quot;get-flexible-with-flex-items&quot;&gt;Get flexible with flex items&lt;/h2&gt;
-&lt;p&gt;When it comes to creating the layout you want, you’ll need to make a few more declarations to get things exactly how you want them. Here a few to get you started:&lt;/p&gt;
+&lt;p&gt;When it comes to creating the layout you want, you’ll need to make a few more declarations to get things exactly how you want them. Here are a few to get you started:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;flex-basis:&lt;/strong&gt; This one is my favorites! Flex-basis allows you to determine the proportions of your flex items. Instead of declaring set widths for elements that require multiple media queries at the bottom of your stylesheet to maintain, use flex-basis instead. You can set a length using rem, em, or a percentage to make a particular element bigger or smaller than the others around it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;flex-basis:&lt;/strong&gt; This one is my favorites! Flex-basis allows you to determine the proportions of your flex items. Instead of declaring set widths for elements that require multiple &lt;a href=&quot;blog/mediaquery&quot;&gt;media queries&lt;/a&gt; at the bottom of your stylesheet to maintain, use flex-basis instead. You can set a length using rem, em, or a percentage to make a particular element bigger or smaller than the others around it.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#large-picture&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -625,13 +622,13 @@ excerpt: &amp;gt;
 &lt;h1 id=&quot;the-three-things-that-may-be-breaking-your-copywriting-workflow&quot;&gt;The three things that may be breaking your copywriting workflow&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/copywriter.jpg&quot; alt=&quot;Improve Your Copywriting Workflow&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;1) You writers are becoming bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It’s not because they are lazy. &lt;strong&gt;It’s because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.&lt;/strong&gt; The task is no longer creative but instead formulaic. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.&lt;/p&gt;
+&lt;p&gt;1) Your writers are getting bored and burnt out by writing the same thing over and again. Meaning, they are becoming apathetic. Why? It’s not because they are lazy. &lt;strong&gt;It’s because they are being forced to do a monotonous task, which is naturally leading them toward disinterest.&lt;/strong&gt; The task is no longer creative but instead formulaic. More than that, once a writer has to do more than 5 of these at a time, they begin to skim rather than give your assignment the attention it deserves.&lt;/p&gt;
 
 &lt;p&gt;2) You are missing deadlines because you have to keep going back to give your writer more instructions in order to get the copy you want.&lt;/p&gt;
 
 &lt;p&gt;3) Your writers are too scared to tell you that your process isn’t working for them. The fear is that once they speak up, they will be replaced because of how many other content writers are out there that would be happy to take over for them.&lt;/p&gt;
 
-&lt;p&gt;So to make your copywriting workflow actually work, some things need to happen. First, try asking yourself some questions. &lt;strong&gt;I suggest sitting down with a new document and thoroughly writing out your answers to the questions below so that you can see how to improve your process before even having to read this rest of this article.&lt;/strong&gt; OR, &lt;a href=&quot;/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf&quot;&gt;download these questions here&lt;/a&gt; and save them for your next meeting!&lt;/p&gt;
+&lt;p&gt;So to make your copywriting workflow actually work, some things need to happen. First, try asking yourself some questions. &lt;strong&gt;I suggest sitting down with a new document and thoroughly writing out your answers to the questions below so that you can see how to improve your process before even having to read the rest of this article.&lt;/strong&gt; OR, &lt;a href=&quot;/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf&quot;&gt;download these questions here&lt;/a&gt; and save them for your next meeting!&lt;/p&gt;
 
 &lt;h2 id=&quot;questions-to-help-you-improve-your-copywriting-workflow&quot;&gt;12 Questions to help you improve your copywriting workflow&lt;/h2&gt;
 
@@ -669,19 +666,19 @@ excerpt: &amp;gt;
 
 &lt;p&gt;But now, they are being tasked with writing for you and they are finding that your task is much more difficult than the ones they had in school. &lt;strong&gt;It is more difficult because they are either not being given clear instructions OR they are not being given enough time or money to give you what you are looking for.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don’t miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I’m the one copy editing these articles. Around the 10th time I read the same repeated phrase it’s almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down and at the end of it all writers only earn about $20-$30 their time my time.&lt;/p&gt;
+&lt;p&gt;I can tell you from personal experience that each article I write for a client or franchise takes me around 4 hours to create. Even after four hours, my managers tell me to slow down at work so that I don’t miss any mistakes. Each time, I notice that around the 3rd article I edit, I stop caring. The same goes for when I’m the one copy editing these articles. Around the 10th time I read the same repeated phrase it’s almost as if I lose the ability to read carefully. My mind goes numb instead and I effectively become useless to my manager and my company. The process just breaks down.&lt;/p&gt;
 
 &lt;h2 id=&quot;heres-the-thing-your-content-is-super-important&quot;&gt;Here’s the thing: your content is SUPER important.&lt;/h2&gt;
 
-&lt;p&gt;To fix the process, let’s remember that content is king right now! Meaning, you should be treating it like the king. It (and by extension your writers) should be your top priority as they are one of your most valuable resources. The best thing you can do to treat your content and your writers like kings is to give them all of the information you can to make their job perfectly clear and work to reduce their frustration during assignments. &lt;em&gt;So, go ahead, ask yourself those 12 questions at the beginning of this article to help yourself get better copy from your writers!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To fix the process, let’s remember that content is king right now! Meaning, you should be treating it like the king. It (and by extension your writers) should be your top priority as they are one of your most valuable resources. The best thing you can do to treat your content and your writers like kings is to give them all of the information you can to make their job perfectly clear and work to reduce their frustration during assignments. &lt;em&gt;So go ahead, ask yourself those 12 questions at the beginning of this article to help get better copy from your writers!&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;whats-the-solution&quot;&gt;What’s the solution?&lt;/h2&gt;
 
-&lt;p&gt;The best solution I can offer you is to simply try hiring more writers. Get more team members in your department or find more qualified freelancer to contribute to copy-editing. Then, get multiple people to help copy edit. You can even delegate the task to your interns as well to help. &lt;strong&gt;But it really is important that you spread out assignments between more writers to avoid being handed mediocre copy.  Afterall, this copy is important to you and your client so why would you trust it to someone who is going to become a zombie after a certain word count or hour of work?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The best solution I can offer you is to simply try hiring more writers. Get more team members in your department or find more qualified freelancers to contribute to copy-editing. Then, get multiple people to help copy edit. You can even delegate the task to your interns as well to help. &lt;strong&gt;But it really is important that you spread out assignments between more writers to avoid being handed mediocre copy.  Afterall, this copy is important to you and your client so why would you trust it to someone who is going to become a zombie after a certain word count or hour of work?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Another solution is to assign each a writer just one-three clients rather than 10-30 articles for one sale. That way, they will AT LEAST have different topics to write about and that will help fuel their interest and motivation.&lt;/p&gt;
 
-&lt;p&gt;Now that you have two great solutions in front you, the best thing you can do moving forward is  to&lt;a href=&quot;/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf&quot;&gt;download the 12 questions to help you improve your copywriting workflow&lt;/a&gt; and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!&lt;/p&gt;
+&lt;p&gt;Now that you have two great solutions in front you, the best thing you can do moving forward is &lt;a href=&quot;/downloads/questionstoHelpYouImproveYourCopyWritingWorkflow.pdf&quot;&gt;download the 12 questions to help you improve your copywriting workflow&lt;/a&gt; and fill them out with your team. It will only take 15 minutes and save you whole days of work as you improve your workflow!&lt;/p&gt;
 
 &lt;p&gt;Let me know what you think and thanks for reading guys!&lt;/p&gt;
 
@@ -701,7 +698,7 @@ excerpt: &amp;gt;
 &lt;h1 id=&quot;what-is-ui-design&quot;&gt;What is UI Design?&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/uxpic.jpg&quot; alt=&quot;Learning About UI Design&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;UI design stands for user interface design. It entails creating an interface that works for your targeted user. If you are a UI Designer, you have to think about what your user is going to respond well to and create something that captures the purpose of your site. Here is a good quote that may help you understand better&lt;/p&gt;
+&lt;p&gt;UI design stands for user interface design. It entails creating an interface that works for your targeted user. If you are a UI Designer, you have to think about what your user is going to respond well to and create something that captures the purpose of your site. Here is a good quote that may help you understand more:&lt;/p&gt;
 
 &lt;h3 id=&quot;user-interface-ui-design-focuses-on-anticipating-what-users-might-need-to-do-and-ensuring-that-the-interface-has-elements-that-are-easy-to-access-understand-and-use-to-facilitate-those-actions-ui-brings-together-concepts-from-interaction-design-visual-design-and-information-architecture&quot;&gt;“User Interface (UI) Design focuses on anticipating what users might need to do and ensuring that the interface has elements that are easy to access, understand, and use to facilitate those actions. UI brings together concepts from interaction design, visual design, and information. architecture.”&lt;/h3&gt;
 
@@ -710,7 +707,7 @@ excerpt: &amp;gt;
 - font choice
 - readability
 - consideration of how the site will look on different platforms/screen sizes
-- use contrast
+- use of contrast
 - use of spacing
 - organization of content
 - alignment of text, images, and inputs
@@ -720,7 +717,9 @@ excerpt: &amp;gt;
 - purposeful page layout
 - hierarchy of text&lt;/p&gt;
 
-&lt;p&gt;I’m going to touch on a few of these components today to help you get on your way to designing a great site. I do want to note that I am not an expert but I do have a passion for UI Design. I formed my knowledge of UI Design just by drawing on a bunch of different experiences I’ve had. I knew a little bit about branding from my experience in marketing and I studied color theory during various art courses. Then, I realized I also knew what I know about typography, hierarchy, spacing, and readability from my days spent laying out newspapers. After that, I just used Google to help me learn more. &lt;strong&gt;So I am also sure that if you draw on your various experiences that you know a lot too! More than you would expect probably.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’m going to touch on a few of these components today to help you get on your way to designing a great site. I do want to note that I am not an expert but I do have a passion for UI Design.&lt;/p&gt;
+
+&lt;p&gt;I formed my knowledge of UI Design just by drawing on a bunch of different experiences I’ve had. I knew a little bit about branding from my experience in marketing and I studied color theory during various art courses. Then, I realized I also knew about typography, hierarchy, spacing, and readability from my days spent laying out newspapers. After that, I just used Google to help me learn more. &lt;strong&gt;So I am also sure that if you draw on your various experiences that you know a lot too! More than you would expect probably.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;color-theory&quot;&gt;Color theory&lt;/h2&gt;
 
@@ -742,18 +741,18 @@ excerpt: &amp;gt;
   &lt;li&gt;Pro tip: pairing a sans-serif fonts with a serif font will help provide balance.&lt;/li&gt;
   &lt;li&gt;Think about the color of your text. Will your combinations be harsh on the eyes? Will there be too much contrast? Think about what you like to read. Do you want black text on a white background or would grey text on a creamy background be better for your purpose?&lt;/li&gt;
   &lt;li&gt;Put some careful thought into how large or small you want your fonts to be. Remember, think about hierarchy. Take time to decide how large all of your headers will be and then decide on how large the paragraph text will be in relation.&lt;/li&gt;
-  &lt;li&gt;Finally, consider how wide he content on your page is? Does it span the whole width of the screen without any margins? If so, you may want to spent some time reading &lt;a href=&quot;https://www.google.com/design/spec/material-design/introduction.html&quot;&gt;Google’s material design guidelines&lt;/a&gt; -  I found it super helpful!&lt;/li&gt;
+  &lt;li&gt;Finally, consider how wide the content on your page is? Does it span the whole width of the screen without any margins? If so, you may want to spent some time reading &lt;a href=&quot;https://www.google.com/design/spec/material-design/introduction.html&quot;&gt;Google’s material design guidelines&lt;/a&gt; -  I found it super helpful!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;navigation&quot;&gt;Navigation&lt;/h2&gt;
 
-&lt;p&gt;The first thing you should consider is how you want to your users to be able to navigate on your desktop site vs. your mobile site. Mobile v. Desktop definitely require different considerations! You can save the hamburger icon for your mobile site where space is limited (I learned this lesson the hard way!). You don’t need it for your desktop site because space isn’t an issue there. Instead, focus on creating a menu that is easy to find and use.&lt;/p&gt;
+&lt;p&gt;The first thing you should consider is how you want to your users to be able to navigate on your desktop site vs. your mobile site. Mobile v. Desktop definitely require different considerations! For example, you can save the hamburger icon for your mobile site where space is limited (I learned this lesson the hard way!). You don’t need it for your desktop site because space isn’t an issue there. Instead, focus on creating a menu that is easy to find and use.&lt;/p&gt;
 
-&lt;p&gt;Then, on mobile site you can think about simplifying things and strategically using your limited screen real estate. When you are working on the mobile design site, you can think about using a menu that slides down from an icon and then goes away when the user wishes to close it.&lt;/p&gt;
+&lt;p&gt;Then, on mobile site you can think about simplifying things and strategically using your limited screen real estate. When you’re working on the mobile site, you can think about using a menu that slides down from an icon and then goes away when the user wishes to close it.&lt;/p&gt;
 
 &lt;h2 id=&quot;consistency&quot;&gt;Consistency&lt;/h2&gt;
 
-&lt;p&gt;Consistency is simple. Once, you have gone through and made all your initial design decisions go through them again. This time ask yourself if you use your colors consistently across the site. Then do the same for everything else you have decided on. Make sure your buttons all look the same. Make sure your icons are uniform. Make sure your margins are consistent. Make sure your hover effects are appropriately uniform. &lt;em&gt;Seriously, go through everything.&lt;/em&gt; There’s even a bonus for being consistent with your design elements - it will help you avoid repeating code (as long as you utilize the purpose of classes vs. id’s).&lt;/p&gt;
+&lt;p&gt;Consistency is simple. Once, you have gone through and made all of your initial design decisions go through them again. This time ask yourself if you use your colors consistently across the site. Then do the same for everything else you have decided on. Make sure your buttons all look the same. Make sure your icons are uniform. Make sure your margins are consistent. Make sure your hover effects are appropriately uniform. &lt;em&gt;Seriously, go through everything.&lt;/em&gt; There’s even a bonus for being consistent with your design elements - it will help you avoid repeating code (as long as you utilize the purpose of classes vs. id’s).&lt;/p&gt;
 
 &lt;p&gt;Okay, these are just some of the basics I wanted to touch on. I hope that they will help you as you learn more about UI Design.&lt;/p&gt;
 

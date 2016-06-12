@@ -9,7 +9,7 @@ excerpt: >
  Now I know, Bootstrap is old news to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site.
 ---
 
-Before I start talking about Bootstrap, I have some big news. **I was hired as an SEO Specialist/Web Developer a couple of weeks ago!** My new role marks the first time I feel comfortable enough to call myself a web developer (more on that later).
+Before I start talking about Bootstrap, I have some big news. **I was hired as an SEO Specialist/Web Developer a couple of weeks ago!** My new role marks the first time I feel comfortable enough to call myself a web developer ([more on that later](/blog/confidence/)).
 
 Yet, once I started my new role I immediately wanted to beef up on a few things. My first priority was to become more comfortable with Bootstrap. Now I know, Bootstrap is *old news* to many. Still, if you are new to web development, it can help to immerse yourself in a front-end framework. If anything the experience will show you how to quickly make a static site. Even better, you may even become more comfortable with common design patterns or methods of structuring your styles.  
 
@@ -29,7 +29,7 @@ After that, you'll go back into your terminal and install Grunt. The Bootstrap g
 
 The sudo part is called *super user do*. It basically lets you force commands by overriding security measures that could be causing your errors. In short, it lets you act as if you are the superuser on your computer. From there, you can continue on with the installation as usual.
 
-Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a 'config.yml' file in the root of your project, it will let you serve up your project locally while you're developing with the command ```jekyll serve``` .
+Grunt is important because it lets you run tests and will watch your changes as your work on your project. Plus, once you include a 'config.yml' file in the root of your project, it will let you serve up your project locally while you're developing with the command ```grunt serve``` .
 
 Okay, now that you have bower and Grunt installed, go ahead and unzip your Bootstrap folder. You'll see that it includes a bunch of minified CSS, JavaScript, and even some fonts.
 

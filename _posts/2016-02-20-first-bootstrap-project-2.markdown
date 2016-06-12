@@ -31,7 +31,7 @@ These are all great features. Still, there are other frameworks to choose from. 
 ## The process of learning Bootstrap
 To get started with Bootstrap, I really only had to become familiar with the different classes that would help me design my one page [example project](https://github.com/ktagilbert/Bootstrap-Example). I just started by reading about the Bootstrap grid system and components. From there, it was easy to start building my site.
 
-There a ton of resources out there to help you learn these classes as well so I'm not going to try and cover everything you need to know about the framework. Instead, I'm just going to tell you about the elements that I think have the most common use cases.
+There are a ton of resources out there to help you learn these classes as well so I'm not going to try and cover everything you need to know about the framework. Instead, I'm just going to tell you about the elements that I think have the most common use cases.
 
 
 ##1. Jumbotron
@@ -69,7 +69,7 @@ Here you can see that the Jumbotron class gave me a uniform and fluid container 
 ## 3. Columns
 ![Two Column Layout](/assets/twoColumnLayout.png)
 
-Columns were my favorite elements. All you have to do to create columns with Bootstrap is use ```<div class="col-md">```. You also have to define a width for the column that all together adds up to 12. For example, if you want three columns you will use ```<div class="col-md-4">```. Likewise, two columns would be ```<div class="col-md-12">``` and four columns would be ```<div class="col-md-3">```. For mobile layouts you can also use  the```<div class="col-sm">``` element or even ```<div class="col-xs">```.
+Columns were my favorite elements. All you have to do to create columns with Bootstrap is use ```<div class="col-md">``` or similarly ```col-lg```, ```col-sm ```, or ```col-xs```. You also have to define a width for the column that all together adds up to 12. For example, if you want three columns you will use ```<div class="col-md-4">``` three times within a 'row' element. Likewise, two columns would be ```<div class="col-md-6">``` and four columns would be ```<div class="col-md-3">```.
 
 Here is an example of the how to make the two column layout above:
 

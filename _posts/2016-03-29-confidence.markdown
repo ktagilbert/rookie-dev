@@ -22,7 +22,7 @@ As adults, challenges tend to stop us in our tracks. Maybe that's just me? But w
 
 ![web developing learning curve](/assets/skiing.jpeg)
 
-Learning web development was a lot like learning how to ski. That's the best way I can describe it. Learning CSS & HTML was like going down the bunny hill. It gave me a chance to gain some footing in and build my initial confidence.
+Learning web development was a lot like learning how to ski. That's the best way I can describe it. Learning CSS & HTML was like going down the bunny hill. It gave me a chance to gain some footing and build my initial confidence.
 
 After a few runs down the small hill, I got on the ski lift and went down my first real slope. Or, as it translates in the web development world, I began programming in JavaScript.
 
@@ -30,7 +30,7 @@ You see, when I went first went skiing, I went too fast down the mountain. It's 
 
 In web development, I fell on my face a lot. I made stupid mistakes. I interviewed for positions and was rejected. I even considered giving it up after a period of remaining stagnant.
 
-During each fall, I lost a bit of confidence. I even began to think that remaining in marketing would be the safer choice for my career. That's when I began to feel like an imposter.
+During each fall I lost a bit of confidence. I even began to think that remaining in marketing would be the safer choice for my career. That's when I began to feel like an imposter.
 
 # How I got past imposter syndrome (at least temporarily...for now)
 
@@ -69,7 +69,7 @@ I wouldn't say I *overcame* imposter syndrome either. It's more like I just got 
 
 ## What changed
 
-Now, [as I mentioned earlier on the blog](/blog/bootstrapExample/), I was just offered my first role as a web developer. The opportunity came one day after I had a huge break down in front of my fiance. I had just learned that [Portland, OR is one of the worst places in the country for women in tech](http://www.wweek.com/2016/02/29/portland-is-literally-the-worst-place-in-the-us-for-women-in-tech/) to work. They are underpaid here and finding a job is difficult for them. It made sense! I had been interviewing for months and was getting no where. I was at the point of giving up again. But I had one more job interview the next day.
+Now, [as I mentioned earlier on the blog](/blog/bootstrapExample/), I was just offered my first role as a web developer. The opportunity came one day after I had a huge break down in front of my S.O.. I had just learned that [Portland, OR is one of the worst places in the country for women in tech](http://www.wweek.com/2016/02/29/portland-is-literally-the-worst-place-in-the-us-for-women-in-tech/) to work. They are underpaid here and finding a job is difficult for them. It made sense! I had been interviewing for months and was getting no where. I was at the point of giving up again. But I had one more job interview the next day.
 
 I didn't even want to go the interview. I was scared it was going to be fruitless. Plus, it would mean taking another day off of work without pay. But that felt too pathetic. Why would I be afraid of a job interview? It would just be a conversation. No big deal!!
 

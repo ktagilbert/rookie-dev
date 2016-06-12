@@ -22,11 +22,11 @@ A few months ago, I wanted to make a search function for a site I was working on
 
 ![Client side search function tutorial](/assets/searchFunction.jpg)
 
-I went to my desk and called my fiance over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:
+I went to my desk and called my S.O. over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:
 
 The first step was to create a search field that would allow a user to enter in a search term. This a simple, un-intimidating step that will help you get the ball rolling. All you need to know is some CSS and HTML to make your search field look and function they way you want it to.
 
-**Here is how we made ours using a search icon from [font-awesome](https://fortawesome.github.io/Font-Awesome/):** (note: I ended up using the search function for this site as well so you can see it in action on [my home page!](http://ktgilbert.herokuapp.com/)):
+**Here is how we made ours using a search icon from [font-awesome](https://fortawesome.github.io/Font-Awesome/):** (note: I ended up using the search function for this site as well so you can see it in action on [my blog page!](/blog/)):
 
 {% highlight html%}
 <div class="search">
@@ -58,7 +58,6 @@ So you can see that we created a container for a search field in my "index.html"
   width: 18%;
   padding: 5px;
   font-size: 0.7em;
-  display: none;
 }
 
 #no-results {
@@ -83,10 +82,9 @@ So you can see that we created a container for a search field in my "index.html"
 
 Here, I have removed the outer glow of the text-field, set an adequate width for the input area, and have styled the font of the user's input as well as the font for what will show up when there are no matching articles.
 
-**One note:** I've  also included "display: none" because right away I knew that I would add some jQuery later on to make the input field display after a user clicks on the icon. But I'll get to that in a second. For now, let's go into adding functionality to the search field.
 
 ## Creating a client side search function with jQuery
-Right now, the search field does next to nothing. A user can type in it and that's all. So, now you are going to want to make it actually search for something. **My fiance helped me figure out how to add some functionality to my search function using jQuery. Here's what we came up with:**
+Right now, the search field does next to nothing. A user can type in it and that's all. So, now you are going to want to make it actually search for something. **My S.O. helped me figure out how to add some functionality to my search function using jQuery. Here's what we came up with:**
 
 {% highlight javascript %}
 $('.fa-search').on('click', function(event) { // on click of search icon
@@ -150,6 +148,6 @@ We used some specific methods to help us create the search functionality. I had 
 ## Take away lessons:
 When I was tasked with creating this search function, I was overwhelmed. There are a TON of ways to make a search function. So that's why **I had to sit down and think about what I could make using only the tools that I had at my disposal.** The end result is a simple search function that does exactly what I need it to do.
 
-It's not fancy. It's not especially innovative. *But* it works for my static blog and it accomplishes the function I need it do. And that's totally fine. Plus, pair programming with my fiance helped me learn a bunch of cool new methods so I truly enjoyed the process of making this.
+It's not fancy. It's not especially innovative. *But* it works for my static blog and it accomplishes the function I need it to do. Plus, pair programming with my S.O. helped me learn a bunch of cool new methods so I truly enjoyed the process of making this.
 
-**Thanks for reading guys!** I hope this tutorial helps. Again, if you want to see the search function in action, just go to [my home page](http://ktgilbert.herokuapp.com/) and click the search icon. Also, let me know in the comments if you have any questions!
+**Thanks for reading guys!** I hope this tutorial helps. Again, if you want to see the search function in action, just go to [my blog page](/blog/) and click the search icon. Also, let me know in the comments if you have any questions!

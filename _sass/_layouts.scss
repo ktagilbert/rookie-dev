@@ -38,21 +38,12 @@ about page
   background-position: center;
 }
 
-// @media(max-width: 650px) {
-//   .blue-page-header {
-//     display: none;
-//   }
-//   .text-wrapper {
-//     width: 90%;
-//   }
-//   .wrapper {
-//     width: 100%;
-//     margin: 0;
-//   }
-//   .post-title {
-//     margin: 1%;
-//   }
-// }
+@media(max-width: 650px) {
+  .blue-page-header {
+    height: 150px;
+  }
+}
+
 
 .absolute-container {
   position: relative;

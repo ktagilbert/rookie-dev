@@ -341,11 +341,11 @@ fonts
       .post-content h4 {
         font-size: 18px; } }
   .post-content a {
-    color: #666;
     font-weight: bold; }
   .post-content ul, .post-content li {
     font-size: 18px;
-    padding-bottom: 2%; }
+    padding-bottom: 2%;
+    list-style: decimal; }
 
 /*********************************
 search field
@@ -868,6 +868,9 @@ about page
   background-size: 100%;
   background-position: center; }
 
+@media (max-width: 650px) {
+  .blue-page-header {
+    height: 150px; } }
 .absolute-container {
   position: relative;
   background-color: #fff;

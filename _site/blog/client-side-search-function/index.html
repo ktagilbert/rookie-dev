@@ -15,7 +15,8 @@
        A Client Side Search Function Made with jQuery
      
    </title>
-   <meta name="description" content="A great intermediate project for any web developer is creating a client side search function with JavaScript and jQuery. See how to think about the problem and begin developing your search function here.">
+   <meta name="description" content="A great intermediate project for any web developer is creating a client side search function with JavaScript and jQuery. See how to think about the problem and begin developing your search function here.
+">
  <!--open graph protocol -->
 
   <meta property="og:title" content="Katie Gilbert | Freelance Technical Marketer & Web Developer" />
@@ -264,11 +265,11 @@
 
 <p><img src="/assets/searchFunction.jpg" alt="Client side search function tutorial" /></p>
 
-<p>I went to my desk and called my fiance over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:</p>
+<p>I went to my desk and called my S.O. over to help me figure out what to do. Again, I needed to do some more rubber ducking and it usually helps me to talk out the problem with someone in order to get my thoughts in order. So we did some pair programming to figure out what to do:</p>
 
 <p>The first step was to create a search field that would allow a user to enter in a search term. This a simple, un-intimidating step that will help you get the ball rolling. All you need to know is some CSS and HTML to make your search field look and function they way you want it to.</p>
 
-<p><strong>Here is how we made ours using a search icon from <a href="https://fortawesome.github.io/Font-Awesome/">font-awesome</a>:</strong> (note: I ended up using the search function for this site as well so you can see it in action on <a href="http://ktgilbert.herokuapp.com/">my home page!</a>):</p>
+<p><strong>Here is how we made ours using a search icon from <a href="https://fortawesome.github.io/Font-Awesome/">font-awesome</a>:</strong> (note: I ended up using the search function for this site as well so you can see it in action on <a href="/blog/">my blog page!</a>):</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-search&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -295,7 +296,6 @@
   <span class="na">width</span><span class="o">:</span> <span class="mi">18</span><span class="kt">%</span><span class="p">;</span>
   <span class="na">padding</span><span class="o">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
   <span class="na">font-size</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.7</span><span class="kt">em</span><span class="p">;</span>
-  <span class="na">display</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nn">#no-results</span> <span class="p">{</span>
@@ -317,10 +317,8 @@
 
 <p>Here, I have removed the outer glow of the text-field, set an adequate width for the input area, and have styled the font of the user’s input as well as the font for what will show up when there are no matching articles.</p>
 
-<p><strong>One note:</strong> I’ve  also included “display: none” because right away I knew that I would add some jQuery later on to make the input field display after a user clicks on the icon. But I’ll get to that in a second. For now, let’s go into adding functionality to the search field.</p>
-
 <h2 id="creating-a-client-side-search-function-with-jquery">Creating a client side search function with jQuery</h2>
-<p>Right now, the search field does next to nothing. A user can type in it and that’s all. So, now you are going to want to make it actually search for something. <strong>My fiance helped me figure out how to add some functionality to my search function using jQuery. Here’s what we came up with:</strong></p>
+<p>Right now, the search field does next to nothing. A user can type in it and that’s all. So, now you are going to want to make it actually search for something. <strong>My S.O. helped me figure out how to add some functionality to my search function using jQuery. Here’s what we came up with:</strong></p>
 
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.fa-search&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// on click of search icon</span>
   <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#search-text&#39;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">width</span><span class="o">:</span> <span class="s1">&#39;toggle&#39;</span><span class="p">},</span> <span class="s1">&#39;700&#39;</span><span class="p">);</span> <span class="c1">// make the search field&#39;s width expand (aka reveal the search field slowly)</span>
@@ -389,9 +387,9 @@
 <h2 id="take-away-lessons">Take away lessons:</h2>
 <p>When I was tasked with creating this search function, I was overwhelmed. There are a TON of ways to make a search function. So that’s why <strong>I had to sit down and think about what I could make using only the tools that I had at my disposal.</strong> The end result is a simple search function that does exactly what I need it to do.</p>
 
-<p>It’s not fancy. It’s not especially innovative. <em>But</em> it works for my static blog and it accomplishes the function I need it do. And that’s totally fine. Plus, pair programming with my fiance helped me learn a bunch of cool new methods so I truly enjoyed the process of making this.</p>
+<p>It’s not fancy. It’s not especially innovative. <em>But</em> it works for my static blog and it accomplishes the function I need it to do. Plus, pair programming with my S.O. helped me learn a bunch of cool new methods so I truly enjoyed the process of making this.</p>
 
-<p><strong>Thanks for reading guys!</strong> I hope this tutorial helps. Again, if you want to see the search function in action, just go to <a href="http://ktgilbert.herokuapp.com/">my home page</a> and click the search icon. Also, let me know in the comments if you have any questions!</p>
+<p><strong>Thanks for reading guys!</strong> I hope this tutorial helps. Again, if you want to see the search function in action, just go to <a href="/blog/">my blog page</a> and click the search icon. Also, let me know in the comments if you have any questions!</p>
 
   </article>
 
