@@ -3,7 +3,8 @@ layout: post
 title: "Learning About Media Queries"
 date: 2015-09-05 17:00:00
 image: "designer-board-typo-word.jpg"
-description: If you're a beginning front-end developer, a key skills is going to be learning how to make a mobile-friendly website. Use media queries to begin creating responsive layouts. 
+description: >
+ If you're a beginning front-end developer, a key skills is going to be learning how to make a mobile-friendly website. Use media queries to begin creating responsive layouts. 
 excerpt: >
  Say you are working on a website and want it to look great across multiple devices. Meaning, you need your layout to look just as great on phones or tablets as it does on desktop.                                                                                                                                                                   
 ---

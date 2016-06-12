@@ -3,7 +3,8 @@ layout: post
 title: How to Improve Your Copywriting Workflow
 date: 2015-12-3 16:32:21
 image: "copywriter.jpg"
-description: Want to know how your agency can improve its copywriting workflow? Read more to see how your agency may be failing your writers and how to improve the situation.
+description: >
+ Want to know how your agency can improve its copywriting workflow? Read more to see how your agency may be failing your writers and how to improve the situation.
 excerpt: >
  We are all trying to accommodate Google, right? So we abide by these rules and end-up forcing our copywriters to write the same article over and again. In most cases the process works fine. But is it really working well enough for you?
 

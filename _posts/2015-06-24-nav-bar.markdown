@@ -3,7 +3,8 @@ layout: post
 title: "How to Make a Simple Navigation Menu From Scratch"
 date: 2015-06-24 16:32:21
 image: "navPost.jpg"
-description: A great starter project for someone getting into web development is making a simple menu. You can make one with just CSS and HTML. Learn more here. 
+description: >
+ A great starter project for someone getting into web development is making a simple menu. You can make one with just CSS and HTML. Learn more here. 
 excerpt: >
  Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head.
 ---
