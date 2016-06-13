@@ -252,16 +252,20 @@
 <h3 id="desktop-layout">Desktop layout</h3>
 <p><img src="/assets/rookiedevmockup.jpg" alt="Mobile UI Mock Up" /></p>
 
-<p>After your desktop layout is perfect, you will want to think about how that same site will look on a smaller screen. Ideally, you will think about the problem of a smaller screen before development. For example, you can think about how your layout will look on a mobile device. In the case of the blog here, I changed my home page from a three-column layout to a single layout and created a dropdown menu that I’ve indicated with a navicon. <strong>In development, you can make these layout changes with the help media queries.</strong></p>
+<p>After your desktop layout is perfect, you will want to think about how that same site will look on a smaller screen. Ideally, you will think about the problem of a smaller screen before development.</p>
+
+<p>For example, you can think about how your layout will look on a mobile device. In the case of the blog here, I changed my home page from a three-column layout to a single column layout and created a dropdown menu that I’ve indicated with a navicon. <strong>In development, you can make these layout changes with the help of media queries.</strong></p>
 
 <h3 id="mobile-layout">Mobile layout</h3>
 <p><img src="/assets/rookiedevmobile.jpg" alt="Mobile UI Mock Up" /></p>
 
 <h1 id="what-is-a-media-query">What is a media query?</h1>
 
-<p>You can think of media queries as a tool that will let you change your layout when certain conditions apply (or at certain breakpoints). For example, what if you reduce your screen size to 760px and see that your two-column layout on your home page looks way to busy. Well, then you would want to include a rule in your stylesheet that says that when someone views your site at a screen width of 760px, your home page should change to a one-column layout. Now your home page looks much better. Awesome!</p>
+<p><strong>You can think of media queries as a tool that will let you change your layout when certain conditions apply (or at certain breakpoints).</strong> For example, what if you reduce your screen size to 760px and see that your two-column layout on your home page looks way to busy.</p>
 
-<p>To help you gain a grasp on what a media query looks like, you can checkout the example here.</p>
+<p>Well, then you would want to include a rule in your stylesheet that says that when someone views your site at a screen width of 760px, your home page should change to a one-column layout. Now your home page looks much better. Awesome!</p>
+
+<p>To help you gain a grasp of what a media query looks like, you can checkout the example here:</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">457px</span><span class="o">)</span> <span class="p">{</span>
 	<span class="nc">.page-heading</span> <span class="p">{</span>
@@ -279,11 +283,17 @@
 <p>This is an example of a media query I used to help make this blog’s logo. I made it to help make the surrounding div shrink once a user’s screen size reaches 457px or smaller. I reached the number 457 by basically shrinking my window until the logo and page-heading div looked ugly. That was my breakpoint and the width at which I needed to make a new rule within my stylesheet.</p>
 
 <h2 id="when-to-use-a-media-query">When to use a media query</h2>
-<p>I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query. <strong>Just remember to base your media query rules on how your content looks rather than on popular device widths.</strong> If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don’t want).</p>
+<p>I have found that while you are developing your site, you should consistently check how new features look at different screen sizes. If you find that a piece of your content looks ugly at a certain screen width, then you should either consider using a media query.</p>
 
-<p>Yet, before you define a media query rule, it can also help to remember that many layout problems can be fixed by using more flexible measurement units. For example, using percentages <a href="https://css-tricks.com/why-ems/">or ems</a> when it comes to defining font sizes. Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.</p>
+<p><strong>Just remember to base your media query rules on how your content looks rather than on popular device widths.</strong> If you base your rules on device widths, you will have to keep adding more and more rules as new products emerge. This can quickly lead to overly complex code and a lot of wasted time (which I know you don’t want).</p>
 
-<p>A breakpoint is a point where your layout <em>breaks</em>, indicating that your layout should change. You can see breakpoints in action by going to a site and seeing how the layouts alter at certain points. <a href="https://css-tricks.com/">CSS Tricks</a> is a great example if you want to check it out. Simply make the screen at CSS Tricks smaller. You will notice that the sidebar on the right hand of the screen becomes thinner and thinner until it disappears completely at mobile-sized width. <strong>Each little micro-change in the CSS Tricks layout represents a breakpoint.</strong></p>
+<p>Yet, before you define a media query rule, it can also help to remember that many layout problems can be fixed by using more flexible measurement units. For example, using percentages <a href="https://css-tricks.com/why-ems/">or ems</a> when it comes to defining font sizes.</p>
+
+<p>Yet, if your overall layout isn’t working at a certain screen width, well then you have encountered a breakpoint and should probably consider using a media query.</p>
+
+<p><strong>A breakpoint is a point where your layout <em>breaks</em>, indicating that your layout should change.</strong> You can see breakpoints in action by going to a site and seeing how the layouts alter at certain points.</p>
+
+<p><a href="https://css-tricks.com/">CSS Tricks</a> is a great example if you want to check it out. Simply make the screen at CSS Tricks smaller. You will notice that the sidebar on the right hand of the screen becomes thinner and thinner until it disappears completely at mobile-sized widths. <strong>Each little micro-change in the CSS Tricks layout represents a breakpoint.</strong></p>
 
 <p>Now, let’s look at the different kinds of media queries that you can use for your own project.</p>
 
@@ -303,21 +313,27 @@
 </ul>
 
 <h2 id="portrait-and-landscape-properties">Portrait and landscape properties</h2>
-<p>I am most excited about these properties! I just recently learned about portrait and landscape properties myself thanks to <a href="http://teamtreehouse.com">Treehouse</a>. If you are making a mobile first design, then you probably want rules that will make your layout look great on smaller screen sizes. Well, if you have been considering breakpoints while implementing new features, then I am sure you will have this covered.</p>
+<p>I am most excited about these properties! I just recently learned about portrait and landscape properties myself thanks to <a href="http://teamtreehouse.com">Treehouse</a>.</p>
 
-<p>Yet, what if your user wants to view your project in a landscape mode? For example, what will happen to your layout when a user rotates their phone or tablet? Well, you can make rules for these instances as well. You can see examples of the portrait and landscape properties in action over on <a href="http://stephen.io/mediaqueries/">Stephen Gilbert’s site here</a>. In general, you can begin defining style rules following the syntax below:</p>
+<p>If you are making a mobile first design, then you probably want rules that will make your layout look great on smaller screen sizes. Well, if you have been considering breakpoints while implementing new features, then I am sure you will have this covered.</p>
+
+<p>Yet, what if your user wants to view your project in a landscape mode? For example, what will happen to your layout when a user rotates their phone or tablet? Well, you can make rules for these instances as well.</p>
+
+<p>You can see examples of the portrait and landscape properties in action over on <a href="http://stephen.io/mediaqueries/">Stephen Gilbert’s site here</a>. In general, you can begin defining style rules following the syntax below:</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">portrait</span><span class="o">)</span>
 <span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">portrait</span><span class="o">)</span></code></pre></div>
 
 <h2 id="media-query-syntax">Media query syntax</h2>
-<p>I bet you noticed that in the portrait and landscape example we used the word “and” as well as further specifiied our media query within a set of parentheses. One thing I have found is that if you are having trouble remembering how to write out a media query rule, you can draw on what you know about <a href="http://www.w3schools.com/js/js_operators.asp">operators</a>. For example, if you want two rules that apply at once, you should use “and” in the same way you would use &amp;&amp; in JavaScript. You will even see that you can even write something with multiple specifications like this:</p>
+<p>I bet you noticed that in the portrait and landscape example we used the word “and” as well as further specifiied our media query within a set of parentheses. One thing I have found is that if you are having trouble remembering how to write out a media query rule, you can draw on what you know about <a href="http://www.w3schools.com/js/js_operators.asp">operators</a>. For example, if you want two rules that apply at once, you should use “and” in the same way you would use &amp;&amp; in JavaScript. You will even see that you can write something with multiple specifications like this:</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="nt">handheld</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">grid</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">15em</span><span class="o">)</span></code></pre></div>
 
 <h2 id="where-to-learn-more">Where to learn more</h2>
 
-<p>Okay, now I’ve shown you some key media query properties that you can use while working on your current or next project. I didn’t cover everything that can be done with media queries. There are still many other things you can do. For example, you could also consider color-index, aspect-ratio, and even other Mozilla specific media features. I’ll let you guys look into these yourself though <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features">over on MDN</a>.</p>
+<p>Okay, now I’ve shown you some key media query properties that you can use while working on your current or next project. I didn’t cover everything that can be done with media queries. There are still many other things you can do.</p>
+
+<p>For example, you could also consider color-index, aspect-ratio, and even other Mozilla specific media features. I’ll let you guys look into these yourself though <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features">over on MDN</a>.</p>
 
 <p><strong>Thanks for reading guys! Hope this post helps.</strong></p>
 

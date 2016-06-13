@@ -241,7 +241,7 @@
   <p itemprop="datePublished" class="post-meta">Sep 23, 2015
   </p>
   <article itemprop="articleBody" class="post-content">
-    <p>Earlier, I showed you <a href="http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html">how to make a nav bar from scratch using just HTML and CSS</a>. I really believe creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.</p>
+    <p>Earlier, I showed you <a href="http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html">how to make a nav bar from scratch using just HTML and CSS</a>. I really believe that creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you also want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.</p>
 
 <p>When I redesigned this blog my nav bar was the first thing I wanted to change. I had a simple, static navigation that was pretty boring. So I took a look at other sites and noticed that their nav bars changed colors as users scrolled down.</p>
 
@@ -255,7 +255,7 @@
 
 <h1 id="how-to-approach-the-problem">How to Approach the Problem</h1>
 
-<p>If you are looking to build a great, responsive nav bar that utilizes some jQuery here is how to start. First, you can navigate to where you are including your javascript. You can start by making sure you have a jQuery library included along with your other script tags. (I keep mine in my head.html file.)</p>
+<p>If you are looking to build a great, responsive nav bar that utilizes some jQuery here is how to start. First, you can navigate to where you are including your JavasSript. You can start by making sure you have a jQuery library included along with your other script tags. (I keep mine in my head.html file.)</p>
 
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span></code></pre></div>
 
@@ -327,11 +327,11 @@
       <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.menu-item&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="s2">&quot;#fff&quot;</span><span class="p">);</span>
       <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.menu-item&#39;</span><span class="p">).</span><span class="nx">children</span><span class="p">().</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="s2">&quot;#fff&quot;</span><span class="p">);</span></code></pre></div>
 
-<p>You’ll notice that at the beginning of my if statement, I used the or operator. You don’t have to include an or statement if you don’t need it.  I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first &lt;p&gt; tags on a page.</p>
+<p>You’ll notice that at the beginning of my ‘if’ statement, I used the ‘or’ operator. You don’t have to include an ‘or’ statement if you don’t need it. I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first &lt;p&gt; tag on a page.</p>
 
-<p>For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first h1 tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.</p>
+<p>For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first &lt;h1&gt; tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.</p>
 
-<p>Next, you can write your else statement. The else statement will provide the css info you need to change when the menu goes back to it’s initial state at the top of a window. Now, you are not declaring what the menu will look like normally. Instead, the else statement will help your menu toggle back to its normal state if a user scrolls <em>back up</em> to the top of the screen.</p>
+<p>Next, you can write your ‘else’ statement. The else statement will provide the CSS info you need to change when the menu goes back to it’s initial state at the top of a window. Now, you are not declaring what the menu will look like normally. Instead, the else statement will help your menu toggle back to its normal state if a user scrolls <em>back up</em> to the top of the screen.</p>
 
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
       <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#menu&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;background-color&#39;</span><span class="p">,</span> <span class="s1">&#39;transparent&#39;</span><span class="p">);</span>

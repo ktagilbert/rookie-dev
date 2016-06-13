@@ -769,7 +769,7 @@ excerpt: &amp;gt;
     
       <item>
         <title>Tutorial: Making a Responsive Navigation Bar</title>
-        <description>&lt;p&gt;Earlier, I showed you &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html&quot;&gt;how to make a nav bar from scratch using just HTML and CSS&lt;/a&gt;. I really believe creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.&lt;/p&gt;
+        <description>&lt;p&gt;Earlier, I showed you &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html&quot;&gt;how to make a nav bar from scratch using just HTML and CSS&lt;/a&gt;. I really believe that creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you also want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.&lt;/p&gt;
 
 &lt;p&gt;When I redesigned this blog my nav bar was the first thing I wanted to change. I had a simple, static navigation that was pretty boring. So I took a look at other sites and noticed that their nav bars changed colors as users scrolled down.&lt;/p&gt;
 
@@ -783,7 +783,7 @@ excerpt: &amp;gt;
 
 &lt;h1 id=&quot;how-to-approach-the-problem&quot;&gt;How to Approach the Problem&lt;/h1&gt;
 
-&lt;p&gt;If you are looking to build a great, responsive nav bar that utilizes some jQuery here is how to start. First, you can navigate to where you are including your javascript. You can start by making sure you have a jQuery library included along with your other script tags. (I keep mine in my head.html file.)&lt;/p&gt;
+&lt;p&gt;If you are looking to build a great, responsive nav bar that utilizes some jQuery here is how to start. First, you can navigate to where you are including your JavasSript. You can start by making sure you have a jQuery library included along with your other script tags. (I keep mine in my head.html file.)&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -855,11 +855,11 @@ excerpt: &amp;gt;
       &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.menu-item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;color&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#fff&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
       &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.menu-item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;color&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#fff&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;You’ll notice that at the beginning of my if statement, I used the or operator. You don’t have to include an or statement if you don’t need it.  I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first &amp;lt;p&amp;gt; tags on a page.&lt;/p&gt;
+&lt;p&gt;You’ll notice that at the beginning of my ‘if’ statement, I used the ‘or’ operator. You don’t have to include an ‘or’ statement if you don’t need it. I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first &amp;lt;p&amp;gt; tag on a page.&lt;/p&gt;
 
-&lt;p&gt;For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first h1 tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.&lt;/p&gt;
+&lt;p&gt;For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first &amp;lt;h1&amp;gt; tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.&lt;/p&gt;
 
-&lt;p&gt;Next, you can write your else statement. The else statement will provide the css info you need to change when the menu goes back to it’s initial state at the top of a window. Now, you are not declaring what the menu will look like normally. Instead, the else statement will help your menu toggle back to its normal state if a user scrolls &lt;em&gt;back up&lt;/em&gt; to the top of the screen.&lt;/p&gt;
+&lt;p&gt;Next, you can write your ‘else’ statement. The else statement will provide the CSS info you need to change when the menu goes back to it’s initial state at the top of a window. Now, you are not declaring what the menu will look like normally. Instead, the else statement will help your menu toggle back to its normal state if a user scrolls &lt;em&gt;back up&lt;/em&gt; to the top of the screen.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
       &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#menu&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;background-color&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;transparent&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -885,11 +885,13 @@ excerpt: &amp;gt;
     
       <item>
         <title>Breaking Into Web Development (In Small Steps)</title>
-        <description>&lt;p&gt;It used to be that the words “computer programmer” conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems. They said things like “back face curling”, “code refactoring,” “data flow analysis, “and heuristic evaluation.” They also threw around words that sounded completely ridiculous to me (e.g unicorn, ruby gem, brain fuck, Boomerang, Emerald, etc.) What was I doing there? Waiting for my required Astronomy 101 course to start and browsing Pinterest on my phone. They were geniuses in my book.&lt;/p&gt;
+        <description>&lt;p&gt;It used to be that the words “computer programmer” conjured up memories for me of people in the math and science building of my university. They were the people who arrived 30 minutes before class to consult with each other on complex problems.&lt;/p&gt;
+
+&lt;p&gt;They said things like “back face curling”, “code refactoring,” “data flow analysis, “and heuristic evaluation.” They also threw around words that sounded completely ridiculous to me (e.g unicorn, ruby gem, brain fuck, Boomerang, Emerald, etc.) What was I doing there? Waiting for my required Astronomy 101 course to start and browsing Pinterest on my phone. In comparison to me, these people seemed like geniuses in my book.&lt;/p&gt;
 
 &lt;p&gt;The thing is, yes, they were smart. They were computer science majors who were taking advanced calculus. They spent all their time reading computer science textbooks and solving algorithms. Yet, to be a computer programmer you don’t have to know advanced calculus, at least not to get started. You don’t even need a computer science degree (although more power to you if you have one!).&lt;/p&gt;
 
-&lt;p&gt;If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. &lt;strong&gt;I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first. After that, you will hopefully be able to see that breaking into web development isn’t &lt;em&gt;that&lt;/em&gt; scary. as long as you tackle it in small steps.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you really want to get into the field, it just requires some dedication and a willingness to learn as well as ask questions. &lt;strong&gt;I recommend reading this blog post to learn how I got the courage to get into web development and to see what skills to learn first&lt;/strong&gt;. After that, you will hopefully be able to see that breaking into web development isn’t &lt;em&gt;that&lt;/em&gt; scary. as long as you tackle it in small steps.&lt;/p&gt;
 
 &lt;h1 id=&quot;moving-beyond-wordpress-to-create-my-first-project&quot;&gt;Moving beyond Wordpress To Create My First Project&lt;/h1&gt;
 
@@ -904,19 +906,23 @@ excerpt: &amp;gt;
 
 &lt;p&gt;Once the site was back to how I liked it, I was even a bit proud of what I had done. In fact, the site looked even better than before because I had found a way to inspect elements and figure out their selectors to make some custom changes of my own.&lt;/p&gt;
 
-&lt;p&gt;I showed off my work to my S.O. at dinner once it was complete. I pulled the site up on my phone and asked him if he would take a look. He is a self-taught back-end developer who never ceases to impress me with all the cool things that he is able to do. Showing him my work was kind of intimidating to be honest because he really knows how sites should work and function. Yet, he was smiling when he saw what I had done. He then looked up at me and very carefully suggested that I go into front-end development.&lt;/p&gt;
+&lt;p&gt;I showed off my work to my S.O. at dinner once it was complete. I pulled the site up on my phone and asked him if he would take a look. He is a self-taught back-end developer who never ceases to impress me with all the cool things that he is able to do.&lt;/p&gt;
+
+&lt;p&gt;Showing him my work was kind of intimidating to be honest because he really knows how sites should work and function. Yet, he was smiling when he saw what I had done. He then looked up at me and very carefully suggested that I go into front-end development.&lt;/p&gt;
 
 &lt;p&gt;The thing is, I had been thinking about the same thing for months - ever since I learned how to fix site bugs at work. That was when I first began to study HTML and Markdown. Still, I wasn’t sure if I could be a front-end developer.&lt;/p&gt;
 
-&lt;p&gt;I didn’t think that I was smart enough to do that. You see, I studied creative writing in college. From there, I thought that I was going to spend my adult life as a secretary or admin assistant while writing a novel during coffee fueled nights. Going into web development was something I had never thought that I could do. &lt;em&gt;It simply didn’t fit in with the idea I had been forming for myself.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I didn’t think that I was smart enough to do it&lt;/strong&gt; You see, I studied creative writing in college. From there, I thought that I was going to spend my adult life as a secretary or admin assistant while writing a novel during coffee fueled nights. Going into web development was something I had never thought that I could do. &lt;em&gt;It simply didn’t fit in with the idea I had been forming for myself.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;where-to-start---breaking-the-process-down-into-small-steps&quot;&gt;Where to start - breaking the process down into small steps&lt;/h2&gt;
 
-&lt;p&gt;That night though I said good-bye to that idea because it just wasn’t working for me. Instead, My S.O. and I sat down together and went over some basic concepts. I learned about arrays, operators, and zero-based indexes in JavaScript. Then, we googled &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; together and my S.O. ran some commands to create a Jekyll powered static blog site that I could work on. &lt;strong&gt;It took us about three hours for me to see that I had it in me to learn a programming language &lt;em&gt;and&lt;/em&gt; that I had a means to create a site from scratch.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;That night though I said good-bye to that idea because it just wasn’t working for me. Instead, My S.O. and I sat down together and went over some basic concepts. I learned about arrays, operators, and zero-based indexes in JavaScript.&lt;/p&gt;
+
+&lt;p&gt;Then, we googled &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; together and my S.O. ran some commands to create a Jekyll powered static blog site that I could work on. &lt;strong&gt;It took us about three hours for me to see that I had it in me to learn a programming language &lt;em&gt;and&lt;/em&gt; that I had a means to create a site from scratch.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;My task for the next day was to learn how to add new pages to the site and begin creating a design I liked. I had to learn how to select elements for manipulation in JavaScript, how to maintain clean, modular code, and how to out specify the base stylesheet included in the Jekyll directory. This was all kind of overwhelming.&lt;/p&gt;
 
-&lt;p&gt;What helped was focusing on one task at a time. For example, if I could just learn what the DOM was before learning how to traverse it, I could prevent a panic attack. This approach helped A LOT! I started off by learning three basic skills. HTML, CSS, and JavaScript.&lt;/p&gt;
+&lt;p&gt;What helped was focusing on one task at a time. For example, if I could just learn what the DOM was before learning how to traverse it, I could prevent a panic attack. This approach helped A LOT! So I started off by learning three basic skills. HTML, CSS, and JavaScript.&lt;/p&gt;
 
 &lt;p&gt;It may help you to take this same approach. &lt;strong&gt;Here are some steps to help you get started!&lt;/strong&gt;&lt;/p&gt;
 
@@ -924,7 +930,9 @@ excerpt: &amp;gt;
 
 &lt;h2 id=&quot;step-one-make-a-github-account&quot;&gt;Step One: Make a GitHub account&lt;/h2&gt;
 
-&lt;p&gt;If you want to begin a project of your own, I first suggest you make a GitHub account. Someone once told me “GitHub or get out.” They meant, you need to have a GitHub account before an interviewer will take you seriously. It’s smart advice. Having a GitHub account helps employers know that you have worked on a project before, that you know a little something about &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;version control&lt;/a&gt;, and that you’re interested in what others in the development community are up to.&lt;/p&gt;
+&lt;p&gt;If you want to begin a project of your own, I first suggest you make a GitHub account. Someone once told me “GitHub or get out.” They meant, you need to have a GitHub account before an interviewer will take you seriously.&lt;/p&gt;
+
+&lt;p&gt;It’s smart advice. Having a GitHub account helps employers know that you have worked on a project before, that you know a little something about &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;version control&lt;/a&gt;, and that you’re interested in what others in the development community are up to.&lt;/p&gt;
 
 &lt;p&gt;Just go to &lt;a href=&quot;https://github.com/&quot;&gt;github.com&lt;/a&gt; and create an account. You can then create a new repository for the project you want to work on and go from there!&lt;/p&gt;
 
@@ -936,7 +944,7 @@ excerpt: &amp;gt;
   &lt;li&gt;&lt;strong&gt;Read up on how to write HTML:&lt;/strong&gt; &lt;a href=&quot;http://www.w3schools.com/html/default.asp&quot;&gt;W3Schools&lt;/a&gt; is a great first place to look!&lt;/li&gt;
   &lt;li&gt;Learn the difference between a div and a span: You can think of a div as a dividing element in your markup. It contains and divides certain sections of your layout. A span, on the other hand, is a way to group inline-elements in your document.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Mess around with HTML to create your own custom layouts:&lt;/strong&gt; You can try by working on your own project or creating something in a &lt;a href=&quot;http://codepen.io/pen/&quot;&gt;codepen&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Harness the power of the list! Seriously, you can do a lot with lists when they are combined with CSS.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Harness the power of the list!&lt;/strong&gt; Seriously, you can do a lot with lists when they are combined with CSS.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Learn how to indent properly:&lt;/strong&gt; Elements within element should be indented.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Just know that when someone says “show me your markup,”  - this just means show them your HTML file:&lt;/strong&gt; I’ll admit, I didn’t know this for a &lt;em&gt;long&lt;/em&gt; time!&lt;/li&gt;
 &lt;/ul&gt;
@@ -946,14 +954,15 @@ excerpt: &amp;gt;
 &lt;p&gt;I recommend learning &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/07/20/sass.html&quot;&gt;SCSS&lt;/a&gt; first. It will make it easier when you are ready to switch to &lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt; (a very marketable skill).&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Pull up a local version of your project and make changes in the browser:&lt;/strong&gt; This will help you identify your class and ID names. It will also help you better visualize what needs to be tweaked. This way, you can experiment with what some properties do. Seriously, sometimes I just experiment with properties until my layout does what I want it to do. Keep in mind that I always use W3 Schools to check that the solution I arrive is a sustainable/pragmatic choice before actually implementing it.&lt;/li&gt;
-  &lt;li&gt;Look at other websites that you admire and dissect their source code. While you are at, find what you like about their site and try to implement those features yourself.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pull up a local version of your project and make changes in the browser:&lt;/strong&gt; This will help you identify your class and ID names. It will also help you better visualize what needs to be tweaked. This way, you can experiment with what some properties do. Seriously, sometimes I just experiment with properties until my layout does what I want it to do.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Keep in mind that I always use W3 Schools to check that the solution I arrive is a sustainable/pragmatic choice before actually implementing it.Look at other websites that you admire and dissect their source code. While you are at, find what you like about their site and try to implement those features yourself.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-four-get-started-with-javascript&quot;&gt;Step Four: Get Started With JavaScript&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Check out some great resources &lt;a href=&quot;http://rookie-dev.herokuapp.com/2015/08/05/resources.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out some great resources &lt;a href=&quot;/blog/resources&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Begin by learning about operators&lt;/strong&gt;: Operators are just ways to perform math or declare conditional statements.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Dive into the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot;&gt;Mozilla Developer Network&lt;/a&gt;:&lt;/strong&gt; Here, you can find out how to traverse your DOM and discover cool new methods!&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Look into jQuery&lt;/strong&gt;&lt;/li&gt;
@@ -965,7 +974,9 @@ excerpt: &amp;gt;
 
 &lt;h2 id=&quot;step-five-learn-some-git-commands&quot;&gt;Step Five: Learn Some Git Commands&lt;/h2&gt;
 
-&lt;p&gt;Yes, you need to know about version control. This is your first project, meaning you are most likely the only contributor. Yet, if you picture yourself working in web development, you will be working on a team and they will be using some kind of version control. Version control is a way to prevent people from erasing new implementations accidentally or stepping on each other’s toes during development. For Jekyll specific projects, you will really only need to know a few commands to test your site and make sure all of it’s features work properly. If you want to know some more though, I often reference this list &lt;a href=&quot;https://gist.github.com/hofmannsven/6814451&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Yes, you need to know about version control. This is your first project, meaning you are most likely the only contributor. Yet, if you picture yourself working in web development, you will be working on a team and they will be using some kind of version control.&lt;/p&gt;
+
+&lt;p&gt;Version control is a way to prevent people from erasing new implementations accidentally or stepping on each other’s toes during development. For Jekyll specific projects, you will really only need to know a few commands to test your site and make sure all of it’s features work properly. If you want to know some more though, I often reference this list &lt;a href=&quot;https://gist.github.com/hofmannsven/6814451&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;cd (change directory):&lt;/strong&gt; You need to let your command line know what files you will be working with. To do this, you cd into the correct directory. The directory will be the name of folder all of your project files are in.&lt;/li&gt;
@@ -979,7 +990,9 @@ excerpt: &amp;gt;
   &lt;li&gt;&lt;strong&gt;git push origin &lt;em&gt;branch name&lt;/em&gt;:&lt;/strong&gt; Push your changes to a live environment.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Okay, now you have some great steps to focus on. If you are like me, these steps will be able to help A LOT. A common problem I had while learning was not knowing what to do next. I wanted to make this post to help others avoid this problem. Once you have all of these steps mastered, we can talk about overcoming imposter syndrome! &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Okay, now you have some great steps to focus on. If you are like me, these steps will be able to help A LOT. A common problem I had while learning was not knowing what to do next.&lt;/p&gt;
+
+&lt;p&gt;I wanted to make this post to help others avoid this problem. Once you have all of these steps mastered, we can talk about &lt;a href=&quot;/blog/confidence&quot;&gt;overcoming imposter syndrome&lt;/a&gt;! &lt;strong&gt;Thanks for reading guys!&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 12 Sep 2015 10:00:00 -0700</pubDate>
         <link>ktgilbert.com//blog/breaking-into-web-development</link>
