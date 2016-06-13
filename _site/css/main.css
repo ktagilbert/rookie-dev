@@ -430,8 +430,7 @@ body div.page-header div p:hover {
   position: absolute;
   padding-bottom: 0;
   background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid; }
+  background-repeat: no-repeat; }
 
 .home-header {
   padding-top: 15%;
@@ -737,15 +736,6 @@ img {
   width: 100%;
   text-align: left; }
 
-@media (max-width: 1000px) {
-  #blog {
-    padding-bottom: 5%; }
-    #blog .post-list .article {
-      display: none; }
-    #blog .post-list .article:first-of-type {
-      display: initial; }
-      #blog .post-list .article:first-of-type p {
-        text-align: left; } }
 /**
  * Posts
  */
@@ -914,6 +904,9 @@ portfolio page
 .page-wrapper {
   margin: 0% 10% 10%; }
 
+@media (max-width: 950px) {
+  .page-wrapper {
+    margin: 30% 10% 10%; } }
 .folio-img {
   padding-bottom: 0; }
 

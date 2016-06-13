@@ -19,13 +19,13 @@ It turns out that SCSS is not that difficult.
 ## What helped me learn about SCSS:
 ![First SCSS project](/assets/brainstorm.jpg)
 
- I simply pulled open my computer and read up on SASS. I started by typing in "learning SASS" into Google. I  was then directed to [sass-lang.com](http://sass-lang.com/). The words "CSS with Superpowers" appeared on my screen.
+ I simply pulled open my computer and read up on Sass. I started by typing in "learning Sass" into Google. I was then directed to [sass-lang.com](http://sass-lang.com/). The words "CSS with Superpowers" appeared on my screen.
 
-It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! **Here I am going to show you some basics to help you get started with SCSS.**
+It all looked very fancy. I then quickly realized that the differences between CSS and SCSS are not that large. They are definitely surmountable! **Here. I am going to show you some basics to help you get started with SCSS.**
 
 ## You will learn three cool things:
 1. How SCCS does nesting
-2. How to use Variables
+2. How to use variables
 3. What an extend is
 
 ## Differences between CSS and SCSS
@@ -41,7 +41,7 @@ It all looked very fancy. I then quickly realized that the differences between C
 }
 {% endhighlight %}
 
-Okay, cool. Here we have some CSS that basically says, "hey for all headers, make the font-family Georgia and the color black." Below that we have some nested rules that say the list items under the class "nav-list" will all be a light-grey color. Alright, nice. **Now, let's write the same thing using SASS.**
+Okay, cool. Here we have some CSS that basically says, "hey for all headers, make the font-family Georgia and the color black." Below that we have some nested rules that say the list items under the class "nav-list" will all be a light-grey color. Alright, nice. **Now, let's write the same thing in Sass.**
 
 ## 1. Nesting with SCSS
 
@@ -58,7 +58,9 @@ Okay, cool. Here we have some CSS that basically says, "hey for all headers, mak
 }
 {% endhighlight %}
 
-As you can see, it's not that different. I like to compare the way nesting looks in SCSS to the way the [Harvard Outline](http://writingcenter.fas.harvard.edu/pages/outlining) looks. Maybe that's just the nerd in me though. To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway. This part of SCSS is easy and I like it better personally.
+As you can see, it's not that different. I like to compare the way nesting looks in SCSS to the way the [Harvard Outline](http://writingcenter.fas.harvard.edu/pages/outlining) looks. Maybe that's just the nerd in me though.
+
+To me, it also makes sense that things would cascade like this. I mean, it is a naturally cascading language anyway. This part of SCSS is easy and I like it better personally.
 
 ## 2. Variables
 
@@ -108,6 +110,6 @@ Next, SCSS introduces the idea of an extend. Meaning, you can assign a block of 
 This block shows the properties I have assigned to a rounded image at the top of a page. With my extend defined, I can later add a similar image header just by typing in @extend .image-header as if it was another property. **This way, you can include large chunks of style properties that you know you will be using again later just by typing @extend followed by the name you assign to your block code.**
 
 ## Why use SCSS?
-SCSS is really a bridging tool to help you get comfortable with SASS. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into SASS. **In any file with .scss, you can set style rules using SASS, CSS, or SCSS as seen here.**
+SCSS is really a bridging tool to help you get comfortable with Sass. It is a preprocessor. For you, this means that you can use CSS and SCSS will compile it into Sass. **In any file with .scss, you can set style rules using Sass, CSS, or SCSS as seen here.**
 
-So far, I am comfortable with SCSS and am getting closer to becoming familiar with SASS. When I get there, you will be the first to know. For now, you can read-up on SASS [here](http://sass-lang.com/guide) if you are interested. Let me know how it goes for you!
+So far, I am comfortable with SCSS and am getting closer to becoming familiar with Sass. When I get there, you will be the first to know. For now, you can read-up on Sass [here](http://sass-lang.com/guide) if you are interested. Let me know how it goes for you!

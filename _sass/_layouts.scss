@@ -109,6 +109,12 @@ portfolio page
 	margin: 0% 10% 10%;
 }
 
+@media(max-width: 950px) {
+  .page-wrapper {
+    margin: 30% 10% 10%;
+  }
+}
+
 .folio-img {
 	padding-bottom: 0;
 }

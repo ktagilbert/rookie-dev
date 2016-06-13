@@ -10,7 +10,7 @@ excerpt: >
  If you want to incorporate some jQuery into your site, you can take it one step further with a nav bar that has some functionality. Here is a tutorial that will help.
 ---
 
-Earlier, I showed you [how to make a nav bar from scratch using just HTML and CSS](http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html). I really believe creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.
+Earlier, I showed you [how to make a nav bar from scratch using just HTML and CSS](http://rookie-dev.herokuapp.com/2015/06/24/nav-bar.html). I really believe that creating a nav bar is a great first project for anyone learning about HTML and CSS/SCSS. Now, if you also want to incorporate some jQuery into your site, you can take the project one step further with a nav bar that has some functionality.
 
 When I redesigned this blog my nav bar was the first thing I wanted to change. I had a simple, static navigation that was pretty boring. So I took a look at other sites and noticed that their nav bars changed colors as users scrolled down.
 
@@ -25,7 +25,7 @@ In the end, I was able to create a nav bar that changed colors when the user scr
 
 # How to Approach the Problem
 
-If you are looking to build a great, responsive nav bar that utilizes some jQuery here is how to start. First, you can navigate to where you are including your javascript. You can start by making sure you have a jQuery library included along with your other script tags. (I keep mine in my head.html file.)
+If you are looking to build a great, responsive nav bar that utilizes some jQuery here is how to start. First, you can navigate to where you are including your JavasSript. You can start by making sure you have a jQuery library included along with your other script tags. (I keep mine in my head.html file.)
 
 {% highlight JavaScript %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -109,12 +109,12 @@ if (startchange.length || $('img')) {
       $('.menu-item').children().css("color", "#fff");
 {% endhighlight %}
 
-You'll notice that at the beginning of my if statement, I used the or operator. You don't have to include an or statement if you don't need it.  I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first <p> tags on a page.
+You'll notice that at the beginning of my 'if' statement, I used the 'or' operator. You don't have to include an 'or' statement if you don't need it. I include it here because when I tested my nav bar I noticed that on my about page, the first element was actually an image. Meaning, I needed the nav to change to back to a white background with black text when it reached this image and when it reached the first <p> tag on a page.
 
-For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first h1 tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.
+For you, it may help to look at your pages and see what elements your nav will hit first. It is likely that this will either be the first div tag or the first <h1> tag. Either way, just make sure to include what element will indicate when a style change is needed at the beginning of your if statement.
 
 
-Next, you can write your else statement. The else statement will provide the css info you need to change when the menu goes back to it's initial state at the top of a window. Now, you are not declaring what the menu will look like normally. Instead, the else statement will help your menu toggle back to its normal state if a user scrolls *back up* to the top of the screen.
+Next, you can write your 'else' statement. The else statement will provide the CSS info you need to change when the menu goes back to it's initial state at the top of a window. Now, you are not declaring what the menu will look like normally. Instead, the else statement will help your menu toggle back to its normal state if a user scrolls *back up* to the top of the screen.
 
 {% highlight JavaScript %}
     } else {

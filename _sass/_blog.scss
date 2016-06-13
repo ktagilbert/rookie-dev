@@ -113,24 +113,6 @@
     text-align: left;
 }
 
-@media(max-width: 1000px) {
-  #blog {
-    padding-bottom: 5%;
-
-    .post-list {
-      .article {
-        display: none;
-      }
-      .article:first-of-type {
-        display: initial;
-
-        p {
-        text-align: left;
-        }
-      }
-    }
-  }
-}
 /**
  * Posts
  */

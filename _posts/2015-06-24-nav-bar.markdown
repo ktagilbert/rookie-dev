@@ -10,10 +10,14 @@ excerpt: >
  Making a navigation menu was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning web-development. In actuality, it was something that was way over my head.
 ---
 
-Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head. Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.**
+Making a navigation bar was one of the first things that I learned to make using only HTML, CSS, and JavaScript. Seems simple, right? Well, I was on day two of learning about web-development. In actuality, it was way over my head.
+
+Yet, I was able to get some help that made the process easier to tackle. **What helped the most, was breaking the problem down into manageable steps and learning some general principles about the languages I was working with.**
 
 # Start by learning some general principles
-If you are like me and don't know much about web development or these three languages, you may approach the problem by looking at a tutorial and just copying their examples and then pasting them into your text editor. Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? *Spending some time to really learn the basic principles of the language you are working in can be super helpful.*
+If you are like me and don't know much about web development or these three languages, you may approach the problem by looking at a tutorial and just copying their examples and then pasting them into your text editor.
+
+Well, what if you knew what elements to actually reference in order to make your menu appear and function the way you want it to? *Spending some time to really learn the basic principles of the language you are working in can be super helpful.*
 
 Before I made my nav, I spent a couple of nights studying the basics of my three chosen languages. **You might want to try doing the same and really hammering down these ideas:**
 
@@ -24,7 +28,7 @@ Before I made my nav, I spent a couple of nights studying the basics of my three
 3. Some basic JavaScript functions. Maybe, learn what a function is as well.
 
 ## How to approach the problem of creating a menu for your page
-- In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Sublime Text 2 if you are looking for a good one to use):
+- In my case, I focused on HTML and CSS solutions first. You can start by simply making a list on your page. It should look something like this in a text editor (I use Atom if you are looking for a good one to use):
 {% highlight html %}
 <ul>
 	<li>Page 1</li>
@@ -33,9 +37,9 @@ Before I made my nav, I spent a couple of nights studying the basics of my three
 </ul>
 {% endhighlight %}
 
-- Okay great, these are the pages that you are going to be listed in your menu! Pretty awesome, right? Next, you are just going to think about how to make these "pages" look and function the way you want them to.
+- Okay great, these are the links that you are going to be listed in your menu! Pretty awesome, right? Next, you are just going to think about how to make these links look and function the way you want them to.
 - You can think about what to do in steps to make it easier if you want. I personally found approaching the process piece-by-piece easier to manage.  
-- One place you could start is by thinking about the fact that these pages should be able to be click-able. Meaning, they should be linked. You can add the a href tag to your list to make this happen.
+- One place you could start is by thinking about the fact that these links should be able to be click-able. You can add the a href tag to your list to make this happen.
 {% highlight html %}
 <ul>
 	<li><a href="#">Page 1</li></a>
@@ -49,7 +53,7 @@ Before I made my nav, I spent a couple of nights studying the basics of my three
 
 ## Here are some ideas for how you may want your menu to look
 1. You may want the menu items to be laid out horizontally across your page.
-2. Maybe you will want a menu item to simply display specific content when clicked. Well, you can do that with JavaScript
+2. Maybe you will want a menu item to simply display specific content when clicked. Well, you can do that with JavaScript.
 3. You could simply think about the style of the menu.
 	- Maybe you want the menu to have a background color
 	- Or, you want to change the font-size, font-color, or font-family of your text.
