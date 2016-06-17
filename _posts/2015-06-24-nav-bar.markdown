@@ -55,7 +55,7 @@ Before I made my nav, I spent a couple of nights studying the basics of my three
 1. You may want the menu items to be laid out horizontally across your page.
 2. Maybe you will want a menu item to simply display specific content when clicked. Well, you can do that with JavaScript.
 3. You could simply think about the style of the menu.
-	- Maybe you want the menu to have a background color
+	- Maybe you want the menu to have a background color.
 	- Or, you want to change the font-size, font-color, or font-family of your text.
 
 ## CSS properties that may help
