@@ -3,24 +3,19 @@ about page
 *********************************/
 
 .page-header {
-  height: 300px !important;
-  background: url('/assets/shattered.png');
   margin-bottom: 3%;
   margin-top: 0;
   width: 100%;
   border: none;
 }
 
-.header-1 {
+.blog-page {
+  h1 {
     text-align: center;
     padding-top: 50px;
-    color: #1A6B86;
-    font-weight: bold;
-    padding-top: 110px !important;
-}
-
-.page-header {
-  .header-1 {
+    color: #fff;
+    background-color: $skyblue;
+    padding: 110px 0;
     font-size: 3em;
   }
 }
@@ -36,6 +31,7 @@ about page
   background: no-repeat;
   background-size: 100%;
   background-position: center;
+
 }
 
 @media(max-width: 650px) {

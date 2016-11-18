@@ -6,9 +6,7 @@ permalink: /blog/
 ---
 <div class="blog-page">
 
-<div class="page-header">
   <h1 class="header-1">Technical Marketing Blog</h1>
-</div>
 
 
 <div class="container">
